@@ -2,7 +2,7 @@ import examplePlan from '../seed/example-plan.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import { ADDITIONAL, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, type CourseFacts } from './requirements'
-import { currentTerm, nowIndex, termIndex, termRange } from './terms'
+import { termRange, upcomingTerm } from './terms'
 import { normalizePlan, planErrors } from './validate'
 
 export interface NewCourse extends CourseFacts {
@@ -98,13 +98,8 @@ class AppState {
     this.persist(THEME_KEY, this.dark ? 'dark' : 'light')
   }
 
-  /** New courses land in the current term, or the nearest end of the plan's range. */
   defaultTerm(): Term {
-    const terms = this.terms
-    const now = currentTerm(this.today)
-    if (now && terms.includes(now)) return now
-    const today = nowIndex(this.today)
-    return today < termIndex(terms[0]) ? terms[0] : terms[terms.length - 1]
+    return upcomingTerm(this.terms, this.today)
   }
 
   startMove(uid: string) {

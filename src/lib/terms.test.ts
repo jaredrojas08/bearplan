@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { currentTerm, nextTerm, termRange, termStatus } from './terms'
+import { currentTerm, nextTerm, termRange, termStatus, upcomingTerm } from './terms'
 
 describe('terms', () => {
   it('lists every term from entry to graduation', () => {
@@ -11,6 +11,14 @@ describe('terms', () => {
     expect(currentTerm(new Date(2026, 9, 18))).toBe('FA26')
     expect(currentTerm(new Date(2027, 0, 25))).toBe('SP27')
     expect(currentTerm(new Date(2027, 6, 1))).toBeNull()
+  })
+
+  it('picks the current or next plan term for new courses', () => {
+    const terms = termRange('SP24', 'FA28')
+    expect(upcomingTerm(terms, new Date(2026, 9, 18))).toBe('FA26')
+    expect(upcomingTerm(terms, new Date(2026, 5, 15))).toBe('FA26')
+    expect(upcomingTerm(terms, new Date(2020, 0, 1))).toBe('SP24')
+    expect(upcomingTerm(terms, new Date(2030, 0, 1))).toBe('FA28')
   })
 
   it('maps terms to status relative to today', () => {
