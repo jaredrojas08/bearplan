@@ -138,7 +138,7 @@
     {
       "uid": "seed-15",
       "code": "ENGRI 1165",
-      "title": "Introduction to Entrepreneurship and Enterprise Engineering",
+      "title": "Climate Change and You, the Engineer",
       "credits": 3,
       "term": "FA25",
       "placement": "distribution/d3"
@@ -163,7 +163,7 @@
     {
       "uid": "seed-18",
       "code": "CS 3110",
-      "title": "Data Structures and Functional Programming",
+      "title": "Functional Programming and Data Structures",
       "credits": 4,
       "term": "FA25",
       "placement": "core/c2"
@@ -179,7 +179,7 @@
     {
       "uid": "seed-20",
       "code": "CS 3700",
-      "title": "Foundations of AI Reasoning and Decision-making",
+      "title": "Foundations of AI Reasoning and Decision-Making",
       "credits": 3,
       "term": "FA26",
       "placement": "core/c4"
@@ -203,7 +203,7 @@
     {
       "uid": "seed-23",
       "code": "ECE 4770",
-      "title": "Microprocessor Architecture",
+      "title": "Foundations of Robotics",
       "credits": 4,
       "term": "FA26",
       "placement": "tech-electives/te2"
@@ -211,7 +211,7 @@
     {
       "uid": "seed-24",
       "code": "CS 1998",
-      "title": "Intro to Front-End Web Dev",
+      "title": "First-year and Nontechnical Team Projects",
       "credits": 2,
       "term": "FA24",
       "placement": "major-approved",
@@ -220,7 +220,7 @@
     {
       "uid": "seed-25",
       "code": "INFO 1998",
-      "title": "Intro to Digital Product Design",
+      "title": "First-year Team Projects",
       "credits": 1,
       "term": "FA25",
       "placement": "major-approved"
@@ -228,7 +228,7 @@
     {
       "uid": "seed-26",
       "code": "ENGRC 3152",
-      "title": "Engineering Communications for Game Design",
+      "title": "Communication for Game Development",
       "credits": 1,
       "term": "SP26",
       "placement": "advisor-approved",
@@ -250,7 +250,7 @@
     {
       "uid": "seed-28",
       "code": "BIOMI 1100",
-      "title": "Biological Principles of Microbiology",
+      "title": "Locker Rooms, Kitchens and Bedrooms: The Microbiology of College Life",
       "credits": 3,
       "term": "FA26",
       "placement": "additional",
