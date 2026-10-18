@@ -104,7 +104,8 @@ class AppState {
   private persist(key: string, value: unknown) {
     try {
       localStorage.setItem(key, JSON.stringify(value))
-      this.saveError = null
+      // A small theme write can succeed while the plan is still unsaved.
+      if (key === PLAN_KEY) this.saveError = null
     } catch {
       this.saveError = 'Changes could not be saved in this browser. Export your plan to keep it.'
     }
