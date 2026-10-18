@@ -43,7 +43,7 @@ export function latestFall(today: Date): Term {
  * Position of today on the term line. January to May is spring, August to
  * December is fall, and summer sits halfway between, so no term is current.
  */
-function nowIndex(today: Date): number {
+export function nowIndex(today: Date): number {
   const year = today.getFullYear()
   const month = today.getMonth() + 1
   if (month <= 5) return year * 2

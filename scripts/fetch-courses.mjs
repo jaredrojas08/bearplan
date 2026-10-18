@@ -13,6 +13,7 @@ const API = 'https://classes.cornell.edu/api/2.0/'
 // The API asks for at most one request per second.
 const REQUEST_GAP_MS = 1100
 const MAX_RETRIES = 3
+const REQUEST_TIMEOUT_MS = 30_000
 const OUT = resolve(dirname(fileURLToPath(import.meta.url)), '../public/courses.json')
 
 function parseArgs(argv) {
@@ -36,14 +37,21 @@ async function get(path, attempt = 1) {
   if (wait > 0) await sleep(wait)
   lastRequest = Date.now()
 
-  const res = await fetch(API + path)
-  // The search endpoint answers 404 when a subject has no classes that term.
-  if (res.status === 404) return null
-  if (res.status === 429 || res.status >= 500) {
-    if (attempt > MAX_RETRIES) throw new Error(`${path}: HTTP ${res.status} after ${MAX_RETRIES} retries`)
+  const retry = async (reason) => {
+    if (attempt > MAX_RETRIES) throw new Error(`${path}: ${reason} after ${MAX_RETRIES} retries`)
     await sleep(REQUEST_GAP_MS * 2 ** attempt)
     return get(path, attempt + 1)
   }
+
+  let res
+  try {
+    res = await fetch(API + path, { signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) })
+  } catch (err) {
+    return retry(err.name === 'TimeoutError' ? 'timed out' : err.message)
+  }
+  // The search endpoint answers 404 when a subject has no classes that term.
+  if (res.status === 404 && path.startsWith('search/')) return null
+  if (res.status === 429 || res.status >= 500) return retry(`HTTP ${res.status}`)
   if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`)
   const body = await res.json()
   if (body.status !== 'success') throw new Error(`${path}: ${body.message ?? 'API error'}`)
