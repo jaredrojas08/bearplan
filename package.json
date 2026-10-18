@@ -25,6 +25,6 @@
   "description": "Cornell degree-progress planner",
   "license": "MIT",
   "engines": {
-    "node": ">=20.19"
+    "node": "^20.19 || ^22.12 || >=24"
   }
 }

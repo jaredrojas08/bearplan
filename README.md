@@ -20,7 +20,7 @@ A degree-progress planner for Cornell students. Drag courses onto your major's c
 
 ## Getting started
 
-Needs [Node.js](https://nodejs.org/) 20.19 or newer.
+Needs [Node.js](https://nodejs.org/) 20.19+, 22.12+ or 24+ (what Vite supports).
 
 ```sh
 git clone https://github.com/jaredrojas08/bearplan.git
@@ -46,7 +46,7 @@ Search runs over `public/courses.json`, a cached copy of the [Cornell Class Rost
 ```sh
 npm run fetch-courses                              # newest two fall/spring rosters
 npm run fetch-courses -- --rosters SP27,FA26,SP26  # specific rosters
-npm run fetch-courses -- --subjects CS,MATH        # quick partial run
+npm run fetch-courses -- --subjects CS,MATH        # only these subjects (replaces the whole file)
 ```
 
 The script requests every subject in each roster, one request per second as the API asks, so a full roster takes about three minutes. Courses are deduped by code; the newest roster's title and credits win. Each entry looks like:
