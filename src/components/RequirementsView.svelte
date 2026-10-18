@@ -2,6 +2,7 @@
   import type { SectionResult } from '../lib/requirements'
   import { app } from '../lib/store.svelte'
   import { ADDITIONAL, type Section } from '../types'
+  import CourseSearch from './CourseSearch.svelte'
   import CustomCourseDialog from './CustomCourseDialog.svelte'
   import Icon from './Icon.svelte'
   import SectionCard from './SectionCard.svelte'
@@ -94,9 +95,7 @@
       <h2 id="add-title" class="sub">Add courses</h2>
       <span class="muted small">Drag onto a requirement, or click one and pick a spot. It only drops where it fits.</span>
     </div>
-    <div class="results">
-      <button class="custom" onclick={() => customDialog.open()}>+ Custom course</button>
-    </div>
+    <CourseSearch onCustom={() => customDialog.open()} />
   </section>
 
   {#if app.moving}
@@ -201,26 +200,6 @@
   }
   .small {
     font-size: 12px;
-  }
-  .results {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-items: stretch;
-  }
-  .custom {
-    flex: 0 1 140px;
-    min-height: 76px;
-    border-radius: 14px;
-    background: transparent;
-    border: 1.5px dashed var(--line);
-    color: var(--muted);
-    font: 600 13px var(--sans);
-    cursor: pointer;
-  }
-  .custom:hover {
-    border-color: var(--accent);
-    color: var(--accent);
   }
   .banner {
     position: sticky;

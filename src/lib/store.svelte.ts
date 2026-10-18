@@ -1,6 +1,7 @@
 import examplePlan from '../seed/example-plan.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
-import { ADDITIONAL, type Plan, type PlanCourse, type Template, type Term } from '../types'
+import { ADDITIONAL, type CatalogCourse, type Plan, type PlanCourse, type Template, type Term } from '../types'
+import { buildIndex, type SearchIndexEntry } from './search'
 import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, type CourseFacts } from './requirements'
 import { currentTerm, termIndex, termRange } from './terms'
 import { normalizePlan, planErrors } from './validate'
@@ -36,6 +37,8 @@ class AppState {
   moving = $state<Moving | null>(null)
   dark = $state(false)
   saveError = $state<string | null>(null)
+  catalog = $state.raw<SearchIndexEntry[] | null>(null)
+  catalogError = $state<string | null>(null)
 
   template = $derived(this.templates.find((t) => t.id === this.plan?.templateId) ?? null)
   summary = $derived(this.plan && this.template ? evaluatePlan(this.plan, this.template, this.today) : null)
@@ -69,6 +72,8 @@ class AppState {
     const theme = readJson(THEME_KEY)
     this.dark = theme === null ? window.matchMedia('(prefers-color-scheme: dark)').matches : theme === 'dark'
 
+    void this.loadCatalog()
+
     $effect.root(() => {
       $effect(() => {
         document.documentElement.classList.toggle('dark', this.dark)
@@ -77,6 +82,18 @@ class AppState {
         if (this.plan) this.persist(PLAN_KEY, $state.snapshot(this.plan))
       })
     })
+  }
+
+  async loadCatalog() {
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL}courses.json`)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const data: unknown = await res.json()
+      if (!Array.isArray(data)) throw new Error('not a list')
+      this.catalog = buildIndex(data as CatalogCourse[])
+    } catch {
+      this.catalogError = 'Course list unavailable. Run npm run fetch-courses, or add a custom course.'
+    }
   }
 
   private adopt(plan: Plan): Plan | null {
