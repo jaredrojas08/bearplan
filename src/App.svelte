@@ -1,6 +1,8 @@
 <script lang="ts">
   import NavRail, { type View } from './components/NavRail.svelte'
+  import ProgressPanel from './components/ProgressPanel.svelte'
   import RequirementsView from './components/RequirementsView.svelte'
+  import SemesterView from './components/SemesterView.svelte'
   import { app } from './lib/store.svelte'
 
   let view = $state<View>('requirements')
@@ -11,9 +13,16 @@
   <main>
     {#if app.saveError}<p class="save-error" role="alert">{app.saveError}</p>{/if}
     {#if app.summary}
-      <RequirementsView />
+      {#if view === 'requirements'}
+        <RequirementsView />
+      {:else}
+        <SemesterView />
+      {/if}
     {/if}
   </main>
+  {#if app.summary && view === 'requirements'}
+    <ProgressPanel />
+  {/if}
 </div>
 
 <style>
