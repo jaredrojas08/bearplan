@@ -82,6 +82,12 @@ class AppState {
     // No saved plan, or one that no longer validates, sends the user to onboarding.
     const stored = readJson(PLAN_KEY)
     this.plan = stored && planErrors(stored).length === 0 ? this.adopt(stored as Plan) : null
+    // Copy an unreadable plan aside so starting a new one can't overwrite it.
+    // Blocked storage throws here, and then there is nothing to copy.
+    try {
+      const raw = localStorage.getItem(PLAN_KEY)
+      if (!this.plan && raw) localStorage.setItem(`${PLAN_KEY}:unreadable`, raw)
+    } catch {}
 
     const theme = readJson(THEME_KEY)
     this.dark = theme === null ? window.matchMedia('(prefers-color-scheme: dark)').matches : theme === 'dark'
