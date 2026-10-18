@@ -104,10 +104,12 @@ export interface Target {
 
 export function findTarget(template: Template, placement: string): Target | null {
   if (placement === ADDITIONAL) return { placement, section: null }
-  const [sectionId, slotId] = placement.split('/')
+  const parts = placement.split('/')
+  if (parts.length > 2) return null
+  const [sectionId, slotId] = parts
   const section = template.sections.find((s) => s.id === sectionId)
   if (!section) return null
-  if (section.type === 'creditBucket') return slotId ? null : { placement, section }
+  if (section.type === 'creditBucket') return parts.length === 1 ? { placement, section } : null
   const slot = section.slots?.find((s) => s.id === slotId)
   return slot ? { placement, section, slot } : null
 }
