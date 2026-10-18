@@ -1,0 +1,21 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Env and credentials
+.env
+.env.*
+*-credentials.json
+service-account*.json
+
+# Personal plans (real names and grades stay off GitHub)
+local/
+
+# Editor and OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
