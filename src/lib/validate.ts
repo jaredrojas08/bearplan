@@ -23,6 +23,21 @@ function matchErrors(match: unknown, where: string): string[] {
   return errors
 }
 
+const COUNT_KEYS = { minCredits: 'credits', minCount: 'count', maxCount: 'count', minGroups: 'count', groupMinCredits: 'credits', groupMaxCount: 'count' }
+
+function constraintErrors(constraint: unknown, where: string): string[] {
+  if (!isObject(constraint)) return [`${where} must be an object`]
+  const type = constraint.type as keyof typeof COUNT_KEYS
+  if (!(type in COUNT_KEYS)) return [`${where}.type "${String(constraint.type)}" is not supported`]
+  const errors: string[] = []
+  if (!isString(constraint.label)) errors.push(`${where}.label is missing`)
+  if (typeof constraint[COUNT_KEYS[type]] !== 'number') errors.push(`${where}.${COUNT_KEYS[type]} must be a number`)
+  if (type === 'minCount' || type === 'maxCount') errors.push(...matchErrors(constraint.match, `${where}.match`))
+  if (type === 'maxCount' && !isString(constraint.reason)) errors.push(`${where}.reason is missing`)
+  if ((type === 'groupMinCredits' || type === 'groupMaxCount') && !isString(constraint.group)) errors.push(`${where}.group is missing`)
+  return errors
+}
+
 function ruleErrors(rule: unknown, where: string): string[] {
   if (rule === undefined) return []
   if (!Array.isArray(rule)) return [`${where}.rule must be a list of matches`]
@@ -52,8 +67,13 @@ export function templateErrors(data: unknown): string[] {
     if (section.column !== 'left' && section.column !== 'right') errors.push(`${where}.column must be "left" or "right"`)
     if (section.type === 'slots') {
       if (!Array.isArray(section.slots)) return errors.push(`${where}.slots must be a list`)
+      const slotIds = new Set<string>()
       section.slots.forEach((slot: unknown, j: number) => {
-        if (!isObject(slot) || !isString(slot.id)) return errors.push(`${where}.slots[${j}] needs an id`)
+        if (!isObject(slot) || !isString(slot.id) || slot.id.includes('/')) {
+          return errors.push(`${where}.slots[${j}] needs an id without "/"`)
+        }
+        if (slotIds.has(slot.id)) errors.push(`${where}.slots[${j}].id "${slot.id}" is used twice`)
+        slotIds.add(slot.id)
         errors.push(...ruleErrors(slot.rule, `${where}.slots[${j}]`))
       })
     } else if (section.type === 'creditBucket') {
@@ -62,10 +82,21 @@ export function templateErrors(data: unknown): string[] {
     } else {
       errors.push(`${where}.type must be "slots" or "creditBucket"`)
     }
+    if ('constraints' in section) {
+      if (!Array.isArray(section.constraints)) errors.push(`${where}.constraints must be a list`)
+      else section.constraints.forEach((c: unknown, j: number) => errors.push(...constraintErrors(c, `${where}.constraints[${j}]`)))
+    }
+    if ('groups' in section) {
+      if (!Array.isArray(section.groups)) errors.push(`${where}.groups must be a list`)
+      else section.groups.forEach((g: unknown, j: number) => {
+        if (!isObject(g) || !isString(g.id) || !isString(g.name)) errors.push(`${where}.groups[${j}] needs an id and a name`)
+      })
+    }
   })
 
   ;(Array.isArray(data.checks) ? data.checks : []).forEach((check: unknown, i: number) => {
     if (!isObject(check) || !isString(check.id) || !isStringArray(check.codes)) errors.push(`checks[${i}] needs an id and a codes list`)
+    else if (!isString(check.metText) || !isString(check.missText)) errors.push(`checks[${i}] needs metText and missText`)
   })
   return errors
 }
@@ -79,6 +110,7 @@ function courseErrors(course: unknown, i: number): string[] {
   if (typeof course.credits !== 'number' || course.credits < 0 || course.credits > 30) errors.push(`${where}.credits must be 0 to 30`)
   if (!isString(course.term) || !isTerm(course.term)) errors.push(`${where}.term must look like FA24`)
   if ('distributions' in course && !isStringArray(course.distributions)) errors.push(`${where}.distributions must be a list`)
+  if ('grade' in course && course.grade !== undefined && typeof course.grade !== 'string') errors.push(`${where}.grade must be text`)
   return errors
 }
 
@@ -96,6 +128,12 @@ export function planErrors(data: unknown): string[] {
   }
   if (!Array.isArray(data.courses)) return [...errors, '"courses" must be a list']
   data.courses.forEach((c: unknown, i: number) => errors.push(...courseErrors(c, i)))
+  const uids = new Set<unknown>()
+  data.courses.forEach((c: unknown, i: number) => {
+    if (!isObject(c)) return
+    if (uids.has(c.uid)) errors.push(`courses[${i}].uid "${String(c.uid)}" is used twice`)
+    uids.add(c.uid)
+  })
   return errors
 }
 
