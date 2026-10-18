@@ -46,6 +46,12 @@ export function currentTerm(today: Date): Term | null {
   return Number.isInteger(index) ? termFromIndex(index) : null
 }
 
+/** The current or next term in a plan, or its last term once the plan is over. */
+export function upcomingTerm(terms: Term[], today: Date): Term {
+  const now = nowIndex(today)
+  return terms.find((t) => termIndex(t) >= now) ?? terms[terms.length - 1]
+}
+
 export function termStatus(term: Term, today: Date): Status {
   const diff = termIndex(term) - nowIndex(today)
   if (diff < 0) return 'done'
