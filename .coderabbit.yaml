@@ -10,8 +10,9 @@ reviews:
   auto_review:
     enabled: true
     drafts: false
+    # Feature branches stack on each other, so review PRs into any branch.
     base_branches:
-      - main
+      - ".*"
   path_filters:
     - "!public/courses.json"
     - "!package-lock.json"
@@ -20,6 +21,10 @@ reviews:
       instructions: >-
         Requirement logic must stay pure (no React, no DOM, no Date.now without
         an injected date). Check rule edge cases and that tests cover them.
+    - path: "src/**/*.svelte"
+      instructions: >-
+        Svelte 5 runes only ($state, $derived, $props). Interactive elements
+        must be real buttons, inputs or links with labels.
     - path: "src/templates/**/*.json"
       instructions: >-
         Requirement templates are data. Check they match the Template type in

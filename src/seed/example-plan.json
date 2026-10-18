@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "name": "Example Student",
+  "templateId": "cs-engineering-fa24",
+  "entryTerm": "FA24",
+  "gradTerm": "SP28",
+  "swimTest": false,
+  "spclArea": "",
+  "courses": [
+    {
+      "uid": "seed-01",
+      "code": "ENGL 1170",
+      "title": "FWS: Short Stories",
+      "credits": 3,
+      "term": "FA24",
+      "placement": "fws/fws1",
+      "distributions": [
+        "WRT-AG"
+      ]
+    },
+    {
+      "uid": "seed-02",
+      "code": "ENGL 1183",
+      "title": "FWS: Word and Image",
+      "credits": 3,
+      "term": "SP25",
+      "placement": "fws/fws2",
+      "distributions": [
+        "WRT-AG"
+      ]
+    },
+    {
+      "uid": "seed-03",
+      "code": "PSYCH 1101",
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "term": "FA25",
+      "placement": "libstudies/ls1",
+      "distributions": [
+        "SBA-AG",
+        "SSC-AS"
+      ]
+    },
+    {
+      "uid": "seed-04",
+      "code": "ASIAN 2259",
+      "title": "Music in and of East Asia",
+      "credits": 3,
+      "term": "SP26",
+      "placement": "libstudies/ls2",
+      "distributions": [
+        "CA-AG",
+        "LA-AG",
+        "ALC-AS"
+      ]
+    },
+    {
+      "uid": "seed-05",
+      "code": "MATH 1910",
+      "title": "Calculus for Engineers",
+      "credits": 4,
+      "term": "FA24",
+      "placement": "calculus/m1"
+    },
+    {
+      "uid": "seed-06",
+      "code": "MATH 1920",
+      "title": "Multivariable Calculus for Engineers",
+      "credits": 4,
+      "term": "SP25",
+      "placement": "calculus/m2"
+    },
+    {
+      "uid": "seed-07",
+      "code": "MATH 2940",
+      "title": "Linear Algebra for Engineers",
+      "credits": 4,
+      "term": "FA25",
+      "placement": "calculus/m3"
+    },
+    {
+      "uid": "seed-08",
+      "code": "PHYS 1110",
+      "title": "Introduction to Experimental Physics",
+      "credits": 1,
+      "term": "SP25",
+      "placement": "physics/p1"
+    },
+    {
+      "uid": "seed-09",
+      "code": "PHYS 1112",
+      "title": "Physics I: Mechanics and Heat",
+      "credits": 3,
+      "term": "SP25",
+      "placement": "physics/p2"
+    },
+    {
+      "uid": "seed-10",
+      "code": "BTRY 3080",
+      "title": "Probability Models and Inference",
+      "credits": 4,
+      "term": "SP26",
+      "placement": "chem2080/chem2080",
+      "note": "Substitute \u00b7 also meets probability"
+    },
+    {
+      "uid": "seed-11",
+      "code": "CHEM 2090",
+      "title": "Engineering General Chemistry",
+      "credits": 4,
+      "term": "FA24",
+      "placement": "chem2090/chem2090"
+    },
+    {
+      "uid": "seed-12",
+      "code": "CS 1110",
+      "title": "Introduction to Computing: A Design and Development Perspective",
+      "credits": 4,
+      "term": "FA24",
+      "placement": "intro/intro"
+    },
+    {
+      "uid": "seed-13",
+      "code": "CS 2110",
+      "title": "Object-Oriented Programming and Data Structures",
+      "credits": 4,
+      "term": "SP25",
+      "placement": "distribution/d1"
+    },
+    {
+      "uid": "seed-14",
+      "code": "ENGRD 2720",
+      "title": "Data Science for Engineers",
+      "credits": 4,
+      "term": "SP26",
+      "placement": "distribution/d2"
+    },
+    {
+      "uid": "seed-15",
+      "code": "ENGRI 1165",
+      "title": "Introduction to Entrepreneurship and Enterprise Engineering",
+      "credits": 3,
+      "term": "FA25",
+      "placement": "distribution/d3"
+    },
+    {
+      "uid": "seed-16",
+      "code": "PE TBD",
+      "title": "PE class (replace with the real one)",
+      "credits": 1,
+      "term": "FA24",
+      "placement": "pe/pe1",
+      "note": "Which class and term? Replace this row"
+    },
+    {
+      "uid": "seed-17",
+      "code": "CS 2800",
+      "title": "Mathematical Foundations of Computing",
+      "credits": 4,
+      "term": "FA25",
+      "placement": "core/c1"
+    },
+    {
+      "uid": "seed-18",
+      "code": "CS 3110",
+      "title": "Data Structures and Functional Programming",
+      "credits": 4,
+      "term": "FA25",
+      "placement": "core/c2"
+    },
+    {
+      "uid": "seed-19",
+      "code": "CS 3410",
+      "title": "Computer System Organization and Programming",
+      "credits": 4,
+      "term": "SP26",
+      "placement": "core/c3"
+    },
+    {
+      "uid": "seed-20",
+      "code": "CS 3700",
+      "title": "Foundations of AI Reasoning and Decision-making",
+      "credits": 3,
+      "term": "FA26",
+      "placement": "core/c4"
+    },
+    {
+      "uid": "seed-21",
+      "code": "CS 4820",
+      "title": "Introduction to Analysis of Algorithms",
+      "credits": 4,
+      "term": "FA26",
+      "placement": "core/c6"
+    },
+    {
+      "uid": "seed-22",
+      "code": "CS 3152",
+      "title": "Introduction to Computer Game Architecture",
+      "credits": 4,
+      "term": "SP26",
+      "placement": "tech-electives/te1"
+    },
+    {
+      "uid": "seed-23",
+      "code": "ECE 4770",
+      "title": "Microprocessor Architecture",
+      "credits": 4,
+      "term": "FA26",
+      "placement": "tech-electives/te2"
+    },
+    {
+      "uid": "seed-24",
+      "code": "CS 1998",
+      "title": "Intro to Front-End Web Dev",
+      "credits": 2,
+      "term": "FA24",
+      "placement": "major-approved",
+      "grade": "SX"
+    },
+    {
+      "uid": "seed-25",
+      "code": "INFO 1998",
+      "title": "Intro to Digital Product Design",
+      "credits": 1,
+      "term": "FA25",
+      "placement": "major-approved"
+    },
+    {
+      "uid": "seed-26",
+      "code": "ENGRC 3152",
+      "title": "Engineering Communications for Game Design",
+      "credits": 1,
+      "term": "SP26",
+      "placement": "advisor-approved",
+      "note": "Partnered with CS 3152 \u00b7 meets ECR"
+    },
+    {
+      "uid": "seed-27",
+      "code": "ASTRO 1101",
+      "title": "From New Worlds to Black Holes",
+      "credits": 3,
+      "term": "FA26",
+      "placement": "advisor-approved",
+      "distributions": [
+        "OPHLS-AG",
+        "PHS-AS",
+        "SCT-IL"
+      ]
+    },
+    {
+      "uid": "seed-28",
+      "code": "BIOMI 1100",
+      "title": "Biological Principles of Microbiology",
+      "credits": 3,
+      "term": "FA26",
+      "placement": "additional",
+      "note": "ADV"
+    }
+  ]
+}
