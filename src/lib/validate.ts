@@ -34,7 +34,7 @@ function constraintErrors(constraint: unknown, where: string): string[] {
   const key = COUNT_KEYS[type]
   const value = constraint[key]
   // Negative thresholds pass with no courses, and fractional counts can never be met exactly.
-  const valid = typeof value === 'number' && value >= 0 && (key === 'credits' || Number.isInteger(value))
+  const valid = typeof value === 'number' && Number.isFinite(value) && value >= 0 && (key === 'credits' || Number.isInteger(value))
   if (!valid) errors.push(`${where}.${key} must be ${key === 'count' ? 'a whole number' : 'a number'} of at least 0`)
   if (type === 'minCount' || type === 'maxCount') errors.push(...matchErrors(constraint.match, `${where}.match`))
   if (type === 'maxCount' && !isString(constraint.reason)) errors.push(`${where}.reason is missing`)
