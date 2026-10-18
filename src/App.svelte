@@ -1,29 +1,35 @@
 <script lang="ts">
   import NavRail, { type View } from './components/NavRail.svelte'
+  import Onboarding from './components/Onboarding.svelte'
   import ProgressPanel from './components/ProgressPanel.svelte'
   import RequirementsView from './components/RequirementsView.svelte'
   import SemesterView from './components/SemesterView.svelte'
+  import SettingsDialog from './components/SettingsDialog.svelte'
   import { app } from './lib/store.svelte'
 
   let view = $state<View>('requirements')
+  let settings = $state<SettingsDialog>()
 </script>
 
-<div class="shell">
-  <NavRail bind:view />
-  <main>
-    {#if app.saveError}<p class="save-error" role="alert">{app.saveError}</p>{/if}
-    {#if app.summary}
+{#if !app.plan || !app.summary}
+  <Onboarding />
+{:else}
+  <div class="shell">
+    <NavRail bind:view onSettings={() => settings?.open()} />
+    <main>
+      {#if app.saveError}<p class="save-error" role="alert">{app.saveError}</p>{/if}
       {#if view === 'requirements'}
         <RequirementsView />
       {:else}
         <SemesterView />
       {/if}
+    </main>
+    {#if view === 'requirements'}
+      <ProgressPanel onEdit={() => settings?.open()} />
     {/if}
-  </main>
-  {#if app.summary && view === 'requirements'}
-    <ProgressPanel />
-  {/if}
-</div>
+  </div>
+  <SettingsDialog bind:this={settings} />
+{/if}
 
 <style>
   .shell {
