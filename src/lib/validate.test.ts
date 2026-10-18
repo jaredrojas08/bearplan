@@ -23,12 +23,19 @@ describe('validation', () => {
     const section = {
       id: 'x', title: 'X', column: 'left', type: 'slots',
       slots: [{ id: 's' }, { id: 's' }],
-      constraints: [{ type: 'minCount', label: 'Two', count: 2 }, { type: 'mystery' }],
+      constraints: [
+        { type: 'minCount', label: 'Two', count: 2 },
+        { type: 'mystery' },
+        { type: 'minCredits', label: 'Neg', credits: -3 },
+        { type: 'minGroups', label: 'Half', count: 1.5 },
+      ],
     }
     expect(templateErrors({ ...csTemplate, sections: [section], checks: [{ id: 'c', codes: [] }] })).toEqual([
       'sections[0].slots[1].id "s" is used twice',
       'sections[0].constraints[0].match: a match must be an object',
       'sections[0].constraints[1].type "mystery" is not supported',
+      'sections[0].constraints[2].credits must be a number of at least 0',
+      'sections[0].constraints[3].count must be a whole number of at least 0',
       'checks[0] needs metText and missText',
     ])
   })
