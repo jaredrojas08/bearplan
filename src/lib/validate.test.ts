@@ -28,6 +28,7 @@ describe('validation', () => {
         { type: 'mystery' },
         { type: 'minCredits', label: 'Neg', credits: -3 },
         { type: 'minGroups', label: 'Half', count: 1.5 },
+        { type: 'minCredits', label: 'Huge', credits: Infinity },
       ],
     }
     expect(templateErrors({ ...csTemplate, sections: [section], checks: [{ id: 'c', codes: [] }] })).toEqual([
@@ -36,6 +37,7 @@ describe('validation', () => {
       'sections[0].constraints[1].type "mystery" is not supported',
       'sections[0].constraints[2].credits must be a number of at least 0',
       'sections[0].constraints[3].count must be a whole number of at least 0',
+      'sections[0].constraints[4].credits must be a number of at least 0',
       'checks[0] needs metText and missText',
     ])
   })
