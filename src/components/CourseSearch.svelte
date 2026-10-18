@@ -68,7 +68,7 @@
   {/if}
   <button class="custom" onclick={onCustom}>+ Custom course</button>
 </div>
-{#if app.catalogError}<p class="muted tiny">{app.catalogError}</p>{/if}
+{#if app.catalogError}<p class="muted tiny" role="status">{app.catalogError}</p>{/if}
 
 <style>
   .results {
