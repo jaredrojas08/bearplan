@@ -31,7 +31,11 @@ function constraintErrors(constraint: unknown, where: string): string[] {
   if (!(type in COUNT_KEYS)) return [`${where}.type "${String(constraint.type)}" is not supported`]
   const errors: string[] = []
   if (!isString(constraint.label)) errors.push(`${where}.label is missing`)
-  if (typeof constraint[COUNT_KEYS[type]] !== 'number') errors.push(`${where}.${COUNT_KEYS[type]} must be a number`)
+  const key = COUNT_KEYS[type]
+  const value = constraint[key]
+  // Negative thresholds pass with no courses, and fractional counts can never be met exactly.
+  const valid = typeof value === 'number' && value >= 0 && (key === 'credits' || Number.isInteger(value))
+  if (!valid) errors.push(`${where}.${key} must be ${key === 'count' ? 'a whole number' : 'a number'} of at least 0`)
   if (type === 'minCount' || type === 'maxCount') errors.push(...matchErrors(constraint.match, `${where}.match`))
   if (type === 'maxCount' && !isString(constraint.reason)) errors.push(`${where}.reason is missing`)
   if ((type === 'groupMinCredits' || type === 'groupMaxCount') && !isString(constraint.group)) errors.push(`${where}.group is missing`)
