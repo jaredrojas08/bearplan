@@ -43,9 +43,11 @@ async function get(path, attempt = 1) {
     return get(path, attempt + 1)
   }
 
-  let res
+  // The body read sits inside the try so a stalled or dropped body retries; bad JSON stays fatal.
+  let res, text
   try {
     res = await fetch(API + path, { signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) })
+    text = await res.text()
   } catch (err) {
     return retry(err.name === 'TimeoutError' ? 'timed out' : err.message)
   }
@@ -53,7 +55,7 @@ async function get(path, attempt = 1) {
   if (res.status === 404 && path.startsWith('search/')) return null
   if (res.status === 429 || res.status >= 500) return retry(`HTTP ${res.status}`)
   if (!res.ok) throw new Error(`${path}: HTTP ${res.status}`)
-  const body = await res.json()
+  const body = JSON.parse(text)
   if (body.status !== 'success') throw new Error(`${path}: ${body.message ?? 'API error'}`)
   return body.data
 }
