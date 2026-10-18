@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="BearPlan">
+  <!-- Line glyph for use inside UI. Uses currentColor for strokes.
+       The pen is filled with var(--glyph-bg); set that CSS variable to the color behind the glyph. -->
+  <path d="M16 8H24a3.5 3.5 0 0 0 3 6a3.5 3.5 0 0 0 5 4a3.5 3.5 0 0 0 6 3V38a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V12a4 4 0 0 1 4-4z"/>
+  <path d="M21 19q5 1 9 5"/>
+  <path d="M22 25q4.5 1 8 5"/>
+  <path d="M23 31q4 1 7 4"/>
+  <path d="M32 22V42"/>
+  <path d="M19 42V47l2.5-2 2.5 2V42"/>
+  <g transform="rotate(-32 13 20)">
+    <rect x="10" y="4" width="6" height="22" rx="1.5" style="fill: var(--glyph-bg, #C8102E)"/>
+    <path d="M10 26l3 5 3-5" style="fill: var(--glyph-bg, #C8102E)"/>
+    <path d="M10 9h6"/>
+  </g>
+</svg>
