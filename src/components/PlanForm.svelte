@@ -2,6 +2,7 @@
   import type { Snippet } from 'svelte'
   import { readFile } from '../lib/files'
   import { app, type PlanDetails } from '../lib/store.svelte'
+  import type { Term } from '../types'
   import { latestFall, nextTerm, shiftTerm, termIndex, termRange, termStatus } from '../lib/terms'
 
   let {
@@ -17,8 +18,14 @@
   } = $props()
 
   const defaultEntry = latestFall(app.today)
-  // Recent entry years only; older plans can still come in through an import.
-  const entryOptions = termRange(shiftTerm(defaultEntry, -14), shiftTerm(defaultEntry, 2))
+  const earlier = (a: Term, b: Term) => (termIndex(a) <= termIndex(b) ? a : b)
+  const later = (a: Term, b: Term) => (termIndex(a) >= termIndex(b) ? a : b)
+  // Recent entry years only, widened so an imported plan's own terms stay selectable.
+  // svelte-ignore state_referenced_locally
+  const entryOptions = termRange(
+    earlier(shiftTerm(defaultEntry, -14), initial?.entryTerm ?? defaultEntry),
+    later(shiftTerm(defaultEntry, 2), initial?.entryTerm ?? defaultEntry),
+  )
 
   // svelte-ignore state_referenced_locally
   let name = $state(initial?.name ?? '')
@@ -31,7 +38,7 @@
   let templateMessage = $state('')
   let fileInput: HTMLInputElement
 
-  let gradOptions = $derived(termRange(nextTerm(entryTerm), shiftTerm(entryTerm, 13)))
+  let gradOptions = $derived(termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)))
   let termCount = $derived(termIndex(gradTerm) - termIndex(entryTerm) + 1)
   let selectedTemplate = $derived(app.templates.find((t) => t.id === templateId))
 

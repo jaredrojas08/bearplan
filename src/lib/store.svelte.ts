@@ -169,6 +169,11 @@ class AppState {
     }
     this.templates = [...this.templates.filter((t) => t.id !== template.id), template]
     this.persist(TEMPLATES_KEY, this.templates.filter((t) => !BUILT_IN_TEMPLATES.some((b) => b.id === t.id)))
+    // A replaced template can drop slots, so the open plan's placements need rechecking.
+    if (this.plan?.templateId === template.id) {
+      this.moving = null
+      this.plan = this.adopt($state.snapshot(this.plan))
+    }
     return { errors: [], template }
   }
 
@@ -180,7 +185,7 @@ class AppState {
     link.href = url
     link.download = `bearplan-${this.plan.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-') || 'plan'}.json`
     link.click()
-    URL.revokeObjectURL(url)
+    setTimeout(() => URL.revokeObjectURL(url))
   }
 
   private adopt(plan: Plan): Plan | null {
