@@ -2,6 +2,7 @@
   import type { SectionResult } from '../lib/requirements'
   import { app } from '../lib/store.svelte'
   import { ADDITIONAL, type Section } from '../types'
+  import { readFile } from '../lib/files'
   import CourseSearch from './CourseSearch.svelte'
   import CustomCourseDialog from './CustomCourseDialog.svelte'
   import Icon from './Icon.svelte'
@@ -21,6 +22,19 @@
   }
 
   let filter = $state('all')
+  let planInput: HTMLInputElement
+  let importErrors = $state<string[]>([])
+
+  async function onPlanFile(event: Event) {
+    const file = await readFile(event)
+    if (!file) return
+    if ('error' in file) {
+      importErrors = [file.error]
+      return
+    }
+    if (!confirm('Replace your current plan with this file? Export first if you want to keep it.')) return
+    importErrors = app.importPlan(file.text)
+  }
   let customDialog: CustomCourseDialog
 
   let extraResult = $derived.by((): SectionResult => {
@@ -78,7 +92,17 @@
       <span class="eyebrow">{app.template?.name} · {app.template?.college}</span>
       <h1 class="title">Degree requirements</h1>
     </div>
+    <div class="actions">
+      <button class="btn" onclick={() => planInput.click()}>Import</button>
+      <button class="btn" onclick={() => app.exportPlan()}>Export</button>
+      <input bind:this={planInput} type="file" accept="application/json,.json" hidden onchange={onPlanFile} />
+    </div>
   </header>
+  {#if importErrors.length}
+    <ul class="errors" role="alert">
+      {#each importErrors.slice(0, 5) as error (error)}<li>{error}</li>{/each}
+    </ul>
+  {/if}
 
   <div class="filters" role="toolbar" aria-label="Requirement groups">
     {#each filters as f (f.id)}
@@ -145,6 +169,18 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+  }
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  .errors {
+    margin: 0;
+    padding: 10px 14px 10px 28px;
+    border-radius: 12px;
+    background: var(--warn-bg);
+    color: var(--warn-ink);
+    font-size: 13px;
   }
   .filters {
     display: flex;

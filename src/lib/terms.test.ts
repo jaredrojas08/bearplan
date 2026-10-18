@@ -1,10 +1,20 @@
 import { describe, expect, it } from 'vitest'
-import { currentTerm, nextTerm, termRange, termStatus, upcomingTerm } from './terms'
+import { currentTerm, latestFall, nextTerm, shiftTerm, termRange, termStatus, upcomingTerm } from './terms'
 
 describe('terms', () => {
   it('lists every term from entry to graduation', () => {
     expect(termRange('FA24', 'SP28')).toEqual(['FA24', 'SP25', 'FA25', 'SP26', 'FA26', 'SP27', 'FA27', 'SP28'])
     expect(nextTerm('FA99')).toBe('SP00')
+    expect(shiftTerm('FA24', 7)).toBe('SP28')
+    expect(shiftTerm('FA24', -2)).toBe('FA23')
+  })
+
+  it('finds the most recent fall that has started', () => {
+    expect(latestFall(new Date(2026, 9, 18))).toBe('FA26')
+    expect(latestFall(new Date(2026, 2, 1))).toBe('FA25')
+    expect(latestFall(new Date(2026, 6, 31))).toBe('FA25')
+    expect(latestFall(new Date(2026, 7, 1))).toBe('FA26')
+    expect(latestFall(new Date(2100, 0, 15))).toBe('FA99')
   })
 
   it('derives the current term from the date', () => {

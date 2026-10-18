@@ -6,7 +6,7 @@
   import { app } from '../lib/store.svelte'
   import Icon from './Icon.svelte'
 
-  let { view = $bindable() }: { view: View } = $props()
+  let { view = $bindable(), onSettings }: { view: View; onSettings: () => void } = $props()
 
   let initials = $derived(
     (app.plan?.name ?? '')
@@ -39,6 +39,9 @@
   <div class="spacer"></div>
   <button class="icon-btn" aria-label={app.dark ? 'Switch to light mode' : 'Switch to dark mode'} onclick={() => app.toggleDark()}>
     <Icon name={app.dark ? 'sun' : 'moon'} size={18} />
+  </button>
+  <button class="icon-btn" aria-label="Plan settings, import and export" onclick={onSettings}>
+    <Icon name="settings" size={20} />
   </button>
   {#if initials}<div class="avatar" aria-hidden="true">{initials}</div>{/if}
 </nav>

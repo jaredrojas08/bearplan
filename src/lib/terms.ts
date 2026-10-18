@@ -25,8 +25,18 @@ export function termRange(from: Term, to: Term): Term[] {
   return terms
 }
 
+export function shiftTerm(term: Term, by: number): Term {
+  return termFromIndex(termIndex(term) + by)
+}
+
 export function nextTerm(term: Term): Term {
-  return termFromIndex(termIndex(term) + 1)
+  return shiftTerm(term, 1)
+}
+
+/** The most recent fall term that has started, e.g. FA26 in October 2026 and FA25 in March 2026. */
+export function latestFall(today: Date): Term {
+  const year = today.getFullYear() - (today.getMonth() >= 7 ? 0 : 1)
+  return `FA${String(year % 100).padStart(2, '0')}`
 }
 
 /**
