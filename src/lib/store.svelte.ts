@@ -4,13 +4,20 @@ import { ADDITIONAL, type CatalogCourse, type Plan, type PlanCourse, type Templa
 import { buildIndex, type SearchIndexEntry } from './search'
 import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, type CourseFacts } from './requirements'
 import { currentTerm, termIndex, termRange } from './terms'
-import { normalizePlan, planErrors } from './validate'
+import { normalizePlan, planErrors, templateErrors } from './validate'
 
 export interface NewCourse extends CourseFacts {
   title: string
 }
 
 /** A course being moved (has a uid) or a new one being placed (no uid). */
+export interface PlanDetails {
+  name: string
+  templateId: string
+  entryTerm: Term
+  gradTerm: Term
+}
+
 export interface Moving {
   course: NewCourse
   uid?: string
@@ -18,6 +25,7 @@ export interface Moving {
 
 const PLAN_KEY = 'bearplan:plan'
 const THEME_KEY = 'bearplan:theme'
+const TEMPLATES_KEY = 'bearplan:templates'
 
 export const BUILT_IN_TEMPLATES: Template[] = [csTemplate as Template]
 
@@ -65,9 +73,15 @@ class AppState {
   })
 
   constructor() {
+    const imported = readJson(TEMPLATES_KEY)
+    if (Array.isArray(imported)) {
+      const valid = imported.filter((t) => templateErrors(t).length === 0) as Template[]
+      this.templates = [...BUILT_IN_TEMPLATES, ...valid.filter((t) => !BUILT_IN_TEMPLATES.some((b) => b.id === t.id))]
+    }
+
+    // No saved plan, or one that no longer validates, sends the user to onboarding.
     const stored = readJson(PLAN_KEY)
-    // TODO: replace the example fallback with onboarding.
-    this.plan = this.adopt(stored && planErrors(stored).length === 0 ? (stored as Plan) : (examplePlan as Plan))
+    this.plan = stored && planErrors(stored).length === 0 ? this.adopt(stored as Plan) : null
 
     const theme = readJson(THEME_KEY)
     this.dark = theme === null ? window.matchMedia('(prefers-color-scheme: dark)').matches : theme === 'dark'
@@ -94,6 +108,79 @@ class AppState {
     } catch {
       this.catalogError = 'Course list unavailable. Run npm run fetch-courses, or add a custom course.'
     }
+  }
+
+  createPlan(details: PlanDetails) {
+    this.plan = { version: 1, ...details, swimTest: false, spclArea: '', courses: [] }
+  }
+
+  loadExample() {
+    this.plan = this.adopt(structuredClone(examplePlan) as Plan)
+  }
+
+  /** Changing the template can orphan placements, so those courses move to additional space. */
+  updateDetails(details: PlanDetails) {
+    if (!this.plan) return
+    this.moving = null
+    this.plan = this.adopt({ ...$state.snapshot(this.plan), ...details })
+  }
+
+  resetPlan() {
+    this.moving = null
+    this.plan = null
+    try {
+      localStorage.removeItem(PLAN_KEY)
+    } catch {
+      // Nothing saved to remove.
+    }
+  }
+
+  /** Returns the problems that stopped the import, or an empty list on success. */
+  importPlan(text: string): string[] {
+    let data: unknown
+    try {
+      data = JSON.parse(text)
+    } catch {
+      return ['The file is not valid JSON.']
+    }
+    const errors = planErrors(data)
+    if (errors.length) return errors
+    const plan = data as Plan
+    if (!this.templates.some((t) => t.id === plan.templateId)) {
+      return [`This plan uses the "${plan.templateId}" checklist. Import that template first.`]
+    }
+    this.moving = null
+    this.plan = this.adopt(plan)
+    return []
+  }
+
+  importTemplate(text: string): { errors: string[]; template?: Template } {
+    let data: unknown
+    try {
+      data = JSON.parse(text)
+    } catch {
+      return { errors: ['The file is not valid JSON.'] }
+    }
+    const errors = templateErrors(data)
+    if (errors.length) return { errors }
+    const template = data as Template
+    if (BUILT_IN_TEMPLATES.some((t) => t.id === template.id)) {
+      return { errors: [`"${template.id}" is a built-in checklist. Give your copy a different id.`] }
+    }
+    this.templates = [...this.templates.filter((t) => t.id !== template.id), template]
+    this.persist(TEMPLATES_KEY, this.templates.filter((t) => !BUILT_IN_TEMPLATES.some((b) => b.id === t.id)))
+    return { errors: [], template }
+  }
+
+  exportPlan() {
+    if (!this.plan) return
+    const blob = new Blob([JSON.stringify($state.snapshot(this.plan), null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `bearplan-${this.plan.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-') || 'plan'}.json`
+    link.click()
+    URL.revokeObjectURL(url)
   }
 
   private adopt(plan: Plan): Plan | null {
