@@ -12,6 +12,9 @@ describe('terms', () => {
   it('finds the most recent fall that has started', () => {
     expect(latestFall(new Date(2026, 9, 18))).toBe('FA26')
     expect(latestFall(new Date(2026, 2, 1))).toBe('FA25')
+    expect(latestFall(new Date(2026, 6, 31))).toBe('FA25')
+    expect(latestFall(new Date(2026, 7, 1))).toBe('FA26')
+    expect(latestFall(new Date(2100, 0, 15))).toBe('FA99')
   })
 
   it('derives the current term from the date', () => {

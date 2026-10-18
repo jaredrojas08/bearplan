@@ -31,7 +31,6 @@
     }
     const { errors, template } = app.importTemplate(file.text)
     message = template ? `Added "${template.name}". Pick it above to switch.` : errors.slice(0, 4).join(' ')
-    formKey += 1
   }
 
   function startOver() {
