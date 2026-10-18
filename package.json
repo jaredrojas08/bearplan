@@ -23,5 +23,8 @@
     "vitest": "^4.1.12"
   },
   "description": "Cornell degree-progress planner",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  }
 }
