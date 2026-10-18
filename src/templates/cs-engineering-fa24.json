@@ -1,0 +1,302 @@
+{
+  "id": "cs-engineering-fa24",
+  "name": "Computer Science",
+  "college": "Engineering",
+  "matriculatedFrom": "FA24",
+  "totalCredits": 123,
+  "totalCreditsNote": "123 cr minimum per the Fall 2024 Engineering handbook. Confirm with your advisor.",
+  "filters": [
+    { "id": "college", "label": "College", "icon": "book" },
+    { "id": "core", "label": "CS Core", "icon": "code" },
+    { "id": "electives", "label": "Electives", "icon": "star" }
+  ],
+  "repeatableCodes": ["CS 4999"],
+  "failingGrades": ["S", "SX", "U", "UX", "D+", "D", "D-", "F"],
+  "sections": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "column": "left",
+      "filter": "college",
+      "icon": "pen",
+      "leftLabel": "FWS",
+      "type": "slots",
+      "slots": [
+        { "id": "fws1", "label": "FWS 1", "rule": [{ "distributions": ["WRT"], "reason": "Not a writing seminar" }] },
+        { "id": "fws2", "label": "FWS 2", "rule": [{ "distributions": ["WRT"], "reason": "Not a writing seminar" }] }
+      ]
+    },
+    {
+      "id": "libstudies",
+      "title": "Liberal Studies",
+      "column": "left",
+      "filter": "college",
+      "icon": "book",
+      "note": "6 courses · 18+ cr · 2 at 2000+ · 3 of 7 groups · one 3+ cr course from Group 7 (Race & Equity) · max 2 from Group 6 (CE) · a multi-category course counts once",
+      "type": "slots",
+      "groups": [
+        { "id": "G1", "name": "Cultural Analysis, Literature and the Arts", "categories": ["CA", "LA", "LAD", "ALC", "SCD-HA"] },
+        { "id": "G2", "name": "Historical Analysis", "categories": ["HA", "HST"] },
+        { "id": "G3", "name": "Ethics, Cognition, and Moral Reasoning", "categories": ["KCM", "ETM"] },
+        { "id": "G4", "name": "Social Science and Global Citizenship", "categories": ["SBA", "SSC", "GLC"] },
+        { "id": "G5", "name": "Foreign Languages", "categories": ["FL"] },
+        { "id": "G6", "name": "Communications in Engineering", "categories": ["CE"] },
+        { "id": "G7", "name": "Race and Equity", "categories": ["SCD-AS", "D-AG"] }
+      ],
+      "slots": [
+        { "id": "ls1", "label": "LS 1", "rule": [{ "distributions": ["CA", "LA", "LAD", "ALC", "SCD-HA", "HA", "HST", "KCM", "ETM", "SBA", "SSC", "GLC", "FL", "CE", "SCD-AS", "D-AG"] }] },
+        { "id": "ls2", "label": "LS 2", "rule": [{ "distributions": ["CA", "LA", "LAD", "ALC", "SCD-HA", "HA", "HST", "KCM", "ETM", "SBA", "SSC", "GLC", "FL", "CE", "SCD-AS", "D-AG"] }] },
+        { "id": "ls3", "label": "LS 3", "rule": [{ "distributions": ["CA", "LA", "LAD", "ALC", "SCD-HA", "HA", "HST", "KCM", "ETM", "SBA", "SSC", "GLC", "FL", "CE", "SCD-AS", "D-AG"] }] },
+        { "id": "ls4", "label": "LS 4", "rule": [{ "distributions": ["CA", "LA", "LAD", "ALC", "SCD-HA", "HA", "HST", "KCM", "ETM", "SBA", "SSC", "GLC", "FL", "CE", "SCD-AS", "D-AG"] }] },
+        { "id": "ls5", "label": "LS 5", "rule": [{ "distributions": ["CA", "LA", "LAD", "ALC", "SCD-HA", "HA", "HST", "KCM", "ETM", "SBA", "SSC", "GLC", "FL", "CE", "SCD-AS", "D-AG"] }] },
+        { "id": "ls6", "label": "LS 6", "rule": [{ "distributions": ["CA", "LA", "LAD", "ALC", "SCD-HA", "HA", "HST", "KCM", "ETM", "SBA", "SSC", "GLC", "FL", "CE", "SCD-AS", "D-AG"] }] }
+      ],
+      "constraints": [
+        { "type": "minCredits", "label": "Credits", "credits": 18 },
+        { "type": "minCount", "label": "2000+", "count": 2, "match": { "minLevel": 2000 } },
+        { "type": "minGroups", "label": "Groups", "count": 3 },
+        { "type": "groupMinCredits", "label": "Race & Equity", "group": "G7", "credits": 3 },
+        { "type": "groupMaxCount", "label": "CE", "group": "G6", "count": 2 }
+      ]
+    },
+    {
+      "id": "calculus",
+      "title": "Calculus",
+      "column": "left",
+      "filter": "college",
+      "icon": "sigma",
+      "type": "slots",
+      "slots": [
+        { "id": "m1", "label": "MATH 1910", "rule": [{ "codes": ["MATH 1910"] }] },
+        { "id": "m2", "label": "MATH 1920", "rule": [{ "codes": ["MATH 1920"] }] },
+        { "id": "m3", "label": "MATH 2940", "rule": [{ "codes": ["MATH 2940"] }] }
+      ]
+    },
+    {
+      "id": "physics",
+      "title": "Physics",
+      "column": "left",
+      "filter": "college",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        { "id": "p1", "label": "PHYS 1110", "rule": [{ "codes": ["PHYS 1110"] }] },
+        { "id": "p2", "label": "PHYS 1112 / 1116", "rule": [{ "codes": ["PHYS 1112", "PHYS 1116"] }] },
+        { "id": "p3", "label": "PHYS 2213 / 2217", "rule": [{ "codes": ["PHYS 2213", "PHYS 2217"] }] }
+      ]
+    },
+    {
+      "id": "chem2080",
+      "title": "CHEM 2080 or PHYS 2214",
+      "column": "left",
+      "filter": "college",
+      "icon": "flask",
+      "leftLabel": "CHEM 2080 / substitute",
+      "note": "Substitutes: CHEM 2150, BTRY 3080, ECE 3100, ECON 3130, MATH 2930, MATH 4710, PHYS 2214, PHYS 2218, STSCI 3080",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "chem2080",
+          "label": "CHEM 2080 or substitute",
+          "rule": [{ "codes": ["CHEM 2080", "CHEM 2150", "BTRY 3080", "ECE 3100", "ECON 3130", "MATH 2930", "MATH 4710", "PHYS 2214", "PHYS 2218", "STSCI 3080"], "reason": "Not CHEM 2080 or an approved substitute" }]
+        }
+      ]
+    },
+    {
+      "id": "chem2090",
+      "title": "CHEM 2090",
+      "column": "left",
+      "filter": "college",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [{ "id": "chem2090", "label": "CHEM 2090", "rule": [{ "codes": ["CHEM 2090"] }] }]
+    },
+    {
+      "id": "intro",
+      "title": "Intro Programming",
+      "column": "left",
+      "filter": "college",
+      "icon": "code",
+      "note": "CS 1110 / 1112 / 1114 / 1115. The handbook lists 1110 and 1112; confirm 1114 and 1115 with your advisor.",
+      "type": "slots",
+      "slots": [{ "id": "intro", "label": "CS 1110 / 1112", "rule": [{ "codes": ["CS 1110", "CS 1112", "CS 1114", "CS 1115"] }] }]
+    },
+    {
+      "id": "distribution",
+      "title": "Distribution",
+      "column": "left",
+      "filter": "college",
+      "icon": "star",
+      "type": "slots",
+      "slots": [
+        { "id": "d1", "label": "CS/ENGRD 2110 / 2112", "rule": [{ "codes": ["CS 2110", "CS 2112", "ENGRD 2110", "ENGRD 2112"] }] },
+        { "id": "d2", "label": "D2 EngrD", "rule": [{ "subjects": ["ENGRD"] }] },
+        { "id": "d3", "label": "D3 Intro Engr", "rule": [{ "subjects": ["ENGRI"] }] }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "left",
+      "filter": "college",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test. PE credits do not count toward the degree total.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        { "id": "pe1", "label": "PE 1", "rule": [{ "subjects": ["PE"] }] },
+        { "id": "pe2", "label": "PE 2", "rule": [{ "subjects": ["PE"] }] }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "CS Core",
+      "column": "right",
+      "filter": "core",
+      "icon": "code",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        { "id": "c1", "label": "CS 2800 / 2802", "rule": [{ "codes": ["CS 2800", "CS 2802"] }] },
+        { "id": "c2", "label": "CS 3110", "rule": [{ "codes": ["CS 3110"] }] },
+        { "id": "c3", "label": "CS 3410 / 3420 / ECE 3140", "rule": [{ "codes": ["CS 3410", "CS 3420", "ECE 3140"] }] },
+        { "id": "c4", "label": "CS 3700 / 3780", "rule": [{ "codes": ["CS 3700", "CS 3780"] }] },
+        { "id": "c5", "label": "CS 4410 / 4414", "rule": [{ "codes": ["CS 4410", "CS 4414"] }] },
+        { "id": "c6", "label": "CS 4820", "rule": [{ "codes": ["CS 4820"] }] }
+      ]
+    },
+    {
+      "id": "cs-electives",
+      "title": "CS Electives",
+      "column": "right",
+      "filter": "electives",
+      "icon": "code",
+      "note": "Non-core CS 4000+, 3+ cr. Not CS 4090, 4997, 4998, 4999. CS 3700 or 3780 counts if not used in the core.",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "ce1",
+          "label": "CS 4000+",
+          "rule": [
+            { "subjects": ["CS"], "minLevel": 4000, "minCredits": 3, "excludeCodes": ["CS 4410", "CS 4414", "CS 4820", "CS 4090", "CS 4997", "CS 4998", "CS 4999"] },
+            { "codes": ["CS 3700", "CS 3780"] }
+          ]
+        },
+        {
+          "id": "ce2",
+          "label": "CS 4000+",
+          "rule": [
+            { "subjects": ["CS"], "minLevel": 4000, "minCredits": 3, "excludeCodes": ["CS 4410", "CS 4414", "CS 4820", "CS 4090", "CS 4997", "CS 4998", "CS 4999"] },
+            { "codes": ["CS 3700", "CS 3780"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cs-project",
+      "title": "CS Project",
+      "column": "right",
+      "filter": "electives",
+      "icon": "star",
+      "note": "CS 4xx1 practicum, or CS 3152, 4152, 4154, 4752, 5150, 5152, 5412, 5414, 5431, 5625, 5643. The handbook says 4000+, so confirm CS 3152 with the CS department list.",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "pr1",
+          "label": "Project course",
+          "rule": [
+            { "codes": ["CS 3152", "CS 4152", "CS 4154", "CS 4752", "CS 5150", "CS 5152", "CS 5412", "CS 5414", "CS 5431", "CS 5625", "CS 5643"], "minCredits": 2, "reason": "Not a CS project course" },
+            { "subjects": ["CS"], "numberPattern": ["4xx1"], "minCredits": 2, "reason": "Not a CS project course" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-electives",
+      "title": "Technical Electives",
+      "column": "right",
+      "filter": "electives",
+      "icon": "flask",
+      "leftLabel": "Technical Elective",
+      "note": "3000+, 3+ cr, technical with a qualifying prerequisite. At most one 2000-level course; max two CS 4999; no CS 4090/4997/4998.",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        { "id": "te1", "label": "3000+", "rule": [{ "minLevel": 2000, "minCredits": 3, "excludeCodes": ["CS 4090", "CS 4997", "CS 4998"] }] },
+        { "id": "te2", "label": "3000+", "rule": [{ "minLevel": 2000, "minCredits": 3, "excludeCodes": ["CS 4090", "CS 4997", "CS 4998"] }] },
+        { "id": "te3", "label": "3000+", "rule": [{ "minLevel": 2000, "minCredits": 3, "excludeCodes": ["CS 4090", "CS 4997", "CS 4998"] }] }
+      ],
+      "constraints": [
+        { "type": "maxCount", "label": "2000-level", "count": 1, "match": { "maxLevel": 2999 }, "reason": "Only one 2000-level course allowed" },
+        { "type": "maxCount", "label": "CS 4999", "count": 2, "match": { "codes": ["CS 4999"] }, "reason": "At most two CS 4999" }
+      ]
+    },
+    {
+      "id": "ext-spec",
+      "title": "External Specialization",
+      "column": "right",
+      "filter": "electives",
+      "icon": "book",
+      "leftLabel": "External Spec.",
+      "note": "Three related courses, 3000+, 3+ cr each. No CS, independent study, LING 4474, INFO 3300/4300/4302/5300.",
+      "type": "slots",
+      "letterGrade": true,
+      "spcl": true,
+      "slots": [
+        { "id": "ex1", "label": "3000+", "rule": [{ "excludeSubjects": ["CS"], "minLevel": 3000, "minCredits": 3, "excludeCodes": ["LING 4474", "INFO 3300", "INFO 4300", "INFO 4302", "INFO 5300"] }] },
+        { "id": "ex2", "label": "3000+", "rule": [{ "excludeSubjects": ["CS"], "minLevel": 3000, "minCredits": 3, "excludeCodes": ["LING 4474", "INFO 3300", "INFO 4300", "INFO 4302", "INFO 5300"] }] },
+        { "id": "ex3", "label": "3000+", "rule": [{ "excludeSubjects": ["CS"], "minLevel": 3000, "minCredits": 3, "excludeCodes": ["LING 4474", "INFO 3300", "INFO 4300", "INFO 4302", "INFO 5300"] }] }
+      ]
+    },
+    {
+      "id": "major-approved",
+      "title": "Major-Approved Elective",
+      "column": "right",
+      "filter": "electives",
+      "icon": "star",
+      "leftLabel": "Major-Approved",
+      "note": "3 cr total. No PE, 10xx, Engineering AEWs, or ROTC below 3000.",
+      "type": "creditBucket",
+      "minCredits": 3,
+      "rule": [
+        { "excludeSubjects": ["PE", "AIRS", "MILS", "NAVS"], "excludeNumberPattern": ["10xx"] },
+        { "subjects": ["AIRS", "MILS", "NAVS"], "minLevel": 3000 }
+      ]
+    },
+    {
+      "id": "advisor-approved",
+      "title": "Advisor-Approved Electives",
+      "column": "right",
+      "filter": "electives",
+      "icon": "star",
+      "leftLabel": "Advisor-Approved",
+      "note": "Two courses, 6 cr minimum. Same exclusions as the Major-Approved Elective.",
+      "type": "creditBucket",
+      "minCredits": 6,
+      "rule": [
+        { "excludeSubjects": ["PE", "AIRS", "MILS", "NAVS"], "excludeNumberPattern": ["10xx"] },
+        { "subjects": ["AIRS", "MILS", "NAVS"], "minLevel": 3000 }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "probability",
+      "title": "Probability",
+      "codes": ["BTRY 3080", "CS 4850", "ECE 3100", "ECON 3130", "ENGRD 2700", "MATH 4710"],
+      "metText": "satisfied by {code}",
+      "missText": "not yet. Needs an accepted probability course (verify the list with the CS department)."
+    },
+    {
+      "id": "ecr",
+      "title": "Engineering Communications",
+      "codes": ["ENGRC 3020", "ENGRC 3023", "ENGRC 3025", "ENGRC 3026", "ENGRC 3027", "ENGRC 3120", "ENGRC 3152", "ENGRC 3340", "ENGRC 3341", "ENGRC 3350", "ENGRC 3500", "ENGRC 3610", "ENGRC 3700", "ENGRC 4152", "ENGRC 4590", "ORIE 4100", "COMM 3020", "COMM 3030", "HADM 3670"],
+      "metText": "satisfied by {code} (also counts where it sits)",
+      "missText": "not yet. Can double as a Liberal Studies, Advisor-Approved or major course."
+    }
+  ]
+}
