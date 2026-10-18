@@ -43,7 +43,7 @@ export function latestFall(today: Date): Term {
  * Position of today on the term line. January to May is spring, August to
  * December is fall, and summer sits halfway between, so no term is current.
  */
-export function nowIndex(today: Date): number {
+function nowIndex(today: Date): number {
   const year = today.getFullYear()
   const month = today.getMonth() + 1
   if (month <= 5) return year * 2
@@ -54,6 +54,12 @@ export function nowIndex(today: Date): number {
 export function currentTerm(today: Date): Term | null {
   const index = nowIndex(today)
   return Number.isInteger(index) ? termFromIndex(index) : null
+}
+
+/** The current or next term in a plan, or its last term once the plan is over. */
+export function upcomingTerm(terms: Term[], today: Date): Term {
+  const now = nowIndex(today)
+  return terms.find((t) => termIndex(t) >= now) ?? terms[terms.length - 1]
 }
 
 export function termStatus(term: Term, today: Date): Status {
