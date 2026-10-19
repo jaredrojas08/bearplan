@@ -206,8 +206,9 @@
   }
   .chip-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 6px;
+    gap: 0 6px;
     font-size: 13px;
   }
   .chip-top b {
