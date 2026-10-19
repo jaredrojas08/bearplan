@@ -66,7 +66,8 @@ describe('validation', () => {
         { uid: 'c', code: 'X 2', title: '', credits: 1, term: 'FA24', placement: 'core/c1/extra' },
       ],
     }
-    const fixed = normalizePlan(messy, csTemplate as Template)
+    const fixed = normalizePlan({ ...messy, repeatable: [' music  3610 '] }, csTemplate as Template)
+    expect(fixed.repeatable).toEqual(['MUSIC 3610'])
     expect(fixed.courses.slice(-3).map((c) => c.placement)).toEqual(['additional', 'additional', 'additional'])
   })
 })

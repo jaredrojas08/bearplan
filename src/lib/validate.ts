@@ -1,5 +1,5 @@
 import { ADDITIONAL, type Plan, type PlanCourse, type Template } from '../types'
-import { findTarget } from './requirements'
+import { findTarget, normalizeCode } from './requirements'
 import { isTerm, termIndex } from './terms'
 
 // Imported JSON comes from users, so check the shape before the app trusts it.
@@ -157,5 +157,7 @@ export function normalizePlan(plan: Plan, template: Template): Plan {
     }
     return course
   })
-  return { ...plan, swimTest: !!plan.swimTest, spclArea: plan.spclArea ?? '', courses }
+  // Hand-edited files may write "cs  4998"; matching compares normalized codes.
+  const repeatable = plan.repeatable?.map(normalizeCode)
+  return { ...plan, swimTest: !!plan.swimTest, spclArea: plan.spclArea ?? '', courses, ...(repeatable ? { repeatable } : {}) }
 }
