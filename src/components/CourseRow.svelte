@@ -156,6 +156,10 @@
   .grade {
     font-weight: 500;
   }
+  /* Chrome draws a dropdown arrow for inputs with a datalist, which covers two-letter grades. */
+  .grade::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
   .note {
     font-size: 11px;
     color: var(--muted);
