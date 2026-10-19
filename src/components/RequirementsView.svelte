@@ -72,12 +72,26 @@
     ...(app.template?.filters ?? []).map((f) => ({ ...f, icon: f.icon ?? 'star', open: app.summary?.openByFilter[f.id] ?? 0 })),
   ])
 
-  let targetSummary = $derived.by(() => {
-    if (!app.targets || !app.template) return { count: 0, areas: '' }
-    const open = [...app.targets].filter(([, failure]) => failure === null).map(([p]) => p)
-    const areas = [...new Set(open.map((p) => app.placementLabel(p)))]
-    return { count: open.length, areas: areas.length ? areas.join(', ') : 'no other requirement' }
+  // One button per requirement the course fits, so placing it never needs a scroll to the row.
+  let spots = $derived.by(() => {
+    const byLabel = new Map<string, string>()
+    for (const [placement, failure] of app.targets ?? []) {
+      const label = placement === ADDITIONAL ? 'Additional Space' : app.placementLabel(placement)
+      if (failure === null && !byLabel.has(label)) byLabel.set(label, placement)
+    }
+    return [...byLabel].map(([label, placement]) => ({ label, placement }))
   })
+
+  let placedMessage = $state('')
+  let placedTimer: ReturnType<typeof setTimeout> | undefined
+
+  function placeIn(spot: { label: string; placement: string }) {
+    const code = app.moving?.course.code
+    if (!app.place(spot.placement)) return
+    placedMessage = `${code} added to ${spot.label}`
+    clearTimeout(placedTimer)
+    placedTimer = setTimeout(() => (placedMessage = ''), 4000)
+  }
 
   function onKeydown(event: KeyboardEvent) {
     if (event.key === 'Escape' && app.moving) app.cancelMove()
@@ -117,7 +131,7 @@
   <section class="add" aria-labelledby="add-title">
     <div class="add-head">
       <h2 id="add-title" class="sub">Add courses</h2>
-      <span class="muted small">Drag onto a requirement, or click one and pick a spot. It only drops where it fits.</span>
+      <span class="muted small">Click a course to see where it fits, or drag it onto a requirement.</span>
     </div>
     <CourseSearch onCustom={() => customDialog.open()} />
   </section>
@@ -125,10 +139,21 @@
   {#if app.moving}
     <div class="banner" role="status">
       <span class="banner-title">{app.moving.uid ? 'Moving' : 'Placing'} <span class="mono">{app.moving.course.code}</span></span>
-      <span class="banner-sub">Fits {targetSummary.count} open {targetSummary.count === 1 ? 'spot' : 'spots'} in {targetSummary.areas}</span>
+      {#if spots.length}
+        <span class="banner-sub">Put it in</span>
+        <span class="spots">
+          {#each spots as spot (spot.placement)}
+            <button class="spot" onclick={() => placeIn(spot)}>{spot.label}</button>
+          {/each}
+        </span>
+      {:else}
+        <span class="banner-sub">Doesn't fit any open requirement</span>
+      {/if}
       <button class="btn cancel" onclick={() => app.cancelMove()}>Cancel</button>
     </div>
   {/if}
+  <!-- Stays mounted so screen readers announce the message when it changes. -->
+  <p class="placed" class:visually-hidden={!placedMessage || app.moving} role="status">{placedMessage}</p>
 
   <h2 class="sub">Requirements</h2>
   <div class="grid">
@@ -259,6 +284,31 @@
   .banner-sub {
     font-size: 13px;
     opacity: 0.85;
+  }
+  .spots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .spot {
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .spot:hover {
+    background: var(--on-accent);
+    color: var(--accent);
+  }
+  .placed {
+    margin: 0;
+    font-size: 13px;
+    color: var(--done);
+    font-weight: 600;
   }
   .cancel {
     margin-left: auto;
