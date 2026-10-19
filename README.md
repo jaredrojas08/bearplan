@@ -95,7 +95,7 @@ A saved plan looks like:
 }
 ```
 
-`placement` is `sectionId/slotId` for fixed rows, `sectionId` for credit buckets, or `additional`.
+`placement` is `sectionId/slotId` for fixed rows, `sectionId` for credit buckets, or `additional`. An optional `repeatable` list holds course codes the student marked as allowed more than once.
 
 ## Contributing
 

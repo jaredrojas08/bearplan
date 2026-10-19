@@ -10,7 +10,7 @@
     { "id": "core", "label": "CS Core", "icon": "code" },
     { "id": "electives", "label": "Electives", "icon": "star" }
   ],
-  "repeatableCodes": ["CS 4999"],
+  "repeatableCodes": ["CS 1998", "CS 2998", "CS 3998", "CS 4998", "CS 4999"],
   "failingGrades": ["S", "SX", "U", "UX", "D+", "D", "D-", "F"],
   "sections": [
     {

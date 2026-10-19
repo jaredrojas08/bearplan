@@ -92,6 +92,10 @@ export function ruleFailure(course: CourseFacts, rule: Match[] | undefined, sect
 
 // ---------- placements ----------
 
+export function isRepeatable(plan: Plan, template: Template, code: string): boolean {
+  return !!template.repeatableCodes?.includes(code) || !!plan.repeatable?.includes(code)
+}
+
 export function placementOf(section: Section, slot?: Slot): string {
   return slot ? `${section.id}/${slot.id}` : section.id
 }
@@ -143,7 +147,7 @@ export function placeFailure(
   }
 
   const code = normalizeCode(course.code)
-  if (!template.repeatableCodes?.includes(code)) {
+  if (!isRepeatable(plan, template, code)) {
     const twin = plan.courses.find((c) => c.uid !== movingUid && normalizeCode(c.code) === code)
     if (twin) return `Already counted in ${placementTitle(template, twin.placement)}`
   }
@@ -389,7 +393,7 @@ function courseWarnings(plan: Plan, template: Template): Record<string, string[]
 
   for (const course of plan.courses) {
     const code = normalizeCode(course.code)
-    if ((byCode.get(code)?.length ?? 0) > 1 && !template.repeatableCodes?.includes(code)) add(course.uid, 'Used twice')
+    if ((byCode.get(code)?.length ?? 0) > 1 && !isRepeatable(plan, template, code)) add(course.uid, 'Used twice')
 
     const target = findTarget(template, course.placement)
     if (!target) {
@@ -424,7 +428,7 @@ export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanS
   const creditCourses = plan.courses.filter((c) => !noCredit.has(c.placement.split('/')[0]))
   for (const course of creditCourses) {
     const code = normalizeCode(course.code)
-    if (seen.has(code) && !template.repeatableCodes?.includes(code)) continue
+    if (seen.has(code) && !isRepeatable(plan, template, code)) continue
     seen.add(code)
     credits[termStatus(course.term, today)] += course.credits
   }

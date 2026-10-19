@@ -1,5 +1,5 @@
 import { ADDITIONAL, type Plan, type PlanCourse, type Template } from '../types'
-import { findTarget } from './requirements'
+import { findTarget, normalizeCode } from './requirements'
 import { isTerm, termIndex } from './terms'
 
 // Imported JSON comes from users, so check the shape before the app trusts it.
@@ -130,6 +130,7 @@ export function planErrors(data: unknown): string[] {
   if (errors.length === 0 && termIndex(data.entryTerm as string) > termIndex(data.gradTerm as string)) {
     errors.push('Graduation term is before the entry term')
   }
+  if ('repeatable' in data && !isStringArray(data.repeatable)) errors.push('"repeatable" must be a list of course codes')
   if (!Array.isArray(data.courses)) return [...errors, '"courses" must be a list']
   data.courses.forEach((c: unknown, i: number) => errors.push(...courseErrors(c, i)))
   const uids = new Set<unknown>()
@@ -156,5 +157,7 @@ export function normalizePlan(plan: Plan, template: Template): Plan {
     }
     return course
   })
-  return { ...plan, swimTest: !!plan.swimTest, spclArea: plan.spclArea ?? '', courses }
+  // Hand-edited files may write "cs  4998"; matching compares normalized codes.
+  const repeatable = plan.repeatable?.map(normalizeCode)
+  return { ...plan, swimTest: !!plan.swimTest, spclArea: plan.spclArea ?? '', courses, ...(repeatable ? { repeatable } : {}) }
 }

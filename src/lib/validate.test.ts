@@ -52,6 +52,7 @@ describe('validation', () => {
       'courses[0].grade must be text',
       'courses[1].uid "a" is used twice',
     ])
+    expect(planErrors({ ...examplePlan, repeatable: 'CS 4998' })).toEqual(['"repeatable" must be a list of course codes'])
   })
 
   it('moves unknown or doubled placements to additional space', () => {
@@ -65,7 +66,8 @@ describe('validation', () => {
         { uid: 'c', code: 'X 2', title: '', credits: 1, term: 'FA24', placement: 'core/c1/extra' },
       ],
     }
-    const fixed = normalizePlan(messy, csTemplate as Template)
+    const fixed = normalizePlan({ ...messy, repeatable: [' music  3610 '] }, csTemplate as Template)
+    expect(fixed.repeatable).toEqual(['MUSIC 3610'])
     expect(fixed.courses.slice(-3).map((c) => c.placement)).toEqual(['additional', 'additional', 'additional'])
   })
 })

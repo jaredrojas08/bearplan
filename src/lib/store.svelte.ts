@@ -232,6 +232,12 @@ class AppState {
     this.moving = null
   }
 
+  toggleRepeatable(code: string) {
+    if (!this.plan) return
+    const codes = this.plan.repeatable ?? []
+    this.plan.repeatable = codes.includes(code) ? codes.filter((c) => c !== code) : [...codes, code]
+  }
+
   /** Drops the moving course into a placement if the rules allow it. */
   place(placement: string): boolean {
     const { plan, template, moving } = this

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SectionResult } from '../lib/requirements'
+  import { normalizeCode, type SectionResult } from '../lib/requirements'
   import { app } from '../lib/store.svelte'
   import { ADDITIONAL, type Section } from '../types'
   import { readFile } from '../lib/files'
@@ -82,6 +82,15 @@
     return [...byLabel].map(([label, placement]) => ({ label, placement }))
   })
 
+  // A new copy of a course already in the plan: offer to mark it repeatable instead of refusing every spot.
+  let repeatCode = $derived.by(() => {
+    const moving = app.moving
+    if (!moving || moving.uid || !app.plan || !app.template) return null
+    const code = normalizeCode(moving.course.code)
+    const inPlan = app.plan.courses.some((c) => normalizeCode(c.code) === code)
+    return inPlan && !app.template.repeatableCodes?.includes(code) ? code : null
+  })
+
   let placedMessage = $state('')
   let placedTimer: ReturnType<typeof setTimeout> | undefined
 
@@ -147,7 +156,12 @@
           {/each}
         </span>
       {:else}
-        <span class="banner-sub">Doesn't fit any open requirement</span>
+        <span class="banner-sub">{repeatCode ? 'Already in your plan' : "Doesn't fit any open requirement"}</span>
+      {/if}
+      {#if repeatCode}
+        <button class="spot" aria-pressed={!!app.plan?.repeatable?.includes(repeatCode)} onclick={() => app.toggleRepeatable(repeatCode!)}>
+          {app.plan?.repeatable?.includes(repeatCode) ? '✓ Can be repeated' : 'It can be repeated'}
+        </button>
       {/if}
       <button class="btn cancel" onclick={() => app.cancelMove()}>Cancel</button>
     </div>
