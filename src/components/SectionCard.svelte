@@ -41,7 +41,7 @@
     <span class="icchip"><Icon name={section.icon ?? 'star'} /></span>
     <h3 id="sec-{section.id}">{section.title}</h3>
     <span class="score">
-      {#if result.complete && !isExtra}<span class="ok"><Icon name="check" size={12} stroke={3} /></span>{/if}
+      {#if result.complete && !isExtra}<span class="done-mark"><Icon name="check" size={12} stroke={3} /></span>{/if}
       {summary}
     </span>
   </div>
@@ -51,7 +51,7 @@
   {#if result.chips.length}
     <div class="chips">
       {#each result.chips as chip (chip.label)}
-        <span class="chip" class:ok={chip.ok}>{chip.label} {chip.text}</span>
+        <span class="chip" class:ok={chip.ok && !chip.limit} class:over={chip.limit && !chip.ok}>{chip.label} {chip.text}</span>
       {/each}
     </div>
   {/if}
@@ -131,9 +131,14 @@
     flex: 1;
     min-width: 0;
   }
-  .ok {
+  .done-mark {
     color: var(--done);
     display: inline-flex;
+  }
+  .chip.over {
+    color: var(--warn-ink);
+    border-color: var(--warn);
+    background: var(--warn-bg);
   }
   .note {
     margin: 0;

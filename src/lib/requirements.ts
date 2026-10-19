@@ -169,6 +169,8 @@ export interface Chip {
   label: string
   text: string
   ok: boolean
+  /** Upper limits: staying under them is the normal state, not progress. */
+  limit?: boolean
 }
 
 export interface SlotRow {
@@ -299,7 +301,7 @@ function groupChip(
     }
     case 'groupMaxCount': {
       const n = inGroup(constraint.group).length
-      return { label: constraint.label, text: `${n} / max ${constraint.count}`, ok: n <= constraint.count }
+      return { label: constraint.label, text: `max ${constraint.count}, ${n} used`, ok: n <= constraint.count, limit: true }
     }
     default:
       return null
@@ -322,7 +324,7 @@ function constraintChip(
     }
     case 'maxCount': {
       const n = courses.filter((c) => matchFailure(c, constraint.match) === null).length
-      return { label: constraint.label, text: `${n} / max ${constraint.count}`, ok: n <= constraint.count }
+      return { label: constraint.label, text: `max ${constraint.count}, ${n} used`, ok: n <= constraint.count, limit: true }
     }
     default:
       return groupChip(constraint, courses, groupOf)!

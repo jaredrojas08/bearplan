@@ -157,6 +157,8 @@
     flex-direction: column;
     gap: 20px;
     min-width: 0;
+    /* Columns follow the space left beside the nav and progress panel, not the window width. */
+    container-type: inline-size;
   }
   .top {
     display: flex;
@@ -282,7 +284,7 @@
     font-size: 12px;
     max-width: 720px;
   }
-  @media (max-width: 860px) {
+  @container (max-width: 600px) {
     .grid {
       grid-template-columns: minmax(0, 1fr);
     }
