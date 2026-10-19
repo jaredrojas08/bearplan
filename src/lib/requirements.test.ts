@@ -54,6 +54,11 @@ describe('seed plan', () => {
     expect(ls.groupOf).toEqual({ 'seed-03': 'G4', 'seed-04': 'G1' })
   })
 
+  it('shows upper limits as limits, not as progress', () => {
+    const ls = summary.sections.find((s) => s.section.id === 'libstudies')!
+    expect(ls.chips.find((c) => c.label === 'CE')).toEqual({ label: 'CE', text: 'max 2, 0 used', ok: true, limit: true })
+  })
+
   it('has no warnings, since the S/U grade sits in a bucket without a letter-grade rule', () => {
     expect(summary.warnings).toEqual({})
   })
