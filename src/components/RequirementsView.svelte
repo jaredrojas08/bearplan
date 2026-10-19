@@ -151,9 +151,9 @@
       {/if}
       <button class="btn cancel" onclick={() => app.cancelMove()}>Cancel</button>
     </div>
-  {:else if placedMessage}
-    <p class="placed" role="status">{placedMessage}</p>
   {/if}
+  <!-- Stays mounted so screen readers announce the message when it changes. -->
+  <p class="placed" class:visually-hidden={!placedMessage || app.moving} role="status">{placedMessage}</p>
 
   <h2 class="sub">Requirements</h2>
   <div class="grid">
