@@ -89,6 +89,18 @@ describe('refused moves', () => {
     expect(placeFailure(plan, template, course('CS 3700'), 'cs-electives/ce1')).toBe('Already counted in CS Core')
   })
 
+  it('allows repeatable courses more than once, from the template or the plan', () => {
+    const twice = withCourses({ code: 'MUSIC 3610', credits: 2 }, { code: 'CS 4998', credits: 2 })
+    expect(placeFailure(twice, template, course('MUSIC 3610', 2), 'additional')).toBe('Already counted in Additional space')
+    expect(placeFailure(twice, template, course('CS 4998', 2), 'additional')).toBeNull()
+
+    const marked: Plan = { ...twice, repeatable: ['MUSIC 3610'], courses: [...twice.courses, { ...twice.courses.at(-2)!, uid: 'again' }] }
+    expect(placeFailure(marked, template, course('MUSIC 3610', 2), 'additional')).toBeNull()
+    const summary = evaluatePlan(marked, template, OCTOBER_2026)
+    expect(summary.warnings.again).toBeUndefined()
+    expect(summary.credits.plan).toBe(6)
+  })
+
   it('lets the moving course leave its own slot for another', () => {
     const cs3700 = plan.courses.find((c) => c.code === 'CS 3700')!
     expect(placeFailure(plan, template, cs3700, 'cs-electives/ce1', cs3700.uid)).toBeNull()

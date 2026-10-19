@@ -52,6 +52,7 @@ describe('validation', () => {
       'courses[0].grade must be text',
       'courses[1].uid "a" is used twice',
     ])
+    expect(planErrors({ ...examplePlan, repeatable: 'CS 4998' })).toEqual(['"repeatable" must be a list of course codes'])
   })
 
   it('moves unknown or doubled placements to additional space', () => {

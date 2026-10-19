@@ -130,6 +130,7 @@ export function planErrors(data: unknown): string[] {
   if (errors.length === 0 && termIndex(data.entryTerm as string) > termIndex(data.gradTerm as string)) {
     errors.push('Graduation term is before the entry term')
   }
+  if ('repeatable' in data && !isStringArray(data.repeatable)) errors.push('"repeatable" must be a list of course codes')
   if (!Array.isArray(data.courses)) return [...errors, '"courses" must be a list']
   data.courses.forEach((c: unknown, i: number) => errors.push(...courseErrors(c, i)))
   const uids = new Set<unknown>()

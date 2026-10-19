@@ -118,6 +118,8 @@ export interface Plan {
   swimTest: boolean
   spclArea: string
   courses: PlanCourse[]
+  /** Codes the student marked as allowed more than once, on top of the template's list. */
+  repeatable?: string[]
 }
 
 /** One entry of public/courses.json. */
