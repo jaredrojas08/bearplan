@@ -122,6 +122,11 @@
   .pill-bar {
     width: 180px;
   }
+  @media (max-width: 640px) {
+    .pill-bar {
+      width: 72px;
+    }
+  }
   .ink {
     color: var(--ink);
   }

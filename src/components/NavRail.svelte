@@ -93,9 +93,14 @@
       flex-direction: row;
       min-height: 0;
       padding: 8px 12px;
+      gap: 6px;
     }
     .logo {
       margin: 0 12px 0 0;
+    }
+    /* The initials repeat the progress panel's name card, and the row has to fit 320px. */
+    .avatar {
+      display: none;
     }
   }
 </style>

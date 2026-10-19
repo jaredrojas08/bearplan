@@ -153,6 +153,8 @@
   }
   .side {
     flex: 1 1 420px;
+    /* Long checklist names in the select would otherwise set a minimum wider than a phone. */
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
