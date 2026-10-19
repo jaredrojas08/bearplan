@@ -33,7 +33,7 @@ The CS template in [`src/templates/cs-engineering-fa24.json`](../src/templates/c
 | `matriculatedFrom` | First entry term the checklist applies to, like `FA24`. |
 | `totalCredits` | Optional. Shown as "88 / 120 cr". Leave it out if you don't know it. |
 | `filters` | The filter pills above the grid. Each section names one with its `filter` field. |
-| `repeatableCodes` | Courses allowed more than once (research, independent study). Everything else is "no course may be used twice". |
+| `repeatableCodes` | Courses allowed more than once (research, independent study, team projects). Everything else is "no course may be used twice". Students can also mark any course repeatable from the placing banner; that list is saved in their plan, not the template. |
 | `failingGrades` | Grades that get a warning in sections marked `letterGrade`. |
 
 ## Sections
