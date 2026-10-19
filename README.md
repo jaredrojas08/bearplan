@@ -5,6 +5,8 @@
 
 A degree-progress planner for Cornell students. Drag courses onto your major's checklist and see what's done, what's in progress and what's left before you graduate.
 
+**[Open BearPlan](https://jaredrojas08.github.io/bearplan/)**. It runs in your browser with nothing to install.
+
 ![BearPlan requirements view](docs/screenshot.png)
 
 - **Checklist view** modeled on the paper CS checklist: every requirement section as a table of Course, Cr, Sem, Grade and Notes.
@@ -14,13 +16,13 @@ A degree-progress planner for Cornell students. Drag courses onto your major's c
 - **Semester view**: one column per term. Drag a course to another term to reschedule it.
 - **Course search** over every course in recent Class Roster terms, plus custom courses for AP and transfer credit.
 - **Any major.** Requirements are JSON templates, so adding a major is adding a file.
-- **Private by default.** Your plan lives in your browser's local storage. Export and import it as JSON.
+- **Private by default.** Your plan lives in your browser's local storage, even on the hosted site, and never leaves it. Export and import it as JSON.
 
 > BearPlan is a student project and is not affiliated with Cornell University. Requirement data is transcribed from public handbooks and can be wrong or out of date. Always confirm your plan with your advisor.
 
-## Getting started
+## Running it locally
 
-Needs [Node.js](https://nodejs.org/) 20.19+, 22.12+ or 24+ (what Vite supports).
+The hosted version above is the same app. To run your own copy or work on the code, you need [Node.js](https://nodejs.org/) 20.19+, 22.12+ or 24+ (what Vite supports).
 
 ```sh
 git clone https://github.com/jaredrojas08/bearplan.git
@@ -38,6 +40,8 @@ Open the URL Vite prints (usually http://localhost:5173). On first run you'll se
 | `npm run check` | Type-check Svelte and TypeScript |
 | `npm run build` | Production build into `dist/` |
 | `npm run fetch-courses` | Refresh the course catalog (below) |
+
+Every merge to `main` deploys to GitHub Pages through `.github/workflows/pages.yml`.
 
 ## Refreshing course data
 
