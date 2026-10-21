@@ -1,0 +1,56 @@
+{
+  "id": "business-minor-engineers",
+  "kind": "minor",
+  "name": "Business for Engineers",
+  "college": "SC Johnson College of Business",
+  "matriculatedFrom": "FA22",
+  "minUniqueCredits": 12,
+  "filters": [],
+  "sections": [
+    {
+      "id": "core",
+      "title": "Business Minor for Engineers",
+      "column": "right",
+      "filter": "minor",
+      "icon": "star",
+      "leftLabel": "Core",
+      "note": "Open to Engineering majors, plus Biological Engineering, Environmental Engineering, Computer Science and Information Science in CALS and Arts & Sciences. Microeconomics by your sixth semester.",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        { "id": "micro", "label": "Microeconomics", "rule": [{ "codes": ["ECON 1110", "ECON 3030", "PUBPOL 2000"], "reason": "Only ECON 1110, ECON 3030 or PUBPOL 2000" }] },
+        {
+          "id": "concepts",
+          "label": "Business Concepts",
+          "rule": [{ "codes": ["AEM 1200", "AEM 2400", "HADM 1810", "HADM 2410", "ILRID 1700", "NCC 4530", "NCC 5530", "NCC 5540", "NCC 5580"], "reason": "Not a business concepts course on the list" }]
+        },
+        { "id": "acct", "label": "Accounting", "rule": [{ "codes": ["AEM 2210", "HADM 2230", "NCC 5500", "ORIE 3150"], "reason": "Not an accounting course on the list (ORIE 3150 is for ORIE students only)" }] },
+        { "id": "fin", "label": "Finance", "rule": [{ "codes": ["AEM 2241", "AEM 5241", "HADM 2250", "NCC 5560"], "reason": "Not a finance course on the list" }] },
+        { "id": "capstone", "label": "AEM 4660", "rule": [{ "codes": ["AEM 4660"] }] }
+      ]
+    },
+    {
+      "id": "career",
+      "title": "Business Minor for Engineers: Career Goals",
+      "column": "right",
+      "filter": "minor",
+      "icon": "book",
+      "leftLabel": "Career goals",
+      "note": "3 credits of AEM, HADM, NBA or NCC at 3000+. ORIE majors can't use AEM 3100.",
+      "type": "creditBucket",
+      "minCredits": 3,
+      "letterGrade": true,
+      "rule": [{ "subjects": ["AEM", "HADM", "NBA", "NCC"], "minLevel": 3000, "reason": "Needs an AEM, HADM, NBA or NCC course at 3000+" }]
+    }
+  ],
+  "checks": [
+    {
+      "id": "jcb",
+      "title": "Business school credits",
+      "match": [{ "subjects": ["AEM", "HADM", "NBA", "NCC"] }],
+      "credits": 7.5,
+      "metText": "met by {code}",
+      "missText": "needs 7.5 credits of AEM, HADM, NBA or NCC courses. 9 credits must also be taken at Cornell."
+    }
+  ]
+}

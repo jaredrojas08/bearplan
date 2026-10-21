@@ -180,7 +180,10 @@
     {/each}
   </div>
   <p class="foot muted">
-    No course may be used twice; moving a course frees its old spot. {app.template?.footnote ?? ''}
+    {app.template?.addedMinors?.length
+      ? 'A course counts once for your major and at most once for a minor; moving a course frees its old spot.'
+      : 'No course may be used twice; moving a course frees its old spot.'}
+    {app.template?.footnote ?? ''}
   </p>
 </div>
 

@@ -1,10 +1,12 @@
 import examplePlan from '../seed/example-plan.json'
 import aemTemplate from '../templates/aem-cals-2025.json'
 import aemPre2025Template from '../templates/aem-cals-pre2025.json'
+import businessMinor from '../templates/business-minor.json'
+import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import { ADDITIONAL, type CatalogCourse, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { buildIndex, type SearchIndexEntry } from './search'
-import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, withConcentrations, type CourseFacts } from './requirements'
+import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, withConcentrations, withMinors, type CourseFacts } from './requirements'
 import { termRange, upcomingTerm } from './terms'
 import { normalizePlan, planErrors, templateErrors } from './validate'
 
@@ -19,6 +21,7 @@ export interface PlanDetails {
   entryTerm: Term
   gradTerm: Term
   concentrations: string[]
+  minors: string[]
 }
 
 export interface Moving {
@@ -30,7 +33,7 @@ const PLAN_KEY = 'bearplan:plan'
 const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
-export const BUILT_IN_TEMPLATES: Template[] = [csTemplate, aemTemplate, aemPre2025Template] as Template[]
+export const BUILT_IN_TEMPLATES: Template[] = [csTemplate, aemTemplate, aemPre2025Template, businessMinor, businessMinorEngineers] as Template[]
 
 function readJson(key: string): unknown {
   try {
@@ -51,10 +54,15 @@ class AppState {
   catalog = $state.raw<SearchIndexEntry[] | null>(null)
   catalogError = $state<string | null>(null)
 
-  /** The plan's template with its chosen concentrations' sections added. */
+  majors = $derived(this.templates.filter((t) => t.kind !== 'minor'))
+  minors = $derived(this.templates.filter((t) => t.kind === 'minor'))
+
+  /** The plan's template with its chosen concentrations' and minors' sections added. */
   template = $derived.by(() => {
     const base = this.templates.find((t) => t.id === this.plan?.templateId)
-    return base ? withConcentrations(base, this.plan?.concentrations) : null
+    if (!base) return null
+    const minors = (this.plan?.minors ?? []).flatMap((id) => this.minors.filter((m) => m.id === id))
+    return withMinors(withConcentrations(base, this.plan?.concentrations), minors)
   })
   summary = $derived(this.plan && this.template ? evaluatePlan(this.plan, this.template, this.today) : null)
   terms = $derived(this.plan ? termRange(this.plan.entryTerm, this.plan.gradTerm) : [])
@@ -134,8 +142,11 @@ class AppState {
   /** Changing the template can orphan placements, so those courses move to additional space. */
   updateDetails(details: PlanDetails) {
     if (!this.plan) return
+    // A template that can't hold the plan would replace it with nothing.
+    const plan = this.adopt({ ...$state.snapshot(this.plan), ...details })
+    if (!plan) return
     this.moving = null
-    this.plan = this.adopt({ ...$state.snapshot(this.plan), ...details })
+    this.plan = plan
   }
 
   resetPlan() {
@@ -159,7 +170,7 @@ class AppState {
     const errors = planErrors(data)
     if (errors.length) return errors
     const plan = data as Plan
-    if (!this.templates.some((t) => t.id === plan.templateId)) {
+    if (!this.majors.some((t) => t.id === plan.templateId)) {
       return [`This plan uses the "${plan.templateId}" checklist. Import that template first.`]
     }
     this.moving = null
@@ -177,13 +188,18 @@ class AppState {
     const errors = templateErrors(data)
     if (errors.length) return { errors }
     const template = data as Template
+    // Swapping a major for a minor under the same id would drop the plan or a minor's courses.
+    const existing = this.templates.find((t) => t.id === template.id)
+    if (existing && (existing.kind ?? 'major') !== (template.kind ?? 'major')) {
+      return { errors: [`"${template.id}" is already a ${existing.kind ?? 'major'} checklist. Give this file a different id.`] }
+    }
     if (BUILT_IN_TEMPLATES.some((t) => t.id === template.id)) {
       return { errors: [`"${template.id}" is a built-in checklist. Give your copy a different id.`] }
     }
     this.templates = [...this.templates.filter((t) => t.id !== template.id), template]
     this.persist(TEMPLATES_KEY, this.templates.filter((t) => !BUILT_IN_TEMPLATES.some((b) => b.id === t.id)))
     // A replaced template can drop slots, so the open plan's placements need rechecking.
-    if (this.plan?.templateId === template.id) {
+    if (this.plan?.templateId === template.id || this.plan?.minors?.includes(template.id)) {
       this.moving = null
       this.plan = this.adopt($state.snapshot(this.plan))
     }
@@ -203,7 +219,7 @@ class AppState {
 
   private adopt(plan: Plan): Plan | null {
     const template = this.templates.find((t) => t.id === plan.templateId)
-    return template ? normalizePlan(plan, template) : null
+    return template && template.kind !== 'minor' ? normalizePlan(plan, template, this.templates) : null
   }
 
   private persist(key: string, value: unknown) {

@@ -7,7 +7,7 @@ The CS template in [`src/templates/cs-engineering-fa24.json`](../src/templates/c
 ## Two ways to add one
 
 - **Just for you:** in the app, open Plan settings (gear icon) and choose **Import requirement template**, or use **Import a checklist JSON…** during setup. It is saved in your browser.
-- **For everyone:** add the file to `src/templates/`, add it to `BUILT_IN_TEMPLATES` in `src/lib/store.svelte.ts`, and open a pull request. Link the official checklist or handbook page in the PR.
+- **For everyone:** add the file to `src/templates/`, add it to `BUILT_IN_TEMPLATES` in `src/lib/store.svelte.ts` (majors and minors share that list), and open a pull request. Link the official checklist or handbook page in the PR.
 
 ## Top level
 
@@ -167,6 +167,30 @@ A template can offer optional concentrations. Each one is a list of extra sectio
 - `maxConcentrations` is how many a plan may pick. It defaults to 1.
 - Section ids must be unique across the template and every concentration, since a plan can combine them.
 - Dropping a concentration moves its courses to Additional Space.
+
+## Minors
+
+A minor is a template with `"kind": "minor"`. Students add it to a plan next to their major checklist, during setup or in plan details.
+
+```json
+{
+  "id": "business-minor",
+  "kind": "minor",
+  "name": "Business",
+  "college": "SC Johnson College of Business",
+  "matriculatedFrom": "FA22",
+  "minUniqueCredits": 12,
+  "filters": [],
+  "sections": [ ... ],
+  "checks": [ ... ]
+}
+```
+
+- Sections and checks use the same format as a major's. The app prefixes their ids with the minor's id, so they can't collide with the major's, and gives the minor its own filter pill.
+- A minor's checks only count courses placed in that minor.
+- A course can sit in one major row and one minor row at the same time. It counts once toward the degree credit total.
+- `minUniqueCredits` is how many of the minor's credits must not also count toward the major, the usual Cornell "unique credits" rule. The app shows it as a check.
+- A minor can't set `totalCredits` or `concentrations`.
 
 ## Distribution categories
 
