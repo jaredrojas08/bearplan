@@ -170,7 +170,7 @@ A template can offer optional concentrations. Each one is a list of extra sectio
 
 ## Distribution categories
 
-Course categories come from the Class Roster API (`crseAttrs` entries marked `DistReq`), e.g. `SBA-AG`, `ALC-AS`, `SCD-AS`. Search a course in the app and drag it onto a distribution row to see what it carries; a refused drop lists the course's categories.
+Course categories come from the Class Roster API (`crseAttrs` entries marked `DistReq`), e.g. `SBA-AG`, `ALC-AS`, `SCD-AS`. The fetch script also adds `FWS` to every First-Year Writing Seminar, since the API marks those only by an "FWS:" title. Search a course in the app and drag it onto a distribution row to see what it carries; a refused drop lists the course's categories.
 
 ## Checking your file
 
