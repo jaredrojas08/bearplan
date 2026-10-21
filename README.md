@@ -9,10 +9,11 @@ A degree-progress planner for Cornell students. Drag courses onto your major's c
 
 ![BearPlan requirements view](docs/screenshot.png)
 
+- **Built-in checklists:** Computer Science (Engineering, entered FA24+) and Applied Economics and Management (Dyson), with all ten AEM concentrations (pick up to two) and both CALS distribution sets (entered FA25+, or FA22 to FA24).
 - **Checklist view** modeled on the paper CS checklist: every requirement section as a table of Course, Cr, Sem, Grade and Notes.
 - **Rules that refuse bad drops.** A course only drops where it fits. Rows it can't go in say why ("Needs CS 4000+", "No PE courses", "OPHLS-AG, PHS-AS, SCT-IL are not Liberal Studies categories").
 - **Status from the calendar.** Past terms count as completed, the current term as in progress, later terms as planned. Nothing to keep up to date by hand.
-- **Progress panel**: percent of requirements done, credits per term against the degree total, what's left and plan-wide checks (probability, Engineering Communications).
+- **Progress panel**: percent of requirements done, credits per term against the degree total, what's left and plan-wide checks (probability, Engineering Communications, CALS distributions). Checks read the whole plan, so a major course can also meet a distribution where the college allows it.
 - **Semester view**: one column per term. Drag a course to another term to reschedule it.
 - **Course search** over every course in recent Class Roster terms, plus custom courses for AP and transfer credit.
 - **Any major.** Requirements are JSON templates, so adding a major is adding a file.
