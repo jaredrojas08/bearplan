@@ -98,6 +98,8 @@ export interface Template {
   name: string
   college: string
   matriculatedFrom: Term
+  /** Set when a newer checklist replaces this one for later entry terms. */
+  matriculatedBefore?: Term
   totalCredits?: number
   totalCreditsNote?: string
   filters: { id: string; label: string; icon?: SectionIcon }[]

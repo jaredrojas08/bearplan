@@ -90,7 +90,9 @@
     Requirement checklist
     <select bind:value={templateId}>
       {#each app.templates as t (t.id)}
-        <option value={t.id}>{t.name} · {t.college} (entered {t.matriculatedFrom} or later)</option>
+        <option value={t.id}>
+          {t.name} · {t.college} ({t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})
+        </option>
       {/each}
     </select>
     <span class="hint">
@@ -135,6 +137,8 @@
   </div>
   {#if selectedTemplate && termIndex(entryTerm) < termIndex(selectedTemplate.matriculatedFrom)}
     <p class="note warn">This checklist is for students who entered {selectedTemplate.matriculatedFrom} or later.</p>
+  {:else if selectedTemplate?.matriculatedBefore && termIndex(entryTerm) >= termIndex(selectedTemplate.matriculatedBefore)}
+    <p class="note warn">This checklist is for students who entered before {selectedTemplate.matriculatedBefore}.</p>
   {/if}
   <p class="note">{termCount} terms. {statusHint}</p>
   <div class="actions">

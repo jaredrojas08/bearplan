@@ -56,8 +56,10 @@ describe('validation', () => {
           { id: 'c', name: 'C', sections: [] },
         ],
         maxConcentrations: 0,
+        matriculatedBefore: 'soon',
       }),
     ).toEqual([
+      '"matriculatedBefore" must look like FA25',
       'concentrations[1].id "a" is used twice',
       'concentrations[1].sections[0].id "core" is used twice',
       'concentrations[2].sections must be a non-empty list',

@@ -112,6 +112,9 @@ export function templateErrors(data: unknown): string[] {
   const errors: string[] = []
   for (const key of ['id', 'name', 'college']) if (!isString(data[key])) errors.push(`Missing "${key}"`)
   if (!isString(data.matriculatedFrom) || !isTerm(data.matriculatedFrom)) errors.push('"matriculatedFrom" must look like FA24')
+  if ('matriculatedBefore' in data && !(isString(data.matriculatedBefore) && isTerm(data.matriculatedBefore))) {
+    errors.push('"matriculatedBefore" must look like FA25')
+  }
   if ('totalCredits' in data && typeof data.totalCredits !== 'number') errors.push('"totalCredits" must be a number')
   if (!Array.isArray(data.filters)) errors.push('"filters" must be a list')
   if (!Array.isArray(data.checks)) errors.push('"checks" must be a list')
