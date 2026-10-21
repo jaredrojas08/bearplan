@@ -1,0 +1,60 @@
+{
+  "id": "business-minor",
+  "kind": "minor",
+  "name": "Business",
+  "college": "SC Johnson College of Business",
+  "matriculatedFrom": "FA22",
+  "minUniqueCredits": 12,
+  "filters": [],
+  "sections": [
+    {
+      "id": "foundation",
+      "title": "Business Minor: Foundation",
+      "column": "right",
+      "filter": "minor",
+      "icon": "book",
+      "leftLabel": "Foundation",
+      "note": "Complete by your sixth semester. Not open to Dyson or Nolan students, or majors whose core overlaps two or more of the core courses.",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "stats",
+          "label": "Statistics",
+          "rule": [{
+            "codes": ["AEM 2100", "CEE 3040", "CRP 1200", "ECON 3110", "ECON 3120", "ECON 3130", "ENGRD 2700", "ILRST 2100", "ILRST 3080", "ILRST 3110", "MATH 4710", "MATH 4720", "PUBPOL 2100", "PUBPOL 2101", "PSYCH 2500", "SOC 3010", "STSCI 2100", "STSCI 2150", "STSCI 2200", "STSCI 3080", "STSCI 3110"],
+            "reason": "Not on the minor's statistics list"
+          }]
+        },
+        { "id": "micro", "label": "Microeconomics", "rule": [{ "codes": ["ECON 1110", "ECON 3030", "PUBPOL 2000"], "reason": "Only ECON 1110, ECON 3030 or PUBPOL 2000" }] }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Business Minor: Core",
+      "column": "right",
+      "filter": "minor",
+      "icon": "star",
+      "leftLabel": "Core",
+      "note": "One course in each area.",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        { "id": "mgmt", "label": "Intro to Management", "rule": [{ "codes": ["AEM 1200", "HADM 1810", "ILRID 1700", "NCC 5540"], "reason": "Not an intro management course on the list" }] },
+        { "id": "mkt", "label": "Intro to Marketing", "rule": [{ "codes": ["AEM 2400", "HADM 2410", "NCC 4530", "NCC 5530"], "reason": "Not a marketing course on the list" }] },
+        { "id": "acct", "label": "Financial Accounting", "rule": [{ "codes": ["AEM 2210", "HADM 2230", "NCC 5500"], "reason": "Not an accounting course on the list" }] },
+        { "id": "fin", "label": "Finance", "rule": [{ "codes": ["AEM 2241", "AEM 5241", "HADM 2250", "NCC 5560"], "reason": "Not a finance course on the list" }] }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "jcb",
+      "title": "Business school credits",
+      "match": [{ "subjects": ["AEM", "HADM", "NBA", "NCC"] }],
+      "credits": 9,
+      "metText": "met by {code}",
+      "missText": "needs 9 credits of AEM, HADM, NBA or NCC courses. 9 credits must also be taken at Cornell."
+    }
+  ]
+}

@@ -9,7 +9,7 @@ A degree-progress planner for Cornell students. Drag courses onto your major's c
 
 ![BearPlan requirements view](docs/screenshot.png)
 
-- **Built-in checklists:** Computer Science (Engineering, entered FA24+) and Applied Economics and Management (Dyson), with all ten AEM concentrations (pick up to two) and both CALS distribution sets (entered FA25+, or FA22 to FA24).
+- **Built-in checklists:** Computer Science (Engineering, entered FA24+) and Applied Economics and Management (Dyson), with all ten AEM concentrations (pick up to two) and both CALS distribution sets (entered FA25+, or FA22 to FA24). Minors: Business and Business for Engineers, added to any plan. A course can count for the major and a minor, and each minor's unique-credit rule is checked.
 - **Checklist view** modeled on the paper CS checklist: every requirement section as a table of Course, Cr, Sem, Grade and Notes.
 - **Rules that refuse bad drops.** A course only drops where it fits. Rows it can't go in say why ("Needs CS 4000+", "No PE courses", "OPHLS-AG, PHS-AS, SCT-IL are not Liberal Studies categories").
 - **Status from the calendar.** Past terms count as completed, the current term as in progress, later terms as planned. Nothing to keep up to date by hand.
