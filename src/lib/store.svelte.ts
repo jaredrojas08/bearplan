@@ -185,6 +185,11 @@ class AppState {
     const errors = templateErrors(data)
     if (errors.length) return { errors }
     const template = data as Template
+    // Swapping a major for a minor under the same id would drop the plan or a minor's courses.
+    const existing = this.templates.find((t) => t.id === template.id)
+    if (existing && (existing.kind ?? 'major') !== (template.kind ?? 'major')) {
+      return { errors: [`"${template.id}" is already a ${existing.kind ?? 'major'} checklist. Give this file a different id.`] }
+    }
     if (BUILT_IN_TEMPLATES.some((t) => t.id === template.id)) {
       return { errors: [`"${template.id}" is a built-in checklist. Give your copy a different id.`] }
     }
