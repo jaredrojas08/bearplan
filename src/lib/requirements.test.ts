@@ -251,3 +251,11 @@ describe('concentrations', () => {
     })
   })
 })
+
+describe('writing seminars', () => {
+  it('fits an FWS that carries no WRT category', () => {
+    expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1101', 3, ['FWS']), 'fws/fws1')).toBeNull()
+    expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1101', 3, ['FWS']), 'fws/fws2')).toBeNull()
+    expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1400', 3, ['CA-AG']), 'fws/fws1')).toBe('Not a writing seminar')
+  })
+})

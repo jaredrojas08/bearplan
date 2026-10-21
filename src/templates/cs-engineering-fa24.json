@@ -23,8 +23,8 @@
       "leftLabel": "FWS",
       "type": "slots",
       "slots": [
-        { "id": "fws1", "label": "FWS 1", "rule": [{ "distributions": ["WRT"], "reason": "Not a writing seminar" }] },
-        { "id": "fws2", "label": "FWS 2", "rule": [{ "distributions": ["WRT"], "reason": "Not a writing seminar" }] }
+        { "id": "fws1", "label": "FWS 1", "rule": [{ "distributions": ["FWS", "WRT"], "reason": "Not a writing seminar" }] },
+        { "id": "fws2", "label": "FWS 2", "rule": [{ "distributions": ["FWS", "WRT"], "reason": "Not a writing seminar" }] }
       ]
     },
     {
