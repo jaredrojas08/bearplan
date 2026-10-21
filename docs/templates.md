@@ -36,6 +36,7 @@ The CS template in [`src/templates/cs-engineering-fa24.json`](../src/templates/c
 | `filters` | The filter pills above the grid. Each section names one with its `filter` field. |
 | `repeatableCodes` | Courses allowed more than once (research, independent study, team projects). Everything else is "no course may be used twice". Students can also mark any course repeatable from the placing banner; that list is saved in their plan, not the template. |
 | `failingGrades` | Grades that get a warning in sections marked `letterGrade`. |
+| `footnote` | Optional text under the checklist, like grade rules. |
 | `concentrations`, `maxConcentrations` | Optional extra sections a plan opts into. See [Concentrations](#concentrations). |
 
 ## Sections
@@ -137,7 +138,7 @@ Checks are requirements that are not rows. They read every course in the plan, w
 | `count` | Courses needed. Defaults to 1. |
 | `credits` | Credits needed instead of a course count. |
 | `group` | Checks with the same group can't use the same course, for rules like "a course may fulfill only one distribution". Checks claim courses in file order, so list the narrow ones first. |
-| `metText` / `missText` | `{code}` in `metText` becomes the courses used. When a counted check is partly met, the app shows progress like "3 / 9 cr so far" before `missText`. |
+| `metText` / `missText` | `{code}` in `metText` becomes the courses used. When a counted check is partly met, the app shows progress like "3 / 9 cr so far (WRIT 1370)," before `missText`. |
 
 A CALS distribution as a check:
 

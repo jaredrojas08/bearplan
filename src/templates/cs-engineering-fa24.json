@@ -5,6 +5,7 @@
   "matriculatedFrom": "FA24",
   "totalCredits": 123,
   "totalCreditsNote": "123 cr minimum per the Fall 2024 Engineering handbook. Confirm with your advisor.",
+  "footnote": "Core, CS electives, project, probability, technical electives and external specialization need a letter grade of C- or better once affiliated.",
   "filters": [
     { "id": "college", "label": "College", "icon": "book" },
     { "id": "core", "label": "CS Core", "icon": "code" },

@@ -102,6 +102,8 @@ export interface Template {
   matriculatedBefore?: Term
   totalCredits?: number
   totalCreditsNote?: string
+  /** Shown under the checklist, like grade rules. */
+  footnote?: string
   filters: { id: string; label: string; icon?: SectionIcon }[]
   /** Courses that may legitimately appear more than once (repeatable research). */
   repeatableCodes?: string[]

@@ -184,8 +184,13 @@
   }
   .choices {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     gap: 6px 14px;
+  }
+  /* Overrides the text-field sizing that .f input gives every input. */
+  .f .choice input {
+    min-height: 0;
+    padding: 0;
   }
   .choice {
     display: flex;

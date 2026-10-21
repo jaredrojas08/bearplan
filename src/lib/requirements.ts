@@ -431,7 +431,7 @@ function evaluateChecks(plan: Plan, checks: Check[]): CheckResult[] {
     const met = enough()
     const codes = used.map((c) => c.code).join(', ')
     const progress = check.credits !== undefined ? `${sumCredits(used)} / ${check.credits} cr` : `${used.length} / ${check.count ?? 1}`
-    const text = met ? check.metText.replace('{code}', codes) : used.length ? `${progress} so far (${codes}). ${check.missText}` : check.missText
+    const text = met ? check.metText.replace('{code}', codes) : used.length ? `${progress} so far (${codes}), ${check.missText}` : check.missText
     return { check, met, text }
   })
 }

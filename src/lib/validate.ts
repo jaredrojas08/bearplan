@@ -116,6 +116,7 @@ export function templateErrors(data: unknown): string[] {
     errors.push('"matriculatedBefore" must look like FA25')
   }
   if ('totalCredits' in data && typeof data.totalCredits !== 'number') errors.push('"totalCredits" must be a number')
+  if ('footnote' in data && typeof data.footnote !== 'string') errors.push('"footnote" must be text')
   if (!Array.isArray(data.filters)) errors.push('"filters" must be a list')
   if (!Array.isArray(data.checks)) errors.push('"checks" must be a list')
   if (!Array.isArray(data.sections) || data.sections.length === 0) return [...errors, '"sections" must be a non-empty list']
