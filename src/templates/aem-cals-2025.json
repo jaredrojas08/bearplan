@@ -1,0 +1,1668 @@
+{
+  "id": "aem-cals-2025",
+  "name": "Applied Economics and Management",
+  "college": "Dyson (CALS 2025+ distributions)",
+  "matriculatedFrom": "FA25",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr minimum per the 2026-27 catalog, plus 100 letter-graded and 105 structured credits. Confirm with Dyson advising.",
+  "filters": [
+    {
+      "id": "core",
+      "label": "Dyson Core",
+      "icon": "book"
+    },
+    {
+      "id": "concentration",
+      "label": "Concentration",
+      "icon": "star"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "sections": [
+    {
+      "id": "econ-mgmt",
+      "title": "Economics and Management",
+      "column": "left",
+      "filter": "core",
+      "icon": "book",
+      "leftLabel": "Econ & Mgmt",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "ECON 1110",
+          "rule": [
+            {
+              "codes": [
+                "ECON 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "ECON 1120",
+          "rule": [
+            {
+              "codes": [
+                "ECON 1120"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "AEM 2200",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2200"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "label": "AEM 2225",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2225"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5",
+          "label": "AEM 2240",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2240"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6",
+          "label": "AEM 2420",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2420"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7",
+          "label": "AEM 2600",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2600"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e8",
+          "label": "AEM 2601",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2601"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e9",
+          "label": "AEM 2700",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2700"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e10",
+          "label": "AEM 3200",
+          "rule": [
+            {
+              "codes": [
+                "AEM 3200"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e11",
+          "label": "AEM 3205",
+          "rule": [
+            {
+              "codes": [
+                "AEM 3205"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e12",
+          "label": "AEM 3230",
+          "rule": [
+            {
+              "codes": [
+                "AEM 3230"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quant",
+      "title": "Quantitative Methods",
+      "column": "left",
+      "filter": "core",
+      "icon": "sigma",
+      "leftLabel": "Quant Methods",
+      "note": "Calculus: MATH 1110, 1120, 1910, 1920, 2210, 2220, 2230, 2310, 2930 or 2940. Quant elective: 3 cr from the catalog list.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "calc",
+          "label": "Calculus",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1110",
+                "MATH 1120",
+                "MATH 1910",
+                "MATH 1920",
+                "MATH 2210",
+                "MATH 2220",
+                "MATH 2230",
+                "MATH 2310",
+                "MATH 2930",
+                "MATH 2940"
+              ],
+              "reason": "Not a Dyson calculus course"
+            }
+          ]
+        },
+        {
+          "id": "q1",
+          "label": "AEM 2010",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "label": "AEM 2100",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2100"
+              ],
+              "reason": "Only AEM 2100 (transfer students may substitute; ask Dyson advising)"
+            }
+          ]
+        },
+        {
+          "id": "qe",
+          "label": "Quant elective",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2830",
+                "AEM 2840",
+                "AEM 2850",
+                "AEM 3100",
+                "AEM 3105",
+                "AEM 4060",
+                "AEM 4110",
+                "AEM 4190",
+                "AEM 4600",
+                "ECON 3120",
+                "ECON 3130",
+                "ECON 3140",
+                "ECON 4020",
+                "STSCI 3080"
+              ],
+              "reason": "Not on the quantitative methods elective list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied-econ",
+      "title": "Applied Economics",
+      "column": "left",
+      "filter": "core",
+      "icon": "book",
+      "leftLabel": "Applied Econ",
+      "note": "6+ credits from at least two of the four categories.",
+      "type": "creditBucket",
+      "minCredits": 6,
+      "rule": [
+        {
+          "codes": [
+            "AEM 2500",
+            "AEM 4500",
+            "AEM 4510",
+            "AEM 3105",
+            "AEM 3310",
+            "AEM 4100",
+            "AEM 4140",
+            "AEM 4160",
+            "AEM 4550",
+            "AEM 2300",
+            "AEM 2350",
+            "AEM 4300",
+            "AEM 4315",
+            "AEM 4350",
+            "AEM 4420",
+            "AEM 4450",
+            "AEM 4485",
+            "AEM 4545",
+            "AEM 2310",
+            "AEM 4150",
+            "AEM 4210"
+          ],
+          "reason": "Not on the Applied Econ list"
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minGroups",
+          "label": "Categories",
+          "count": 2
+        }
+      ],
+      "groups": [
+        {
+          "id": "SBEP",
+          "name": "Sustainable Business and Economic Policy",
+          "codes": [
+            "AEM 2500",
+            "AEM 4500",
+            "AEM 4510"
+          ]
+        },
+        {
+          "id": "EA",
+          "name": "Economic Analysis",
+          "codes": [
+            "AEM 3105",
+            "AEM 3310",
+            "AEM 4100",
+            "AEM 4140",
+            "AEM 4160",
+            "AEM 4550"
+          ]
+        },
+        {
+          "id": "IMD",
+          "name": "International Markets and Development",
+          "codes": [
+            "AEM 2300",
+            "AEM 2350",
+            "AEM 4300",
+            "AEM 4315",
+            "AEM 4350",
+            "AEM 4420",
+            "AEM 4450",
+            "AEM 4485",
+            "AEM 4545"
+          ]
+        },
+        {
+          "id": "FAE",
+          "name": "Food and Agricultural Economics",
+          "codes": [
+            "AEM 2310",
+            "AEM 4150",
+            "AEM 4210"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grand-challenges",
+      "title": "Grand Challenges",
+      "column": "right",
+      "filter": "core",
+      "icon": "star",
+      "leftLabel": "Grand Challenges",
+      "note": "Taken in order: AEM 1101, then project prep, then the project. Transfer students skip AEM 1101.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "gc-intro",
+          "label": "AEM 1101",
+          "rule": [
+            {
+              "codes": [
+                "AEM 1101"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gc-prep",
+          "label": "Project prep",
+          "rule": [
+            {
+              "codes": [
+                "AEM 3000",
+                "AEM 4401"
+              ],
+              "reason": "Only AEM 3000 or AEM 4401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gc-project",
+      "title": "Grand Challenges Project",
+      "column": "right",
+      "filter": "core",
+      "icon": "star",
+      "leftLabel": "GC Project",
+      "note": "3 credits. The abroad option is AEM 4001 + 4002 + 4003, or AEM 4004.",
+      "type": "creditBucket",
+      "minCredits": 3,
+      "rule": [
+        {
+          "codes": [
+            "AEM 3260",
+            "AEM 3385",
+            "AEM 4000",
+            "AEM 4001",
+            "AEM 4002",
+            "AEM 4003",
+            "AEM 4004",
+            "AEM 4006",
+            "AEM 4375",
+            "AEM 4875",
+            "AEM 4876"
+          ],
+          "reason": "Not on the GC Project list"
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "maxConcentrations": 2,
+  "concentrations": [
+    {
+      "id": "accounting",
+      "name": "Accounting",
+      "sections": [
+        {
+          "id": "acct-req",
+          "title": "Accounting",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Accounting",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "AEM 3360",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 3360"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a2",
+              "label": "AEM 3370",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 3370"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "acct-elec",
+          "title": "Accounting Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Accounting electives",
+          "type": "creditBucket",
+          "minCredits": 9,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3520",
+                "AEM 4225",
+                "AEM 4520",
+                "AEM 4521",
+                "AEM 4530",
+                "AEM 4531",
+                "AEM 4532",
+                "AEM 4533",
+                "AEM 4534",
+                "AEM 4560",
+                "NBA 5090",
+                "NBA 5110",
+                "NBA 5350",
+                "NBA 5355"
+              ],
+              "reason": "Not on the Accounting electives list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied-economics",
+      "name": "Applied Economics",
+      "sections": [
+        {
+          "id": "apec-req",
+          "title": "Applied Economics",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Applied Economics",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "ap1",
+              "label": "ECON 3040",
+              "rule": [
+                {
+                  "codes": [
+                    "ECON 3040"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apec-elec",
+          "title": "Applied Economics Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Applied Econ electives",
+          "type": "creditBucket",
+          "minCredits": 12,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2300",
+                "AEM 2310",
+                "AEM 2350",
+                "AEM 2500",
+                "AEM 3310",
+                "AEM 3350",
+                "AEM 4100",
+                "AEM 4140",
+                "AEM 4150",
+                "AEM 4160",
+                "AEM 4210",
+                "AEM 4300",
+                "AEM 4315",
+                "AEM 4350",
+                "AEM 4420",
+                "AEM 4450",
+                "AEM 4485",
+                "AEM 4500",
+                "AEM 4510",
+                "AEM 4545",
+                "AEM 4550"
+              ],
+              "reason": "Not on the Applied Econ electives list"
+            }
+          ]
+        },
+        {
+          "id": "apec-quant",
+          "title": "Applied Economics Quant Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Applied Econ quant",
+          "note": "A course can't count here and as the core quant elective at once. Ask Dyson advising if you need both.",
+          "type": "creditBucket",
+          "minCredits": 3,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2830",
+                "AEM 2840",
+                "AEM 2850",
+                "AEM 3100",
+                "AEM 3105",
+                "AEM 4060",
+                "AEM 4110",
+                "AEM 4190",
+                "ECON 3120",
+                "ECON 3130",
+                "ECON 3140",
+                "ECON 4020",
+                "STSCI 3080"
+              ],
+              "reason": "Not on the Applied Econ quant list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-analytics",
+      "name": "Business Analytics",
+      "sections": [
+        {
+          "id": "ba-req",
+          "title": "Business Analytics",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Business Analytics",
+          "note": "Statistics or econometrics, a data analysis language, and database management.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "ba1",
+              "label": "AEM 3100 / 4110",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 3100",
+                    "AEM 4110"
+                  ],
+                  "reason": "Only AEM 3100 or AEM 4110"
+                }
+              ]
+            },
+            {
+              "id": "ba2",
+              "label": "AEM 2830 / 2840 / 2850",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2830",
+                    "AEM 2840",
+                    "AEM 2850"
+                  ],
+                  "reason": "Only AEM 2830, 2840 or 2850"
+                }
+              ]
+            },
+            {
+              "id": "ba3",
+              "label": "AEM 2820",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2820"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba-elec",
+          "title": "Business Analytics Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Analytics electives",
+          "type": "creditBucket",
+          "minCredits": 6,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3105",
+                "AEM 3275",
+                "AEM 4015",
+                "AEM 4060",
+                "AEM 4225",
+                "AEM 4435",
+                "AEM 4600",
+                "HADM 3275",
+                "NBA 4920",
+                "STSCI 4060"
+              ],
+              "reason": "Not on the Analytics electives list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "entrepreneurship",
+      "name": "Entrepreneurship",
+      "sections": [
+        {
+          "id": "ent-req",
+          "title": "Entrepreneurship",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Entrepreneurship",
+          "note": "15 credits total, at least 6 of them AEM courses (the app doesn't count that split).",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "en1",
+              "label": "AEM 2220",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2220"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ent-ideation",
+          "title": "Entrepreneurship: Ideation",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Ideation",
+          "type": "creditBucket",
+          "minCredits": 3,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2180",
+                "AEM 3110",
+                "AEM 3255",
+                "COGST 1111",
+                "DEA 2730",
+                "INFO 3450",
+                "HADM 4144",
+                "NBA 5380",
+                "NBA 6029"
+              ],
+              "reason": "Not on the Ideation list"
+            }
+          ]
+        },
+        {
+          "id": "ent-strategy",
+          "title": "Entrepreneurship: Strategy",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Entrepreneurial strategy",
+          "type": "creditBucket",
+          "minCredits": 3,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3249",
+                "AEM 3251",
+                "AEM 4650",
+                "HADM 4145",
+                "NBA 3000"
+              ],
+              "reason": "Not on the Entrepreneurial strategy list"
+            }
+          ]
+        },
+        {
+          "id": "ent-industries",
+          "title": "Entrepreneurship: Industries & Topics",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Industries & topics",
+          "type": "creditBucket",
+          "minCredits": 4.5,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3220",
+                "AEM 3330",
+                "AEM 3385",
+                "AEM 4080",
+                "AEM 4421",
+                "AEM 4572",
+                "AEM 4615",
+                "AEM 4620",
+                "AEM 4650",
+                "FSAD 4444",
+                "FSAD 4660",
+                "HADM 3610",
+                "HADM 4130",
+                "HADM 4315",
+                "HADM 4800",
+                "NBA 5070"
+              ],
+              "reason": "Not on the Industries & topics list"
+            }
+          ]
+        },
+        {
+          "id": "ent-practicum",
+          "title": "Entrepreneurship: Practicum",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Practicum",
+          "type": "creditBucket",
+          "minCredits": 1.5,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3251",
+                "AEM 3255",
+                "AEM 3385",
+                "AEM 4421",
+                "AEM 4975",
+                "HADM 4315",
+                "NBA 6029",
+                "NBA 6230",
+                "NBA 6330"
+              ],
+              "reason": "Not on the Practicum list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "sections": [
+        {
+          "id": "fin-req",
+          "title": "Finance",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Finance",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "f1",
+              "label": "AEM 4570",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 4570"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "f2",
+              "label": "AEM 4670",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 4670"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fin-elec",
+          "title": "Finance Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Finance electives",
+          "note": "Only 3 credits from AEM 3520 and AEM 3360 together.",
+          "type": "creditBucket",
+          "minCredits": 9,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3520",
+                "AEM 3360",
+                "AEM 4060",
+                "AEM 4210",
+                "AEM 4230",
+                "AEM 4231",
+                "AEM 4232",
+                "AEM 4260",
+                "AEM 4280",
+                "AEM 4290",
+                "AEM 4545",
+                "AEM 4572",
+                "AEM 4590",
+                "AEM 4681",
+                "HADM 4232"
+              ],
+              "reason": "Not on the Finance electives list"
+            }
+          ],
+          "constraints": [
+            {
+              "type": "maxCount",
+              "label": "AEM 3520 / 3360",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "AEM 3520",
+                  "AEM 3360"
+                ]
+              },
+              "reason": "Only one of AEM 3520 and AEM 3360 counts here"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food-business",
+      "name": "Food Business Management",
+      "sections": [
+        {
+          "id": "food-req",
+          "title": "Food Business Management",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Food Business",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "fb1",
+              "label": "AEM 2310",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2310"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fb2",
+              "label": "AEM 2480",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2480"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "food-elec",
+          "title": "Food Business Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Food Business electives",
+          "note": "The catalog says 9 credits in the text and 6 in the hours column. 9 is used here; confirm with Dyson advising.",
+          "type": "creditBucket",
+          "minCredits": 9,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2050",
+                "AEM 3020",
+                "AEM 3260",
+                "AEM 3270",
+                "AEM 3440",
+                "AEM 3610",
+                "AEM 4015",
+                "AEM 4150",
+                "AEM 4210",
+                "AEM 4400",
+                "AEM 4450",
+                "AEM 4460",
+                "AEM 4470",
+                "AEM 4600",
+                "HADM 3470"
+              ],
+              "reason": "Not on the Food Business electives list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "international",
+      "name": "International Markets and Development",
+      "sections": [
+        {
+          "id": "imd-req",
+          "title": "International Markets and Development",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Intl Markets",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "im1",
+              "label": "AEM 2300 / 2350",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2300",
+                    "AEM 2350"
+                  ],
+                  "reason": "Only AEM 2300 or AEM 2350"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "imd-elec",
+          "title": "International Markets Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Intl Markets electives",
+          "note": "6+ cr from list A; at most 3 cr each from B (research methods), C (consulting and law) and D (a language course or 3 cr of directed research with Dyson faculty, added as a custom course).",
+          "type": "creditBucket",
+          "minCredits": 12,
+          "rule": [
+            {
+              "codes": [
+                "AEM 4005",
+                "AEM 4300",
+                "AEM 4315",
+                "AEM 4350",
+                "AEM 4415",
+                "AEM 4420",
+                "AEM 4421",
+                "AEM 4450",
+                "AEM 4485",
+                "AEM 4545",
+                "AEM 4110",
+                "ECON 3120",
+                "ECON 3140",
+                "STSCI 3740",
+                "STSCI 4060",
+                "ILRGL 2300",
+                "PUBPOL 5345",
+                "CRP 6720"
+              ],
+              "reason": "Not on the Intl Markets electives list"
+            },
+            {
+              "distributions": [
+                "FL"
+              ],
+              "minCredits": 3
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCount",
+              "label": "List A",
+              "count": 2,
+              "match": {
+                "codes": [
+                  "AEM 4005",
+                  "AEM 4300",
+                  "AEM 4315",
+                  "AEM 4350",
+                  "AEM 4415",
+                  "AEM 4420",
+                  "AEM 4421",
+                  "AEM 4450",
+                  "AEM 4485",
+                  "AEM 4545"
+                ]
+              }
+            },
+            {
+              "type": "maxCount",
+              "label": "List B",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "AEM 4110",
+                  "ECON 3120",
+                  "ECON 3140",
+                  "STSCI 3740",
+                  "STSCI 4060"
+                ]
+              },
+              "reason": "Only 3 credits from list B"
+            },
+            {
+              "type": "maxCount",
+              "label": "List C",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "ILRGL 2300",
+                  "PUBPOL 5345",
+                  "CRP 6720"
+                ]
+              },
+              "reason": "Only 3 credits from list C"
+            },
+            {
+              "type": "maxCount",
+              "label": "Language",
+              "count": 1,
+              "match": {
+                "distributions": [
+                  "FL"
+                ]
+              },
+              "reason": "Only one language course counts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "sections": [
+        {
+          "id": "mkt-req",
+          "title": "Marketing",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Marketing",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "mk1",
+              "label": "AEM 4410",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 4410"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mk2",
+              "label": "AEM 3440 / HADM 3470",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 3440",
+                    "HADM 3470"
+                  ],
+                  "reason": "Only AEM 3440 or HADM 3470"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mkt-elec",
+          "title": "Marketing Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Marketing electives",
+          "type": "creditBucket",
+          "minCredits": 9,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2480",
+                "AEM 3249",
+                "AEM 3270",
+                "AEM 4015",
+                "AEM 4080",
+                "AEM 4095",
+                "AEM 4140",
+                "AEM 4150",
+                "AEM 4160",
+                "AEM 4400",
+                "AEM 4435",
+                "AEM 4460",
+                "AEM 4470",
+                "AEM 4480",
+                "AEM 4550",
+                "HADM 4480",
+                "NBA 6090"
+              ],
+              "reason": "Not on the Marketing electives list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "name": "Strategy",
+      "sections": [
+        {
+          "id": "strat-core",
+          "title": "Strategy Upper Core",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Strategy upper core",
+          "type": "creditBucket",
+          "minCredits": 9,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3220",
+                "AEM 4160",
+                "AEM 4190",
+                "AEM 4600",
+                "AEM 4615",
+                "AEM 4620"
+              ],
+              "reason": "Not on the Strategy upper core list"
+            }
+          ]
+        },
+        {
+          "id": "strat-elec",
+          "title": "Strategy Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Strategy electives",
+          "note": "Upper core courses also count here.",
+          "type": "creditBucket",
+          "minCredits": 6,
+          "rule": [
+            {
+              "codes": [
+                "AEM 3010",
+                "AEM 3050",
+                "AEM 3110",
+                "AEM 3245",
+                "AEM 3249",
+                "AEM 3260",
+                "AEM 3270",
+                "AEM 3320",
+                "AEM 3350",
+                "AEM 3610",
+                "AEM 4015",
+                "AEM 4080",
+                "AEM 4421",
+                "AEM 4550",
+                "AEM 4585",
+                "AEM 4650",
+                "AEM 4665",
+                "AEM 3220",
+                "AEM 4160",
+                "AEM 4190",
+                "AEM 4600",
+                "AEM 4615",
+                "AEM 4620"
+              ],
+              "reason": "Not on the Strategy electives list"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sustainable-business",
+      "name": "Sustainable Business and Economic Policy",
+      "sections": [
+        {
+          "id": "sbep-req",
+          "title": "Sustainable Business and Economic Policy",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Sustainable Business",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "sb1",
+              "label": "AEM 2500",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2500"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sbep-mgmt",
+          "title": "Sustainable Business: Management Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Business & mgmt electives",
+          "type": "creditBucket",
+          "minCredits": 3,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2555",
+                "AEM 4090",
+                "AEM 4490",
+                "AEM 4585",
+                "NBA 6030"
+              ],
+              "reason": "Not on the Business & mgmt electives list"
+            }
+          ]
+        },
+        {
+          "id": "sbep-analytical",
+          "title": "Sustainable Business: Analytical Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Analytical electives",
+          "type": "creditBucket",
+          "minCredits": 6,
+          "rule": [
+            {
+              "codes": [
+                "AEM 4500",
+                "AEM 4510",
+                "AEM 4516"
+              ],
+              "reason": "Not on the Analytical electives list"
+            }
+          ]
+        },
+        {
+          "id": "sbep-quant",
+          "title": "Sustainable Business: Quantitative Electives",
+          "column": "right",
+          "filter": "concentration",
+          "icon": "star",
+          "leftLabel": "Quantitative electives",
+          "type": "creditBucket",
+          "minCredits": 3,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2770",
+                "AEM 2830",
+                "AEM 2840",
+                "AEM 2850",
+                "AEM 3100",
+                "AEM 4110",
+                "AEM 6850",
+                "ECON 3120",
+                "ECON 3140",
+                "ILRST 2110",
+                "STSCI 4060"
+              ],
+              "reason": "Not on the Quantitative electives list"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "afs",
+      "title": "Agriculture, Food Systems & Nutrition",
+      "match": [
+        {
+          "distributions": [
+            "AFS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one AFS-AG course of 3+ credits."
+    },
+    {
+      "id": "bsc",
+      "title": "Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one BSC-AG course of 3+ credits (BIO-AG and BIO-AS don't count)."
+    },
+    {
+      "id": "psc",
+      "title": "Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one PSC-AG course of 3+ credits."
+    },
+    {
+      "id": "sch",
+      "title": "Sustainability Challenges",
+      "match": [
+        {
+          "distributions": [
+            "SCH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one SCH-AG course of 3+ credits."
+    },
+    {
+      "id": "eth",
+      "title": "Ethics",
+      "match": [
+        {
+          "distributions": [
+            "ETH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one ETH-AG course of 3+ credits (KCM doesn't count)."
+    },
+    {
+      "id": "diversity",
+      "title": "Human Diversity",
+      "match": [
+        {
+          "distributions": [
+            "D",
+            "SCD-AS",
+            "SCD-HA"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one D-AG course of 3+ credits (SCD-AS, SCD-HA and D-HE also count)."
+    },
+    {
+      "id": "dls",
+      "title": "Data Literacy: Statistics",
+      "match": [
+        {
+          "distributions": [
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one DLS-AG course."
+    },
+    {
+      "id": "dl2",
+      "title": "Data Literacy: Second",
+      "match": [
+        {
+          "distributions": [
+            "DLG",
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs a second data literacy course, DLG-AG or DLS-AG."
+    },
+    {
+      "id": "csh",
+      "title": "Cultural, Social & Historical",
+      "match": [
+        {
+          "distributions": [
+            "CA",
+            "FL",
+            "HA",
+            "LA",
+            "SBA",
+            "ALC-AS",
+            "ALC-HA",
+            "ALC-AAP",
+            "GLC-AS",
+            "HST-AS",
+            "HST-HA",
+            "HST-AAP",
+            "SSC-AS",
+            "SSC-AAP"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "count": 2,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs two courses from CA, FL, HA, LA or SBA, each from a different category (the app doesn't check that they differ)."
+    },
+    {
+      "id": "writing",
+      "title": "Written & Oral Expression",
+      "match": [
+        {
+          "distributions": [
+            "WRT",
+            "ORL",
+            "FWS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ]
+        }
+      ],
+      "credits": 9,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs 9 credits of writing (FWS or WRT-AG), at least 6 written; one ORL-AG course may count."
+    },
+    {
+      "id": "e3",
+      "title": "E3 Learning Milestone",
+      "match": [
+        {
+          "distributions": [
+            "EEE"
+          ]
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs an EEE-AG or community-engaged course, or an advisor-approved internship, research or non-course experience."
+    },
+    {
+      "id": "cals-credits",
+      "title": "CALS Credits",
+      "match": [
+        {
+          "subjects": [
+            "AEM",
+            "AGSCI",
+            "AIIS",
+            "ALS",
+            "ANSC",
+            "BEE",
+            "BIOG",
+            "BIOAP",
+            "BIOCB",
+            "BIOEE",
+            "BIOMG",
+            "BIOMI",
+            "BIOMS",
+            "BIONB",
+            "BIOSM",
+            "COMM",
+            "EAS",
+            "EDUC",
+            "ENTOM",
+            "ENVS",
+            "FDSC",
+            "GDEV",
+            "INFO",
+            "LA",
+            "LEAD",
+            "NS",
+            "NTRES",
+            "PLSCI",
+            "STSCI",
+            "VIEN"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "credits": 75,
+      "metText": "satisfied by {code}",
+      "missText": "needs 75 credits of CALS courses (AEM counts for AEM majors; up to two FWS also count, which the app doesn't add)."
+    }
+  ]
+}

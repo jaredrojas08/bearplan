@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import examplePlan from '../seed/example-plan.json'
+import aemTemplate from '../templates/aem-cals-2025.json'
+import aemPre2025Template from '../templates/aem-cals-pre2025.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import type { Plan, Template } from '../types'
 import { normalizePlan, planErrors, templateErrors } from './validate'
@@ -7,6 +9,8 @@ import { normalizePlan, planErrors, templateErrors } from './validate'
 describe('validation', () => {
   it('accepts the bundled template and example plan', () => {
     expect(templateErrors(csTemplate)).toEqual([])
+    expect(templateErrors(aemTemplate)).toEqual([])
+    expect(templateErrors(aemPre2025Template)).toEqual([])
     expect(planErrors(examplePlan)).toEqual([])
   })
 

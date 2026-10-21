@@ -1,4 +1,6 @@
 import examplePlan from '../seed/example-plan.json'
+import aemTemplate from '../templates/aem-cals-2025.json'
+import aemPre2025Template from '../templates/aem-cals-pre2025.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import { ADDITIONAL, type CatalogCourse, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { buildIndex, type SearchIndexEntry } from './search'
@@ -28,7 +30,7 @@ const PLAN_KEY = 'bearplan:plan'
 const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
-export const BUILT_IN_TEMPLATES: Template[] = [csTemplate as Template]
+export const BUILT_IN_TEMPLATES: Template[] = [csTemplate, aemTemplate, aemPre2025Template] as Template[]
 
 function readJson(key: string): unknown {
   try {
