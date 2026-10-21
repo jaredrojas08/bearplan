@@ -35,12 +35,16 @@
   let entryTerm = $state(initial?.entryTerm ?? defaultEntry)
   // svelte-ignore state_referenced_locally
   let gradTerm = $state(initial?.gradTerm ?? shiftTerm(defaultEntry, 7))
+  // svelte-ignore state_referenced_locally
+  let concentrations = $state<string[]>(initial?.concentrations ?? [])
   let templateMessage = $state('')
   let fileInput: HTMLInputElement
 
   let gradOptions = $derived(termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)))
   let termCount = $derived(termIndex(gradTerm) - termIndex(entryTerm) + 1)
   let selectedTemplate = $derived(app.templates.find((t) => t.id === templateId))
+  let offered = $derived(selectedTemplate?.concentrations ?? [])
+  let maxConcentrations = $derived(selectedTemplate?.maxConcentrations ?? 1)
 
   $effect(() => {
     if (termIndex(gradTerm) <= termIndex(entryTerm)) gradTerm = gradOptions[Math.min(6, gradOptions.length - 1)]
@@ -64,7 +68,9 @@
 
   function submit(event: SubmitEvent) {
     event.preventDefault()
-    onSubmit({ name: name.trim(), templateId, entryTerm, gradTerm })
+    // Picks from a previously selected checklist don't carry over.
+    const kept = concentrations.filter((id) => offered.some((c) => c.id === id))
+    onSubmit({ name: name.trim(), templateId, entryTerm, gradTerm, concentrations: kept })
   }
 
   let statusHint = $derived.by(() => {
@@ -84,7 +90,9 @@
     Requirement checklist
     <select bind:value={templateId}>
       {#each app.templates as t (t.id)}
-        <option value={t.id}>{t.name} · {t.college} (entered {t.matriculatedFrom} or later)</option>
+        <option value={t.id}>
+          {t.name} · {t.college} ({t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})
+        </option>
       {/each}
     </select>
     <span class="hint">
@@ -94,6 +102,25 @@
     {#if templateMessage}<span class="hint" role="status">{templateMessage}</span>{/if}
     <input bind:this={fileInput} type="file" accept="application/json,.json" hidden onchange={onTemplateFile} />
   </label>
+  {#if offered.length}
+    <fieldset class="f">
+      <legend>Concentration{maxConcentrations > 1 ? `s (up to ${maxConcentrations})` : ''}</legend>
+      <div class="choices">
+        {#each offered as c (c.id)}
+          <label class="choice">
+            <input
+              type="checkbox"
+              value={c.id}
+              bind:group={concentrations}
+              disabled={!concentrations.includes(c.id) && concentrations.filter((id) => offered.some((o) => o.id === id)).length >= maxConcentrations}
+            />
+            {c.name}
+          </label>
+        {/each}
+      </div>
+      <span class="hint">Optional. Change it any time in plan details.</span>
+    </fieldset>
+  {/if}
   <div class="two">
     <label class="f">
       Entry term
@@ -110,6 +137,8 @@
   </div>
   {#if selectedTemplate && termIndex(entryTerm) < termIndex(selectedTemplate.matriculatedFrom)}
     <p class="note warn">This checklist is for students who entered {selectedTemplate.matriculatedFrom} or later.</p>
+  {:else if selectedTemplate?.matriculatedBefore && termIndex(entryTerm) >= termIndex(selectedTemplate.matriculatedBefore)}
+    <p class="note warn">This checklist is for students who entered before {selectedTemplate.matriculatedBefore}.</p>
   {/if}
   <p class="note">{termCount} terms. {statusHint}</p>
   <div class="actions">
@@ -143,6 +172,32 @@
   }
   .f select.mono {
     font-family: var(--mono);
+  }
+  fieldset.f {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  legend {
+    padding: 0;
+    margin-bottom: 6px;
+  }
+  .choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 6px 14px;
+  }
+  /* Overrides the text-field sizing that .f input gives every input. */
+  .f .choice input {
+    min-height: 0;
+    padding: 0;
+  }
+  .choice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
   }
   .hint {
     font-weight: 400;

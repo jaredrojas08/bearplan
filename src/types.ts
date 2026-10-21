@@ -73,9 +73,24 @@ export interface Section {
 export interface Check {
   id: string
   title: string
-  codes: string[]
+  /** A course counts if its code is listed or it passes any match. */
+  codes?: string[]
+  match?: Match[]
+  /** Courses needed (default 1). With credits set, a credit total instead. */
+  count?: number
+  credits?: number
+  /** Checks in the same group can't share a course. Earlier checks claim first. */
+  group?: string
+  /** "{code}" becomes the courses used. */
   metText: string
   missText: string
+}
+
+/** Extra sections a student opts into, like a Dyson concentration. */
+export interface Concentration {
+  id: string
+  name: string
+  sections: Section[]
 }
 
 export interface Template {
@@ -83,14 +98,21 @@ export interface Template {
   name: string
   college: string
   matriculatedFrom: Term
+  /** Set when a newer checklist replaces this one for later entry terms. */
+  matriculatedBefore?: Term
   totalCredits?: number
   totalCreditsNote?: string
+  /** Shown under the checklist, like grade rules. */
+  footnote?: string
   filters: { id: string; label: string; icon?: SectionIcon }[]
   /** Courses that may legitimately appear more than once (repeatable research). */
   repeatableCodes?: string[]
   /** Grades that break a letterGrade section. */
   failingGrades?: string[]
   sections: Section[]
+  concentrations?: Concentration[]
+  /** How many concentrations a plan may pick. Defaults to 1. */
+  maxConcentrations?: number
   checks: Check[]
 }
 
@@ -120,6 +142,8 @@ export interface Plan {
   courses: PlanCourse[]
   /** Codes the student marked as allowed more than once, on top of the template's list. */
   repeatable?: string[]
+  /** Ids of the template's concentrations this plan follows. */
+  concentrations?: string[]
 }
 
 /** One entry of public/courses.json. */

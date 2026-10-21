@@ -1,5 +1,5 @@
 import { ADDITIONAL, type Plan, type PlanCourse, type Template } from '../types'
-import { findTarget, normalizeCode } from './requirements'
+import { findTarget, normalizeCode, withConcentrations } from './requirements'
 import { isTerm, termIndex } from './terms'
 
 // Imported JSON comes from users, so check the shape before the app trusts it.
@@ -48,60 +48,100 @@ function ruleErrors(rule: unknown, where: string): string[] {
   return rule.flatMap((m, i) => matchErrors(m, `${where}.rule[${i}]`))
 }
 
+function sectionErrors(section: unknown, where: string, ids: Set<string>): string[] {
+  if (!isObject(section)) return [`${where} must be an object`]
+  const errors: string[] = []
+  if (!isString(section.id) || section.id.includes('/') || section.id === ADDITIONAL) {
+    errors.push(`${where}.id must be a name without "/"`)
+  } else if (ids.has(section.id)) {
+    errors.push(`${where}.id "${section.id}" is used twice`)
+  } else ids.add(section.id)
+  if (!isString(section.title)) errors.push(`${where}.title is missing`)
+  if (section.column !== 'left' && section.column !== 'right') errors.push(`${where}.column must be "left" or "right"`)
+  if (section.type === 'slots') {
+    if (!Array.isArray(section.slots)) return [...errors, `${where}.slots must be a list`]
+    const slotIds = new Set<string>()
+    section.slots.forEach((slot: unknown, j: number) => {
+      if (!isObject(slot) || !isString(slot.id) || slot.id.includes('/')) {
+        return errors.push(`${where}.slots[${j}] needs an id without "/"`)
+      }
+      if (slotIds.has(slot.id)) errors.push(`${where}.slots[${j}].id "${slot.id}" is used twice`)
+      slotIds.add(slot.id)
+      errors.push(...ruleErrors(slot.rule, `${where}.slots[${j}]`))
+    })
+  } else if (section.type === 'creditBucket') {
+    if (typeof section.minCredits !== 'number') errors.push(`${where}.minCredits must be a number`)
+    errors.push(...ruleErrors(section.rule, where))
+  } else {
+    errors.push(`${where}.type must be "slots" or "creditBucket"`)
+  }
+  if ('constraints' in section) {
+    if (!Array.isArray(section.constraints)) errors.push(`${where}.constraints must be a list`)
+    else section.constraints.forEach((c: unknown, j: number) => errors.push(...constraintErrors(c, `${where}.constraints[${j}]`)))
+  }
+  if ('groups' in section) {
+    if (!Array.isArray(section.groups)) errors.push(`${where}.groups must be a list`)
+    else section.groups.forEach((g: unknown, j: number) => {
+      if (!isObject(g) || !isString(g.id) || !isString(g.name)) errors.push(`${where}.groups[${j}] needs an id and a name`)
+    })
+  }
+  return errors
+}
+
+function checkErrors(check: unknown, where: string): string[] {
+  if (!isObject(check) || !isString(check.id) || !isString(check.title)) return [`${where} needs an id and a title`]
+  const errors: string[] = []
+  const hasCodes = isStringArray(check.codes) && check.codes.length > 0
+  const hasMatch = Array.isArray(check.match) && check.match.length > 0
+  // An empty match list passes every course, so a check needs real criteria.
+  if (!hasCodes && !hasMatch) errors.push(`${where} needs a codes list or a match list`)
+  if ('codes' in check && !isStringArray(check.codes)) errors.push(`${where}.codes must be a list of strings`)
+  if ('match' in check) {
+    if (!Array.isArray(check.match)) errors.push(`${where}.match must be a list of matches`)
+    else check.match.forEach((m, i) => errors.push(...matchErrors(m, `${where}.match[${i}]`)))
+  }
+  if ('count' in check && !(Number.isInteger(check.count) && (check.count as number) >= 1)) errors.push(`${where}.count must be a whole number of at least 1`)
+  if ('credits' in check && !(typeof check.credits === 'number' && check.credits > 0)) errors.push(`${where}.credits must be a number above 0`)
+  if ('group' in check && !isString(check.group)) errors.push(`${where}.group must be text`)
+  if (!isString(check.metText) || !isString(check.missText)) errors.push(`${where} needs metText and missText`)
+  return errors
+}
+
 export function templateErrors(data: unknown): string[] {
   if (!isObject(data)) return ['The file is not a JSON object']
   const errors: string[] = []
   for (const key of ['id', 'name', 'college']) if (!isString(data[key])) errors.push(`Missing "${key}"`)
   if (!isString(data.matriculatedFrom) || !isTerm(data.matriculatedFrom)) errors.push('"matriculatedFrom" must look like FA24')
+  if ('matriculatedBefore' in data && !(isString(data.matriculatedBefore) && isTerm(data.matriculatedBefore))) {
+    errors.push('"matriculatedBefore" must look like FA25')
+  }
   if ('totalCredits' in data && typeof data.totalCredits !== 'number') errors.push('"totalCredits" must be a number')
+  if ('footnote' in data && typeof data.footnote !== 'string') errors.push('"footnote" must be text')
   if (!Array.isArray(data.filters)) errors.push('"filters" must be a list')
   if (!Array.isArray(data.checks)) errors.push('"checks" must be a list')
   if (!Array.isArray(data.sections) || data.sections.length === 0) return [...errors, '"sections" must be a non-empty list']
 
+  // Section ids stay unique across concentrations too, since a plan can combine them.
   const ids = new Set<string>()
-  data.sections.forEach((section: unknown, i: number) => {
-    const where = `sections[${i}]`
-    if (!isObject(section)) return errors.push(`${where} must be an object`)
-    if (!isString(section.id) || section.id.includes('/') || section.id === ADDITIONAL) {
-      errors.push(`${where}.id must be a name without "/"`)
-    } else if (ids.has(section.id)) {
-      errors.push(`${where}.id "${section.id}" is used twice`)
-    } else ids.add(section.id)
-    if (!isString(section.title)) errors.push(`${where}.title is missing`)
-    if (section.column !== 'left' && section.column !== 'right') errors.push(`${where}.column must be "left" or "right"`)
-    if (section.type === 'slots') {
-      if (!Array.isArray(section.slots)) return errors.push(`${where}.slots must be a list`)
-      const slotIds = new Set<string>()
-      section.slots.forEach((slot: unknown, j: number) => {
-        if (!isObject(slot) || !isString(slot.id) || slot.id.includes('/')) {
-          return errors.push(`${where}.slots[${j}] needs an id without "/"`)
-        }
-        if (slotIds.has(slot.id)) errors.push(`${where}.slots[${j}].id "${slot.id}" is used twice`)
-        slotIds.add(slot.id)
-        errors.push(...ruleErrors(slot.rule, `${where}.slots[${j}]`))
-      })
-    } else if (section.type === 'creditBucket') {
-      if (typeof section.minCredits !== 'number') errors.push(`${where}.minCredits must be a number`)
-      errors.push(...ruleErrors(section.rule, where))
-    } else {
-      errors.push(`${where}.type must be "slots" or "creditBucket"`)
-    }
-    if ('constraints' in section) {
-      if (!Array.isArray(section.constraints)) errors.push(`${where}.constraints must be a list`)
-      else section.constraints.forEach((c: unknown, j: number) => errors.push(...constraintErrors(c, `${where}.constraints[${j}]`)))
-    }
-    if ('groups' in section) {
-      if (!Array.isArray(section.groups)) errors.push(`${where}.groups must be a list`)
-      else section.groups.forEach((g: unknown, j: number) => {
-        if (!isObject(g) || !isString(g.id) || !isString(g.name)) errors.push(`${where}.groups[${j}] needs an id and a name`)
-      })
-    }
-  })
+  data.sections.forEach((section: unknown, i: number) => errors.push(...sectionErrors(section, `sections[${i}]`, ids)))
 
-  ;(Array.isArray(data.checks) ? data.checks : []).forEach((check: unknown, i: number) => {
-    if (!isObject(check) || !isString(check.id) || !isStringArray(check.codes)) errors.push(`checks[${i}] needs an id and a codes list`)
-    else if (!isString(check.metText) || !isString(check.missText)) errors.push(`checks[${i}] needs metText and missText`)
-  })
+  const concentrationIds = new Set<string>()
+  if ('concentrations' in data) {
+    if (!Array.isArray(data.concentrations)) errors.push('"concentrations" must be a list')
+    else data.concentrations.forEach((c: unknown, i: number) => {
+      const where = `concentrations[${i}]`
+      if (!isObject(c) || !isString(c.id) || !isString(c.name)) return errors.push(`${where} needs an id and a name`)
+      if (concentrationIds.has(c.id)) errors.push(`${where}.id "${c.id}" is used twice`)
+      concentrationIds.add(c.id)
+      if (!Array.isArray(c.sections) || c.sections.length === 0) return errors.push(`${where}.sections must be a non-empty list`)
+      c.sections.forEach((section: unknown, j: number) => errors.push(...sectionErrors(section, `${where}.sections[${j}]`, ids)))
+    })
+  }
+  if ('maxConcentrations' in data && !(Number.isInteger(data.maxConcentrations) && (data.maxConcentrations as number) >= 1)) {
+    errors.push('"maxConcentrations" must be a whole number of at least 1')
+  }
+
+  ;(Array.isArray(data.checks) ? data.checks : []).forEach((check: unknown, i: number) => errors.push(...checkErrors(check, `checks[${i}]`)))
   return errors
 }
 
@@ -131,6 +171,7 @@ export function planErrors(data: unknown): string[] {
     errors.push('Graduation term is before the entry term')
   }
   if ('repeatable' in data && !isStringArray(data.repeatable)) errors.push('"repeatable" must be a list of course codes')
+  if ('concentrations' in data && !isStringArray(data.concentrations)) errors.push('"concentrations" must be a list of ids')
   if (!Array.isArray(data.courses)) return [...errors, '"courses" must be a list']
   data.courses.forEach((c: unknown, i: number) => errors.push(...courseErrors(c, i)))
   const uids = new Set<unknown>()
@@ -147,9 +188,14 @@ export function planErrors(data: unknown): string[] {
  * already taken, into additional space so nothing is silently dropped.
  */
 export function normalizePlan(plan: Plan, template: Template): Plan {
+  // Concentrations the template doesn't offer, or past its limit, are dropped.
+  const offered = new Set(template.concentrations?.map((c) => c.id))
+  const concentrations = [...new Set(plan.concentrations?.filter((id) => offered.has(id)))].slice(0, template.maxConcentrations ?? 1)
+  const resolved = withConcentrations(template, concentrations)
+
   const taken = new Set<string>()
   const courses = plan.courses.map((course): PlanCourse => {
-    const target = findTarget(template, course.placement)
+    const target = findTarget(resolved, course.placement)
     if (!target) return { ...course, placement: ADDITIONAL }
     if (target.slot) {
       if (taken.has(course.placement)) return { ...course, placement: ADDITIONAL }
@@ -159,5 +205,12 @@ export function normalizePlan(plan: Plan, template: Template): Plan {
   })
   // Hand-edited files may write "cs  4998"; matching compares normalized codes.
   const repeatable = plan.repeatable?.map(normalizeCode)
-  return { ...plan, swimTest: !!plan.swimTest, spclArea: plan.spclArea ?? '', courses, ...(repeatable ? { repeatable } : {}) }
+  return {
+    ...plan,
+    swimTest: !!plan.swimTest,
+    spclArea: plan.spclArea ?? '',
+    courses,
+    ...(repeatable ? { repeatable } : {}),
+    ...(plan.concentrations ? { concentrations } : {}),
+  }
 }

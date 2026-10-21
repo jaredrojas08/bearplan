@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import examplePlan from '../seed/example-plan.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
-import type { Plan, PlanCourse, Template } from '../types'
-import { assignGroups, evaluatePlan, matchFailure, placeFailure } from './requirements'
+import type { Plan, PlanCourse, Section, Template } from '../types'
+import { assignGroups, evaluatePlan, matchFailure, placeFailure, withConcentrations } from './requirements'
 
 const template = csTemplate as Template
 const plan = examplePlan as Plan
@@ -185,6 +185,70 @@ describe('Liberal Studies groups', () => {
   it('treats a dashed category as exact', () => {
     expect(matchFailure(course('X 2000', 3, ['SCD-AS']), { distributions: ['SCD-HA'] })).not.toBeNull()
     expect(matchFailure(course('X 2000', 3, ['SCD-AS']), { distributions: ['SCD-AS'] })).toBeNull()
+  })
+})
+
+describe('plan-wide checks', () => {
+  const check = { metText: 'met by {code}', missText: 'missing.' }
+  const checkTemplate: Template = {
+    ...template,
+    checks: [
+      { id: 'dls', title: 'DLS', match: [{ distributions: ['DLS'] }], group: 'cals', ...check },
+      { id: 'dl2', title: 'DL', match: [{ distributions: ['DLS', 'DLG'] }], group: 'cals', ...check },
+      { id: 'wrt', title: 'Writing', match: [{ distributions: ['WRT'] }], credits: 6, ...check },
+      { id: 'ssh', title: 'SSH', match: [{ distributions: ['SBA'] }], count: 2, ...check },
+    ],
+  }
+  // Only the given courses, so the seed plan can't meet a check by accident.
+  const result = (...courses: Partial<PlanCourse>[]) => {
+    const only = withCourses(...courses).courses.slice(plan.courses.length)
+    return evaluatePlan({ ...plan, courses: only }, checkTemplate, OCTOBER_2026).checks.map((c) => [c.check.id, c.met, c.text])
+  }
+
+  it('lets a grouped course meet one check only', () => {
+    expect(result({ code: 'AEM 2100', distributions: ['DLS-AG'] }).slice(0, 2)).toEqual([
+      ['dls', true, 'met by AEM 2100'],
+      ['dl2', false, 'missing.'],
+    ])
+    expect(result({ code: 'AEM 2100', distributions: ['DLS-AG'] }, { code: 'INFO 1200', distributions: ['DLG-AG'] })[1]).toEqual([
+      'dl2', true, 'met by INFO 1200',
+    ])
+  })
+
+  it('counts credits and courses, reporting partial progress', () => {
+    const rows = result(
+      { code: 'WRIT 1370', distributions: ['WRT-AG'] },
+      { code: 'ECON 1110', distributions: ['SBA-AG'] },
+    )
+    expect(rows[2]).toEqual(['wrt', false, '3 / 6 cr so far (WRIT 1370), missing.'])
+    expect(rows[3]).toEqual(['ssh', false, '1 / 2 so far (ECON 1110), missing.'])
+  })
+
+  it('counts a non-repeatable course once', () => {
+    const rows = result({ code: 'WRIT 1370', distributions: ['WRT-AG'] }, { code: 'WRIT 1370', distributions: ['WRT-AG'] })
+    expect(rows[2]).toEqual(['wrt', false, '3 / 6 cr so far (WRIT 1370), missing.'])
+    // Two copies can't meet two checks in one group either.
+    const dl = result({ code: 'AEM 2100', distributions: ['DLS-AG'] }, { code: 'AEM 2100', distributions: ['DLS-AG'] })
+    expect(dl.slice(0, 2).map((r) => r[1])).toEqual([true, false])
+  })
+
+  it('lets an ungrouped check reuse a course placed anywhere', () => {
+    const rows = result({ code: 'ECON 1110', distributions: ['SBA-AG', 'DLS-AG'], placement: 'libstudies/ls1' })
+    expect(rows[0][1]).toBe(true)
+    expect(rows[3][2]).toBe('1 / 2 so far (ECON 1110), missing.')
+  })
+})
+
+describe('concentrations', () => {
+  const extra: Section = { id: 'fin', title: 'Finance', column: 'right', filter: 'electives', type: 'slots', slots: [{ id: 'f1', label: 'AEM 4570' }] }
+  const withConc: Template = { ...template, concentrations: [{ id: 'finance', name: 'Finance', sections: [extra] }] }
+
+  it('adds only the chosen concentration sections', () => {
+    expect(withConcentrations(withConc, []).sections).toHaveLength(template.sections.length)
+    expect(withConcentrations(withConc, ['finance']).sections.at(-1)?.id).toBe('fin')
+    expect(evaluatePlan(plan, withConcentrations(withConc, ['finance']), OCTOBER_2026).whatsLeft.at(-1)).toEqual({
+      sectionId: 'fin', label: 'Finance', open: 1, needs: [],
+    })
   })
 })
 

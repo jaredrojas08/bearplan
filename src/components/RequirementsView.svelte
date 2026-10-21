@@ -16,7 +16,7 @@
     column: 'right',
     filter: '',
     icon: 'plus',
-    note: 'Does not count toward requirements.',
+    note: 'Free electives. Their credits count toward the degree total and plan-wide checks.',
     type: 'creditBucket',
     minCredits: 0,
   }
@@ -180,8 +180,7 @@
     {/each}
   </div>
   <p class="foot muted">
-    No course may be used twice; moving a course frees its old spot. Core, CS electives, project, probability,
-    technical electives and external specialization need a letter grade of C- or better once affiliated.
+    No course may be used twice; moving a course frees its old spot. {app.template?.footnote ?? ''}
   </p>
 </div>
 

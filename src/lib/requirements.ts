@@ -410,9 +410,45 @@ function courseWarnings(plan: Plan, template: Template): Record<string, string[]
   return warnings
 }
 
-function evaluateCheck(plan: Plan, check: Check): CheckResult {
-  const hit = plan.courses.find((c) => check.codes.includes(normalizeCode(c.code)))
-  return { check, met: !!hit, text: hit ? check.metText.replace('{code}', hit.code) : check.missText }
+function checkFits(check: Check, course: PlanCourse): boolean {
+  if (check.codes?.includes(normalizeCode(course.code))) return true
+  return !!check.match?.length && ruleFailure(course, check.match) === null
+}
+
+/** Checks read the whole plan, so a course can meet one wherever it sits. */
+function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
+  // Copies of a non-repeatable course share one key, so they count once, matching the degree credit total.
+  const keyOf = (course: PlanCourse) => {
+    const code = normalizeCode(course.code)
+    return isRepeatable(plan, template, code) ? `uid:${course.uid}` : code
+  }
+  const claimed = new Map<string, Set<string>>()
+  return template.checks.map((check) => {
+    const taken = (check.group && claimed.get(check.group)) || new Set<string>()
+    const used: PlanCourse[] = []
+    const usedKeys = new Set<string>()
+    const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
+    for (const course of plan.courses) {
+      if (enough()) break
+      const key = keyOf(course)
+      if (taken.has(key) || usedKeys.has(key) || !checkFits(check, course)) continue
+      used.push(course)
+      usedKeys.add(key)
+    }
+    if (check.group) claimed.set(check.group, new Set([...taken, ...usedKeys]))
+
+    const met = enough()
+    const codes = used.map((c) => c.code).join(', ')
+    const progress = check.credits !== undefined ? `${sumCredits(used)} / ${check.credits} cr` : `${used.length} / ${check.count ?? 1}`
+    const text = met ? check.metText.replace('{code}', codes) : used.length ? `${progress} so far (${codes}), ${check.missText}` : check.missText
+    return { check, met, text }
+  })
+}
+
+/** The template plus the sections of the concentrations a plan picked. */
+export function withConcentrations(template: Template, chosen: string[] = []): Template {
+  const extra = (template.concentrations ?? []).filter((c) => chosen.includes(c.id)).flatMap((c) => c.sections)
+  return extra.length ? { ...template, sections: [...template.sections, ...extra] } : template
 }
 
 export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanSummary {
@@ -462,7 +498,7 @@ export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanS
     totalUnits: counts.done + counts.prog + counts.plan + counts.empty,
     credits: { ...credits, total: credits.done + credits.prog + credits.plan, required: template.totalCredits ?? null },
     whatsLeft,
-    checks: template.checks.map((k) => evaluateCheck(plan, k)),
+    checks: evaluateChecks(plan, template),
     warnings: courseWarnings(plan, template),
     terms,
     openByFilter,

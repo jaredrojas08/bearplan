@@ -18,7 +18,7 @@
   let dim = $derived(app.moving !== null && !hasTarget && !holdsMoving)
 
   let summary = $derived.by(() => {
-    if (isExtra) return 'not counted'
+    if (isExtra) return `${result.credits} cr`
     if (section.type === 'creditBucket') return `${result.credits} / ${result.total} cr`
     return `${result.filled} / ${result.total}`
   })

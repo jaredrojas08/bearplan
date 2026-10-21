@@ -31,15 +31,69 @@ describe('validation', () => {
         { type: 'minCredits', label: 'Huge', credits: Infinity },
       ],
     }
-    expect(templateErrors({ ...csTemplate, sections: [section], checks: [{ id: 'c', codes: [] }] })).toEqual([
+    expect(templateErrors({ ...csTemplate, sections: [section], checks: [{ id: 'c', title: 'C', codes: [] }] })).toEqual([
       'sections[0].slots[1].id "s" is used twice',
       'sections[0].constraints[0].match: a match must be an object',
       'sections[0].constraints[1].type "mystery" is not supported',
       'sections[0].constraints[2].credits must be a number of at least 0',
       'sections[0].constraints[3].count must be a whole number of at least 0',
       'sections[0].constraints[4].credits must be a number of at least 0',
+      'checks[0] needs a codes list or a match list',
       'checks[0] needs metText and missText',
     ])
+  })
+
+  it('validates counted checks and concentrations', () => {
+    const check = { id: 'c', title: 'C', metText: 'ok', missText: 'no' }
+    const section = { id: 'conc', title: 'Conc', column: 'right', filter: 'x', type: 'slots', slots: [{ id: 's' }] }
+    expect(
+      templateErrors({
+        ...csTemplate,
+        checks: [{ ...check, match: [{ minLevel: 'high' }], count: 0, credits: -1 }, { ...check, codes: ['A 1'], group: 3 }],
+        concentrations: [
+          { id: 'a', name: 'A', sections: [section] },
+          { id: 'a', name: 'B', sections: [{ ...section, id: 'core' }] },
+          { id: 'c', name: 'C', sections: [] },
+        ],
+        maxConcentrations: 0,
+        matriculatedBefore: 'soon',
+      }),
+    ).toEqual([
+      '"matriculatedBefore" must look like FA25',
+      'concentrations[1].id "a" is used twice',
+      'concentrations[1].sections[0].id "core" is used twice',
+      'concentrations[2].sections must be a non-empty list',
+      '"maxConcentrations" must be a whole number of at least 1',
+      'checks[0].match[0].minLevel must be a number',
+      'checks[0].count must be a whole number of at least 1',
+      'checks[0].credits must be a number above 0',
+      'checks[1].group must be text',
+    ])
+    expect(planErrors({ ...examplePlan, concentrations: 'finance' })).toEqual(['"concentrations" must be a list of ids'])
+  })
+
+  it('keeps only offered concentrations, up to the limit, and their placements', () => {
+    const slots = (id: string) => [{ id, title: id, column: 'right', filter: 'x', type: 'slots', slots: [{ id: 's' }] }]
+    const template = {
+      ...(csTemplate as Template),
+      concentrations: [
+        { id: 'a', name: 'A', sections: slots('a-req') },
+        { id: 'b', name: 'B', sections: slots('b-req') },
+      ],
+    } as Template
+    const plan: Plan = {
+      ...(examplePlan as Plan),
+      concentrations: ['gone', 'a', 'a', 'b'],
+      courses: [
+        { uid: 'x', code: 'AEM 1', title: '', credits: 3, term: 'FA24', placement: 'a-req/s' },
+        { uid: 'y', code: 'AEM 2', title: '', credits: 3, term: 'FA24', placement: 'b-req/s' },
+      ],
+    }
+    const fixed = normalizePlan(plan, template)
+    expect(fixed.concentrations).toEqual(['a'])
+    expect(fixed.courses.map((c) => c.placement)).toEqual(['a-req/s', 'additional'])
+    // A repeated id doesn't use up a slot.
+    expect(normalizePlan(plan, { ...template, maxConcentrations: 2 }).courses.map((c) => c.placement)).toEqual(['a-req/s', 'b-req/s'])
   })
 
   it('rejects malformed plans', () => {
