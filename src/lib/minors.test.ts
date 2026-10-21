@@ -63,6 +63,11 @@ describe('minors', () => {
     expect(check(plan, 'business-minor-engineers.jcb').text).toMatch(/^3 \/ 7.5 cr so far \(AEM 2241\)/)
   })
 
+  it('counts a duplicated minor course once toward unique credits', () => {
+    const plan = planWith([course('AEM 2241', 'business-minor-engineers.core/fin'), { ...course('AEM 2241', 'business-minor-engineers.career'), uid: 'copy' }])
+    expect(check(plan, 'business-minor-engineers.unique').text).toBe('3 / 12 cr not shared with your major so far.')
+  })
+
   it('flags S/U in minor rows even when the major lists no failing grades', () => {
     const aem = withMinors(aemJson as Template, [business])
     const plan = { ...planWith([course('AEM 2241', 'business-minor.core/fin', 3, 'S')], ['business-minor']), templateId: 'aem-cals-2025' }

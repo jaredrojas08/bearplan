@@ -142,8 +142,11 @@ class AppState {
   /** Changing the template can orphan placements, so those courses move to additional space. */
   updateDetails(details: PlanDetails) {
     if (!this.plan) return
+    // A template that can't hold the plan would replace it with nothing.
+    const plan = this.adopt({ ...$state.snapshot(this.plan), ...details })
+    if (!plan) return
     this.moving = null
-    this.plan = this.adopt({ ...$state.snapshot(this.plan), ...details })
+    this.plan = plan
   }
 
   resetPlan() {

@@ -502,7 +502,14 @@ function minorUniqueChecks(plan: Plan, template: Template): CheckResult[] {
   return (template.addedMinors ?? [])
     .filter((m) => m.minUniqueCredits)
     .map((m) => {
-      const unique = plan.courses.filter((c) => sectionOf(c)?.minor === m.id && !majorCodes.has(normalizeCode(c.code)))
+      // Copies of a non-repeatable course count once, as in the degree credit total.
+      const seen = new Set<string>()
+      const unique = plan.courses.filter((c) => {
+        const code = normalizeCode(c.code)
+        if (sectionOf(c)?.minor !== m.id || majorCodes.has(code) || seen.has(code)) return false
+        if (!isRepeatable(plan, template, code)) seen.add(code)
+        return true
+      })
       const credits = sumCredits(unique)
       const need = m.minUniqueCredits!
       const check: Check = { id: `${m.id}.unique`, title: `${m.name}: unique credits`, metText: '', missText: '' }
