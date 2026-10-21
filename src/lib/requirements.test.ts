@@ -224,6 +224,11 @@ describe('plan-wide checks', () => {
     expect(rows[3]).toEqual(['ssh', false, '1 / 2 so far (ECON 1110), missing.'])
   })
 
+  it('counts a non-repeatable course once', () => {
+    const rows = result({ code: 'WRIT 1370', distributions: ['WRT-AG'] }, { code: 'WRIT 1370', distributions: ['WRT-AG'] })
+    expect(rows[2]).toEqual(['wrt', false, '3 / 6 cr so far (WRIT 1370), missing.'])
+  })
+
   it('lets an ungrouped check reuse a course placed anywhere', () => {
     const rows = result({ code: 'ECON 1110', distributions: ['SBA-AG', 'DLS-AG'], placement: 'libstudies/ls1' })
     expect(rows[0][1]).toBe(true)

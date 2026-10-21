@@ -83,7 +83,7 @@ describe('validation', () => {
     } as Template
     const plan: Plan = {
       ...(examplePlan as Plan),
-      concentrations: ['gone', 'a', 'b'],
+      concentrations: ['gone', 'a', 'a', 'b'],
       courses: [
         { uid: 'x', code: 'AEM 1', title: '', credits: 3, term: 'FA24', placement: 'a-req/s' },
         { uid: 'y', code: 'AEM 2', title: '', credits: 3, term: 'FA24', placement: 'b-req/s' },
@@ -92,6 +92,7 @@ describe('validation', () => {
     const fixed = normalizePlan(plan, template)
     expect(fixed.concentrations).toEqual(['a'])
     expect(fixed.courses.map((c) => c.placement)).toEqual(['a-req/s', 'additional'])
+    // A repeated id doesn't use up a slot.
     expect(normalizePlan(plan, { ...template, maxConcentrations: 2 }).courses.map((c) => c.placement)).toEqual(['a-req/s', 'b-req/s'])
   })
 

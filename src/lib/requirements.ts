@@ -416,15 +416,18 @@ function checkFits(check: Check, course: PlanCourse): boolean {
 }
 
 /** Checks read the whole plan, so a course can meet one wherever it sits. */
-function evaluateChecks(plan: Plan, checks: Check[]): CheckResult[] {
+function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
   const claimed = new Map<string, Set<string>>()
-  return checks.map((check) => {
+  return template.checks.map((check) => {
     const taken = (check.group && claimed.get(check.group)) || new Set<string>()
     const used: PlanCourse[] = []
     const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
     for (const course of plan.courses) {
       if (enough()) break
-      if (!taken.has(course.uid) && checkFits(check, course)) used.push(course)
+      // A second copy of a non-repeatable course adds nothing, matching the degree credit total.
+      const code = normalizeCode(course.code)
+      const copy = used.some((u) => normalizeCode(u.code) === code) && !isRepeatable(plan, template, code)
+      if (!copy && !taken.has(course.uid) && checkFits(check, course)) used.push(course)
     }
     if (check.group) claimed.set(check.group, new Set([...taken, ...used.map((c) => c.uid)]))
 
@@ -489,7 +492,7 @@ export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanS
     totalUnits: counts.done + counts.prog + counts.plan + counts.empty,
     credits: { ...credits, total: credits.done + credits.prog + credits.plan, required: template.totalCredits ?? null },
     whatsLeft,
-    checks: evaluateChecks(plan, template.checks),
+    checks: evaluateChecks(plan, template),
     warnings: courseWarnings(plan, template),
     terms,
     openByFilter,

@@ -190,7 +190,7 @@ export function planErrors(data: unknown): string[] {
 export function normalizePlan(plan: Plan, template: Template): Plan {
   // Concentrations the template doesn't offer, or past its limit, are dropped.
   const offered = new Set(template.concentrations?.map((c) => c.id))
-  const concentrations = plan.concentrations?.filter((id) => offered.has(id)).slice(0, template.maxConcentrations ?? 1)
+  const concentrations = [...new Set(plan.concentrations?.filter((id) => offered.has(id)))].slice(0, template.maxConcentrations ?? 1)
   const resolved = withConcentrations(template, concentrations)
 
   const taken = new Set<string>()
@@ -211,6 +211,6 @@ export function normalizePlan(plan: Plan, template: Template): Plan {
     spclArea: plan.spclArea ?? '',
     courses,
     ...(repeatable ? { repeatable } : {}),
-    ...(concentrations ? { concentrations } : {}),
+    ...(plan.concentrations ? { concentrations } : {}),
   }
 }
