@@ -70,8 +70,10 @@ function distributionsOf(cls) {
   const fromAttrs = (cls.crseAttrs ?? [])
     .filter((a) => a.attrDescrShort === 'DistReq' && a.crseAttrValue)
     .map((a) => a.crseAttrValue.trim())
-  if (fromAttrs.length) return [...new Set(fromAttrs)]
-  return (cls.catalogDistr ?? '').match(/[A-Z]+(?:-[A-Z]+)?/g) ?? []
+  const found = fromAttrs.length ? fromAttrs : ((cls.catalogDistr ?? '').match(/[A-Z]+(?:-[A-Z]+)?/g) ?? [])
+  // The API marks writing seminars only by title, so templates match this tag.
+  if (/^FWS:/.test(cls.titleLong ?? '')) found.push('FWS')
+  return [...new Set(found)]
 }
 
 function creditsOf(cls) {
