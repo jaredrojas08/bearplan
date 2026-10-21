@@ -2,7 +2,7 @@ import examplePlan from '../seed/example-plan.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import { ADDITIONAL, type CatalogCourse, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { buildIndex, type SearchIndexEntry } from './search'
-import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, type CourseFacts } from './requirements'
+import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, withConcentrations, type CourseFacts } from './requirements'
 import { termRange, upcomingTerm } from './terms'
 import { normalizePlan, planErrors, templateErrors } from './validate'
 
@@ -16,6 +16,7 @@ export interface PlanDetails {
   templateId: string
   entryTerm: Term
   gradTerm: Term
+  concentrations: string[]
 }
 
 export interface Moving {
@@ -48,7 +49,11 @@ class AppState {
   catalog = $state.raw<SearchIndexEntry[] | null>(null)
   catalogError = $state<string | null>(null)
 
-  template = $derived(this.templates.find((t) => t.id === this.plan?.templateId) ?? null)
+  /** The plan's template with its chosen concentrations' sections added. */
+  template = $derived.by(() => {
+    const base = this.templates.find((t) => t.id === this.plan?.templateId)
+    return base ? withConcentrations(base, this.plan?.concentrations) : null
+  })
   summary = $derived(this.plan && this.template ? evaluatePlan(this.plan, this.template, this.today) : null)
   terms = $derived(this.plan ? termRange(this.plan.entryTerm, this.plan.gradTerm) : [])
 

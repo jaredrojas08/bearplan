@@ -35,6 +35,7 @@ The CS template in [`src/templates/cs-engineering-fa24.json`](../src/templates/c
 | `filters` | The filter pills above the grid. Each section names one with its `filter` field. |
 | `repeatableCodes` | Courses allowed more than once (research, independent study, team projects). Everything else is "no course may be used twice". Students can also mark any course repeatable from the placing banner; that list is saved in their plan, not the template. |
 | `failingGrades` | Grades that get a warning in sections marked `letterGrade`. |
+| `concentrations`, `maxConcentrations` | Optional extra sections a plan opts into. See [Concentrations](#concentrations). |
 
 ## Sections
 
@@ -116,7 +117,7 @@ Group constraints need a `groups` list on the section. Each group has an `id`, a
 
 ## Plan-wide checks
 
-Checks are requirements that are not rows. They pass when any course in the plan, in any section, is in `codes`.
+Checks are requirements that are not rows. They read every course in the plan, wherever it sits, so a course can fill a major row and still meet a check. That is how college distributions that may overlap with the major work.
 
 ```json
 {
@@ -127,6 +128,43 @@ Checks are requirements that are not rows. They pass when any course in the plan
   "missText": "not yet. Needs an accepted probability course."
 }
 ```
+
+| Field | Meaning |
+|---|---|
+| `codes` | A course counts if its code is listed. |
+| `match` | Or if it passes any of these matches (same fields as a `rule`). A check needs `codes`, `match`, or both. |
+| `count` | Courses needed. Defaults to 1. |
+| `credits` | Credits needed instead of a course count. |
+| `group` | Checks with the same group can't use the same course, for rules like "a course may fulfill only one distribution". Checks claim courses in file order, so list the narrow ones first. |
+| `metText` / `missText` | `{code}` in `metText` becomes the courses used. When a counted check is partly met, the app shows progress like "3 / 9 cr so far" before `missText`. |
+
+A CALS distribution as a check:
+
+```json
+{
+  "id": "psc",
+  "title": "Physical Sciences",
+  "match": [{ "distributions": ["PSC"], "minCredits": 3 }],
+  "group": "cals",
+  "metText": "satisfied by {code}",
+  "missText": "needs one PSC-AG course of 3+ credits."
+}
+```
+
+## Concentrations
+
+A template can offer optional concentrations. Each one is a list of extra sections that appear only in plans that pick it during setup or in plan details.
+
+```json
+"maxConcentrations": 2,
+"concentrations": [
+  { "id": "finance", "name": "Finance", "sections": [ { "id": "fin-req", "title": "Finance: Required", ... } ] }
+]
+```
+
+- `maxConcentrations` is how many a plan may pick. It defaults to 1.
+- Section ids must be unique across the template and every concentration, since a plan can combine them.
+- Dropping a concentration moves its courses to Additional Space.
 
 ## Distribution categories
 

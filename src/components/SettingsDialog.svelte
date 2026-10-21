@@ -16,8 +16,16 @@
   }
 
   function save(details: PlanDetails) {
-    const orphaned = app.plan && details.templateId !== app.plan.templateId && app.plan.courses.length > 0
-    if (orphaned && !confirm('Switching checklists moves courses that no longer fit into Additional Space. Continue?')) return
+    if (!app.plan) return
+    const switching = details.templateId !== app.plan.templateId && app.plan.courses.length > 0
+    if (switching && !confirm('Switching checklists moves courses that no longer fit into Additional Space. Continue?')) return
+    // Courses placed in a dropped concentration lose their spot.
+    const dropped = (app.template?.concentrations ?? []).filter(
+      (c) => app.plan!.concentrations?.includes(c.id) && !details.concentrations.includes(c.id),
+    )
+    const droppedIds = new Set(dropped.flatMap((c) => c.sections.map((s) => s.id)))
+    const losing = !switching && app.plan.courses.some((c) => droppedIds.has(c.placement.split('/')[0]))
+    if (losing && !confirm(`Courses in ${dropped.map((c) => c.name).join(' and ')} will move to Additional Space. Continue?`)) return
     app.updateDetails(details)
     dialog.close()
   }
@@ -48,7 +56,13 @@
   {#if app.plan}
     {#key formKey}
       <PlanForm
-        initial={{ name: app.plan.name, templateId: app.plan.templateId, entryTerm: app.plan.entryTerm, gradTerm: app.plan.gradTerm }}
+        initial={{
+          name: app.plan.name,
+          templateId: app.plan.templateId,
+          entryTerm: app.plan.entryTerm,
+          gradTerm: app.plan.gradTerm,
+          concentrations: app.plan.concentrations ?? [],
+        }}
         submitLabel="Save"
         onSubmit={save}
       />
