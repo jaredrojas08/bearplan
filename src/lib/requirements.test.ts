@@ -227,6 +227,9 @@ describe('plan-wide checks', () => {
   it('counts a non-repeatable course once', () => {
     const rows = result({ code: 'WRIT 1370', distributions: ['WRT-AG'] }, { code: 'WRIT 1370', distributions: ['WRT-AG'] })
     expect(rows[2]).toEqual(['wrt', false, '3 / 6 cr so far (WRIT 1370), missing.'])
+    // Two copies can't meet two checks in one group either.
+    const dl = result({ code: 'AEM 2100', distributions: ['DLS-AG'] }, { code: 'AEM 2100', distributions: ['DLS-AG'] })
+    expect(dl.slice(0, 2).map((r) => r[1])).toEqual([true, false])
   })
 
   it('lets an ungrouped check reuse a course placed anywhere', () => {

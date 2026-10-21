@@ -417,19 +417,25 @@ function checkFits(check: Check, course: PlanCourse): boolean {
 
 /** Checks read the whole plan, so a course can meet one wherever it sits. */
 function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
+  // Copies of a non-repeatable course share one key, so they count once, matching the degree credit total.
+  const keyOf = (course: PlanCourse) => {
+    const code = normalizeCode(course.code)
+    return isRepeatable(plan, template, code) ? `uid:${course.uid}` : code
+  }
   const claimed = new Map<string, Set<string>>()
   return template.checks.map((check) => {
     const taken = (check.group && claimed.get(check.group)) || new Set<string>()
     const used: PlanCourse[] = []
+    const usedKeys = new Set<string>()
     const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
     for (const course of plan.courses) {
       if (enough()) break
-      // A second copy of a non-repeatable course adds nothing, matching the degree credit total.
-      const code = normalizeCode(course.code)
-      const copy = used.some((u) => normalizeCode(u.code) === code) && !isRepeatable(plan, template, code)
-      if (!copy && !taken.has(course.uid) && checkFits(check, course)) used.push(course)
+      const key = keyOf(course)
+      if (taken.has(key) || usedKeys.has(key) || !checkFits(check, course)) continue
+      used.push(course)
+      usedKeys.add(key)
     }
-    if (check.group) claimed.set(check.group, new Set([...taken, ...used.map((c) => c.uid)]))
+    if (check.group) claimed.set(check.group, new Set([...taken, ...usedKeys]))
 
     const met = enough()
     const codes = used.map((c) => c.code).join(', ')
