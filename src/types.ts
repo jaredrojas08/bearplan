@@ -68,6 +68,8 @@ export interface Section {
   spcl?: boolean
   /** Credits here don't count toward the degree total (PE). */
   excludeFromCredits?: boolean
+  /** Set by the app on sections that come from a minor: that minor's id. */
+  minor?: string
 }
 
 export interface Check {
@@ -81,6 +83,8 @@ export interface Check {
   credits?: number
   /** Checks in the same group can't share a course. Earlier checks claim first. */
   group?: string
+  /** Set by the app on a minor's checks: only that minor's courses count. */
+  minor?: string
   /** "{code}" becomes the courses used. */
   metText: string
   missText: string
@@ -95,6 +99,8 @@ export interface Concentration {
 
 export interface Template {
   id: string
+  /** Minors attach to a plan alongside its major checklist. */
+  kind?: 'major' | 'minor'
   name: string
   college: string
   matriculatedFrom: Term
@@ -113,6 +119,10 @@ export interface Template {
   concentrations?: Concentration[]
   /** How many concentrations a plan may pick. Defaults to 1. */
   maxConcentrations?: number
+  /** Minors only: credits that must not also count toward the major. */
+  minUniqueCredits?: number
+  /** Set by the app on a resolved template: the minors added to it. */
+  addedMinors?: Pick<Template, 'id' | 'name' | 'minUniqueCredits'>[]
   checks: Check[]
 }
 
@@ -144,6 +154,8 @@ export interface Plan {
   repeatable?: string[]
   /** Ids of the template's concentrations this plan follows. */
   concentrations?: string[]
+  /** Ids of minor templates this plan adds. */
+  minors?: string[]
 }
 
 /** One entry of public/courses.json. */

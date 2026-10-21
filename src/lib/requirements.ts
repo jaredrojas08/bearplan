@@ -124,6 +124,16 @@ function sectionCourses(plan: Plan, section: Section, exceptUid?: string): PlanC
   )
 }
 
+/**
+ * A course may count once for the major and once for a minor. Each minor's
+ * unique-credit check keeps that sharing within the minor's rules.
+ */
+function isMajorMinorPair(template: Template, a: string, b: string): boolean {
+  const first = findTarget(template, a)?.section
+  const second = findTarget(template, b)?.section
+  return !!first && !!second && !!first.minor !== !!second.minor
+}
+
 function placementTitle(template: Template, placement: string): string {
   return findTarget(template, placement)?.section?.title ?? 'Additional space'
 }
@@ -148,8 +158,9 @@ export function placeFailure(
 
   const code = normalizeCode(course.code)
   if (!isRepeatable(plan, template, code)) {
-    const twin = plan.courses.find((c) => c.uid !== movingUid && normalizeCode(c.code) === code)
-    if (twin) return `Already counted in ${placementTitle(template, twin.placement)}`
+    const twins = plan.courses.filter((c) => c.uid !== movingUid && normalizeCode(c.code) === code)
+    const shared = twins.length === 1 && isMajorMinorPair(template, placement, twins[0].placement)
+    if (twins.length && !shared) return `Already counted in ${placementTitle(template, twins[0].placement)}`
   }
 
   const section = target.section
@@ -377,8 +388,9 @@ function evaluateSection(plan: Plan, section: Section, today: Date): SectionResu
   }
 }
 
+// S/U always breaks a letter-grade row; other failing grades come from the template.
 function isFailingGrade(template: Template, grade: string | undefined): boolean {
-  return !!grade && (template.failingGrades ?? []).includes(grade.toUpperCase())
+  return !!grade && (/^[SU]X?$/i.test(grade) || (template.failingGrades ?? []).includes(grade.toUpperCase()))
 }
 
 function courseWarnings(plan: Plan, template: Template): Record<string, string[]> {
@@ -393,7 +405,9 @@ function courseWarnings(plan: Plan, template: Template): Record<string, string[]
 
   for (const course of plan.courses) {
     const code = normalizeCode(course.code)
-    if ((byCode.get(code)?.length ?? 0) > 1 && !isRepeatable(plan, template, code)) add(course.uid, 'Used twice')
+    const copies = byCode.get(code) ?? []
+    const shared = copies.length === 2 && isMajorMinorPair(template, copies[0].placement, copies[1].placement)
+    if (copies.length > 1 && !shared && !isRepeatable(plan, template, code)) add(course.uid, 'Used twice')
 
     const target = findTarget(template, course.placement)
     if (!target) {
@@ -428,7 +442,8 @@ function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
     const used: PlanCourse[] = []
     const usedKeys = new Set<string>()
     const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
-    for (const course of plan.courses) {
+    const pool = check.minor ? plan.courses.filter((c) => findTarget(template, c.placement)?.section?.minor === check.minor) : plan.courses
+    for (const course of pool) {
       if (enough()) break
       const key = keyOf(course)
       if (taken.has(key) || usedKeys.has(key) || !checkFits(check, course)) continue
@@ -443,6 +458,57 @@ function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
     const text = met ? check.metText.replace('{code}', codes) : used.length ? `${progress} so far (${codes}), ${check.missText}` : check.missText
     return { check, met, text }
   })
+}
+
+/** The template plus each minor's sections and checks, with ids prefixed so files can't collide. */
+export function withMinors(template: Template, minors: Template[]): Template {
+  if (minors.length === 0) return template
+  const filterId = (minor: Template) => `minor:${minor.id}`
+  return {
+    ...template,
+    filters: [...template.filters, ...minors.map((m) => ({ id: filterId(m), label: m.name, icon: 'book' as const }))],
+    sections: [
+      ...template.sections,
+      ...minors.flatMap((m) =>
+        m.sections.map((s) => ({
+          ...s,
+          id: `${m.id}.${s.id}`,
+          filter: filterId(m),
+          leftLabel: `${m.name}: ${s.leftLabel ?? s.title}`,
+          minor: m.id,
+        })),
+      ),
+    ],
+    checks: [
+      ...template.checks,
+      ...minors.flatMap((m) =>
+        m.checks.map((c) => ({
+          ...c,
+          id: `${m.id}.${c.id}`,
+          title: `${m.name}: ${c.title}`,
+          minor: m.id,
+          ...(c.group ? { group: `${m.id}.${c.group}` } : {}),
+        })),
+      ),
+    ],
+    addedMinors: minors.map(({ id, name, minUniqueCredits }) => ({ id, name, minUniqueCredits })),
+  }
+}
+
+/** Credits in each minor that don't also count toward the major. */
+function minorUniqueChecks(plan: Plan, template: Template): CheckResult[] {
+  const sectionOf = (c: PlanCourse) => findTarget(template, c.placement)?.section
+  const majorCodes = new Set(plan.courses.filter((c) => sectionOf(c) && !sectionOf(c)!.minor).map((c) => normalizeCode(c.code)))
+  return (template.addedMinors ?? [])
+    .filter((m) => m.minUniqueCredits)
+    .map((m) => {
+      const unique = plan.courses.filter((c) => sectionOf(c)?.minor === m.id && !majorCodes.has(normalizeCode(c.code)))
+      const credits = sumCredits(unique)
+      const need = m.minUniqueCredits!
+      const check: Check = { id: `${m.id}.unique`, title: `${m.name}: unique credits`, metText: '', missText: '' }
+      const met = credits >= need
+      return { check, met, text: `${Math.min(credits, need)} / ${need} cr not shared with your major${met ? '' : ' so far'}.` }
+    })
 }
 
 /** The template plus the sections of the concentrations a plan picked. */
@@ -498,7 +564,7 @@ export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanS
     totalUnits: counts.done + counts.prog + counts.plan + counts.empty,
     credits: { ...credits, total: credits.done + credits.prog + credits.plan, required: template.totalCredits ?? null },
     whatsLeft,
-    checks: evaluateChecks(plan, template),
+    checks: [...evaluateChecks(plan, template), ...minorUniqueChecks(plan, template)],
     warnings: courseWarnings(plan, template),
     terms,
     openByFilter,

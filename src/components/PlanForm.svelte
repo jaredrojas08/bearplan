@@ -30,19 +30,29 @@
   // svelte-ignore state_referenced_locally
   let name = $state(initial?.name ?? '')
   // svelte-ignore state_referenced_locally
-  let templateId = $state(initial?.templateId ?? app.templates[0].id)
+  let templateId = $state(initial?.templateId ?? app.majors[0].id)
   // svelte-ignore state_referenced_locally
   let entryTerm = $state(initial?.entryTerm ?? defaultEntry)
   // svelte-ignore state_referenced_locally
   let gradTerm = $state(initial?.gradTerm ?? shiftTerm(defaultEntry, 7))
   // svelte-ignore state_referenced_locally
   let concentrations = $state<string[]>(initial?.concentrations ?? [])
+  // svelte-ignore state_referenced_locally
+  let minors = $state<string[]>(initial?.minors ?? [])
   let templateMessage = $state('')
   let fileInput: HTMLInputElement
 
   let gradOptions = $derived(termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)))
   let termCount = $derived(termIndex(gradTerm) - termIndex(entryTerm) + 1)
-  let selectedTemplate = $derived(app.templates.find((t) => t.id === templateId))
+  let selectedTemplate = $derived(app.majors.find((t) => t.id === templateId))
+  let minorOptions = $derived(app.minors.filter((m) => !minors.includes(m.id)))
+  const minorName = (id: string) => app.minors.find((m) => m.id === id)?.name ?? id
+
+  function addMinor(event: Event) {
+    const select = event.currentTarget as HTMLSelectElement
+    if (select.value) minors = [...minors, select.value]
+    select.value = ''
+  }
   let offered = $derived(selectedTemplate?.concentrations ?? [])
   let maxConcentrations = $derived(selectedTemplate?.maxConcentrations ?? 1)
 
@@ -58,7 +68,10 @@
       return
     }
     const { errors, template } = app.importTemplate(file.text)
-    if (template) {
+    if (template?.kind === 'minor') {
+      if (!minors.includes(template.id)) minors = [...minors, template.id]
+      templateMessage = `Added the "${template.name}" minor.`
+    } else if (template) {
       templateId = template.id
       templateMessage = `Added "${template.name}".`
     } else {
@@ -70,7 +83,7 @@
     event.preventDefault()
     // Picks from a previously selected checklist don't carry over.
     const kept = concentrations.filter((id) => offered.some((c) => c.id === id))
-    onSubmit({ name: name.trim(), templateId, entryTerm, gradTerm, concentrations: kept })
+    onSubmit({ name: name.trim(), templateId, entryTerm, gradTerm, concentrations: kept, minors })
   }
 
   let statusHint = $derived.by(() => {
@@ -89,7 +102,7 @@
   <label class="f">
     Requirement checklist
     <select bind:value={templateId}>
-      {#each app.templates as t (t.id)}
+      {#each app.majors as t (t.id)}
         <option value={t.id}>
           {t.name} · {t.college} ({t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})
         </option>
@@ -120,6 +133,28 @@
       </div>
       <span class="hint">Optional. Change it any time in plan details.</span>
     </fieldset>
+  {/if}
+  {#if app.minors.length}
+    <div class="f">
+      <label for="minor-pick">Minors</label>
+      {#if minors.length}
+        <ul class="minor-list">
+          {#each minors as id (id)}
+            <li class="minor-chip">
+              {minorName(id)}
+              <button type="button" class="link" aria-label="Remove the {minorName(id)} minor" onclick={() => (minors = minors.filter((m) => m !== id))}>Remove</button>
+            </li>
+          {/each}
+        </ul>
+      {/if}
+      {#if minorOptions.length}
+        <select id="minor-pick" onchange={addMinor}>
+          <option value="">Add a minor…</option>
+          {#each minorOptions as m (m.id)}<option value={m.id}>{m.name} · {m.college}</option>{/each}
+        </select>
+      {/if}
+      <span class="hint">Optional. A course can count for your major and a minor; each minor's unique-credit rule still applies.</span>
+    </div>
   {/if}
   <div class="two">
     <label class="f">
@@ -198,6 +233,24 @@
     gap: 8px;
     font-weight: 400;
     font-size: 14px;
+  }
+  .minor-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .minor-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    background: var(--tint);
+    border-radius: 999px;
+    padding: 4px 12px;
   }
   .hint {
     font-weight: 400;

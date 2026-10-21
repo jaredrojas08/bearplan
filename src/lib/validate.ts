@@ -1,5 +1,5 @@
 import { ADDITIONAL, type Plan, type PlanCourse, type Template } from '../types'
-import { findTarget, normalizeCode, withConcentrations } from './requirements'
+import { findTarget, normalizeCode, withConcentrations, withMinors } from './requirements'
 import { isTerm, termIndex } from './terms'
 
 // Imported JSON comes from users, so check the shape before the app trusts it.
@@ -117,6 +117,14 @@ export function templateErrors(data: unknown): string[] {
   }
   if ('totalCredits' in data && typeof data.totalCredits !== 'number') errors.push('"totalCredits" must be a number')
   if ('footnote' in data && typeof data.footnote !== 'string') errors.push('"footnote" must be text')
+  if ('kind' in data && data.kind !== 'major' && data.kind !== 'minor') errors.push('"kind" must be "major" or "minor"')
+  if ('minUniqueCredits' in data && !(typeof data.minUniqueCredits === 'number' && data.minUniqueCredits >= 0)) {
+    errors.push('"minUniqueCredits" must be a number of at least 0')
+  }
+  // Minors attach to a major's plan, so options that only make sense for the plan's own checklist are refused.
+  if (data.kind === 'minor') {
+    for (const key of ['concentrations', 'totalCredits']) if (key in data) errors.push(`A minor can't set "${key}"`)
+  }
   if (!Array.isArray(data.filters)) errors.push('"filters" must be a list')
   if (!Array.isArray(data.checks)) errors.push('"checks" must be a list')
   if (!Array.isArray(data.sections) || data.sections.length === 0) return [...errors, '"sections" must be a non-empty list']
@@ -172,6 +180,7 @@ export function planErrors(data: unknown): string[] {
   }
   if ('repeatable' in data && !isStringArray(data.repeatable)) errors.push('"repeatable" must be a list of course codes')
   if ('concentrations' in data && !isStringArray(data.concentrations)) errors.push('"concentrations" must be a list of ids')
+  if ('minors' in data && !isStringArray(data.minors)) errors.push('"minors" must be a list of ids')
   if (!Array.isArray(data.courses)) return [...errors, '"courses" must be a list']
   data.courses.forEach((c: unknown, i: number) => errors.push(...courseErrors(c, i)))
   const uids = new Set<unknown>()
@@ -187,11 +196,13 @@ export function planErrors(data: unknown): string[] {
  * Moves courses whose placement the template doesn't know, or whose slot is
  * already taken, into additional space so nothing is silently dropped.
  */
-export function normalizePlan(plan: Plan, template: Template): Plan {
+export function normalizePlan(plan: Plan, template: Template, available: Template[] = []): Plan {
   // Concentrations the template doesn't offer, or past its limit, are dropped.
   const offered = new Set(template.concentrations?.map((c) => c.id))
   const concentrations = [...new Set(plan.concentrations?.filter((id) => offered.has(id)))].slice(0, template.maxConcentrations ?? 1)
-  const resolved = withConcentrations(template, concentrations)
+  // Minors that aren't loaded are dropped, and their courses move to additional space.
+  const minors = [...new Set(plan.minors)].flatMap((id) => available.filter((t) => t.kind === 'minor' && t.id === id))
+  const resolved = withMinors(withConcentrations(template, concentrations), minors)
 
   const taken = new Set<string>()
   const courses = plan.courses.map((course): PlanCourse => {
@@ -212,5 +223,6 @@ export function normalizePlan(plan: Plan, template: Template): Plan {
     courses,
     ...(repeatable ? { repeatable } : {}),
     ...(plan.concentrations ? { concentrations } : {}),
+    ...(plan.minors ? { minors: minors.map((m) => m.id) } : {}),
   }
 }

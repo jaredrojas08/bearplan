@@ -24,8 +24,13 @@
       (c) => app.plan!.concentrations?.includes(c.id) && !details.concentrations.includes(c.id),
     )
     const droppedIds = new Set(dropped.flatMap((c) => c.sections.map((s) => s.id)))
-    const losing = !switching && app.plan.courses.some((c) => droppedIds.has(c.placement.split('/')[0]))
-    if (losing && !confirm(`Courses in ${dropped.map((c) => c.name).join(' and ')} will move to Additional Space. Continue?`)) return
+    // Minor sections carry the minor's id once merged into the template.
+    const droppedMinors = (app.plan.minors ?? []).filter((id) => !details.minors.includes(id))
+    const isDropped = (sectionId: string) =>
+      droppedIds.has(sectionId) || droppedMinors.some((id) => app.template?.sections.find((s) => s.id === sectionId)?.minor === id)
+    const names = [...dropped.map((c) => c.name), ...droppedMinors.map((id) => app.minors.find((m) => m.id === id)?.name ?? id)]
+    const losing = !switching && app.plan.courses.some((c) => isDropped(c.placement.split('/')[0]))
+    if (losing && !confirm(`Courses in ${names.join(' and ')} will move to Additional Space. Continue?`)) return
     app.updateDetails(details)
     dialog.close()
   }
@@ -62,6 +67,7 @@
           entryTerm: app.plan.entryTerm,
           gradTerm: app.plan.gradTerm,
           concentrations: app.plan.concentrations ?? [],
+          minors: app.plan.minors ?? [],
         }}
         submitLabel="Save"
         onSubmit={save}
