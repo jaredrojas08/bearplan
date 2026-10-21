@@ -187,3 +187,10 @@ describe('Liberal Studies groups', () => {
     expect(matchFailure(course('X 2000', 3, ['SCD-AS']), { distributions: ['SCD-AS'] })).toBeNull()
   })
 })
+
+describe('writing seminars', () => {
+  it('fits an FWS that carries no WRT category', () => {
+    expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1101', 3, ['FWS']), 'fws/fws1')).toBeNull()
+    expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1400', 3, ['CA-AG']), 'fws/fws1')).toBe('Not a writing seminar')
+  })
+})
