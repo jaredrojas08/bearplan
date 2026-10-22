@@ -314,6 +314,14 @@ function groupChip(
         ok: top >= constraint.credits,
       }
     }
+    case 'groupCredits': {
+      const total = sumCredits(inGroup(constraint.group))
+      return {
+        label: constraint.label,
+        text: `${Math.min(total, constraint.credits)} / ${constraint.credits} cr`,
+        ok: total >= constraint.credits,
+      }
+    }
     case 'groupMaxCount': {
       const n = inGroup(constraint.group).length
       return { label: constraint.label, text: `max ${constraint.count}, ${n} used`, ok: n <= constraint.count, limit: true }

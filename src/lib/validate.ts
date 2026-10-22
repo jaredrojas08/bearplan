@@ -23,7 +23,7 @@ function matchErrors(match: unknown, where: string): string[] {
   return errors
 }
 
-const COUNT_KEYS = { minCredits: 'credits', minCount: 'count', maxCount: 'count', minGroups: 'count', groupMinCredits: 'credits', groupMaxCount: 'count' }
+const COUNT_KEYS = { minCredits: 'credits', minCount: 'count', maxCount: 'count', minGroups: 'count', groupMinCredits: 'credits', groupCredits: 'credits', groupMaxCount: 'count' }
 
 function constraintErrors(constraint: unknown, where: string): string[] {
   if (!isObject(constraint)) return [`${where} must be an object`]
@@ -38,7 +38,7 @@ function constraintErrors(constraint: unknown, where: string): string[] {
   if (!valid) errors.push(`${where}.${key} must be ${key === 'count' ? 'a whole number' : 'a number'} of at least 0`)
   if (type === 'minCount' || type === 'maxCount') errors.push(...matchErrors(constraint.match, `${where}.match`))
   if (type === 'maxCount' && !isString(constraint.reason)) errors.push(`${where}.reason is missing`)
-  if ((type === 'groupMinCredits' || type === 'groupMaxCount') && !isString(constraint.group)) errors.push(`${where}.group is missing`)
+  if ((type === 'groupMinCredits' || type === 'groupCredits' || type === 'groupMaxCount') && !isString(constraint.group)) errors.push(`${where}.group is missing`)
   return errors
 }
 

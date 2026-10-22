@@ -115,6 +115,7 @@ Constraints check a whole section. They show as chips under the title, and unmet
 | `maxCount` | `count`, `match`, `reason` | At most one 2000-level technical elective. Drops that would break it are refused with `reason`. |
 | `minGroups` | `count` | Courses from at least 3 groups. |
 | `groupMinCredits` | `group`, `credits` | One course of at least 3 credits in Group 7. |
+| `groupCredits` | `group`, `credits` | At least 7 credits in total from Group A. |
 | `groupMaxCount` | `group`, `count` | At most 2 courses from Group 6. |
 
 Group constraints need a `groups` list on the section. Each group has an `id`, a `name`, and `categories` and/or `codes`. A course that fits several groups is assigned to one automatically, picking the assignment that meets the most constraints.
