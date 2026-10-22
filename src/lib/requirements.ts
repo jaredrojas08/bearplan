@@ -171,9 +171,10 @@ export function placeFailure(
   if (failure) return failure
 
   for (const constraint of section.constraints ?? []) {
-    if (constraint.type !== 'maxCount' || matchFailure(course, constraint.match) !== null) continue
+    if ((constraint.type !== 'maxCount' && constraint.type !== 'maxCredits') || matchFailure(course, constraint.match) !== null) continue
     const already = sectionCourses(plan, section, movingUid).filter((c) => matchFailure(c, constraint.match) === null)
-    if (already.length + 1 > constraint.count) return constraint.reason
+    if (constraint.type === 'maxCount' && already.length + 1 > constraint.count) return constraint.reason
+    if (constraint.type === 'maxCredits' && sumCredits(already) + course.credits > constraint.credits) return constraint.reason
   }
   return null
 }
@@ -349,6 +350,10 @@ function constraintChip(
       const n = courses.filter((c) => matchFailure(c, constraint.match) === null).length
       return { label: constraint.label, text: `max ${constraint.count}, ${n} used`, ok: n <= constraint.count, limit: true }
     }
+    case 'maxCredits': {
+      const n = sumCredits(courses.filter((c) => matchFailure(c, constraint.match) === null))
+      return { label: constraint.label, text: `max ${constraint.credits} cr, ${n} used`, ok: n <= constraint.credits, limit: true }
+    }
     default:
       return groupChip(constraint, courses, groupOf)!
   }
@@ -441,7 +446,7 @@ function courseWarnings(plan: Plan, template: Template): Record<string, string[]
     if (!target.section) continue
     const failure = ruleFailure(course, target.slot ? target.slot.rule : target.section.rule, target.section.title)
     if (failure) add(course.uid, failure)
-    const suAllowed = target.section.suAllowedCodes?.includes(code) && /^S/i.test(course.grade ?? '')
+    const suAllowed = target.section.suAllowedCodes?.includes(code) && /^S$/i.test(course.grade ?? '')
     if (target.section.letterGrade && isFailingGrade(template, course.grade) && !suAllowed) {
       add(course.uid, /^[SU]/i.test(course.grade!) ? 'S/U in letter-grade row' : 'Needs C- or better')
     }
