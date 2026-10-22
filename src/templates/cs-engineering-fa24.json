@@ -2,6 +2,7 @@
   "id": "cs-engineering-fa24",
   "name": "Computer Science",
   "college": "Engineering",
+  "source": "https://catalog.cornell.edu/programs/computer-science-bs/",
   "matriculatedFrom": "FA24",
   "totalCredits": 123,
   "totalCreditsNote": "123 cr minimum per the Fall 2024 Engineering handbook. Confirm with your advisor.",

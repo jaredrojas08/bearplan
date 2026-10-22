@@ -9,7 +9,7 @@
   async function onPlanFile(event: Event) {
     const file = await readFile(event)
     if (!file) return
-    importErrors = 'error' in file ? [file.error] : app.importPlan(file.text)
+    importErrors = 'error' in file ? [file.error] : await app.importPlan(file.text)
   }
 </script>
 

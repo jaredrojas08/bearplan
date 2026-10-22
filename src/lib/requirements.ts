@@ -473,6 +473,8 @@ export function withMinors(template: Template, minors: Template[]): Template {
         m.sections.map((s) => ({
           ...s,
           id: `${m.id}.${s.id}`,
+          // Section titles like "Core Courses" need the minor's name next to the major's sections.
+          title: s.title.includes(m.name) ? s.title : `${m.name}: ${s.title}`,
           filter: filterId(m),
           leftLabel: `${m.name}: ${s.leftLabel ?? s.title}`,
           minor: m.id,
@@ -491,7 +493,7 @@ export function withMinors(template: Template, minors: Template[]): Template {
         })),
       ),
     ],
-    addedMinors: minors.map(({ id, name, minUniqueCredits }) => ({ id, name, minUniqueCredits })),
+    addedMinors: minors.map(({ id, name, minUniqueCredits, draft, source }) => ({ id, name, minUniqueCredits, draft, source })),
   }
 }
 

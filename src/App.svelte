@@ -11,7 +11,16 @@
   let settings = $state<SettingsDialog>()
 </script>
 
-{#if !app.plan || !app.summary}
+{#if app.restoring || app.restoreError}
+  <div class="restore" role={app.restoreError ? 'alert' : 'status'}>
+    {#if app.restoreError}
+      <p>{app.restoreError}</p>
+      <button class="btn primary" onclick={() => app.retryRestore()}>Try again</button>
+    {:else}
+      <p class="muted">Loading your plan…</p>
+    {/if}
+  </div>
+{:else if !app.plan || !app.summary}
   <Onboarding />
 {:else}
   <div class="shell">
@@ -43,6 +52,16 @@
     flex: 999 1 640px;
     min-width: 0;
     padding: 12px 8px;
+  }
+  .restore {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    text-align: center;
   }
   .save-error {
     margin: 0 0 16px;

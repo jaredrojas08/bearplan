@@ -101,6 +101,10 @@ export interface Template {
   id: string
   /** Minors attach to a plan alongside its major checklist. */
   kind?: 'major' | 'minor'
+  /** Generated from the catalog by script and not yet checked by a person. */
+  draft?: boolean
+  /** The official page the requirements come from. */
+  source?: string
   name: string
   college: string
   matriculatedFrom: Term
@@ -122,7 +126,7 @@ export interface Template {
   /** Minors only: credits that must not also count toward the major. */
   minUniqueCredits?: number
   /** Set by the app on a resolved template: the minors added to it. */
-  addedMinors?: Pick<Template, 'id' | 'name' | 'minUniqueCredits'>[]
+  addedMinors?: Pick<Template, 'id' | 'name' | 'minUniqueCredits' | 'draft' | 'source'>[]
   checks: Check[]
 }
 
@@ -156,6 +160,14 @@ export interface Plan {
   concentrations?: string[]
   /** Ids of minor templates this plan adds. */
   minors?: string[]
+}
+
+/** One entry of public/catalog/index.json: a drafted checklist that loads when picked. */
+export interface CatalogEntry {
+  id: string
+  kind: 'major' | 'minor'
+  name: string
+  college: string
 }
 
 /** One entry of public/courses.json. */

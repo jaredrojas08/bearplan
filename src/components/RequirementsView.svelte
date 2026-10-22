@@ -33,7 +33,7 @@
       return
     }
     if (!confirm('Replace your current plan with this file? Export first if you want to keep it.')) return
-    importErrors = app.importPlan(file.text)
+    importErrors = await app.importPlan(file.text)
   }
   let customDialog: CustomCourseDialog
 
@@ -91,6 +91,12 @@
     return inPlan && !app.template.repeatableCodes?.includes(code) ? code : null
   })
 
+  // The major and any minors that were drafted from the catalog by script.
+  let drafts = $derived([
+    ...(app.template?.draft ? [{ name: app.template.name, source: app.template.source }] : []),
+    ...(app.template?.addedMinors ?? []).filter((m) => m.draft).map((m) => ({ name: `${m.name} minor`, source: m.source })),
+  ])
+
   let placedMessage = $state('')
   let placedTimer: ReturnType<typeof setTimeout> | undefined
 
@@ -121,6 +127,15 @@
       <input bind:this={planInput} type="file" accept="application/json,.json" hidden onchange={onPlanFile} />
     </div>
   </header>
+  {#if drafts.length}
+    <aside class="draft-note" aria-label="Draft checklist">
+      <b>Draft checklist.</b>
+      {#each drafts as d, i (d.name)}{i ? ', ' : ''}{#if d.source}<a href={d.source} target="_blank" rel="noopener noreferrer">{d.name}</a>{:else}{d.name}{/if}{/each}
+      {drafts.length === 1 ? 'was' : 'were'} turned into a checklist automatically from the Cornell catalog and not yet checked by a person.
+      It covers the program's own courses, not college requirements, and some rules are only in the notes. Check it against the catalog page
+      and your advisor.
+    </aside>
+  {/if}
   {#if importErrors.length}
     <ul class="errors" role="alert">
       {#each importErrors.slice(0, 5) as error (error)}<li>{error}</li>{/each}
@@ -224,6 +239,19 @@
     background: var(--warn-bg);
     color: var(--warn-ink);
     font-size: 13px;
+  }
+  .draft-note {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: var(--warn-bg);
+    color: var(--warn-ink);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .draft-note a {
+    color: inherit;
+    font-weight: 600;
   }
   .filters {
     display: flex;
