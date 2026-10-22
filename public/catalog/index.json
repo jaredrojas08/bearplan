@@ -336,12 +336,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "computer-science-ba",
-  "kind": "major",
-  "name": "Computer Science (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "computer-science-minor",
   "kind": "minor",
   "name": "Computer Science",
@@ -441,12 +435,6 @@
   "id": "east-asian-studies-minor",
   "kind": "minor",
   "name": "East Asian Studies",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "economics-ba",
-  "kind": "major",
-  "name": "Economics (BA)",
   "college": "College of Arts and Sciences"
  },
  {
@@ -682,12 +670,6 @@
   "kind": "major",
   "name": "Global & Public Health Sciences (GPHSHE-BS)",
   "college": "College of Human Ecology"
- },
- {
-  "id": "government-ba",
-  "kind": "major",
-  "name": "Government (BA)",
-  "college": "College of Arts and Sciences"
  },
  {
   "id": "health-care-policy-major-bs",
@@ -1125,12 +1107,6 @@
   "id": "portuguese-brazilian-studies-minor",
   "kind": "minor",
   "name": "Portuguese and Brazilian Studies",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "psychology-ba",
-  "kind": "major",
-  "name": "Psychology (BA)",
   "college": "College of Arts and Sciences"
  },
  {

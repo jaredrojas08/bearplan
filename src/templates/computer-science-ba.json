@@ -1,0 +1,770 @@
+{
+  "id": "computer-science-ba",
+  "name": "Computer Science (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/computer-science-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "footnote": "All major courses need a letter grade of C- or better, except the Major-Approved Elective. Courses below 1100, PE and ROTC below 3000 don't count.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "math",
+      "title": "Math Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "sigma",
+      "letterGrade": true,
+      "note": "AP, IB or CASE credit can cover the first two; add it as a custom course.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "m1",
+          "label": "MATH 1110 / 1910",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1110",
+                "MATH 1910"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "label": "MATH 1120 / 1920",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1120",
+                "MATH 1920"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "label": "MATH 2210 / 2310 / 2940",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2210",
+                "MATH 2310",
+                "MATH 2940"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "title": "Introductory Computing",
+      "column": "left",
+      "filter": "major",
+      "icon": "code",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "p1",
+          "label": "CS 1110 / 1112",
+          "rule": [
+            {
+              "codes": [
+                "CS 1110",
+                "CS 1112"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "label": "CS 2110 / 2112",
+          "rule": [
+            {
+              "codes": [
+                "CS 2110",
+                "CS 2112",
+                "ENGRD 2110",
+                "ENGRD 2112"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Computer Science Core",
+      "column": "right",
+      "filter": "major",
+      "icon": "code",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "CS 2800 / 2802",
+          "rule": [
+            {
+              "codes": [
+                "CS 2800",
+                "CS 2802"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "CS 3110",
+          "rule": [
+            {
+              "codes": [
+                "CS 3110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "CS 3410 / 3420",
+          "rule": [
+            {
+              "codes": [
+                "CS 3410",
+                "CS 3420"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "CS 3700 / 3780",
+          "rule": [
+            {
+              "codes": [
+                "CS 3700",
+                "CS 3780"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5",
+          "label": "CS 4410 / 4414",
+          "rule": [
+            {
+              "codes": [
+                "CS 4410",
+                "CS 4414"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6",
+          "label": "CS 4820",
+          "rule": [
+            {
+              "codes": [
+                "CS 4820"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cs-electives",
+      "title": "CS Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "code",
+      "letterGrade": true,
+      "note": "Two CS courses at 4000+, 3+ credits. CS 3700 or 3780 counts if not used in the core. Not CS 4090, 4997, 4998 or 4999.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "ce1",
+          "label": "CS 4000+",
+          "rule": [
+            {
+              "subjects": [
+                "CS"
+              ],
+              "minLevel": 4000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "CS 4090",
+                "CS 4997",
+                "CS 4998",
+                "CS 4999",
+                "CS 4410",
+                "CS 4414",
+                "CS 4820"
+              ]
+            },
+            {
+              "codes": [
+                "CS 3700",
+                "CS 3780"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ce2",
+          "label": "CS 4000+",
+          "rule": [
+            {
+              "subjects": [
+                "CS"
+              ],
+              "minLevel": 4000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "CS 4090",
+                "CS 4997",
+                "CS 4998",
+                "CS 4999",
+                "CS 4410",
+                "CS 4414",
+                "CS 4820"
+              ]
+            },
+            {
+              "codes": [
+                "CS 3700",
+                "CS 3780"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "title": "Practicum or Project",
+      "column": "right",
+      "filter": "major",
+      "icon": "star",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "pr1",
+          "label": "Project course",
+          "rule": [
+            {
+              "codes": [
+                "CS 3152",
+                "CS 4121",
+                "CS 4152",
+                "CS 4321",
+                "CS 4411",
+                "CS 4621",
+                "CS 4701",
+                "CS 4740",
+                "CS 5121",
+                "CS 5150",
+                "CS 5152",
+                "CS 5321",
+                "CS 5411",
+                "CS 5412",
+                "CS 5414",
+                "CS 5621",
+                "CS 5625",
+                "CS 5643",
+                "CS 5740"
+              ],
+              "minCredits": 2,
+              "reason": "Not a CS practicum or project course"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "Technical Electives",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "letterGrade": true,
+      "note": "3+ credits at 3000+ with a qualifying prerequisite (see the catalog list). One 2000+ course allowed; up to two research courses (CS 4999 for 3+ credits, letter grade).",
+      "constraints": [
+        {
+          "type": "maxCount",
+          "label": "2000-level",
+          "count": 1,
+          "match": {
+            "maxLevel": 2999
+          },
+          "reason": "Only one 2000-level course allowed"
+        },
+        {
+          "type": "maxCount",
+          "label": "CS 4999",
+          "count": 2,
+          "match": {
+            "codes": [
+              "CS 4999"
+            ]
+          },
+          "reason": "At most two research courses"
+        }
+      ],
+      "type": "slots",
+      "slots": [
+        {
+          "id": "t1",
+          "label": "3000+",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "CS 4090",
+                "CS 4997",
+                "CS 4998"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "label": "3000+",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "CS 4090",
+                "CS 4997",
+                "CS 4998"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "label": "3000+",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "CS 4090",
+                "CS 4997",
+                "CS 4998"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ext-spec",
+      "title": "External Specialization",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "spcl": true,
+      "note": "Three related 3000+ courses of 3+ credits outside CS, sharing a prefix or an approved topic. At most one cross-listed with CS. No research, independent study, project team or teaching credit.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "x1",
+          "label": "3000+",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "CS"
+              ],
+              "minLevel": 3000,
+              "minCredits": 3
+            }
+          ]
+        },
+        {
+          "id": "x2",
+          "label": "3000+",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "CS"
+              ],
+              "minLevel": 3000,
+              "minCredits": 3
+            }
+          ]
+        },
+        {
+          "id": "x3",
+          "label": "3000+",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "CS"
+              ],
+              "minLevel": 3000,
+              "minCredits": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approved",
+      "title": "Major-Approved Elective",
+      "column": "right",
+      "filter": "major",
+      "icon": "star",
+      "minCredits": 3,
+      "leftLabel": "Major-Approved",
+      "note": "3 credits in one course or several. S/U is allowed here (needs an S).",
+      "rule": [
+        {
+          "excludeSubjects": [
+            "PE",
+            "AIRS",
+            "MILS",
+            "NAVS"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        },
+        {
+          "subjects": [
+            "AIRS",
+            "MILS",
+            "NAVS"
+          ],
+          "minLevel": 3000
+        }
+      ],
+      "type": "creditBucket"
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}

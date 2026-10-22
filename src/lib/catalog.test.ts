@@ -7,7 +7,7 @@ const modules = import.meta.glob<{ default: unknown }>('../../public/catalog/*.j
 const byFile = Object.fromEntries(Object.entries(modules).map(([path, mod]) => [path.split('/').at(-1)!, mod.default]))
 const index = byFile['index.json'] as CatalogEntry[]
 const files = Object.keys(byFile).filter((f) => f !== 'index.json')
-const host = byFile['economics-ba.json'] as Template
+const host = byFile['history-ba.json'] as Template
 
 describe('catalog drafts', () => {
   it('lists every draft in the index, and nothing else', () => {

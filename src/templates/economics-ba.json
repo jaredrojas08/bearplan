@@ -1,0 +1,556 @@
+{
+  "id": "economics-ba",
+  "name": "Economics (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/economics-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "footnote": "All 12 courses need a letter grade of C- or better (B- for ECON 1110 and 1120). Graduate ECON courses count only if they're on the department's list.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introductory Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "note": "Each needs a B- or better (or an AP 5 plus the department placement exam).",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "i1",
+          "label": "ECON 1110",
+          "rule": [
+            {
+              "codes": [
+                "ECON 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "i2",
+          "label": "ECON 1120",
+          "rule": [
+            {
+              "codes": [
+                "ECON 1120"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Core Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "note": "Must be taken at Cornell.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "ECON 3030",
+          "rule": [
+            {
+              "codes": [
+                "ECON 3030"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "ECON 3040",
+          "rule": [
+            {
+              "codes": [
+                "ECON 3040"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "ECON 3110 / 3130",
+          "rule": [
+            {
+              "codes": [
+                "ECON 3110",
+                "ECON 3130"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "ECON 3120 / 3140",
+          "rule": [
+            {
+              "codes": [
+                "ECON 3120",
+                "ECON 3140"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Elective Courses",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "note": "Six ECON courses: at least 3 at the 4000 level, at most 1 numbered 2400-2999, the rest 3000+ or approved graduate ECON courses. ECON 4997-4999 don't count.",
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "4000-level",
+          "count": 3,
+          "match": {
+            "minLevel": 4000,
+            "maxLevel": 4999
+          }
+        },
+        {
+          "type": "maxCount",
+          "label": "2400-2999",
+          "count": 1,
+          "match": {
+            "maxLevel": 2999
+          },
+          "reason": "Only one ECON course numbered 2400-2999 counts"
+        }
+      ],
+      "type": "slots",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "ECON elective",
+          "rule": [
+            {
+              "subjects": [
+                "ECON"
+              ],
+              "minLevel": 2400,
+              "excludeCodes": [
+                "ECON 4997",
+                "ECON 4998",
+                "ECON 4999"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "ECON elective",
+          "rule": [
+            {
+              "subjects": [
+                "ECON"
+              ],
+              "minLevel": 2400,
+              "excludeCodes": [
+                "ECON 4997",
+                "ECON 4998",
+                "ECON 4999"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "ECON elective",
+          "rule": [
+            {
+              "subjects": [
+                "ECON"
+              ],
+              "minLevel": 2400,
+              "excludeCodes": [
+                "ECON 4997",
+                "ECON 4998",
+                "ECON 4999"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "label": "ECON elective",
+          "rule": [
+            {
+              "subjects": [
+                "ECON"
+              ],
+              "minLevel": 2400,
+              "excludeCodes": [
+                "ECON 4997",
+                "ECON 4998",
+                "ECON 4999"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5",
+          "label": "ECON elective",
+          "rule": [
+            {
+              "subjects": [
+                "ECON"
+              ],
+              "minLevel": 2400,
+              "excludeCodes": [
+                "ECON 4997",
+                "ECON 4998",
+                "ECON 4999"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6",
+          "label": "ECON elective",
+          "rule": [
+            {
+              "subjects": [
+                "ECON"
+              ],
+              "minLevel": 2400,
+              "excludeCodes": [
+                "ECON 4997",
+                "ECON 4998",
+                "ECON 4999"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}

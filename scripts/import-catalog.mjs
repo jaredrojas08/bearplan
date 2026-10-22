@@ -19,7 +19,16 @@ const BASE = 'https://catalog.cornell.edu'
 const HEADERS = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' }
 const DEGREES = /^(BA|BS|BA, BS|BFA|BAR|[A-Z]+-BS|Minor)$/
 // Hand-checked templates in src/templates replace these catalog pages.
-const VERIFIED = new Set(['computer-science-bs', 'applied-economics-management-bs', 'business-minor', 'dyson-business-minor-engineers'])
+const VERIFIED = new Set([
+  'computer-science-bs',
+  'applied-economics-management-bs',
+  'business-minor',
+  'dyson-business-minor-engineers',
+  'economics-ba',
+  'computer-science-ba',
+  'psychology-ba',
+  'government-ba',
+])
 const WORDS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -259,7 +268,8 @@ function toSections(parts, heading, idPrefix) {
   const used = new Set()
   const uniqueId = (base) => {
     let id = `${idPrefix}${slugify(base)}`
-    for (let n = 2; used.has(id); n++) id = `${idPrefix}${slugify(base)}-${n}`
+    // "additional" is the app's own Additional Space.
+    for (let n = 2; used.has(id) || id === 'additional'; n++) id = `${idPrefix}${slugify(base)}-${n}`
     used.add(id)
     return id
   }
