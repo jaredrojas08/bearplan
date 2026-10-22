@@ -64,3 +64,16 @@ describe('Arts & Sciences checklists', () => {
     expect(text('dist-courses')?.text).toMatch(/^1 \/ 8 so far/)
   })
 })
+
+describe('Psychology research credit', () => {
+  it('allows S/U and repeats for PSYCH 4700 and 4710 only', () => {
+    const warnings = summarize(psychology, [
+      { ...course('PSYCH 4700', 'psych', [], 3), grade: 'S' },
+      { ...course('PSYCH 4700', 'psych', [], 3), uid: 'again', grade: 'S' },
+      { ...course('PSYCH 3220', 'psych', [], 3), grade: 'S' },
+    ]).warnings
+    expect(warnings['PSYCH 4700@psych']).toBeUndefined()
+    expect(warnings['again']).toBeUndefined()
+    expect(warnings['PSYCH 3220@psych']).toEqual(['S/U in letter-grade row'])
+  })
+})
