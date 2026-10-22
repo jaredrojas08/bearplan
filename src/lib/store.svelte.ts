@@ -203,7 +203,8 @@ class AppState {
           if (res.status === 404) return 'missing'
           if (!res.ok) return 'offline'
           const data: unknown = await res.json()
-          return templateErrors(data).length === 0 ? (data as Template) : 'missing'
+          // A file for a different checklist would leave the requested one missing.
+          return templateErrors(data).length === 0 && (data as Template).id === id ? (data as Template) : 'missing'
         } catch {
           return 'offline'
         }
@@ -212,7 +213,7 @@ class AppState {
     const found = results.filter((t): t is Template => typeof t === 'object' && !this.templates.some((x) => x.id === t.id))
     if (found.length) this.templates = [...this.templates, ...found]
     if (results.includes('offline')) return 'offline'
-    return results.includes('missing') ? 'missing' : 'ok'
+    return ids.every((id) => this.templates.some((t) => t.id === id)) ? 'ok' : 'missing'
   }
 
   private hasTemplates(plan: Plan): boolean {
