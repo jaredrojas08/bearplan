@@ -324,7 +324,7 @@ function parseProgram(html, program) {
   const $ = cheerio.load(html)
   const container = $('#curriculumtextcontainer').length ? $('#curriculumtextcontainer') : $('#textcontainer')
   const title = clean($('.page-title').first().text()) || program.text
-  const college = clean($('p.college-text').first().text()).slice(0, 120)
+  const college = clean($('p.college-text').first().text())
   const pageText = clean(container.text())
   const totalCredits = Number(pageText.match(/Minimum Credits for Degree:\s*(\d+)/)?.[1]) || undefined
   const uniqueCredits = Number(pageText.match(/minimum of (\d+) unique credits/i)?.[1]) || undefined
