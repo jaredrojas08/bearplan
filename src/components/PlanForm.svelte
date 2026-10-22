@@ -53,8 +53,8 @@
   $effect(() => {
     const id = templateId
     loadMessage = ''
-    void app.ensureTemplates([id]).then((ok) => {
-      if (!ok && id === templateId) loadMessage = 'This checklist could not be downloaded. Check your connection.'
+    void app.ensureTemplates([id]).then((status) => {
+      if (status !== 'ok' && id === templateId) loadMessage = 'This checklist could not be downloaded. Check your connection.'
     })
   })
 
@@ -63,7 +63,7 @@
     const id = select.value
     select.value = ''
     if (!id) return
-    if (await app.ensureTemplates([id])) minors = [...minors, id]
+    if ((await app.ensureTemplates([id])) === 'ok') minors = [...minors, id]
     else loadMessage = `The ${minorName(id)} minor could not be downloaded. Check your connection.`
   }
   let offered = $derived(selectedTemplate?.concentrations ?? [])

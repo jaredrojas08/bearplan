@@ -160,26 +160,31 @@ class AppState {
     }
   }
 
-  /** Downloads drafted checklists that aren't loaded yet. Returns false if any is unavailable. */
-  async ensureTemplates(ids: string[]): Promise<boolean> {
-    const missing = [...new Set(ids)].filter((id) => !this.templates.some((t) => t.id === id))
-    const loaded = await Promise.all(
-      missing.map(async (id) => {
+  /**
+   * Downloads drafted checklists that aren't loaded yet. "missing" means a checklist
+   * doesn't exist (a retry can't help); "offline" means a download failed.
+   */
+  async ensureTemplates(ids: string[]): Promise<'ok' | 'missing' | 'offline'> {
+    const wanted = [...new Set(ids)].filter((id) => !this.templates.some((t) => t.id === id))
+    const results = await Promise.all(
+      wanted.map(async (id): Promise<Template | 'missing' | 'offline'> => {
+        // Ids come from saved plans and files, so only plain slugs reach the URL.
+        if (!/^[a-z0-9-]+$/.test(id)) return 'missing'
         try {
-          // Ids come from saved plans and files, so only plain slugs reach the URL.
-          if (!/^[a-z0-9-]+$/.test(id)) return null
           const res = await fetch(`${import.meta.env.BASE_URL}catalog/${id}.json`)
-          if (!res.ok) return null
+          if (res.status === 404) return 'missing'
+          if (!res.ok) return 'offline'
           const data: unknown = await res.json()
-          return templateErrors(data).length === 0 ? (data as Template) : null
+          return templateErrors(data).length === 0 ? (data as Template) : 'missing'
         } catch {
-          return null
+          return 'offline'
         }
       }),
     )
-    const found = loaded.filter((t): t is Template => t !== null && !this.templates.some((x) => x.id === t.id))
+    const found = results.filter((t): t is Template => typeof t === 'object' && !this.templates.some((x) => x.id === t.id))
     if (found.length) this.templates = [...this.templates, ...found]
-    return loaded.every((t) => t !== null)
+    if (results.includes('offline')) return 'offline'
+    return results.includes('missing') ? 'missing' : 'ok'
   }
 
   private hasTemplates(plan: Plan): boolean {
@@ -190,14 +195,28 @@ class AppState {
   async restore(saved: Plan) {
     this.restoring = true
     this.restoreError = null
-    const ok = await this.ensureTemplates([saved.templateId, ...(saved.minors ?? [])])
+    const status = await this.ensureTemplates([saved.templateId, ...(saved.minors ?? [])])
     this.restoring = false
-    if (!ok) {
+    if (status === 'offline') {
       this.restoreError = 'Your plan\'s checklist could not be downloaded. Check your connection and try again.'
+      return
+    }
+    if (status === 'missing') {
+      this.restoreError = 'A checklist your plan uses is no longer available. Starting a new plan keeps a copy of this one in your browser.'
       return
     }
     this.plan = this.adopt(saved)
     this.backupUnreadable()
+  }
+
+  /** Leaves a plan that can't be restored: keeps a copy aside, then goes to onboarding. */
+  startOverFromRestore() {
+    if (!this.backupUnreadable()) {
+      this.restoreError = 'This browser blocked saving a copy of your plan, so it was left in place. Export it from another browser first.'
+      return
+    }
+    this.restoreError = null
+    this.resetPlan()
   }
 
   retryRestore() {
@@ -206,12 +225,15 @@ class AppState {
   }
 
   /** Copies an unreadable plan aside so starting a new one can't overwrite it. */
-  private backupUnreadable() {
+  private backupUnreadable(): boolean {
     // Blocked storage throws here, and then there is nothing to copy.
     try {
       const raw = localStorage.getItem(PLAN_KEY)
       if (!this.plan && raw) localStorage.setItem(`${PLAN_KEY}:unreadable`, raw)
-    } catch {}
+      return true
+    } catch {
+      return false
+    }
   }
 
   private options(kind: 'major' | 'minor'): ChecklistOption[] {
@@ -265,7 +287,7 @@ class AppState {
     const plan = data as Plan
     // A missing minor would otherwise be dropped and its courses moved to Additional Space.
     const ids = [plan.templateId, ...(plan.minors ?? [])]
-    if (!(await this.ensureTemplates(ids))) {
+    if ((await this.ensureTemplates(ids)) !== 'ok') {
       const missing = ids.filter((id) => !this.templates.some((t) => t.id === id))
       return [`This plan uses checklists that aren't available: ${missing.join(', ')}. Import those templates first, or check your connection.`]
     }
