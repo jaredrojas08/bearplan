@@ -1,0 +1,581 @@
+{
+ "id": "global-public-health-sciences-bs",
+ "name": "Global & Public Health Sciences (GPHSAG-BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/global-public-health-sciences-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "global-public-health-core-courses-14-cre",
+   "title": "Global & Public Health Core Courses (14 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 1600",
+     "rule": [
+      {
+       "codes": [
+        "NS 1600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "NS 2060",
+     "rule": [
+      {
+       "codes": [
+        "NS 2060"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NS 2600",
+     "rule": [
+      {
+       "codes": [
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "NS 3600",
+     "rule": [
+      {
+       "codes": [
+        "NS 3600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "NS 4600",
+     "rule": [
+      {
+       "codes": [
+        "NS 4600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-behavioral-health-selective-3-4-c",
+   "title": "Social & Behavioral Health Selective (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Social & Behavioral Health Selective (3-4 Credits)",
+     "rule": [
+      {
+       "codes": [
+        "NS 2450",
+        "NS 4480",
+        "NS 4510",
+        "NS 4570/ECON 3910",
+        "ANTHR 2468",
+        "COMM 2850",
+        "COMM 4760",
+        "HD 4600",
+        "GDEV 3020",
+        "PUBPOL 3180",
+        "PUBPOL/GDEV 3280",
+        "PUBPOL 4280/ECON 3710",
+        "SOC 4120"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biological-aspects-of-public-health-sele",
+   "title": "Biological Aspects of Public Health Selective (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biological Aspects of Public Health Selective (3-4 Credits)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3060",
+        "NS 3150",
+        "NS 4140",
+        "NS 4200",
+        "NS 4210",
+        "NS 4300",
+        "NS 4410",
+        "NS 5510",
+        "BIOMG 4390",
+        "BIOMG 4870",
+        "BIOMI 2600",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 4040",
+        "BIONB 3920",
+        "ENTOM 4000",
+        "PLSCI 2100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "environmental-health-selective-3-4-credi",
+   "title": "Environmental Health Selective (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Environmental Health Selective (3-4 Credits)",
+     "rule": [
+      {
+       "codes": [
+        "DEA 2700",
+        "GDEV 3020",
+        "GDEV 3400",
+        "BIOMI 2500",
+        "BIOMI 2950",
+        "BIOMI/BIOMS 4310",
+        "COMM 2850/STS 2851",
+        "ENTOM 2100/BSOC 2101",
+        "ENTOM 4520",
+        "FDSC 3960",
+        "PLSCI 2100",
+        "PLSCI 2400",
+        "PLSCI 4140",
+        "PLSCI 4450"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "health-policy-practice-selective-3-4-cre",
+   "title": "Health Policy & Practice Selective (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Health Policy & Practice Selective (3-4 Credits)",
+     "rule": [
+      {
+       "codes": [
+        "NS 4450",
+        "NS 4500",
+        "NS 4510",
+        "NS 4570",
+        "AMST 2225",
+        "ANTHR 4458",
+        "CRP 3430",
+        "GDEV 3020",
+        "GDEV 3700",
+        "GOVT 3032",
+        "HD 4600",
+        "PUBPOL 2030",
+        "PUBPOL 2050",
+        "PUBPOL 2208",
+        "PUBPOL 2350",
+        "PUBPOL 3110",
+        "PUBPOL 3230",
+        "PUBPOL 3320",
+        "PUBPOL 3650",
+        "PUBPOL 3780",
+        "PUBPOL 3870",
+        "PUBPOL 4370"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070",
+        "CHEM 2071",
+        "CHEM 2080",
+        "CHEM 2081",
+        "CHEM 1560",
+        "CHEM 1561"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2150",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2150"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "OPTION A: (two-semester sequence required for pre-health) is one alternative. OPTION B: (single semester not adequate for pre-health) is one alternative. OPTION C: (not for pre-health) is one alternative. OPTION D (not for pre-health): is one alternative. AP Chemistry Score of 5 AND OPTION E: (not for pre-health) is one alternative. AP Chemistry Score of 5 AND",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-biology-8-credits",
+   "title": "Introductory Biology (8 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1500",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOSM 1500",
+     "rule": [
+      {
+       "codes": [
+        "BIOSM 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BIOEE 1610 / BIOEE 1780",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610",
+        "BIOEE 1780"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options-2",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570",
+        "CHEM 3530",
+        "CHEM 3570",
+        "CHEM 3580",
+        "CHEM 3590",
+        "CHEM 3600"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "OPTION A: is one alternative. OPTION B: is one alternative. OPTION C: is one alternative. OPTION D: is one alternative. OPTION E: is one alternative.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physiology-3-4-credits",
+   "title": "Physiology (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 1150",
+     "rule": [
+      {
+       "codes": [
+        "NS 1150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "NS 1220",
+     "rule": [
+      {
+       "codes": [
+        "NS 1220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NS 3410",
+     "rule": [
+      {
+       "codes": [
+        "NS 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biochemistry-4-6-credits",
+   "title": "Biochemistry (4-6 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 3200",
+     "rule": [
+      {
+       "codes": [
+        "NS 3200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 3300",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOMG 3320",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3320"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "BIOMI 2900",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "BIOMG 3350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3350"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics-4-credits",
+   "title": "Statistics (4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 2150 / STSCI 2200",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2150",
+        "STSCI 2200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options-3",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Select one of the following options (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Select one of the following options (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective"
+    }
+   ],
+   "note": "OPTION A: is one alternative. OPTION B: is one alternative. AP Literature or Language score of 5 or IB Literature or Language score of 7 (AND) Two FWS Courses One FWS Course",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

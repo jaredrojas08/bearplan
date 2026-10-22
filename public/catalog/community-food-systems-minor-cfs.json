@@ -1,0 +1,202 @@
+{
+ "id": "community-food-systems-minor-cfs",
+ "kind": "minor",
+ "name": "Community Food Systems",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/community-food-systems-minor-cfs/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GDEV 3105",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3105"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 3400",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3400"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "GDEV 2940",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ethical-and-epistemic-perspectives",
+   "title": "Ethical and Epistemic Perspectives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 3385",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3385"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AIIS 3330",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 3330"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ANSC 4140",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 4140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BSOC 2061",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2061"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PHIL 1440",
+     "rule": [
+      {
+       "codes": [
+        "PHIL 1440"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ecological-perspectives",
+   "title": "Ecological Perspectives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Ecological Perspectives",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2500",
+        "ANSC 1120",
+        "BEE 3299",
+        "BIOEE 1610",
+        "BIOEE 3611",
+        "FDSC 4880",
+        "PLSCI 3210",
+        "PLSCI 4140",
+        "PLSCI 4730"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "agricultural-perspectives",
+   "title": "Agricultural Perspectives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 4690",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 4690"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 4450",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 4450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 1900",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PLSCI 3800",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3800"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

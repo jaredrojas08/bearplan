@@ -1,0 +1,37 @@
+{
+ "id": "french-minor",
+ "kind": "minor",
+ "name": "French",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/french-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "FREN"
+     ],
+     "reason": "Needs a FREN course"
+    }
+   ],
+   "note": "The minor then consists of five courses (minimum 3 credits each) on French or Francophone topics, which in the Department of Romance Studies must be taken at the FREN 2095 French Intermediate Composition and Conversation II -level and higher. Students may apply up to two courses from abroad or from another institution toward a French minor. Two of these courses may be in English; the minimum grade is B-.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,38 @@
+{
+ "id": "animal-science-minor",
+ "kind": "minor",
+ "name": "Animal Science",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/animal-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "BIOAP",
+      "ANSC"
+     ],
+     "reason": "Needs a BIOAP / ANSC course"
+    }
+   ],
+   "note": "Students must complete animal science courses (ANSC-coded courses, including cross-listed courses and BIOAP 1100). Special Studies courses cannot count towards the total ANSC credit hours. Students must complete at least one of the four core Animal Science courses (BIOAP 1100, ANSC 2400, ANSC 2120, ANSC 2210). No more than 3 credits (1 course) can be used to fulfill requirements for the student’s major. Credits or courses used to fulfill requirements for the Animal Science minor cannot be used to meet requirements for another minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

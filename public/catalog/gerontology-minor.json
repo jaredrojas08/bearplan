@@ -1,0 +1,89 @@
+{
+ "id": "gerontology-minor",
+ "kind": "minor",
+ "name": "Gerontology",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/gerontology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 2510 / HD 2180",
+     "rule": [
+      {
+       "codes": [
+        "HD 2510",
+        "HD 2180"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-coursework",
+   "title": "Additional Coursework",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Additional Coursework",
+     "rule": [
+      {
+       "codes": [
+        "DEA/COGST 1112",
+        "DEA 4500",
+        "DEA 5700",
+        "EDUC 2200",
+        "FSAD 4660",
+        "HD 3120",
+        "HD 3290",
+        "HD 3490",
+        "HD 4600",
+        "HD 4610",
+        "HD 6290",
+        "NS 1220",
+        "NS 4410",
+        "NS 4500",
+        "PUBPOL/SOC 2030",
+        "PUBPOL 2350",
+        "PUBPOL 3080/ECON 3250",
+        "PUBPOL 3230",
+        "PUBPOL 3280",
+        "PUBPOL 3650",
+        "PUBPOL 3780",
+        "PUBPOL 5500",
+        "PUBPOL 5520",
+        "PUBPOL 5740",
+        "SOC 2202/GDEV 2010"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

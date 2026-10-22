@@ -1,0 +1,414 @@
+{
+ "id": "human-development-bs",
+ "name": "Human Development (BS)",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/human-development-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-courses",
+   "title": "Introductory Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 1130",
+     "rule": [
+      {
+       "codes": [
+        "HD 1130"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "developmental-psychology",
+   "title": "Developmental Psychology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Developmental Psychology (1)",
+     "rule": [
+      {
+       "codes": [
+        "HD 2090",
+        "HD 2150",
+        "HD 2170",
+        "HD 2180",
+        "HD 2510"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Developmental Psychology (2)",
+     "rule": [
+      {
+       "codes": [
+        "HD 2090",
+        "HD 2150",
+        "HD 2170",
+        "HD 2180",
+        "HD 2510"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "depth-coursework-6-8-credits",
+   "title": "Depth Coursework (6-8 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 3000+",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "HD"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HD 4000+",
+     "rule": [
+      {
+       "minLevel": 4000,
+       "subjects": [
+        "HD"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Take one HD 3000-level course Take one HD 4000-level course.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "translational-research",
+   "title": "Translational Research",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Translational Research",
+     "rule": [
+      {
+       "codes": [
+        "HD 2090",
+        "HD 2150",
+        "HD 2170",
+        "HD 2230",
+        "HD 2250",
+        "HD 3190",
+        "HD 3290",
+        "HD 3300",
+        "HD 3530",
+        "HD 4250",
+        "HD 4260",
+        "PSYCH 4320",
+        "HD 4440",
+        "HD 4490",
+        "PSYCH 4500",
+        "HD 4540",
+        "HD 4550"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-and-environmental-influences",
+   "title": "Social and Environmental Influences",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Social and Environmental Influences",
+     "rule": [
+      {
+       "codes": [
+        "DEA 1500",
+        "HD 2090",
+        "HD 2150",
+        "PSYCH 2150",
+        "HD 2170",
+        "HD 2180",
+        "HD 2250",
+        "HD 2600",
+        "HD 3190",
+        "HD 3300",
+        "HD 3310",
+        "HD 3455",
+        "HD 3530",
+        "HD 4210",
+        "HD 4250",
+        "HD 4260",
+        "PSYCH 4320",
+        "HD 4440",
+        "HD 4490",
+        "PSYCH 4500",
+        "PSYCH 4770",
+        "HD 4940"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. HD 4340",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "cross-cultural-perspectives",
+   "title": "Cross-Cultural Perspectives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Cross-Cultural Perspectives",
+     "rule": [
+      {
+       "codes": [
+        "HD 2090",
+        "HD 2150",
+        "PSYCH 2150",
+        "HD 2170",
+        "HD 2180",
+        "HD 2600",
+        "HD 3190",
+        "HD 3300",
+        "HD 3310",
+        "PSYCH 4150",
+        "HD 4210",
+        "HD 4260",
+        "PSYCH 4270",
+        "PSYCH 4320",
+        "HD 4440",
+        "HD 4490",
+        "HD 4540",
+        "HD 4550",
+        "PSYCH 4770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. HD 4340",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "the-person-in-context",
+   "title": "The Person in Context",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "The Person in Context",
+     "rule": [
+      {
+       "codes": [
+        "HD 2090",
+        "HD 2150",
+        "HD 2170",
+        "HD 2180",
+        "HD 2250",
+        "HD 3190",
+        "HD 3290",
+        "HD 3300",
+        "HD 3310",
+        "HD 3530",
+        "HD 4210",
+        "HD 4250",
+        "HD 4260",
+        "PSYCH 4320",
+        "HD 4440",
+        "HD 4490",
+        "PSYCH 4500",
+        "HD 4540",
+        "HD 4550",
+        "PSYCH 4770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. HD 4340",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engaged-learning",
+   "title": "Engaged Learning",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 4490",
+     "rule": [
+      {
+       "codes": [
+        "HD 4490"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PSYCH 4500",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 4500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "HD 4940",
+     "rule": [
+      {
+       "codes": [
+        "HD 4940"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "research-methods-scientific-literacy",
+   "title": "Research Methods/Scientific Literacy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Research Methods/Scientific Literacy",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1500",
+        "COMM 2820",
+        "GOVT 3999",
+        "HD 2830",
+        "HD 2930",
+        "HD 4765",
+        "INFO 2950",
+        "PSYCH 3020",
+        "PSYCH 3240",
+        "STS 2011"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "quantitative-analysis",
+   "title": "Quantitative Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Quantitative Analysis",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100",
+        "ECON 3110",
+        "ECON 3130",
+        "ILRST 2100",
+        "PUBPOL 2100",
+        "PSYCH 2500",
+        "ILRST 3110",
+        "STSCI 2150",
+        "STSCI 2200",
+        "SOC 3010"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "natural-science-i",
+   "title": "Natural Science I",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Natural Science I",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1140",
+        "BIOMG 1350",
+        "BIOG 1440",
+        "BIOEE 1780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "AP Biology score of 5",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

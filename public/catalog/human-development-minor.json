@@ -1,0 +1,44 @@
+{
+ "id": "human-development-minor",
+ "kind": "minor",
+ "name": "Human Development",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/human-development-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 1130 / HD 2150 / HD 2170",
+     "rule": [
+      {
+       "codes": [
+        "HD 1130",
+        "HD 2150",
+        "HD 2170"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "HD 3000/4000 level Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

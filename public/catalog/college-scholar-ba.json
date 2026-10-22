@@ -1,0 +1,55 @@
+{
+ "id": "college-scholar-ba",
+ "name": "College Scholar (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/college-scholar-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COLLS 3001",
+     "rule": [
+      {
+       "codes": [
+        "COLLS 3001"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "COLLS 4990 / COLLS 4991 / COLLS 3970",
+     "rule": [
+      {
+       "codes": [
+        "COLLS 4990",
+        "COLLS 4991",
+        "COLLS 3970"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "An Approved High-Level Seminar (3000 or 4000 level)",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

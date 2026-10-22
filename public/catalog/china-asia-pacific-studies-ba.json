@@ -1,0 +1,258 @@
+{
+ "id": "china-asia-pacific-studies-ba",
+ "name": "China and Asia-Pacific Studies (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/china-asia-pacific-studies-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "one-caps-gateway-course",
+   "title": "One CAPS Gateway Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CAPS 2132",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 2132"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CAPS 2232",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 2232"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CAPS 2435",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 2435"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CAPS 3967",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 3967"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-core-courses-5-courses",
+   "title": "Required Core Courses (5 Courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Core Courses (5 Courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4001",
+        "CAPS 4003",
+        "CAPS 4002",
+        "CAPS 4030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Required Core Courses (5 Courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4001",
+        "CAPS 4003",
+        "CAPS 4002",
+        "CAPS 4030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Required Core Courses (5 Courses) (3)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4001",
+        "CAPS 4003",
+        "CAPS 4002",
+        "CAPS 4030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Required Core Courses (5 Courses) (4)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4001",
+        "CAPS 4003",
+        "CAPS 4002",
+        "CAPS 4030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Required Core Courses (5 Courses) (5)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4001",
+        "CAPS 4003",
+        "CAPS 4002",
+        "CAPS 4030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-core-courses-5-courses-2",
+   "title": "Required Core Courses (5 Courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Core Courses (5 Courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4049",
+        "CAPS 4127",
+        "CAPS 4827",
+        "CAPS 4931",
+        "CAPS 4963",
+        "CAPS 4998",
+        "CAPS 4999"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Required Core Courses (5 Courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4049",
+        "CAPS 4127",
+        "CAPS 4827",
+        "CAPS 4931",
+        "CAPS 4963",
+        "CAPS 4998",
+        "CAPS 4999"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Required Core Courses (5 Courses) (3)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4049",
+        "CAPS 4127",
+        "CAPS 4827",
+        "CAPS 4931",
+        "CAPS 4963",
+        "CAPS 4998",
+        "CAPS 4999"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Required Core Courses (5 Courses) (4)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4049",
+        "CAPS 4127",
+        "CAPS 4827",
+        "CAPS 4931",
+        "CAPS 4963",
+        "CAPS 4998",
+        "CAPS 4999"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Required Core Courses (5 Courses) (5)",
+     "rule": [
+      {
+       "codes": [
+        "CAPS 4049",
+        "CAPS 4127",
+        "CAPS 4827",
+        "CAPS 4931",
+        "CAPS 4963",
+        "CAPS 4998",
+        "CAPS 4999"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

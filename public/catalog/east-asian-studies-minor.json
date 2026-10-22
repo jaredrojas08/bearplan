@@ -1,0 +1,37 @@
+{
+ "id": "east-asian-studies-minor",
+ "kind": "minor",
+ "name": "East Asian Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/east-asian-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "rule": [
+    {
+     "subjects": [
+      "ASIAN"
+     ],
+     "reason": "Needs a ASIAN course"
+    }
+   ],
+   "note": "A minor in East Asian Studies may be achieved by meeting these requirements: Complete at least five courses. Students normally take courses in East Asian Studies (China, Japan, Korea) bearing subject heading ASIAN or its cross-listings. Other courses with relevant East Asian content may also count, pending approval by the Department of Asian Studies. Typically, non-language courses are selected at the 2200-level or above. Only one Intro course may count towards the minor (ASIAN 2211 Introduction to Japan, ASIAN 2218 Introduction to Korea, ASIAN 2230 Introduction to China: Outsiders in History, ASIAN 2231, ASIAN 2232 Introduction to China: Getting Rich in Modern China, ASIAN 2233 or ASIAN 2250 Introduction to Asian Religions). The following courses may also count towards the minor: two courses (of at least three credits each) in an East Asian language at the 1100-level or above and East A",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

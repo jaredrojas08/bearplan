@@ -1,0 +1,281 @@
+{
+ "id": "food-agricultural-business-minor",
+ "kind": "minor",
+ "name": "Food and Agricultural Business",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/food-agricultural-business-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Introductory Microeconomics",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110",
+        "ECON 3030",
+        "HADM 1410",
+        "PUBPOL 2000"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "business-management",
+   "title": "Business Management",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 1200",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 3020",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AEM 3260",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3260"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "HADM 1810",
+     "rule": [
+      {
+       "codes": [
+        "HADM 1810"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "marketing",
+   "title": "Marketing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2400",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2400"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 4150",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "HADM 2410",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2410"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "finance",
+   "title": "Finance",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2050",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2050"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 2241",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2241"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AEM 5241",
+     "rule": [
+      {
+       "codes": [
+        "AEM 5241"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "HADM 2250",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2250"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "accounting",
+   "title": "Accounting",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2210",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HADM 2230",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2230"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-3-credits",
+   "title": "Core (3 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2310",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2310"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2050",
+        "AEM 2480",
+        "AEM 3020",
+        "AEM 3040",
+        "AEM 3270",
+        "AEM 4450",
+        "AEM 3290",
+        "AEM 3385",
+        "AEM 4050",
+        "AEM 4460",
+        "HADM 4315",
+        "HADM 4340"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

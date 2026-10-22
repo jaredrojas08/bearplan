@@ -1,0 +1,103 @@
+{
+ "id": "arabic-minor",
+ "kind": "minor",
+ "name": "Arabic",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/arabic-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "options",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ARAB 1201 / ARAB 1202 / ARAB 1203",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 1201",
+        "ARAB 1202",
+        "ARAB 1203"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Option 2 is one alternative.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ARAB 2202",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 2202"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ARAB 3201",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 3201"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ARAB 3202",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 3202"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Group A (Taught Entirely in Arabic)",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 4203",
+        "ARAB 3700",
+        "ARAB 4200",
+        "ARAB 2204"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Elective Courses",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

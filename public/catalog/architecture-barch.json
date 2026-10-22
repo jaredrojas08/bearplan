@@ -1,0 +1,63 @@
+{
+ "id": "architecture-barch",
+ "name": "Architecture (BAR)",
+ "college": "College of Architecture, Art and Planning",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/architecture-barch/",
+ "totalCredits": 154,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Major Requirements",
+   "type": "creditBucket",
+   "minCredits": 12,
+   "rule": [
+    {
+     "subjects": [
+      "ARCH",
+      "1102",
+      "2101",
+      "2102",
+      "3101",
+      "3102",
+      "4101",
+      "4102",
+      "5101",
+      "5902",
+      "2613",
+      "2616",
+      "3615",
+      "3302",
+      "2802",
+      "2502",
+      "AAP",
+      "ART",
+      "1501",
+      "1504",
+      "1601",
+      "1602",
+      "1901",
+      "PMA",
+      "ENGL",
+      "CRP",
+      "PE"
+     ],
+     "reason": "Needs a ARCH / 1102 / 2101 / 2102 / 3101 / 3102 / 4101 / 4102 / 5101 / 5902 / 2613 / 2616 / 3615 / 3302 / 2802 / 2502 / AAP / ART / 1501 / 1504 / 1601 / 1602 / 1901 / PMA / ENGL / CRP / PE course"
+    }
+   ],
+   "note": "Total: 106 Total: 21 Total: 12 Total: 15 In addition to the above academic requirements, all Cornell Undergraduate students must successfully complete two Physical Education (PE) classes and successfully complete a basic swimming and water safety competency requirement. Total Academic Credits: 154 + 2 Physical Education classes Elective courses may be switched between different semesters, as long as total distribution requirements are met (except that the First-Year Writing Seminar and Physical Education classes should be satisfied in the first year). B.Arch. students are required to successfully complete four departmental electives. This requirement can be satisfied with approved departmental elective courses of 3 or more credits. The required departmental electives must be taken for a letter grade. Students are required to complete two history electives. This can be satisfied with succ",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

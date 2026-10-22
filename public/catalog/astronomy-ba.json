@@ -1,0 +1,407 @@
+{
+ "id": "astronomy-ba",
+ "name": "Astronomy (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/astronomy-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "three-semesters-of-physics",
+   "title": "Three Semesters of Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1112 / PHYS 1116",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112",
+        "PHYS 1116"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2213 / PHYS 2217",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2213",
+        "PHYS 2217"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 2214 / PHYS 2218 / PHYS 2210",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2214",
+        "PHYS 2218",
+        "PHYS 2210"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "three-semesters-of-mathematics",
+   "title": "Three Semesters of Mathematics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1910",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1920 / MATH 2220 / MATH 2240",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1920",
+        "MATH 2220",
+        "MATH 2240"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 2930 / MATH 4710 / ASTRO 3340",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2930",
+        "MATH 4710",
+        "ASTRO 3340"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "experimental-or-data-analysis-course-in-",
+   "title": "Experimental or Data Analysis Course in Astronomy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ASTRO 3310 / ASTRO 3334 / ASTRO 4410",
+     "rule": [
+      {
+       "codes": [
+        "ASTRO 3310",
+        "ASTRO 3334",
+        "ASTRO 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "astrophysics-concentration",
+   "name": "Astrophysics Concentration",
+   "sections": [
+    {
+     "id": "astrophysics-concent-astronomy-courses",
+     "title": "Astronomy Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Astronomy Courses (1)",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 4431",
+          "ASTRO 4432",
+          "ASTRO 4433",
+          "ASTRO 4434"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Astronomy Courses (2)",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 4431",
+          "ASTRO 4432",
+          "ASTRO 4433",
+          "ASTRO 4434"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "astrophysics-concent-additional-physics",
+     "title": "Additional Physics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "PHYS 3316",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 3316"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "PHYS 3318",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 3318"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "PHYS 3327",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 3327"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "PHYS/AEP 4230",
+       "rule": [
+        {
+         "codes": [
+          "PHYS/AEP 4230"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PHYS 4443",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 4443"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "astrophysics-concent-additional-math",
+     "title": "Additional Math",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "MATH 2940 / MATH 2210 / MATH 2230",
+       "rule": [
+        {
+         "codes": [
+          "MATH 2940",
+          "MATH 2210",
+          "MATH 2230"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "AEP 3200",
+       "rule": [
+        {
+         "codes": [
+          "AEP 3200"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "AEP 4200",
+       "rule": [
+        {
+         "codes": [
+          "AEP 4200"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "Total Hours",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "general-astronomy-concentration",
+   "name": "General Astronomy Concentration",
+   "sections": [
+    {
+     "id": "general-astronomy-co-astronomy",
+     "title": "Astronomy",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ASTRO 2211",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 2211"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "ASTRO 2212",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 2212"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "ASTRO 3301 / ASTRO 3302 / ASTRO 3303 (1)",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 3301",
+          "ASTRO 3302",
+          "ASTRO 3303"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "ASTRO 3301 / ASTRO 3302 / ASTRO 3303 (2)",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 3301",
+          "ASTRO 3302",
+          "ASTRO 3303"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "Astronomy",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 2290",
+          "ASTRO 2299",
+          "ASTRO 4445",
+          "ASTRO 4523"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "general-astronomy-co-external-complementary-area",
+     "title": "External Complementary Area",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Elective (1)"
+      },
+      {
+       "id": "s2",
+       "label": "Elective (2)"
+      },
+      {
+       "id": "s3",
+       "label": "Elective (3)"
+      },
+      {
+       "id": "s4",
+       "label": "Elective (4)"
+      }
+     ],
+     "note": "15 credits designed in consultation with faculty advisor which should include: Total Hours 4–5 courses in a related field (e.g., Biology, Earth Sciences, Education, Policy)",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

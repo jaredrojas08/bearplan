@@ -1,0 +1,117 @@
+{
+ "id": "asl-deaf-studies-minor",
+ "kind": "minor",
+ "name": "American Sign Language (ASL)/Deaf Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/asl-deaf-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ASL 2202",
+     "rule": [
+      {
+       "codes": [
+        "ASL 2202"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ASL 2301",
+     "rule": [
+      {
+       "codes": [
+        "ASL 2301"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "LING 1101",
+     "rule": [
+      {
+       "codes": [
+        "LING 1101"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "asl-deaf-studies-electives",
+   "title": "ASL/Deaf Studies Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ASL 3201 / ASL 3215 / ASL 4410",
+     "rule": [
+      {
+       "codes": [
+        "ASL 3201",
+        "ASL 3215",
+        "ASL 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "interdisciplinary-electives",
+   "title": "Interdisciplinary Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Interdisciplinary Electives",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2051",
+        "FGSS 4035",
+        "GOVT 3087",
+        "ILRGL 4033",
+        "ILRGL 4360",
+        "LING 2215",
+        "LING 2221",
+        "LING 2223",
+        "LING 3344",
+        "PHIL 2455"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

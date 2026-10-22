@@ -1,0 +1,2074 @@
+{
+ "id": "biology-society-ba",
+ "name": "Biology & Society (BA, BS)",
+ "college": "College of Agriculture and Life Sciences, College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biology-society-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-biology",
+   "title": "Introductory Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Introductory Biology (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOEE 1610",
+        "BIOSM 1610",
+        "BIOMG 1350",
+        "BIOEE 1780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Introductory Biology (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOEE 1610",
+        "BIOSM 1610",
+        "BIOMG 1350",
+        "BIOEE 1780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "or BIOSM 1780",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "college-calculus-select-one-of-the-follo",
+   "title": "College Calculus: electives",
+   "type": "creditBucket",
+   "minCredits": 1,
+   "rule": [
+    {
+     "codes": [
+      "MATH 1106",
+      "MATH 1110",
+      "MATH 1120"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select one of the following: (AP credit may be accepted for Calculus)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "statistics-select-one-of-the-following-a",
+   "title": "Statistics: electives",
+   "type": "creditBucket",
+   "minCredits": 1,
+   "rule": [
+    {
+     "codes": [
+      "AEM 2100",
+      "ECON 3130",
+      "ILRST 2100",
+      "PUBPOL 2100",
+      "PSYCH 2500",
+      "SOC 3010",
+      "STSCI 2100",
+      "STSCI 2150"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select one of the following: (AP credit may be accepted for Calculus)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "ethics",
+   "title": "Ethics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    },
+    {
+     "id": "s2",
+     "label": "BSOC 2051",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2051"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BSOC 2061",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2061"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Select one course to be complete by the end of junior year:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-sciences-humanities-foundation",
+   "title": "Social Sciences/Humanities Foundation",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    }
+   ],
+   "note": "Select two courses; must be taken from two different subject areas:",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "history-of-science",
+   "title": "History of Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BSOC 2071",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2071"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BSOC 2581",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2581"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BSOC 2599",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2599"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BSOC 2640",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2640"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "STS 1180",
+     "rule": [
+      {
+       "codes": [
+        "STS 1180"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "STS 2023",
+     "rule": [
+      {
+       "codes": [
+        "STS 2023"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "philosophy-of-science",
+   "title": "Philosophy of Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1180",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1180"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHIL 2455",
+     "rule": [
+      {
+       "codes": [
+        "PHIL 2455"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "sociology-of-science",
+   "title": "Sociology of Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BSOC 2101",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BSOC 2468",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2468"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BSOC 3011",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 3011"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "GDEV 3400",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3400"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "NS 2450",
+     "rule": [
+      {
+       "codes": [
+        "NS 2450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "NTRES 2201",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 2201"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "STS 2011",
+     "rule": [
+      {
+       "codes": [
+        "STS 2011"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "STS 3111",
+     "rule": [
+      {
+       "codes": [
+        "STS 3111"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "politics-of-science",
+   "title": "Politics of Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BSOC 3311",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 3311"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PUBPOL 2350",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PUBPOL 3780",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 3780"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "STS 3241",
+     "rule": [
+      {
+       "codes": [
+        "STS 3241"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "STS 3911",
+     "rule": [
+      {
+       "codes": [
+        "STS 3911"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "science-communication",
+   "title": "Science Communication",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COMM 3210",
+     "rule": [
+      {
+       "codes": [
+        "COMM 3210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "STS 2851",
+     "rule": [
+      {
+       "codes": [
+        "STS 2851"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "literature-and-science",
+   "title": "Literature and Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COML 2035",
+     "rule": [
+      {
+       "codes": [
+        "COML 2035"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGL 2350",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 2350"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "anthropology-of-science-medicine-and-env",
+   "title": "Anthropology of Science, Medicine, and Environment",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ANTHR 2201",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2201"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ANTHR 2245",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2245"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ANTHR 2420",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2420"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ANTHR 2424",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2424"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology-foundation-breadth-requirement",
+   "title": "Biology Foundation (Breadth Requirement)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "Three courses; must be taken from three different subject areas:",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "anatomy-and-physiology",
+   "title": "Anatomy and Physiology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ANSC 2400",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2400"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOAP 3110",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NS 3410",
+     "rule": [
+      {
+       "codes": [
+        "NS 3410"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "animal-behavior",
+   "title": "Animal Behavior",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ANTHR 2310",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIONB 2210",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 2210"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biochemistry-molecular-and-cell-biology",
+   "title": "Biochemistry, Molecular and Cell Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 3300",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 3350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOMG 4450",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 4450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "NS 3200",
+     "rule": [
+      {
+       "codes": [
+        "NS 3200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biological-diversity",
+   "title": "Biological Diversity",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biological Diversity",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 3730",
+        "BIOEE 4750",
+        "BIOEE 4760",
+        "BIOMI 2900",
+        "BIOSM 3210",
+        "BIOSM 3740",
+        "ENTOM 2120",
+        "PLSCI 2410",
+        "PLSCI 2480",
+        "PLSCI 3010",
+        "PLSCI 4300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "genetics-and-development",
+   "title": "Genetics and Development",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 2800",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "NTRES 2830",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 2830"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 2250",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "neurobiology",
+   "title": "Neurobiology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIONB 2220",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 2220"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "nutrition",
+   "title": "Nutrition",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 1150",
+     "rule": [
+      {
+       "codes": [
+        "NS 1150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "NS 1220",
+     "rule": [
+      {
+       "codes": [
+        "NS 1220"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "anatomy-and-physiology-2",
+   "title": "Anatomy and Physiology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ANSC 2400",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2400"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ANSC 5450",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 5450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOAP 3110",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOAP 4140",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 4140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "NS 3410",
+     "rule": [
+      {
+       "codes": [
+        "NS 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "BIOAP 4140",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 4140"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "animal-behavior-2",
+   "title": "Animal Behavior",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ANTHR 2310",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIONB 2210",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 2210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Animal Behavior (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 4220",
+        "BIONB 4260",
+        "BIONB 4560",
+        "HD 3220"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Animal Behavior (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 4220",
+        "BIONB 4260",
+        "BIONB 4560",
+        "HD 3220"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Sequence 1 Depth course: No Depth Courses Available",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biochemistry-molecular-and-cell-biology-2",
+   "title": "Biochemistry, Molecular and Cell Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 3300",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Biochemistry, Molecular and Cell Biology",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3800",
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4610",
+        "NS 3310",
+        "NS 4300",
+        "BIOMI 4090",
+        "BIOMI 4850",
+        "BIONB 3950",
+        "BIONB 4300",
+        "BIOMG 3310"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Sequence 2 (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4610",
+        "BIOMI 4850",
+        "NS 3310",
+        "NS 3320",
+        "BIONB 4300",
+        "BIOMG 3350"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Sequence 2 (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4610",
+        "BIOMI 4850",
+        "NS 3310",
+        "NS 3320",
+        "BIONB 4300",
+        "BIOMG 3350"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Sequence 3 (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4610",
+        "BIOMI 4850",
+        "PLSCI 4000",
+        "NS 3200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Sequence 3 (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4610",
+        "BIOMI 4850",
+        "PLSCI 4000",
+        "NS 3200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "Sequence 3 (3)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4610",
+        "BIOMI 4850",
+        "PLSCI 4000",
+        "NS 3200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "NS 3310 / NS 4300 / NS 4410 (1)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3310",
+        "NS 4300",
+        "NS 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "NS 3310 / NS 4300 / NS 4410 (2)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3310",
+        "NS 4300",
+        "NS 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s10",
+     "label": "NS 3310 / NS 4300 / NS 4410 (3)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3310",
+        "NS 4300",
+        "NS 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s11",
+     "label": "NS 3310 / NS 4300 / NS 4410 (4)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3310",
+        "NS 4300",
+        "NS 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biological-diversity-2",
+   "title": "Biological Diversity",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biological Diversity",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 4750",
+        "BIOEE 4760",
+        "BIOMI 2900",
+        "BIOSM 3740",
+        "ENTOM 2120",
+        "PLSCI 3010",
+        "PLSCI 5020",
+        "PLSCI 4300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOEE 4700 / BIOEE 4760 / BIOEE 3730",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 4700",
+        "BIOEE 4760",
+        "BIOEE 3730"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Biological Diversity (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3210",
+        "BIOMI 3940",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4300",
+        "BIOMI 4850",
+        "BIOSM 3210"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Biological Diversity (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3210",
+        "BIOMI 3940",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4300",
+        "BIOMI 4850",
+        "BIOSM 3210"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Biological Diversity (3)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3210",
+        "BIOMI 3940",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4300",
+        "BIOMI 4850",
+        "BIOSM 3210"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Biological Diversity (4)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3210",
+        "BIOMI 3940",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4300",
+        "BIOMI 4850",
+        "BIOSM 3210"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "Biological Diversity (5)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3210",
+        "BIOMI 3940",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4300",
+        "BIOMI 4850",
+        "BIOSM 3210"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "Biological Diversity (1)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "Biological Diversity (2)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s10",
+     "label": "Biological Diversity (3)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s11",
+     "label": "Biological Diversity (4)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s12",
+     "label": "Biological Diversity (5)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s13",
+     "label": "Biological Diversity (6)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s14",
+     "label": "Biological Diversity (7)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s15",
+     "label": "Biological Diversity (8)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3440",
+        "ENTOM 4830",
+        "PLSCI 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s16",
+     "label": "Sequence 9 (1)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s17",
+     "label": "Sequence 9 (2)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s18",
+     "label": "Sequence 9 (3)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s19",
+     "label": "Sequence 9 (4)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s20",
+     "label": "Sequence 9 (5)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s21",
+     "label": "Sequence 9 (6)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s22",
+     "label": "Sequence 9 (7)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s23",
+     "label": "Sequence 9 (8)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s24",
+     "label": "Sequence 9 (9)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Sequence 2 Depth course: No Depth Courses Available Sequence 3 Depth course: No Depth Courses Available Sequence 4 Depth course: No Depth Courses Available Sequence 6 Depth course: No Depth Courses Available Sequence 7 Depth course: No Depth Courses Available Sequence 10 Depth course: No Depth Courses Available Sequence 12 Depth course: No Depth Courses Available",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "genetics-and-development-2",
+   "title": "Genetics and Development",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 2800",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Genetics and Development:",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3800",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4311",
+        "BIOMG 4320",
+        "BIOMG 4390",
+        "BIOMG 4450",
+        "BIOMG 4610",
+        "BIOMI 4300",
+        "BIOMI 4850",
+        "NTRES 2830"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 2250",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Sequence 2 Depth course: No Depth Courses Available Sequence 3 Depth course: No Depth Courses Available",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "neurobiology-2",
+   "title": "Neurobiology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIONB 2220",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 2220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Neurobiology",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 3215",
+        "BIONB 3220",
+        "BIONB 3280",
+        "BIONB 3300",
+        "BIONB 3920",
+        "BIONB 3950",
+        "BIONB 4320",
+        "BIONB 4560",
+        "BIONB 4740",
+        "BIONB 4750",
+        "BIONB 4910"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "nutrition-2",
+   "title": "Nutrition",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 1150",
+     "rule": [
+      {
+       "codes": [
+        "NS 1150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Nutrition",
+     "rule": [
+      {
+       "codes": [
+        "NS 3060",
+        "NS 3150",
+        "NS 3200",
+        "NS 3310",
+        "NS 3320",
+        "NS 3410",
+        "NS 3450",
+        "NS 4200",
+        "NS 4250",
+        "NS 4300",
+        "NS 4410",
+        "NS 4500",
+        "NS 1220"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Sequence 2 (1)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3060",
+        "NS 3150",
+        "NS 3200",
+        "NS 4140",
+        "NS 3310",
+        "NS 3320",
+        "NS 3410",
+        "NS 3450",
+        "NS 4200",
+        "NS 4250",
+        "NS 4300",
+        "NS 4410",
+        "NS 4420"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Sequence 2 (2)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3060",
+        "NS 3150",
+        "NS 3200",
+        "NS 4140",
+        "NS 3310",
+        "NS 3320",
+        "NS 3410",
+        "NS 3450",
+        "NS 4200",
+        "NS 4250",
+        "NS 4300",
+        "NS 4410",
+        "NS 4420"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BSOC 2071 / BSOC 2468",
+     "rule": [
+      {
+       "codes": [
+        "BSOC 2071",
+        "BSOC 2468"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "natural-science-biology-electives-two-co",
+   "title": "Natural Science/Biology Electives (two courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Natural Science/Biology Electives (two courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2400",
+        "ANTHR 3235",
+        "ANTHR 3390",
+        "BEE 3299",
+        "BIOAP 2140",
+        "BIOAP 3200",
+        "BIOMI 1400",
+        "BIOMI 2600",
+        "BIOMI 2950",
+        "BIOMI 4200",
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIONB 3215",
+        "BIONB 4380",
+        "BIONB 4740",
+        "BSOC 2101",
+        "BSOC 3441",
+        "ENTOM 2030",
+        "ENTOM 4520",
+        "HD 2200",
+        "HD 3210",
+        "HD 3320",
+        "HD 4260",
+        "NS 3060",
+        "NS 3150",
+        "NS 3310",
+        "NS 3600",
+        "NTRES 2010",
+        "NTRES 4280",
+        "PLSCI 2020",
+        "PLSCI 2100",
+        "PLSCI 2400",
+        "PLSCI 2440",
+        "PLSCI 2470",
+        "PLSCI 4730",
+        "PSYCH 2230",
+        "PSYCH 2750"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Natural Science/Biology Electives (two courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2400",
+        "ANTHR 3235",
+        "ANTHR 3390",
+        "BEE 3299",
+        "BIOAP 2140",
+        "BIOAP 3200",
+        "BIOMI 1400",
+        "BIOMI 2600",
+        "BIOMI 2950",
+        "BIOMI 4200",
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIONB 3215",
+        "BIONB 4380",
+        "BIONB 4740",
+        "BSOC 2101",
+        "BSOC 3441",
+        "ENTOM 2030",
+        "ENTOM 4520",
+        "HD 2200",
+        "HD 3210",
+        "HD 3320",
+        "HD 4260",
+        "NS 3060",
+        "NS 3150",
+        "NS 3310",
+        "NS 3600",
+        "NTRES 2010",
+        "NTRES 4280",
+        "PLSCI 2020",
+        "PLSCI 2100",
+        "PLSCI 2400",
+        "PLSCI 2440",
+        "PLSCI 2470",
+        "PLSCI 4730",
+        "PSYCH 2230",
+        "PSYCH 2750"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "humanities-social-sciences-electives-two",
+   "title": "Humanities/Social Sciences Electives (two courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Humanities/Social Sciences Electives (two courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4500",
+        "ANTHR 2421",
+        "ANTHR 3230",
+        "ANTHR 3390",
+        "ANTHR 4530",
+        "ANTHR 4610",
+        "BEE 3299",
+        "BSOC 2101",
+        "BSOC 2561",
+        "BSOC 2350",
+        "BSOC 2581",
+        "BSOC 2640",
+        "BSOC 3181",
+        "BSOC 3311",
+        "BSOC 3460",
+        "BSOC 4351",
+        "BSOC 4413",
+        "DEA 4220",
+        "FGSS 2010",
+        "GDEV 2010",
+        "GDEV 3030",
+        "GDEV 3230",
+        "HD 2150",
+        "HD 2510",
+        "HD 3190",
+        "HD 3320",
+        "HD 3620",
+        "HD 4260",
+        "NS 2600",
+        "NS 3150",
+        "NS 3600",
+        "NS 4450",
+        "NS 4570",
+        "NTRES 3330",
+        "PLSCI 4230",
+        "PUBPOL 2050",
+        "PUBPOL 2350",
+        "PUBPOL 3180",
+        "PUBPOL 3280",
+        "PUBPOL 3330",
+        "PUBPOL 4370",
+        "PSYCH 2450",
+        "PSYCH 2750",
+        "PSYCH 2800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Humanities/Social Sciences Electives (two courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4500",
+        "ANTHR 2421",
+        "ANTHR 3230",
+        "ANTHR 3390",
+        "ANTHR 4530",
+        "ANTHR 4610",
+        "BEE 3299",
+        "BSOC 2101",
+        "BSOC 2561",
+        "BSOC 2350",
+        "BSOC 2581",
+        "BSOC 2640",
+        "BSOC 3181",
+        "BSOC 3311",
+        "BSOC 3460",
+        "BSOC 4351",
+        "BSOC 4413",
+        "DEA 4220",
+        "FGSS 2010",
+        "GDEV 2010",
+        "GDEV 3030",
+        "GDEV 3230",
+        "HD 2150",
+        "HD 2510",
+        "HD 3190",
+        "HD 3320",
+        "HD 3620",
+        "HD 4260",
+        "NS 2600",
+        "NS 3150",
+        "NS 3600",
+        "NS 4450",
+        "NS 4570",
+        "NTRES 3330",
+        "PLSCI 4230",
+        "PUBPOL 2050",
+        "PUBPOL 2350",
+        "PUBPOL 3180",
+        "PUBPOL 3280",
+        "PUBPOL 3330",
+        "PUBPOL 4370",
+        "PSYCH 2450",
+        "PSYCH 2750",
+        "PSYCH 2800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "senior-seminar-one-course-taken-junior-o",
+   "title": "Senior Seminar (one course taken junior or senior year)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Senior Seminar (one course taken junior or senior year)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4500",
+        "ANTHR 4448",
+        "ANTHR 4610",
+        "ANTHR 4682",
+        "ASRC 4602",
+        "BSOC 4101",
+        "BSOC 4131",
+        "BSOC 4227",
+        "BSOC 4412",
+        "BSOC 4634",
+        "BSOC 4682",
+        "BSOC 4691",
+        "BSOC 4911",
+        "HD 4250",
+        "HIST 4127",
+        "NS 4450",
+        "NS 4480",
+        "NS 4570",
+        "NTRES 4300",
+        "PLSCI 4230",
+        "SOC 4380",
+        "STS 4041",
+        "STS 4231"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

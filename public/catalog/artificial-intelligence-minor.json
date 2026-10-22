@@ -1,0 +1,230 @@
+{
+ "id": "artificial-intelligence-minor",
+ "kind": "minor",
+ "name": "Artificial Intelligence",
+ "college": "Bowers College of Computing and Information Science",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/artificial-intelligence-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Foundations of AI: Machine Learning",
+     "rule": [
+      {
+       "codes": [
+        "CS 3780",
+        "ECE 3200",
+        "ORIE 3741",
+        "STSCI 3740",
+        "CS 3700",
+        "INFO 3160",
+        "INFO 4240",
+        "STS 4240",
+        "INFO 4470",
+        "INFO 4940"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGRG 3605 / PHIL 2473 / STS 3605",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 3605",
+        "PHIL 2473",
+        "STS 3605"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "INFO 1260 / CS 1340",
+     "rule": [
+      {
+       "codes": [
+        "INFO 1260",
+        "CS 1340"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "INFO 4210 or other",
+     "rule": [
+      {
+       "codes": [
+        "INFO 4210",
+        "PUBPOL 4210",
+        "COGST 4740",
+        "LING 4474",
+        "ECE 4770",
+        "MAE 4760",
+        "MATH 4860",
+        "PHIL 2473",
+        "STS 3605",
+        "CS 1340",
+        "STS 4240",
+        "STS 4260",
+        "CS 4300",
+        "AMST 4066",
+        "COGST 4240",
+        "CS 4744",
+        "CS 4745",
+        "CS 4758",
+        "ECE 4180",
+        "ECE 4240",
+        "COGST 2621"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "INFO 1210",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives",
+   "title": "Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 3500",
+        "BME 4790",
+        "CS 4670",
+        "CS 4701",
+        "CS 4740",
+        "CS 4750",
+        "CS 4756",
+        "CS 4782",
+        "CS 4783",
+        "CS 4787",
+        "CS 4789",
+        "CS 4860",
+        "ECE 4160",
+        "ENGRG 3605",
+        "INFO 1170",
+        "INFO 1260",
+        "INFO 3160",
+        "INFO 3350",
+        "INFO 3950",
+        "INFO 4120",
+        "INFO 4300",
+        "INFO 4240",
+        "INFO 4260",
+        "INFO 4310",
+        "INFO 4410",
+        "INFO 4470",
+        "INFO 4940",
+        "ILRGL 4066",
+        "LING 4424",
+        "LING 4434",
+        "MAE 4180",
+        "MAE 4810",
+        "NBA 4920",
+        "ORIE 3320",
+        "ORIE 4160",
+        "ORIE 4740",
+        "ORIE 4742",
+        "ORIE 4570",
+        "PHIL 2621",
+        "PUBPOL 2120",
+        "PUBPOL 3520",
+        "PUBPOL 4210",
+        "STSCI 4030",
+        "STSCI 4520",
+        "STSCI 4750"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Electives (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 3500",
+        "BME 4790",
+        "CS 4670",
+        "CS 4701",
+        "CS 4740",
+        "CS 4750",
+        "CS 4756",
+        "CS 4782",
+        "CS 4783",
+        "CS 4787",
+        "CS 4789",
+        "CS 4860",
+        "ECE 4160",
+        "ENGRG 3605",
+        "INFO 1170",
+        "INFO 1260",
+        "INFO 3160",
+        "INFO 3350",
+        "INFO 3950",
+        "INFO 4120",
+        "INFO 4300",
+        "INFO 4240",
+        "INFO 4260",
+        "INFO 4310",
+        "INFO 4410",
+        "INFO 4470",
+        "INFO 4940",
+        "ILRGL 4066",
+        "LING 4424",
+        "LING 4434",
+        "MAE 4180",
+        "MAE 4810",
+        "NBA 4920",
+        "ORIE 3320",
+        "ORIE 4160",
+        "ORIE 4740",
+        "ORIE 4742",
+        "ORIE 4570",
+        "PHIL 2621",
+        "PUBPOL 2120",
+        "PUBPOL 3520",
+        "PUBPOL 4210",
+        "STSCI 4030",
+        "STSCI 4520",
+        "STSCI 4750"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

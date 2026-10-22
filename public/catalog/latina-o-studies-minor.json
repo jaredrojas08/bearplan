@@ -1,0 +1,109 @@
+{
+ "id": "latina-o-studies-minor",
+ "kind": "minor",
+ "name": "Latina/o Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/latina-o-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LSP 1802",
+     "rule": [
+      {
+       "codes": [
+        "LSP 1802"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "LSP 2031",
+     "rule": [
+      {
+       "codes": [
+        "LSP 2031"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "LSP 2100",
+     "rule": [
+      {
+       "codes": [
+        "LSP 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "LSP 2400",
+     "rule": [
+      {
+       "codes": [
+        "LSP 2400"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s7",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s8",
+     "label": "Elective (4)"
+    },
+    {
+     "id": "s9",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s10",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s11",
+     "label": "LSP",
+     "rule": [
+      {
+       "subjects": [
+        "LSP"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Students must take at least one of these introductory courses: LSP 2720 Students must complete at least one Humanities and one Social Science course. For information on which category a course falls in, e-mail: latino_studies@cornell.edu Four additional courses: Two courses must be at the 3xxx or 4xxx level. One LSP elective course can count toward the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

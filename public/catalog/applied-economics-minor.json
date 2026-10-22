@@ -1,0 +1,170 @@
+{
+ "id": "applied-economics-minor",
+ "kind": "minor",
+ "name": "Applied Economics",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/applied-economics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ECON 1120",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1120"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Required Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "economic-theory-or-practice",
+   "title": "Economic Theory or Practice",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2600",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "applied-economics-various-topics",
+   "title": "Applied Economics, Various Topics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Applied Economics, Various Topics (1)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4100",
+        "AEM 4110",
+        "AEM 4140",
+        "AEM 4150",
+        "AEM 4160",
+        "AEM 4190",
+        "AEM 4210",
+        "AEM 4300",
+        "AEM 4315",
+        "AEM 4350",
+        "AEM 4420",
+        "AEM 4450",
+        "AEM 4485",
+        "AEM 4500",
+        "AEM 4510",
+        "AEM 4545",
+        "AEM 4550",
+        "AEM 4880"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Applied Economics, Various Topics (2)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4100",
+        "AEM 4110",
+        "AEM 4140",
+        "AEM 4150",
+        "AEM 4160",
+        "AEM 4190",
+        "AEM 4210",
+        "AEM 4300",
+        "AEM 4315",
+        "AEM 4350",
+        "AEM 4420",
+        "AEM 4450",
+        "AEM 4485",
+        "AEM 4500",
+        "AEM 4510",
+        "AEM 4545",
+        "AEM 4550",
+        "AEM 4880"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Applied Economics, Various Topics (3)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4100",
+        "AEM 4110",
+        "AEM 4140",
+        "AEM 4150",
+        "AEM 4160",
+        "AEM 4190",
+        "AEM 4210",
+        "AEM 4300",
+        "AEM 4315",
+        "AEM 4350",
+        "AEM 4420",
+        "AEM 4450",
+        "AEM 4485",
+        "AEM 4500",
+        "AEM 4510",
+        "AEM 4545",
+        "AEM 4550",
+        "AEM 4880"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,1334 @@
+[
+ {
+  "id": "actuarial-science-minor",
+  "kind": "minor",
+  "name": "Actuarial Science",
+  "college": "Bowers College of Computing and Information Science"
+ },
+ {
+  "id": "aerospace-engineering-minor",
+  "kind": "minor",
+  "name": "Aerospace Engineering",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "africana-minor",
+  "kind": "minor",
+  "name": "Africana Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "africana-studies-ba",
+  "kind": "major",
+  "name": "Africana Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "agricultural-sciences-bs",
+  "kind": "major",
+  "name": "Agricultural Sciences (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "american-indian-indigenous-studies-minor",
+  "kind": "minor",
+  "name": "American Indian and Indigenous Studies",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "american-studies-ba",
+  "kind": "major",
+  "name": "American Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "american-studies-minor",
+  "kind": "minor",
+  "name": "American Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "animal-science-bs",
+  "kind": "major",
+  "name": "Animal Science (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "animal-science-minor",
+  "kind": "minor",
+  "name": "Animal Science",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "anthropology-ba",
+  "kind": "major",
+  "name": "Anthropology (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "anthropology-minor",
+  "kind": "minor",
+  "name": "Anthropology",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "applied-economics-minor",
+  "kind": "minor",
+  "name": "Applied Economics",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "applied-exercise-science-minor",
+  "kind": "minor",
+  "name": "Applied Exercise Science",
+  "college": "College of Agriculture and Life Sciences, College of Human Ecology"
+ },
+ {
+  "id": "applied-mathematics-minor",
+  "kind": "minor",
+  "name": "Applied Mathematics",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "arabic-minor",
+  "kind": "minor",
+  "name": "Arabic",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "archaeology-ba",
+  "kind": "major",
+  "name": "Archaeology (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "archaeology-minor",
+  "kind": "minor",
+  "name": "Archaeology",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "architecture-barch",
+  "kind": "major",
+  "name": "Architecture (BAR)",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "architecture-minor-for-non-departmental-students",
+  "kind": "minor",
+  "name": "Architecture",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "art-bfa",
+  "kind": "major",
+  "name": "Fine Arts (BFA)",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "artificial-intelligence-minor",
+  "kind": "minor",
+  "name": "Artificial Intelligence",
+  "college": "Bowers College of Computing and Information Science"
+ },
+ {
+  "id": "asian-american-studies-minor",
+  "kind": "minor",
+  "name": "Asian American Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "asian-studies-ba",
+  "kind": "major",
+  "name": "Asian Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "asl-deaf-studies-minor",
+  "kind": "minor",
+  "name": "American Sign Language (ASL)/Deaf Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "astrobiology-minor",
+  "kind": "minor",
+  "name": "Astrobiology",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "astronomy-ba",
+  "kind": "major",
+  "name": "Astronomy (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "astronomy-minor",
+  "kind": "minor",
+  "name": "Astronomy",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "atmospheric-science-bs",
+  "kind": "major",
+  "name": "Atmospheric Sciences (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "atmospheric-science-minor",
+  "kind": "minor",
+  "name": "Atmospheric Sciences",
+  "college": "College of Agriculture and Life Sciences, Duffield College of Engineering"
+ },
+ {
+  "id": "biological-engineering-bs",
+  "kind": "major",
+  "name": "Biological Engineering (BS)",
+  "college": "College of Agriculture and Life Sciences, Duffield College of Engineering"
+ },
+ {
+  "id": "biological-engineering-minor",
+  "kind": "minor",
+  "name": "Biological Engineering",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "biological-sciences-ba",
+  "kind": "major",
+  "name": "Biological Sciences (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "biological-sciences-bs",
+  "kind": "major",
+  "name": "Biological Sciences (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "biology-society-ba",
+  "kind": "major",
+  "name": "Biology & Society (BA, BS)",
+  "college": "College of Agriculture and Life Sciences, College of Arts and Sciences"
+ },
+ {
+  "id": "biomedical-engineering-bs",
+  "kind": "major",
+  "name": "Biomedical Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "biomedical-engineering-minor",
+  "kind": "minor",
+  "name": "Biomedical Engineering",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "biomedical-sciences-minor",
+  "kind": "minor",
+  "name": "Biomedical Sciences",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "biometry-statistics-bs",
+  "kind": "major",
+  "name": "Statistics & Biometry (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "biometry-statistics-minor",
+  "kind": "minor",
+  "name": "Biometry and Statistics",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "caribbean-studies-minor",
+  "kind": "minor",
+  "name": "Caribbean Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "chemical-engineering-bs",
+  "kind": "major",
+  "name": "Chemical Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "chemistry-ba",
+  "kind": "major",
+  "name": "Chemistry (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "china-asia-pacific-studies-ba",
+  "kind": "major",
+  "name": "China and Asia-Pacific Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "china-asia-pacific-studies-minor",
+  "kind": "minor",
+  "name": "China and Asia-Pacific Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "civil-engineering-bs",
+  "kind": "major",
+  "name": "Civil Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "classics-ba",
+  "kind": "major",
+  "name": "Classics (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "climate-change-minor",
+  "kind": "minor",
+  "name": "Climate Change",
+  "college": "College of Agriculture and Life Sciences, College of Arts and Sciences, Duffield College of Engineering"
+ },
+ {
+  "id": "cognitive-science-ba",
+  "kind": "major",
+  "name": "Cognitive Science (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "cognitive-science-minor",
+  "kind": "minor",
+  "name": "Cognitive Science",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "college-scholar-ba",
+  "kind": "major",
+  "name": "College Scholar (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "communication-bs",
+  "kind": "major",
+  "name": "Communication (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "communications-minor",
+  "kind": "minor",
+  "name": "Communication",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "community-food-systems-minor-cfs",
+  "kind": "minor",
+  "name": "Community Food Systems",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "comparative-literature-ba",
+  "kind": "major",
+  "name": "Comparative Literature (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "comparative-literature-minor",
+  "kind": "minor",
+  "name": "Comparative Literature",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "computer-science-ba",
+  "kind": "major",
+  "name": "Computer Science (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "computer-science-minor",
+  "kind": "minor",
+  "name": "Computer Science",
+  "college": "College of Arts and Sciences, Duffield College of Engineering"
+ },
+ {
+  "id": "creative-writing-minor",
+  "kind": "minor",
+  "name": "Creative Writing",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "crime-prisons-education-justice-minor",
+  "kind": "minor",
+  "name": "Crime, Prisons, Education, and Justice",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "crop-management-minor",
+  "kind": "minor",
+  "name": "Crop Management",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "dance-minor",
+  "kind": "minor",
+  "name": "Dance",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "data-science-astronomy-minor",
+  "kind": "minor",
+  "name": "Data Science in Astronomy",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "data-science-minor",
+  "kind": "minor",
+  "name": "Data Science",
+  "college": "Bowers College of Computing and Information Science"
+ },
+ {
+  "id": "demography-minor",
+  "kind": "minor",
+  "name": "Demography",
+  "college": "Brooks School of Public Policy"
+ },
+ {
+  "id": "design-environmental-analysis-bs",
+  "kind": "major",
+  "name": "Design and Environmental Analysis (BS)",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "design-environmental-analysis-minor",
+  "kind": "minor",
+  "name": "Design and Environmental Analysis",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "digital-agriculture-minor",
+  "kind": "minor",
+  "name": "Digital Agriculture",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "dyson-business-minor-life-sciences",
+  "kind": "minor",
+  "name": "Dyson Business Minor for Life Sciences",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "earth-atmospheric-sciences-minor",
+  "kind": "minor",
+  "name": "Earth and Climate Sciences",
+  "college": "College of Agriculture and Life Sciences, College of Arts and Sciences, Duffield College of Engineering"
+ },
+ {
+  "id": "earth-climate-sciences-ba",
+  "kind": "major",
+  "name": "Earth and Climate Sciences (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "earth-climate-sciences-ecsag-bs",
+  "kind": "major",
+  "name": "Earth and Climate Sciences (ECSAG-BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "earth-climate-sciences-ecsen-bs",
+  "kind": "major",
+  "name": "Earth and Climate Sciences (ECSEN-BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "east-asian-studies-minor",
+  "kind": "minor",
+  "name": "East Asian Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "economics-ba",
+  "kind": "major",
+  "name": "Economics (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "education-minor",
+  "kind": "minor",
+  "name": "Education",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "electrical-computer-engineering-bs",
+  "kind": "major",
+  "name": "Electrical and Computer Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "electrical-computer-engineering-minor",
+  "kind": "minor",
+  "name": "Electrical and Computer Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "engineering-communications-minor",
+  "kind": "minor",
+  "name": "Engineering Communications",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "engineering-management-minor",
+  "kind": "minor",
+  "name": "Engineering Management",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "engineering-physics-bs",
+  "kind": "major",
+  "name": "Engineering Physics (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "english-ba",
+  "kind": "major",
+  "name": "English (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "english-minor",
+  "kind": "minor",
+  "name": "English",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "entomology-bs",
+  "kind": "major",
+  "name": "Entomology (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "entomology-minor",
+  "kind": "minor",
+  "name": "Entomology",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "entrepreneurship-minor",
+  "kind": "minor",
+  "name": "Entrepreneurship",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "environment-sustainability-ba",
+  "kind": "major",
+  "name": "Environment & Sustainability (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "environment-sustainability-bs",
+  "kind": "major",
+  "name": "Environment & Sustainability (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "environment-sustainability-minor",
+  "kind": "minor",
+  "name": "Environment & Sustainability",
+  "college": "College of Agriculture and Life Sciences, College of Arts and Sciences"
+ },
+ {
+  "id": "environmental-engineering-bs",
+  "kind": "major",
+  "name": "Environmental Engineering (BS)",
+  "college": "College of Agriculture and Life Sciences, Duffield College of Engineering"
+ },
+ {
+  "id": "fashion-design-management-bs",
+  "kind": "major",
+  "name": "Fashion Design and Management (BS)",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "fashion-studies-minor",
+  "kind": "minor",
+  "name": "Fashion Studies",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "fgss-ba",
+  "kind": "major",
+  "name": "Feminist, Gender, & Sexuality Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "fgss-minor",
+  "kind": "minor",
+  "name": "Feminist, Gender, & Sexuality Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "fiber-science-bs",
+  "kind": "major",
+  "name": "Fiber Science (BS)",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "fiber-science-minor",
+  "kind": "minor",
+  "name": "Fiber Science",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "film-minor",
+  "kind": "minor",
+  "name": "Film",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "fine-arts-minor-for-non-departmental-students",
+  "kind": "minor",
+  "name": "Fine Arts",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "food-agricultural-business-minor",
+  "kind": "minor",
+  "name": "Food and Agricultural Business",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "food-science-bs",
+  "kind": "major",
+  "name": "Food Science (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "food-science-minor",
+  "kind": "minor",
+  "name": "Food Science",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "french-ba",
+  "kind": "major",
+  "name": "French (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "french-minor",
+  "kind": "minor",
+  "name": "French",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "fungal-biology-minor",
+  "kind": "minor",
+  "name": "Fungal Biology",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "game-design-minor",
+  "kind": "minor",
+  "name": "Game Design",
+  "college": "Bowers College of Computing and Information Science, Duffield College of Engineering"
+ },
+ {
+  "id": "german-studies-ba",
+  "kind": "major",
+  "name": "German Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "german-studies-minor",
+  "kind": "minor",
+  "name": "German Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "gerontology-minor",
+  "kind": "minor",
+  "name": "Gerontology",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "global-asia-studies-minor",
+  "kind": "minor",
+  "name": "Global Asia Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "global-development-bs",
+  "kind": "major",
+  "name": "Global Development (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "global-development-minor",
+  "kind": "minor",
+  "name": "Global Development",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "global-health-minor",
+  "kind": "minor",
+  "name": "Global Health",
+  "college": "College of Agriculture and Life Sciences, College of Human Ecology"
+ },
+ {
+  "id": "global-public-health-sciences-bs",
+  "kind": "major",
+  "name": "Global & Public Health Sciences (GPHSAG-BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "global-public-health-sciences-hum-ecol-bs",
+  "kind": "major",
+  "name": "Global & Public Health Sciences (GPHSHE-BS)",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "government-ba",
+  "kind": "major",
+  "name": "Government (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "health-care-policy-major-bs",
+  "kind": "major",
+  "name": "Health Care Policy (BS)",
+  "college": "Brooks School of Public Policy"
+ },
+ {
+  "id": "health-policy-minor",
+  "kind": "minor",
+  "name": "Health Policy",
+  "college": "Brooks School of Public Policy"
+ },
+ {
+  "id": "healthy-futures-minor",
+  "kind": "minor",
+  "name": "Healthy Futures",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "history-architecture-urban-development-bs-haud",
+  "kind": "major",
+  "name": "History of Architecture and Urban Development (BS)",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "history-art-ba",
+  "kind": "major",
+  "name": "History of Art (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "history-art-minor",
+  "kind": "minor",
+  "name": "History of Art",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "history-ba",
+  "kind": "major",
+  "name": "History (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "history-capitalism-interdisciplinary-minor",
+  "kind": "minor",
+  "name": "History of Capitalism",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "history-minor",
+  "kind": "minor",
+  "name": "History",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "horticulture-minor",
+  "kind": "minor",
+  "name": "Horticulture",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "hotel-management-bs",
+  "kind": "major",
+  "name": "Hotel Administration (BS)",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "human-biology-health-society-bs",
+  "kind": "major",
+  "name": "Human Biology, Health, and Society (BS)",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "human-development-bs",
+  "kind": "major",
+  "name": "Human Development (BS)",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "human-development-minor",
+  "kind": "minor",
+  "name": "Human Development",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "independent-major",
+  "kind": "major",
+  "name": "Independent Major (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "industrial-labor-relations-bs",
+  "kind": "major",
+  "name": "Industrial and Labor Relations (BS)",
+  "college": "School of Industrial and Labor Relations"
+ },
+ {
+  "id": "inequality-studies-minor",
+  "kind": "minor",
+  "name": "Inequality Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "infectious-disease-biology-minor",
+  "kind": "minor",
+  "name": "Infectious Disease Biology",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "information-science-ba",
+  "kind": "major",
+  "name": "Information Science (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "information-science-bs",
+  "kind": "major",
+  "name": "Information Science (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "information-science-minor",
+  "kind": "minor",
+  "name": "Information Science",
+  "college": "Bowers College of Computing and Information Science, College of Agriculture and Life Sciences, College of Arts and Scien"
+ },
+ {
+  "id": "information-science-systems-technology-bs",
+  "kind": "major",
+  "name": "Information Science, Systems, and Technology (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "interdisciplinary-studies-bs",
+  "kind": "major",
+  "name": "Interdisciplinary Studies in Agriculture & Life Sciences (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "international-markets-development-minor",
+  "kind": "minor",
+  "name": "International Markets & Development",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "international-relations-minor",
+  "kind": "minor",
+  "name": "International Relations",
+  "college": "Cornell University"
+ },
+ {
+  "id": "italian-ba",
+  "kind": "major",
+  "name": "Italian (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "italian-minor",
+  "kind": "minor",
+  "name": "Italian",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "jewish-studies-ba",
+  "kind": "major",
+  "name": "Jewish Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "jewish-studies-minor",
+  "kind": "minor",
+  "name": "Jewish Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "labor-social-justice-minor",
+  "kind": "minor",
+  "name": "Labor and Social Justice",
+  "college": "School of Industrial and Labor Relations"
+ },
+ {
+  "id": "landscape-architecture-bs",
+  "kind": "major",
+  "name": "Landscape Architecture (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "landscape-studies-minor",
+  "kind": "minor",
+  "name": "Landscape Studies",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "latin-american-studies-minor",
+  "kind": "minor",
+  "name": "Latin American Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "latina-o-studies-ba",
+  "kind": "major",
+  "name": "Latina/o Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "latina-o-studies-minor",
+  "kind": "minor",
+  "name": "Latina/o Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "law-society-minor",
+  "kind": "minor",
+  "name": "Law & Society",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "leadership-minor",
+  "kind": "minor",
+  "name": "Leadership",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "lgbt-minor",
+  "kind": "minor",
+  "name": "Lesbian, Gay, Bisexual, & Transgender",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "linguistics-ba",
+  "kind": "major",
+  "name": "Linguistics (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "linguistics-minor",
+  "kind": "minor",
+  "name": "Linguistics",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "marine-biology-minor",
+  "kind": "minor",
+  "name": "Marine Biology",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "materials-science-engineering-bs",
+  "kind": "major",
+  "name": "Materials Science and Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "materials-science-engineering-minor",
+  "kind": "minor",
+  "name": "Materials Science and Engineering",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "mathematics-ba",
+  "kind": "major",
+  "name": "Mathematics (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "mathematics-minor",
+  "kind": "minor",
+  "name": "Mathematics",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "mechanical-engineering-bs",
+  "kind": "major",
+  "name": "Mechanical Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "mechanical-engineering-minor",
+  "kind": "minor",
+  "name": "Mechanical Engineering",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "media-studies-minor",
+  "kind": "minor",
+  "name": "Media Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "medieval-studies-minor",
+  "kind": "minor",
+  "name": "Medieval Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "microbial-science-minor",
+  "kind": "minor",
+  "name": "Microbial Science",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "migration-studies-minor",
+  "kind": "minor",
+  "name": "Migration Studies",
+  "college": "Cornell University"
+ },
+ {
+  "id": "mitws-minor",
+  "kind": "minor",
+  "name": "Minority, Indigenous, and Third World Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "moral-psychology-minor",
+  "kind": "minor",
+  "name": "Moral Psychology",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "music-ba",
+  "kind": "major",
+  "name": "Music (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "music-minor",
+  "kind": "minor",
+  "name": "Music",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "near-eastern-studies-ba",
+  "kind": "major",
+  "name": "Near Eastern Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "near-eastern-studies-minor",
+  "kind": "minor",
+  "name": "Near Eastern Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "nutrition-health-minor",
+  "kind": "minor",
+  "name": "Nutrition and Health",
+  "college": "College of Agriculture and Life Sciences, College of Human Ecology"
+ },
+ {
+  "id": "nutritional-sciences-bs",
+  "kind": "major",
+  "name": "Nutritional Sciences (BS)",
+  "college": "College of Agriculture and Life Sciences, College of Human Ecology"
+ },
+ {
+  "id": "operations-research-engineering-bs",
+  "kind": "major",
+  "name": "Operations Research and Engineering (BS)",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "operations-research-management-science-minor",
+  "kind": "minor",
+  "name": "Operations Research and Management Science",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "org-human-resource-management-minor",
+  "kind": "minor",
+  "name": "Organizations and Human Resource Management",
+  "college": "School of Industrial and Labor Relations"
+ },
+ {
+  "id": "performing-media-arts-ba",
+  "kind": "major",
+  "name": "Performing and Media Arts (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "performing-media-arts-minor",
+  "kind": "minor",
+  "name": "Performing and Media Arts",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "philosophy-ba",
+  "kind": "major",
+  "name": "Philosophy (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "philosophy-minor",
+  "kind": "minor",
+  "name": "Philosophy",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "physics-ba",
+  "kind": "major",
+  "name": "Physics (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "physics-minor",
+  "kind": "minor",
+  "name": "Physics",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "plant-breeding-minor",
+  "kind": "minor",
+  "name": "Plant Breeding",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "plant-sciences-bs",
+  "kind": "major",
+  "name": "Plant Sciences (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "plant-sciences-minor",
+  "kind": "minor",
+  "name": "Plant Sciences",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "policy-analysis-management-minor",
+  "kind": "minor",
+  "name": "Policy Analysis and Management",
+  "college": "Brooks School of Public Policy"
+ },
+ {
+  "id": "portuguese-brazilian-studies-minor",
+  "kind": "minor",
+  "name": "Portuguese and Brazilian Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "psychology-ba",
+  "kind": "major",
+  "name": "Psychology (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "psychology-minor",
+  "kind": "minor",
+  "name": "Psychology",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "public-history-minor",
+  "kind": "minor",
+  "name": "Public History",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "public-policy-ba",
+  "kind": "major",
+  "name": "Public Policy (BA)",
+  "college": "Brooks School of Public Policy, College of Arts and Sciences"
+ },
+ {
+  "id": "public-policy-bs",
+  "kind": "major",
+  "name": "Public Policy (BS)",
+  "college": "Brooks School of Public Policy"
+ },
+ {
+  "id": "public-policy-minor",
+  "kind": "minor",
+  "name": "Public Policy",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "real-estate-minor-nolan-school-ug-students",
+  "kind": "minor",
+  "name": "Real Estate",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "religious-studies-ba",
+  "kind": "major",
+  "name": "Religious Studies (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "religious-studies-minor",
+  "kind": "minor",
+  "name": "Religious Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "robotics-minor",
+  "kind": "minor",
+  "name": "Robotics",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "russian-minor",
+  "kind": "minor",
+  "name": "Russian",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "sanskrit-studies-minor",
+  "kind": "minor",
+  "name": "Sanskrit Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "science-communication-public-engagement-minor",
+  "kind": "minor",
+  "name": "Science Communication and Public Engagement",
+  "college": "College of Agriculture and Life Sciences, College of Arts and Sciences"
+ },
+ {
+  "id": "science-technology-studies-ba",
+  "kind": "major",
+  "name": "Science, Technology and Society (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "science-technology-studies-minor",
+  "kind": "minor",
+  "name": "Science & Technology Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "smart-cities-minor",
+  "kind": "minor",
+  "name": "Smart Cities",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "sociology-ba",
+  "kind": "major",
+  "name": "Sociology (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "soil-science-minor",
+  "kind": "minor",
+  "name": "Soil Science",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "south-asian-studies-minor",
+  "kind": "minor",
+  "name": "South Asian Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "southeast-asian-studies-minor",
+  "kind": "minor",
+  "name": "Southeast Asian Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "spanish-ba",
+  "kind": "major",
+  "name": "Spanish (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "spanish-minor",
+  "kind": "minor",
+  "name": "Spanish",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "statistics-data-science-ba",
+  "kind": "major",
+  "name": "Statistical Science (BA)",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "sustainable-ag-food-system-minor",
+  "kind": "minor",
+  "name": "Sustainable Agricultural and Food Systems",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "sustainable-business-economic-policy-minor",
+  "kind": "minor",
+  "name": "Sustainable Business and Economic Policy",
+  "college": "SC Johnson College of Business"
+ },
+ {
+  "id": "sustainable-energy-systems-minor",
+  "kind": "minor",
+  "name": "Sustainable Energy Systems",
+  "college": "Duffield College of Engineering"
+ },
+ {
+  "id": "theatre-minor",
+  "kind": "minor",
+  "name": "Theatre",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "translational-research-minor",
+  "kind": "minor",
+  "name": "Translational Research",
+  "college": "College of Human Ecology"
+ },
+ {
+  "id": "urban-regional-studies-bs-urs",
+  "kind": "major",
+  "name": "Urban and Regional Studies (BS)",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "urban-regional-studies-minor",
+  "kind": "minor",
+  "name": "Urban and Regional Studies",
+  "college": "College of Architecture, Art and Planning"
+ },
+ {
+  "id": "viking-studies-minor",
+  "kind": "minor",
+  "name": "Viking Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "visual-studies-minor",
+  "kind": "minor",
+  "name": "Visual Studies",
+  "college": "College of Arts and Sciences"
+ },
+ {
+  "id": "viticulture-enology-bs",
+  "kind": "major",
+  "name": "Viticulture and Enology (BS)",
+  "college": "College of Agriculture and Life Sciences"
+ },
+ {
+  "id": "viticulture-enology-minor",
+  "kind": "minor",
+  "name": "Viticulture and Enology",
+  "college": "College of Agriculture and Life Sciences"
+ }
+]

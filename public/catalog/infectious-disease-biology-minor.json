@@ -1,0 +1,164 @@
+{
+ "id": "infectious-disease-biology-minor",
+ "kind": "minor",
+ "name": "Infectious Disease Biology",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/infectious-disease-biology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-foundation-course-3-cr",
+   "title": "Required Foundation Course (3 cr)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMI 2950",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2950"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-12-cr",
+   "title": "Elective Courses (12 cr)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses (12 cr)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900",
+        "BIOMS 4310",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "PLSCI 4300",
+        "PLSCI 6380",
+        "ANSC 3700",
+        "BIOMS 4150",
+        "BIOMS 4340",
+        "ENTOM 3630",
+        "BIOEE 4800",
+        "BIOMI 2600",
+        "BIOMI 3500",
+        "BIOEE 4460"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMI 2500",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMI 3210",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ENTOM 2100",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ENTOM 4000",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 4000"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "ENTOM 4520",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 4520"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "NS 2600",
+     "rule": [
+      {
+       "codes": [
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "NTRES 4150",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 4150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "PLSCI 3010",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3010"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "ANTHR 4041 ENTOM 3520 ENTOM 6520 ENTOM 6530",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

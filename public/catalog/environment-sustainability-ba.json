@@ -1,0 +1,2158 @@
+{
+ "id": "environment-sustainability-ba",
+ "name": "Environment & Sustainability (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/environment-sustainability-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "foundation-course",
+   "title": "Foundation Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NTRES 1101",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 1101"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-science",
+   "title": "Social Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NTRES 2201",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 2201"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology",
+   "title": "Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOSM 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOSM 1610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOEE 1780",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1780"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOEE 1781",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1781"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "BIOSM 1780",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry-physics",
+   "title": "Chemistry/Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1560",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 1561",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1561"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "EAS 1600",
+     "rule": [
+      {
+       "codes": [
+        "EAS 1600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2100",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOEE 1760",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1760"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PSYCH 2500",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 2500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2100",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "SOC 3010",
+     "rule": [
+      {
+       "codes": [
+        "SOC 3010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "STSCI 2100",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "STSCI 2150",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "STSCI 2200",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "humanities",
+   "title": "Humanities",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Humanities",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2201",
+        "ANTHR 2420",
+        "ANTHR 2482",
+        "ASIAN 2273",
+        "BSOC 2061",
+        "COML 2036",
+        "ENGL 3795",
+        "ENGL 4675",
+        "HIST 2581",
+        "NTRES 3330",
+        "PHIL 1440"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "economics",
+   "title": "Economics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 1500",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 2500",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2500"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "field-engaged-experience",
+   "title": "Field/Engaged Experience",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Field/Engaged Experience",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 2525",
+        "BIOEE 2526",
+        "BIOEE 2527",
+        "BIOEE 3233",
+        "BIOEE 3611",
+        "BIOEE 4570",
+        "BIOEE 4571",
+        "ENTOM 2120",
+        "NTRES 2100",
+        "NTRES 2101",
+        "NTRES 2150",
+        "NTRES 2400",
+        "NTRES 2600",
+        "NTRES 3020",
+        "NTRES 3150",
+        "NTRES 3151",
+        "NTRES 3152",
+        "NTRES 4560",
+        "BIOSM 3330",
+        "BIOSM 3340",
+        "BIOSM 3450",
+        "BIOSM 3650",
+        "BIOSM 3740"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. BIOSM 2500",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "sustainability-science-colloquium",
+   "title": "Sustainability Science Colloquium",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENVS 2000",
+     "rule": [
+      {
+       "codes": [
+        "ENVS 2000"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENVS 2010",
+     "rule": [
+      {
+       "codes": [
+        "ENVS 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BEE 2000",
+     "rule": [
+      {
+       "codes": [
+        "BEE 2000"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "capstone-course",
+   "title": "Capstone Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Capstone Course",
+     "rule": [
+      {
+       "codes": [
+        "BIOSM 3750",
+        "COML 4103",
+        "ENGL 4795",
+        "ENVS 4940",
+        "GDEV 4850",
+        "HIST 4262",
+        "NTRES 4400",
+        "NTRES 4500",
+        "NTRES 4600",
+        "NTRES 4700",
+        "NTRES 4800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "environmental-biology-applied-ecology-fo",
+   "name": "Environmental Biology & Applied Ecology Focused Elective",
+   "sections": [
+    {
+     "id": "environmental-biolog-required-courses-from-core-curriculum",
+     "title": "Required Courses from Core Curriculum",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOEE 1610",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1610"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 1600",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1600"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-biological-science-choose-one",
+     "title": "Biological Science (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOEE 1780 / BIOEE 1781",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1780",
+          "BIOEE 1781"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "BIOSM 1780",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-other-chemistry-options-include",
+     "title": "Other chemistry options include",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "CHEM 1570",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 1570"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "CHEM 2070",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2070"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "CHEM 2071",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2071"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "CHEM 2080",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2080"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "CHEM 2081",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2081"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-calculus-choose-one",
+     "title": "Calculus (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "MATH 1106 / MATH 1110",
+       "rule": [
+        {
+         "codes": [
+          "MATH 1106",
+          "MATH 1110"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-quantitative-choose-one",
+     "title": "Quantitative (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Quantitative (Choose One)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2770",
+          "BIOEE 3550",
+          "CS 1110",
+          "EAS 2900",
+          "ENTOM 3030",
+          "GDEV 4295",
+          "MATH 1120",
+          "NTRES 4100",
+          "NTRES 4120",
+          "PLSCI 2200",
+          "STSCI 3110",
+          "STSCI 3200"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-introductory-genetics-choose-one",
+     "title": "Introductory Genetics (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "NTRES 2830 / BIOMG 2800 / BIOMG 2801",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 2830",
+          "BIOMG 2800",
+          "BIOMG 2801"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-advanced-ecology-choose-one",
+     "title": "Advanced Ecology (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOEE 3610 / NTRES 3100",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 3610",
+          "NTRES 3100"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-list-1-ecosystems-the-physical-and-biolo",
+     "title": "List 1 - Ecosystems: The Physical and Biological Environment",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "List 1 - Ecosystems: The Physical and Biological Environment",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 3610",
+          "BIOEE 3690",
+          "BIOEE 4570",
+          "BIOEE 4690",
+          "BIOEE 4780",
+          "EAS 3030",
+          "NTRES 3150",
+          "NTRES 3240",
+          "NTRES 3250",
+          "NTRES 4560",
+          "PLSCI 3210",
+          "PLSCI 4660",
+          "PLSCI 4730"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-biolog-list-2-organisms-plants-animals-microbes",
+     "title": "List 2 - Organisms: Plants, Animals, Microbes",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "List 2 - Organisms: Plants, Animals, Microbes",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 2740",
+          "BIOEE 3610",
+          "BIOEE 3611",
+          "BIOEE 3730",
+          "BIOEE 4460",
+          "BIOEE 4500",
+          "BIOEE 4660",
+          "BIOEE 4700",
+          "BIOEE 4750",
+          "BIOEE 4760",
+          "BIOEE 4800",
+          "BIOMI 2900",
+          "BIOMI 3500",
+          "BIOMI 6300",
+          "BIOSM 3290",
+          "BIOSM 3330",
+          "BIOSM 3450",
+          "BIOSM 3740",
+          "BIOSM 4650",
+          "ENTOM 2120",
+          "ENTOM 2440",
+          "ENTOM 3150",
+          "ENTOM 3440",
+          "ENTOM 3630",
+          "ENTOM 3755",
+          "ENTOM 4000",
+          "ENTOM 4550",
+          "NTRES 3100",
+          "NTRES 3110",
+          "NTRES 3150",
+          "NTRES 3260",
+          "NTRES 3400",
+          "NTRES 4100",
+          "NTRES 4120",
+          "NTRES 4280",
+          "PLSCI 2410",
+          "PLSCI 3010",
+          "PLSCI 3150",
+          "PLSCI 3420",
+          "PLSCI 4300"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "environmental-humanities",
+   "name": "Environmental Humanities",
+   "sections": [
+    {
+     "id": "environmental-humani-anthropology",
+     "title": "Anthropology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Anthropology",
+       "rule": [
+        {
+         "codes": [
+          "ANTHR 2201",
+          "ANTHR 2420",
+          "ANTHR 2482",
+          "ANTHR 3230",
+          "ANTHR 3248",
+          "ANTHR 3325",
+          "ANTHR 3422",
+          "ANTHR 4101",
+          "ANTHR 4442"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-africana-studies",
+     "title": "Africana Studies",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ASRC 3565",
+       "rule": [
+        {
+         "codes": [
+          "ASRC 3565"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-asian-studies",
+     "title": "Asian Studies",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ASIAN 2273",
+       "rule": [
+        {
+         "codes": [
+          "ASIAN 2273"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-biology-society",
+     "title": "Biology & Society",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BSOC 2061",
+       "rule": [
+        {
+         "codes": [
+          "BSOC 2061"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-classics",
+     "title": "Classics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "CLASS 2729",
+       "rule": [
+        {
+         "codes": [
+          "CLASS 2729"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "CLASS 3750",
+       "rule": [
+        {
+         "codes": [
+          "CLASS 3750"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-comparative-literature",
+     "title": "Comparative Literature",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "COML 2036",
+       "rule": [
+        {
+         "codes": [
+          "COML 2036"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "COML 3111",
+       "rule": [
+        {
+         "codes": [
+          "COML 3111"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "COML 3264",
+       "rule": [
+        {
+         "codes": [
+          "COML 3264"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "COML 3435",
+       "rule": [
+        {
+         "codes": [
+          "COML 3435"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "COML 4902",
+       "rule": [
+        {
+         "codes": [
+          "COML 4902"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-english",
+     "title": "English",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ENGL 3795",
+       "rule": [
+        {
+         "codes": [
+          "ENGL 3795"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "ENGL 4225",
+       "rule": [
+        {
+         "codes": [
+          "ENGL 4225"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "ENGL 4675",
+       "rule": [
+        {
+         "codes": [
+          "ENGL 4675"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "ENGL 4795",
+       "rule": [
+        {
+         "codes": [
+          "ENGL 4795"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-environment-sustainability",
+     "title": "Environment & Sustainability",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ENVS 2010",
+       "rule": [
+        {
+         "codes": [
+          "ENVS 2010"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-french",
+     "title": "French",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "FREN 4250",
+       "rule": [
+        {
+         "codes": [
+          "FREN 4250"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-history",
+     "title": "History",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "HIST 2371",
+       "rule": [
+        {
+         "codes": [
+          "HIST 2371"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "HIST 2581",
+       "rule": [
+        {
+         "codes": [
+          "HIST 2581"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "HIST 4262",
+       "rule": [
+        {
+         "codes": [
+          "HIST 4262"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-history-of-art-and-visual-studies",
+     "title": "History of Art and Visual Studies",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ARTH 2255",
+       "rule": [
+        {
+         "codes": [
+          "ARTH 2255"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "ARTH 3620",
+       "rule": [
+        {
+         "codes": [
+          "ARTH 3620"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-natural-resources",
+     "title": "Natural Resources",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "NTRES 3330",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 3330"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-philosophy",
+     "title": "Philosophy",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "PHIL 1440",
+       "rule": [
+        {
+         "codes": [
+          "PHIL 1440"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-science-technology-studies",
+     "title": "Science & Technology Studies",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "STS 3181",
+       "rule": [
+        {
+         "codes": [
+          "STS 3181"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "STS 4131",
+       "rule": [
+        {
+         "codes": [
+          "STS 4131"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "STS 4460",
+       "rule": [
+        {
+         "codes": [
+          "STS 4460"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-society-for-the-humanities",
+     "title": "Society for the Humanities",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "SHUM 3514",
+       "rule": [
+        {
+         "codes": [
+          "SHUM 3514"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-humani-spanish",
+     "title": "Spanish",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "SPAN 4690",
+       "rule": [
+        {
+         "codes": [
+          "SPAN 4690"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "environmental-policy-governance-focused-",
+   "name": "Environmental Policy & Governance Focused Elective",
+   "sections": [
+    {
+     "id": "environmental-policy-environment-and-law-choose-one",
+     "title": "Environment and Law (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Environment and Law (Choose One)",
+       "rule": [
+        {
+         "codes": [
+          "CRP 4590",
+          "LAW 4131",
+          "LAW 4330",
+          "LAW 4443",
+          "LAW 6361",
+          "LAW 7358",
+          "PUBPOL 5132"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-policy-environment-and-human-behavior-choose-on",
+     "title": "Environment and Human Behavior (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Environment and Human Behavior (Choose One)",
+       "rule": [
+        {
+         "codes": [
+          "ANTHR 2420",
+          "BSOC 2061",
+          "DEA 1500",
+          "GDEV 3240",
+          "NTRES 3330"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-policy-environment-and-institutions-choose-one",
+     "title": "Environment and Institutions (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Environment and Institutions (Choose One)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 4500",
+          "AEM 4510",
+          "CRP 3860",
+          "GOVT 1817",
+          "GOVT 3613",
+          "GOVT 3614",
+          "GOVT 3623",
+          "HIST 2581",
+          "NTRES 3311",
+          "NTRES 4600"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-policy-environment-and-policy-choose-one",
+     "title": "Environment and Policy (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Environment and Policy (Choose One)",
+       "rule": [
+        {
+         "codes": [
+          "BME 4440",
+          "GOVT 3032",
+          "GOVT 3583",
+          "NTRES 4300",
+          "NTRES 4301",
+          "NTRES 4302",
+          "PUBPOL 3590",
+          "PUBPOL 3670",
+          "PUBPOL 3730",
+          "PUBPOL 3910",
+          "PUBPOL 5441"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-policy-methods-tools-course",
+     "title": "Methods/Tools Course",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Methods/Tools Course",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2770",
+          "CRP 3555",
+          "CRP 4080",
+          "EAS 2400",
+          "GDEV 2130",
+          "GDEV 3140",
+          "GDEV 3680",
+          "NTRES 4600",
+          "PLSCI 2200",
+          "PLSCI 4200"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-policy-additional-environmental-courses-choose-",
+     "title": "Additional Environmental Courses (Choose Two)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Additional Environmental Courses (Choose Two)",
+       "rule": [
+        {
+         "codes": [
+          "COML 2036",
+          "COMM 2850",
+          "COMM 3210",
+          "COMM 4860",
+          "CRP 3840",
+          "CRP 4080",
+          "CRP 5080",
+          "DEA 1500",
+          "DEA 4220",
+          "FSAD 3200",
+          "GDEV 2010",
+          "GDEV 2065",
+          "GDEV 3010",
+          "GDEV 3020",
+          "GDEV 3150",
+          "GDEV 3400",
+          "GOVT 3781",
+          "HIST 2581",
+          "NS 4450",
+          "NTRES 3330",
+          "SOC 3650",
+          "STS 3181",
+          "STS 4131"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Additional Environmental Courses (Choose Two) (1)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2000",
+          "AEM 4500",
+          "AEM 4510",
+          "AEM 4880",
+          "ANTHR 2420",
+          "ANTHR 3422",
+          "BIOEE 4690",
+          "BSOC 2061"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "Additional Environmental Courses (Choose Two) (2)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2000",
+          "AEM 4500",
+          "AEM 4510",
+          "AEM 4880",
+          "ANTHR 2420",
+          "ANTHR 3422",
+          "BIOEE 4690",
+          "BSOC 2061"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. CEE 5970",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "land-air-water-resources-focused-electiv",
+   "name": "Land, Air & Water Resources Focused Elective",
+   "sections": [
+    {
+     "id": "land-air-water-resou-required-courses-from-core-curriculum",
+     "title": "Required Courses from Core Curriculum",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOEE 1610",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1610"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 1600",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1600"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-biological-science-choose-one",
+     "title": "Biological Science (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOG 1440 / BIOEE 1780 / BIOEE 1781",
+       "rule": [
+        {
+         "codes": [
+          "BIOG 1440",
+          "BIOEE 1780",
+          "BIOEE 1781"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 1350",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 1350"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "or BIOSM 1780",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-chemistry",
+     "title": "Chemistry",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "CHEM 1560",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 1560"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "CHEM 1561",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 1561"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "CHEM 2070",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2070"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "CHEM 2071",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2071"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-quantitative-choose-one",
+     "title": "Quantitative (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "MATH 1106 / MATH 1110",
+       "rule": [
+        {
+         "codes": [
+          "MATH 1106",
+          "MATH 1110"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-biogeochemistry-choose-one",
+     "title": "Biogeochemistry (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 3030 / PLSCI 3650",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3030",
+          "PLSCI 3650"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-atmosphere-climate",
+     "title": "Atmosphere/Climate",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 1310",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 2680",
+       "rule": [
+        {
+         "codes": [
+          "EAS 2680"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "EAS 3050",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3050"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "EAS 3340",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3340"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "EAS 3420",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3420"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "BEE 4800",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4800"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-terrestrial-soil-science-geology",
+     "title": "Terrestrial/Soil Science/Geology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 2250",
+       "rule": [
+        {
+         "codes": [
+          "EAS 2250"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 3010",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "EAS 3030",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3030"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "PLSCI 2600",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2600"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PLSCI 3210",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3210"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "PLSCI 3630",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3630"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "PLSCI 3650",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3650"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-water-management-hydrology",
+     "title": "Water Management/Hydrology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BEE 3500",
+       "rule": [
+        {
+         "codes": [
+          "BEE 3500"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BEE 3710",
+       "rule": [
+        {
+         "codes": [
+          "BEE 3710"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BEE 4270",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4270"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BEE 4620",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4620"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BEE 4710",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4710"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "CEE 3310",
+       "rule": [
+        {
+         "codes": [
+          "CEE 3310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "EAS 3530",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3530"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "NTRES 3240",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 3240"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-lawr-list-2-environmental-informatics",
+     "title": "LAWR List 2 – Environmental Informatics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "LAWR List 2 – Environmental Informatics",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 3550",
+          "CRP 4080",
+          "EAS 2400",
+          "EAS 2900",
+          "PLSCI 2200",
+          "PLSCI 4200"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "land-air-water-resou-lawr-list-3-integrated-ecosystems-ecolog",
+     "title": "LAWR List 3 – Integrated Ecosystems/Ecology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "LAWR List 3 – Integrated Ecosystems/Ecology",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4570",
+          "BIOEE 4780",
+          "NTRES 3220",
+          "NTRES 4560",
+          "PLSCI 4660",
+          "PLSCI 4720",
+          "PLSCI 4730"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "sustainable-business-environmental-econo",
+   "name": "Sustainable Business & Environmental Economics Focused Elective",
+   "sections": [
+    {
+     "id": "sustainable-business-required-courses-from-core-curriculum",
+     "title": "Required Courses from Core Curriculum",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "AEM 2500",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2500"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "sustainable-business-additional-required-courses",
+     "title": "Additional Required Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ECON 1110",
+       "rule": [
+        {
+         "codes": [
+          "ECON 1110"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "ECON 1120",
+       "rule": [
+        {
+         "codes": [
+          "ECON 1120"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "ECON 3030 / AEM 2600",
+       "rule": [
+        {
+         "codes": [
+          "ECON 3030",
+          "AEM 2600"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "MATH 1110",
+       "rule": [
+        {
+         "codes": [
+          "MATH 1110"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "sustainable-business-resource-environmental-economics-choose-",
+     "title": "Resource/Environmental Economics (Choose a Minimum of 5.5 Credits, 2-3 Courses): electives",
+     "type": "creditBucket",
+     "minCredits": 5.5,
+     "rule": [
+      {
+       "codes": [
+        "AEM 3115",
+        "AEM 4090",
+        "AEM 4490",
+        "AEM 4500",
+        "AEM 4510",
+        "ECON 3850",
+        "AEM 4580",
+        "AEM 4585",
+        "AEM 4940",
+        "NBA 6030",
+        "NBA 6380"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Resource/Environmental Economics (Choose a Minimum of 5.5 Credits, 2-3 Courses)",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    },
+    {
+     "id": "sustainable-business-data-analysis-econometrics-choose-one",
+     "title": "Data Analysis/Econometrics (Choose One)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Data Analysis/Econometrics (Choose One)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2770",
+          "AEM 2840",
+          "AEM 2850",
+          "AEM 3100",
+          "AEM 4110",
+          "CRP 4080",
+          "ECON 3120",
+          "ECON 3140",
+          "ILRST 2110",
+          "PLSCI 2200",
+          "STSCI 4060"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

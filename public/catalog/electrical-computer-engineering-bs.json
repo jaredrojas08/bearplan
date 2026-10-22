@@ -1,0 +1,174 @@
+{
+ "id": "electrical-computer-engineering-bs",
+ "name": "Electrical and Computer Engineering (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/electrical-computer-engineering-bs/",
+ "totalCredits": 126,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-major-courses",
+   "title": "Required Major Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECE 2100 / ENGRD 2100",
+     "rule": [
+      {
+       "codes": [
+        "ECE 2100",
+        "ENGRD 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ECE 2300",
+     "rule": [
+      {
+       "codes": [
+        "ECE 2300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECE 2720 / ENGRD 2720",
+     "rule": [
+      {
+       "codes": [
+        "ECE 2720",
+        "ENGRD 2720"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ece-foundation-courses-at-least-3-course",
+   "title": "ECE Foundation Courses (at least 3 courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECE 3030 / ECE 3150",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3030",
+        "ECE 3150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ECE 3100 / ECE 3250",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3100",
+        "ECE 3250"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-ece-foundation-course",
+   "title": "Additional ECE Foundation Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Additional ECE Foundation Course",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3030",
+        "ECE 3100",
+        "ECE 3140",
+        "ECE 3150",
+        "ECE 3250"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "culminating-design-experience-cde-course",
+   "title": "Culminating Design Experience (CDE) Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Culminating Design Experience (CDE) Course",
+     "rule": [
+      {
+       "codes": [
+        "ECE 4530",
+        "ECE 4740",
+        "ECE 4760",
+        "ECE 4670",
+        "ECE 4750"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "technical-electives-outside-of-electrica",
+   "title": "Technical Electives Outside of Electrical and Computer Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "3000+ course",
+     "rule": [
+      {
+       "minLevel": 3000
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective"
+    }
+   ],
+   "note": "3000 level or above elective Additional electives",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

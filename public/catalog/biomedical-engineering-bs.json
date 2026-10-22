@@ -1,0 +1,433 @@
+{
+ "id": "biomedical-engineering-bs",
+ "name": "Biomedical Engineering (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biomedical-engineering-bs/",
+ "totalCredits": 130,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRD 2111",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2111"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGRD 2020",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2020"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-2",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Courses",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350",
+        "BME 2010",
+        "BME 2080",
+        "BME 2000",
+        "BME 2210",
+        "BME 3010",
+        "BME 3020",
+        "BME 3030",
+        "BME 4010",
+        "BME 4020",
+        "BME 4080",
+        "BME 4090",
+        "ENGRD 2020",
+        "STSCI 2200",
+        "STSCI 2150",
+        "ENGRD 2700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-3",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BME 3110",
+     "rule": [
+      {
+       "codes": [
+        "BME 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BME 4190",
+     "rule": [
+      {
+       "codes": [
+        "BME 4190"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BME",
+     "rule": [
+      {
+       "subjects": [
+        "BME"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "One 3xxx/4xxx course from another BME concentration",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-select-six-credits-of-t",
+   "title": "Elective Courses: Select six credits of the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "BIOAP/ANSC 4270",
+      "BIOCB 4381",
+      "BIOCB 4830",
+      "BIOCB 4840/CS 4775",
+      "BIOMG 4380",
+      "BIOMG 4390",
+      "BIOMS/BIOMI 4090",
+      "BIONB/BME 4910/5320/BIONB 5910/ECE 5090/",
+      "BIONB 3950",
+      "BME 4790",
+      "BME 5110",
+      "BME 5830",
+      "BME 5850",
+      "BME 6410",
+      "CHEM 4810",
+      "CHEME 5430",
+      "CS 3780",
+      "ECE 3200",
+      "ECE 4200",
+      "INFO 3950"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select six credits of the following:",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "required-courses-4",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BME 3210",
+     "rule": [
+      {
+       "codes": [
+        "BME 3210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BME 4190 / BME 4490",
+     "rule": [
+      {
+       "codes": [
+        "BME 4190",
+        "BME 4490"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 1570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-select-six-credits-of-t-2",
+   "title": "Elective Courses: Select six credits of the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "BEE 3400",
+      "BIOAP/BIOMS 4140",
+      "BME/MSE 5620",
+      "BME 5750",
+      "BME 5760",
+      "BME 5810/MAE 5680",
+      "BME/MAE 4640",
+      "MSE 4020",
+      "MAE 6670",
+      "BME 5830",
+      "BME 5850",
+      "BME 6210/CHEME 6310",
+      "CHEME 5430",
+      "MAE 4670",
+      "MSE 4610",
+      "MSE 5210"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select six credits of the following:",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "required-courses-5",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BME 3310",
+     "rule": [
+      {
+       "codes": [
+        "BME 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BME 4390",
+     "rule": [
+      {
+       "codes": [
+        "BME 4390"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 2214",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2214"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-select-six-credits-of-t-3",
+   "title": "Elective Courses: Select six credits of the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "AEP 4400",
+      "BIONB 4320",
+      "BME 3320",
+      "BIONB/BME/ECE 4910",
+      "BME/BIONB/PSYCH/COGST 3300",
+      "BME 6330",
+      "BME 6260",
+      "BME 6320",
+      "BME 6350",
+      "CS 3110",
+      "CS 3780/5780",
+      "ECE 3200",
+      "INFO 3950",
+      "ECE 3100",
+      "ECE 3140/CS 3420",
+      "ECE 5725",
+      "ECE 3250",
+      "ECE 4250",
+      "ECE 4300",
+      "ECE/MAE 4320",
+      "ECE 4370",
+      "ECE 4760",
+      "ECE 5470",
+      "CS 4670",
+      "ECE 6690/BME 5780",
+      "HD 4630",
+      "PHYS 3316"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select six credits of the following:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "required-courses-6",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BME 3410",
+     "rule": [
+      {
+       "codes": [
+        "BME 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BME 4490",
+     "rule": [
+      {
+       "codes": [
+        "BME 4490"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 2214 / CHEM 1570",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2214",
+        "CHEM 1570"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-select-six-credits-of-t-4",
+   "title": "Elective Courses: Select six credits of the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "BEE 3310",
+      "BME 4410",
+      "MAE 4650",
+      "BEE 3500",
+      "MAE 3240",
+      "BEE/MAE 4530",
+      "BME/MAE 4640",
+      "BME 5810/MAE 5680",
+      "BME 6410",
+      "MAE 3230",
+      "MAE 3783",
+      "MAE 4670",
+      "MAE 4700",
+      "MAE 6670",
+      "MSE 4020/MAE 3120",
+      "MAE 4240/MSE 4510",
+      "BME/MAE/MSE 6650"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select six credits of the following:",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

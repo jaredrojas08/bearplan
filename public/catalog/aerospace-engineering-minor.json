@@ -1,0 +1,292 @@
+{
+ "id": "aerospace-engineering-minor",
+ "kind": "minor",
+ "name": "Aerospace Engineering",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/aerospace-engineering-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-aerospace-engineering",
+   "title": "Core Aerospace Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Aerospace Engineering (1)",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3050",
+        "MAE 4060",
+        "MAE 4150",
+        "MAE 4160",
+        "MAE 4161",
+        "MAE 5160",
+        "MAE 4900",
+        "ENGRG 3400",
+        "MAE 4230",
+        "MAE 4231",
+        "MAE 5230",
+        "MAE 4440",
+        "MAE 4441",
+        "MAE 5440",
+        "MAE 4510",
+        "MAE 5510",
+        "MAE 4540",
+        "MAE 5540",
+        "MAE 4070",
+        "MAE 5070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Core Aerospace Engineering (2)",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3050",
+        "MAE 4060",
+        "MAE 4150",
+        "MAE 4160",
+        "MAE 4161",
+        "MAE 5160",
+        "MAE 4900",
+        "ENGRG 3400",
+        "MAE 4230",
+        "MAE 4231",
+        "MAE 5230",
+        "MAE 4440",
+        "MAE 4441",
+        "MAE 5440",
+        "MAE 4510",
+        "MAE 5510",
+        "MAE 4540",
+        "MAE 5540",
+        "MAE 4070",
+        "MAE 5070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Core Aerospace Engineering (3)",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3050",
+        "MAE 4060",
+        "MAE 4150",
+        "MAE 4160",
+        "MAE 4161",
+        "MAE 5160",
+        "MAE 4900",
+        "ENGRG 3400",
+        "MAE 4230",
+        "MAE 4231",
+        "MAE 5230",
+        "MAE 4440",
+        "MAE 4441",
+        "MAE 5440",
+        "MAE 4510",
+        "MAE 5510",
+        "MAE 4540",
+        "MAE 5540",
+        "MAE 4070",
+        "MAE 5070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Core Aerospace Engineering (4)",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3050",
+        "MAE 4060",
+        "MAE 4150",
+        "MAE 4160",
+        "MAE 4161",
+        "MAE 5160",
+        "MAE 4900",
+        "ENGRG 3400",
+        "MAE 4230",
+        "MAE 4231",
+        "MAE 5230",
+        "MAE 4440",
+        "MAE 4441",
+        "MAE 5440",
+        "MAE 4510",
+        "MAE 5510",
+        "MAE 4540",
+        "MAE 5540",
+        "MAE 4070",
+        "MAE 5070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "courses-applicable-to-aerospace-engineer",
+   "title": "Courses Applicable to Aerospace Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MAE 4020 / MAE 4021 / MAE 5020",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4020",
+        "MAE 4021",
+        "MAE 5020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MAE 4130 / MAE 4131",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4130",
+        "MAE 4131"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4180 / MAE 5180",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4180",
+        "MAE 5180"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 4770 / MAE 5700",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4770",
+        "MAE 5700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "MAE 4730 / MAE 5730",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4730",
+        "MAE 5730"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "MAE 4770 / MAE 5770",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4770",
+        "MAE 5770"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "MAE 4780 / MAE 5780",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4780",
+        "MAE 5780"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "MAE 5430",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5430"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "fundamentals",
+   "title": "Fundamentals",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Fundamentals",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2020",
+        "MAE 2030",
+        "ENGRD 2210",
+        "MAE 3230",
+        "MAE 3240",
+        "MAE 3260",
+        "MAE 3270",
+        "MAE 3780",
+        "MAE 3783",
+        "ECE 2100",
+        "PHYS 3360"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

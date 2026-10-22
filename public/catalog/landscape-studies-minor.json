@@ -1,0 +1,29 @@
+{
+ "id": "landscape-studies-minor",
+ "kind": "minor",
+ "name": "Landscape Studies",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/landscape-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "The minor requires landscape architecture courses that begin with the \"LA\" prefix. LA 4830 Seminar in Landscape Architecture, does count toward the minor even though it is S/U grading. Independent or individual study (LA 4970) does count toward the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

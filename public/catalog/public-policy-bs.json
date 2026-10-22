@@ -1,0 +1,170 @@
+{
+ "id": "public-policy-bs",
+ "name": "Public Policy (BS)",
+ "college": "Brooks School of Public Policy",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/public-policy-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "public-policy-core-courses",
+   "title": "Public Policy Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Public Policy Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 1111",
+        "PUBPOL 2000",
+        "ECON 3030",
+        "PUBPOL 2030",
+        "PUBPOL 2040",
+        "PUBPOL 2101",
+        "PUBPOL 2301",
+        "PUBPOL 2370",
+        "PUBPOL 2830",
+        "PUBPOL 3100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PUBPOL 2320 / PUBPOL 2857 / PUBPOL 3583 (1)",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2320",
+        "PUBPOL 2857",
+        "PUBPOL 3583"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PUBPOL 2320 / PUBPOL 2857 / PUBPOL 3583 (2)",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2320",
+        "PUBPOL 2857",
+        "PUBPOL 3583"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-government",
+   "title": "Introductory Government",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GOVT 1111 / GOVT 1313 / GOVT 1817",
+     "rule": [
+      {
+       "codes": [
+        "GOVT 1111",
+        "GOVT 1313",
+        "GOVT 1817"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-sociology",
+   "title": "Introductory Sociology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "SOC 1101 / PUBPOL 2250",
+     "rule": [
+      {
+       "codes": [
+        "SOC 1101",
+        "PUBPOL 2250"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engaged-learning",
+   "title": "Engaged Learning",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL",
+     "rule": [
+      {
+       "minCredits": 3,
+       "subjects": [
+        "PUBPOL"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Take at least 3 credits of PUBPOL coursework that has the CU-CEL attribute.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

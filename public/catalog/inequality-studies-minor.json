@@ -1,0 +1,112 @@
+{
+ "id": "inequality-studies-minor",
+ "kind": "minor",
+ "name": "Inequality Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/inequality-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "SOC 2208",
+     "rule": [
+      {
+       "codes": [
+        "SOC 2208"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3700",
+        "GOVT 3251",
+        "PUBPOL 2250",
+        "PUBPOL 2370",
+        "SOC 2220"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "general-electives",
+   "title": "General Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "General Electives",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 1500",
+        "AMST 4051",
+        "BIONB 3215",
+        "FGSS 2010",
+        "GDEV 2710",
+        "GOVT 3071",
+        "ILRGL 2350",
+        "SOC 1101",
+        "STS 2061"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "health-equity-track-electives",
+   "title": "Health Equity Track Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Health Equity Track Electives",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1600",
+        "ANTHR 2424",
+        "BSOC 2051",
+        "NS 1150",
+        "PUBPOL 3280"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

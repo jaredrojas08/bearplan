@@ -1,0 +1,40 @@
+{
+ "id": "africana-studies-ba",
+ "name": "Africana Studies (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/africana-studies-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "one-1-core-course",
+   "title": "One (1) Core Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ASRC 1500",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 1500"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

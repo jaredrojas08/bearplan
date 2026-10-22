@@ -1,0 +1,87 @@
+{
+ "id": "fungal-biology-minor",
+ "kind": "minor",
+ "name": "Fungal Biology",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fungal-biology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 3010",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 3190",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3190"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 4300",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4300"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses-following-main-or-adv",
+   "title": "Additional Courses following Main or Advanced Track",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Main track, for students with a lighter biology focus",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2013",
+        "PLSCI 2010",
+        "FDSC 2206",
+        "PLSCI 6380"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

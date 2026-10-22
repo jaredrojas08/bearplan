@@ -1,0 +1,1352 @@
+{
+ "id": "information-science-systems-technology-bs",
+ "name": "Information Science, Systems, and Technology (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/information-science-systems-technology-bs/",
+ "totalCredits": 129,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "INFO 1200",
+        "INFO 1260",
+        "ORIE 3500",
+        "INFO 1300",
+        "ORIE 3120",
+        "INFO 2450",
+        "INFO 2850",
+        "CS 3780",
+        "ORIE 3741",
+        "ORIE 4740",
+        "STSCI 3740"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective"
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Select one course in Data Science and Machine Learning:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "data-science",
+   "name": "Data Science",
+   "sections": [
+    {
+     "id": "data-science-a-data-analysis",
+     "title": "A. Data Analysis",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3300",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 3900",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3900"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 3950",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3950"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "ORIE 4740",
+       "rule": [
+        {
+         "codes": [
+          "ORIE 4740"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "data-science-b-domain-expertise",
+     "title": "B. Domain Expertise",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "B. Domain Expertise",
+       "rule": [
+        {
+         "codes": [
+          "CS 4740",
+          "INFO 2770",
+          "INFO 3350",
+          "INFO 3370",
+          "INFO 3720",
+          "INFO 4100",
+          "INFO 4120",
+          "INFO 4300",
+          "INFO 4350",
+          "INFO 4940"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "data-science-c-big-data-ethics-policy-and-society",
+     "title": "C. Big Data Ethics, Policy and Society",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "C. Big Data Ethics, Policy and Society",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3200",
+          "INFO 4140",
+          "INFO 4145",
+          "INFO 4200",
+          "INFO 4240",
+          "INFO 4250",
+          "INFO 4260",
+          "INFO 4270",
+          "INFO 4390",
+          "INFO 4561",
+          "INFO 4940",
+          "COMM 4010",
+          "ENGL 3778",
+          "PUBPOL 3460"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "data-science-d-data-communication",
+     "title": "D. Data Communication",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "D. Data Communication",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3312",
+          "INFO 4310",
+          "COMM 3150",
+          "COMM 3189",
+          "COMM 3190",
+          "COMM 4860",
+          "COMM 4940",
+          "SOC 3580",
+          "SOC 4390"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "interactive-technologies",
+   "name": "Interactive Technologies",
+   "sections": [
+    {
+     "id": "interactive-technolo-a-building-with-hardware",
+     "title": "A. Building with Hardware",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 4120",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4120"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4320",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4320"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "CS 4758",
+       "rule": [
+        {
+         "codes": [
+          "CS 4758"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "interactive-technolo-b-working-with-data-software",
+     "title": "B. Working with Data/Software",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3300",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4340",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4340"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4555",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4555"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "CS 4620",
+       "rule": [
+        {
+         "codes": [
+          "CS 4620"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "CS 5150",
+       "rule": [
+        {
+         "codes": [
+          "CS 5150"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "ORIE 3741",
+       "rule": [
+        {
+         "codes": [
+          "ORIE 3741"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "interactive-technolo-c-context-application-domains",
+     "title": "C. Context/Application Domains",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 4152",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4152"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4310",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4410",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4410"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4430",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4430"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4505",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4505"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "network-crowds-and-markets",
+   "name": "Network, Crowds, and Markets",
+   "sections": [
+    {
+     "id": "network-crowds-and-m-a-models",
+     "title": "A. Models",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "A. Models",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4220",
+          "INFO 4360",
+          "INFO 4940",
+          "COMM 3150",
+          "ECON 3810",
+          "ECON 4020",
+          "ECON 4610",
+          "ECON 4620",
+          "ECON 4660",
+          "ORIE 4350"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. SOC 3080",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "network-crowds-and-m-b-data",
+     "title": "B. Data",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3300",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 3950",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3950"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4300",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4350",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4350"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "CS 4740",
+       "rule": [
+        {
+         "codes": [
+          "CS 4740"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "ECON 3120",
+       "rule": [
+        {
+         "codes": [
+          "ECON 3120"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "ECON 3140",
+       "rule": [
+        {
+         "codes": [
+          "ECON 3140"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "network-crowds-and-m-c-policy-values",
+     "title": "C. Policy/Values",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "C. Policy/Values",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4140",
+          "INFO 4145",
+          "INFO 4200",
+          "INFO 4240",
+          "INFO 4250",
+          "INFO 4270",
+          "INFO 4940",
+          "COMM 4940",
+          "PUBPOL 3460",
+          "SOC 3490"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "behavioral-science",
+   "name": "Behavioral Science",
+   "sections": [
+    {
+     "id": "behavioral-science-a-understanding-social-behavior",
+     "title": "A. Understanding Social Behavior",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3170",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3170"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4430",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4430"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4450",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4450"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4500",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4500"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4505",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4505"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "COMM 4380",
+       "rule": [
+        {
+         "codes": [
+          "COMM 4380"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "PSYCH 3800",
+       "rule": [
+        {
+         "codes": [
+          "PSYCH 3800"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "INFO 4490",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "behavioral-science-b-social-data-analytics",
+     "title": "B. Social Data Analytics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3300",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 3720",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3720"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 3950",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3950"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4100",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4100"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4300",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "INFO 4350",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4350"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "CS 4740",
+       "rule": [
+        {
+         "codes": [
+          "CS 4740"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "behavioral-science-c-behavior-in-sociological-network-and-d",
+     "title": "C. Behavior in Sociological, Network, and Design Contexts",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "C. Behavior in Sociological, Network, and Design Contexts",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3200",
+          "INFO 4140",
+          "INFO 4940",
+          "INFO 4360",
+          "COMM 4940",
+          "INFO 3450",
+          "INFO 4240",
+          "INFO 4400"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Elective"
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. Select one course from one of the below \"Behavior in Context\" sections – it is not necessary to take one from each:",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "digital-culture-and-production",
+   "name": "Digital Culture and Production",
+   "sections": [
+    {
+     "id": "digital-culture-and--a-digital-culture-and-history",
+     "title": "A. Digital Culture and History",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 2921",
+       "rule": [
+        {
+         "codes": [
+          "INFO 2921"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 3200",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3200"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4140",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4140"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4260",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4260"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4270",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4270"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "STS 4040",
+       "rule": [
+        {
+         "codes": [
+          "STS 4040"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "digital-culture-and--b-media-art-design",
+     "title": "B. Media, Art, Design",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3450",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3450"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 3660",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3660"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4152",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4152"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4240",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4240"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4400",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4400"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "INFO 4420",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4420"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "ARTH 4151",
+       "rule": [
+        {
+         "codes": [
+          "ARTH 4151"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "information-ethics-law-and-policy",
+   "name": "Information Ethics, Law, and Policy",
+   "sections": [
+    {
+     "id": "information-ethics-l-a-frameworks-and-institutions",
+     "title": "A. Frameworks and Institutions",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "A. Frameworks and Institutions",
+       "rule": [
+        {
+         "codes": [
+          "COMM 4010",
+          "INFO 3210",
+          "INFO 4113",
+          "INFO 4140",
+          "INFO 4200",
+          "INFO 4250",
+          "INFO 4301",
+          "INFO 4940",
+          "HADM 4890",
+          "PUBPOL 3460"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "information-ethics-l-b-methods-and-analysis",
+     "title": "B. Methods and Analysis",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 2921",
+       "rule": [
+        {
+         "codes": [
+          "INFO 2921"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4240",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4240"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "PUBPOL 2300",
+       "rule": [
+        {
+         "codes": [
+          "PUBPOL 2300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PUBPOL 2301",
+       "rule": [
+        {
+         "codes": [
+          "PUBPOL 2301"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "information-ethics-l-c-cases-topics",
+     "title": "C. Cases/Topics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "C. Cases/Topics",
+       "rule": [
+        {
+         "codes": [
+          "COMM 4940",
+          "ENGRG 3605",
+          "INFO 3170",
+          "INFO 3200",
+          "INFO 4145",
+          "INFO 4210",
+          "INFO 4260",
+          "INFO 4390",
+          "INFO 4561",
+          "STS 4040"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "user-experience-ux-design",
+   "name": "User Experience (UX) Design",
+   "sections": [
+    {
+     "id": "user-experience-ux-d-a-core-principles-of-design",
+     "title": "A. Core Principles of Design",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 3450",
+       "rule": [
+        {
+         "codes": [
+          "INFO 3450"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4400",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4400"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4410",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4410"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4470",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4470"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "user-experience-ux-d-b-design-in-context",
+     "title": "B. Design in Context",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 2921",
+       "rule": [
+        {
+         "codes": [
+          "INFO 2921"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4240",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4240"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4420",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4420"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "INFO 4505",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4505"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "INFO 4940",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4940"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "user-experience-ux-d-c-knowing-the-user",
+     "title": "C. Knowing the User",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "INFO 4125",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4125"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "INFO 4430",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4430"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "INFO 4450",
+       "rule": [
+        {
+         "codes": [
+          "INFO 4450"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "COMM 4380",
+       "rule": [
+        {
+         "codes": [
+          "COMM 4380"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PSYCH 3420",
+       "rule": [
+        {
+         "codes": [
+          "PSYCH 3420"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "INFO 4490",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

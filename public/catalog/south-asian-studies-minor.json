@@ -1,0 +1,29 @@
+{
+ "id": "south-asian-studies-minor",
+ "kind": "minor",
+ "name": "South Asian Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/south-asian-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "note": "A minor in South Asian Studies may be achieved by meeting these requirements: Complete at least five courses for the required minimum of 18 credits. Students normally take courses in South Asian Studies bearing subject heading ASIAN or its cross-listings. Other courses with relevant South Asian content may also count, pending approval by the Department of Asian Studies. Typically, non-language courses are selected at the 2200-level or above. The following courses may also count towards the minor: two courses (of at least three credits each) in a South Asian language at the 1100-level or above and South Asian graduate courses. Language study is strongly encouraged; credits awarded for language cannot exceed six credits. Only one language jumpstart course may count towards the minor. Take at least one non-language class at the 3000-level or above. A maximum of 8 transfer credits from cours",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

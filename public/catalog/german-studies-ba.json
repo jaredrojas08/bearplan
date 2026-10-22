@@ -1,0 +1,156 @@
+{
+ "id": "german-studies-ba",
+ "name": "German Studies (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/german-studies-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-level",
+   "title": "Introductory level",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GERST 1210",
+     "rule": [
+      {
+       "codes": [
+        "GERST 1210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GERST 1220",
+     "rule": [
+      {
+       "codes": [
+        "GERST 1220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "GERST 1230",
+     "rule": [
+      {
+       "codes": [
+        "GERST 1230"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "GERST (1)",
+     "rule": [
+      {
+       "subjects": [
+        "GERST"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "GERST (2)",
+     "rule": [
+      {
+       "subjects": [
+        "GERST"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "GERST (3)",
+     "rule": [
+      {
+       "subjects": [
+        "GERST"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "GERST (4)",
+     "rule": [
+      {
+       "subjects": [
+        "GERST"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "GERST (5)",
+     "rule": [
+      {
+       "subjects": [
+        "GERST"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "GERST (6)",
+     "rule": [
+      {
+       "subjects": [
+        "GERST"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "Elective",
+     "rule": [
+      {
+       "minCredits": 1
+      }
+     ]
+    }
+   ],
+   "note": "Total Hours Two courses in the German language at the 3000-3209 level with intensive language work Six courses in German Studies (GERST) at the 3210-level or higher 1-credit Research Project",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

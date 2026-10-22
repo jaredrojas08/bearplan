@@ -1,0 +1,39 @@
+{
+ "id": "crime-prisons-education-justice-minor",
+ "kind": "minor",
+ "name": "Crime, Prisons, Education, and Justice",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/crime-prisons-education-justice-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "GOVT",
+      "EDUC",
+      "PMA"
+     ],
+     "reason": "Needs a GOVT / EDUC / PMA course"
+    }
+   ],
+   "note": "To satisfy the requirements of the minor, a student must: Complete 5 qualifying, interdisciplinary courses. Since this minor is interdisciplinary, students may not take all five courses from the same department. Successfully complete GOVT 3121 Crime and Punishment, GOVT 3141 Prisons (Distance Learning course), or GOVT 3152 Prisons, Politics and Policy. Successfully complete GOVT 3142 , EDUC 3142 Reflecting on the Intersections of Education and Prison Systems , PMA 4681 Cages and Creativity: Arts in Incarceration, or another class that includes an opportunity for extended reflection on the complexity of working with people who are justice-involved, subject to approval by the minor’s Faculty Director. All students must complete an engagement requirement. Participation in any of the following programs can fulfill this requirement: Teaching Assistant for the Cornell Prison Education Program ",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

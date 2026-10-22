@@ -1,0 +1,2354 @@
+{
+ "id": "biological-sciences-ba",
+ "name": "Biological Sciences (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biological-sciences-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "cell-biology",
+   "title": "Cell Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physiology",
+   "title": "Physiology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ecology",
+   "title": "Ecology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 1610 / BIOSM 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610",
+        "BIOSM 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "investigative-laboratory-2-3-credits",
+   "title": "Investigative Laboratory: (2-3 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1500 / BIOSM 1500",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1500",
+        "BIOSM 1500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "evolutionary-biology-and-diversity-4-5-c",
+   "title": "Evolutionary Biology and Diversity: (4-5 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 1780 / BIOEE 1781",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1780",
+        "BIOEE 1781"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070",
+        "CHEM 2071",
+        "CHEM 2080",
+        "CHEM 2081",
+        "CHEM 2150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Option 1 is one alternative. Option 2 is one alternative.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "one-course-in-calculus-i-4-credits",
+   "title": "One course in calculus I (4 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1106 / MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1106",
+        "MATH 1110"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "one-additional-course-selected-from-cate",
+   "title": "One additional course selected from categories a, b, or c (3-4 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One additional course selected from categories a, b, or c (3-4 credits)",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2150",
+        "STSCI 2200",
+        "AEM 2100",
+        "ECON 3130",
+        "PSYCH 2500",
+        "SOC 3010",
+        "MATH 1120",
+        "MATH 1910",
+        "MATH 1105"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. While any course listed for a, b, or c will fulfill the second mathematics requirement, students are strongly encouraged to complete a statistics course to fulfill the second mathematics requirement or in addition to taking a course from either b or c.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "organic-chemistry-3-6-credits",
+   "title": "Organic Chemistry: (3-6 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Organic Chemistry: (3-6 Credits)",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570",
+        "CHEM 3570",
+        "CHEM 3580",
+        "CHEM 2510",
+        "CHEM 3590",
+        "CHEM 3600"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options-2",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207",
+        "PHYS 2208",
+        "PHYS 1112",
+        "PHYS 1110",
+        "PHYS 2213"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Option 1 is one alternative. Option 2 is one alternative.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "genetics-and-genomics-5-credits",
+   "title": "Genetics and Genomics: (5 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 2800",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 2801",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2801"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options-3",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300",
+        "BIOMG 3310",
+        "BIOMG 3320",
+        "BIOMG 3350"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Option 1 is one alternative. Option 2 is one alternative. Option 3 is one alternative.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "animal-physiology",
+   "name": "Animal Physiology",
+   "sections": [
+    {
+     "id": "animal-physiology-required-courses",
+     "title": "Required Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOAP 3110",
+       "rule": [
+        {
+         "codes": [
+          "BIOAP 3110"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOAP 3160",
+       "rule": [
+        {
+         "codes": [
+          "BIOAP 3160"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "animal-physiology-lecture-lab",
+     "title": "Lecture & Lab",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Lecture & Lab",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 2400",
+          "ANSC 3410",
+          "ANSC 4270",
+          "BIOAP 2140",
+          "BIOAP 4000",
+          "BIOAP 4140",
+          "BIOMG 3850",
+          "BIOMG 4000",
+          "BIOMG 4390",
+          "BIOMS 4150",
+          "BIONB 3220",
+          "BIONB 3920",
+          "NS 3310",
+          "BIOAP 3200",
+          "BIOAP 4130",
+          "BIOAP 3190",
+          "BIOMG 4400",
+          "BIONB 4300"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "biochemistry",
+   "name": "Biochemistry",
+   "sections": [
+    {
+     "id": "biochemistry-organic-chemistry-shared-with-foundation",
+     "title": "Organic Chemistry (Shared with Foundation Requirements)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Organic Chemistry (Shared with Foundation Requirements)",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3570",
+          "CHEM 3580",
+          "CHEM 3590",
+          "CHEM 3600"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "biochemistry-organic-chemistry-lab",
+     "title": "Organic Chemistry Lab",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "CHEM 2510",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2510"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "biochemistry-biochemistry-shared-with-foundation-requ",
+     "title": "Biochemistry (Shared with Foundation Requirements)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 3310",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 3320",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3320"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 3300",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOMG 3340",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3340"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "biochemistry-pchem-and-cell-biology",
+     "title": "PCHEM and Cell Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "CHEM 3870",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3870"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4320",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4320"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "CHEM 3890",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3890"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "CHEM 3900",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3900"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "biochemistry-laboratory-course-in-biochemistry-and-mo",
+     "title": "Laboratory Course in Biochemistry and Molecular Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 4400",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4400"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "biochemistry-additional-course",
+     "title": "Additional Course",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 4380",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4380"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 6310",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 6310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "CHEM 3880",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3880"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "CHEM 4500",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 4500"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BIOG 4990",
+       "rule": [
+        {
+         "codes": [
+          "BIOG 4990"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "biodiversity-and-systematics",
+   "name": "Biodiversity and Systematics",
+   "sections": [
+    {
+     "id": "biodiversity-and-sys-group-a-minimum-7-credits",
+     "title": "Group A (minimum 7 credits)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Group A (minimum 7 credits)",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2300",
+          "PLSCI 2410",
+          "PLSCI 2470",
+          "PLSCI 2480",
+          "ENTOM 2120",
+          "ENTOM 2150",
+          "ENTOM 3150",
+          "ENTOM 3310",
+          "ENTOM 3311",
+          "PLSCI 4300",
+          "PLSCI 3190"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. BIOMS 3310",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "biodiversity-and-sys-group-a-minimum-7-credits-group-a-minimu",
+     "title": "Group A (minimum 7 credits): Group A (minimum 7 credits)",
+     "type": "creditBucket",
+     "minCredits": 7,
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOMI 2900",
+        "BIOMI 2911"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Group A (minimum 7 credits)",
+     "column": "left",
+     "filter": "major",
+     "icon": "star"
+    },
+    {
+     "id": "biodiversity-and-sys-group-b-minimum-3-credits-group-b-minimu",
+     "title": "Group B (minimum 3 credits): Group B (minimum 3 credits)",
+     "type": "creditBucket",
+     "minCredits": 3,
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 4530",
+        "BIOEE 4790",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS 3010",
+        "ENTOM 4610",
+        "PLSCI 4400"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Group B (minimum 3 credits)",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    }
+   ]
+  },
+  {
+   "id": "computational-biology",
+   "name": "Computational Biology",
+   "sections": [
+    {
+     "id": "computational-biolog-a-computational-biology",
+     "title": "A. Computational Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOCB 2010",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 2010"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "computational-biolog-b-mathematics-and-computer-programming",
+     "title": "B. Mathematics and Computer Programming",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "B. Mathematics and Computer Programming",
+       "rule": [
+        {
+         "codes": [
+          "CS 1110",
+          "CS 1112",
+          "CS 2024",
+          "STSCI 3080",
+          "MATH 2210",
+          "MATH 2310",
+          "MATH 2940",
+          "MATH 4200",
+          "MATH 4210",
+          "MATH 4710",
+          "MATH 4740"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "computational-biolog-c-core-courses",
+     "title": "C. Core Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOCB 3620",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 3620"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOCB 4100",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4100"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOCB 4350",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4350"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOCB 4381",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4381"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BIOCB 4810",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4810"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "BIOCB 4830",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4830"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "BIOCB 4840",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4840"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "BIOCB 4910",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4910"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "computational-biolog-d-bridging-courses",
+     "title": "D. Bridging Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOEE 3550",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 3550"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4870",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4870"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIONB 3300",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 3300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIONB 4220",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 4220"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BME 3110",
+       "rule": [
+        {
+         "codes": [
+          "BME 3110"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "NTRES 3100",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 3100"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "NTRES 4120",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 4120"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "PLSCI 4000",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4000"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "ecology-and-evolutionary-biology",
+   "name": "Ecology and Evolutionary Biology",
+   "sections": [
+    {
+     "id": "ecology-and-evolutio-ecology",
+     "title": "Ecology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Ecology",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 3610",
+          "BIOEE 4460",
+          "BIOEE 4550",
+          "BIOEE 4560",
+          "BIOEE 4570",
+          "BIOEE 4660",
+          "BIOEE 4780",
+          "NTRES 3100"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "ecology-and-evolutio-evolutionary-biology",
+     "title": "Evolutionary Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Evolutionary Biology",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4530",
+          "BIOEE 4800",
+          "BIOMG 4610",
+          "ENTOM 4610"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "ecology-and-evolutio-biodiversity",
+     "title": "Biodiversity",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Biodiversity",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 2740",
+          "BIOEE 3730",
+          "BIOEE 4500",
+          "BIOEE 4700"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOEE 4750",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4750"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOEE 4752",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4752"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOEE 4760",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4760"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BIOEE 4762",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4762"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "ENTOM 3310",
+       "rule": [
+        {
+         "codes": [
+          "ENTOM 3310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "PLSCI 2480",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2480"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "PLSCI 4300",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4300"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s9",
+       "label": "PLSCI 6300",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 6300"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "BIOEE 4701",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "ecology-and-evolutio-electives-specialized-courses",
+     "title": "Electives (Specialized) Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Electives (Specialized) Courses",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 2830",
+          "NTRES 3110",
+          "NTRES 4100",
+          "PLSCI 2300",
+          "PLSCI 2410",
+          "PLSCI 3440",
+          "PLSCI 4400",
+          "PLSCI 4220",
+          "PLSCI 4730"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Electives (Specialized) Courses",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1150",
+          "BIOEE 1540",
+          "BIOEE 1760",
+          "BIOEE 2233",
+          "BIOEE 2525",
+          "BIOEE 2527",
+          "BIOEE 3250",
+          "BIOEE 3550",
+          "BIOEE 3690",
+          "BIOEE 4000",
+          "BIOEE 4610",
+          "BIOEE 4690",
+          "BIOEE 4790",
+          "BIOEE 6000",
+          "BIOEE 6550",
+          "BIOEE 6900",
+          "BIOEE 7500",
+          "BIOEE 7640"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. EAS 4795",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "ecology-and-evolutio-field-and-laboratory-courses",
+     "title": "Field and Laboratory Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Field and Laboratory Courses",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1560",
+          "BIOEE 2150",
+          "BIOEE 2526",
+          "BIOEE 2740",
+          "BIOEE 3610",
+          "BIOEE 3611",
+          "BIOEE 3233",
+          "BIOEE 3780",
+          "BIOEE 4461",
+          "BIOEE 4571",
+          "BIOEE 4661"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOEE 4751",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4751"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOEE 4761",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4761"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "ENTOM 3310",
+       "rule": [
+        {
+         "codes": [
+          "ENTOM 3310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "ENTOM 3311",
+       "rule": [
+        {
+         "codes": [
+          "ENTOM 3311"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "NTRES 3400",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 3400"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s7",
+       "label": "PLSCI 2301",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2301"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s8",
+       "label": "PLSCI 2410",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2410"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s9",
+       "label": "PLSCI 3190",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3190"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "BIOEE 4701 EAS 4795",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "genetics-genomics-and-development",
+   "name": "Genetics, Genomics and Development",
+   "sections": [
+    {
+     "id": "genetics-genomics-an-genetics",
+     "title": "Genetics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 3800",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3800"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4770",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4770"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 4880",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4880"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOMI 4850",
+       "rule": [
+        {
+         "codes": [
+          "BIOMI 4850"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BIONB 3950",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 3950"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "PLSCI 3430",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3430"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "genetics-genomics-an-genomics",
+     "title": "Genomics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 3800",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3800"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4000",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4000"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 4870",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4870"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOCB 4830",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4830"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "genetics-genomics-an-developmental-and-stem-cell-biology",
+     "title": "Developmental and Stem Cell Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 3850",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3850"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4450",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4450"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 4610",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4610"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOMG 4770",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4770"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PLSCI 4220",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4220"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "genetics-genomics-an-evolutionary-and-population-genetics",
+     "title": "Evolutionary and Population Genetics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOEE 4530",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4530"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4610",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4610"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 4810",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4810"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOMG 4870",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4870"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "BIOCB 4830",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4830"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s6",
+       "label": "NTRES 3400",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 3400"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "genetics-genomics-an-molecular-biology",
+     "title": "Molecular Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 4380",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4380"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4390",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4390"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 6330",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 6330"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "BIOMG 6390",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 6390"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "genetics-genomics-an-methods-in-genetics-genomics-and-develop",
+     "title": "Methods in Genetics, Genomics and Development",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOCB 4830",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 4830"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMG 4000",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4000"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "BIOMG 4770",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4770"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "NTRES 3400",
+       "rule": [
+        {
+         "codes": [
+          "NTRES 3400"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PLSCI 3430",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3430"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "human-nutrition",
+   "name": "Human Nutrition",
+   "sections": [
+    {
+     "id": "human-nutrition-in-addition-to-the-above-requirement-stu",
+     "title": "In addition to the above requirement, students must also take 9 credits of coursework in the Biological Aspects of Nutrition category, from the following list",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "In addition to the above requirement, students must also take 9 credits of coursework in the Biological Aspects of Nutrition category, from the following list:",
+       "rule": [
+        {
+         "codes": [
+          "NS 3060",
+          "NS 3150",
+          "NS 3320",
+          "NS 3410",
+          "NS 3420",
+          "NS 3450",
+          "NS 4140",
+          "NS 4200",
+          "NS 4210",
+          "NS 4300",
+          "NS 4330",
+          "NS 4410",
+          "NS 4430",
+          "NS 5510",
+          "NS 6310",
+          "NS 6320"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "immunology-in-health-disease",
+   "name": "Immunology in Health & Disease",
+   "sections": [
+    {
+     "id": "immunology-in-health-core-courses-in-immunology",
+     "title": "Core courses in Immunology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMS 4150",
+       "rule": [
+        {
+         "codes": [
+          "BIOMS 4150"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIOMS 4250",
+       "rule": [
+        {
+         "codes": [
+          "BIOMS 4250"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "immunology-in-health-group-a-organismal-level-host-and-agent",
+     "title": "Group A (organismal-level host and agent)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Group A (organismal-level host and agent)",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 3700",
+          "BIOMG 4380",
+          "BIOMG 4880",
+          "BIOMI 3210",
+          "BIOMI 4310",
+          "BIOMS 3160",
+          "BIOMS 4040",
+          "BIOMS 4090",
+          "BIOMS 4340",
+          "FDSC 4260",
+          "NS 4200"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "immunology-in-health-group-b-population-level-host-and-agent-",
+     "title": "Group B (population-level host and agent and laboratory research)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Group B (population-level host and agent and laboratory research)",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 3250",
+          "BIOEE 4000",
+          "BIOG 4990",
+          "BIOMG 4870",
+          "BIOMI 2950",
+          "NS 3090",
+          "NS 3600"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "marine-biology",
+   "name": "Marine Biology",
+   "sections": [
+    {
+     "id": "marine-biology-introductory-courses-select-1",
+     "title": "Introductory Courses (select 1)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Introductory Courses (select 1)",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1540",
+          "BIOEE 1560",
+          "BIOSM 1500",
+          "BIOSM 1610"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "marine-biology-group-a-organismal-biology-and-foundatio",
+     "title": "Group A - Organismal Biology and Foundations (select at least 1)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Group A - Organismal Biology and Foundations (select at least 1)",
+       "rule": [
+        {
+         "codes": [
+          "BIOAP 3300",
+          "BIOEE 3730",
+          "BIOMI 3500",
+          "BIOSM 3210",
+          "BIOSM 3330",
+          "BIOSM 3450",
+          "BIOSM 4650",
+          "EAS 3555"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "marine-biology-group-b-advanced-topics",
+     "title": "Group B - Advanced Topics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Group B - Advanced Topics",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4570",
+          "BIOEE 4571",
+          "BIOSM 2800",
+          "BIOSM 3340",
+          "BIOSM 3750",
+          "NTRES 3110",
+          "NTRES 3111"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "microbiology",
+   "name": "Microbiology",
+   "sections": [
+    {
+     "id": "microbiology-other-credits",
+     "title": "Other Credits",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Other Credits",
+       "rule": [
+        {
+         "codes": [
+          "BIOMI 2600",
+          "BIOMI 2950",
+          "BIOMI 3210",
+          "BIOMI 3500",
+          "BIOMI 4040",
+          "BIOMI 4090",
+          "BIOMI 4200",
+          "BIOMI 4300",
+          "BIOMI 4310",
+          "BIOMI 4850",
+          "BIOMI 6200",
+          "BIOMI 6300",
+          "BIOMS 4340",
+          "CEE 4510",
+          "FDSC 3940",
+          "FDSC 3950",
+          "FDSC 4260",
+          "NS 4200",
+          "PLSCI 4300",
+          "VIEN 4650"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. PLSCI 5700",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "molecular-and-cell-biology",
+   "name": "Molecular and Cell Biology",
+   "sections": [
+    {
+     "id": "molecular-and-cell-b-organic-chemistry-shared-with-foundation",
+     "title": "Organic Chemistry (Shared with Foundation Requirements)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Organic Chemistry (Shared with Foundation Requirements)",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3570",
+          "CHEM 3580",
+          "CHEM 3590",
+          "CHEM 3600"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "molecular-and-cell-b-biochemistry-shared-with-foundation-requ",
+     "title": "Biochemistry (Shared with Foundation Requirements)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Biochemistry (Shared with Foundation Requirements)",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 3310",
+          "BIOMG 3320",
+          "BIOMG 3300",
+          "BIOMG 3340"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "molecular-and-cell-b-cell-biology",
+     "title": "Cell Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 4320",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4320"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "molecular-and-cell-b-a-laboratory-course-in-molecular-biology",
+     "title": "A Laboratory Course in Molecular Biology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIOMG 4400 / BIONB 4300",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4400",
+          "BIONB 4300"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "molecular-and-cell-b-6-additional-credits",
+     "title": "6 Additional Credits",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "6 Additional Credits",
+       "rule": [
+        {
+         "codes": [
+          "BIOG 4990",
+          "BIOMG 3800",
+          "BIOMG 3850",
+          "BIOMG 4000",
+          "BIOMG 4310",
+          "BIOMG 4380",
+          "BIOMG 4390",
+          "BIOMG 4450",
+          "BIOMG 4610",
+          "BIOMG 4770",
+          "BIOMG 4810",
+          "BIOMG 4870",
+          "BIOMG 4880",
+          "BIOMG 6330",
+          "BIOMG 6360",
+          "BIOMG 6390",
+          "BIOMS 4150",
+          "BIOMS 4250",
+          "BIOMI 4090",
+          "BIOMI 4850",
+          "BIONB 3950",
+          "PLSCI 3420",
+          "PLSCI 3430",
+          "PLSCI 4220",
+          "PLSCI 4620"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. Any BIOMG course at the 3000 level or above, other than those which count as a foundation requirement PLSCI 4540",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "neurobiology-and-behavior",
+   "name": "Neurobiology and Behavior",
+   "sections": [
+    {
+     "id": "neurobiology-and-beh-required-courses",
+     "title": "Required Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "BIONB 2210",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 2210"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "BIONB 2220",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 2220"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "Elective"
+      }
+     ],
+     "note": "BIONB 3000-4999 Additional NBB Courses",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "plant-biology",
+   "name": "Plant Biology",
+   "sections": [
+    {
+     "id": "plant-biology-options",
+     "title": "Options",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "One option",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2410",
+          "PLSCI 3420",
+          "PLSCI 3421",
+          "BIOEE 4460",
+          "BIOEE 4461",
+          "BIOG 4990",
+          "PLSCI 2300",
+          "PLSCI 2400",
+          "PLSCI 2430",
+          "PLSCI 2470",
+          "PLSCI 2480",
+          "PLSCI 3430",
+          "PLSCI 3431",
+          "PLSCI 3440",
+          "PLSCI 4220",
+          "PLSCI 4400"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "PLSCI 4620",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4620"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "PLSCI 4990",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4990"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "PLSCI 6831",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 6831"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "PLSCI 6841",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 6841"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "Option (a) Plant Evolutionary Biology is one alternative. PLSCI 4540",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "plant-biology-options-2",
+     "title": "Options",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "One option",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3430",
+          "PLSCI 3431",
+          "PLSCI 3420",
+          "BIOEE 4460",
+          "BIOEE 4461",
+          "BIOG 4990",
+          "PLSCI 2250",
+          "PLSCI 3421",
+          "PLSCI 4030",
+          "PLSCI 4070",
+          "PLSCI 4080",
+          "PLSCI 4220"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "PLSCI 4620",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4620"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "PLSCI 6841",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 6841"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "Option (b) Plant Biotechnology is one alternative. PLSCI 4540",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

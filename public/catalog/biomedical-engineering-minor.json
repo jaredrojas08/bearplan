@@ -1,0 +1,325 @@
+{
+ "id": "biomedical-engineering-minor",
+ "kind": "minor",
+ "name": "Biomedical Engineering",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biomedical-engineering-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-biology",
+   "title": "Introductory Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BME",
+     "rule": [
+      {
+       "minCredits": 4,
+       "subjects": [
+        "BME"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BME 2010",
+     "rule": [
+      {
+       "codes": [
+        "BME 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CHEME 2880",
+     "rule": [
+      {
+       "codes": [
+        "CHEME 2880"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "ENGRI/BME 1310",
+     "rule": [
+      {
+       "codes": [
+        "ENGRI/BME 1310"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "A score of 5 on (CEEB) Advanced Placement Biology A maximum of 4 credits; 3-8 credits count as one course toward this category of the BME minor:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "advanced-biology",
+   "title": "Advanced Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Advanced Biology",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP/BIOMS 3160",
+        "BIOAP/BIOMS 4130",
+        "BIOMG 2800",
+        "BIOMG 3310",
+        "BIOMG 3320",
+        "BIOMG 3300",
+        "BIOMG 3350",
+        "BIOMI 2900",
+        "BIONB 2220",
+        "NS 3410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "molecular-and-cellular-biomedical-engine",
+   "title": "Molecular and Cellular Biomedical Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BEE 3600",
+     "rule": [
+      {
+       "codes": [
+        "BEE 3600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOCB 4840/CS 4775",
+     "rule": [
+      {
+       "codes": [
+        "BIOCB 4840/CS 4775"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BME 3010",
+     "rule": [
+      {
+       "codes": [
+        "BME 3010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BME 3020/CHEME 4020",
+     "rule": [
+      {
+       "codes": [
+        "BME 3020/CHEME 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BME 5830",
+     "rule": [
+      {
+       "codes": [
+        "BME 5830"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "BME 5850",
+     "rule": [
+      {
+       "codes": [
+        "BME 5850"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "bme-analysis-of-physiological-systems",
+   "title": "BME Analysis of Physiological Systems",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIONB/BIOMS/BIOAP 4140",
+     "rule": [
+      {
+       "codes": [
+        "BIONB/BIOMS/BIOAP 4140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BME/BIONB/PSYCH/COGST 3300",
+     "rule": [
+      {
+       "codes": [
+        "BME/BIONB/PSYCH/COGST 3300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BME 3410",
+     "rule": [
+      {
+       "codes": [
+        "BME 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BME 4010/MAE 4660",
+     "rule": [
+      {
+       "codes": [
+        "BME 4010/MAE 4660"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BME 4020",
+     "rule": [
+      {
+       "codes": [
+        "BME 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "BME/BIONB/ECE 4910",
+     "rule": [
+      {
+       "codes": [
+        "BME/BIONB/ECE 4910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "BME/MAE 4640",
+     "rule": [
+      {
+       "codes": [
+        "BME/MAE 4640"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biomedical-engineering-applications",
+   "title": "Biomedical Engineering Applications",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biomedical Engineering Applications",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4500",
+        "BEE/MAE 4530",
+        "BME 3210",
+        "BME 3310",
+        "BME 5780/ECE 6690",
+        "BME 5810/MAE 5680",
+        "BME 6210/CHEME 6310",
+        "BME 6350",
+        "CHEME 5430",
+        "MSE 4610"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

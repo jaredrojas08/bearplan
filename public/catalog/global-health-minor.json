@@ -1,0 +1,210 @@
+{
+ "id": "global-health-minor",
+ "kind": "minor",
+ "name": "Global Health",
+ "college": "College of Agriculture and Life Sciences, College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/global-health-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 2600",
+     "rule": [
+      {
+       "codes": [
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "NS 4600",
+     "rule": [
+      {
+       "codes": [
+        "NS 4600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-course-requirement",
+   "title": "Elective Course Requirement",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Course Requirement",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2500",
+        "BIOMI 2600",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4310",
+        "BIOMS 4150",
+        "BIOMS 4340",
+        "ENTOM 2100",
+        "FDSC 4220",
+        "NS 3030",
+        "NS 3060",
+        "NS 3150",
+        "NS 3600",
+        "NS 4200",
+        "NS 4410",
+        "NS 6140",
+        "PLSCI 4070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "category-ii-social-ethical-approaches-to",
+   "title": "Category II. Social & Ethical Approaches to Global Health",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Category II. Social & Ethical Approaches to Global Health",
+     "rule": [
+      {
+       "codes": [
+        "AMST 2225",
+        "AMST 3141",
+        "ANTHR 2245",
+        "ANTHR 2421",
+        "ANTHR 2468",
+        "ANTHR 3465",
+        "ANTHR 4682",
+        "ASIAN 2262",
+        "ASRC 4602",
+        "BSOC 2051",
+        "BSOC 2061",
+        "BSOC 2071",
+        "BSOC 3011",
+        "GDEV 2010",
+        "GDEV 3111",
+        "GDEV 3700",
+        "EDUC 2610",
+        "HD 2510",
+        "NS 2450",
+        "NS 4420",
+        "NS 4500",
+        "NS 4510",
+        "PUBPOL 3180",
+        "PUBPOL 3280",
+        "SOC 4120"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "category-iii-political-economic-food-sys",
+   "title": "Category III. Political, Economic & Food Systems Approaches to Global Health",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Category III. Political, Economic & Food Systems Approaches to Global Health",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1600",
+        "AEM 2000",
+        "AEM 3385",
+        "AEM 4450",
+        "COMM 2850",
+        "ECON 3710",
+        "ECON 3910",
+        "ECON 6420",
+        "ECON 7711",
+        "GDEV 3020",
+        "GDEV 3400",
+        "GDEV 4140",
+        "NS 4480",
+        "PUBPOL 2350",
+        "PUBPOL 3870",
+        "PUBPOL 4110",
+        "PUBPOL 4370"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. ECON 6410",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "category-iv-health-systems-programmatic-",
+   "title": "Category IV. Health Systems & Programmatic Approaches to Global Health",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Category IV. Health Systems & Programmatic Approaches to Global Health",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4880",
+        "BEE 2510",
+        "BEE 3299",
+        "ENGRG 3400",
+        "DEA 2700",
+        "DEA 5305",
+        "ILROB 4710",
+        "NS 4030",
+        "PUBPOL 5449",
+        "PLSCI 2100",
+        "PLSCI 3100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,888 @@
+{
+ "id": "earth-climate-sciences-ecsen-bs",
+ "name": "Earth and Climate Sciences (ECSEN-BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/earth-climate-sciences-ecsen-bs/",
+ "totalCredits": 124,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "mathematics",
+   "title": "Mathematics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1910",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1920"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 2930 / MATH 2940",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2930",
+        "MATH 2940"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2207 / PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207",
+        "PHYS 1112"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2208 / PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208",
+        "PHYS 2213"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Chemistry",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070",
+        "CHEM 2071",
+        "CHEM 2090",
+        "CHEM 2091"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Chemistry",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080",
+        "CHEM 2081",
+        "CHEM 1570",
+        "PHYS 2214"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology",
+   "title": "Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biology",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1140",
+        "BIOG 1440",
+        "BIOEE 1610",
+        "BIOEE 1780",
+        "BIOMG 1350",
+        "BIOSM 1610"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "climate-science-focused-elective",
+   "name": "Climate Science Focused Elective",
+   "sections": [
+    {
+     "id": "climate-science-focu-climate-science-core-required-courses-mu",
+     "title": "Climate Science Core Required Courses-Must take all",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 2250",
+       "rule": [
+        {
+         "codes": [
+          "EAS 2250"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 3050",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3050"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "EAS 3410",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3410"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "EAS 3420",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3420"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "climate-science-focu-climate-science-focused-elective-courses",
+     "title": "Climate Science Focused Elective Courses (5 courses)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Climate Science Focused Elective Courses (5 courses) (1)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1400",
+          "EAS 2400",
+          "EAS 3010",
+          "EAS 3030",
+          "EAS 3340",
+          "EAS 3530",
+          "EAS 4350",
+          "EAS 4470",
+          "EAS 4720",
+          "EAS 4800",
+          "EAS 4860",
+          "EAS 5555",
+          "BEE 2000",
+          "BEE 4850"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Climate Science Focused Elective Courses (5 courses) (2)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1400",
+          "EAS 2400",
+          "EAS 3010",
+          "EAS 3030",
+          "EAS 3340",
+          "EAS 3530",
+          "EAS 4350",
+          "EAS 4470",
+          "EAS 4720",
+          "EAS 4800",
+          "EAS 4860",
+          "EAS 5555",
+          "BEE 2000",
+          "BEE 4850"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "Climate Science Focused Elective Courses (5 courses) (3)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1400",
+          "EAS 2400",
+          "EAS 3010",
+          "EAS 3030",
+          "EAS 3340",
+          "EAS 3530",
+          "EAS 4350",
+          "EAS 4470",
+          "EAS 4720",
+          "EAS 4800",
+          "EAS 4860",
+          "EAS 5555",
+          "BEE 2000",
+          "BEE 4850"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "Climate Science Focused Elective Courses (5 courses) (4)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1400",
+          "EAS 2400",
+          "EAS 3010",
+          "EAS 3030",
+          "EAS 3340",
+          "EAS 3530",
+          "EAS 4350",
+          "EAS 4470",
+          "EAS 4720",
+          "EAS 4800",
+          "EAS 4860",
+          "EAS 5555",
+          "BEE 2000",
+          "BEE 4850"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "Climate Science Focused Elective Courses (5 courses) (5)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1400",
+          "EAS 2400",
+          "EAS 3010",
+          "EAS 3030",
+          "EAS 3340",
+          "EAS 3530",
+          "EAS 4350",
+          "EAS 4470",
+          "EAS 4720",
+          "EAS 4800",
+          "EAS 4860",
+          "EAS 5555",
+          "BEE 2000",
+          "BEE 4850"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "environmental-science-focused-elective",
+   "name": "Environmental Science Focused Elective",
+   "sections": [
+    {
+     "id": "environmental-scienc-environmental-science-core-required-cour",
+     "title": "Environmental Science Core Required Courses-Must take all",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 2250",
+       "rule": [
+        {
+         "codes": [
+          "EAS 2250"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 3090",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3090"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "EAS 3030",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3030"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "EAS 4710",
+       "rule": [
+        {
+         "codes": [
+          "EAS 4710"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environmental-scienc-environmental-science-focused-elective-c",
+     "title": "Environmental Science Focused Elective Courses (5 courses)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Environmental Science Focused Elective Courses (5 courses) (1)",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4270",
+          "BEE 4730",
+          "BEE 4750",
+          "EAS 3010",
+          "EAS 3050",
+          "EAS 3530",
+          "EAS 3540",
+          "PLSCI 3650",
+          "EAS 4190",
+          "EAS 4710",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4870"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Environmental Science Focused Elective Courses (5 courses) (2)",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4270",
+          "BEE 4730",
+          "BEE 4750",
+          "EAS 3010",
+          "EAS 3050",
+          "EAS 3530",
+          "EAS 3540",
+          "PLSCI 3650",
+          "EAS 4190",
+          "EAS 4710",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4870"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "Environmental Science Focused Elective Courses (5 courses) (3)",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4270",
+          "BEE 4730",
+          "BEE 4750",
+          "EAS 3010",
+          "EAS 3050",
+          "EAS 3530",
+          "EAS 3540",
+          "PLSCI 3650",
+          "EAS 4190",
+          "EAS 4710",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4870"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "Environmental Science Focused Elective Courses (5 courses) (4)",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4270",
+          "BEE 4730",
+          "BEE 4750",
+          "EAS 3010",
+          "EAS 3050",
+          "EAS 3530",
+          "EAS 3540",
+          "PLSCI 3650",
+          "EAS 4190",
+          "EAS 4710",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4870"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "Environmental Science Focused Elective Courses (5 courses) (5)",
+       "rule": [
+        {
+         "codes": [
+          "BEE 4270",
+          "BEE 4730",
+          "BEE 4750",
+          "EAS 3010",
+          "EAS 3050",
+          "EAS 3530",
+          "EAS 3540",
+          "PLSCI 3650",
+          "EAS 4190",
+          "EAS 4710",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4870"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "geological-sciences-focused-elective",
+   "name": "Geological Sciences Focused Elective",
+   "sections": [
+    {
+     "id": "geological-sciences--geological-sciences-core-required-course",
+     "title": "Geological Sciences Core Required Courses-Must take all",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 2250",
+       "rule": [
+        {
+         "codes": [
+          "EAS 2250"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 3090",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3090"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "EAS 3880",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3880"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "EAS 3010",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "geological-sciences--geological-science-focused-elective-cour",
+     "title": "Geological Science Focused Elective Courses (5 courses)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Geological Science Focused Elective Courses (5 courses) (1)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 4010",
+          "EAS 4040",
+          "EAS 4050",
+          "EAS 4060",
+          "EAS 4550",
+          "EAS 4561",
+          "EAS 4580",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4790",
+          "EAS 4840",
+          "EAS 5770"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Geological Science Focused Elective Courses (5 courses) (2)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 4010",
+          "EAS 4040",
+          "EAS 4050",
+          "EAS 4060",
+          "EAS 4550",
+          "EAS 4561",
+          "EAS 4580",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4790",
+          "EAS 4840",
+          "EAS 5770"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "Geological Science Focused Elective Courses (5 courses) (3)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 4010",
+          "EAS 4040",
+          "EAS 4050",
+          "EAS 4060",
+          "EAS 4550",
+          "EAS 4561",
+          "EAS 4580",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4790",
+          "EAS 4840",
+          "EAS 5770"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "Geological Science Focused Elective Courses (5 courses) (4)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 4010",
+          "EAS 4040",
+          "EAS 4050",
+          "EAS 4060",
+          "EAS 4550",
+          "EAS 4561",
+          "EAS 4580",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4790",
+          "EAS 4840",
+          "EAS 5770"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "Geological Science Focused Elective Courses (5 courses) (5)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 4010",
+          "EAS 4040",
+          "EAS 4050",
+          "EAS 4060",
+          "EAS 4550",
+          "EAS 4561",
+          "EAS 4580",
+          "EAS 4720",
+          "EAS 4740",
+          "EAS 4790",
+          "EAS 4840",
+          "EAS 5770"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "ocean-sciences-focused-elective",
+   "name": "Ocean Sciences Focused Elective",
+   "sections": [
+    {
+     "id": "ocean-sciences-focus-ocean-sciences-core-required-courses-mus",
+     "title": "Ocean Sciences Core Required Courses-Must take all",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "EAS 2250",
+       "rule": [
+        {
+         "codes": [
+          "EAS 2250"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "EAS 3050",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3050"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "EAS 3530",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3530"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "EAS 3030",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3030"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "ocean-sciences-focus-ocean-sciences-focused-elective-courses-",
+     "title": "Ocean Sciences Focused Elective Courses (5 courses)",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Ocean Sciences Focused Elective Courses (5 courses) (1)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010",
+          "EAS 3420",
+          "EAS 3540",
+          "EAS 3555",
+          "EAS 4720"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Ocean Sciences Focused Elective Courses (5 courses) (2)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010",
+          "EAS 3420",
+          "EAS 3540",
+          "EAS 3555",
+          "EAS 4720"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "Ocean Sciences Focused Elective Courses (5 courses) (3)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010",
+          "EAS 3420",
+          "EAS 3540",
+          "EAS 3555",
+          "EAS 4720"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "Ocean Sciences Focused Elective Courses (5 courses) (4)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010",
+          "EAS 3420",
+          "EAS 3540",
+          "EAS 3555",
+          "EAS 4720"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s5",
+       "label": "Ocean Sciences Focused Elective Courses (5 courses) (5)",
+       "rule": [
+        {
+         "codes": [
+          "EAS 3010",
+          "EAS 3420",
+          "EAS 3540",
+          "EAS 3555",
+          "EAS 4720"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

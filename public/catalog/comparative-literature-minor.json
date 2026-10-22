@@ -1,0 +1,29 @@
+{
+ "id": "comparative-literature-minor",
+ "kind": "minor",
+ "name": "Comparative Literature",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/comparative-literature-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Students must take a minimum of five (5) courses (3-4 credits) at the 2000 level or higher. Four of these courses should be offered through Comparative Literature. In the fifth course, which cannot be a lower level language instruction course, students must work with materials originally in a language other than English and for the study of which proficiency in that language is required. This course could be offered through Comparative Literature, through a foreign literature and language department, or through a study-abroad program. Only one course taken as part of a study-abroad program may be counted toward the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,71 @@
+{
+ "id": "comparative-literature-ba",
+ "name": "Comparative Literature (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/comparative-literature-ba/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-course",
+   "title": "Core Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COML 3001",
+     "rule": [
+      {
+       "codes": [
+        "COML 3001"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "honors-requirements-optional",
+   "title": "Honors Requirements (optional)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COML 4930",
+     "rule": [
+      {
+       "codes": [
+        "COML 4930"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "COML 4940",
+     "rule": [
+      {
+       "codes": [
+        "COML 4940"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

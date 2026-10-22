@@ -1,0 +1,343 @@
+{
+ "id": "plant-sciences-bs",
+ "name": "Plant Sciences (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/plant-sciences-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-biology-course",
+   "title": "Introductory Biology Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Introductory Biology Course",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1780",
+        "BIOG 1140",
+        "BIOG 1440",
+        "BIOMG 1350"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-chemistry-courses",
+   "title": "Introductory Chemistry Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Introductory Chemistry Courses",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560",
+        "CHEM 1561",
+        "CHEM 2070",
+        "CHEM 2071"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "organic-chemistry",
+   "title": "Organic Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1570 / CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570",
+        "CHEM 3570"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Statistics",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3030",
+        "STSCI 2100",
+        "STSCI 2150",
+        "STSCI 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "primary-plant-science-courses",
+   "title": "Primary Plant Science Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 1101",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 1420",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1420"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 2410",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PLSCI 2430",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2430"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "foundational-plant-science-courses",
+   "title": "Foundational Plant Science Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Foundational Plant Science Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250",
+        "PLSCI 2480",
+        "PLSCI 2600",
+        "PLSCI 3010",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Foundational Plant Science Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250",
+        "PLSCI 2480",
+        "PLSCI 2600",
+        "PLSCI 3010",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Foundational Plant Science Courses (3)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250",
+        "PLSCI 2480",
+        "PLSCI 2600",
+        "PLSCI 3010",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Foundational Plant Science Courses (4)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250",
+        "PLSCI 2480",
+        "PLSCI 2600",
+        "PLSCI 3010",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "focused-elective-courses-in-plant-scienc",
+   "title": "Focused Elective courses in Plant Sciences4",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Upper Level Electives",
+     "rule": [
+      {
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI",
+     "rule": [
+      {
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Upper-level (3000-4939) PLSCI courses that share a common plant-related theme built on foundational courses Upper-level (4000-4939) PLSCI courses that share a common plant-related theme built on foundational courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "experiential-learning-course-in-plant-sc",
+   "title": "Experiential learning course in Plant Sciences",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 4900",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4900"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "bookend-courses-in-plant-sciences",
+   "title": "Bookend courses in Plant Sciences",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 1110",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 4950",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4950"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

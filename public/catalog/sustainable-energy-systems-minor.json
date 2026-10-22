@@ -1,0 +1,201 @@
+{
+ "id": "sustainable-energy-systems-minor",
+ "kind": "minor",
+ "name": "Sustainable Energy Systems",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/sustainable-energy-systems-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "energy-systems-analysis",
+   "title": "Energy Systems Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 4210",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEME 6660",
+     "rule": [
+      {
+       "codes": [
+        "CHEME 6660"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 5010",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5010"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "energy-sources-and-technologies-for-a-tr",
+   "title": "Energy Sources and Technologies for a Transition to Sustainability",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Energy Sources and Technologies for a Transition to Sustainability",
+     "rule": [
+      {
+       "codes": [
+        "AEP 5500",
+        "BEE 2510",
+        "ENGRD 2510",
+        "BEE 4880",
+        "CEE 3410",
+        "CEE 4640",
+        "CEE 6200",
+        "CHEME 6661",
+        "CHEME 6662",
+        "CHEME 6663",
+        "CHEME 6664",
+        "CEE 6364",
+        "CHEME 6667",
+        "CEE 6667",
+        "CHEME 6670",
+        "CHEME 6671",
+        "CHEME 6679",
+        "CHEME 6681",
+        "CHEME 6830",
+        "EAS 4010",
+        "ECE 4130",
+        "AEP 4130",
+        "CHEME 4130",
+        "MAE 4580",
+        "ECE 4840",
+        "MAE 4590",
+        "ECE 4510",
+        "ECE 4520",
+        "ECE 5870",
+        "CHEME 5870",
+        "MAE 5459",
+        "BEE 5459",
+        "ECE 5880",
+        "BEE 5469",
+        "CHEME 5880",
+        "MAE 5469",
+        "MAE 4020",
+        "MAE 5430",
+        "SYSEN 5100",
+        "SYSEN 5200",
+        "CEE 5252",
+        "ECE 5130",
+        "MAE 5920",
+        "ORIE 5142"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. CEE 5420",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "natural-systems-impacted-by-energy-produ",
+   "title": "Natural Systems Impacted by Energy Production and Use",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Natural Systems Impacted by Energy Production and Use",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 4880",
+        "BEE 3710",
+        "BEE 4800",
+        "BEE 6740",
+        "BIOEE/NTRES 4560",
+        "CEE 1165",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS/NTRES 3030",
+        "EAS 3050",
+        "EAS 3530",
+        "EAS 3880",
+        "EAS 4570",
+        "PLSCI 2400"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. EAS 4443",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "policy-economics-business-history-ethics",
+   "title": "Policy/Economics/Business/History/Ethics/Risk Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Policy/Economics/Business/History/Ethics/Risk Analysis",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2770",
+        "AEM 4510",
+        "BEE 2510",
+        "BEE 3299",
+        "BSOC 2061",
+        "BSOC 3181",
+        "CEE 3230",
+        "CHEME 6667",
+        "CHEME 6676",
+        "ENGRG 3600",
+        "GDEV 3240",
+        "PUBPOL 3730",
+        "STS 3181",
+        "STS 3241",
+        "SYSEN 5170"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. CEE 5970 EAS 4443",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

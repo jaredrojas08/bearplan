@@ -1,0 +1,464 @@
+{
+ "id": "urban-regional-studies-bs-urs",
+ "name": "Urban and Regional Studies (BS)",
+ "college": "College of Architecture, Art and Planning",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/urban-regional-studies-bs-urs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-core-classes-for-the-major-eigh",
+   "title": "Required Core Classes for the Major: Eight Classes",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CRP 1103",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CRP 1104",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1104"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CRP 1106",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1106"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CRP 2100",
+     "rule": [
+      {
+       "codes": [
+        "CRP 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CRP 2200",
+     "rule": [
+      {
+       "codes": [
+        "CRP 2200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "microeconomics",
+   "title": "Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2500",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CRP 4040",
+     "rule": [
+      {
+       "codes": [
+        "CRP 4040"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECON 3030",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3030"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2000",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2000"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 3100",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 4110",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECON 3110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ECON 3130",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3130"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ECON 3140",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "MATH 4710",
+     "rule": [
+      {
+       "codes": [
+        "MATH 4710"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "STSCI 3080",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3080"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engaged-learning-course",
+   "title": "Engaged Learning Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CRP 3072",
+     "rule": [
+      {
+       "codes": [
+        "CRP 3072"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CRP 3074",
+     "rule": [
+      {
+       "codes": [
+        "CRP 3074"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CRP 3076",
+     "rule": [
+      {
+       "codes": [
+        "CRP 3076"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CRP 4160",
+     "rule": [
+      {
+       "codes": [
+        "CRP 4160"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CRP 5172",
+     "rule": [
+      {
+       "codes": [
+        "CRP 5172"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-required-crp-classes-five-crp",
+   "title": "Additional Required CRP Classes: Five CRP Classes",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CRP 5320",
+     "rule": [
+      {
+       "codes": [
+        "CRP 5320"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CRP 5321",
+     "rule": [
+      {
+       "codes": [
+        "CRP 5321"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CRP 5560",
+     "rule": [
+      {
+       "codes": [
+        "CRP 5560"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CRP 5561",
+     "rule": [
+      {
+       "codes": [
+        "CRP 5561"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "REAL 5320",
+     "rule": [
+      {
+       "codes": [
+        "REAL 5320"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "REAL 5321",
+     "rule": [
+      {
+       "codes": [
+        "REAL 5321"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "REAL 5560",
+     "rule": [
+      {
+       "codes": [
+        "REAL 5560"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "REAL 5561",
+     "rule": [
+      {
+       "codes": [
+        "REAL 5561"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-required-crp-classes-five-crp-2",
+   "title": "Additional Required CRP Classes: Five CRP Classes",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ARCH 3820",
+     "rule": [
+      {
+       "codes": [
+        "ARCH 3820"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ARCH 3823",
+     "rule": [
+      {
+       "codes": [
+        "ARCH 3823"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 3610",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "GDEV 2010",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PUBPOL 4640",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 4640"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "SOC 3250",
+     "rule": [
+      {
+       "codes": [
+        "SOC 3250"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

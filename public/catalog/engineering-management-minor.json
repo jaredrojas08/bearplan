@@ -1,0 +1,141 @@
+{
+ "id": "engineering-management-minor",
+ "kind": "minor",
+ "name": "Engineering Management",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/engineering-management-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 3230 / ORIE 3150",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3230",
+        "ORIE 3150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CEE 3040 / ENGRD 2700 / ECE 3100",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3040",
+        "ENGRD 2700",
+        "ECE 3100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses",
+   "title": "Additional Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRG 3600 / CEE 5900 / CEE 5930 (1)",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 3600",
+        "CEE 5900",
+        "CEE 5930"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGRG 3600 / CEE 5900 / CEE 5930 (2)",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 3600",
+        "CEE 5900",
+        "CEE 5930"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ENGRG 3600 / CEE 5900 / CEE 5930 (3)",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 3600",
+        "CEE 5900",
+        "CEE 5930"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CEE 5980",
+     "rule": [
+      {
+       "codes": [
+        "CEE 5980"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ENMGT 5990",
+     "rule": [
+      {
+       "codes": [
+        "ENMGT 5990"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "NBA 5070",
+     "rule": [
+      {
+       "codes": [
+        "NBA 5070"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "CEE 5970",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,37 @@
+{
+ "id": "history-art-minor",
+ "kind": "minor",
+ "name": "History of Art",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/history-art-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "ARTH"
+     ],
+     "reason": "Needs a ARTH course"
+    }
+   ],
+   "note": "No fewer than 5 History of Art (ARTH) courses This includes five courses at the 2000- and 3000-levels one of which must be at the 2000-level two of which must be at the 3000-level or above No more than two courses from the minor may be double-counted toward a student's major or be from a study abroad program. Courses not coded or crosslisted with ARTH or VISST must be approved by the Director of Undergraduate Studies. ARTH 1100 Art Histories: An Introduction is the only course below the 2000-level that may count towards the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

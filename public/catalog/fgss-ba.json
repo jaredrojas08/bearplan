@@ -1,0 +1,62 @@
+{
+ "id": "fgss-ba",
+ "name": "Feminist, Gender, & Sexuality Studies (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fgss-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-course-work",
+   "title": "Required Course Work",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "FGSS 2010",
+     "rule": [
+      {
+       "codes": [
+        "FGSS 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "FGSS 3000",
+     "rule": [
+      {
+       "codes": [
+        "FGSS 3000"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "FGSS 4000",
+     "rule": [
+      {
+       "codes": [
+        "FGSS 4000"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

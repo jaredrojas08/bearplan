@@ -1,0 +1,37 @@
+{
+ "id": "american-studies-minor",
+ "kind": "minor",
+ "name": "American Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/american-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "AMST"
+     ],
+     "reason": "Needs a AMST course"
+    }
+   ],
+   "note": "Students must take a minimum of five (5) American Studies courses with four (4) courses at 2000 level or above and fulfilling the following distribution requirements: AMST 1101 Introduction to American Studies is required. One (1) pre-1900 course. One (1) American diversity course. One (1) 4000-level American Studies seminar. One (1) elective. No more than two (2) courses may be taken in any one discipline or field. \"Diversity\" courses address social justice or inequality, with an emphasis on race, class, gender, and/or sexuality.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

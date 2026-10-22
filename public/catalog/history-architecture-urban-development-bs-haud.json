@@ -1,0 +1,40 @@
+{
+ "id": "history-architecture-urban-development-bs-haud",
+ "name": "History of Architecture and Urban Development (BS)",
+ "college": "College of Architecture, Art and Planning",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/history-architecture-urban-development-bs-haud/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Major Requirements",
+   "type": "creditBucket",
+   "minCredits": 24,
+   "rule": [
+    {
+     "subjects": [
+      "ARCH",
+      "ENGL",
+      "PE",
+      "AAP"
+     ],
+     "reason": "Needs a ARCH / ENGL / PE / AAP course"
+    }
+   ],
+   "note": "A student entering the program is assigned an advisor from the history of architecture faculty in the Department of Architecture. Together, student and advisor prepare an appropriate course of study to satisfy the following degree requirements. All B.S. HAUD requirements must be successfully completed with a letter grade unless otherwise noted below. The PE and Swim Test requirements apply to students entering Cornell University as first-year students only. Introduction to history of architecture: 2 classes; 6 credits B.S. HAUD students are required to complete ARCH 1801 and ARCH 2802 in the first year of study, if not already completed at the time of matriculation. 3000-level history of architecture and urban development electives: 8 classes; 24 credits B.S. HAUD students are required to successfully complete eight 3000-level history of architecture and urban development electives (ARCH",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

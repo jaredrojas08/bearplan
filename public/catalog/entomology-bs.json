@@ -1,0 +1,413 @@
+{
+ "id": "entomology-bs",
+ "name": "Entomology (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/entomology-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "statistics-or-biometry",
+   "title": "Statistics or Biometry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENTOM 3030 / STSCI 2150 / STSCI 2200",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3030",
+        "STSCI 2150",
+        "STSCI 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "One semester of physics",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 2150",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "CHEM 1570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3570"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "CHEM 3580",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3580"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Option 1 Option 2: Option 1: Option 2:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-life-science-19-26-credits",
+   "title": "Introductory Life Science (19-26 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1500 / BIOSM 1500",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1500",
+        "BIOSM 1500"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "evolutionary-biology",
+   "title": "Evolutionary Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 1780 / BIOEE 1781",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1780",
+        "BIOEE 1781"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or BIOSM 1780",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "genetics",
+   "title": "Genetics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 2800 / NTRES 2830",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2800",
+        "NTRES 2830"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 2801",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2801"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ecology",
+   "title": "Ecology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 1610 / ENTOM 4550",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610",
+        "ENTOM 4550"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses-two-courses-from-two-",
+   "title": "Additional Courses: Two courses from two of the following three areas",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 3300 or other",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300",
+        "BIOMG 3310",
+        "BIOMG 3320",
+        "BIOMG 3350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOG 1440 / BIOG 1445 / ENTOM 4830",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445",
+        "ENTOM 4830"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Area 1 Area 2 Area 3",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "entomology-16-20-credits",
+   "title": "Entomology (16-20 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENTOM 2120",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 2120"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-a-core-courses",
+   "title": "Group A (Core Courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group A (Core Courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3030",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "ENTOM 3410",
+        "ENTOM 4100",
+        "ENTOM 4520",
+        "ENTOM 4521",
+        "ENTOM 4550",
+        "ENTOM 4610",
+        "ENTOM 4830"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Group A (Core Courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3030",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "ENTOM 3410",
+        "ENTOM 4100",
+        "ENTOM 4520",
+        "ENTOM 4521",
+        "ENTOM 4550",
+        "ENTOM 4610",
+        "ENTOM 4830"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-b-advanced-electives",
+   "title": "Group B (advanced electives)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group B (advanced electives)",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 2030",
+        "ENTOM 2300",
+        "ENTOM 2440",
+        "ENTOM 2500",
+        "ENTOM 3150",
+        "ENTOM 3350",
+        "ENTOM 3440",
+        "ENTOM 3630",
+        "ENTOM 3690",
+        "ENTOM 3755",
+        "ENTOM 3800",
+        "ENTOM 4000",
+        "ENTOM 4700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

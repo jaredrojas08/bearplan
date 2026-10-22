@@ -1,0 +1,190 @@
+{
+ "id": "translational-research-minor",
+ "kind": "minor",
+ "name": "Translational Research",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/translational-research-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HE 2300",
+     "rule": [
+      {
+       "codes": [
+        "HE 2300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HE 3400",
+     "rule": [
+      {
+       "codes": [
+        "HE 3400"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "COMM 4201",
+        "COMM 4760",
+        "COMM 4860",
+        "PUBPOL 2050",
+        "PUBPOL 2120",
+        "PUBPOL 2250",
+        "PUBPOL 2350",
+        "PUBPOL 3180",
+        "PUBPOL/GDEV 3280",
+        "PUBPOL 3320",
+        "PUBPOL 3330",
+        "GDEV 3030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "DEA 2020",
+        "DEA 2025",
+        "DEA 2203",
+        "DEA 2700",
+        "DEA 3308",
+        "DEA 3510",
+        "DEA 3530",
+        "DEA/FSAD 4025",
+        "DEA 4500",
+        "DEA 4590",
+        "DEA/FSAD 4800",
+        "FSAD 3200",
+        "FSAD 3990",
+        "NS 2450",
+        "NS 2600",
+        "NS 3060",
+        "NS 4450",
+        "NS 4500",
+        "NS 4510",
+        "NS 4570",
+        "NS 4998",
+        "HD 2180",
+        "HD 2400",
+        "HD 2510",
+        "HD 2650",
+        "HD 3150",
+        "HD 3190",
+        "HD 3250",
+        "HD 3290",
+        "HD 3300",
+        "HD 3310",
+        "HD 3490",
+        "HD 3530",
+        "HD 4240",
+        "HD 4310",
+        "HD 4530",
+        "HD 4540",
+        "HD 4560",
+        "HD 4670",
+        "HD 4720",
+        "HD 4850",
+        "HD 4940",
+        "HE 2222",
+        "HE 4060",
+        "COMM 2760",
+        "COMM 3189"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. COMM 3760",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "field-experience",
+   "title": "Field Experience",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Field Experience",
+     "rule": [
+      {
+       "codes": [
+        "HE 2400",
+        "HE 3301",
+        "NS 4997",
+        "HD 4600",
+        "HD 4610",
+        "HD 4860"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "translational-research-capstone",
+   "title": "Translational Research Capstone",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HE 4400",
+     "rule": [
+      {
+       "codes": [
+        "HE 4400"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

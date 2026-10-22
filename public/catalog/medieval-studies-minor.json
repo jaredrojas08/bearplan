@@ -1,0 +1,29 @@
+{
+ "id": "medieval-studies-minor",
+ "kind": "minor",
+ "name": "Medieval Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/medieval-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Complete five MEDVL courses at the 2000 level or above in at least two different areas of study (e.g., literature, art history, philosophy, archaeology, etc.). Up to two of these courses may also count toward the student's major. Relevant courses not listed or cross-listed as MEDVL, or courses taken while studying abroad may be allowed by petition. Before the end of the final semester of the degree, submit a brief 300-word exit statement that articulates the intellectual interests developed in work done for the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

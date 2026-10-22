@@ -1,0 +1,93 @@
+{
+ "id": "viticulture-enology-minor",
+ "kind": "minor",
+ "name": "Viticulture and Enology",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/viticulture-enology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-introductory-core-courses",
+   "title": "Required Introductory Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "VIEN 1104",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 1104"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "VIEN 2204",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 2204"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "VIEN 2205",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 2205"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-course-options-select-a-minim",
+   "title": "Additional Course Options: Select a minimum of 6 credits from the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "VIEN 2205",
+      "VIEN 2310",
+      "VIEN 2340",
+      "VIEN 2360",
+      "VIEN 2400",
+      "VIEN 4310",
+      "VIEN 4340",
+      "VIEN 4360",
+      "VIEN 4400",
+      "VIEN 4500",
+      "VIEN 4510",
+      "VIEN 4650",
+      "VIEN 4700",
+      "VIEN 4710"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select a minimum of 6 credits from the following:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,38 @@
+{
+ "id": "religious-studies-ba",
+ "name": "Religious Studies (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/religious-studies-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Major Requirements",
+   "type": "creditBucket",
+   "minCredits": 12,
+   "rule": [
+    {
+     "subjects": [
+      "PE",
+      "ENGL"
+     ],
+     "reason": "Needs a PE / ENGL course"
+    }
+   ],
+   "note": "Students must complete 10 courses for a minimum of 30 credit hours in Religious Studies. Students must fulfill requirements in the three areas listed below to graduate with a major in Religious Studies. Students are required to have at least two of their courses be at the 4000-level or above. One course must be in area 3 while the other may be in either area 2 or 3. Students pursuing honors will be able to count their two semesters of honors work to satisfy this requirement. In conjunction with the advisor, the student will select appropriate courses to fulfill these categories and requirements. At least one course that addresses questions of approach, methodology, and theory in the academic study of religion. At least three courses dealing with a diversity of religious traditions. At least four courses with a focus of a given religious tradition, geographical area or thematic or methodo",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

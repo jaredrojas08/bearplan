@@ -1,0 +1,84 @@
+{
+ "id": "engineering-physics-bs",
+ "name": "Engineering Physics (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/engineering-physics-bs/",
+ "totalCredits": 137,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-major-courses",
+   "title": "Required Major Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Major Courses",
+     "rule": [
+      {
+       "codes": [
+        "AEP 3200",
+        "AEP 3330",
+        "AEP 3550",
+        "AEP 3610",
+        "AEP 3630",
+        "AEP 4200",
+        "AEP 4230",
+        "PHYS 4410",
+        "AEP 3620",
+        "AEP 3560",
+        "AEP 4340"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (2)"
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Choose 2 of the 3 courses below:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "major-approved-electives-6-courses",
+   "title": "Major-Approved Electives (6 courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    },
+    {
+     "id": "s2",
+     "label": "3000+ course",
+     "rule": [
+      {
+       "minLevel": 3000
+      }
+     ]
+    }
+   ],
+   "note": "Major-Approved Elective (any level): Must be technical courses taken for a letter grade Major Approved Upper Level Elective (3000 level or above): All must be technical courses taken for a letter grade",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

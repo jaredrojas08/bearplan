@@ -1,0 +1,29 @@
+{
+ "id": "history-minor",
+ "kind": "minor",
+ "name": "History",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/history-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Five (5) courses within the Department of History (that is, only courses offered or crosslisted in the department) All five courses must be taken for either 3 or 4 credits each. First-Year Writing seminars do not count for the minor. One (1) of the five courses must be a seminar at the 2000-level or above. Note: Transfer, advanced placement, or study abroad credits are not eligible.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

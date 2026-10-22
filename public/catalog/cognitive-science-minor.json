@@ -1,0 +1,292 @@
+{
+ "id": "cognitive-science-minor",
+ "kind": "minor",
+ "name": "Cognitive Science",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/cognitive-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "perception-and-cognition",
+   "title": "Perception and Cognition",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COGST 1101",
+     "rule": [
+      {
+       "codes": [
+        "COGST 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "COGST 2415",
+     "rule": [
+      {
+       "codes": [
+        "COGST 2415"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "COGST 4310",
+     "rule": [
+      {
+       "codes": [
+        "COGST 4310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "COGST 3140",
+     "rule": [
+      {
+       "codes": [
+        "COGST 3140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "COGST 3420",
+     "rule": [
+      {
+       "codes": [
+        "COGST 3420"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "language-and-cognition",
+   "title": "Language and Cognition",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Language and Cognition",
+     "rule": [
+      {
+       "codes": [
+        "COGST 1101",
+        "CS 4110",
+        "HD 4240",
+        "LING 3302",
+        "LING 3303",
+        "LING 4403",
+        "LING 4421",
+        "LING 4425",
+        "LING 6422",
+        "PSYCH 2150",
+        "PSYCH 3140",
+        "PSYCH 3800",
+        "PSYCH 4270"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "cognition-and-information-processing",
+   "title": "Cognition and Information Processing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COGST 1101",
+     "rule": [
+      {
+       "codes": [
+        "COGST 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CS 2110",
+     "rule": [
+      {
+       "codes": [
+        "CS 2110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CS 3700",
+     "rule": [
+      {
+       "codes": [
+        "CS 3700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CS 4701",
+     "rule": [
+      {
+       "codes": [
+        "CS 4701"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PSYCH 3140",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 3140"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "cognitive-neuroscience",
+   "title": "Cognitive Neuroscience",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COGST 2350",
+     "rule": [
+      {
+       "codes": [
+        "COGST 2350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIONB 3300",
+     "rule": [
+      {
+       "codes": [
+        "BIONB 3300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "COGST 1101",
+     "rule": [
+      {
+       "codes": [
+        "COGST 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "HD 2200",
+     "rule": [
+      {
+       "codes": [
+        "HD 2200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PSYCH 3140",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 3140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PSYCH 3220",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 3220"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "independent-study",
+   "title": "Independent Study",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COGST 4700",
+     "rule": [
+      {
+       "codes": [
+        "COGST 4700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "COGST 4710",
+     "rule": [
+      {
+       "codes": [
+        "COGST 4710"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

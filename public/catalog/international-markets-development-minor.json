@@ -1,0 +1,263 @@
+{
+ "id": "international-markets-development-minor",
+ "kind": "minor",
+ "name": "International Markets & Development",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/international-markets-development-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-economics-6-credits",
+   "title": "Introductory Economics (6 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ECON 1120",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1120"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-course-3-credits",
+   "title": "Core Course (3 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2300",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 2350",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2350"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "category-a-minimum-of-6-credits-category",
+   "title": "Category A (Minimum of 6 Credits): Category A (Minimum of 6 Credits)",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "AEM 2000",
+      "AEM 4005",
+      "AEM 4290",
+      "AEM 4300",
+      "AEM 4315",
+      "AEM 4350",
+      "AEM 4420",
+      "AEM 4421",
+      "AEM 4450",
+      "AEM 4485",
+      "AEM 4545"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Category A (Minimum of 6 Credits)",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "category-b-maximum-of-3-credits",
+   "title": "Category B (Maximum of 3 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 4110",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ECON 3120",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECON 3140",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PLSCI 4200",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "STSCI 3740",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3740"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "STSCI 4060",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 4060"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "category-c-maximum-of-3-credits",
+   "title": "Category C (Maximum of 3 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 4415",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4415"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 4580",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4580"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AEM 6125",
+     "rule": [
+      {
+       "codes": [
+        "AEM 6125"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ILRGL 2300",
+     "rule": [
+      {
+       "codes": [
+        "ILRGL 2300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PUBPOL 5345",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 5345"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "CRP 6720",
+     "rule": [
+      {
+       "codes": [
+        "CRP 6720"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

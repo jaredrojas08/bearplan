@@ -1,0 +1,37 @@
+{
+ "id": "interdisciplinary-studies-bs",
+ "name": "Interdisciplinary Studies in Agriculture & Life Sciences (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/interdisciplinary-studies-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Major Requirements",
+   "type": "creditBucket",
+   "minCredits": 12,
+   "rule": [
+    {
+     "subjects": [
+      "PE"
+     ],
+     "reason": "Needs a PE course"
+    }
+   ],
+   "note": "To meet major requirements, students must take: One oral communications course (course with ORL-AG or with approval of advisor) One Calculus or Statistics course Three lower-level courses within the student's curriculum focus area (1100-2999)* Five or more upper-level courses within student's curriculum focus area (3000 +)* In addition, students must fulfill the CALS Distribution Requirements that provide students with academic breadth. CALS distribution can be attributed to the IDS major requirements; however, students should strive to expand on their chosen coursework toward the IDS major to encompass all their intended learning outcomes. *Students can only count a maximum of 6 academic credits of Information Science (INFO) coursework towards their focus area courses. A student’s college determines degree requirements such as residency, number of credits, distribution of credits, and g",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

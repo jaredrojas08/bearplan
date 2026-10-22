@@ -1,0 +1,92 @@
+{
+ "id": "anthropology-ba",
+ "name": "Anthropology (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/anthropology-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Courses",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 1400",
+        "ANTHR 2400",
+        "ANTHR 2468",
+        "ANTHR 1200",
+        "ANTHR 2245",
+        "ANTHR 2430",
+        "ANTHR 2729",
+        "ANTHR 1300",
+        "ANTHR 2310",
+        "ANTHR 3235",
+        "ANTHR 3000"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Biological (1)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "minCredits": 3
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Biological (2)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "minCredits": 3
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "4000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 4000,
+       "minCredits": 3
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "4000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 4000,
+       "minCredits": 3
+      }
+     ]
+    }
+   ],
+   "note": "Select two other courses of at least 3 credits at the 3000-level. Select two 4000-level courses of at least 3 credits each, one of which must be a seminar course in your senior year with a research paper or project component",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

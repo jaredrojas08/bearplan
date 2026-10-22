@@ -1,0 +1,37 @@
+{
+ "id": "china-asia-pacific-studies-minor",
+ "kind": "minor",
+ "name": "China and Asia-Pacific Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/china-asia-pacific-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "rule": [
+    {
+     "subjects": [
+      "CAPS"
+     ],
+     "reason": "Needs a CAPS course"
+    }
+   ],
+   "note": "To complete the CAPS Minor, students need to complete one of the CAPS gateway courses (CAPS 2132, CAPS 2232, CAPS 2435, or CAPS 3967) and four more CAPS courses. At least two of these courses need to be chosen from the list of CAPS required core courses (offered in Ithaca, DC, or Beijing), and the remaining two may be electives, generally to be chosen from the list of CAPS recommended elective courses (including the courses offered in Beijing), in consultation with the Levinson Program Director of Undergraduate Studies. One of these electives will usually be a Chinese language course beyond the 2000-level. The CAPS course offerings are posted on the Arts and Sciences Course Roster and the program website. The list of electives, which is regularly updated, is intended to be representative but not exhaustive. All CAPS minors need to complete the equivalent of second-year Chinese, or, if th",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,140 @@
+{
+ "id": "communications-minor",
+ "kind": "minor",
+ "name": "Communication",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/communications-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COMM 1101",
+     "rule": [
+      {
+       "codes": [
+        "COMM 1101"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "COMM 2200",
+        "COMM 2450",
+        "COMM 2760",
+        "COMM 2850"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements (1)",
+     "rule": [
+      {
+       "codes": [
+        "COMM 1300",
+        "COMM 2010",
+        "COMM 2310",
+        "COMM 3010",
+        "COMM 3020",
+        "COMM 3040",
+        "COMM 3050",
+        "COMM 3065",
+        "COMM 3070",
+        "COMM 2820"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Minor Requirements (2)",
+     "rule": [
+      {
+       "codes": [
+        "COMM 1300",
+        "COMM 2010",
+        "COMM 2310",
+        "COMM 3010",
+        "COMM 3020",
+        "COMM 3040",
+        "COMM 3050",
+        "COMM 3065",
+        "COMM 3070",
+        "COMM 2820"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "Three upper-level elective courses",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

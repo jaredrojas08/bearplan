@@ -1,0 +1,135 @@
+{
+ "id": "science-technology-studies-minor",
+ "kind": "minor",
+ "name": "Science & Technology Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/science-technology-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "4000+ course",
+     "rule": [
+      {
+       "minLevel": 4000
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s4",
+     "label": "STS 1101",
+     "rule": [
+      {
+       "codes": [
+        "STS 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "STS 2011",
+     "rule": [
+      {
+       "codes": [
+        "STS 2011"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "STS 2051",
+     "rule": [
+      {
+       "codes": [
+        "STS 2051"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "STS 2061",
+     "rule": [
+      {
+       "codes": [
+        "STS 2061"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "STS 2071",
+     "rule": [
+      {
+       "codes": [
+        "STS 2071"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "STS 2921",
+     "rule": [
+      {
+       "codes": [
+        "STS 2921"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s10",
+     "label": "STS 3111",
+     "rule": [
+      {
+       "codes": [
+        "STS 3111"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s11",
+     "label": "STS 3181",
+     "rule": [
+      {
+       "codes": [
+        "STS 3181"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "One course at the 3000 or 4000 level Select two of the below Core Courses:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,52 @@
+{
+ "id": "information-science-minor",
+ "kind": "minor",
+ "name": "Information Science",
+ "college": "Bowers College of Computing and Information Science, College of Agriculture and Life Sciences, College of Arts and Scien",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/information-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "nolan-school",
+   "title": "Nolan School",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HADM 3740",
+     "rule": [
+      {
+       "codes": [
+        "HADM 3740"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HADM 4760",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4760"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Core Requirement Concentration Courses Elective",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

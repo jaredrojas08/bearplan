@@ -1,0 +1,123 @@
+{
+ "id": "astrobiology-minor",
+ "kind": "minor",
+ "name": "Astrobiology",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/astrobiology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "astronomy",
+   "title": "Astronomy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Astronomy (1)",
+     "rule": [
+      {
+       "codes": [
+        "ASTRO 1101",
+        "ASTRO 1102",
+        "ASTRO 2202",
+        "ASTRO 2212",
+        "ASTRO 2299",
+        "ASTRO 3301",
+        "ASTRO 3302",
+        "ASTRO 3310",
+        "ASTRO 3334"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Astronomy (2)",
+     "rule": [
+      {
+       "codes": [
+        "ASTRO 1101",
+        "ASTRO 1102",
+        "ASTRO 2202",
+        "ASTRO 2212",
+        "ASTRO 2299",
+        "ASTRO 3301",
+        "ASTRO 3302",
+        "ASTRO 3310",
+        "ASTRO 3334"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses",
+   "title": "Additional Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Additional Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900",
+        "EAS 2250",
+        "EAS 3030",
+        "BIOMG 4380",
+        "BIOMG 4810",
+        "COMM 2850",
+        "COMM 3020",
+        "COMM 4660",
+        "EAS 2500",
+        "EAS 3010",
+        "EAS 3050"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Additional Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900",
+        "EAS 2250",
+        "EAS 3030",
+        "BIOMG 4380",
+        "BIOMG 4810",
+        "COMM 2850",
+        "COMM 3020",
+        "COMM 4660",
+        "EAS 2500",
+        "EAS 3010",
+        "EAS 3050"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

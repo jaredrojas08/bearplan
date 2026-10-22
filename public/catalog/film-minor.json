@@ -1,0 +1,79 @@
+{
+ "id": "film-minor",
+ "kind": "minor",
+ "name": "Film",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/film-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PMA 3550",
+     "rule": [
+      {
+       "codes": [
+        "PMA 3550"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PMA 3531 or other",
+     "rule": [
+      {
+       "codes": [
+        "PMA 3531",
+        "PMA 3570",
+        "PMA 3571",
+        "PMA 3510"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PMA 1410 / PMA 1610",
+     "rule": [
+      {
+       "codes": [
+        "PMA 1410",
+        "PMA 1610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "Three additional courses focused on film, excluding Production Laboratory courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

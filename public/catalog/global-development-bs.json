@@ -1,0 +1,528 @@
+{
+ "id": "global-development-bs",
+ "name": "Global Development (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/global-development-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GDEV 1102",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 1102"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 1105",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 1105"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "GDEV 1300",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 1300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "GDEV 2065",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2065"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "GDEV 2130",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2130"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "GDEV 2202 / GDEV 2450",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2202",
+        "GDEV 2450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "GDEV 4961",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 4961"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "Additional Methods Course",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3140",
+        "GDEV 3300",
+        "GDEV 3680",
+        "GDEV 3740",
+        "GDEV 4045",
+        "GDEV 4080",
+        "GDEV 4190",
+        "GDEV 4295"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "social-economic-development",
+   "name": "Social & Economic Development",
+   "sections": [
+    {
+     "id": "social-economic-deve-required-courses",
+     "title": "Required Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "GDEV 2450",
+       "rule": [
+        {
+         "codes": [
+          "GDEV 2450"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "GDEV 3010",
+       "rule": [
+        {
+         "codes": [
+          "GDEV 3010"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "social-economic-deve-select-5-additional-courses-minimum-of-1",
+     "title": "Select 5 additional courses (minimum of 15 credits) from the lists below: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "AEM 2000",
+        "AEM 2350",
+        "AEM 2500",
+        "GDEV 2010",
+        "GDEV 2202",
+        "GDEV 3150",
+        "GDEV 3240",
+        "GDEV 3400",
+        "GDEV 3700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select 5 additional courses (minimum of 15 credits) from the lists below",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    },
+    {
+     "id": "social-economic-deve-select-5-additional-courses-minimum-of-1-2",
+     "title": "Select 5 additional courses (minimum of 15 credits) from the lists below: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "AEM 2300",
+        "AEM 4300",
+        "AEM 4350",
+        "AEM 4420",
+        "GDEV 2300",
+        "GDEV/EDUC 2710",
+        "GDEV 3020",
+        "GDEV 3030",
+        "GDEV 3260",
+        "GDEV/PUBPOL 3280",
+        "GDEV 4050",
+        "GDEV 4340",
+        "GDEV 4450",
+        "GDEV/CRP 4770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select 5 additional courses (minimum of 15 credits) from the lists below",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    },
+    {
+     "id": "social-economic-deve-select-5-additional-courses-minimum-of-1-3",
+     "title": "Select 5 additional courses (minimum of 15 credits) from the lists below",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Select 5 additional courses (minimum of 15 credits) from the lists below",
+       "rule": [
+        {
+         "codes": [
+          "GDEV 2295",
+          "GDEV 3030",
+          "GDEV 3140",
+          "GDEV 3300",
+          "GDEV 3390",
+          "GDEV 3500",
+          "GDEV 3501",
+          "GDEV 3502",
+          "GDEV 3680",
+          "GDEV 3740",
+          "GDEV 3900",
+          "GDEV 4045",
+          "GDEV 4080",
+          "GDEV 4190",
+          "GDEV 4295"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required. EDUC/GDEV 4223",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "social-economic-deve-select-5-additional-courses-minimum-of-1-4",
+     "title": "Select 5 additional courses (minimum of 15 credits) from the lists below: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "EDUC/GDEV 2155",
+        "EDUC 2200/GDEV 2100",
+        "EDUC/GDEV 2210",
+        "EDUC/GDEV 2410",
+        "EDUC/GDEV 3142",
+        "EDUC 4010/GDEV 4011",
+        "EDUC/GDEV 4200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select 5 additional courses (minimum of 15 credits) from the lists below",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    }
+   ]
+  },
+  {
+   "id": "agriculture-food-systems",
+   "name": "Agriculture & Food Systems",
+   "sections": [
+    {
+     "id": "agriculture-food-sys-required-courses",
+     "title": "Required Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "GDEV 2300 / GDEV 3400",
+       "rule": [
+        {
+         "codes": [
+          "GDEV 2300",
+          "GDEV 3400"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "PLSCI 4730",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4730"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agriculture-food-sys-select-an-additional-5-courses-minimum-1",
+     "title": "Select an additional 5 courses (minimum 15 credits) from the lists below.: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2000",
+        "BIOEE 4690",
+        "PLSCI 2110",
+        "PLSCI 2440",
+        "PLSCI 3210",
+        "PLSCI/GDEV 4140"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select an additional 5 courses (minimum 15 credits) from the lists below.",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    },
+    {
+     "id": "agriculture-food-sys-select-an-additional-5-courses-minimum-1-2",
+     "title": "Select an additional 5 courses (minimum 15 credits) from the lists below.: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2120",
+        "BIOEE 4780",
+        "ENTOM 2030",
+        "ENTOM 2031",
+        "PLSCI 2600",
+        "PLSCI 3010",
+        "PLSCI 3025",
+        "PLSCI 3150",
+        "PLSCI 3350",
+        "PLSCI 3550",
+        "PLSCI 3800",
+        "PLSCI 4020",
+        "PLSCI 4175",
+        "PLSCI 4230",
+        "VIEN 3610"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select an additional 5 courses (minimum 15 credits) from the lists below.",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    },
+    {
+     "id": "agriculture-food-sys-select-an-additional-5-courses-minimum-1-3",
+     "title": "Select an additional 5 courses (minimum 15 credits) from the lists below.: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "AEM 4485",
+        "GDEV 2202",
+        "GDEV 2295",
+        "GDEV 2300",
+        "GDEV 2450",
+        "GDEV 3020",
+        "GDEV 3030",
+        "GDEV 3140",
+        "GDEV 3170",
+        "GDEV 3260",
+        "GDEV 3300",
+        "GDEV 3400",
+        "GDEV 3500",
+        "GDEV 3501",
+        "GDEV 3502",
+        "GDEV 3680",
+        "GDEV 3740",
+        "GDEV 3900",
+        "GDEV 4045",
+        "GDEV 4080",
+        "GDEV 4190",
+        "GDEV 4295",
+        "GDEV 4450",
+        "GDEV 4880",
+        "NS 3060",
+        "NTRES 3330"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select an additional 5 courses (minimum 15 credits) from the lists below.",
+     "column": "left",
+     "filter": "major",
+     "icon": "star"
+    }
+   ]
+  },
+  {
+   "id": "environment-development",
+   "name": "Environment & Development",
+   "sections": [
+    {
+     "id": "environment-developm-required-environment-development-courses",
+     "title": "Required Environment & Development Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Social Science",
+       "rule": [
+        {
+         "codes": [
+          "GDEV 3150",
+          "GDEV 3170",
+          "GDEV 3240",
+          "GDEV 3390",
+          "GDEV 3680"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environment-developm-required-environment-development-courses-2",
+     "title": "Required Environment & Development Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Biophysical Science",
+       "rule": [
+        {
+         "codes": [
+          "EAS 1101",
+          "ENVS 1201",
+          "EAS 2680",
+          "NTRES 3220",
+          "NTRES 3240",
+          "GDEV 3260"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "environment-developm-select-5-additional-biophysical-science-",
+     "title": "Select 5 additional biophysical science or social science courses (minimum 15 credits) from the lists above or from the lists below.: electives",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "BEE 2000",
+        "GDEV 2010",
+        "GDEV 2202",
+        "GDEV 2295",
+        "GDEV 2300",
+        "GDEV 2450",
+        "GDEV 3020",
+        "GDEV 3030",
+        "GDEV 3140",
+        "GDEV 3150",
+        "GDEV 3170",
+        "GDEV 3240",
+        "GDEV 3260",
+        "GDEV 3300",
+        "GDEV 3390",
+        "GDEV 3400",
+        "GDEV 3500",
+        "GDEV 3501",
+        "GDEV 3502",
+        "GDEV 3680",
+        "GDEV 3740",
+        "GDEV 4045",
+        "GDEV 4080",
+        "GDEV 4190",
+        "GDEV 4295",
+        "GDEV 4340",
+        "GDEV 4850",
+        "NTRES 3330",
+        "PUBPOL 3670",
+        "SOC 3650"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select 5 additional biophysical science or social science courses (minimum 15 credits) from the lists above or from the lists below.",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

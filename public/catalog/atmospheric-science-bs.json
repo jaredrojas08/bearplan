@@ -1,0 +1,340 @@
+{
+ "id": "atmospheric-science-bs",
+ "name": "Atmospheric Sciences (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/atmospheric-science-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-major-courses",
+   "title": "Required Major Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EAS 3050",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3050"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "EAS 3410",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "EAS 3420",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3420"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "EAS 3520",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3520"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "EAS 4470",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4470"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "EAS 4510",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4510"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "atmospheric-science-electives-select-6-a",
+   "title": "Atmospheric Science Electives: Select 6 additional credits from the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "EAS 1310",
+      "EAS 1330",
+      "EAS 2500",
+      "EAS 2680",
+      "EAS 3340",
+      "EAS 4350",
+      "EAS 4700",
+      "EAS 4800",
+      "EAS 4860",
+      "EAS 5555"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select 6 additional credits from the following:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "mathematics",
+   "title": "Mathematics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1120",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1920"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MATH 2930",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2930"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EAS 4350 / STSCI 2100",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4350",
+        "STSCI 2100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "computer-science",
+   "title": "Computer Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EAS 2900",
+     "rule": [
+      {
+       "codes": [
+        "EAS 2900"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2207 / PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207",
+        "PHYS 1112"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2208 / PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208",
+        "PHYS 2213"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "optional-atmospheric-science-experience-",
+   "title": "Optional Atmospheric Science Experience Course (S/U only)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EAS 4910",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "EAS 4920",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4920"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "EAS 4960",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4960"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "EAS 4980",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4980"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

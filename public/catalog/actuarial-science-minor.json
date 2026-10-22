@@ -1,0 +1,132 @@
+{
+ "id": "actuarial-science-minor",
+ "kind": "minor",
+ "name": "Actuarial Science",
+ "college": "Bowers College of Computing and Information Science",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/actuarial-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 3090",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3090"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Required Courses",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3110",
+        "ECON 3130",
+        "MATH 4710",
+        "ORIE 3500",
+        "STSCI 3080"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives",
+   "title": "Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives (1)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4210",
+        "HADM 3230",
+        "AEM 4670",
+        "CS 3780",
+        "STSCI 3740",
+        "STSCI 4090",
+        "STSCI 4270",
+        "STSCI 4550",
+        "STSCI 4750",
+        "ORIE 3741",
+        "ORIE 4630"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Electives (2)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4210",
+        "HADM 3230",
+        "AEM 4670",
+        "CS 3780",
+        "STSCI 3740",
+        "STSCI 4090",
+        "STSCI 4270",
+        "STSCI 4550",
+        "STSCI 4750",
+        "ORIE 3741",
+        "ORIE 4630"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Electives (3)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4210",
+        "HADM 3230",
+        "AEM 4670",
+        "CS 3780",
+        "STSCI 3740",
+        "STSCI 4090",
+        "STSCI 4270",
+        "STSCI 4550",
+        "STSCI 4750",
+        "ORIE 3741",
+        "ORIE 4630"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

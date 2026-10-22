@@ -1,0 +1,42 @@
+{
+ "id": "policy-analysis-management-minor",
+ "kind": "minor",
+ "name": "Policy Analysis and Management",
+ "college": "Brooks School of Public Policy",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/policy-analysis-management-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "pam-minor-requirements",
+   "title": "PAM Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2301",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2301"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "PUBPOL coursework at the 3000 or 4000 level PUBPOL coursework at the 2000, 3000, or 4000 level",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

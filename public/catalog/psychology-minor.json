@@ -1,0 +1,37 @@
+{
+ "id": "psychology-minor",
+ "kind": "minor",
+ "name": "Psychology",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/psychology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "rule": [
+    {
+     "subjects": [
+      "PSYCH"
+     ],
+     "reason": "Needs a PSYCH course"
+    }
+   ],
+   "note": "Requirements to fulfill the minor are: First-year Writing Seminars (FWS) or AP courses cannot be counted towards the credit requirements. Students are encouraged to take independent study or fieldwork (PSYCH 4700 Undergraduate Research in Psychology and PSYCH 4710 Advanced Undergraduate Research in Psychology, research conducted under the supervision of a professor). Up to 6 of these credits may be counted towards the minor. PSYCH 4700 Undergraduate Research in Psychology and PSYCH 4710 Advanced Undergraduate Research in Psychology may be taken S/U. Students are encouraged to gain breadth by completing at least one course from three of the following four areas of psychology: Perception and Cognition Development Cognitive and Behavioral Neuroscience Social and Personality Psychology",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

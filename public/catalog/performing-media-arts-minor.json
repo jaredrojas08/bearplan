@@ -1,0 +1,79 @@
+{
+ "id": "performing-media-arts-minor",
+ "kind": "minor",
+ "name": "Performing and Media Arts",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/performing-media-arts-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PMA 2100",
+     "rule": [
+      {
+       "codes": [
+        "PMA 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PMA 3550 / PMA 3750 / PMA 3226",
+     "rule": [
+      {
+       "codes": [
+        "PMA 3550",
+        "PMA 3750",
+        "PMA 3226"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Elective"
+    },
+    {
+     "id": "s4",
+     "label": "Elective"
+    },
+    {
+     "id": "s5",
+     "label": "Elective"
+    },
+    {
+     "id": "s6",
+     "label": "PMA 1410 / PMA 1610",
+     "rule": [
+      {
+       "codes": [
+        "PMA 1410",
+        "PMA 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "One course in the area designated by the Design rubric One course in the area designated by the Creative Authorship rubric One course in the area designated by the Embodied Performance rubric",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

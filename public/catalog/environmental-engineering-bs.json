@@ -1,0 +1,480 @@
+{
+ "id": "environmental-engineering-bs",
+ "name": "Environmental Engineering (BS)",
+ "college": "College of Agriculture and Life Sciences, Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/environmental-engineering-bs/",
+ "totalCredits": 125,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "mathematics-science-core-requirements",
+   "title": "Mathematics-Science Core Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1910",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1920"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 2930",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2930"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MATH 2940",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2940"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics-8-credits",
+   "title": "Physics (8 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 1110",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2213"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "general-chemistry-4-credits",
+   "title": "General Chemistry (4 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 2090",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2090"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2091 / CHEM 2070 / CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2091",
+        "CHEM 2070",
+        "CHEM 2071"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "organic-chemistry-3-credits",
+   "title": "Organic Chemistry (3 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1570 / CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570",
+        "CHEM 3570"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "computer-programming-4-credits",
+   "title": "Computer Programming (4 credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 1112 / CS 1110",
+     "rule": [
+      {
+       "codes": [
+        "CS 1112",
+        "CS 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introduction-to-engineering",
+   "title": "Introduction to Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRI 1130",
+     "rule": [
+      {
+       "codes": [
+        "ENGRI 1130"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGRI 1165",
+     "rule": [
+      {
+       "codes": [
+        "ENGRI 1165"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engineering-distribution-courses",
+   "title": "Engineering Distribution Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRD 2510",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2510"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "ENGRD 2xxx",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "major-required-courses",
+   "title": "Major-Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Introductory Biology",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610",
+        "BIOEE 1780",
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOMG 1350",
+        "BIOSM 1610"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "BIOSM 1780",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-requirements",
+   "title": "Additional Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRD 3200",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 3200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BEE 2220",
+     "rule": [
+      {
+       "codes": [
+        "BEE 2220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 3040",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3040"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CEE 3310",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CEE 3510",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3510"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "BEE 4750",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4750"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "earth-science",
+   "title": "Earth Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Earth Science",
+     "rule": [
+      {
+       "codes": [
+        "BEE 3710",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS 3010",
+        "EAS 3030",
+        "EAS 3050",
+        "NTRES 3240",
+        "PLSCI 2600",
+        "PLSCI 3650"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "laboratory-course",
+   "title": "Laboratory Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BEE 4270 / CEE 4370 / CEE 4530",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4270",
+        "CEE 4370",
+        "CEE 4530"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engineering-management",
+   "title": "Engineering Management",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 3230",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3230"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "major-approved-electives",
+   "title": "Major Approved Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "Three courses from a list of major-approved engineering electives or from design course list to complete total credit requirement",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-requirements-2",
+   "title": "Additional Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "ENGRG 1050",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 1050"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "First-year writing seminar Liberal studies EHS Lab Safety Online Training 2555 Two advisor approved electives",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

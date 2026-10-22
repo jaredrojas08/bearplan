@@ -1,0 +1,254 @@
+{
+ "id": "biometry-statistics-minor",
+ "kind": "minor",
+ "name": "Biometry and Statistics",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biometry-statistics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "calculus-i",
+   "title": "Calculus I",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "calculus-ii",
+   "title": "Calculus II",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1120 / MATH 1910",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1120",
+        "MATH 1910"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "multivariable-calculus",
+   "title": "Multivariable Calculus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 2220 / MATH 2240 / MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2220",
+        "MATH 2240",
+        "MATH 1920"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistical-methods-i",
+   "title": "Statistical Methods I",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Statistical Methods I",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2200",
+        "AEM 2100",
+        "ENGRD 2700",
+        "ILRST 2100",
+        "PUBPOL 2100",
+        "PUBPOL 2101",
+        "PSYCH 2500",
+        "SOC 3010",
+        "STSCI 2150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistical-methods-ii",
+   "title": "Statistical Methods II",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 3200",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "probability",
+   "title": "Probability",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 3080",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3080"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 4710",
+     "rule": [
+      {
+       "codes": [
+        "MATH 4710"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECON 3130",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3130"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ORIE 3500",
+     "rule": [
+      {
+       "codes": [
+        "ORIE 3500"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "students-must-take-three-additional-cour",
+   "title": "Students must take three additional courses from the list below",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Students must take three additional courses from the list below",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3090",
+        "STSCI 3100",
+        "STSCI 3510",
+        "STSCI 3740",
+        "STSCI 3900",
+        "STSCI 4050",
+        "STSCI 4060",
+        "STSCI 4100",
+        "STSCI 4110",
+        "STSCI 4140",
+        "STSCI 4270",
+        "STSCI 4550",
+        "STSCI 4630",
+        "STSCI 4780",
+        "STSCI 5640"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "students-can-take-two-of-the-following-c",
+   "title": "Students can take two of the following courses to count as ONE elective",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Students can take two of the following courses to count as ONE elective:",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3600",
+        "STSCI 4610",
+        "STSCI 4850",
+        "STSCI 4720",
+        "STSCI 4725",
+        "STSCI 4881"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

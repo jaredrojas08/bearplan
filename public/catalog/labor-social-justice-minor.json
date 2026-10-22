@@ -1,0 +1,34 @@
+{
+ "id": "labor-social-justice-minor",
+ "kind": "minor",
+ "name": "Labor and Social Justice",
+ "college": "School of Industrial and Labor Relations",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/labor-social-justice-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "Select 15 credits of coursework with an ILRGL prefix.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,60 @@
+{
+ "id": "independent-major",
+ "name": "Independent Major (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/independent-major/",
+ "totalCredits": 123,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Major Requirements",
+   "type": "creditBucket",
+   "minCredits": 29,
+   "rule": [
+    {
+     "subjects": [
+      "PE",
+      "MATH",
+      "PHYS",
+      "CHEM",
+      "CS",
+      "ENGRC",
+      "INFO",
+      "CEE",
+      "BEE",
+      "BME",
+      "CHEME",
+      "ECE",
+      "MAE",
+      "MSE",
+      "ORIE",
+      "COMM",
+      "HADM",
+      "ENGRD",
+      "AEP",
+      "BIOMG",
+      "BIOG",
+      "BIOEE",
+      "STSCI",
+      "ECON"
+     ],
+     "reason": "Needs a PE / MATH / PHYS / CHEM / CS / ENGRC / INFO / CEE / BEE / BME / CHEME / ECE / MAE / MSE / ORIE / COMM / HADM / ENGRD / AEP / BIOMG / BIOG / BIOEE / STSCI / ECON course"
+    }
+   ],
+   "note": "An Independent Major (IM) comprises a Primary Area (32-credit minimum) and a Secondary Area (16-credit minimum), which together form a coherent curriculum. The Primary Area must be any subject area offered by the engineering schools or departments, except Computer Science. The Secondary Area should preferably be from outside engineering in a logically connected subject area or theme comprised of courses taught throughout Cornell (a Secondary Area in another engineering field may be considered). All courses in the Primary Area and the Secondary Area must be taken for letter grade (no S/U allowed) and students are only allowed one course below a C- across the two areas. A student’s college determines degree requirements such as residency, number of credits, distribution of credits, and grade averages. It is the student’s responsibility to be aware of the specific major, degree, distributio",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

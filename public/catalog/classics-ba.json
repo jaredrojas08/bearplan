@@ -1,0 +1,321 @@
+{
+ "id": "classics-ba",
+ "name": "Classics (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/classics-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "classics-track-requirements",
+   "title": "Classics Track Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s4",
+     "label": "Elective (4)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (5)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (6)"
+    },
+    {
+     "id": "s7",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "2000+ course (3)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    }
+   ],
+   "note": "Six courses in Greek and Latin numbered 2101 or above Three additional courses designated CLASS at the 2000-level or above.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "greek-track-requirements",
+   "title": "Greek Track Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GREEK 2101",
+     "rule": [
+      {
+       "codes": [
+        "GREEK 2101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s4",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (4)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (5)"
+    },
+    {
+     "id": "s7",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "2000+ course (3)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    }
+   ],
+   "note": "Five courses in Greek numbered 2102 or above Three additional courses designated CLASS at the 2000-level or above.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "latin-track-requirements",
+   "title": "Latin Track Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LATIN 1205 / LATIN 2201",
+     "rule": [
+      {
+       "codes": [
+        "LATIN 1205",
+        "LATIN 2201"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s4",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (4)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (5)"
+    },
+    {
+     "id": "s7",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "2000+ course (3)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    }
+   ],
+   "note": "Five courses in Latin numbered 2202 or above Three additional courses designated CLASS at the 2000-level or above.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "classical-civilization-track-requirement",
+   "title": "Classical Civilization Track Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "2000+ course (3)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s10",
+     "label": "2000+ course (4)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    }
+   ],
+   "note": "Seminar Paper Two courses in ancient history at 2000-level or above Two courses in ancient Greek and Roman material culture at 2000-level or above Two courses in ancient literature in English translation at 2000-level or above Four courses in classical civilization, classical archaeology, ancient history, ancient philosophy, ancient Greek or Latin, or related subjects at or above the 2000-level. Consult your major advisor.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,29 @@
+{
+ "id": "caribbean-studies-minor",
+ "kind": "minor",
+ "name": "Caribbean Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/caribbean-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Five (5) approved courses No more than two of these elective courses may be counted simultaneously for multiple minors. Students may request the inclusion of non-approved courses. First-Year Writing Seminars do not count for the minor One course (1) should be taken in the Department of History",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

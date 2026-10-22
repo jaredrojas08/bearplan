@@ -1,0 +1,156 @@
+{
+ "id": "sustainable-ag-food-system-minor",
+ "kind": "minor",
+ "name": "Sustainable Agricultural and Food Systems",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/sustainable-ag-food-system-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "capstone-course",
+   "title": "Capstone Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Capstone Course",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 4880",
+        "FDSC 4880",
+        "AEM 4880",
+        "CHEME 4880"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "foundation-course",
+   "title": "Foundation Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ANSC 2120",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "FDSC 1500",
+     "rule": [
+      {
+       "codes": [
+        "FDSC 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 1900",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "NTRES 1101",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BIOEE 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Choose at least 1 course:",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "food-production",
+   "title": "Food Production",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Food Production",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 1101",
+        "ANSC 2000",
+        "ANSC 3300",
+        "ANSC 3600",
+        "ANSC 4120",
+        "AEM 3385",
+        "BEE 3299",
+        "BIOEE 4690",
+        "ENTOM 2030",
+        "FDSC 2000",
+        "FDSC 3960",
+        "FDSC 4230",
+        "PLSCI 1101",
+        "PLSCI 1300",
+        "PLSCI 2600",
+        "PLSCI 3210",
+        "PLSCI 3800",
+        "PLSCI 4140",
+        "VIEN 2204",
+        "GDEV 2300",
+        "GDEV 3260",
+        "PLSCI 2110",
+        "PLSCI 3025",
+        "PLSCI 3030"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Choose at least 3 courses:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

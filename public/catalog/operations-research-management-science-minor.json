@@ -1,0 +1,127 @@
+{
+ "id": "operations-research-management-science-minor",
+ "kind": "minor",
+ "name": "Operations Research and Management Science",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/operations-research-management-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2700",
+        "ORIE 3300",
+        "ORIE 3310",
+        "ORIE 3500",
+        "ORIE 3510",
+        "ORIE 4580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Core Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2700",
+        "ORIE 3300",
+        "ORIE 3310",
+        "ORIE 3500",
+        "ORIE 3510",
+        "ORIE 4580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Core Courses (3)",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2700",
+        "ORIE 3300",
+        "ORIE 3310",
+        "ORIE 3500",
+        "ORIE 3510",
+        "ORIE 4580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ORIE 3000+ (1)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "ORIE"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ORIE 3000+ (2)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "ORIE"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ORIE 3000+ (3)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "ORIE"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Three additional courses chosen from either the core courses above, or any ORIE courses at the 3000 level or higher.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

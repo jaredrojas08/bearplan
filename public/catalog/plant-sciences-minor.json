@@ -1,0 +1,170 @@
+{
+ "id": "plant-sciences-minor",
+ "kind": "minor",
+ "name": "Plant Sciences",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/plant-sciences-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 1420",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1420"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 2410",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2410"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250",
+        "PLSCI 2430",
+        "PLSCI 2480",
+        "PLSCI 2600",
+        "PLSCI 3010",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-electives",
+   "title": "Additional Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 2000+ (1)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 2000+ (2)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 2000+ (3)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PLSCI 2000+ (4)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PLSCI 2000+ (5)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PLSCI 2000+ (6)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "PLSCI"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "At least 6 credits in any structured PLSCI course at the 2000 level or greater",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

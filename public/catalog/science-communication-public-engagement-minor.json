@@ -1,0 +1,182 @@
+{
+ "id": "science-communication-public-engagement-minor",
+ "kind": "minor",
+ "name": "Science Communication and Public Engagement",
+ "college": "College of Agriculture and Life Sciences, College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/science-communication-public-engagement-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COMM 2850",
+     "rule": [
+      {
+       "codes": [
+        "COMM 2850"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EDUC 3510",
+     "rule": [
+      {
+       "codes": [
+        "EDUC 3510"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENTOM 3350",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 4500",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 4500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PSYCH 4500",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 4500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "STS 4451",
+     "rule": [
+      {
+       "codes": [
+        "STS 4451"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "COMM 3760",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-community-engaged-learn",
+   "title": "Elective Courses: Community Engaged Learning Courses",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "ALS 4960",
+      "ALS 4990",
+      "BME 4440"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Community Engaged Learning Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "elective-courses-applied-communication-c",
+   "title": "Elective Courses: Applied Communication Courses",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "AEM 2700",
+      "ASTRO 2202",
+      "BIOG 3500",
+      "BIOSM 3500",
+      "COMM 2450",
+      "COMM 2760",
+      "COMM 3010",
+      "COMM 3020",
+      "COMM 3070",
+      "COMM 3200",
+      "COMM 4660",
+      "ILRGL 3300"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Applied Communication Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "elective-courses-scientific-methods-ethi",
+   "title": "Elective Courses: Scientific methods, ethics, and science literacy courses",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "ALS 1200",
+      "BSOC 2061",
+      "COMM 2820",
+      "COMM 3210",
+      "COMM 4300",
+      "COMM 4350",
+      "PHIL 2455",
+      "STS 1201",
+      "STS 2051",
+      "STS 4041"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Scientific methods, ethics, and science literacy courses",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

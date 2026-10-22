@@ -1,0 +1,165 @@
+{
+ "id": "mathematics-minor",
+ "kind": "minor",
+ "name": "Mathematics",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/mathematics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "linear-algebra",
+   "title": "Linear Algebra",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Linear Algebra",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2210",
+        "MATH 2230",
+        "MATH 2940",
+        "MATH 2310"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "multivariable-calculus",
+   "title": "Multivariable Calculus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 2220 / MATH 2240 / MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2220",
+        "MATH 2240",
+        "MATH 1920"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "algebra",
+   "title": "Algebra",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Algebra",
+     "rule": [
+      {
+       "codes": [
+        "MATH 3320",
+        "MATH 3340",
+        "MATH 3360",
+        "MATH 4310",
+        "MATH 4330",
+        "MATH 4340",
+        "MATH 4370",
+        "MATH 4500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "analysis",
+   "title": "Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Analysis",
+     "rule": [
+      {
+       "codes": [
+        "MATH 3110",
+        "MATH 3210",
+        "MATH 3270",
+        "MATH 4130",
+        "MATH 4140",
+        "MATH 4180",
+        "MATH 4200",
+        "MATH 4210",
+        "MATH 4220",
+        "MATH 4250",
+        "MATH 4260",
+        "MATH 4280"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "further-high-level-mathematics",
+   "title": "Further High Level Mathematics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 3000+ (1)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "MATH"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 3000+ (2)",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "MATH"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Two additional MATH courses numbered 3000 or above.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

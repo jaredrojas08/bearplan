@@ -1,0 +1,57 @@
+{
+ "id": "fine-arts-minor-for-non-departmental-students",
+ "kind": "minor",
+ "name": "Fine Arts",
+ "college": "College of Architecture, Art and Planning",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fine-arts-minor-for-non-departmental-students/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "2000+ course (1)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "2000+ course (2)",
+     "rule": [
+      {
+       "minLevel": 2000
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "3000+ course",
+     "rule": [
+      {
+       "minLevel": 3000
+      }
+     ]
+    }
+   ],
+   "note": "Two art studio classes at the 2000-level One art studio class at the 3000-level",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

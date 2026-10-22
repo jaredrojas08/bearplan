@@ -1,0 +1,105 @@
+{
+ "id": "entomology-minor",
+ "kind": "minor",
+ "name": "Entomology",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/entomology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENTOM 2120",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 2120"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-a-core-elective-courses",
+   "title": "Group A Core Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group A Core Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 3030",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "ENTOM 3410",
+        "ENTOM 4100",
+        "ENTOM 4520",
+        "ENTOM 4521",
+        "ENTOM 4550",
+        "ENTOM 4610",
+        "ENTOM 4830"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-b-specialized-elective-courses",
+   "title": "Group B Specialized Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group B Specialized Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "ENTOM 2030",
+        "ENTOM 2440",
+        "ENTOM 2300",
+        "ENTOM 2500",
+        "ENTOM 3150",
+        "ENTOM 3350",
+        "ENTOM 3440",
+        "ENTOM 3630",
+        "ENTOM 3690",
+        "ENTOM 3755",
+        "ENTOM 3800",
+        "ENTOM 4000",
+        "ENTOM 4700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

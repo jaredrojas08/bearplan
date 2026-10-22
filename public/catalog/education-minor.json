@@ -1,0 +1,129 @@
+{
+ "id": "education-minor",
+ "kind": "minor",
+ "name": "Education",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/education-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EDUC 2410",
+     "rule": [
+      {
+       "codes": [
+        "EDUC 2410"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "education-history-policy-philosophy",
+   "title": "Education History, Policy, Philosophy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EDUC 2710 / EDUC 3405 / EDUC 4720",
+     "rule": [
+      {
+       "codes": [
+        "EDUC 2710",
+        "EDUC 3405",
+        "EDUC 4720"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "direct-experience-with-learners",
+   "title": "Direct Experience with Learners",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Direct Experience with Learners",
+     "rule": [
+      {
+       "codes": [
+        "EDUC 2155",
+        "EDUC 2200",
+        "EDUC 2210",
+        "EDUC 3110",
+        "EDUC 3142",
+        "EDUC 4200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "EDUC 4223",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "SOC 2210",
+        "SOC 2250",
+        "ENTOM 3350",
+        "ILRLE 3445",
+        "PUBPOL 3231",
+        "PUBPOL 3480",
+        "PUBPOL 3550",
+        "PSYCH 4500",
+        "ANTHR 4790",
+        "PLSCI 4825",
+        "ILRGL 4865"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective"
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Any EDUC-prefix course will count. The below courses are approved elective choices as well. Take (at least) six credits of electives using two or more courses.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

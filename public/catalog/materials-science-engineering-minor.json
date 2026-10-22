@@ -1,0 +1,91 @@
+{
+ "id": "materials-science-engineering-minor",
+ "kind": "minor",
+ "name": "Materials Science and Engineering",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/materials-science-engineering-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRD 2610 / ENGRD 2620",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2610",
+        "ENGRD 2620"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Required Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "MSE 2010",
+        "MSE 2060",
+        "MSE 3010",
+        "MSE 3030",
+        "MSE 3040",
+        "MSE 3050",
+        "MSE 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Required Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "MSE 2010",
+        "MSE 2060",
+        "MSE 3010",
+        "MSE 3030",
+        "MSE 3040",
+        "MSE 3050",
+        "MSE 4020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "Any MSE technical course at the 3000-level or above (including up to 3 credits for research involvement) Selected courses in materials properties, applications, and/or processing, at the 3000-level or above, from AEP, BEE, BME, CHEME, CEE, EAS, ECE, MAE, PHYS, and CHEM. Any questions regarding allowable courses should be directed to the MSE Undergraduate Coordinator. Three electives chosen from:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

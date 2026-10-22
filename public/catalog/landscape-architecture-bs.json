@@ -1,0 +1,273 @@
+{
+ "id": "landscape-architecture-bs",
+ "name": "Landscape Architecture (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/landscape-architecture-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LA 1410",
+     "rule": [
+      {
+       "codes": [
+        "LA 1410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "LA 1420",
+     "rule": [
+      {
+       "codes": [
+        "LA 1420"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "LA 2010",
+     "rule": [
+      {
+       "codes": [
+        "LA 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "LA 2020",
+     "rule": [
+      {
+       "codes": [
+        "LA 2020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "LA 3010",
+     "rule": [
+      {
+       "codes": [
+        "LA 3010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "LA 3020",
+     "rule": [
+      {
+       "codes": [
+        "LA 3020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "LA 4010",
+     "rule": [
+      {
+       "codes": [
+        "LA 4010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "LA 4020",
+     "rule": [
+      {
+       "codes": [
+        "LA 4020"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-2",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LA 4910",
+     "rule": [
+      {
+       "codes": [
+        "LA 4910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "LA 3160",
+     "rule": [
+      {
+       "codes": [
+        "LA 3160"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "LA 3180",
+     "rule": [
+      {
+       "codes": [
+        "LA 3180"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "LA 4100",
+     "rule": [
+      {
+       "codes": [
+        "LA 4100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "LA 4120",
+     "rule": [
+      {
+       "codes": [
+        "LA 4120"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-course",
+   "title": "Required Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LA 2910",
+     "rule": [
+      {
+       "codes": [
+        "LA 2910"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "LA 3430",
+     "rule": [
+      {
+       "codes": [
+        "LA 3430"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "LA 4070",
+     "rule": [
+      {
+       "codes": [
+        "LA 4070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "LA 4930",
+     "rule": [
+      {
+       "codes": [
+        "LA 4930"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "LA 4941",
+     "rule": [
+      {
+       "codes": [
+        "LA 4941"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-3",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LA 4030",
+     "rule": [
+      {
+       "codes": [
+        "LA 4030"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective"
+    }
+   ],
+   "note": "Directed Study - Student Defined in Consultation with Faculty Advisor (3 courses)",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

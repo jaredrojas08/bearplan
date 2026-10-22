@@ -1,0 +1,101 @@
+{
+ "id": "moral-psychology-minor",
+ "kind": "minor",
+ "name": "Moral Psychology",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/moral-psychology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHIL 2415 / PSYCH 3135 / AEM 3205",
+     "rule": [
+      {
+       "codes": [
+        "PHIL 2415",
+        "PSYCH 3135",
+        "AEM 3205"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PSYCH 4940 / AEM 3385",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 4940",
+        "AEM 3385"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Required Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 3434",
+        "ECON 4660",
+        "HD 4250",
+        "PSYCH 4420"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Required Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 3434",
+        "ECON 4660",
+        "HD 4250",
+        "PSYCH 4420"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Required Courses (3)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 3434",
+        "ECON 4660",
+        "HD 4250",
+        "PSYCH 4420"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

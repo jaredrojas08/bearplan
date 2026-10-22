@@ -1,0 +1,479 @@
+{
+ "id": "healthy-futures-minor",
+ "kind": "minor",
+ "name": "Healthy Futures",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/healthy-futures-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "DEA 3055",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3055"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "DEA 4020",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "DEA 3308 / DEA 5540",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3308",
+        "DEA 5540"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2350 or other",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350",
+        "PUBPOL 3280",
+        "NS 1600",
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "HADM 2365/5365 / HADM 3510 / HADM 4130",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2365/5365",
+        "HADM 3510",
+        "HADM 4130"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Elective"
+    }
+   ],
+   "note": "Elective Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-2",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "DEA 3055",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3055"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "DEA 4020",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "DEA 3308 / DEA 4500 / DEA 2700",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3308",
+        "DEA 4500",
+        "DEA 2700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2350 / PUBPOL 3280 / NS 2600",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350",
+        "PUBPOL 3280",
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "HADM 2365/5365 / HADM 3510 / HADM 4130",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2365/5365",
+        "HADM 3510",
+        "HADM 4130"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Elective"
+    }
+   ],
+   "note": "Elective Courses",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-3",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "DEA 3055",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3055"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "DEA 4020",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "DEA 3308 / DEA 4500 / DEA 2700",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3308",
+        "DEA 4500",
+        "DEA 2700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2350 or other",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350",
+        "PUBPOL 3280",
+        "NS 1600",
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "HADM 3510 / HADM 4145",
+     "rule": [
+      {
+       "codes": [
+        "HADM 3510",
+        "HADM 4145"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Elective"
+    }
+   ],
+   "note": "Elective Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "requirements-for-other-majors",
+   "title": "Requirements for Other majors",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "DEA 3055",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3055"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "DEA 4020",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "DEA 3308 / DEA 4500 / DEA 2700",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3308",
+        "DEA 4500",
+        "DEA 2700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2350 or other",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350",
+        "PUBPOL 3280",
+        "NS 1600",
+        "NS 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "HADM 2365/5365 / HADM 3510 / HADM 4130",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2365/5365",
+        "HADM 3510",
+        "HADM 4130"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-from-hcd",
+   "title": "Electives from HCD",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives from HCD",
+     "rule": [
+      {
+       "codes": [
+        "DEA 1110",
+        "DEA 1112",
+        "DEA 1500",
+        "DEA 2025",
+        "DEA 2200",
+        "DEA 2700",
+        "DEA 3308",
+        "DEA 3510",
+        "DEA 3530",
+        "DEA 4500",
+        "DEA 5700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-from-public-policy",
+   "title": "Electives from Public Policy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives from Public Policy",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2301",
+        "PUBPOL 2350",
+        "PUBPOL 3180",
+        "PUBPOL 3230",
+        "PUBPOL 3280",
+        "PUBPOL 3650",
+        "PUBPOL 3730",
+        "PUBPOL 4370",
+        "PUBPOL 5500/HADM 6033"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-from-hotel-administration",
+   "title": "Electives from Hotel Administration",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives from Hotel Administration",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2365/5365",
+        "HADM 2560",
+        "HADM 3470",
+        "HADM 3510",
+        "HADM 4130",
+        "HADM 4145",
+        "HADM 4190",
+        "HADM 4315"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HADM 4500",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "HADM 4515",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4515"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "HADM 4530",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4530"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "HADM 6033/PUBPOL 5500",
+     "rule": [
+      {
+       "codes": [
+        "HADM 6033/PUBPOL 5500"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "HADM 4320",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "other-electives",
+   "title": "Other electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 3440 / NS 1600 / NS 2600",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3440",
+        "NS 1600",
+        "NS 2600"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,83 @@
+{
+ "id": "nutrition-health-minor",
+ "kind": "minor",
+ "name": "Nutrition and Health",
+ "college": "College of Agriculture and Life Sciences, College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/nutrition-health-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required",
+   "title": "Required",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 1150 / NS 1220",
+     "rule": [
+      {
+       "codes": [
+        "NS 1150",
+        "NS 1220"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "upper-level-ns-courses-at-least-9-credit",
+   "title": "Upper Level NS Courses: electives",
+   "type": "creditBucket",
+   "minCredits": 9,
+   "rule": [
+    {
+     "codes": [
+      "NS 3060",
+      "NS 4450",
+      "NS 4480",
+      "NS 4570",
+      "NS 3600",
+      "NS 4500",
+      "NS 4510",
+      "NS 2470",
+      "NS 3450",
+      "NS 3150",
+      "NS 3410",
+      "NS 4140",
+      "NS 4200",
+      "NS 4210",
+      "NS 4330",
+      "NS 4410",
+      "NS 4420",
+      "NS 5510",
+      "NS 3200",
+      "NS 3310",
+      "NS 3320",
+      "NS 4300",
+      "NS 2450",
+      "NS 4250"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "At least 9 credits of upper-level NS courses from the list below:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

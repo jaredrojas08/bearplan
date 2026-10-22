@@ -1,0 +1,37 @@
+{
+ "id": "portuguese-brazilian-studies-minor",
+ "kind": "minor",
+ "name": "Portuguese and Brazilian Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/portuguese-brazilian-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "PORT"
+     ],
+     "reason": "Needs a PORT course"
+    }
+   ],
+   "note": "In order to complete a minor in Portuguese and Brazilian Studies, students must take at least five courses (with each course taken for a minimum of 3 credits) in consultation with the Director of Undergraduate Studies. Among these courses, the core course PORT 2800 Perspectives on Brazil and one course at the advanced level (3000 and above) are required. Courses on Latin America or other topics with a Brazilian, Portuguese, or Lusophone African component may be counted toward the credit requirement upon consultation with the Director of Undergraduate Studies. Language competence must be demonstrated by successfully completing PORT 2020 Intermediate Portuguese for Spanish Speakers II or its equivalent. Portuguese language courses below the 2020 level cannot be applied toward the minor. Please note that courses taken as part of a study abroad program in Brazil or Portugal (maximum two cour",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}
