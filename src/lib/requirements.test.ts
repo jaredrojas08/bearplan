@@ -278,7 +278,7 @@ describe('slot options', () => {
   it('needs one complete alternative', () => {
     expect(result()).toMatchObject({ open: 1, total: 1, complete: false })
     expect(result({ code: 'CHEM 2150', placement: 'chem/b1' })).toMatchObject({ open: 0, complete: true })
-    // A tie goes to the first option, which shows this student's progress (1 of 2).
+    // A started option keeps counting even though Option 2 has fewer rows.
     expect(result({ code: 'CHEM 2070', placement: 'chem/a1' })).toMatchObject({ filled: 1, open: 1, total: 2, complete: false })
     expect(result({ code: 'CHEM 2070', placement: 'chem/a1' }, { code: 'CHEM 2080', placement: 'chem/a2' })).toMatchObject({ open: 0, total: 2, complete: true })
   })
