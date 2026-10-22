@@ -15,7 +15,10 @@
   <div class="restore" role={app.restoreError ? 'alert' : 'status'}>
     {#if app.restoreError}
       <p>{app.restoreError}</p>
-      <button class="btn primary" onclick={() => app.retryRestore()}>Try again</button>
+      <div class="restore-actions">
+        <button class="btn primary" onclick={() => app.retryRestore()}>Try again</button>
+        <button class="btn" onclick={() => app.startOverFromRestore()}>Start a new plan</button>
+      </div>
     {:else}
       <p class="muted">Loading your plan…</p>
     {/if}
@@ -62,6 +65,12 @@
     gap: 12px;
     padding: 16px;
     text-align: center;
+  }
+  .restore-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .save-error {
     margin: 0 0 16px;
