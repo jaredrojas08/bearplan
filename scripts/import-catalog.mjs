@@ -111,6 +111,8 @@ function ruleFromText(text, subjects) {
 function choiceOf(title) {
   if (!title) return null
   if (/recommend/i.test(title)) return { kind: 'skip' }
+  // "Option 1: Select two courses" is still an alternative, so the prefix wins over the rest.
+  if (/^option\b/i.test(title)) return { kind: 'option' }
   const credits =
     title.match(/(?:minimum|at least|min\.?)\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*(?:credits?|cr)\b/i) ??
     title.match(/(\d+(?:\.\d+)?)\s*(?:credits?|cr)\s*(?:minimum|min\b|required)/i)
@@ -120,7 +122,6 @@ function choiceOf(title) {
     title.match(/^(one|two|three|four|five|\d+)\s+(?:additional\s+)?(?:courses?|electives?)\b/i) ??
     title.match(/\((one|two|three|four|five|\d+)\s+courses?\)/i)
   if (picked) return { kind: 'pick', count: firstNumber(picked[1]) }
-  if (/^option\b/i.test(title)) return { kind: 'option' }
   if (/\b(list|group|electives?|one of)\b/i.test(title)) return { kind: 'pick', count: 1 }
   return null
 }

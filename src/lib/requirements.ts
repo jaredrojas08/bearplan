@@ -369,16 +369,28 @@ function countedRows(rows: SlotRow[]): SlotRow[] {
   const options = [...new Set(rows.map((r) => r.slot.option).filter((o): o is string => !!o))]
   if (options.length === 0) return rows
   const count = (option: string, filled: boolean) => rows.filter((r) => r.slot.option === option && !!r.course === filled).length
-  const better = (a: string, b: string) =>
-    count(b, true) > count(a, true) || (count(b, true) === count(a, true) && count(b, false) < count(a, false)) ? b : a
+  // A finished option wins outright; otherwise the most filled, then the fewest open.
+  const rank = (o: string) => [count(o, false) === 0 ? 1 : 0, count(o, true), -count(o, false)]
+  const better = (a: string, b: string) => {
+    const [ra, rb] = [rank(a), rank(b)]
+    const i = ra.findIndex((v, k) => v !== rb[k])
+    return i >= 0 && rb[i] > ra[i] ? b : a
+  }
   const best = options.reduce(better)
   return rows.filter((r) => !r.slot.option || r.slot.option === best)
 }
 
 function evaluateSection(plan: Plan, section: Section, today: Date): SectionResult {
   const placed = sectionCourses(plan, section)
-  const groupOf = section.groups ? assignGroups(placed, section.groups, section.constraints) : {}
-  const chips = (section.constraints ?? []).map((k) => constraintChip(k, placed, groupOf))
+  const rows = (section.slots ?? []).map((slot) => ({
+    slot,
+    course: placed.find((c) => c.placement === placementOf(section, slot)) ?? null,
+  }))
+  const counted = countedRows(rows)
+  // Constraints judge only the alternative that counts, so two half-done options can't combine.
+  const scored = rows.some((r) => r.slot.option) ? counted.flatMap((r) => (r.course ? [r.course] : [])) : placed
+  const groupOf = section.groups ? assignGroups(scored, section.groups, section.constraints) : {}
+  const chips = (section.constraints ?? []).map((k) => constraintChip(k, scored, groupOf))
   const constraintsOk = chips.every((c) => c.ok)
   const credits = sumCredits(placed)
 
@@ -394,11 +406,6 @@ function evaluateSection(plan: Plan, section: Section, today: Date): SectionResu
     }
   }
 
-  const rows = (section.slots ?? []).map((slot) => ({
-    slot,
-    course: placed.find((c) => c.placement === placementOf(section, slot)) ?? null,
-  }))
-  const counted = countedRows(rows)
   const filled = counted.filter((r) => r.course).length
   return {
     section, rows, courses: placed, filled, total: counted.length, credits, creditsToGo: 0,
