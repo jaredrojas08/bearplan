@@ -116,6 +116,18 @@
             "minLevel": 4000,
             "maxLevel": 4999
           }
+        },
+        {
+          "type": "maxCredits",
+          "label": "Research",
+          "credits": 12,
+          "match": {
+            "codes": [
+              "PSYCH 4700",
+              "PSYCH 4710"
+            ]
+          },
+          "reason": "Only 12 credits of PSYCH 4700 and 4710 count; put the rest in Additional Space"
         }
       ],
       "type": "creditBucket",
