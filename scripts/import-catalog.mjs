@@ -28,7 +28,8 @@ const slugify = (text) => clean(text).toLowerCase().replace(/[^a-z0-9]+/g, '-').
 
 let lastFetch = 0
 async function page(path) {
-  const file = join(CACHE, `${slugify(path) || 'index'}.html`)
+  // The full path, not a shortened slug, so two long program URLs never share a cache file.
+  const file = join(CACHE, `${path.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '') || 'index'}.html`)
   try {
     return await readFile(file, 'utf8')
   } catch {}

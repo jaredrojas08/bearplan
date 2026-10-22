@@ -1,7 +1,7 @@
 {
  "id": "electrical-computer-engineering-minor",
  "kind": "minor",
- "name": "Electrical and Computer Engineering (BS)",
+ "name": "Electrical and Computer Engineering",
  "college": "Duffield College of Engineering",
  "matriculatedFrom": "FA22",
  "draft": true,
@@ -15,157 +15,108 @@
  ],
  "sections": [
   {
-   "id": "required-major-courses",
-   "title": "Required Major Courses",
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "ECE 2100 / ENGRD 2100",
+     "label": "CS 3410",
      "rule": [
       {
        "codes": [
-        "ECE 2100",
-        "ENGRD 2100"
+        "CS 3410"
        ]
       }
      ]
     },
     {
      "id": "s2",
-     "label": "ECE 2300",
+     "label": "ECE 3000+",
      "rule": [
       {
-       "codes": [
-        "ECE 2300"
+       "minLevel": 3000,
+       "subjects": [
+        "ECE"
        ]
       }
      ]
     },
     {
      "id": "s3",
-     "label": "ECE 2720 / ENGRD 2720",
+     "label": "ECE 4000+",
      "rule": [
       {
-       "codes": [
-        "ECE 2720",
-        "ENGRD 2720"
-       ]
-      }
-     ]
-    }
-   ],
-   "column": "left",
-   "filter": "major",
-   "icon": "book"
-  },
-  {
-   "id": "ece-foundation-courses-at-least-3-course",
-   "title": "ECE Foundation Courses (at least 3 courses)",
-   "type": "slots",
-   "slots": [
-    {
-     "id": "s1",
-     "label": "ECE 3030 / ECE 3150",
-     "rule": [
-      {
-       "codes": [
-        "ECE 3030",
-        "ECE 3150"
+       "minLevel": 4000,
+       "subjects": [
+        "ECE"
        ]
       }
      ]
     },
     {
-     "id": "s2",
-     "label": "ECE 3100 / ECE 3250",
+     "id": "s4",
+     "label": "ECE 2100 / ECE 2720 / ECE 2300 (1)",
      "rule": [
       {
        "codes": [
-        "ECE 3100",
-        "ECE 3250"
-       ]
+        "ECE 2100",
+        "ECE 2720",
+        "ECE 2300"
+       ],
+       "reason": "Not on this list in the catalog"
       }
      ]
-    }
-   ],
-   "column": "right",
-   "filter": "major",
-   "icon": "book"
-  },
-  {
-   "id": "additional-ece-foundation-course",
-   "title": "Additional ECE Foundation Course",
-   "type": "slots",
-   "slots": [
+    },
     {
-     "id": "s1",
-     "label": "Additional ECE Foundation Course",
+     "id": "s5",
+     "label": "ECE 2100 / ECE 2720 / ECE 2300 (2)",
+     "rule": [
+      {
+       "codes": [
+        "ECE 2100",
+        "ECE 2720",
+        "ECE 2300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Minor Requirements (1)",
      "rule": [
       {
        "codes": [
         "ECE 3030",
         "ECE 3100",
         "ECE 3140",
-        "ECE 3150",
-        "ECE 3250"
+        "ECE 3250",
+        "ECE 3150"
        ],
        "reason": "Not on this list in the catalog"
-      }
-     ]
-    }
-   ],
-   "column": "right",
-   "filter": "major",
-   "icon": "book"
-  },
-  {
-   "id": "culminating-design-experience-cde-course",
-   "title": "Culminating Design Experience (CDE) Course",
-   "type": "slots",
-   "slots": [
-    {
-     "id": "s1",
-     "label": "Culminating Design Experience (CDE) Course",
-     "rule": [
-      {
-       "codes": [
-        "ECE 4530",
-        "ECE 4740",
-        "ECE 4760",
-        "ECE 4670",
-        "ECE 4750"
-       ],
-       "reason": "Not on this list in the catalog"
-      }
-     ]
-    }
-   ],
-   "column": "left",
-   "filter": "major",
-   "icon": "book"
-  },
-  {
-   "id": "technical-electives-outside-of-electrica",
-   "title": "Technical Electives Outside of Electrical and Computer Engineering",
-   "type": "slots",
-   "slots": [
-    {
-     "id": "s1",
-     "label": "3000+ course",
-     "rule": [
-      {
-       "minLevel": 3000
       }
      ]
     },
     {
-     "id": "s2",
-     "label": "Elective"
+     "id": "s7",
+     "label": "Minor Requirements (2)",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3030",
+        "ECE 3100",
+        "ECE 3140",
+        "ECE 3250",
+        "ECE 3150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
     }
    ],
-   "note": "3000 level or above elective Additional electives",
-   "column": "right",
+   "note": "One non-project technical ECE 3000-level or above course One non-project ECE 4000-level or above course",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   }
