@@ -135,7 +135,7 @@
           {o.name} · {shortCollege(o.college)}{o.draft
             ? ' · draft'
             : t
-              ? ` · ${t.matriculatedBefore ? `entered before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom}+`}`
+              ? ` · ${t.matriculatedBefore ? `entered ${t.matriculatedFrom} to ${shiftTerm(t.matriculatedBefore, -1)}` : `entered ${t.matriculatedFrom}+`}`
               : ''}
         </option>
       {/each}

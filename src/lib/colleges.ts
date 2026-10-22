@@ -17,10 +17,11 @@ const SHORT_BY_NAME = new Map(COLLEGE_ABBREVIATIONS.flatMap((c) => c.names.map((
 
 /**
  * "College of Agriculture and Life Sciences, College of Human Ecology" becomes "CALS, HumEc",
- * and "Dyson (CALS 2025+ distributions)" becomes "Dyson (CALS 2025+)". Unknown names stay as they are.
+ * and "Dyson (CALS 2025+ distributions)" becomes "Dyson (CALS 2025+)". Unknown names and notes stay as they are.
  */
 export function shortCollege(college: string): string {
   const [, main = college, extra] = college.match(/^([^(]*?)\s*(\(.*\))?$/) ?? []
   const parts = main.split(/,\s*(?=College|School|Duffield|Bowers|Brooks|SC Johnson|Cornell)/).map((p) => SHORT_BY_NAME.get(p.trim()) ?? p.trim())
-  return [parts.join(', '), extra?.replace(/\s*distributions\)$/, ')')].filter(Boolean).join(' ')
+  // Only the checked CALS labels lose "distributions"; other notes stay as written.
+  return [parts.join(', '), extra?.replace(/^\(((?:CALS )?(?:pre-2025|2025\+)) distributions\)$/, '($1)')].filter(Boolean).join(' ')
 }
