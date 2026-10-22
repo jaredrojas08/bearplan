@@ -66,6 +66,8 @@ export interface Section {
   /** Liberal Studies style groups; courses are assigned to them automatically. */
   groups?: DistributionGroup[]
   letterGrade?: boolean
+  /** Courses in a letterGrade section that may still be taken S/U, like research credit. */
+  suAllowedCodes?: string[]
   swimTest?: boolean
   spcl?: boolean
   /** Credits here don't count toward the degree total (PE). */

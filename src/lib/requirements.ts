@@ -433,7 +433,8 @@ function courseWarnings(plan: Plan, template: Template): Record<string, string[]
     if (!target.section) continue
     const failure = ruleFailure(course, target.slot ? target.slot.rule : target.section.rule, target.section.title)
     if (failure) add(course.uid, failure)
-    if (target.section.letterGrade && isFailingGrade(template, course.grade)) {
+    const suAllowed = target.section.suAllowedCodes?.includes(code) && /^S/i.test(course.grade ?? '')
+    if (target.section.letterGrade && isFailingGrade(template, course.grade) && !suAllowed) {
       add(course.uid, /^[SU]/i.test(course.grade!) ? 'S/U in letter-grade row' : 'Needs C- or better')
     }
   }

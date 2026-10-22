@@ -1,4 +1,8 @@
 {
+  "repeatableCodes": [
+    "PSYCH 4700",
+    "PSYCH 4710"
+  ],
   "id": "psychology-ba",
   "name": "Psychology (BA)",
   "college": "Arts and Sciences",
@@ -84,6 +88,10 @@
             "PSYCH 4940"
           ]
         }
+      ],
+      "suAllowedCodes": [
+        "PSYCH 4700",
+        "PSYCH 4710"
       ],
       "constraints": [
         {
