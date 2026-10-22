@@ -79,6 +79,7 @@ function sectionErrors(section: unknown, where: string, ids: Set<string>): strin
     if (!Array.isArray(section.constraints)) errors.push(`${where}.constraints must be a list`)
     else section.constraints.forEach((c: unknown, j: number) => errors.push(...constraintErrors(c, `${where}.constraints[${j}]`)))
   }
+  if ('suAllowedCodes' in section && !isStringArray(section.suAllowedCodes)) errors.push(`${where}.suAllowedCodes must be a list of course codes`)
   if ('groups' in section) {
     if (!Array.isArray(section.groups)) errors.push(`${where}.groups must be a list`)
     else section.groups.forEach((g: unknown, j: number) => {
