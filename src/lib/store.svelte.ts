@@ -7,6 +7,7 @@ import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import economicsTemplate from '../templates/economics-ba.json'
 import governmentTemplate from '../templates/government-ba.json'
+import orieTemplate from '../templates/operations-research-engineering-bs.json'
 import psychologyTemplate from '../templates/psychology-ba.json'
 import { ADDITIONAL, type CatalogCourse, type CatalogEntry, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { buildIndex, type SearchIndexEntry } from './search'
@@ -53,6 +54,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   economicsTemplate,
   governmentTemplate,
   psychologyTemplate,
+  orieTemplate,
   businessMinor,
   businessMinorEngineers,
 ] as Template[]
