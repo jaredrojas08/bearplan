@@ -126,28 +126,71 @@
    "icon": "book"
   },
   {
-   "id": "options",
-   "title": "Options",
+   "id": "general-chemistry-4-8-credits",
+   "title": "General Chemistry: (4-8 Credits)",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "CHEM 2070",
      "rule": [
       {
        "codes": [
-        "CHEM 2070",
-        "CHEM 2071",
-        "CHEM 2080",
-        "CHEM 2081",
-        "CHEM 2150"
-       ],
-       "reason": "Not on this list in the catalog"
+        "CHEM 2070"
+       ]
       }
-     ]
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 2150",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2150"
+       ]
+      }
+     ],
+     "option": "Option 2"
     }
    ],
-   "note": "Option 1 is one alternative. Option 2 is one alternative.",
    "column": "right",
    "filter": "major",
    "icon": "book"
@@ -202,7 +245,7 @@
     }
    ],
    "note": "The catalog lists these courses without a count here; check how many are required. While any course listed for a, b, or c will fulfill the second mathematics requirement, students are strongly encouraged to complete a statistics course to fulfill the second mathematics requirement or in addition to taking a course from either b or c.",
-   "column": "right",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   },
@@ -229,34 +272,77 @@
      ]
     }
    ],
-   "column": "left",
+   "column": "right",
    "filter": "major",
    "icon": "book"
   },
   {
-   "id": "options-2",
-   "title": "Options",
+   "id": "physics-8-credits",
+   "title": "Physics: (8 Credits)",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "PHYS 2207",
      "rule": [
       {
        "codes": [
-        "PHYS 2207",
-        "PHYS 2208",
-        "PHYS 1112",
-        "PHYS 1110",
-        "PHYS 2213"
-       ],
-       "reason": "Not on this list in the catalog"
+        "PHYS 2207"
+       ]
       }
-     ]
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2208",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "s4",
+     "label": "PHYS 1110",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1110"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "s5",
+     "label": "PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2213"
+       ]
+      }
+     ],
+     "option": "Option 2"
     }
    ],
-   "note": "Option 1 is one alternative. Option 2 is one alternative.",
-   "column": "right",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   },
@@ -288,32 +374,64 @@
      ]
     }
    ],
-   "column": "left",
+   "column": "right",
    "filter": "major",
    "icon": "book"
   },
   {
-   "id": "options-3",
-   "title": "Options",
+   "id": "biochemistry-and-molecular-biology-4-5-c",
+   "title": "Biochemistry and Molecular Biology: (4-5 Credits)",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "BIOMG 3300",
      "rule": [
       {
        "codes": [
-        "BIOMG 3300",
-        "BIOMG 3310",
-        "BIOMG 3320",
-        "BIOMG 3350"
-       ],
-       "reason": "Not on this list in the catalog"
+        "BIOMG 3300"
+       ]
       }
-     ]
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 3320",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3320"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "s4",
+     "label": "BIOMG 3350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3350"
+       ]
+      }
+     ],
+     "option": "Option 3"
     }
    ],
-   "note": "Option 1 is one alternative. Option 2 is one alternative. Option 3 is one alternative.",
    "column": "right",
    "filter": "major",
    "icon": "book"
@@ -352,7 +470,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -423,7 +541,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -677,7 +795,7 @@
       }
      ],
      "note": "The catalog lists these courses without a count here; check how many are required. BIOMS 3310",
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -752,7 +870,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -1016,7 +1134,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -1418,7 +1536,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -1472,7 +1590,7 @@
        ]
       }
      ],
-     "column": "left",
+     "column": "right",
      "filter": "major",
      "icon": "book"
     },
@@ -1775,7 +1893,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     }
@@ -1813,7 +1931,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -1873,7 +1991,7 @@
        ]
       }
      ],
-     "column": "left",
+     "column": "right",
      "filter": "major",
      "icon": "book"
     }
@@ -1904,7 +2022,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -2009,7 +2127,7 @@
       }
      ],
      "note": "The catalog lists these courses without a count here; check how many are required. PLSCI 5700",
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     }
@@ -2040,7 +2158,7 @@
        ]
       }
      ],
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
@@ -2198,7 +2316,7 @@
       }
      ],
      "note": "BIONB 3000-4999 Additional NBB Courses",
-     "column": "right",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     }
@@ -2209,39 +2327,204 @@
    "name": "Plant Biology",
    "sections": [
     {
-     "id": "plant-biology-options",
-     "title": "Options",
+     "id": "plant-biology-students-choose-one-area-of-study-from-t",
+     "title": "Students choose one area of study from the following two options",
      "type": "slots",
      "slots": [
       {
        "id": "s1",
-       "label": "One option",
+       "label": "PLSCI 2410",
        "rule": [
         {
          "codes": [
-          "PLSCI 2410",
-          "PLSCI 3420",
-          "PLSCI 3421",
-          "BIOEE 4460",
-          "BIOEE 4461",
-          "BIOG 4990",
-          "PLSCI 2300",
-          "PLSCI 2400",
-          "PLSCI 2430",
-          "PLSCI 2470",
-          "PLSCI 2480",
-          "PLSCI 3430",
-          "PLSCI 3431",
-          "PLSCI 3440",
-          "PLSCI 4220",
-          "PLSCI 4400"
-         ],
-         "reason": "Not on this list in the catalog"
+          "PLSCI 2410"
+         ]
         }
-       ]
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
       },
       {
        "id": "s2",
+       "label": "PLSCI 3420",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3420"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s3",
+       "label": "PLSCI 3421",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3421"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s4",
+       "label": "BIOEE 4460",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4460"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s5",
+       "label": "BIOEE 4461",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4461"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s6",
+       "label": "BIOG 4990",
+       "rule": [
+        {
+         "codes": [
+          "BIOG 4990"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s7",
+       "label": "PLSCI 2300",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2300"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s8",
+       "label": "PLSCI 2400",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2400"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s9",
+       "label": "PLSCI 2430",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2430"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s10",
+       "label": "PLSCI 2470",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2470"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s11",
+       "label": "PLSCI 2480",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2480"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s12",
+       "label": "PLSCI 3430",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3430"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s13",
+       "label": "PLSCI 3431",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3431"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s14",
+       "label": "PLSCI 3440",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3440"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s15",
+       "label": "PLSCI 4220",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4220"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s16",
+       "label": "PLSCI 4400",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4400"
+         ]
+        }
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
+      },
+      {
+       "id": "s17",
        "label": "PLSCI 4620",
        "rule": [
         {
@@ -2249,10 +2532,11 @@
           "PLSCI 4620"
          ]
         }
-       ]
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
       },
       {
-       "id": "s3",
+       "id": "s18",
        "label": "PLSCI 4990",
        "rule": [
         {
@@ -2260,10 +2544,11 @@
           "PLSCI 4990"
          ]
         }
-       ]
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
       },
       {
-       "id": "s4",
+       "id": "s19",
        "label": "PLSCI 6831",
        "rule": [
         {
@@ -2271,10 +2556,11 @@
           "PLSCI 6831"
          ]
         }
-       ]
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
       },
       {
-       "id": "s5",
+       "id": "s20",
        "label": "PLSCI 6841",
        "rule": [
         {
@@ -2282,44 +2568,166 @@
           "PLSCI 6841"
          ]
         }
-       ]
+       ],
+       "option": "Option (a) Plant Evolutionary Biology"
       }
      ],
-     "note": "Option (a) Plant Evolutionary Biology is one alternative. PLSCI 4540",
-     "column": "right",
+     "note": "PLSCI 4540",
+     "column": "left",
      "filter": "major",
      "icon": "book"
     },
     {
-     "id": "plant-biology-options-2",
-     "title": "Options",
+     "id": "plant-biology-students-choose-one-area-of-study-from-t-2",
+     "title": "Students choose one area of study from the following two options",
      "type": "slots",
      "slots": [
       {
        "id": "s1",
-       "label": "One option",
+       "label": "PLSCI 3430",
        "rule": [
         {
          "codes": [
-          "PLSCI 3430",
-          "PLSCI 3431",
-          "PLSCI 3420",
-          "BIOEE 4460",
-          "BIOEE 4461",
-          "BIOG 4990",
-          "PLSCI 2250",
-          "PLSCI 3421",
-          "PLSCI 4030",
-          "PLSCI 4070",
-          "PLSCI 4080",
-          "PLSCI 4220"
-         ],
-         "reason": "Not on this list in the catalog"
+          "PLSCI 3430"
+         ]
         }
-       ]
+       ],
+       "option": "Option (b) Plant Biotechnology"
       },
       {
        "id": "s2",
+       "label": "PLSCI 3431",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3431"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s3",
+       "label": "PLSCI 3420",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3420"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s4",
+       "label": "BIOEE 4460",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4460"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s5",
+       "label": "BIOEE 4461",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 4461"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s6",
+       "label": "BIOG 4990",
+       "rule": [
+        {
+         "codes": [
+          "BIOG 4990"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s7",
+       "label": "PLSCI 2250",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2250"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s8",
+       "label": "PLSCI 3421",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3421"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s9",
+       "label": "PLSCI 4030",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4030"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s10",
+       "label": "PLSCI 4070",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4070"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s11",
+       "label": "PLSCI 4080",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4080"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s12",
+       "label": "PLSCI 4220",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 4220"
+         ]
+        }
+       ],
+       "option": "Option (b) Plant Biotechnology"
+      },
+      {
+       "id": "s13",
        "label": "PLSCI 4620",
        "rule": [
         {
@@ -2327,10 +2735,11 @@
           "PLSCI 4620"
          ]
         }
-       ]
+       ],
+       "option": "Option (b) Plant Biotechnology"
       },
       {
-       "id": "s3",
+       "id": "s14",
        "label": "PLSCI 6841",
        "rule": [
         {
@@ -2338,11 +2747,12 @@
           "PLSCI 6841"
          ]
         }
-       ]
+       ],
+       "option": "Option (b) Plant Biotechnology"
       }
      ],
-     "note": "Option (b) Plant Biotechnology is one alternative. PLSCI 4540",
-     "column": "left",
+     "note": "PLSCI 4540",
+     "column": "right",
      "filter": "major",
      "icon": "book"
     }

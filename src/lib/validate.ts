@@ -66,6 +66,7 @@ function sectionErrors(section: unknown, where: string, ids: Set<string>): strin
         return errors.push(`${where}.slots[${j}] needs an id without "/"`)
       }
       if (slotIds.has(slot.id)) errors.push(`${where}.slots[${j}].id "${slot.id}" is used twice`)
+      if ('option' in slot && !isString(slot.option)) errors.push(`${where}.slots[${j}].option must be text`)
       slotIds.add(slot.id)
       errors.push(...ruleErrors(slot.rule, `${where}.slots[${j}]`))
     })

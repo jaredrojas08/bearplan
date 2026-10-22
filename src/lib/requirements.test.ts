@@ -259,3 +259,27 @@ describe('writing seminars', () => {
     expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1400', 3, ['CA-AG']), 'fws/fws1')).toBe('Not a writing seminar')
   })
 })
+
+describe('slot options', () => {
+  const chem: Template = {
+    ...template,
+    sections: [{
+      id: 'chem', title: 'General Chemistry', column: 'left', filter: 'college', type: 'slots',
+      slots: [
+        { id: 'a1', label: 'CHEM 2070', option: 'Option 1', rule: [{ codes: ['CHEM 2070'] }] },
+        { id: 'a2', label: 'CHEM 2080', option: 'Option 1', rule: [{ codes: ['CHEM 2080'] }] },
+        { id: 'b1', label: 'CHEM 2150', option: 'Option 2', rule: [{ codes: ['CHEM 2150'] }] },
+      ],
+    }],
+  }
+  const result = (...courses: Partial<PlanCourse>[]) =>
+    evaluatePlan({ ...plan, courses: withCourses(...courses).courses.slice(plan.courses.length) }, chem, OCTOBER_2026).sections[0]
+
+  it('needs one complete alternative', () => {
+    expect(result()).toMatchObject({ open: 1, total: 1, complete: false })
+    expect(result({ code: 'CHEM 2150', placement: 'chem/b1' })).toMatchObject({ open: 0, complete: true })
+    // A tie goes to the first option, which shows this student's progress (1 of 2).
+    expect(result({ code: 'CHEM 2070', placement: 'chem/a1' })).toMatchObject({ filled: 1, open: 1, total: 2, complete: false })
+    expect(result({ code: 'CHEM 2070', placement: 'chem/a1' }, { code: 'CHEM 2080', placement: 'chem/a2' })).toMatchObject({ open: 0, total: 2, complete: true })
+  })
+})

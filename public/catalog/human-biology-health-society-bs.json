@@ -199,28 +199,96 @@
    "icon": "book"
   },
   {
-   "id": "options",
-   "title": "Options",
+   "id": "introductory-chemistry",
+   "title": "Introductory Chemistry",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "CHEM 2070",
      "rule": [
       {
        "codes": [
-        "CHEM 2070",
-        "CHEM 2071",
-        "CHEM 2080",
-        "CHEM 2081",
-        "CHEM 2150"
-       ],
-       "reason": "Not on this list in the catalog"
+        "CHEM 2070"
+       ]
       }
-     ]
+     ],
+     "option": "OPTION A"
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ],
+     "option": "OPTION A"
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ],
+     "option": "OPTION A"
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ],
+     "option": "OPTION A"
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ],
+     "option": "OPTION B"
+    },
+    {
+     "id": "s6",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ],
+     "option": "OPTION B"
+    },
+    {
+     "id": "s7",
+     "label": "CHEM 2150",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2150"
+       ]
+      }
+     ],
+     "option": "OPTION C"
     }
    ],
-   "note": "OPTION A: is one alternative. OPTION B: is one alternative. OPTION C: is one alternative.",
+   "note": "AP Chemistry score of 5 or IB Chemistry score of 6 or 7 and AP Chemistry score of 5 or IB Chemistry score of 6 or 7 and",
    "column": "right",
    "filter": "major",
    "icon": "book"
@@ -325,29 +393,72 @@
    "icon": "book"
   },
   {
-   "id": "options-2",
-   "title": "Options",
+   "id": "organic-chemistry-lecture",
+   "title": "Organic Chemistry Lecture",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "CHEM 1570",
      "rule": [
       {
        "codes": [
-        "CHEM 1570",
-        "CHEM 3570",
-        "CHEM 3580",
-        "CHEM 3590",
-        "CHEM 3600"
-       ],
-       "reason": "Not on this list in the catalog"
+        "CHEM 1570"
+       ]
       }
-     ]
+     ],
+     "option": "OPTION A"
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3570"
+       ]
+      }
+     ],
+     "option": "OPTION B"
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 3580",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3580"
+       ]
+      }
+     ],
+     "option": "OPTION B"
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 3590",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3590"
+       ]
+      }
+     ],
+     "option": "OPTION C"
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 3600",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3600"
+       ]
+      }
+     ],
+     "option": "OPTION C"
     }
    ],
-   "note": "OPTION A: is one alternative. OPTION B: is one alternative. OPTION C: is one alternative.",
-   "column": "right",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   },
@@ -369,7 +480,7 @@
      ]
     }
    ],
-   "column": "left",
+   "column": "right",
    "filter": "major",
    "icon": "book"
   },
@@ -489,6 +600,29 @@
     }
    ],
    "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "first-year-writing-seminars-6-credits",
+   "title": "First Year Writing Seminars (6 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Select one of the following options (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Select one of the following options (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective"
+    }
+   ],
+   "note": "AP Literature or Language score of 5 or IB Literature or Language score of 7 (AND) Two FWS Courses One FWS Course",
+   "column": "right",
    "filter": "major",
    "icon": "book"
   },
@@ -630,7 +764,7 @@
      ]
     }
    ],
-   "column": "right",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   }

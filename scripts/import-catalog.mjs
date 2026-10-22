@@ -136,32 +136,29 @@ function parseTable($, table, subjects, lists, heading) {
   let label = null
   let orNext = false
 
-  let options = null
+  // Consecutive "Option 1", "Option 2" areas become one section whose rows carry their option.
+  let option = null
   const newArea = (title) => {
     const choice = choiceOf(title)
-    // Consecutive "Option 1", "Option 2" areas are alternatives: one row that takes any of their courses.
-    if (choice?.kind === 'option' && options) {
-      area = options.area
-      group = options.group
-      area.notes.push(`${title} is one alternative.`)
-      return
-    }
-    area = { title, slots: [], buckets: [], notes: [], skip: choice?.kind === 'skip' }
-    parts.push(area)
     group = null
     loose = null
-    options = null
+    if (choice?.kind === 'option') {
+      if (!option) {
+        area = { title: area?.title ?? heading ?? 'Options', slots: [], buckets: [], notes: [] }
+        parts.push(area)
+      }
+      option = title.replace(/:\s*$/, '')
+      return
+    }
+    option = null
+    area = { title, slots: [], buckets: [], notes: [], skip: choice?.kind === 'skip' }
+    parts.push(area)
     if (choice?.kind === 'credits') {
       group = { kind: 'credits', credits: choice.credits, codes: [], open: true, title }
       area.buckets.push(group)
-    } else if (choice?.kind === 'pick' || choice?.kind === 'option') {
-      group = { kind: 'pick', count: choice.count ?? 1, codes: [], open: true, label: choice.kind === 'option' ? 'One option' : title }
+    } else if (choice?.kind === 'pick') {
+      group = { kind: 'pick', count: choice.count ?? 1, codes: [], open: true, label: title }
       area.slots.push(group)
-      if (choice.kind === 'option') {
-        area.title = 'Options'
-        area.notes.push(`${title} is one alternative.`)
-        options = { area, group }
-      }
     }
   }
   const ensureArea = () => area ?? newArea(heading)
@@ -209,7 +206,7 @@ function parseTable($, table, subjects, lists, heading) {
       loose = null
       // "PHYS 1112 & PHYS 1116" requires both, so each gets a row.
       for (const code of codes) {
-        current = { label: code, codes: [code] }
+        current = { label: code, codes: [code], ...(option ? { option } : {}) }
         area.slots.push(current)
       }
       label = null
@@ -232,7 +229,7 @@ function parseTable($, table, subjects, lists, heading) {
         group = { kind: 'credits', credits: hours ?? count, codes: [], open: true, title: label ?? sentence }
         area.buckets.push(group)
       } else {
-        group = { kind: 'pick', count, codes: [], open: true, label: label ?? `${area.title ?? 'Choice'}` }
+        group = { kind: 'pick', count, codes: [], open: true, label: label ?? `${area.title ?? 'Choice'}`, ...(option ? { option } : {}) }
         area.slots.push(group)
       }
       loose = null
@@ -258,11 +255,11 @@ function parseTable($, table, subjects, lists, heading) {
   })
   // A long run of plain course rows with no stated count is an option list, not a list of required courses.
   for (const part of parts) {
-    const required = part.slots.filter((s) => !s.kind)
+    const required = part.slots.filter((s) => !s.kind && !s.option)
     if (required.length <= 8) continue
     part.slots = [
       { kind: 'pick', count: 1, label: part.title ?? 'Choice', codes: required.flatMap((s) => s.codes) },
-      ...part.slots.filter((s) => s.kind),
+      ...part.slots.filter((s) => s.kind || s.option),
     ]
     part.notes.unshift('The catalog lists these courses without a count here; check how many are required.')
   }
@@ -291,12 +288,17 @@ function toSections(parts, heading, idPrefix) {
         const rule = unique ? [{ codes: unique, reason: 'Not on this list in the catalog' }] : s.rule
         for (let i = 0; i < Math.min(s.count, 12); i++) {
           const label = unique && unique.length <= 3 ? unique.join(' / ') : s.label
-          slots.push({ id: `s${++n}`, label: s.count > 1 ? `${label} (${i + 1})` : label, ...(rule ? { rule } : {}) })
+          slots.push({ id: `s${++n}`, label: s.count > 1 ? `${label} (${i + 1})` : label, ...(rule ? { rule } : {}), ...(s.option ? { option: s.option } : {}) })
         }
         if (s.kind === 'loose' && s.note && !notes.includes(s.note)) notes.push(s.note)
       } else {
         const unique = [...new Set(s.codes)]
-        slots.push({ id: `s${++n}`, label: unique.length <= 3 ? unique.join(' / ') : `${unique[0]} or other`, rule: [{ codes: unique }] })
+        slots.push({
+          id: `s${++n}`,
+          label: unique.length <= 3 ? unique.join(' / ') : `${unique[0]} or other`,
+          rule: [{ codes: unique }],
+          ...(s.option ? { option: s.option } : {}),
+        })
       }
     }
     const note = notes.join(' ').slice(0, 600) || undefined

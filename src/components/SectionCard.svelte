@@ -73,7 +73,10 @@
   <div class="tbl">
     <div class="row head" aria-hidden="true"><span>Course</span><span>Cr</span><span>Sem</span><span>Grade</span><span>Notes</span></div>
     {#if section.type === 'slots'}
-      {#each result.rows as row (row.slot.id)}
+      {#each result.rows as row, i (row.slot.id)}
+        {#if row.slot.option && row.slot.option !== result.rows[i - 1]?.slot.option}
+          <div class="option-label">{result.rows.findIndex((r) => r.slot.option) === i ? '' : 'or '}{row.slot.option}</div>
+        {/if}
         {#if row.course}
           <CourseRow course={row.course} label={slotLabel(row.slot.label, row.course)} hint={result.groupOf[row.course.uid] ?? ''} />
         {:else}
@@ -104,6 +107,12 @@
     background: var(--card);
     border: 1px solid var(--line);
     min-width: 0;
+  }
+  .option-label {
+    padding: 6px 10px 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
   }
   .sec.dim {
     opacity: 0.55;

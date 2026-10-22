@@ -355,6 +355,18 @@ function bucketStatus(courses: PlanCourse[], minCredits: number, today: Date): S
   return 'empty'
 }
 
+/**
+ * Rows that count toward progress: every row without an option, plus the
+ * alternative closest to done (fewest open rows, then the first listed).
+ */
+function countedRows(rows: SlotRow[]): SlotRow[] {
+  const options = [...new Set(rows.map((r) => r.slot.option).filter((o): o is string => !!o))]
+  if (options.length === 0) return rows
+  const open = (option: string) => rows.filter((r) => r.slot.option === option && !r.course).length
+  const best = options.reduce((a, b) => (open(b) < open(a) ? b : a))
+  return rows.filter((r) => !r.slot.option || r.slot.option === best)
+}
+
 function evaluateSection(plan: Plan, section: Section, today: Date): SectionResult {
   const placed = sectionCourses(plan, section)
   const groupOf = section.groups ? assignGroups(placed, section.groups, section.constraints) : {}
@@ -378,13 +390,14 @@ function evaluateSection(plan: Plan, section: Section, today: Date): SectionResu
     slot,
     course: placed.find((c) => c.placement === placementOf(section, slot)) ?? null,
   }))
-  const filled = rows.filter((r) => r.course).length
+  const counted = countedRows(rows)
+  const filled = counted.filter((r) => r.course).length
   return {
-    section, rows, courses: placed, filled, total: rows.length, credits, creditsToGo: 0,
-    open: rows.length - filled,
-    complete: filled === rows.length && constraintsOk,
+    section, rows, courses: placed, filled, total: counted.length, credits, creditsToGo: 0,
+    open: counted.length - filled,
+    complete: filled === counted.length && constraintsOk,
     chips, groupOf,
-    units: rows.map((r) => (r.course ? termStatus(r.course.term, today) : 'empty')),
+    units: counted.map((r) => (r.course ? termStatus(r.course.term, today) : 'empty')),
   }
 }
 
