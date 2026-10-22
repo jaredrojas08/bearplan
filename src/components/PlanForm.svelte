@@ -45,7 +45,9 @@
   let gradOptions = $derived(termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)))
   let termCount = $derived(termIndex(gradTerm) - termIndex(entryTerm) + 1)
   let selectedTemplate = $derived(app.majors.find((t) => t.id === templateId))
-  let minorOptions = $derived(app.minorOptions.filter((m) => !minors.includes(m.id)))
+  // Minors still downloading; saving waits for them so none is silently left out.
+  let pendingMinors = $state<string[]>([])
+  let minorOptions = $derived(app.minorOptions.filter((m) => !minors.includes(m.id) && !pendingMinors.includes(m.id)))
   const minorName = (id: string) => app.minorOptions.find((m) => m.id === id)?.name ?? id
   let loadMessage = $state('')
 
@@ -62,9 +64,13 @@
     const select = event.currentTarget as HTMLSelectElement
     const id = select.value
     select.value = ''
-    if (!id) return
-    if ((await app.ensureTemplates([id])) === 'ok') minors = [...minors, id]
-    else loadMessage = `The ${minorName(id)} minor could not be downloaded. Check your connection.`
+    if (!id || minors.includes(id) || pendingMinors.includes(id)) return
+    pendingMinors = [...pendingMinors, id]
+    const status = await app.ensureTemplates([id])
+    pendingMinors = pendingMinors.filter((m) => m !== id)
+    if (status === 'ok') {
+      if (!minors.includes(id)) minors = [...minors, id]
+    } else loadMessage = `The ${minorName(id)} minor could not be downloaded. Check your connection.`
   }
   let offered = $derived(selectedTemplate?.concentrations ?? [])
   let maxConcentrations = $derived(selectedTemplate?.maxConcentrations ?? 1)
@@ -171,6 +177,7 @@
           {/each}
         </ul>
       {/if}
+      {#if pendingMinors.length}<span class="hint" role="status">Loading {pendingMinors.map(minorName).join(', ')}…</span>{/if}
       {#if minorOptions.length}
         <select id="minor-pick" onchange={addMinor}>
           <option value="">Add a minor…</option>
@@ -206,7 +213,7 @@
   <p class="note">{termCount} terms. {statusHint}</p>
   <div class="actions">
     {@render secondary?.()}
-    <button type="submit" class="btn primary big" disabled={!selectedTemplate}>{submitLabel}</button>
+    <button type="submit" class="btn primary big" disabled={!selectedTemplate || pendingMinors.length > 0}>{submitLabel}</button>
   </div>
 </form>
 
