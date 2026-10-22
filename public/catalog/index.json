@@ -1026,12 +1026,6 @@
   "college": "College of Agriculture and Life Sciences, College of Human Ecology"
  },
  {
-  "id": "operations-research-engineering-bs",
-  "kind": "major",
-  "name": "Operations Research and Engineering (BS)",
-  "college": "Duffield College of Engineering"
- },
- {
   "id": "operations-research-management-science-minor",
   "kind": "minor",
   "name": "Operations Research and Management Science",

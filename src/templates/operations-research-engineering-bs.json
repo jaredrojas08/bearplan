@@ -1,0 +1,887 @@
+{
+  "id": "operations-research-engineering-bs",
+  "name": "Operations Research and Engineering (BS)",
+  "college": "Engineering",
+  "source": "https://catalog.cornell.edu/programs/operations-research-engineering-bs/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 125,
+  "totalCreditsNote": "125 cr minimum per the 2026-27 catalog. Confirm with your advisor.",
+  "footnote": "Math courses need a C- or better before the next course in the sequence. Engineering Communications can double as a Liberal Studies, ORIE or Advisor-Approved course.",
+  "filters": [
+    {
+      "id": "college",
+      "label": "College",
+      "icon": "book"
+    },
+    {
+      "id": "major",
+      "label": "ORIE",
+      "icon": "sigma"
+    },
+    {
+      "id": "electives",
+      "label": "Electives",
+      "icon": "star"
+    }
+  ],
+  "failingGrades": [
+    "S",
+    "SX",
+    "U",
+    "UX",
+    "D+",
+    "D",
+    "D-",
+    "F"
+  ],
+  "sections": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "column": "left",
+      "filter": "college",
+      "icon": "pen",
+      "leftLabel": "FWS",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "fws1",
+          "label": "FWS 1",
+          "rule": [
+            {
+              "distributions": [
+                "FWS",
+                "WRT"
+              ],
+              "reason": "Not a writing seminar"
+            }
+          ]
+        },
+        {
+          "id": "fws2",
+          "label": "FWS 2",
+          "rule": [
+            {
+              "distributions": [
+                "FWS",
+                "WRT"
+              ],
+              "reason": "Not a writing seminar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libstudies",
+      "title": "Liberal Studies",
+      "column": "left",
+      "filter": "college",
+      "icon": "book",
+      "note": "6 courses \u00b7 18+ cr \u00b7 2 at 2000+ \u00b7 3 of 7 groups \u00b7 one 3+ cr course from Group 7 (Race & Equity) \u00b7 max 2 from Group 6 (CE) \u00b7 a multi-category course counts once",
+      "type": "slots",
+      "groups": [
+        {
+          "id": "G1",
+          "name": "Cultural Analysis, Literature and the Arts",
+          "categories": [
+            "CA",
+            "LA",
+            "LAD",
+            "ALC",
+            "SCD-HA"
+          ]
+        },
+        {
+          "id": "G2",
+          "name": "Historical Analysis",
+          "categories": [
+            "HA",
+            "HST"
+          ]
+        },
+        {
+          "id": "G3",
+          "name": "Ethics, Cognition, and Moral Reasoning",
+          "categories": [
+            "KCM",
+            "ETM"
+          ]
+        },
+        {
+          "id": "G4",
+          "name": "Social Science and Global Citizenship",
+          "categories": [
+            "SBA",
+            "SSC",
+            "GLC"
+          ]
+        },
+        {
+          "id": "G5",
+          "name": "Foreign Languages",
+          "categories": [
+            "FL"
+          ]
+        },
+        {
+          "id": "G6",
+          "name": "Communications in Engineering",
+          "categories": [
+            "CE"
+          ]
+        },
+        {
+          "id": "G7",
+          "name": "Race and Equity",
+          "categories": [
+            "SCD-AS",
+            "D-AG"
+          ]
+        }
+      ],
+      "slots": [
+        {
+          "id": "ls1",
+          "label": "LS 1",
+          "rule": [
+            {
+              "distributions": [
+                "CA",
+                "LA",
+                "LAD",
+                "ALC",
+                "SCD-HA",
+                "HA",
+                "HST",
+                "KCM",
+                "ETM",
+                "SBA",
+                "SSC",
+                "GLC",
+                "FL",
+                "CE",
+                "SCD-AS",
+                "D-AG"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls2",
+          "label": "LS 2",
+          "rule": [
+            {
+              "distributions": [
+                "CA",
+                "LA",
+                "LAD",
+                "ALC",
+                "SCD-HA",
+                "HA",
+                "HST",
+                "KCM",
+                "ETM",
+                "SBA",
+                "SSC",
+                "GLC",
+                "FL",
+                "CE",
+                "SCD-AS",
+                "D-AG"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls3",
+          "label": "LS 3",
+          "rule": [
+            {
+              "distributions": [
+                "CA",
+                "LA",
+                "LAD",
+                "ALC",
+                "SCD-HA",
+                "HA",
+                "HST",
+                "KCM",
+                "ETM",
+                "SBA",
+                "SSC",
+                "GLC",
+                "FL",
+                "CE",
+                "SCD-AS",
+                "D-AG"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls4",
+          "label": "LS 4",
+          "rule": [
+            {
+              "distributions": [
+                "CA",
+                "LA",
+                "LAD",
+                "ALC",
+                "SCD-HA",
+                "HA",
+                "HST",
+                "KCM",
+                "ETM",
+                "SBA",
+                "SSC",
+                "GLC",
+                "FL",
+                "CE",
+                "SCD-AS",
+                "D-AG"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls5",
+          "label": "LS 5",
+          "rule": [
+            {
+              "distributions": [
+                "CA",
+                "LA",
+                "LAD",
+                "ALC",
+                "SCD-HA",
+                "HA",
+                "HST",
+                "KCM",
+                "ETM",
+                "SBA",
+                "SSC",
+                "GLC",
+                "FL",
+                "CE",
+                "SCD-AS",
+                "D-AG"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ls6",
+          "label": "LS 6",
+          "rule": [
+            {
+              "distributions": [
+                "CA",
+                "LA",
+                "LAD",
+                "ALC",
+                "SCD-HA",
+                "HA",
+                "HST",
+                "KCM",
+                "ETM",
+                "SBA",
+                "SSC",
+                "GLC",
+                "FL",
+                "CE",
+                "SCD-AS",
+                "D-AG"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Credits",
+          "credits": 18
+        },
+        {
+          "type": "minCount",
+          "label": "2000+",
+          "count": 2,
+          "match": {
+            "minLevel": 2000
+          }
+        },
+        {
+          "type": "minGroups",
+          "label": "Groups",
+          "count": 3
+        },
+        {
+          "type": "groupMinCredits",
+          "label": "Race & Equity",
+          "group": "G7",
+          "credits": 3
+        },
+        {
+          "type": "groupMaxCount",
+          "label": "CE",
+          "group": "G6",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "title": "Mathematics",
+      "column": "left",
+      "filter": "college",
+      "icon": "sigma",
+      "note": "MATH 2930 matters for financial engineering and is a prerequisite for PHYS 2214.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "m1",
+          "label": "MATH 1910",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1910"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "label": "MATH 1920",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1920"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "label": "MATH 2940",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2940"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "label": "MATH 2930 / CS 2800 / MATH 3040",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2930",
+                "CS 2800",
+                "CS 2802",
+                "MATH 3040"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "title": "Physics",
+      "column": "left",
+      "filter": "college",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "p1",
+          "label": "PHYS 1112 / 1116",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1112",
+                "PHYS 1116"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "label": "PHYS 1110",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "label": "PHYS 2213 / 2217",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2213",
+                "PHYS 2217"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fourth",
+      "title": "Fourth Science or Math",
+      "column": "left",
+      "filter": "college",
+      "icon": "flask",
+      "leftLabel": "Fourth course",
+      "note": "PHYS 2214, CHEM 2080 with 2081, CHEM 2150, or a math option not used above (MATH 2930, CS 2800, MATH 3040, 3110, 3360).",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "f1",
+          "label": "PHYS 2214 or option",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2214",
+                "PHYS 2218",
+                "CHEM 2080",
+                "CHEM 2150",
+                "MATH 2930",
+                "CS 2800",
+                "CS 2802",
+                "MATH 3040",
+                "MATH 3110",
+                "MATH 3360"
+              ],
+              "reason": "Not one of the fourth-course options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chem",
+      "title": "Chemistry",
+      "column": "left",
+      "filter": "college",
+      "icon": "flask",
+      "note": "CHEM 2090 is taken with its lab, CHEM 2091.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "CHEM 2090 / 2150",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 2090",
+                "CHEM 2150"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computing",
+      "title": "Computing and Distributions",
+      "column": "left",
+      "filter": "college",
+      "icon": "code",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "cs",
+          "label": "CS 1110 / 1112",
+          "rule": [
+            {
+              "codes": [
+                "CS 1110",
+                "CS 1112"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "engri",
+          "label": "ENGRI intro",
+          "rule": [
+            {
+              "subjects": [
+                "ENGRI"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d1",
+          "label": "ENGRD 2700",
+          "rule": [
+            {
+              "codes": [
+                "ENGRD 2700"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d2",
+          "label": "ENGRD / CS 2110",
+          "rule": [
+            {
+              "codes": [
+                "ENGRD 2110",
+                "CS 2110",
+                "ENGRD 2112",
+                "CS 2112"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "left",
+      "filter": "college",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test. PE credits do not count toward the degree total.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Required Major Courses",
+      "column": "right",
+      "filter": "major",
+      "icon": "sigma",
+      "letterGrade": true,
+      "note": "ORIE courses need a C- or better.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "r1",
+          "label": "ORIE 3120",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 3120"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "ORIE 3150 or math option",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 3150",
+                "MATH 3110",
+                "MATH 4130",
+                "MATH 4310",
+                "MATH 4330"
+              ]
+            },
+            {
+              "subjects": [
+                "ORIE"
+              ],
+              "minLevel": 6000
+            }
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "ORIE 3300",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 3300"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "r4",
+          "label": "ORIE 3310",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 3310"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "r5",
+          "label": "ORIE 3500",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 3500"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "r6",
+          "label": "ORIE 3510",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 3510"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "r7",
+          "label": "ORIE 4580",
+          "rule": [
+            {
+              "codes": [
+                "ORIE 4580"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orie-electives",
+      "title": "ORIE Electives",
+      "column": "right",
+      "filter": "electives",
+      "icon": "star",
+      "leftLabel": "ORIE electives",
+      "letterGrade": true,
+      "note": "9 credits of ORIE 4000+ (not ORIE 4152, 5142, 5920 or 9000), or ORIE 3320 and 3741. At most 3 credits of ORIE 4990, and 3 combined of ORIE 4900, 4999 and CS 4999.",
+      "type": "creditBucket",
+      "minCredits": 9,
+      "rule": [
+        {
+          "subjects": [
+            "ORIE"
+          ],
+          "minLevel": 4000,
+          "excludeCodes": [
+            "ORIE 3120",
+            "ORIE 3300",
+            "ORIE 3310",
+            "ORIE 3500",
+            "ORIE 3510",
+            "ORIE 4580",
+            "ORIE 4152",
+            "ORIE 5142",
+            "ORIE 5920",
+            "ORIE 9000"
+          ],
+          "reason": "Needs an ORIE 4000+ course that isn't a required course"
+        },
+        {
+          "codes": [
+            "ORIE 3320",
+            "ORIE 3741"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "major-approved",
+      "title": "Major-Approved Electives",
+      "column": "right",
+      "filter": "electives",
+      "icon": "star",
+      "leftLabel": "Major-Approved",
+      "letterGrade": true,
+      "note": "12 credits from the ORIE approved list, 2000+: at least 6 from Category A and at least 6 outside ORIE. At most 3 credits of research, project team and CAships combined.",
+      "type": "creditBucket",
+      "minCredits": 12,
+      "rule": [
+        {
+          "minLevel": 2000,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "reason": "Needs a technical course numbered 2000 or above"
+        }
+      ]
+    },
+    {
+      "id": "advisor-approved",
+      "title": "Advisor-Approved Electives",
+      "column": "right",
+      "filter": "electives",
+      "icon": "star",
+      "leftLabel": "Advisor-Approved",
+      "note": "6 credits agreed on with your faculty advisor.",
+      "type": "creditBucket",
+      "minCredits": 6,
+      "rule": [
+        {
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ]
+    }
+  ],
+  "concentrations": [
+    {
+      "id": "data-decisions-ai",
+      "name": "Focused electives: Data, Decisions, and AI",
+      "sections": [
+        {
+          "id": "ai-focus",
+          "title": "Data, Decisions, and AI",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "note": "Three of ORIE 3320, 3741, 4570, 4740, 4750; CS 3700; CS 1340; and one AI-minor elective that is an ORIE course or has CS 2800 as a prerequisite. Confirm with ORIE whether this focus applies to you.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "Focused elective",
+              "rule": [
+                {
+                  "codes": [
+                    "ORIE 3320",
+                    "ORIE 3741",
+                    "ORIE 4570",
+                    "ORIE 4740",
+                    "ORIE 4750"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a2",
+              "label": "Focused elective",
+              "rule": [
+                {
+                  "codes": [
+                    "ORIE 3320",
+                    "ORIE 3741",
+                    "ORIE 4570",
+                    "ORIE 4740",
+                    "ORIE 4750"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a3",
+              "label": "Focused elective",
+              "rule": [
+                {
+                  "codes": [
+                    "ORIE 3320",
+                    "ORIE 3741",
+                    "ORIE 4570",
+                    "ORIE 4740",
+                    "ORIE 4750"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a4",
+              "label": "CS 3700",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 3700"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a5",
+              "label": "CS 1340",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 1340"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a6",
+              "label": "AI minor elective"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "ecr",
+      "title": "Engineering Communications",
+      "codes": [
+        "ENGRC 3020",
+        "ENGRC 3023",
+        "ENGRC 3025",
+        "ENGRC 3026",
+        "ENGRC 3027",
+        "ENGRC 3120",
+        "ENGRC 3152",
+        "ENGRC 3340",
+        "ENGRC 3341",
+        "ENGRC 3350",
+        "ENGRC 3500",
+        "ENGRC 3610",
+        "ENGRC 3700",
+        "ENGRC 4152",
+        "ENGRC 4590",
+        "ORIE 4100",
+        "COMM 3020",
+        "COMM 3030",
+        "HADM 3670"
+      ],
+      "metText": "satisfied by {code} (also counts where it sits)",
+      "missText": "not yet. Can double as a Liberal Studies, Advisor-Approved or major course."
+    }
+  ]
+}
