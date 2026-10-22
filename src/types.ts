@@ -39,6 +39,7 @@ export type Constraint =
   | { type: 'minCredits'; label: string; credits: number }
   | { type: 'minCount'; label: string; count: number; match: Match }
   | { type: 'maxCount'; label: string; count: number; match: Match; reason: string }
+  | { type: 'maxCredits'; label: string; credits: number; match: Match; reason: string }
   | { type: 'minGroups'; label: string; count: number }
   | { type: 'groupMinCredits'; label: string; group: string; credits: number }
   | { type: 'groupMaxCount'; label: string; group: string; count: number }

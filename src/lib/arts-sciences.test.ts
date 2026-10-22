@@ -77,3 +77,16 @@ describe('Psychology research credit', () => {
     expect(warnings['PSYCH 3220@psych']).toEqual(['S/U in letter-grade row'])
   })
 })
+
+describe('Psychology research cap', () => {
+  it('refuses research credit past 12 and keeps SX failing', () => {
+    const research = (uid: string, credits: number) => ({ ...course('PSYCH 4700', 'psych', [], credits), uid })
+    const plan = planOf(psychology, [research('r1', 4), research('r2', 4), research('r3', 4)])
+    expect(placeFailure(plan, psychology as Template, { code: 'PSYCH 4710', credits: 3 }, 'psych')).toBe(
+      'Only 12 credits of PSYCH 4700 and 4710 count; put the rest in Additional Space',
+    )
+    expect(placeFailure(plan, psychology as Template, { code: 'PSYCH 3220', credits: 3 }, 'psych')).toBeNull()
+    const sx = summarize(psychology, [{ ...course('PSYCH 4700', 'psych', [], 3), grade: 'SX' }]).warnings
+    expect(sx['PSYCH 4700@psych']).toEqual(['S/U in letter-grade row'])
+  })
+})
