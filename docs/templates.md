@@ -113,6 +113,7 @@ Constraints check a whole section. They show as chips under the title, and unmet
 | `minCredits` | `credits` | Liberal Studies needs 18 credits. |
 | `minCount` | `count`, `match` | At least 2 courses with `{ "minLevel": 2000 }`. |
 | `maxCount` | `count`, `match`, `reason` | At most one 2000-level technical elective. Drops that would break it are refused with `reason`. |
+| `maxCredits` | `credits`, `match`, `reason` | At most 12 credits of research. Like `maxCount`, but on credits. |
 | `minGroups` | `count` | Courses from at least 3 groups. |
 | `groupMinCredits` | `group`, `credits` | One course of at least 3 credits in Group 7. |
 | `groupMaxCount` | `group`, `count` | At most 2 courses from Group 6. |
