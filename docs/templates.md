@@ -63,7 +63,7 @@ The CS template in [`src/templates/cs-engineering-fa24.json`](../src/templates/c
 - `column` is `left` or `right` for the "All" view.
 - `icon` is one of `pen`, `book`, `flask`, `sigma`, `code`, `star`, `run`, `plus`.
 - `leftLabel` is the short name in "What's left". It defaults to the title.
-- `letterGrade: true` flags S/U and failing grades in the section.
+- `letterGrade: true` flags S/U and failing grades in the section. `suAllowedCodes` lists courses that may still be taken S/U there, like research credit (an S passes; a U is still flagged).
 - `swimTest: true` adds the swim test checkbox, and `spcl: true` adds the area-name field.
 - `excludeFromCredits: true` keeps the section's credits out of the degree total (PE).
 
@@ -113,6 +113,7 @@ Constraints check a whole section. They show as chips under the title, and unmet
 | `minCredits` | `credits` | Liberal Studies needs 18 credits. |
 | `minCount` | `count`, `match` | At least 2 courses with `{ "minLevel": 2000 }`. |
 | `maxCount` | `count`, `match`, `reason` | At most one 2000-level technical elective. Drops that would break it are refused with `reason`. |
+| `maxCredits` | `credits`, `match`, `reason` | At most 12 credits of research. Like `maxCount`, but on credits. |
 | `minGroups` | `count` | Courses from at least 3 groups. |
 | `groupMinCredits` | `group`, `credits` | One course of at least 3 credits in Group 7. |
 | `groupMaxCount` | `group`, `count` | At most 2 courses from Group 6. |

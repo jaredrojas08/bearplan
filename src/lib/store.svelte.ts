@@ -3,7 +3,11 @@ import aemTemplate from '../templates/aem-cals-2025.json'
 import aemPre2025Template from '../templates/aem-cals-pre2025.json'
 import businessMinor from '../templates/business-minor.json'
 import businessMinorEngineers from '../templates/business-minor-engineers.json'
+import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
+import economicsTemplate from '../templates/economics-ba.json'
+import governmentTemplate from '../templates/government-ba.json'
+import psychologyTemplate from '../templates/psychology-ba.json'
 import { ADDITIONAL, type CatalogCourse, type CatalogEntry, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { buildIndex, type SearchIndexEntry } from './search'
 import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, withConcentrations, withMinors, type CourseFacts } from './requirements'
@@ -41,7 +45,17 @@ const PLAN_KEY = 'bearplan:plan'
 const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
-export const BUILT_IN_TEMPLATES: Template[] = [csTemplate, aemTemplate, aemPre2025Template, businessMinor, businessMinorEngineers] as Template[]
+export const BUILT_IN_TEMPLATES: Template[] = [
+  csTemplate,
+  aemTemplate,
+  aemPre2025Template,
+  csBaTemplate,
+  economicsTemplate,
+  governmentTemplate,
+  psychologyTemplate,
+  businessMinor,
+  businessMinorEngineers,
+] as Template[]
 
 function readJson(key: string): unknown {
   try {

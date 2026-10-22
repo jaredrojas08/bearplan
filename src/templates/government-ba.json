@@ -1,0 +1,609 @@
+{
+  "id": "government-ba",
+  "name": "Government (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/government-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "footnote": "Major courses need a letter grade of C- or better, under a GOVT number. At most half the credits may come from outside Cornell.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introductory Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "note": "Two of GOVT 1111, 1313, 1615 or 1616 (not both), and 1817.",
+      "constraints": [
+        {
+          "type": "maxCount",
+          "label": "1615 / 1616",
+          "count": 1,
+          "match": {
+            "codes": [
+              "GOVT 1615",
+              "GOVT 1616"
+            ]
+          },
+          "reason": "GOVT 1615 and 1616 can't both count"
+        }
+      ],
+      "type": "slots",
+      "slots": [
+        {
+          "id": "g1",
+          "label": "Intro GOVT",
+          "rule": [
+            {
+              "codes": [
+                "GOVT 1111",
+                "GOVT 1313",
+                "GOVT 1615",
+                "GOVT 1616",
+                "GOVT 1817"
+              ],
+              "reason": "Only GOVT 1111, 1313, 1615, 1616 or 1817"
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "label": "Intro GOVT",
+          "rule": [
+            {
+              "codes": [
+                "GOVT 1111",
+                "GOVT 1313",
+                "GOVT 1615",
+                "GOVT 1616",
+                "GOVT 1817"
+              ],
+              "reason": "Only GOVT 1111, 1313, 1615, 1616 or 1817"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "more-govt",
+      "title": "Additional Government Courses",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "minCredits": 30,
+      "leftLabel": "30 GOVT credits",
+      "letterGrade": true,
+      "note": "30 more credits of GOVT-numbered courses, including one seminar (GOVT-SEM) and a course in 3 of the 4 subfields: American (AM), Comparative (CP), Political Theory (PT), International Relations (IR). At most one more 1000-level course; no FWS.",
+      "rule": [
+        {
+          "subjects": [
+            "GOVT"
+          ],
+          "reason": "Needs a GOVT-numbered course (take cross-listed courses under GOVT)"
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "Seminar",
+          "count": 1,
+          "match": {
+            "codes": [
+              "GOVT 4000",
+              "GOVT 4011",
+              "GOVT 4021",
+              "GOVT 4037",
+              "GOVT 4194",
+              "GOVT 4503",
+              "GOVT 4827",
+              "GOVT 4949",
+              "GOVT 4959"
+            ]
+          }
+        },
+        {
+          "type": "minGroups",
+          "label": "Subfields",
+          "count": 3
+        },
+        {
+          "type": "maxCount",
+          "label": "1000-level",
+          "count": 1,
+          "match": {
+            "maxLevel": 1999
+          },
+          "reason": "Only one more 1000-level course counts"
+        }
+      ],
+      "type": "creditBucket",
+      "groups": [
+        {
+          "id": "AM",
+          "name": "American Government",
+          "codes": [
+            "GOVT 1111",
+            "GOVT 2011",
+            "GOVT 2031",
+            "GOVT 2152",
+            "GOVT 2162",
+            "GOVT 2274",
+            "GOVT 3032",
+            "GOVT 3042",
+            "GOVT 3061",
+            "GOVT 3072",
+            "GOVT 3112",
+            "GOVT 3121",
+            "GOVT 3122",
+            "GOVT 3132",
+            "GOVT 3141",
+            "GOVT 3161",
+            "GOVT 3189",
+            "GOVT 3251",
+            "GOVT 3252",
+            "GOVT 3261",
+            "GOVT 3547",
+            "GOVT 3557",
+            "GOVT 3583",
+            "GOVT 3999",
+            "GOVT 4011",
+            "GOVT 4021",
+            "GOVT 6011",
+            "GOVT 6019",
+            "GOVT 6022",
+            "GOVT 6029",
+            "GOVT 6031",
+            "GOVT 6032",
+            "GOVT 6089",
+            "GOVT 6129",
+            "GOVT 6132",
+            "GOVT 6211",
+            "GOVT 6223",
+            "GOVT 6241",
+            "GOVT 6323",
+            "GOVT 6461"
+          ]
+        },
+        {
+          "id": "CP",
+          "name": "Comparative Politics",
+          "codes": [
+            "GOVT 1313",
+            "GOVT 2012",
+            "GOVT 2264",
+            "GOVT 2274",
+            "GOVT 2304",
+            "GOVT 2444",
+            "GOVT 2543",
+            "GOVT 2553",
+            "GOVT 3251",
+            "GOVT 3273",
+            "GOVT 3282",
+            "GOVT 3284",
+            "GOVT 3293",
+            "GOVT 3313",
+            "GOVT 3323",
+            "GOVT 3353",
+            "GOVT 3394",
+            "GOVT 3443",
+            "GOVT 3547",
+            "GOVT 3557",
+            "GOVT 3583",
+            "GOVT 3613",
+            "GOVT 3614",
+            "GOVT 3623",
+            "GOVT 3805",
+            "GOVT 6039",
+            "GOVT 6053",
+            "GOVT 6109",
+            "GOVT 6202",
+            "GOVT 6223",
+            "GOVT 6241",
+            "GOVT 6284",
+            "GOVT 6294",
+            "GOVT 6304",
+            "GOVT 6323",
+            "GOVT 6353",
+            "GOVT 6354",
+            "GOVT 6443",
+            "GOVT 6483",
+            "GOVT 6594",
+            "GOVT 6877",
+            "GOVT 7073",
+            "GOVT 7274"
+          ]
+        },
+        {
+          "id": "PT",
+          "name": "Political Theory",
+          "codes": [
+            "GOVT 1615",
+            "GOVT 1616",
+            "GOVT 1626",
+            "GOVT 2635",
+            "GOVT 2655",
+            "GOVT 2665",
+            "GOVT 2785",
+            "GOVT 3072",
+            "GOVT 3265",
+            "GOVT 3596",
+            "GOVT 3686",
+            "GOVT 3715",
+            "GOVT 3726",
+            "GOVT 3736",
+            "GOVT 3796",
+            "GOVT 3805",
+            "GOVT 6075",
+            "GOVT 6122",
+            "GOVT 6426",
+            "GOVT 6585",
+            "GOVT 6615",
+            "GOVT 6645",
+            "GOVT 6686",
+            "GOVT 6815",
+            "GOVT 6836",
+            "GOVT 6846",
+            "GOVT 6856",
+            "GOVT 6865",
+            "GOVT 6875",
+            "GOVT 6885"
+          ]
+        },
+        {
+          "id": "IR",
+          "name": "International Relations",
+          "codes": [
+            "GOVT 1817",
+            "GOVT 2264",
+            "GOVT 2817",
+            "GOVT 2847",
+            "GOVT 3172",
+            "GOVT 3547",
+            "GOVT 3557",
+            "GOVT 3617",
+            "GOVT 3777",
+            "GOVT 3857",
+            "GOVT 3867",
+            "GOVT 3947",
+            "GOVT 3967",
+            "GOVT 4827",
+            "GOVT 6067",
+            "GOVT 6109",
+            "GOVT 6284",
+            "GOVT 6817",
+            "GOVT 6827",
+            "GOVT 6837",
+            "GOVT 6857",
+            "GOVT 6877",
+            "GOVT 6885",
+            "GOVT 6897",
+            "GOVT 6907",
+            "GOVT 7274",
+            "GOVT 7777",
+            "GOVT 7937"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}

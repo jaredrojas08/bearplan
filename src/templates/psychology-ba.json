@@ -1,0 +1,516 @@
+{
+  "repeatableCodes": [
+    "PSYCH 4700",
+    "PSYCH 4710"
+  ],
+  "id": "psychology-ba",
+  "name": "Psychology (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/psychology-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "footnote": "Major courses need a C- or better; only PSYCH 4700 and 4710 may be S/U. Statistics and research methods are due before senior year.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "psych",
+      "title": "Psychology Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "minCredits": 40,
+      "leftLabel": "Psychology credits",
+      "letterGrade": true,
+      "note": "40 credits of psychology, including prerequisites, each with a C- or better. Breadth: one course in 3 of the 4 areas. Depth: one 3000-level and one 4000-level course. Up to 12 credits of PSYCH 4700/4710, which may be S/U. Courses from other departments need your advisor's approval.",
+      "rule": [
+        {
+          "subjects": [
+            "PSYCH"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        },
+        {
+          "codes": [
+            "HD 2180",
+            "HD 2200",
+            "HD 3290",
+            "HD 3530",
+            "PSYCH 1102",
+            "PSYCH 1131",
+            "PSYCH 2050",
+            "PSYCH 2090",
+            "PSYCH 2150",
+            "PSYCH 2230",
+            "PSYCH 2250",
+            "PSYCH 2415",
+            "PSYCH 2580",
+            "PSYCH 2650",
+            "PSYCH 2750",
+            "PSYCH 2800",
+            "PSYCH 2940",
+            "PSYCH 3135",
+            "PSYCH 3140",
+            "PSYCH 3150",
+            "PSYCH 3190",
+            "PSYCH 3220",
+            "PSYCH 3420",
+            "PSYCH 3450",
+            "PSYCH 3820",
+            "PSYCH 4150",
+            "PSYCH 4230",
+            "PSYCH 4270",
+            "PSYCH 4331",
+            "PSYCH 4550",
+            "PSYCH 4940"
+          ]
+        }
+      ],
+      "suAllowedCodes": [
+        "PSYCH 4700",
+        "PSYCH 4710"
+      ],
+      "constraints": [
+        {
+          "type": "minGroups",
+          "label": "Breadth areas",
+          "count": 3
+        },
+        {
+          "type": "minCount",
+          "label": "3000-level",
+          "count": 1,
+          "match": {
+            "minLevel": 3000,
+            "maxLevel": 3999
+          }
+        },
+        {
+          "type": "minCount",
+          "label": "4000-level",
+          "count": 1,
+          "match": {
+            "minLevel": 4000,
+            "maxLevel": 4999
+          }
+        },
+        {
+          "type": "maxCredits",
+          "label": "Research",
+          "credits": 12,
+          "match": {
+            "codes": [
+              "PSYCH 4700",
+              "PSYCH 4710"
+            ]
+          },
+          "reason": "Only 12 credits of PSYCH 4700 and 4710 count; put the rest in Additional Space"
+        }
+      ],
+      "type": "creditBucket",
+      "groups": [
+        {
+          "id": "PC",
+          "name": "Perception and Cognition",
+          "codes": [
+            "HD 2200",
+            "PSYCH 1102",
+            "PSYCH 2050",
+            "PSYCH 2150",
+            "PSYCH 2580",
+            "PSYCH 3140",
+            "PSYCH 3190",
+            "PSYCH 3420",
+            "PSYCH 4150",
+            "PSYCH 4270",
+            "PSYCH 4331"
+          ]
+        },
+        {
+          "id": "DEV",
+          "name": "Development",
+          "codes": [
+            "HD 2180",
+            "HD 3290",
+            "PSYCH 1131",
+            "PSYCH 2090",
+            "PSYCH 4550"
+          ]
+        },
+        {
+          "id": "CBN",
+          "name": "Cognitive and Behavioral Neuroscience",
+          "codes": [
+            "HD 2200",
+            "HD 3530",
+            "PSYCH 2230",
+            "PSYCH 3150",
+            "PSYCH 3220",
+            "PSYCH 4230"
+          ]
+        },
+        {
+          "id": "SP",
+          "name": "Social and Personality Psychology",
+          "codes": [
+            "PSYCH 2250",
+            "PSYCH 2415",
+            "PSYCH 2650",
+            "PSYCH 2750",
+            "PSYCH 2800",
+            "PSYCH 2940",
+            "PSYCH 3135",
+            "PSYCH 3450",
+            "PSYCH 3820",
+            "PSYCH 4940"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "psych-stats",
+      "title": "Statistics",
+      "codes": [
+        "PSYCH 2500"
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs PSYCH 2500, an approved statistics course in another department, 6 transfer credits of statistics, or the exemption exam, before senior year."
+    },
+    {
+      "id": "psych-methods",
+      "title": "Research Methods",
+      "codes": [
+        "BIOG 1500",
+        "COMM 2820",
+        "GOVT 3999",
+        "HD 4765",
+        "PSYCH 2830",
+        "PSYCH 2930",
+        "PSYCH 3020",
+        "PSYCH 3420",
+        "STS 2011"
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs one research methods or scientific literacy course with a C- or better, before senior year."
+    },
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}

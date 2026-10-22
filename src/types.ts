@@ -39,6 +39,7 @@ export type Constraint =
   | { type: 'minCredits'; label: string; credits: number }
   | { type: 'minCount'; label: string; count: number; match: Match }
   | { type: 'maxCount'; label: string; count: number; match: Match; reason: string }
+  | { type: 'maxCredits'; label: string; credits: number; match: Match; reason: string }
   | { type: 'minGroups'; label: string; count: number }
   | { type: 'groupMinCredits'; label: string; group: string; credits: number }
   | { type: 'groupMaxCount'; label: string; group: string; count: number }
@@ -64,6 +65,8 @@ export interface Section {
   /** Liberal Studies style groups; courses are assigned to them automatically. */
   groups?: DistributionGroup[]
   letterGrade?: boolean
+  /** Courses in a letterGrade section that may still be taken S/U, like research credit. */
+  suAllowedCodes?: string[]
   swimTest?: boolean
   spcl?: boolean
   /** Credits here don't count toward the degree total (PE). */
