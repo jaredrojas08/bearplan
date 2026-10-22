@@ -1,0 +1,29 @@
+{
+ "id": "religious-studies-minor",
+ "kind": "minor",
+ "name": "Religious Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/religious-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Three courses must be at the 3000-level or above. One 4000-level course. Courses must be taken at Cornell or with an approved Cornell program First-Year Writing Seminars cannot count towards the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

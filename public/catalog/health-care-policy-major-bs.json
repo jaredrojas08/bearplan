@@ -1,0 +1,157 @@
+{
+ "id": "health-care-policy-major-bs",
+ "name": "Health Care Policy (BS)",
+ "college": "Brooks School of Public Policy",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/health-care-policy-major-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "public-policy-core-courses",
+   "title": "Public Policy Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Public Policy Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 1111",
+        "PUBPOL 2000",
+        "ECON 3030",
+        "PUBPOL 2101",
+        "PUBPOL 2301",
+        "PUBPOL 2350",
+        "PUBPOL 2370",
+        "PUBPOL 2830",
+        "PUBPOL 3100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "demography",
+   "title": "Demography",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2030 / PUBPOL 3280",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2030",
+        "PUBPOL 3280"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or Score of 5 on AP Microeconomics exam or Score of 7 on IB HL Economics exam",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introduction-to-sociology",
+   "title": "Introduction to Sociology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2250 / SOC 1101",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2250",
+        "SOC 1101"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "pre-med-electives",
+   "title": "Pre-Med Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Pre-Med Electives",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOG 1500",
+        "BIOMG 1350",
+        "BIOMG 3300",
+        "BIOMG 3310",
+        "BIOMG 3320",
+        "BIOMG 3350",
+        "BIOMI 2900",
+        "CHEM 2070",
+        "CHEM 2071",
+        "CHEM 2080",
+        "CHEM 2081",
+        "CHEM 3530",
+        "CHEM 3570",
+        "CHEM 3580",
+        "NS 3200",
+        "PHYS 2207",
+        "PHYS 2208"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

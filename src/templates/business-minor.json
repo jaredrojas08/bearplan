@@ -3,6 +3,7 @@
   "kind": "minor",
   "name": "Business",
   "college": "SC Johnson College of Business",
+  "source": "https://catalog.cornell.edu/programs/business-minor/",
   "matriculatedFrom": "FA22",
   "minUniqueCredits": 12,
   "filters": [],

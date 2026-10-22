@@ -1,0 +1,37 @@
+{
+ "id": "fiber-science-minor",
+ "kind": "minor",
+ "name": "Fiber Science",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fiber-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "FSAD"
+     ],
+     "reason": "Needs a FSAD course"
+    }
+   ],
+   "note": "Students must complete the following requirements: FSAD 3350 Fiber Science FSAD 4360 Fiber Materials FSAD 4460 Nanotechnology in Fibers and Textiles One 6000 level FSAD course One additional FSAD course Only FSAD courses may be used to fulfill the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

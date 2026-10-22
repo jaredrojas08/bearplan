@@ -1,0 +1,415 @@
+{
+ "id": "dyson-business-minor-life-sciences",
+ "kind": "minor",
+ "name": "Dyson Business Minor for Life Sciences",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/dyson-business-minor-life-sciences/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110 / ECON 3030 / PUBPOL 2000",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110",
+        "ECON 3030",
+        "PUBPOL 2000"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "management-marketing",
+   "title": "Management/Marketing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Management/Marketing",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1200",
+        "AEM 2400",
+        "HADM 1810",
+        "HADM 2410",
+        "ILRID 1700",
+        "NCC 4530",
+        "NCC 5530",
+        "NCC 5540"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "financial-accounting",
+   "title": "Financial Accounting",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2210 / HADM 2230 / NCC 5500",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2210",
+        "HADM 2230",
+        "NCC 5500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "finance",
+   "title": "Finance",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Finance",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2241",
+        "AEM 5241",
+        "HADM 2250",
+        "NCC 5560"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "capstone-course",
+   "title": "Capstone Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 4661",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4661"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "entrepreneurship",
+   "title": "Entrepreneurship",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2220",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 3110",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AEM 3249",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3249"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "AEM 3251",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3251"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "AEM 4355",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4355"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "NBA 5070",
+     "rule": [
+      {
+       "codes": [
+        "NBA 5070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "NBA 6650",
+     "rule": [
+      {
+       "codes": [
+        "NBA 6650"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "life-sciences-business-and-human-veterin",
+   "title": "Life Sciences Business and Human/Veterinary Medicine",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 1600",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 4485",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4485"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PUBPOL 2350",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 3110",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PUBPOL 3280 / GDEV 3280",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 3280",
+        "GDEV 3280"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PUBPOL 3870 / PUBPOL 5870",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 3870",
+        "PUBPOL 5870"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "PUBPOL 5630",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 5630"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "management-marketing-accounting-and-fina",
+   "title": "Management, Marketing, Accounting, and Finance",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 3205",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3205"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 3230",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NBA 6720",
+     "rule": [
+      {
+       "codes": [
+        "NBA 6720"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "NCC 5540",
+     "rule": [
+      {
+       "codes": [
+        "NCC 5540"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "tools-and-frameworks-for-entrepreneurs-a",
+   "title": "Tools and Frameworks for Entrepreneurs and Practitioners",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2011",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2011"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 3310",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AEM 4190",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4190"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

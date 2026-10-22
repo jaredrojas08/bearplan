@@ -1,0 +1,865 @@
+{
+ "id": "agricultural-sciences-bs",
+ "name": "Agricultural Sciences (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/agricultural-sciences-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-coursework",
+   "title": "Required Coursework",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 1101",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 1110",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 1900",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PLSCI 2110",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PLSCI 2440",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2440"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PLSCI 2600",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology",
+   "title": "Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biology (1)",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 1100",
+        "BIOEE 1610",
+        "BIOEE 1780",
+        "BIOG 1140",
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOMG 1350",
+        "PLSCI 1115",
+        "PLSCI 1130",
+        "PLSCI 1420",
+        "PLSCI 2400",
+        "PLSCI 2410",
+        "PLSCI 2470"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Biology (2)",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 1100",
+        "BIOEE 1610",
+        "BIOEE 1780",
+        "BIOG 1140",
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOMG 1350",
+        "PLSCI 1115",
+        "PLSCI 1130",
+        "PLSCI 1420",
+        "PLSCI 2400",
+        "PLSCI 2410",
+        "PLSCI 2470"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry-or-physics",
+   "title": "Chemistry or Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Chemistry or Physics",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560",
+        "CHEM 1561",
+        "CHEM 2070",
+        "CHEM 2071",
+        "PHYS 1203",
+        "PHYS 2207"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-literacy",
+   "title": "Data Literacy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Data Literacy",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100",
+        "ENTOM 3030",
+        "PLSCI 2200",
+        "STSCI 2100",
+        "STSCI 2150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "food-systems",
+   "title": "Food Systems",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Food Systems",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2310",
+        "FDSC 1200",
+        "FDSC 2000",
+        "PLSCI 1300",
+        "PLSCI 2020"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "education-extension",
+   "title": "Education / Extension",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Education / Extension",
+     "rule": [
+      {
+       "codes": [
+        "COMM 2850",
+        "EDUC 2200",
+        "EDUC 2210",
+        "EDUC 2410",
+        "EDUC 3510",
+        "ENTOM 3350"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "agribusiness",
+   "title": "Agribusiness",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Agribusiness",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1200",
+        "AEM 2050",
+        "AEM 3020",
+        "AEM 3260"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "animal-science",
+   "title": "Animal Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Animal Science",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2120",
+        "ANSC 2500",
+        "ANSC 2650",
+        "ANSC 3300",
+        "ANSC 3500",
+        "ANSC 3600",
+        "ANSC 3800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "international-agriculture",
+   "title": "International Agriculture",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "International Agriculture",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2550",
+        "ANSC 2551",
+        "ANSC 3560",
+        "ANSC 3561",
+        "ANSC 3562",
+        "ANSC 4880",
+        "GDEV 2300",
+        "GDEV 4140",
+        "GDEV 4450"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "animal-science",
+   "name": "Animal Science",
+   "sections": [
+    {
+     "id": "animal-science-required-course",
+     "title": "Required Course",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ANSC 2210",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 2210"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "animal-science-list-one",
+     "title": "List One",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "List One (1)",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 2120",
+          "ANSC 2400",
+          "ANSC 2410",
+          "ANSC 3540",
+          "ANSC 3550"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "List One (2)",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 2120",
+          "ANSC 2400",
+          "ANSC 2410",
+          "ANSC 3540",
+          "ANSC 3550"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "animal-science-list-two",
+     "title": "List Two",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "List Two (1)",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 2500",
+          "ANSC 2650",
+          "ANSC 3300",
+          "ANSC 3500",
+          "ANSC 3510",
+          "ANSC 3600",
+          "ANSC 3800"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "List Two (2)",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 2500",
+          "ANSC 2650",
+          "ANSC 3300",
+          "ANSC 3500",
+          "ANSC 3510",
+          "ANSC 3600",
+          "ANSC 3800"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "agribusiness",
+   "name": "AgriBusiness",
+   "sections": [
+    {
+     "id": "agribusiness-required-courses",
+     "title": "Required Courses",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "AEM 1200",
+       "rule": [
+        {
+         "codes": [
+          "AEM 1200"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "ECON 1110",
+       "rule": [
+        {
+         "codes": [
+          "ECON 1110"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "AEM 2310",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2310"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agribusiness-management",
+     "title": "Management",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "AEM 3020 / AEM 3260",
+       "rule": [
+        {
+         "codes": [
+          "AEM 3020",
+          "AEM 3260"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agribusiness-marketing-strategy",
+     "title": "Marketing / Strategy",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Marketing / Strategy",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2480",
+          "AEM 3270",
+          "AEM 3385",
+          "AEM 4420"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agribusiness-finance",
+     "title": "Finance",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "AEM 2050 / AEM 4060 / AEM 4210",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2050",
+          "AEM 4060",
+          "AEM 4210"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agribusiness-applied-economics",
+     "title": "Applied Economics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Applied Economics",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2300",
+          "AEM 2310",
+          "AEM 2350",
+          "AEM 2500"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agribusiness-policy-issues-and-communication",
+     "title": "Policy Issues and Communication",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Policy Issues and Communication",
+       "rule": [
+        {
+         "codes": [
+          "AEM 2000",
+          "AEM 2805",
+          "AEM 3310",
+          "BSOC 3311",
+          "COMM 2200",
+          "PUBPOL 2040"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "agribusiness-policy-analysis",
+     "title": "Policy Analysis",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "AEM 4350 / AEM 4450 / NS 4480 (1)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 4350",
+          "AEM 4450",
+          "NS 4480"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "AEM 4350 / AEM 4450 / NS 4480 (2)",
+       "rule": [
+        {
+         "codes": [
+          "AEM 4350",
+          "AEM 4450",
+          "NS 4480"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "sustainable-cropping-systems-management",
+   "name": "Sustainable Cropping Systems Management",
+   "sections": [
+    {
+     "id": "sustainable-cropping-required-course",
+     "title": "Required Course",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "PLSCI 2250",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2250"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "PLSCI 2940",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2940"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "sustainable-cropping-cropping-systems",
+     "title": "Cropping Systems",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Cropping Systems (1)",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3025",
+          "PLSCI 3210",
+          "PLSCI 3350",
+          "PLSCI 3520",
+          "PLSCI 4020",
+          "PLSCI 4030",
+          "PLSCI 4140",
+          "PLSCI 4175",
+          "PLSCI 4230",
+          "PLSCI 4500",
+          "PLSCI 4551",
+          "PLSCI 4730",
+          "NTRES 3250",
+          "VIEN 2400"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "Cropping Systems (2)",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3025",
+          "PLSCI 3210",
+          "PLSCI 3350",
+          "PLSCI 3520",
+          "PLSCI 4020",
+          "PLSCI 4030",
+          "PLSCI 4140",
+          "PLSCI 4175",
+          "PLSCI 4230",
+          "PLSCI 4500",
+          "PLSCI 4551",
+          "PLSCI 4730",
+          "NTRES 3250",
+          "VIEN 2400"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "sustainable-cropping-pest-management",
+     "title": "Pest Management",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "ENTOM 3410 / PLSCI 3010 / PLSCI 3150 (1)",
+       "rule": [
+        {
+         "codes": [
+          "ENTOM 3410",
+          "PLSCI 3010",
+          "PLSCI 3150"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "ENTOM 3410 / PLSCI 3010 / PLSCI 3150 (2)",
+       "rule": [
+        {
+         "codes": [
+          "ENTOM 3410",
+          "PLSCI 3010",
+          "PLSCI 3150"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "sustainable-cropping-soil-science",
+     "title": "Soil Science",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Soil Science",
+       "rule": [
+        {
+         "codes": [
+          "ANSC 4120",
+          "PLSCI 2200",
+          "PLSCI 3210",
+          "PLSCI 4200",
+          "PLSCI 4660",
+          "PLSCI 4720"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "soil-health-management",
+   "name": "Soil Health Management",
+   "sections": [
+    {
+     "id": "soil-health-manageme-select-a-minimum-of-15-credits-required-",
+     "title": "Select a minimum of 15 credits required: Select a minimum of 15 credits required",
+     "type": "creditBucket",
+     "minCredits": 15,
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2200",
+        "PLSCI 3210",
+        "PLSCI 3630",
+        "PLSCI 3650",
+        "ANSC 4120",
+        "PLSCI 4200",
+        "PLSCI 4660",
+        "PLSCI 4720"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ],
+     "note": "Select a minimum of 15 credits required",
+     "column": "right",
+     "filter": "major",
+     "icon": "star"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

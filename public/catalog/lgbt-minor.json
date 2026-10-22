@@ -1,0 +1,37 @@
+{
+ "id": "lgbt-minor",
+ "kind": "minor",
+ "name": "Lesbian, Gay, Bisexual, & Transgender",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/lgbt-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 12,
+   "rule": [
+    {
+     "subjects": [
+      "LGBT"
+     ],
+     "reason": "Needs a LGBT course"
+    }
+   ],
+   "note": "Undergraduate students in any college at Cornell may minor in LGBT Studies in conjunction with a major defined elsewhere in the university. The minor consists of four courses: LGBT 2290 Introduction to Lesbian, Gay, Bisexual, and Transgender Studies and any 3 cross-listed LGBT courses. All four classes must be completed with a grade of C- or above.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

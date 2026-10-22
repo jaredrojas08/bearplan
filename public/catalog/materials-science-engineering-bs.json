@@ -1,0 +1,135 @@
+{
+ "id": "materials-science-engineering-bs",
+ "name": "Materials Science and Engineering (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/materials-science-engineering-bs/",
+ "totalCredits": 125,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-major-courses",
+   "title": "Required Major Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Major Courses",
+     "rule": [
+      {
+       "codes": [
+        "MSE 2010",
+        "MSE 2020",
+        "MSE 2030",
+        "MSE 2060",
+        "MSE 2110",
+        "MSE 3030",
+        "MSE 3040",
+        "MSE 3050",
+        "MSE 3110",
+        "MSE 4020",
+        "MSE 4070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Required Major Courses",
+     "rule": [
+      {
+       "codes": [
+        "MSE 4030",
+        "MSE 4072",
+        "MSE 4050",
+        "MSE 4060"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "materials-electives",
+   "title": "Materials Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    }
+   ],
+   "note": "Two materials-related electives covering two groups of different materials",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "application-related-electives",
+   "title": "Application-Related Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s4",
+     "label": "Elective (4)"
+    }
+   ],
+   "note": "Four application-related electives in at least two different types of applications",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-technical-elective",
+   "title": "Additional Technical Elective",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MSE",
+     "rule": [
+      {
+       "subjects": [
+        "MSE"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "One additional technical elective outside MSE",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

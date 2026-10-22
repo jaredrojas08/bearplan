@@ -1,0 +1,37 @@
+{
+ "id": "applied-exercise-science-minor",
+ "kind": "minor",
+ "name": "Applied Exercise Science",
+ "college": "College of Agriculture and Life Sciences, College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/applied-exercise-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "rule": [
+    {
+     "subjects": [
+      "NS"
+     ],
+     "reason": "Needs a NS course"
+    }
+   ],
+   "note": "The Applied Exercise Science minor requires 6 prerequisite course credits at Cornell followed by 12 course credits at Ithaca College. Students can choose to complete all the requirements for the minor or take some courses as long as they have met the course prerequisites. Applied Exercise Science students must take all prerequisites (NS 3410 Human Anatomy and Physiology, NS 3420 Human Anatomy and Physiology Laboratory, and NS 4430 Applied Anatomy and Physiology before enrolling in three required Ithaca College courses: Kinesiology (EXSS 22000): Examines the anatomical structures and mechanical aspects of human movement. Emphasis is placed on the functional anatomy of the musculoskeletal and articular systems. Exercise Physiology (EXSS 32100): Examines physiological changes during exercise, after exercise, and during a training period. Also considers efficiency, needs, and limitations of ",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

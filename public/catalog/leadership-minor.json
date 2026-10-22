@@ -1,0 +1,147 @@
+{
+ "id": "leadership-minor",
+ "kind": "minor",
+ "name": "Leadership",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/leadership-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "tier-1-leadership-essentials",
+   "title": "Tier 1: Leadership Essentials",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Tier 1: Leadership Essentials",
+     "rule": [
+      {
+       "codes": [
+        "EDUC 2610",
+        "FDSC 1102",
+        "HADM 1150",
+        "ILRHR 2600",
+        "MILS 1102"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "tier-2-required-foundations-in-leadershi",
+   "title": "Tier 2: Required Foundations in Leadership Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LEAD 3100",
+     "rule": [
+      {
+       "codes": [
+        "LEAD 3100"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "tier-3-leadership-electives-select-six-c",
+   "title": "Tier 3: Leadership Electives: Select six credits of the following:",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "AEM 2015",
+      "AEM 2700",
+      "AEM 2710",
+      "AEM 3050",
+      "AEM 3245",
+      "AEM 3320",
+      "AEM 5315",
+      "AIRS 3301",
+      "AIRS 3302",
+      "AIRS 3341",
+      "AIRS 3342",
+      "AIRS 4441",
+      "BSOC 2061",
+      "COMM 3150",
+      "COMM 4350",
+      "DEA 4040",
+      "EDUC 3350",
+      "EDUC 4826",
+      "ENGRC 3025",
+      "ENGRC 3026",
+      "ENGRC 3027",
+      "ENGRC 3340",
+      "ENGRC 3500",
+      "ENGRC 3700",
+      "ENGRG 4400",
+      "ENGRG 4800",
+      "ENGRG 4805",
+      "ENGRG 4810",
+      "ENGRG 4820",
+      "ENGRG 4830",
+      "ENGRG 4840",
+      "ENGRG 4835",
+      "ENGRG 4845",
+      "ENGRG 4850",
+      "ENTOM 3350",
+      "HADM 1150",
+      "HADM 3170",
+      "HADM 3640",
+      "HADM 3650",
+      "HADM 3670",
+      "HADM 4110",
+      "HADM 4115",
+      "ILRGL 4027",
+      "ILRGL 4820",
+      "ILROB 3260",
+      "INFO 4430",
+      "MILS 2201",
+      "MILS 3301",
+      "MILS 3302",
+      "MILS 4401",
+      "MILS 4402",
+      "NAVS 2201",
+      "NAVS 4402",
+      "NBA 4720",
+      "NBA 5035",
+      "NBA 5150",
+      "NBA 5682",
+      "NBA 6130",
+      "NBA 6320",
+      "NBA 6870",
+      "NCC 5540",
+      "PLSCI 4975",
+      "PSYCH 4940",
+      "PUBPOL 3860"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select six credits of the following:",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

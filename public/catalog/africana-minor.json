@@ -1,0 +1,50 @@
+{
+ "id": "africana-minor",
+ "kind": "minor",
+ "name": "Africana Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/africana-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ASRC 1500",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "3000+ course",
+     "rule": [
+      {
+       "minLevel": 3000
+      }
+     ]
+    }
+   ],
+   "note": "One course at the 3000-level or above on History, Literature, Politics, Popular Culture, Race & Inequality, or Gender & Sexuality within the African Diaspora",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,345 @@
+{
+ "id": "biometry-statistics-bs",
+ "name": "Statistics & Biometry (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biometry-statistics-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "calculus-i",
+   "title": "Calculus I",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "calculus-ii",
+   "title": "Calculus II",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1120 / MATH 1910",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1120",
+        "MATH 1910"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistical-methods-i",
+   "title": "Statistical Methods I",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 2200",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "linear-algebra",
+   "title": "Linear Algebra",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Linear Algebra",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2210",
+        "MATH 2240",
+        "MATH 2310",
+        "MATH 2940"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "multivariable-calculus",
+   "title": "Multivariable Calculus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 2220 / MATH 2240 / MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2220",
+        "MATH 2240",
+        "MATH 1920"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistical-methods-ii",
+   "title": "Statistical Methods II",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 3200",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "probability",
+   "title": "Probability",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Probability",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3080",
+        "ECON 3130",
+        "MATH 4710",
+        "ORIE 3500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "linear-models",
+   "title": "Linear Models",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 4030 / ECON 3140",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 4030",
+        "ECON 3140"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "theory-of-statistics",
+   "title": "Theory of Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 4090 / MATH 4720",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 4090",
+        "MATH 4720"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistical-computing",
+   "title": "Statistical Computing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 4520",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 4520"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introduction-to-computing",
+   "title": "Introduction to Computing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 1110 / CS 1112",
+     "rule": [
+      {
+       "codes": [
+        "CS 1110",
+        "CS 1112"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-5-courses",
+   "title": "Elective Courses (5 Courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses (5 Courses)",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3740",
+        "STSCI 3900",
+        "STSCI 3090",
+        "STSCI 3100",
+        "BIOCB 4830",
+        "BIOCB 4840",
+        "MATH 4260",
+        "MATH 4740",
+        "ECON 4130",
+        "INFO 3300",
+        "INFO 4310",
+        "ORIE 3120",
+        "ORIE 3300",
+        "ORIE 3510",
+        "ORIE 4580",
+        "ORIE 3741",
+        "ORIE 4742",
+        "CS 4220",
+        "CS 3780",
+        "CS 4320",
+        "CS 4740",
+        "CS 4787",
+        "CS 4789"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective Courses (5 Courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3600",
+        "STSCI 4610",
+        "STSCI 4720",
+        "STSCI 4725",
+        "STSCI 4850",
+        "STSCI 4881"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Elective Courses (5 Courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 3600",
+        "STSCI 4610",
+        "STSCI 4720",
+        "STSCI 4725",
+        "STSCI 4850",
+        "STSCI 4881"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Any 4000 level STSCI course. CS 3220",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,186 @@
+{
+ "id": "sustainable-business-economic-policy-minor",
+ "kind": "minor",
+ "name": "Sustainable Business and Economic Policy",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/sustainable-business-economic-policy-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-analysis-econometrics-statistics",
+   "title": "Data analysis / Econometrics / Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Data analysis / Econometrics / Statistics",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2770",
+        "AEM 2830",
+        "AEM 2840",
+        "AEM 2850",
+        "AEM 3100",
+        "AEM 4110",
+        "AEM 6850",
+        "ECON 3120",
+        "ECON 3140",
+        "ILRST 2110",
+        "HADM 3740",
+        "PLSCI 2200",
+        "PLSCI 4200",
+        "STSCI 4060",
+        "AEM 2100",
+        "CEE 3040",
+        "CRP 1200",
+        "ECON 3110",
+        "ECON 3130",
+        "ENGRD 2700",
+        "ILRST 2100",
+        "ILRST 3080",
+        "ILRST 3110",
+        "MATH 4710",
+        "MATH 4720",
+        "PUBPOL 2100",
+        "PUBPOL 2101",
+        "PSYCH 2500",
+        "SOC 3010",
+        "STSCI 2100",
+        "STSCI 2150",
+        "STSCI 2200",
+        "STSCI 3080",
+        "STSCI 3110"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "advanced-economic-theory",
+   "title": "Advanced Economic Theory",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2600",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 2500",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2500"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Required Courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "environmental-and-resource-economics",
+   "title": "Environmental and Resource Economics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Environmental and Resource Economics (1)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2555",
+        "AEM 3115",
+        "AEM 4090",
+        "AEM 4490",
+        "AEM 4500",
+        "AEM 4510",
+        "AEM 4580",
+        "AEM 4585",
+        "AEM 4880",
+        "HADM 4315",
+        "HADM 4500",
+        "NBA 6030",
+        "NBA 6380"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Environmental and Resource Economics (2)",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2555",
+        "AEM 3115",
+        "AEM 4090",
+        "AEM 4490",
+        "AEM 4500",
+        "AEM 4510",
+        "AEM 4580",
+        "AEM 4585",
+        "AEM 4880",
+        "HADM 4315",
+        "HADM 4500",
+        "NBA 6030",
+        "NBA 6380"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

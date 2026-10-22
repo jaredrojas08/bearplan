@@ -1,0 +1,51 @@
+{
+ "id": "mechanical-engineering-minor",
+ "kind": "minor",
+ "name": "Mechanical Engineering",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/mechanical-engineering-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRD 2020",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGRD 2210",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2210"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

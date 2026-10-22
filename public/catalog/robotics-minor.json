@@ -1,0 +1,341 @@
+{
+ "id": "robotics-minor",
+ "kind": "minor",
+ "name": "Robotics",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/robotics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "fundamentals",
+   "title": "Fundamentals",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Fundamentals (1)",
+     "rule": [
+      {
+       "codes": [
+        "CS 3700",
+        "CS 3780",
+        "ECE 4200",
+        "ECE 5420",
+        "CS 4756",
+        "CS 5756",
+        "INFO 4410",
+        "INFO 6420",
+        "MAE 3780",
+        "MAE 3783",
+        "MAE 4180",
+        "MAE 5180",
+        "MAE 4190",
+        "MAE 5190",
+        "MAE 4760",
+        "CS 5750",
+        "MAE 4810",
+        "MAE 5810",
+        "MAE 5780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Fundamentals (2)",
+     "rule": [
+      {
+       "codes": [
+        "CS 3700",
+        "CS 3780",
+        "ECE 4200",
+        "ECE 5420",
+        "CS 4756",
+        "CS 5756",
+        "INFO 4410",
+        "INFO 6420",
+        "MAE 3780",
+        "MAE 3783",
+        "MAE 4180",
+        "MAE 5180",
+        "MAE 4190",
+        "MAE 5190",
+        "MAE 4760",
+        "CS 5750",
+        "MAE 4810",
+        "MAE 5810",
+        "MAE 5780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Fundamentals (3)",
+     "rule": [
+      {
+       "codes": [
+        "CS 3700",
+        "CS 3780",
+        "ECE 4200",
+        "ECE 5420",
+        "CS 4756",
+        "CS 5756",
+        "INFO 4410",
+        "INFO 6420",
+        "MAE 3780",
+        "MAE 3783",
+        "MAE 4180",
+        "MAE 5180",
+        "MAE 4190",
+        "MAE 5190",
+        "MAE 4760",
+        "CS 5750",
+        "MAE 4810",
+        "MAE 5810",
+        "MAE 5780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "specialization",
+   "title": "Specialization",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Specialization",
+     "rule": [
+      {
+       "codes": [
+        "CS 4756",
+        "CS 5756",
+        "CS 5780",
+        "CS 6756",
+        "CS 6758",
+        "ECE 6970",
+        "MAE 4180",
+        "MAE 5180",
+        "MAE 4760",
+        "CS 5750",
+        "MAE 6730",
+        "CS 6751",
+        "MAE 6710",
+        "MAE 6770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s4",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Choose three courses in one of the below categories",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4190",
+        "MAE 5190",
+        "MAE 4730",
+        "MAE 5730",
+        "MAE 4760",
+        "CS 5750",
+        "MAE 4780",
+        "MAE 5780",
+        "MAE 6730",
+        "CS 6751",
+        "MAE 6760",
+        "MAE 6770",
+        "MAE 6780",
+        "MAE 6800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements-2",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 4670 or other",
+     "rule": [
+      {
+       "codes": [
+        "CS 4670",
+        "CS 5670",
+        "CS 6670",
+        "ECE 5470"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CS 6758",
+     "rule": [
+      {
+       "codes": [
+        "CS 6758"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4180 / MAE 5180",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4180",
+        "MAE 5180"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 4190 / MAE 5190",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4190",
+        "MAE 5190"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "MAE 4320",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4320"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "MAE 4810 / MAE 5810",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4810",
+        "MAE 5810"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "MAE 6760",
+     "rule": [
+      {
+       "codes": [
+        "MAE 6760"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements-3",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements",
+     "rule": [
+      {
+       "codes": [
+        "BEE 3900",
+        "BEE 5900",
+        "CS 4754",
+        "INFO 6420",
+        "CS 5755",
+        "INFO 5755",
+        "INFO 6755",
+        "DEA 5210",
+        "DEA 6210",
+        "ECE 4760",
+        "ECE 5725",
+        "ECE 5960",
+        "ECE 6680",
+        "ECE 6950",
+        "INFO 4320",
+        "INFO 4420",
+        "MAE 3780",
+        "MAE 3783",
+        "MAE 4190",
+        "MAE 5190",
+        "MAE 4320",
+        "MAE 6710",
+        "MAE 6800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

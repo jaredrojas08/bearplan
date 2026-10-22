@@ -1,0 +1,92 @@
+{
+ "id": "sociology-ba",
+ "name": "Sociology (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/sociology-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "SOC 1101",
+     "rule": [
+      {
+       "codes": [
+        "SOC 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "SOC 3750 / SOC 3190",
+     "rule": [
+      {
+       "codes": [
+        "SOC 3750",
+        "SOC 3190"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "SOC 3010",
+     "rule": [
+      {
+       "codes": [
+        "SOC 3010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s6",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s7",
+     "label": "Elective (4)"
+    },
+    {
+     "id": "s8",
+     "label": "Elective (5)"
+    },
+    {
+     "id": "s9",
+     "label": "Elective (6)"
+    },
+    {
+     "id": "s10",
+     "label": "Elective (7)"
+    }
+   ],
+   "note": "Seven additional (i.e., elective) courses in sociology",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

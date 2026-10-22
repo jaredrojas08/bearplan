@@ -1,0 +1,268 @@
+{
+ "id": "applied-mathematics-minor",
+ "kind": "minor",
+ "name": "Applied Mathematics",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/applied-mathematics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "group-1-analysis",
+   "title": "Group 1: Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 4200",
+     "rule": [
+      {
+       "codes": [
+        "MATH 4200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-2-computational-methods",
+   "title": "Group 2: Computational Methods",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 4210 / ENGRD 3200 / ORIE 3300",
+     "rule": [
+      {
+       "codes": [
+        "CS 4210",
+        "ENGRD 3200",
+        "ORIE 3300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-3-probability-and-statistics",
+   "title": "Group 3: Probability and Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group 3: Probability and Statistics",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3040",
+        "ECE 3100",
+        "ENGRD 2700",
+        "MATH 4710",
+        "ORIE 3500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-4-applications",
+   "title": "Group 4: Applications",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group 4: Applications",
+     "rule": [
+      {
+       "codes": [
+        "AEP 3330",
+        "CEE 3310",
+        "CEE 3710",
+        "CHEME 3230",
+        "CS 2800",
+        "CS 2850",
+        "ECE 4250",
+        "MAE 3230",
+        "MSE 3030",
+        "MATH 3610"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-5-advanced-courses",
+   "title": "Group 5: Advanced Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 4200",
+     "rule": [
+      {
+       "codes": [
+        "MATH 4200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-5-advanced-courses-2",
+   "title": "Group 5: Advanced Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECE 4110 / ORIE 3510",
+     "rule": [
+      {
+       "codes": [
+        "ECE 4110",
+        "ORIE 3510"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-5-advanced-courses-3",
+   "title": "Group 5: Advanced Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Group 5: Advanced Courses",
+     "rule": [
+      {
+       "codes": [
+        "CS 4220",
+        "CS 4820",
+        "ORIE 3310",
+        "ORIE 4330",
+        "ORIE 4350",
+        "ORIE 5600",
+        "MAE 4730",
+        "MAE 5730",
+        "ORIE 5610",
+        "MAE 5790",
+        "MATH 4210",
+        "MAE 6700",
+        "MAE 6810"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-6-mathematics-courses",
+   "title": "Group 6: Mathematics Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 4200",
+     "rule": [
+      {
+       "codes": [
+        "MATH 4200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-6-mathematics-courses-2",
+   "title": "Group 6: Mathematics Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 4710",
+     "rule": [
+      {
+       "codes": [
+        "MATH 4710"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "group-6-mathematics-courses-3",
+   "title": "Group 6: Mathematics Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 3320 / MATH 3360",
+     "rule": [
+      {
+       "codes": [
+        "MATH 3320",
+        "MATH 3360"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

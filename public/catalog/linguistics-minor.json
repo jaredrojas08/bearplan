@@ -1,0 +1,78 @@
+{
+ "id": "linguistics-minor",
+ "kind": "minor",
+ "name": "Linguistics",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/linguistics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "LING 1101",
+     "rule": [
+      {
+       "codes": [
+        "LING 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective"
+    },
+    {
+     "id": "s3",
+     "label": "LING 3302",
+     "rule": [
+      {
+       "codes": [
+        "LING 3302"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "LING 3303",
+     "rule": [
+      {
+       "codes": [
+        "LING 3303"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "LING 3314",
+     "rule": [
+      {
+       "codes": [
+        "LING 3314"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "At least one other foundation course:",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

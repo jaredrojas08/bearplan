@@ -30,7 +30,7 @@
   // svelte-ignore state_referenced_locally
   let name = $state(initial?.name ?? '')
   // svelte-ignore state_referenced_locally
-  let templateId = $state(initial?.templateId ?? app.majors[0].id)
+  let templateId = $state(initial?.templateId ?? app.majorOptions[0].id)
   // svelte-ignore state_referenced_locally
   let entryTerm = $state(initial?.entryTerm ?? defaultEntry)
   // svelte-ignore state_referenced_locally
@@ -45,13 +45,32 @@
   let gradOptions = $derived(termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)))
   let termCount = $derived(termIndex(gradTerm) - termIndex(entryTerm) + 1)
   let selectedTemplate = $derived(app.majors.find((t) => t.id === templateId))
-  let minorOptions = $derived(app.minors.filter((m) => !minors.includes(m.id)))
-  const minorName = (id: string) => app.minors.find((m) => m.id === id)?.name ?? id
+  // Minors still downloading; saving waits for them so none is silently left out.
+  let pendingMinors = $state<string[]>([])
+  let minorOptions = $derived(app.minorOptions.filter((m) => !minors.includes(m.id) && !pendingMinors.includes(m.id)))
+  const minorName = (id: string) => app.minorOptions.find((m) => m.id === id)?.name ?? id
+  let loadMessage = $state('')
 
-  function addMinor(event: Event) {
+  // Drafted checklists download when picked, so concentrations and limits are known before saving.
+  $effect(() => {
+    const id = templateId
+    loadMessage = ''
+    void app.ensureTemplates([id]).then((status) => {
+      if (status !== 'ok' && id === templateId) loadMessage = 'This checklist could not be downloaded. Check your connection.'
+    })
+  })
+
+  async function addMinor(event: Event) {
     const select = event.currentTarget as HTMLSelectElement
-    if (select.value) minors = [...minors, select.value]
+    const id = select.value
     select.value = ''
+    if (!id || minors.includes(id) || pendingMinors.includes(id)) return
+    pendingMinors = [...pendingMinors, id]
+    const status = await app.ensureTemplates([id])
+    pendingMinors = pendingMinors.filter((m) => m !== id)
+    if (status === 'ok') {
+      if (!minors.includes(id)) minors = [...minors, id]
+    } else loadMessage = `The ${minorName(id)} minor could not be downloaded. Check your connection.`
   }
   let offered = $derived(selectedTemplate?.concentrations ?? [])
   let maxConcentrations = $derived(selectedTemplate?.maxConcentrations ?? 1)
@@ -102,10 +121,17 @@
   <label class="f">
     Requirement checklist
     <select bind:value={templateId}>
-      {#each app.majors as t (t.id)}
-        <option value={t.id}>
-          {t.name} · {t.college} ({t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})
-        </option>
+      {#each [false, true] as draft (draft)}
+        <optgroup label={draft ? 'Drafts from the catalog (not yet checked)' : 'Checked checklists'}>
+          {#each app.majorOptions.filter((o) => o.draft === draft) as o (o.id)}
+            {@const t = app.majors.find((m) => m.id === o.id)}
+            <option value={o.id}>
+              {o.name} · {o.college}{t && !draft
+                ? ` (${t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})`
+                : ''}
+            </option>
+          {/each}
+        </optgroup>
       {/each}
     </select>
     <span class="hint">
@@ -113,6 +139,10 @@
       <button type="button" class="link" onclick={() => fileInput.click()}>Import a checklist JSON…</button>
     </span>
     {#if templateMessage}<span class="hint" role="status">{templateMessage}</span>{/if}
+    {#if selectedTemplate?.draft}
+      <span class="hint draft-hint">Drafted automatically from the catalog: the major's own courses only, not checked by a person.</span>
+    {/if}
+    {#if loadMessage}<span class="hint" role="alert">{loadMessage}</span>{/if}
     <input bind:this={fileInput} type="file" accept="application/json,.json" hidden onchange={onTemplateFile} />
   </label>
   {#if offered.length}
@@ -134,7 +164,7 @@
       <span class="hint">Optional. Change it any time in plan details.</span>
     </fieldset>
   {/if}
-  {#if app.minors.length}
+  {#if app.minorOptions.length}
     <div class="f">
       <label for="minor-pick">Minors</label>
       {#if minors.length}
@@ -147,10 +177,15 @@
           {/each}
         </ul>
       {/if}
+      {#if pendingMinors.length}<span class="hint" role="status">Loading {pendingMinors.map(minorName).join(', ')}…</span>{/if}
       {#if minorOptions.length}
         <select id="minor-pick" onchange={addMinor}>
           <option value="">Add a minor…</option>
-          {#each minorOptions as m (m.id)}<option value={m.id}>{m.name} · {m.college}</option>{/each}
+          {#each [false, true] as draft (draft)}
+            <optgroup label={draft ? 'Drafts from the catalog' : 'Checked'}>
+              {#each minorOptions.filter((m) => m.draft === draft) as m (m.id)}<option value={m.id}>{m.name} · {m.college}</option>{/each}
+            </optgroup>
+          {/each}
         </select>
       {/if}
       <span class="hint">Optional. A course can count for your major and a minor; each minor's unique-credit rule still applies.</span>
@@ -178,7 +213,7 @@
   <p class="note">{termCount} terms. {statusHint}</p>
   <div class="actions">
     {@render secondary?.()}
-    <button type="submit" class="btn primary big">{submitLabel}</button>
+    <button type="submit" class="btn primary big" disabled={!selectedTemplate || pendingMinors.length > 0}>{submitLabel}</button>
   </div>
 </form>
 
@@ -251,6 +286,9 @@
     background: var(--tint);
     border-radius: 999px;
     padding: 4px 12px;
+  }
+  .draft-hint {
+    color: var(--warn-ink);
   }
   .hint {
     font-weight: 400;

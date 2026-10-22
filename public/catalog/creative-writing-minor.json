@@ -1,0 +1,89 @@
+{
+ "id": "creative-writing-minor",
+ "kind": "minor",
+ "name": "Creative Writing",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/creative-writing-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGL 2800",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 2800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGL 3820",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 3820"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ENGL 3840",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 3840"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ENGL 4800 / ENGL 4801",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 4800",
+        "ENGL 4801"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "Any English course in literature or cultural studies that is not a writing workshop and which otherwise qualifies for minor credit.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

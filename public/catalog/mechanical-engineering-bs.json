@@ -1,0 +1,676 @@
+{
+ "id": "mechanical-engineering-bs",
+ "name": "Mechanical Engineering (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/mechanical-engineering-bs/",
+ "totalCredits": 127,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-major-courses",
+   "title": "Required Major Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Major Courses",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2210",
+        "MAE 2250",
+        "MAE 2030",
+        "MAE 3780",
+        "ENGRD 2100",
+        "PHYS 3360",
+        "MAE 3230",
+        "MAE 3240",
+        "MAE 3270",
+        "MAE 3260",
+        "MAE 4272",
+        "MAE 4300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "senior-design-elective",
+   "title": "Senior Design Elective",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Senior Design Elective",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4021",
+        "MAE 4131",
+        "MAE 4161",
+        "MAE 4221",
+        "MAE 4231",
+        "MAE 4341",
+        "MAE 4351",
+        "MAE 4441",
+        "MAE 4631",
+        "MAE 4641",
+        "MAE 4671",
+        "MAE 4861",
+        "MAE 4871"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "aerospace-engineering",
+   "title": "Aerospace Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MAE 3050",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3050"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MAE 4060",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4060"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4070",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 4150",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "MAE 4160",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4160"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "MAE 4230",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "MAE 4440",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4440"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "MAE 4540",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4540"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biomechanics",
+   "title": "Biomechanics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MAE 4480",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4480"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MAE 4640",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4640"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4650",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4650"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 4660",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4660"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "MAE 5680",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5680"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "energy-and-the-environment",
+   "title": "Energy and the Environment",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MAE 4020",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MAE 4230",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4580",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4580"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 4590",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4590"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "MAE 5010",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "MAE 5430",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5430"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engineering-materials",
+   "title": "Engineering Materials",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Engineering Materials",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3120",
+        "MAE 3130",
+        "MAE 3200",
+        "MAE 4130",
+        "MAE 4240",
+        "MAE 4450",
+        "MAE 4640",
+        "MAE 4670",
+        "MAE 4700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "mechanical-systems-and-design",
+   "title": "Mechanical Systems and Design",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Mechanical Systems and Design",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3780",
+        "MAE 4080",
+        "MAE 4100",
+        "MAE 4110",
+        "MAE 4150",
+        "MAE 4180",
+        "MAE 4190",
+        "MAE 4220",
+        "MAE 4320",
+        "MAE 4341",
+        "MAE 4351",
+        "MAE 4630",
+        "MAE 4700",
+        "MAE 4730",
+        "MAE 4760",
+        "MAE 4770",
+        "MAE 4780",
+        "MAE 4810",
+        "MAE 5910"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. MAE 5350",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "thermo-fluids-engineering",
+   "title": "Thermo-fluids Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MAE 4230",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MAE 4360",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4360"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4510",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4510"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 4530",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4530"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "MAE 4540",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4540"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "MAE 5010",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "MAE 5310",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "MAE 5430",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5430"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "vehicle-engineering",
+   "title": "Vehicle Engineering",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MAE 3050",
+     "rule": [
+      {
+       "codes": [
+        "MAE 3050"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MAE 4860",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4860"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MAE 4870",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4870"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MAE 5070",
+     "rule": [
+      {
+       "codes": [
+        "MAE 5070"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "upper-level-math-elective",
+   "title": "Upper-Level Math Elective",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Upper-Level Math Elective",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2700",
+        "CEE 3040",
+        "ENGRD 2720",
+        "ENGRD 3200",
+        "CS 2800",
+        "ECON 3110",
+        "ECE 3100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-probability-and-statistics-cour",
+   "title": "Required Probability and Statistics Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRD 2700",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENGRD 2720",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2720"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 3040",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3040"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ECE 3100",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ECON 3110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "CS 2800",
+     "rule": [
+      {
+       "codes": [
+        "CS 2800"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "technical-elective",
+   "title": "Technical Elective",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRG 3400",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 3400"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

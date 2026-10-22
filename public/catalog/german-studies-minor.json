@@ -1,0 +1,37 @@
+{
+ "id": "german-studies-minor",
+ "kind": "minor",
+ "name": "German Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/german-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "GERST"
+     ],
+     "reason": "Needs a GERST course"
+    }
+   ],
+   "note": "The course GERST 2000 Germany: Intercultural Context or equivalent is the prerequisite for declaring the minor. Students must complete a minimum of four courses in the GERST 2010-2499 range or above selected from the offerings of the German Studies Department. At least one of these courses must be taught in German at the 3000-level or higher. One of the four courses may be from another department as long as it has a substantial German component. No more than one course per semester taken as part of a study abroad program may be counted toward the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

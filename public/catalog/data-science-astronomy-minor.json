@@ -1,0 +1,142 @@
+{
+ "id": "data-science-astronomy-minor",
+ "kind": "minor",
+ "name": "Data Science in Astronomy",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/data-science-astronomy-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "select-one-of-the-following",
+   "title": "Select one of the following",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ASTRO 3301 / ASTRO 3302 / ASTRO 3303",
+     "rule": [
+      {
+       "codes": [
+        "ASTRO 3301",
+        "ASTRO 3302",
+        "ASTRO 3303"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "astronomy-data-oriented",
+   "title": "Astronomy Data Oriented",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Astronomy Data Oriented (1)",
+     "rule": [
+      {
+       "codes": [
+        "ASTRO 3310",
+        "ASTRO 3334",
+        "ASTRO 3340",
+        "ASTRO 4410",
+        "ASTRO 4523"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Astronomy Data Oriented (2)",
+     "rule": [
+      {
+       "codes": [
+        "ASTRO 3310",
+        "ASTRO 3334",
+        "ASTRO 3340",
+        "ASTRO 4410",
+        "ASTRO 4523"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "probability-statistics",
+   "title": "Probability & Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Probability & Statistics",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3100",
+        "ENGRD 2700",
+        "MATH 4710",
+        "MATH 4720",
+        "ORIE 3500",
+        "STSCI 3080",
+        "STSCI 4520",
+        "STSCI 4780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-structures-algorithms",
+   "title": "Data Structures & Algorithms",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Data Structures & Algorithms",
+     "rule": [
+      {
+       "codes": [
+        "CS 2110",
+        "CS 3110",
+        "ENGRD 2720",
+        "INFO 2950",
+        "ORIE 3120",
+        "ORIE 4740",
+        "ORIE 4742"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

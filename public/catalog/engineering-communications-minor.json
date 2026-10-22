@@ -1,0 +1,205 @@
+{
+ "id": "engineering-communications-minor",
+ "kind": "minor",
+ "name": "Engineering Communications",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/engineering-communications-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "engineering-communications-courses",
+   "title": "Engineering Communications Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRC 3350 / ENGRC 3500",
+     "rule": [
+      {
+       "codes": [
+        "ENGRC 3350",
+        "ENGRC 3500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Engineering Communications Courses",
+     "rule": [
+      {
+       "codes": [
+        "COMM 2450",
+        "COMM 2850",
+        "HADM 3670",
+        "ENGRG 4900"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engineering-and-technical-professionalis",
+   "title": "Engineering and Technical Professionalism",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Engineering and Technical Professionalism",
+     "rule": [
+      {
+       "codes": [
+        "ENGRD 2720",
+        "ENGRC 3023",
+        "ENGRC 3025",
+        "ENGRC 3026",
+        "ENGRC 3027",
+        "ENGRC 3340",
+        "ENGRC 3341",
+        "ENGRC 3700",
+        "ENGRG 3600",
+        "ENGRG 3900",
+        "ENGRG 3910",
+        "ENGRG 4990"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "engineering-technical-or-scientific-comm",
+   "title": "Engineering, Technical, or Scientific Communication Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Engineering, Technical, or Scientific Communication Electives",
+     "rule": [
+      {
+       "codes": [
+        "ENGRC 3111",
+        "ENGRC 3120",
+        "ENGRC 3152",
+        "ENGRC 3610",
+        "ENGRC 3640",
+        "ENGRC 4152"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "other-courses-at-cornell",
+   "title": "Other Courses at Cornell",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Other Courses at Cornell",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2500",
+        "AEM 3245",
+        "AEM 3249",
+        "BEE 4530",
+        "BEE 4730",
+        "BEE 4590",
+        "BME 4440",
+        "CHEME 4320",
+        "COMM 2450",
+        "COMM 2850",
+        "COMM 3200",
+        "COMM 4450",
+        "ENGL 2880",
+        "ENVS 2000",
+        "ILROB 2230",
+        "INFO 2950",
+        "INFO 4200",
+        "INFO 4240",
+        "INFO 4270",
+        "INFO 4310",
+        "INFO 4430",
+        "INFO 4561",
+        "MAE 4272",
+        "MSE 3010",
+        "MSE 4030",
+        "MSE 4050",
+        "NBA 5070",
+        "NTRES 3330",
+        "PHIL 3340",
+        "PSYCH 3420",
+        "STS 4451"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Statistics",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100",
+        "CEE 3040",
+        "ENGRD 2700",
+        "ILRST 2100",
+        "ILRST 6100",
+        "ORIE 3500",
+        "PUBPOL 2100",
+        "PUBPOL 2101",
+        "PSYCH 2500",
+        "SOC 3010",
+        "STSCI 2100",
+        "STSCI 2150",
+        "STSCI 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

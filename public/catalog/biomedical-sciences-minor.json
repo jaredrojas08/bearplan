@@ -1,0 +1,99 @@
+{
+ "id": "biomedical-sciences-minor",
+ "kind": "minor",
+ "name": "Biomedical Sciences",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/biomedical-sciences-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "select-one-of-the-following",
+   "title": "Select one of the following",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOAP 3110 / BIOMS 4150",
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 3110",
+        "BIOMS 4150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "animal-physiology-core-group",
+   "title": "Animal Physiology Core Group",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Animal Physiology Core Group",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 3410",
+        "BIOAP 3110",
+        "BIOAP 3160",
+        "BIOAP 3190",
+        "BIOAP 3200",
+        "BIOAP 4130",
+        "BIOAP 4140",
+        "BIOAP 4270"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "microbiology-and-immunology-core-group",
+   "title": "Microbiology and Immunology Core Group",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Microbiology and Immunology Core Group",
+     "rule": [
+      {
+       "codes": [
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIOMI 3210",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4310",
+        "BIOMS 4340"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

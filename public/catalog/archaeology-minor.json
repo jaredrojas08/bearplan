@@ -1,0 +1,29 @@
+{
+ "id": "archaeology-minor",
+ "kind": "minor",
+ "name": "Archaeology",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/archaeology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Students must take 5 archaeology courses, including courses from the following categories: Comparative Survey: One course. Methods/Theory: One course. Regional Concentrations: Students must take a minimum of one course in at least two different regional concentrations. Minors are encouraged to gain some fieldwork experience, but it is not required. Scholarship opportunities for research and fieldwork: Minors are eligible for funding in support of research and fieldwork on the same basis as majors. See Cornell Institute of Archaeology & Material Studies Funding webpage for more information.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

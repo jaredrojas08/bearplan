@@ -1,0 +1,51 @@
+{
+ "id": "public-history-minor",
+ "kind": "minor",
+ "name": "Public History",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/public-history-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HIST 2792",
+     "rule": [
+      {
+       "codes": [
+        "HIST 2792"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HIST 2482",
+     "rule": [
+      {
+       "codes": [
+        "HIST 2482"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

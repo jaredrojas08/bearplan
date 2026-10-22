@@ -1,0 +1,244 @@
+{
+ "id": "american-indian-indigenous-studies-minor",
+ "kind": "minor",
+ "name": "American Indian and Indigenous Studies",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/american-indian-indigenous-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "foundational-courses",
+   "title": "Foundational Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AIIS 1100 / AIIS 1110",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 1100",
+        "AIIS 1110"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "HIST 1950",
+        "AIIS 2240",
+        "AIIS 2600",
+        "AIIS 2660",
+        "AIIS 3324",
+        "AIIS 3325",
+        "AIIS 3560",
+        "AIIS 4000",
+        "AIIS 4200",
+        "AIIS 4300",
+        "AIIS 4450",
+        "AIIS 4625",
+        "AIIS 4670",
+        "ARTH 2255",
+        "ARTH 4556",
+        "ENGL 4630"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 1200",
+        "AIIS 2350",
+        "AIIS 2420",
+        "AIIS 2720",
+        "ANTHR 3245",
+        "ANTHR 3255",
+        "ANTHR 3256",
+        "AIIS 3330",
+        "AIIS 3422",
+        "ANTHR 4216",
+        "ANTHR 4268",
+        "ANTHR 4725"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "graduate-level-courses",
+   "title": "Graduate-Level Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AIIS 6000",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 6000"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AIIS 6010",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 6010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AIIS 6200",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 6200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "AIIS 6240",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 6240"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "AIIS 6300",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 6300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "ANTHR 7256",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 7256"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "ANTHR 7268",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 7268"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "ARTH 6556",
+     "rule": [
+      {
+       "codes": [
+        "ARTH 6556"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "ENGL 6625",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "independent-study",
+   "title": "Independent Study",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AIIS 4970",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 4970"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AIIS 6970",
+     "rule": [
+      {
+       "codes": [
+        "AIIS 6970"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

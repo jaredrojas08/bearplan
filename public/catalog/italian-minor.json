@@ -1,0 +1,70 @@
+{
+ "id": "italian-minor",
+ "kind": "minor",
+ "name": "Italian",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/italian-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "five-courses-minimum-3-credits-each-are-",
+   "title": "Five courses (minimum 3 credits each) are required to complete the minor in Italian",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ITAL 2204",
+     "rule": [
+      {
+       "codes": [
+        "ITAL 2204"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ITAL 2203",
+     "rule": [
+      {
+       "codes": [
+        "ITAL 2203"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "ITAL 2900 Students must take at least three other classes in Italian Studies.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "five-courses-minimum-3-credits-each-are--2",
+   "title": "Five courses (minimum 3 credits each) are required to complete the minor in Italian: electives",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "ITAL 2202"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Five courses (minimum 3 credits each) are required to complete the minor in Italian:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

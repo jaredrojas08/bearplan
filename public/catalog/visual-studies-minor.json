@@ -1,0 +1,37 @@
+{
+ "id": "visual-studies-minor",
+ "kind": "minor",
+ "name": "Visual Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/visual-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "VISST"
+     ],
+     "reason": "Needs a VISST course"
+    }
+   ],
+   "note": "Requirements for the minor include the core course, VISST 2000, which introduces students to critical thinking about visual studies as well as close textual analysis in social and historical contexts. In addition to the core course: Students must take one \"hands on\" practice course plus three additional courses at the 3000 level or above. At least one of these three additional courses must be in the Department of the History of Art and Visual Studies. No more than two courses from the concentration may be double-counted toward a student's major. Only two Theory/Practice courses may count towards the requirements.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

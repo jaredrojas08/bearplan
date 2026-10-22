@@ -118,6 +118,9 @@ export function templateErrors(data: unknown): string[] {
   if ('totalCredits' in data && typeof data.totalCredits !== 'number') errors.push('"totalCredits" must be a number')
   if ('footnote' in data && typeof data.footnote !== 'string') errors.push('"footnote" must be text')
   if ('kind' in data && data.kind !== 'major' && data.kind !== 'minor') errors.push('"kind" must be "major" or "minor"')
+  if ('draft' in data && typeof data.draft !== 'boolean') errors.push('"draft" must be true or false')
+  // The source becomes a link, so only web addresses are allowed.
+  if ('source' in data && !(typeof data.source === 'string' && /^https:\/\/[^\s"<>]+$/.test(data.source))) errors.push('"source" must be an https:// link')
   if ('minUniqueCredits' in data && !(typeof data.minUniqueCredits === 'number' && data.minUniqueCredits >= 0)) {
     errors.push('"minUniqueCredits" must be a number of at least 0')
   }

@@ -1,0 +1,315 @@
+{
+ "id": "entrepreneurship-minor",
+ "kind": "minor",
+ "name": "Entrepreneurship",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/entrepreneurship-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "overview",
+   "title": "Overview",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2220",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2220"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "accounting",
+   "title": "Accounting",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Accounting",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2210",
+        "HADM 1210",
+        "HADM 2230",
+        "NCC 5500",
+        "ORIE 3150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ideation",
+   "title": "Ideation",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2180",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2180"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 3110",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "HADM 4144",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4144"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "NBA 5380",
+     "rule": [
+      {
+       "codes": [
+        "NBA 5380"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "DEA 2730",
+     "rule": [
+      {
+       "codes": [
+        "DEA 2730"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "SYSEN 5740",
+     "rule": [
+      {
+       "codes": [
+        "SYSEN 5740"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "entrepreneurial-strategy",
+   "title": "Entrepreneurial Strategy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Entrepreneurial Strategy",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3249",
+        "AEM 3251",
+        "AEM 4080",
+        "AEM 4650",
+        "HADM 4140",
+        "HADM 4145",
+        "HADM 4432",
+        "NBA 3000",
+        "NBA 6230",
+        "NBA 6330"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "industries-and-topics",
+   "title": "Industries and Topics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Industries and Topics",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3220",
+        "AEM 3275",
+        "AEM 3330",
+        "AEM 3380",
+        "AEM 3385",
+        "AEM 4355",
+        "AEM 4572",
+        "AEM 4615",
+        "AEM 4650",
+        "ENGRG 2270",
+        "FSAD 4444",
+        "FSAD 4660",
+        "HADM 3610",
+        "HADM 4130",
+        "HADM 4315",
+        "HADM 4800",
+        "NBA 4720",
+        "NBA 5070",
+        "NBA 6135",
+        "NBA 6910",
+        "PUBPOL 5813"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "practical-experience",
+   "title": "Practical Experience",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 3251",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3251"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 3385",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3385"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "AEM 3255",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3255"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "AEM 4421",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4421"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "AEM 4975",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4975"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "HADM 4315",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4315"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "NBA 6230",
+     "rule": [
+      {
+       "codes": [
+        "NBA 6230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "NBA 6330",
+     "rule": [
+      {
+       "codes": [
+        "NBA 6330"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

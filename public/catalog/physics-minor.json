@@ -1,0 +1,218 @@
+{
+ "id": "physics-minor",
+ "kind": "minor",
+ "name": "Physics",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/physics-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1110",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 1116",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1116"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2213"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PHYS 2217",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2217"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PHYS 3316",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 3316"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "calculus-based-introductory-mechanics",
+   "title": "Calculus-based Introductory Mechanics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1112 / PHYS 1116 / PHYS 2207",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112",
+        "PHYS 1116",
+        "PHYS 2207"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "special-relativity",
+   "title": "Special Relativity",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1116 / PHYS 2216",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1116",
+        "PHYS 2216"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "calculus-based-introductory-electromagne",
+   "title": "Calculus-based Introductory Electromagnetism",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2208 / PHYS 2213 / PHYS 2217",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208",
+        "PHYS 2213",
+        "PHYS 2217"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "waves",
+   "title": "Waves",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2214 / PHYS 2218 / PHYS 2210",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2214",
+        "PHYS 2218",
+        "PHYS 2210"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "intermediate-physics-lab",
+   "title": "Intermediate Physics Lab",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Intermediate Physics Lab",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 3310",
+        "PHYS 3360",
+        "PHYS 4410",
+        "AEP 3640",
+        "ECE 2100",
+        "BEE 4500",
+        "ASTRO 4410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,37 @@
+{
+ "id": "astronomy-minor",
+ "kind": "minor",
+ "name": "Astronomy",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/astronomy-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "ASTRO"
+     ],
+     "reason": "Needs a ASTRO course"
+    }
+   ],
+   "note": "At least 6 credits at or above the 3000 level 2000-level courses that count towards the minor include: ASTRO 2211 Astronomy: Stars, Galaxies, and Cosmology, ASTRO 2212 The Solar System: Planets, Small Bodies and New Worlds, ASTRO 2290 Relativity and Astrophysics, and ASTRO 2299 Search for Life in the Universe",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

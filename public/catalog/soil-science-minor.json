@@ -1,0 +1,116 @@
+{
+ "id": "soil-science-minor",
+ "kind": "minor",
+ "name": "Soil Science",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/soil-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 2600",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2600"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 2200",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2200"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses",
+   "title": "Additional Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 3210",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 3630",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3630"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 3650",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3650"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PLSCI 4660",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4660"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PLSCI 4720",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4720"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

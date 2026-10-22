@@ -1,0 +1,511 @@
+{
+ "id": "nutritional-sciences-bs",
+ "name": "Nutritional Sciences (BS)",
+ "college": "College of Agriculture and Life Sciences, College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/nutritional-sciences-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "nutritional-sciences-core-courses-16-cre",
+   "title": "Nutritional Sciences Core Courses (16 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 1150",
+     "rule": [
+      {
+       "codes": [
+        "NS 1150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "NS 2450",
+     "rule": [
+      {
+       "codes": [
+        "NS 2450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NS 3450",
+     "rule": [
+      {
+       "codes": [
+        "NS 3450"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "NS 3310",
+     "rule": [
+      {
+       "codes": [
+        "NS 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "NS 3320",
+     "rule": [
+      {
+       "codes": [
+        "NS 3320"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "advanced-electives-in-nutrition-9-credit",
+   "title": "Advanced Electives in Nutrition (9 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Advanced Electives in Nutrition (9 Credits)",
+     "rule": [
+      {
+       "codes": [
+        "NS 3150",
+        "NS 3420",
+        "NS 3600",
+        "NS 4140",
+        "NS 4200",
+        "NS 4210",
+        "NS 4250",
+        "NS 4300",
+        "NS 4330",
+        "NS 4410",
+        "NS 4420",
+        "NS 4430",
+        "NS 4450",
+        "NS 4480",
+        "NS 4500",
+        "NS 4510",
+        "NS 4570",
+        "NS 4600",
+        "NS 4880",
+        "NS 5510",
+        "NS 6310",
+        "NS 6320"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070",
+        "CHEM 2071",
+        "CHEM 2080",
+        "CHEM 2081",
+        "CHEM 2150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "OPTION A: is one alternative. OPTION B: is one alternative. OPTION C: is one alternative.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-biology-8-credits",
+   "title": "Introductory Biology (8 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1500 / BIOSM 1500",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1500",
+        "BIOSM 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOEE 1610 / BIOEE 1780",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610",
+        "BIOEE 1780"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "options-2",
+   "title": "Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "One option",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570",
+        "CHEM 3570",
+        "CHEM 3580",
+        "CHEM 3590",
+        "CHEM 3600"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "OPTION A: is one alternative. OPTION B: is one alternative. OPTION C: is one alternative.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "organic-chemistry-lab-2-4-credits",
+   "title": "Organic Chemistry Lab (2-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 2510 / CHEM 3010",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2510",
+        "CHEM 3010"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physiology-3-4-credits",
+   "title": "Physiology (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 3410 / BIOAP 3110",
+     "rule": [
+      {
+       "codes": [
+        "NS 3410",
+        "BIOAP 3110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biochemistry-4-6-credits",
+   "title": "Biochemistry (4-6 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "NS 3200",
+     "rule": [
+      {
+       "codes": [
+        "NS 3200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMG 3300",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOMG 3320",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3320"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "BIOMI 2900",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "BIOMG 3350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3350"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "calculus-advanced-math-3-4-credits",
+   "title": "Calculus/Advanced Math (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1105",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1105"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1106",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1106"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MATH 1120",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1120"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "AB or BC Calculus AP Exam",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics-3-4-credits",
+   "title": "Statistics (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 2150",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "STSCI 2200",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PUBPOL 2100",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "AEM 2100",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ILRST/STSCI 2100",
+     "rule": [
+      {
+       "codes": [
+        "ILRST/STSCI 2100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PSYCH 2500",
+     "rule": [
+      {
+       "codes": [
+        "PSYCH 2500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "SOC 3010",
+     "rule": [
+      {
+       "codes": [
+        "SOC 3010"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

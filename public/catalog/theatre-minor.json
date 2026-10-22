@@ -1,0 +1,76 @@
+{
+ "id": "theatre-minor",
+ "kind": "minor",
+ "name": "Theatre",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/theatre-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PMA 3750",
+     "rule": [
+      {
+       "codes": [
+        "PMA 3750"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PMA 2800",
+     "rule": [
+      {
+       "codes": [
+        "PMA 2800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s4",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s5",
+     "label": "Elective (3)"
+    },
+    {
+     "id": "s6",
+     "label": "PMA 1410 / PMA 1610",
+     "rule": [
+      {
+       "codes": [
+        "PMA 1410",
+        "PMA 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Three additional courses focused on Theatre, excluding Production Laboratory courses",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

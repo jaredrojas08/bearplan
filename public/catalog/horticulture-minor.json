@@ -1,0 +1,82 @@
+{
+ "id": "horticulture-minor",
+ "kind": "minor",
+ "name": "Horticulture",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/horticulture-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 1101",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 1115",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 1115"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-select-at-least-eight-c",
+   "title": "Elective Courses: Select at least eight credits from the list below:",
+   "type": "creditBucket",
+   "minCredits": 8,
+   "rule": [
+    {
+     "codes": [
+      "PLSCI 2020",
+      "PLSCI 2930",
+      "PLSCI 3000",
+      "PLSCI 3025",
+      "PLSCI 3050",
+      "PLSCI 3350",
+      "PLSCI 3520",
+      "PLSCI 3550",
+      "PLSCI 4020",
+      "PLSCI 4175",
+      "PLSCI 4500",
+      "PLSCI 4551",
+      "PLSCI 4730",
+      "PLSCI 5850"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select at least eight credits from the list below:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

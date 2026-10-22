@@ -1,0 +1,29 @@
+{
+ "id": "anthropology-minor",
+ "kind": "minor",
+ "name": "Anthropology",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/anthropology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Specific criteria for the minor are: Completion of five Anthropology courses, worth 3 credits or more. One of the five courses must be taken at the 1000- or 2000- level. (FWS do not count) Of the four additional courses, one must be at the 3000 level, and one must be a seminar at the 4000 level. One of the courses for the minor may be taken as transfer credit and one may be taken through study abroad. A minimum of three of the five required courses must be taken at Cornell.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

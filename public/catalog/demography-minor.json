@@ -1,0 +1,223 @@
+{
+ "id": "demography-minor",
+ "kind": "minor",
+ "name": "Demography",
+ "college": "Brooks School of Public Policy",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/demography-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "demographic-introductory-course",
+   "title": "Demographic Introductory Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Demographic Introductory Course",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2010",
+        "PUBPOL 2030",
+        "PUBPOL 3280",
+        "PUBPOL 3620"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics-course",
+   "title": "Statistics Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Statistics Course",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100",
+        "ILRST 2100",
+        "PSYCH 2500",
+        "PUBPOL 2100",
+        "PUBPOL 2101",
+        "SOC 3010"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "demographic-overview-course",
+   "title": "Demographic Overview Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Demographic Overview Course",
+     "rule": [
+      {
+       "codes": [
+        "AMST 3800",
+        "CRP 5250",
+        "GDEV 2130",
+        "GDEV 3140",
+        "GDEV 3240",
+        "GDEV 4080",
+        "PUBPOL 2250",
+        "PUBPOL 2370",
+        "PUBPOL 3120",
+        "PUBPOL 3180",
+        "PUBPOL 3230",
+        "PUBPOL 3250",
+        "PUBPOL 3360",
+        "PUBPOL 3710",
+        "PUBPOL 3810",
+        "SOC 2310",
+        "SOC 2390",
+        "SOC 3030",
+        "SOC 4120",
+        "SOC 4370"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Any course from the Demographic Introductory list.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-population-courses",
+   "title": "Additional Population Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Additional Population Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "AMST 2710",
+        "COMM 3250",
+        "COMM 4760",
+        "CRP 3430",
+        "CRP 3840",
+        "CRP 3900",
+        "CRP 4080",
+        "CRP 4680",
+        "ECON 3440",
+        "ECON 3480",
+        "ECON 3710",
+        "ECON 3711",
+        "GDEV 2130",
+        "GDEV 3060",
+        "GDEV 3390",
+        "GDEV 3700",
+        "GDEV 4080",
+        "GDEV 4770",
+        "PUBPOL 2050",
+        "PUBPOL 2208",
+        "PUBPOL 3011",
+        "PUBPOL 3050",
+        "PUBPOL 3120",
+        "PUBPOL 3151",
+        "PUBPOL 3230",
+        "PUBPOL 3231",
+        "PUBPOL 3320",
+        "PUBPOL 3480",
+        "PUBPOL 3550",
+        "PUBPOL 3580",
+        "PUBPOL 3600",
+        "PUBPOL 3734",
+        "PUBPOL 3840",
+        "PUBPOL 3780",
+        "PUBPOL 4160",
+        "SOC 2250",
+        "SOC 3380",
+        "SOC 3650",
+        "SOC 3580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Additional Population Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "AMST 2710",
+        "COMM 3250",
+        "COMM 4760",
+        "CRP 3430",
+        "CRP 3840",
+        "CRP 3900",
+        "CRP 4080",
+        "CRP 4680",
+        "ECON 3440",
+        "ECON 3480",
+        "ECON 3710",
+        "ECON 3711",
+        "GDEV 2130",
+        "GDEV 3060",
+        "GDEV 3390",
+        "GDEV 3700",
+        "GDEV 4080",
+        "GDEV 4770",
+        "PUBPOL 2050",
+        "PUBPOL 2208",
+        "PUBPOL 3011",
+        "PUBPOL 3050",
+        "PUBPOL 3120",
+        "PUBPOL 3151",
+        "PUBPOL 3230",
+        "PUBPOL 3231",
+        "PUBPOL 3320",
+        "PUBPOL 3480",
+        "PUBPOL 3550",
+        "PUBPOL 3580",
+        "PUBPOL 3600",
+        "PUBPOL 3734",
+        "PUBPOL 3840",
+        "PUBPOL 3780",
+        "PUBPOL 4160",
+        "SOC 2250",
+        "SOC 3380",
+        "SOC 3650",
+        "SOC 3580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

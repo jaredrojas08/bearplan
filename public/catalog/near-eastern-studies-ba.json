@@ -1,0 +1,43 @@
+{
+ "id": "near-eastern-studies-ba",
+ "name": "Near Eastern Studies (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/near-eastern-studies-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Major Requirements",
+   "type": "creditBucket",
+   "minCredits": 30,
+   "rule": [
+    {
+     "subjects": [
+      "NES",
+      "ARAB",
+      "HEBRW",
+      "PERSN",
+      "TURK",
+      "PE",
+      "ENGL"
+     ],
+     "reason": "Needs a NES / ARAB / HEBRW / PERSN / TURK / PE / ENGL course"
+    }
+   ],
+   "note": "The NES major provides a great deal of flexibility for students to choose courses from a range of topics and fields. Students select the sequence and combination of courses in consultation with their advisor. Credit requirement: A minimum of 30 credits is required to complete the NES major. Middle Eastern language courses not being used to fulfill the NES language requirement may count toward the major. Core Course: All NES majors are required to take NES 4560 Theory and Method in Near Eastern Studies offered every spring semester. Students are encouraged to take this course as early in their academic career as possible. This course cannot count toward the temporal breadth requirement. All courses for the major must be taken for a letter grade and students must receive a grade of B- or better in order for it to count toward the major. No course may be used to satisfy two requirements. Kn",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

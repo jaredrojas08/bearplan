@@ -1,0 +1,39 @@
+{
+ "id": "latin-american-studies-minor",
+ "kind": "minor",
+ "name": "Latin American Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/latin-american-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "SPAN",
+      "PORT",
+      "LATA"
+     ],
+     "reason": "Needs a SPAN / PORT / LATA course"
+    }
+   ],
+   "note": "The undergraduate minor in Latin American Studies requires language proficiency as demonstrated by successful completion of SPAN 2095 Spanish Intermediate Composition and Conversation II (or having tested out of SPAN 2095 Spanish Intermediate Composition and Conversation II) or PORT 2010 Intermediate Portuguese for Spanish Speakers I/PORT 2020 Intermediate Portuguese for Spanish Speakers II or higher (non-FLAC course). An additional minimum of 15 credits in Latin American and Caribbean Studies courses need to be completed from course selections that represent at least two fields (two different departments), including one course from an advanced level (3000 or 4000). If you have studied abroad in a Spanish- or Portuguese-speaking country and want the credits to be evaluated for the minor, please contact the LACS Program Manager. The list of approved minor language and elective courses is ",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

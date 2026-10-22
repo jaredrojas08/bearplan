@@ -1,0 +1,133 @@
+{
+ "id": "migration-studies-minor",
+ "kind": "minor",
+ "name": "Migration Studies",
+ "college": "Cornell University",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/migration-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-course",
+   "title": "Introductory Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ILRGL 3810",
+     "rule": [
+      {
+       "codes": [
+        "ILRGL 3810"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses",
+     "rule": [
+      {
+       "codes": [
+        "AAS 2100",
+        "AMST 1104",
+        "AMST 1802",
+        "AMST 2253",
+        "AMST 4851",
+        "ANTHR 3703",
+        "ANTHR 4466",
+        "ARCH 2802",
+        "ASIAN 3329",
+        "ASIAN 4443",
+        "ASRC 1976",
+        "ASRC 2212",
+        "ASRC 3434",
+        "BIOEE 1560",
+        "BIOEE 3610",
+        "COML 4334",
+        "COML 4452",
+        "COMM 3250",
+        "GDEV 2010",
+        "GDEV 3060",
+        "GDEV 3400",
+        "GDEV 4940",
+        "ECON 3480",
+        "ECON 7430",
+        "FGSS 3400",
+        "FREN 3400",
+        "GOVT 2152",
+        "GOVT 2274",
+        "HIST 1710",
+        "HIST 1800",
+        "HIST 1802",
+        "HIST 1820",
+        "HIST 1970",
+        "HIST 1975",
+        "HIST 1985",
+        "HIST 2010",
+        "HIST 2091",
+        "HIST 2251",
+        "HIST 2392",
+        "HIST 2641",
+        "HIST 2750",
+        "HIST 3960",
+        "HIST 6132",
+        "ILRGL 2350",
+        "ILRGL 3020",
+        "ILRGL 3810",
+        "ILRGL 4325",
+        "ILRGL 4367",
+        "ILRLE 7460",
+        "LAW 6509",
+        "LAW 7311",
+        "LAW 7801",
+        "LEGAL 5114",
+        "NES 3655",
+        "NTRES 1101",
+        "NTRES 3020",
+        "NTRES 3100",
+        "NTRES 3150",
+        "NTRES 3220",
+        "NTRES 3311",
+        "NTRES 3330",
+        "PUBPOL 2030",
+        "PUBPOL 3041",
+        "PUBPOL 3050",
+        "PMA 3215",
+        "SPAN 4670",
+        "VTPEH 6101",
+        "VTPEH 6103",
+        "VTPEH 6104",
+        "VTPEH 6111",
+        "VTPEH 6114",
+        "VTPEH 6141"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

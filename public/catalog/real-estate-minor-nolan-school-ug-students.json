@@ -1,0 +1,308 @@
+{
+ "id": "real-estate-minor-nolan-school-ug-students",
+ "kind": "minor",
+ "name": "Real Estate",
+ "college": "SC Johnson College of Business",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/real-estate-minor-nolan-school-ug-students/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "foundation-courses",
+   "title": "Foundation Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HADM 1210",
+     "rule": [
+      {
+       "codes": [
+        "HADM 1210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HADM 2220",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "HADM 2221",
+     "rule": [
+      {
+       "codes": [
+        "HADM 2221"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "HADM 4230 / HADM 4280",
+     "rule": [
+      {
+       "codes": [
+        "HADM 4230",
+        "HADM 4280"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "real-estate-enrichment-electives-3-credi",
+   "title": "Real Estate Enrichment Electives (3 credits minimum required): electives",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "HADM 4205",
+      "HADM 4230",
+      "HADM 4250",
+      "HADM 4255",
+      "HADM 4271",
+      "HADM 4280",
+      "HADM 4515",
+      "HADM 4570",
+      "HADM 6520"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Real Estate Enrichment Electives (3 credits minimum required)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "real-estate-complementary-skills-electiv",
+   "title": "Real Estate Complementary Skills Electives (3 credits Minimum Required): electives",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "HADM 3055",
+      "HADM 3230",
+      "HADM 3235",
+      "HADM 3510",
+      "HADM 3880",
+      "HADM 4110",
+      "HADM 4270",
+      "HADM 4500",
+      "HADM 4530",
+      "HADM 4760",
+      "HADM 4770",
+      "HADM 4870",
+      "HADM 6240",
+      "AEM 3520",
+      "AEM 4060",
+      "AEM 4110",
+      "AEM 4210",
+      "AEM 4260",
+      "AEM 4280",
+      "AEM 4500",
+      "AEM 4534",
+      "AEM 4570",
+      "AEM 4670",
+      "CEE 5950",
+      "CRP 3270",
+      "CRP 3430",
+      "CRP 3840",
+      "CRP 3850",
+      "CRP 4040",
+      "CRP 4080",
+      "CRP 4590",
+      "CRP 5080",
+      "CRP 5190",
+      "CRP 5320",
+      "CRP 5321",
+      "CRP 5530",
+      "CRP 5560",
+      "CRP 6560",
+      "CRP 6580",
+      "CRP 6595",
+      "DEA 3530",
+      "ECON 3120",
+      "ECON 3140",
+      "NBA 5060",
+      "NBA 5110",
+      "NBA 5420",
+      "NBA 6730",
+      "ORIE 4630",
+      "ORIE 5582",
+      "ORIE 5600",
+      "ORIE 5610",
+      "PUBPOL 3100",
+      "PUBPOL 3250"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Real Estate Complementary Skills Electives (3 credits Minimum Required)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "financial-accounting-3-credits-minimum-r",
+   "title": "Financial Accounting (3 Credits Minimum Required): Financial Accounting (3 Credits Minimum Required)",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "AEM 2210",
+      "AEM 2225",
+      "HADM 2230",
+      "ORIE 3150"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Financial Accounting (3 Credits Minimum Required)",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "finance-3-credits-minimum-required-finan",
+   "title": "Finance (3 Credits Minimum Required): Finance (3 Credits Minimum Required)",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "AEM 2240",
+      "AEM 2241",
+      "ECON 4220",
+      "HADM 2250"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Finance (3 Credits Minimum Required)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "real-estate-enrichment-electives-3-credi-2",
+   "title": "Real Estate Enrichment Electives (3 Credits Minimum Required): electives",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "HADM 4205",
+      "HADM 4230",
+      "HADM 4250",
+      "HADM 4255",
+      "HADM 4271",
+      "HADM 4280",
+      "HADM 4515",
+      "HADM 4570",
+      "HADM 6520"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Real Estate Enrichment Electives (3 Credits Minimum Required)",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "real-estate-complementary-skills-electiv-2",
+   "title": "Real Estate Complementary Skills Electives (3 Credits Minimum Required): electives",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "HADM 3055",
+      "HADM 3230",
+      "HADM 3235",
+      "HADM 3510",
+      "HADM 3880",
+      "HADM 4110",
+      "HADM 4270",
+      "HADM 4500",
+      "HADM 4530",
+      "HADM 4760",
+      "HADM 4770",
+      "HADM 4870",
+      "HADM 6240",
+      "AEM 3520",
+      "AEM 4060",
+      "AEM 4110",
+      "AEM 4210",
+      "AEM 4260",
+      "AEM 4280",
+      "AEM 4500",
+      "AEM 4534",
+      "AEM 4570",
+      "AEM 4670",
+      "CEE 5950",
+      "CRP 3270",
+      "CRP 3430",
+      "CRP 3840",
+      "CRP 3850",
+      "CRP 4040",
+      "CRP 4080",
+      "CRP 4590",
+      "CRP 5080",
+      "CRP 5190",
+      "CRP 5320",
+      "CRP 5321",
+      "CRP 5530",
+      "CRP 5560",
+      "CRP 6560",
+      "CRP 6580",
+      "CRP 6595",
+      "DEA 3530",
+      "ECON 3120",
+      "ECON 3140",
+      "NBA 5060",
+      "NBA 5110",
+      "NBA 5420",
+      "NBA 6730",
+      "ORIE 4630",
+      "ORIE 5582",
+      "ORIE 5600",
+      "ORIE 5610",
+      "PUBPOL 3100",
+      "PUBPOL 3250"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Real Estate Complementary Skills Electives (3 Credits Minimum Required)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

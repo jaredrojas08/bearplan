@@ -1,0 +1,74 @@
+{
+ "id": "plant-breeding-minor",
+ "kind": "minor",
+ "name": "Plant Breeding",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/plant-breeding-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 2250",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2250"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 4030",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4030"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses-select-at-least-eight-c",
+   "title": "Elective Courses: Select at least eight credits from the list below:",
+   "type": "creditBucket",
+   "minCredits": 8,
+   "rule": [
+    {
+     "codes": [
+      "PLSCI 3010",
+      "PLSCI 3430",
+      "PLSCI 3431",
+      "PLSCI 4070",
+      "PLSCI 4080",
+      "PLSCI 4620"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Select at least eight credits from the list below:",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

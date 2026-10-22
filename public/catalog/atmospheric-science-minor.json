@@ -1,0 +1,160 @@
+{
+ "id": "atmospheric-science-minor",
+ "kind": "minor",
+ "name": "Atmospheric Sciences",
+ "college": "College of Agriculture and Life Sciences, Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/atmospheric-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "eas-core-courses",
+   "title": "EAS Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EAS 3410",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "EAS 3050",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3050"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "EAS 2500",
+     "rule": [
+      {
+       "codes": [
+        "EAS 2500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "EAS 3420",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3420"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "EAS 4470",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4470"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-eas-courses",
+   "title": "Additional EAS Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Additional EAS Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "EAS 1310",
+        "EAS 1330",
+        "EAS 2500",
+        "EAS 2680",
+        "EAS 3050",
+        "EAS 3340",
+        "EAS 3520",
+        "EAS 4350",
+        "EAS 4510",
+        "EAS 4700",
+        "EAS 4860/6860"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Additional EAS Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "EAS 1310",
+        "EAS 1330",
+        "EAS 2500",
+        "EAS 2680",
+        "EAS 3050",
+        "EAS 3340",
+        "EAS 3520",
+        "EAS 4350",
+        "EAS 4510",
+        "EAS 4700",
+        "EAS 4860/6860"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Additional EAS Courses (3)",
+     "rule": [
+      {
+       "codes": [
+        "EAS 1310",
+        "EAS 1330",
+        "EAS 2500",
+        "EAS 2680",
+        "EAS 3050",
+        "EAS 3340",
+        "EAS 3520",
+        "EAS 4350",
+        "EAS 4510",
+        "EAS 4700",
+        "EAS 4860/6860"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

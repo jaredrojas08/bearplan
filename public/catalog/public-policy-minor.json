@@ -1,0 +1,37 @@
+{
+ "id": "public-policy-minor",
+ "kind": "minor",
+ "name": "Public Policy",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/public-policy-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "GOVT"
+     ],
+     "reason": "Needs a GOVT course"
+    }
+   ],
+   "note": "The requirements are: Five (5) qualifying courses. Among the five (5) qualifying courses, students must successfully complete (at least) one of the following gateway courses (which will be offered at least twice every three years) GOVT 3032 Politics of Public Policy in the U.S. GOVT 3583 Comparative Public Policy: Political Pathways to Equality Students must also take one methods course. The following courses fulfill this requirement: GOVT 2309 Data Science for Political Science I GOVT 3282 Data Science Applications in Political and Social Research GOVT 3999 How Do You Know That? An additional three electives, from a list of eligible courses. Optional: As a pathway through the minor, students may choose their electives exclusively from one of the following groupings: US domestic policy, foreign policy, comparative policy. At least four of the five courses must be taken within the Governm",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,37 @@
+{
+ "id": "jewish-studies-minor",
+ "kind": "minor",
+ "name": "Jewish Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/jewish-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "rule": [
+    {
+     "subjects": [
+      "JWST"
+     ],
+     "reason": "Needs a JWST course"
+    }
+   ],
+   "note": "The requirements for the minor are as follows: JWST 2644 Introduction to Judaism, or JWST 2676 , or an equivalent introductory survey in Jewish Studies approved by the director. Two Jewish Studies courses at the 2000-level or above, one course whose chronological parameters fall within the period 3000 BCE to 600 CE, and one course who chronological parameters fall within the period 600 CE to the present. One Jewish Studies course at the 3000-level or above. Topical courses taught in Hebrew or other languages may be used to fulfill this requirement. Note: No course may be used to satisfy two requirements.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

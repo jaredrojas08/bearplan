@@ -1,0 +1,164 @@
+{
+ "id": "urban-regional-studies-minor",
+ "kind": "minor",
+ "name": "Urban and Regional Studies",
+ "college": "College of Architecture, Art and Planning",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/urban-regional-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "select-9-credits-of-required-core-course",
+   "title": "Select 9 credits of required core courses from the following",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Select 9 credits of required core courses from the following: (1)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Select 9 credits of required core courses from the following: (2)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Select 9 credits of required core courses from the following: (3)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Select 9 credits of required core courses from the following: (4)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Select 9 credits of required core courses from the following: (5)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Select 9 credits of required core courses from the following: (6)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "Select 9 credits of required core courses from the following: (7)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "Select 9 credits of required core courses from the following: (8)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "Select 9 credits of required core courses from the following: (9)",
+     "rule": [
+      {
+       "codes": [
+        "CRP 1103",
+        "CRP 1104",
+        "CRP 2100",
+        "CRP 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

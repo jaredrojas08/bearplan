@@ -1,0 +1,37 @@
+{
+ "id": "design-environmental-analysis-minor",
+ "kind": "minor",
+ "name": "Design and Environmental Analysis",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/design-environmental-analysis-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "DEA"
+     ],
+     "reason": "Needs a DEA course"
+    }
+   ],
+   "note": "Earning a minor in Design and Environmental Analysis (DEA) requires a minimum of 15 credits in DEA courses. To be considered for the Minor in DEA, students must not be a DEA major. Students must complete the following core requirements in any order: DEA 1500 Introduction to Environmental Psychology. In addition, students must complete: One DEA studio course Two upper-level DEA thematic courses For detailed course requirements and a list of eligible electives, please refer to the Application to Graduate with a Minor in Design and Environmental Analysis (contact program coordinator for form). After completing courses (DEA 1110 Making a Difference by Design or DEA 2200 Art and Science, and DEA 1501 Introduction to Environmental Psychology - Writing in the Major) students should submit the Intention to Minor in DEA form (contact program coordinator for form). To receive consideration or prio",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

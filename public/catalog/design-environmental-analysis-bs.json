@@ -1,0 +1,451 @@
+{
+ "id": "design-environmental-analysis-bs",
+ "name": "Design and Environmental Analysis (BS)",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/design-environmental-analysis-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "DEA 1101",
+        "DEA 1110",
+        "DEA 1141",
+        "DEA 1150",
+        "DEA 1500",
+        "DEA 1501",
+        "DEA 2025",
+        "DEA 2510",
+        "DEA 2730",
+        "DEA 3550",
+        "DEA 4040",
+        "DEA 4050",
+        "DEA 4590",
+        "DEA 4800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Total Hours",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "design-innovation-strategy",
+   "title": "Design Innovation & Strategy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Design Innovation & Strategy",
+     "rule": [
+      {
+       "codes": [
+        "DEA 2200",
+        "DEA 2201",
+        "DEA 2203",
+        "DEA 2750",
+        "DEA 3050",
+        "DEA 3301",
+        "DEA 3306",
+        "DEA 3530",
+        "DEA 4402",
+        "DEA 4403",
+        "DEA 4040",
+        "DEA 4375",
+        "DEA 4500",
+        "DEA 4990",
+        "DEA 5210",
+        "DEA 5520",
+        "DEA 5540"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "sustainable-futures",
+   "title": "Sustainable Futures",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "DEA 2020",
+     "rule": [
+      {
+       "codes": [
+        "DEA 2020"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "DEA 3030",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3030"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "DEA 3302",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3302"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "DEA 3500",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "DEA 4025",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4025"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "DEA 4220",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "DEA 4401",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4401"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "DEA 4990",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4990"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "health-well-being",
+   "title": "Health & Well-Being",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "DEA 2700",
+     "rule": [
+      {
+       "codes": [
+        "DEA 2700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "DEA 3308",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3308"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "DEA 3510",
+     "rule": [
+      {
+       "codes": [
+        "DEA 3510"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "DEA 4700",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4700"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "DEA 4990",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4990"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "DEA 5700",
+     "rule": [
+      {
+       "codes": [
+        "DEA 5700"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "DEA 5500",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-sciences",
+   "title": "Social Sciences",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 1130 / PSYCH 1101",
+     "rule": [
+      {
+       "codes": [
+        "HD 1130",
+        "PSYCH 1101"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "quantitative-analysis",
+   "title": "Quantitative Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Quantitative Analysis",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2100",
+        "AEM 2100",
+        "ILRST 2100",
+        "PSYCH 2500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology",
+   "title": "Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1140 or other",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1140",
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOMG 1350",
+        "BIOEE 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1560 / CHEM 2070 / CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560",
+        "CHEM 2070",
+        "CHEM 2080"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2207 / PHYS 2208",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207",
+        "PHYS 2208"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Courses",
+     "rule": [
+      {
+       "codes": [
+        "DEA 1101",
+        "DEA 1110",
+        "DEA 1141",
+        "DEA 1150",
+        "DEA 2201",
+        "DEA 2203",
+        "DEA 3301",
+        "DEA 4401",
+        "DEA 2730",
+        "DEA 3530",
+        "DEA 3050",
+        "DEA 3030",
+        "DEA 4040",
+        "DEA 4050",
+        "DEA 4800",
+        "DEA 2510",
+        "DEA 1501",
+        "DEA 3510",
+        "DEA 3550",
+        "DEA 3500",
+        "DEA 4590"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

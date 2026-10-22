@@ -1,0 +1,314 @@
+{
+ "id": "smart-cities-minor",
+ "kind": "minor",
+ "name": "Smart Cities",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/smart-cities-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-requirements",
+   "title": "Core Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 4665",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4665"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CEE 4795",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4795"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 4800",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CEE 4930",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4930"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CEE 5735",
+     "rule": [
+      {
+       "codes": [
+        "CEE 5735"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "CEE 5745",
+     "rule": [
+      {
+       "codes": [
+        "CEE 5745"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "ORIE 2380",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "focus-areas",
+   "title": "Focus Areas",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 3610",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CEE 4210",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 4620",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4620"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CEE 4640",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4640"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CEE 4880",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4880"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "ENMGT 5200",
+     "rule": [
+      {
+       "codes": [
+        "ENMGT 5200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "MAE 4220",
+     "rule": [
+      {
+       "codes": [
+        "MAE 4220"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BEE 4310",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CEE 4200",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 4565",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4565"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "CEE 5420",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements-2",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 3230",
+     "rule": [
+      {
+       "codes": [
+        "CEE 3230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ENMGT 5200",
+     "rule": [
+      {
+       "codes": [
+        "ENMGT 5200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ENMGT 5940",
+     "rule": [
+      {
+       "codes": [
+        "ENMGT 5940"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "INFO 5455",
+     "rule": [
+      {
+       "codes": [
+        "INFO 5455"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PUBPOL 5755",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 5755"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PUBPOL 5757",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 5757"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "PUBPOL 4640",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 4640"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

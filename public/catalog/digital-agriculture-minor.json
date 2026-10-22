@@ -1,0 +1,260 @@
+{
+ "id": "digital-agriculture-minor",
+ "kind": "minor",
+ "name": "Digital Agriculture",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/digital-agriculture-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ALS 1110",
+     "rule": [
+      {
+       "codes": [
+        "ALS 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-science-computer-science",
+   "title": "Data Science/Computer Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 1110 / CS 1380 / INFO 2950",
+     "rule": [
+      {
+       "codes": [
+        "CS 1110",
+        "CS 1380",
+        "INFO 2950"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "An advanced programming or data science technical course as approved by minor advisor (3-4 cr)",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ethical-issues-that-inform-digital-agric",
+   "title": "Ethical Issues that Inform Digital Agriculture",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Ethical Issues that Inform Digital Agriculture",
+     "rule": [
+      {
+       "codes": [
+        "ENGRG 3600",
+        "GDEV 3400",
+        "INFO 1200",
+        "INFO 4145"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "Other courses as approved by the minor advisor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ag-production-systems",
+   "title": "Ag Production Systems",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Ag Production Systems",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2000",
+        "ANSC 2500",
+        "ANSC 3510",
+        "ENTOM 2030",
+        "PLSCI 3025",
+        "PLSCI 3030",
+        "PLSCI 3350",
+        "PLSCI 4140"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective Courses (1)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4175",
+        "PLSCI 2110",
+        "PLSCI 4290",
+        "PLSCI 2200",
+        "PLSCI 4200",
+        "PLSCI 4720",
+        "PLSCI 4100",
+        "PLSCI 6200",
+        "PLSCI 4660",
+        "PLSCI 3210",
+        "PLSCI 3650",
+        "PLSCI 3350",
+        "PLSCI 3025",
+        "PLSCI 3420",
+        "PLSCI 3430",
+        "PLSCI 4000",
+        "ANSC 3510",
+        "ANSC 4120",
+        "ANSC 4310",
+        "ANSC 3300",
+        "BEE 2510",
+        "BEE 3299",
+        "BEE 4530",
+        "BEE 3900",
+        "BEE 4550",
+        "CRP 4080",
+        "FDSC 2000",
+        "FDSC 4210",
+        "FDSC 4250",
+        "INFO 2921",
+        "INFO 3950",
+        "INFO 4310",
+        "INFO 4320",
+        "ECE 2720",
+        "ORIE 3120",
+        "ORIE 4580",
+        "ORIE 4820",
+        "ENGRI 1200",
+        "ENGRI 1310",
+        "ENGRI 1130",
+        "ECE 2300",
+        "ECE 4250",
+        "ECE 4760",
+        "ECE 5470",
+        "ECE 3140",
+        "MAE 4180",
+        "CS 4750",
+        "BME 4390",
+        "EAS 3030",
+        "ANSC 4880",
+        "AEM 6455",
+        "INFO 4200",
+        "INFO 4240",
+        "FDSC 3960"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Elective Courses (2)",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4175",
+        "PLSCI 2110",
+        "PLSCI 4290",
+        "PLSCI 2200",
+        "PLSCI 4200",
+        "PLSCI 4720",
+        "PLSCI 4100",
+        "PLSCI 6200",
+        "PLSCI 4660",
+        "PLSCI 3210",
+        "PLSCI 3650",
+        "PLSCI 3350",
+        "PLSCI 3025",
+        "PLSCI 3420",
+        "PLSCI 3430",
+        "PLSCI 4000",
+        "ANSC 3510",
+        "ANSC 4120",
+        "ANSC 4310",
+        "ANSC 3300",
+        "BEE 2510",
+        "BEE 3299",
+        "BEE 4530",
+        "BEE 3900",
+        "BEE 4550",
+        "CRP 4080",
+        "FDSC 2000",
+        "FDSC 4210",
+        "FDSC 4250",
+        "INFO 2921",
+        "INFO 3950",
+        "INFO 4310",
+        "INFO 4320",
+        "ECE 2720",
+        "ORIE 3120",
+        "ORIE 4580",
+        "ORIE 4820",
+        "ENGRI 1200",
+        "ENGRI 1310",
+        "ENGRI 1130",
+        "ECE 2300",
+        "ECE 4250",
+        "ECE 4760",
+        "ECE 5470",
+        "ECE 3140",
+        "MAE 4180",
+        "CS 4750",
+        "BME 4390",
+        "EAS 3030",
+        "ANSC 4880",
+        "AEM 6455",
+        "INFO 4200",
+        "INFO 4240",
+        "FDSC 3960"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,134 @@
+{
+ "id": "media-studies-minor",
+ "kind": "minor",
+ "name": "Media Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/media-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "making-media-one-course",
+   "title": "Making Media (One Course)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Making Media (One Course)",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 3110",
+        "ART 2601",
+        "COMM 3050",
+        "CS 3152",
+        "MUSIC 2701",
+        "PMA 3680"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "media-studies-minor-colloquium",
+   "title": "Media Studies Minor Colloquium",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PMA 2000",
+     "rule": [
+      {
+       "codes": [
+        "PMA 2000"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "media-studies-three-courses",
+   "title": "Media Studies (Three Courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Media Studies (Three Courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "AAS 4040",
+        "AMST 4603",
+        "ARKEO 2812",
+        "CLASS 2641",
+        "COML 2235",
+        "ENGL 3615",
+        "INFO 4260",
+        "PMA 2660"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Media Studies (Three Courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "AAS 4040",
+        "AMST 4603",
+        "ARKEO 2812",
+        "CLASS 2641",
+        "COML 2235",
+        "ENGL 3615",
+        "INFO 4260",
+        "PMA 2660"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Media Studies (Three Courses) (3)",
+     "rule": [
+      {
+       "codes": [
+        "AAS 4040",
+        "AMST 4603",
+        "ARKEO 2812",
+        "CLASS 2641",
+        "COML 2235",
+        "ENGL 3615",
+        "INFO 4260",
+        "PMA 2660"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

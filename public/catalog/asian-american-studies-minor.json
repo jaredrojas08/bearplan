@@ -1,0 +1,37 @@
+{
+ "id": "asian-american-studies-minor",
+ "kind": "minor",
+ "name": "Asian American Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/asian-american-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "AAS"
+     ],
+     "reason": "Needs a AAS course"
+    }
+   ],
+   "note": "Students must work with a faculty advisor from among the program's core faculty members and must complete five (5) courses to be distributed as follows: AAS 1100 Introduction to Asian American Studies 2-3 additional courses in Asian American Studies 1-2 courses on subjects within the fields of African American, American Indian, Latina/o, Feminist/Gender/Sexuality, or Asian studies.* Cornell offers many courses that take up this subject matter, courses that are offered through departments and programs for whom these subject areas constitute primary academic foci (e.g., Africana Studies and Research Center, American Indian and Indigenous Studies Program, Feminist, Gender and Sexuality Studies Program, Latina/o Studies Program, Department of Asian Studies) but, also, courses that can be found in a number of other academic units across the university * Students should confirm with their AASP",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

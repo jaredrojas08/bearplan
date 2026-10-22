@@ -1,0 +1,120 @@
+{
+ "id": "computer-science-minor",
+ "kind": "minor",
+ "name": "Computer Science",
+ "college": "College of Arts and Sciences, Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/computer-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 2110 / CS 2112 / ENGRD 2140",
+     "rule": [
+      {
+       "codes": [
+        "CS 2110",
+        "CS 2112",
+        "ENGRD 2140"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CS 3110 / CS 3410 / CS 3420",
+     "rule": [
+      {
+       "codes": [
+        "CS 3110",
+        "CS 3410",
+        "CS 3420"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses",
+   "title": "Additional Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 2800 / CS 2802 (1)",
+     "rule": [
+      {
+       "codes": [
+        "CS 2800",
+        "CS 2802"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CS 2800 / CS 2802 (2)",
+     "rule": [
+      {
+       "codes": [
+        "CS 2800",
+        "CS 2802"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CS 2800 / CS 2802 (3)",
+     "rule": [
+      {
+       "codes": [
+        "CS 2800",
+        "CS 2802"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CS 2800 / CS 2802 (4)",
+     "rule": [
+      {
+       "codes": [
+        "CS 2800",
+        "CS 2802"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "CS non-seminar courses at a 3000-level or higher",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

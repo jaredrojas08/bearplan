@@ -1,0 +1,447 @@
+{
+ "id": "physics-ba",
+ "name": "Physics (BA)",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/physics-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "a-three-semester-introductory-physics-se",
+   "title": "A three-semester introductory physics sequence",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2216",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2216"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2213"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PHYS 2214",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2214"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "a-three-semester-introductory-physics-se-2",
+   "title": "A three-semester introductory physics sequence",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 1116",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1116"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2217",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2217"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PHYS 2218",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2218"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "single-variable-calculus",
+   "title": "Single-Variable Calculus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1120",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1910",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1910"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "multivariable-calculus",
+   "title": "Multivariable Calculus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1920",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1920"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 2220",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 2240",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2240"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "differential-equations",
+   "title": "Differential Equations",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 2930",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2930"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 3270",
+     "rule": [
+      {
+       "codes": [
+        "MATH 3270"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "linear-algebra",
+   "title": "Linear Algebra",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 2210",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 2230",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 2310",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2310"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "MATH 2940",
+     "rule": [
+      {
+       "codes": [
+        "MATH 2940"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "the-two-course-sequence-in-modern-physic",
+   "title": "The two-course sequence in modern physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 3316",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 3316"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 3317",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 3317"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "intermediate-courses-in-analytical-mecha",
+   "title": "Intermediate courses in analytical mechanics and electricity & magnetism",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 3318",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 3318"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 3327",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 3327"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "inside-physics",
+   "name": "\"Inside\" Physics",
+   "sections": [
+    {
+     "id": "inside-physics-inside-physics",
+     "title": "\"Inside\" Physics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "\"Inside\" Physics",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 3310",
+          "PHYS 3360",
+          "AEP 3640",
+          "ASTRO 4410",
+          "BEE 4500",
+          "BME 3030",
+          "BME 4390",
+          "CHEM 3020",
+          "EAS 4370",
+          "MAE 3260",
+          "MAE 3783",
+          "MAE 4150",
+          "MAE 4272",
+          "MAE 4480",
+          "MSE 5410"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "note": "The catalog lists these courses without a count here; check how many are required.",
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "outside-physics",
+   "name": "\"Outside\" Physics",
+   "sections": [
+    {
+     "id": "outside-physics-outside-physics",
+     "title": "\"Outside\" Physics",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "PHYS 3310",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 3310"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "PHYS 3360",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 3360"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s3",
+       "label": "PHYS 4410",
+       "rule": [
+        {
+         "codes": [
+          "PHYS 4410"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "s4",
+       "label": "ASTRO 4410",
+       "rule": [
+        {
+         "codes": [
+          "ASTRO 4410"
+         ]
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

@@ -1,0 +1,86 @@
+{
+ "id": "spanish-minor",
+ "kind": "minor",
+ "name": "Spanish",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/spanish-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "SPAN 2205",
+     "rule": [
+      {
+       "codes": [
+        "SPAN 2205"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "SPAN 2150",
+     "rule": [
+      {
+       "codes": [
+        "SPAN 2150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "SPAN 2200",
+     "rule": [
+      {
+       "codes": [
+        "SPAN 2200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "SPAN 2140 / SPAN 2235 / SPAN 2230",
+     "rule": [
+      {
+       "codes": [
+        "SPAN 2140",
+        "SPAN 2235",
+        "SPAN 2230"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PORT 2800",
+     "rule": [
+      {
+       "codes": [
+        "PORT 2800"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,937 @@
+{
+ "id": "fashion-design-management-bs",
+ "name": "Fashion Design and Management (BS)",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fashion-design-management-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-courses",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "FSAD 1140",
+        "FSAD 1170",
+        "FSAD 1250",
+        "FSAD 1350",
+        "FSAD 1360",
+        "FSAD 1450",
+        "FSAD 2310",
+        "FSAD 2370",
+        "FSAD 2640",
+        "FSAD 2650",
+        "FSAD 2660",
+        "FSAD 3320",
+        "FSAD 3770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Total Hours",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "advanced-studios1",
+   "title": "Advanced Studios1",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Advanced Studios1 (1)",
+     "rule": [
+      {
+       "codes": [
+        "FSAD 3250",
+        "FSAD 3370",
+        "FSAD 3650",
+        "FSAD 3770",
+        "FSAD 3990",
+        "FSAD 4370",
+        "FSAD 4700",
+        "FSAD 4770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Advanced Studios1 (2)",
+     "rule": [
+      {
+       "codes": [
+        "FSAD 3250",
+        "FSAD 3370",
+        "FSAD 3650",
+        "FSAD 3770",
+        "FSAD 3990",
+        "FSAD 4370",
+        "FSAD 4700",
+        "FSAD 4770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Advanced Studios1 (3)",
+     "rule": [
+      {
+       "codes": [
+        "FSAD 3250",
+        "FSAD 3370",
+        "FSAD 3650",
+        "FSAD 3770",
+        "FSAD 3990",
+        "FSAD 4370",
+        "FSAD 4700",
+        "FSAD 4770"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "fsad-upper-level-courses",
+   "title": "FSAD Upper level Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "FSAD 6000+",
+     "rule": [
+      {
+       "minLevel": 6000,
+       "subjects": [
+        "FSAD"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Take any two FSAD courses, 4000-6000, one of which must be at the 6000 level.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "psychology",
+   "title": "Psychology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Psychology",
+     "rule": [
+      {
+       "codes": [
+        "HD 1130",
+        "HD 2310",
+        "PSYCH 1101",
+        "DEA 1500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-science-3-credits",
+   "title": "Social Science (3 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "One course from Anthropology (ANTHR), Sociology (SOC), or Global Development (GDEV)",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-economics",
+   "title": "Introductory Economics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "humanities",
+   "title": "Humanities",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective",
+     "rule": [
+      {
+       "minCredits": 3
+      }
+     ]
+    }
+   ],
+   "note": "One Art History (ARTH) course of at least 3 credits",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "quantitative-analysis",
+   "title": "Quantitative Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2100 / AEM 2100 / ILRST 2100",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2100",
+        "AEM 2100",
+        "ILRST 2100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology",
+   "title": "Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1140",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOEE 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or AP Biology score of 5",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1560",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or AP Chemistry score of 5",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2207",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2208",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or AP Physics score of 5",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ethics-sustainability",
+   "title": "Ethics/Sustainability",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Ethics/Sustainability",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4220",
+        "FSAD 3200",
+        "FSAD 4021",
+        "FSAD 4022",
+        "FSAD 4025",
+        "FSAD 4682",
+        "FSAD 4800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-courses-2",
+   "title": "Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "FSAD 1140",
+        "FSAD 1250",
+        "FSAD 1350",
+        "FSAD 1360",
+        "FSAD 1450",
+        "FSAD 2310",
+        "FSAD 2370",
+        "FSAD 2660",
+        "FSAD 3200",
+        "FSAD 3320",
+        "FSAD 3330",
+        "FSAD 4440",
+        "FSAD 4660"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Total Hours",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "additional-courses-9-12-credits",
+   "title": "Additional Courses (9-12 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "FSAD 6000+",
+     "rule": [
+      {
+       "minLevel": 6000,
+       "subjects": [
+        "FSAD"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Choose any three additional FSAD courses, one of which must be at the 4000-6000 levels.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introduction-to-management",
+   "title": "Introduction to Management",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 1200 / HADM 1810 / ILRID 1700",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1200",
+        "HADM 1810",
+        "ILRID 1700"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "marketing",
+   "title": "Marketing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2400 / HADM 2410",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2400",
+        "HADM 2410"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "communications",
+   "title": "Communications",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "COMM",
+     "rule": [
+      {
+       "subjects": [
+        "COMM"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "One COMM course",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "business-strategy",
+   "title": "Business Strategy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Business Strategy",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3110",
+        "AEM 3121",
+        "AEM 3249",
+        "AEM 4080",
+        "ILROB 4260"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "accounting",
+   "title": "Accounting",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Accounting",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2210",
+        "HADM 2230",
+        "NBA 5530",
+        "NCC 5500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "psychology-2",
+   "title": "Psychology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HD 1130 / PSYCH 1101",
+     "rule": [
+      {
+       "codes": [
+        "HD 1130",
+        "PSYCH 1101"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "social-science",
+   "title": "Social Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "One course from Anthropology (ANTHR), Sociology (SOC), or Global Development (GDEV)",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-economics-2",
+   "title": "Introductory Economics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "humanities-3-4-credits",
+   "title": "Humanities (3-4 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective",
+     "rule": [
+      {
+       "minCredits": 3
+      }
+     ]
+    }
+   ],
+   "note": "One Art History (ARTH) course of at least 3 credits",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "quantitative-analysis-2",
+   "title": "Quantitative Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2100 / AEM 2100 / ILRST 2100",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2100",
+        "AEM 2100",
+        "ILRST 2100"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-analysis",
+   "title": "Data Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Data Analysis",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2820",
+        "AEM 2831",
+        "AEM 2841",
+        "AEM 2850",
+        "AEM 4410",
+        "HD 2930",
+        "INFO 2950",
+        "INFO 2951",
+        "PUBPOL 2070"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "STSCI 1380",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 1380"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "SOC 3740",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biology-2",
+   "title": "Biology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOG 1140",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1140"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOEE 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMG 1350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOG 1440 / BIOG 1445",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1440",
+        "BIOG 1445"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or AP Biology score of 5",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry-2",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1560",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or AP Chemistry score of 5",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics-2",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2207",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PHYS 2208",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "or AP Physics score of 5",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ethics",
+   "title": "Ethics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Ethics",
+     "rule": [
+      {
+       "codes": [
+        "DEA 4220",
+        "FSAD 4021",
+        "FSAD 4022",
+        "FSAD 4025",
+        "FSAD 4682",
+        "FSAD 4800"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

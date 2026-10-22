@@ -1,0 +1,467 @@
+{
+ "id": "food-science-bs",
+ "name": "Food Science (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/food-science-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introductory-biology-course-minimum-6-cr",
+   "title": "Introductory Biology Course (minimum 6 credits from the following): electives",
+   "type": "creditBucket",
+   "minCredits": 6,
+   "rule": [
+    {
+     "codes": [
+      "BIOG 1140",
+      "BIOG 1440",
+      "BIOG 1500",
+      "BIOMG 1350",
+      "BIOEE 1610",
+      "BIOEE 1780",
+      "BIOAP 1100",
+      "PLSCI 1115"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Introductory Biology Course (minimum 6 credits from the following)",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Chemistry",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560",
+        "CHEM 1561",
+        "CHEM 1570",
+        "CHEM 2070",
+        "CHEM 2071",
+        "CHEM 2080",
+        "CHEM 2081",
+        "CHEM 3570",
+        "CHEM 3580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "calculus",
+   "title": "Calculus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "MATH 1120",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "MATH 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1110"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Statistics",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100",
+        "STSCI 2100",
+        "STSCI 2150",
+        "STSCI 2200",
+        "PSYCH 2500"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "biochemistry",
+   "title": "Biochemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMG 3310 / BIOMG 3350 / NS 3200",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310",
+        "BIOMG 3350",
+        "NS 3200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "microbiology",
+   "title": "Microbiology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMI 2900",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMI 2911",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2911"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PHYS 2207 / PHYS 1110 / PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207",
+        "PHYS 1110",
+        "PHYS 1112"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "concentrations": [
+  {
+   "id": "science-focused-elective",
+   "name": "Science Focused Elective",
+   "sections": [
+    {
+     "id": "science-focused-elec-science-focused-elective",
+     "title": "Science Focused Elective",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Science Focused Elective",
+       "rule": [
+        {
+         "codes": [
+          "FDSC 1101",
+          "FDSC 1102",
+          "NS 1150",
+          "FDSC 2005",
+          "FDSC 2100",
+          "FDSC 2110",
+          "FDSC 3940",
+          "FDSC 3950",
+          "FDSC 3960",
+          "FDSC 4000",
+          "FDSC 4100",
+          "FDSC 4170",
+          "FDSC 4190",
+          "FDSC 4210",
+          "FDSC 4230",
+          "FDSC 4240"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "FDSC 3000+",
+       "rule": [
+        {
+         "minLevel": 3000,
+         "subjects": [
+          "FDSC"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "FDSC Electives (>3000 level)",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "business-focused-elective",
+   "name": "Business Focused Elective",
+   "sections": [
+    {
+     "id": "business-focused-ele-business-focused-elective",
+     "title": "Business Focused Elective",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Business Focused Elective",
+       "rule": [
+        {
+         "codes": [
+          "ECON 1110",
+          "AEM 1200",
+          "FDSC 1101",
+          "FDSC 1102",
+          "NS 1150",
+          "FDSC 2005",
+          "FDSC 2100",
+          "FDSC 2110",
+          "FDSC 3940",
+          "FDSC 3950",
+          "FDSC 3960",
+          "FDSC 4000",
+          "FDSC 4100",
+          "FDSC 4170",
+          "FDSC 4210",
+          "FDSC 4230",
+          "FDSC 4240"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "FDSC 3000+",
+       "rule": [
+        {
+         "minLevel": 3000,
+         "subjects": [
+          "FDSC"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "FDSC Electives (>3000 level)",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  },
+  {
+   "id": "safety-focused-elective",
+   "name": "Safety Focused Elective",
+   "sections": [
+    {
+     "id": "safety-focused-elect-safety-focused-elective",
+     "title": "Safety Focused Elective",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Safety Focused Elective",
+       "rule": [
+        {
+         "codes": [
+          "FDSC 1101",
+          "FDSC 1102",
+          "NS 1150",
+          "FDSC 2005",
+          "FDSC 2100",
+          "FDSC 2110",
+          "FDSC 3940",
+          "FDSC 3950",
+          "FDSC 3960",
+          "FDSC 4000",
+          "FDSC 4210",
+          "FDSC 4170",
+          "FDSC 4230",
+          "FDSC 4240"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      },
+      {
+       "id": "s2",
+       "label": "FDSC 3000+",
+       "rule": [
+        {
+         "minLevel": 3000,
+         "subjects": [
+          "FDSC"
+         ]
+        }
+       ]
+      }
+     ],
+     "note": "FDSC Electives (>3000 level)",
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "safety-focused-elect-epidemiology",
+     "title": "Epidemiology",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "NS 3600 / PUBPOL 3280 / ENTOM 4520",
+       "rule": [
+        {
+         "codes": [
+          "NS 3600",
+          "PUBPOL 3280",
+          "ENTOM 4520"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "safety-focused-elect-microbial-pathogenesis",
+     "title": "Microbial Pathogenesis",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "Microbial Pathogenesis",
+       "rule": [
+        {
+         "codes": [
+          "BIOMS 4040",
+          "BIOMS 4090",
+          "BIOMS 4150",
+          "BIOMS 4340",
+          "BIOMG 4390"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "right",
+     "filter": "major",
+     "icon": "book"
+    },
+    {
+     "id": "safety-focused-elect-risk-analysis-and-management",
+     "title": "Risk Analysis and Management",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "s1",
+       "label": "PUBPOL 4240 / GDEV 4080",
+       "rule": [
+        {
+         "codes": [
+          "PUBPOL 4240",
+          "GDEV 4080"
+         ],
+         "reason": "Not on this list in the catalog"
+        }
+       ]
+      }
+     ],
+     "column": "left",
+     "filter": "major",
+     "icon": "book"
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "checks": []
+}

@@ -1,0 +1,98 @@
+{
+ "id": "viking-studies-minor",
+ "kind": "minor",
+ "name": "Viking Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/viking-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "HIST 1660",
+     "rule": [
+      {
+       "codes": [
+        "HIST 1660"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "HIST 2082",
+     "rule": [
+      {
+       "codes": [
+        "HIST 2082"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ENGL 3110",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 3110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ENGL 3120",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 3120"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "capstone-course-list",
+   "title": "Capstone Course List",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Capstone Course List",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 3080",
+        "HIST 3200",
+        "LING 3315",
+        "LING 3316"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

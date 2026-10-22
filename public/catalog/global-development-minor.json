@@ -1,0 +1,138 @@
+{
+ "id": "global-development-minor",
+ "kind": "minor",
+ "name": "Global Development",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/global-development-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GDEV 1102",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 1102"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 2202",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2202"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "one-natural-systems-development-course-c",
+   "title": "One Natural Systems & Development Course (choose one focus)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GDEV 2300 / GDEV 1300",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2300",
+        "GDEV 1300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 3240 / GDEV 2065",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3240",
+        "GDEV 2065"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Agriculture focus: Environment focus:",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "community-engaged-learning-cel-course",
+   "title": "Community-Engaged Learning (CEL) Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "One course with CU-CEL",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GDEV 2000+ (1)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "GDEV"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 2000+ (2)",
+     "rule": [
+      {
+       "minLevel": 2000,
+       "minCredits": 6,
+       "subjects": [
+        "GDEV"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Two additional GDEV prefixed courses (minimum 6 credits) at the 2000 level or higher",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

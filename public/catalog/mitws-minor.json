@@ -1,0 +1,34 @@
+{
+ "id": "mitws-minor",
+ "kind": "minor",
+ "name": "Minority, Indigenous, and Third World Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/mitws-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "Students minoring in MITWS may distribute their eligible courses from categories such as diasporic and Anglophone literatures.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -9,7 +9,8 @@ A degree-progress planner for Cornell students. Drag courses onto your major's c
 
 ![BearPlan requirements view](docs/screenshot.png)
 
-- **Built-in checklists:** Computer Science (Engineering, entered FA24+) and Applied Economics and Management (Dyson), with all ten AEM concentrations (pick up to two) and both CALS distribution sets (entered FA25+, or FA22 to FA24). Minors: Business and Business for Engineers, added to any plan. A course can count for the major and a minor, and each minor's unique-credit rule is checked.
+- **Every undergraduate major and minor.** Checked checklists for Computer Science (Engineering), Applied Economics and Management (Dyson, all ten concentrations, both CALS distribution sets), and the Business and Business for Engineers minors. About 220 more majors and minors are drafts generated from the Cornell catalog, clearly marked, covering each program's own course lists.
+- **Minors and concentrations.** Add minors to any plan; a course can count for the major and a minor, and each minor's unique-credit rule is checked.
 - **Checklist view** modeled on the paper CS checklist: every requirement section as a table of Course, Cr, Sem, Grade and Notes.
 - **Rules that refuse bad drops.** A course only drops where it fits. Rows it can't go in say why ("Needs CS 4000+", "No PE courses", "OPHLS-AG, PHS-AS, SCT-IL are not Liberal Studies categories").
 - **Status from the calendar.** Past terms count as completed, the current term as in progress, later terms as planned. Nothing to keep up to date by hand.
@@ -60,6 +61,18 @@ The script requests every subject in each roster, one request per second as the 
 { "code": "ASTRO 1101", "title": "From New Worlds to Black Holes", "creditsMin": 3, "creditsMax": 3,
   "distributions": ["OPHLS-AG", "PHS-AS", "SCT-IL"], "rosters": ["FA26"] }
 ```
+
+## Drafted checklists
+
+`npm run import-catalog` reads every undergraduate major and minor page on [catalog.cornell.edu](https://catalog.cornell.edu/programs/) and writes a draft template for each to `public/catalog/`, plus `public/catalog/index.json` for the pickers. The app downloads a draft only when someone picks it.
+
+Drafts are a starting point, not a checklist to trust:
+
+- They hold the program's own course lists. College requirements (distributions, PE, writing) are not included.
+- Rules written as prose ("at most one 2000-level course", "two from different categories") land in section notes, not checks.
+- Some layouts parse imperfectly. A long list with no stated count becomes "pick one" with a note, and pages with no course tables become a credit total limited to the subjects the text names.
+
+The app labels drafts and links each one to its catalog page. To promote a draft, copy it to `src/templates/`, fix it against the catalog, remove `"draft": true`, add it to `BUILT_IN_TEMPLATES`, and add its catalog slug to `VERIFIED` in `scripts/import-catalog.mjs` so the next import skips it. The script fetches one page per second and caches pages in `node_modules/.cache/bearplan-catalog`; delete that folder to fetch fresh copies.
 
 ## Adding a major
 

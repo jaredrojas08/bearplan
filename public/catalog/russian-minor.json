@@ -1,0 +1,37 @@
+{
+ "id": "russian-minor",
+ "kind": "minor",
+ "name": "Russian",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/russian-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "rule": [
+    {
+     "subjects": [
+      "RUSSA"
+     ],
+     "reason": "Needs a RUSSA course"
+    }
+   ],
+   "note": "There are two ways to satisfy the requirement of proficiency in Russian: complete RUSSA 2204. for those who place out of RUSSA 2204, complete RUSSA 3305 or RUSSA 3306. Russian language courses taken abroad or at American summer programs may be counted towards this requirement if they are aimed at achieving similar proficiency levels. Four additional non-language courses (for 3 or more credits, at the 2000-level or above) At least two of the four non-language courses must be in Russian literature, and at least one must include reading in Russian. (Note: Reading courses offered by the Russian Language Program cannot be counted towards any portion of the literature requirement.) The two remaining courses may be in Russian literature, or students may choose Russia-related courses in other departments, for example, Linguistics, History, and Government.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

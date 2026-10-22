@@ -1,0 +1,56 @@
+{
+ "id": "sanskrit-studies-minor",
+ "kind": "minor",
+ "name": "Sanskrit Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/sanskrit-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements",
+     "rule": [
+      {
+       "codes": [
+        "ASIAN 2248",
+        "ASIAN 2250",
+        "ASIAN 3341",
+        "ASIAN 3344",
+        "ASIAN 3366",
+        "ASIAN 4020",
+        "ASIAN 4023",
+        "ASIAN 4446",
+        "SANSK 1131",
+        "SANSK 1132",
+        "SANSK 2252",
+        "SANSK 3301",
+        "SANSK 3302",
+        "SNLIT 6601",
+        "SNLIT 6602"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

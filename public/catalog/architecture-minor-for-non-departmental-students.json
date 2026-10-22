@@ -1,0 +1,99 @@
+{
+ "id": "architecture-minor-for-non-departmental-students",
+ "kind": "minor",
+ "name": "Architecture",
+ "college": "College of Architecture, Art and Planning",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/architecture-minor-for-non-departmental-students/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Additional Courses",
+     "rule": [
+      {
+       "minCredits": 6,
+       "subjects": [
+        "ARCH"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Any other department courses under the ARCH subject code* (two courses minimum, 6 credits minimum)",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-courses-architectural-design-st",
+   "title": "Required Courses: Architectural Design Studio",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "ARCH 1110",
+      "ARCH 1104"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Architectural Design Studio",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "required-courses-visual-representation",
+   "title": "Required Courses: Visual Representation",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "ARCH 1501",
+      "ARCH 2502"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Visual Representation",
+   "column": "left",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "required-courses-architectural-history",
+   "title": "Required Courses: Architectural History",
+   "type": "creditBucket",
+   "minCredits": 3,
+   "rule": [
+    {
+     "codes": [
+      "ARCH 1801",
+      "ARCH 2802"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Architectural History",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  }
+ ],
+ "checks": []
+}

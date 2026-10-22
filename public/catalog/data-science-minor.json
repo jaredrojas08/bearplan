@@ -1,0 +1,382 @@
+{
+ "id": "data-science-minor",
+ "kind": "minor",
+ "name": "Data Science",
+ "college": "Bowers College of Computing and Information Science",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/data-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core-statistics",
+   "title": "Core Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Statistics",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3100",
+        "ENGRD 2700",
+        "MATH 4710",
+        "MATH 4720",
+        "ORIE 3500",
+        "STSCI 3080",
+        "STSCI 3110",
+        "ECON 3110",
+        "ECON 3130",
+        "STSCI 2200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-computing",
+   "title": "Core Computing",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core Computing",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2820",
+        "AEM 2830",
+        "AEM 2840",
+        "AEM 2850",
+        "CS 1110",
+        "CS 1112"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CS 4320",
+     "rule": [
+      {
+       "codes": [
+        "CS 4320"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "HADM 3710",
+     "rule": [
+      {
+       "codes": [
+        "HADM 3710"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "HADM 3740",
+     "rule": [
+      {
+       "codes": [
+        "HADM 3740"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ORIE 3120",
+     "rule": [
+      {
+       "codes": [
+        "ORIE 3120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "STSCI 4060",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 4060"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "STSCI 4520",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 4520"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "CS 3220",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-analysis",
+   "title": "Data Analysis",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Data Analysis",
+     "rule": [
+      {
+       "codes": [
+        "AEM 3275",
+        "ASTRO 3334",
+        "ASTRO 3340",
+        "ASTRO 4523",
+        "BEE 4310",
+        "CHEME 4660",
+        "CHEME 5660",
+        "CS 3780",
+        "CS 4787",
+        "CS 4850",
+        "ECE 3200",
+        "ECE 4110",
+        "ECE 4200",
+        "ECE 4250",
+        "ECON 3120",
+        "ECON 4140",
+        "ENGRD 2720",
+        "HADM 3275",
+        "HADM 4750",
+        "HD 2930",
+        "HD 2940",
+        "INFO 2950",
+        "INFO 2951",
+        "INFO 3300",
+        "INFO 3370",
+        "INFO 3950",
+        "MATH 2310",
+        "ORIE 3741",
+        "ORIE 4580",
+        "ORIE 4740",
+        "ORIE 4820",
+        "PUBPOL 3100",
+        "STSCI 4060",
+        "STSCI 3200",
+        "STSCI 4100",
+        "STSCI 3740",
+        "STSCI 4110",
+        "STSCI 4780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "big-data-ethics-policy-society",
+   "title": "Big Data Ethics, Policy & Society",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Big Data Ethics, Policy & Society",
+     "rule": [
+      {
+       "codes": [
+        "ALS 1210",
+        "COMM 4300",
+        "ENGL 3778",
+        "ENGRG 3605",
+        "GOVT 3999",
+        "INFO 1200",
+        "INFO 1260",
+        "CS 1340",
+        "INFO 3200",
+        "COMM 3200",
+        "INFO 3370",
+        "INFO 4145",
+        "INFO 4240",
+        "INFO 4250",
+        "INFO 4505",
+        "INFO 4561",
+        "NBA 4920",
+        "PUBPOL 2070",
+        "PUBPOL 2130",
+        "PUBPOL 3520",
+        "PUBPOL 3725",
+        "STSCI 3600",
+        "STSCI 4850"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "data-communication",
+   "title": "Data Communication",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Data Communication",
+     "rule": [
+      {
+       "codes": [
+        "COGST 3420",
+        "COMM 2450",
+        "COMM 3010",
+        "COMM 3150",
+        "COMM 4360",
+        "COMM 4860",
+        "INFO 3312",
+        "INFO 3950",
+        "INFO 4310",
+        "SOC 3580"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "domain-expertise",
+   "title": "Domain Expertise",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Domain Expertise",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2770",
+        "AEM 3100",
+        "AEM 4060",
+        "AEM 4110",
+        "AEM 4225",
+        "AEM 4435",
+        "AEM 4620",
+        "AEM 4660",
+        "ASTRO 3310",
+        "BEE 4850",
+        "BIOCB 3620",
+        "BIOCB 4381",
+        "BIOCB 4830",
+        "BIOCB 4840",
+        "BIOEE 3550",
+        "BIOEE 3611",
+        "BIOEE 4940",
+        "BIOMG 4810",
+        "BIOMG 4870",
+        "BIONB 3300",
+        "BIONB 4220",
+        "BIONB 4380",
+        "BME 4790",
+        "CHEME 4660",
+        "CHEME 5660",
+        "CHEM 4810",
+        "COGST 3140",
+        "CRP 4080",
+        "CS 4300",
+        "INFO 4300",
+        "CS 4740",
+        "EAS 3450",
+        "EAS 5555",
+        "ECON 3120",
+        "ECON 3140",
+        "ECON 3720",
+        "ECON 3860",
+        "ECON 4660",
+        "ENTOM 3030",
+        "GOVT 3282",
+        "HADM 4050",
+        "HADM 4770",
+        "ILRHR 4664",
+        "ILRGL 3330",
+        "ILROB 4710",
+        "INFO 3140",
+        "INFO 3350",
+        "INFO 4100",
+        "INFO 4555",
+        "NS 4300",
+        "NTRES 3100",
+        "NTRES 4100",
+        "NTRES 4120",
+        "ORIE 4120",
+        "ORIE 4126",
+        "ORIE 4154",
+        "ORIE 4630",
+        "ORIE 4656",
+        "ORIE 4742",
+        "PLSCI 4000",
+        "PLSCI 4200",
+        "PLSCI 4290",
+        "PUBPOL 2155",
+        "PUBPOL 3120",
+        "PUBPOL 3130",
+        "ECON 3670",
+        "PUBPOL 3280",
+        "GDEV 3280",
+        "PUBPOL 3400",
+        "ECON 3610",
+        "PUBPOL 3550",
+        "PUBPOL 3600",
+        "PUBPOL 3670",
+        "ECON 3850",
+        "PUBPOL 3780",
+        "PUBPOL 4080",
+        "PUBPOL 4101",
+        "PUBPOL 4110",
+        "STS 4040"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

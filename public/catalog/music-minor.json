@@ -1,0 +1,72 @@
+{
+ "id": "music-minor",
+ "kind": "minor",
+ "name": "Music",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/music-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "materials-and-techniques-mt",
+   "title": "Materials and Techniques (MT)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "At least one three to four credit course",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "history-and-culture-hc",
+   "title": "History and Culture (HC)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective"
+    }
+   ],
+   "note": "At least one three credit course",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "performance-and-lessons-pl",
+   "title": "Performance and Lessons (PL)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Elective (1)"
+    },
+    {
+     "id": "s2",
+     "label": "Elective (2)"
+    },
+    {
+     "id": "s3",
+     "label": "Elective (3)"
+    }
+   ],
+   "note": "At least three credits of courses, of which at least one credit must involve collaborative music making",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

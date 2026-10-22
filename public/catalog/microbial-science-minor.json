@@ -1,0 +1,159 @@
+{
+ "id": "microbial-science-minor",
+ "kind": "minor",
+ "name": "Microbial Science",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/microbial-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-courses",
+   "title": "Required Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMI 1100",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 1100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMI 1400",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 1400"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMI 2900",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2900"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "BIOMI 2911",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2911"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "BIOMI 4850",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 4850"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOMI 1120",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 1120"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOMI 3500",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 3500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "BIOMI 2970",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2970"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "minor-requirements-2",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements",
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2500",
+        "BIOMI 2600",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 3940",
+        "FDSC 3950",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4310",
+        "BIOMS 4340"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. BIOMS 3310",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

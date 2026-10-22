@@ -1,0 +1,29 @@
+{
+ "id": "near-eastern-studies-minor",
+ "kind": "minor",
+ "name": "Near Eastern Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/near-eastern-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "At least three courses should be at the 3000 level or above. Two language courses may count towards the minor. These must be two courses of the same language (Arabic, Hebrew, Persian, Turkish. Ancient: Akkadian, Biblical Hebrew, Hieroglyphic Egyptian) Three (or more) courses will explore the history, archaeology, literature, or religions of the Near East. Students may choose to focus on one of these disciplines or on the ancient, late antique, medieval, or modern periods across the disciplines. Please Note: No more than one independent study, one non-NES cross-listed course, and one departmentally approved course taken overseas or at another university may be applied toward the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

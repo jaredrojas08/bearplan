@@ -1,0 +1,99 @@
+{
+ "id": "food-science-minor",
+ "kind": "minor",
+ "name": "Food Science",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/food-science-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-coursework-minimum-7-credits",
+   "title": "Required Coursework (Minimum 7 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Coursework (Minimum 7 Credits) (1)",
+     "rule": [
+      {
+       "codes": [
+        "FDSC 3940",
+        "FDSC 4100",
+        "FDSC 4170",
+        "FDSC 4230"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Required Coursework (Minimum 7 Credits) (2)",
+     "rule": [
+      {
+       "codes": [
+        "FDSC 3940",
+        "FDSC 4100",
+        "FDSC 4170",
+        "FDSC 4230"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "required-coursework-minimum-7-credits-re",
+   "title": "Required Coursework (Minimum 7 Credits): Required Coursework (Minimum 7 Credits)",
+   "type": "creditBucket",
+   "minCredits": 7,
+   "rule": [
+    {
+     "codes": [
+      "FDSC 2005"
+     ],
+     "reason": "Not on this list in the catalog"
+    }
+   ],
+   "note": "Required Coursework (Minimum 7 Credits)",
+   "column": "right",
+   "filter": "major",
+   "icon": "star"
+  },
+  {
+   "id": "elective-courses-minimum-5-credits",
+   "title": "Elective Courses (Minimum 5 Credits)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "FDSC",
+     "rule": [
+      {
+       "subjects": [
+        "FDSC"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Courses must be ≥ 2000 level. Cannot be a special studies course. A minimum of five additional elective credits in any course(s) with the \"FDSC\" prefix",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

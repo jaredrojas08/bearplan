@@ -1,0 +1,29 @@
+{
+ "id": "law-society-minor",
+ "kind": "minor",
+ "name": "Law & Society",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/law-society-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Successfully complete 5 courses from the Approved Course List which groups courses from a wide variety of disciplines across the social sciences and the humanities into five categories. Below is an outline of the 5 categories that courses approved for the minor are divided into. Category 1: Legal Institutions Category 2: Law and Policy Category 3: Law and Social Structure Category 4: Law and Culture Category 5: Law and Ethics Courses should be 3 or 4 credits, taken for a letter grade (B- or better to count), and cover at least 3 (of 5) categories, with no more than 2 courses in any one category or department. (Note: All ILR courses are considered as one department.) Crosslisted courses can be counted as any of the departments in which they are crosslisted. At the discretion of the Law & Society directors, permission may be granted to substitute an appropriate course that has been: accept",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

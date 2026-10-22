@@ -1,0 +1,1069 @@
+{
+ "id": "international-relations-minor",
+ "kind": "minor",
+ "name": "International Relations",
+ "college": "Cornell University",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/international-relations-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "core",
+   "title": "Core",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2300",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 4300",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4300"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECON 3545",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3545"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives",
+   "title": "Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2000",
+        "AEM 2300",
+        "AEM 2350",
+        "AEM 2500",
+        "AEM 2805",
+        "AEM 2816",
+        "AEM 4420",
+        "AEM 4450",
+        "AEM 4545",
+        "AEM 4880",
+        "ASIAN 3304",
+        "CRP 3854",
+        "ECON 3550",
+        "ECON 3545",
+        "ECON 3910",
+        "GDEV 3010",
+        "ILRGL 2350",
+        "ILRGL 3385",
+        "ILRGL 4337",
+        "NES 4337",
+        "PUBPOL 3780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-2",
+   "title": "Core",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GOVT 1817",
+     "rule": [
+      {
+       "codes": [
+        "GOVT 1817"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-2",
+   "title": "Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives",
+     "rule": [
+      {
+       "codes": [
+        "ASIAN 4448",
+        "ASRC 3330",
+        "GOVT 2274",
+        "GOVT 2817",
+        "GOVT 2847",
+        "GOVT 3384",
+        "GOVT 3857",
+        "GOVT 3947",
+        "GDEV 4721",
+        "HIST 2315",
+        "HIST 1650",
+        "HIST 1740",
+        "HIST 2541",
+        "HIST 2969"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-3",
+   "title": "Core",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2000",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2000"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "GDEV 1102",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 1102"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "GDEV 2010",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "GDEV 3150",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3150"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "GDEV 3311",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 3311"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-3",
+   "title": "Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives",
+     "rule": [
+      {
+       "codes": [
+        "GDEV 4940",
+        "GOVT 2152",
+        "GOVT 3087",
+        "GOVT 3494",
+        "GOVT 4451",
+        "HIST 4851",
+        "ILRGL 2350",
+        "ILRGL 4360",
+        "PUBPOL 3615",
+        "PUBPOL 3670",
+        "PUBPOL 3780"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Electives",
+     "rule": [
+      {
+       "codes": [
+        "AEM 1500",
+        "CEE 1130",
+        "ECON 3670",
+        "ECON 3850",
+        "ECON 3860",
+        "ECON 3910",
+        "GDEV 3020",
+        "GDEV 3311",
+        "GDEV 3240",
+        "GDEV 4140"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. GDEV 4443",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "core-4",
+   "title": "Core",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Core",
+     "rule": [
+      {
+       "codes": [
+        "HIST 1590",
+        "GOVT 3353",
+        "ASIAN 2208",
+        "ASIAN 2211",
+        "ASIAN 2218",
+        "ASIAN 2222",
+        "ASIAN 2275",
+        "CAPS 2230",
+        "GOVT 2553",
+        "HIST 1511",
+        "HIST 1960",
+        "GOVT 3293",
+        "HIST 2674",
+        "GOVT 3313"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Core courses by region (choose 1).",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-4",
+   "title": "Electives",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives (1)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Electives (2)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "Electives (3)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Electives (4)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "Electives (5)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Electives (6)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "Electives (7)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "Electives (8)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "Electives (9)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s10",
+     "label": "Electives (10)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s11",
+     "label": "Electives (11)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s12",
+     "label": "Electives (12)",
+     "rule": [
+      {
+       "codes": [
+        "ASRC 2003",
+        "ASRC 2354",
+        "ASRC 2515",
+        "ASRC 2542",
+        "ASRC 2556",
+        "ASRC 3330",
+        "ASRC 4681",
+        "CRP 3850",
+        "NS 4630",
+        "GOVT 3333",
+        "ANTHR 4516",
+        "ARTH 3850",
+        "ARTH 4816",
+        "ASIAN 2232",
+        "ASIAN 3309",
+        "ASIAN 3380",
+        "ASIAN 3395",
+        "ASIAN 3396",
+        "ASIAN 4454",
+        "ASIAN 4494",
+        "CAPS 4502",
+        "GOVT 2847",
+        "GOVT 3007",
+        "GOVT 3017",
+        "GOVT 3044",
+        "GOVT 3443",
+        "GOVT 4037",
+        "HIST 1740",
+        "HIST 2315",
+        "HIST 2548",
+        "RELST 2250",
+        "ARTH 4720",
+        "GOVT 2553",
+        "HIST 2158",
+        "HIST 2165",
+        "HIST 2760",
+        "HIST 2958",
+        "ANTHR 3255",
+        "ARTH 3566",
+        "HIST 2541",
+        "HIST 3801",
+        "LATA 2200",
+        "LATA 2715",
+        "LATA 2800",
+        "LATA 4000",
+        "GOVT 2673",
+        "HIST 3519",
+        "NES 2722",
+        "NES 3542",
+        "NES 3805",
+        "NES 4337"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

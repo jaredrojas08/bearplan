@@ -1,0 +1,41 @@
+{
+ "id": "health-policy-minor",
+ "kind": "minor",
+ "name": "Health Policy",
+ "college": "Brooks School of Public Policy",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/health-policy-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "health-policy-minor-requirements",
+   "title": "Health Policy Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2350",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2350"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Any PUBPOL coursework at the 2000, 3000 or 4000 level Any course with the HCP-EL attribtue",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

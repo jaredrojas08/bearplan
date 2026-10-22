@@ -1,0 +1,327 @@
+{
+ "id": "viticulture-enology-bs",
+ "name": "Viticulture and Enology (BS)",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/viticulture-enology-bs/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "biological-sciences",
+   "title": "Biological Sciences",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Biological Sciences",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350",
+        "BIOG 1140",
+        "BIOG 1440",
+        "BIOEE 1610",
+        "BIOEE 1780",
+        "PLSCI 1420",
+        "BIOMI 2900"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "chemistry",
+   "title": "Chemistry",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CHEM 1560",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 1561",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1561"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 1570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "Chemistry",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300",
+        "BIOMG 3310",
+        "BIOMG 3350",
+        "NS 3200"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "STSCI 2100 / STSCI 2200 / STSCI 2150",
+     "rule": [
+      {
+       "codes": [
+        "STSCI 2100",
+        "STSCI 2200",
+        "STSCI 2150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "plant-science",
+   "title": "Plant Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 2410",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 2600",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "viticulture-and-enology-core-courses",
+   "title": "Viticulture and Enology Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Viticulture and Enology Core Courses",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 1104",
+        "VIEN 1105",
+        "VIEN 2204",
+        "VIEN 2205",
+        "FDSC 2110",
+        "VIEN 2400",
+        "VIEN 3610",
+        "VIEN 4700",
+        "VIEN 4710"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "VIEN 4460 / PLSCI 2440",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 4460",
+        "PLSCI 2440"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. Required Supervised Internship Experience",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-with-enology-focus",
+   "title": "Electives with Enology Focus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives with Enology Focus",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 2310",
+        "VIEN 4310",
+        "VIEN 2360",
+        "VIEN 4360",
+        "VIEN 2340",
+        "VIEN 4340",
+        "BIOMI 2911",
+        "FDSC 2206",
+        "FDSC 3940",
+        "FDSC 3950",
+        "FDSC 4040",
+        "FDSC 4100",
+        "FDSC 4170",
+        "FDSC 4190",
+        "FDSC 4220",
+        "VIEN 4400",
+        "VIEN 4500",
+        "VIEN 4510",
+        "VIEN 4650",
+        "VIEN 5660"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "electives-with-viticulture-focus",
+   "title": "Electives with Viticulture Focus",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Electives with Viticulture Focus",
+     "rule": [
+      {
+       "codes": [
+        "VIEN 3620",
+        "VIEN 3300",
+        "PLSCI 2940",
+        "PLSCI 3150",
+        "NTRES 3240",
+        "PLSCI 2250",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3350",
+        "PLSCI 2440",
+        "VIEN 4460"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PLSCI 3210 / PLSCI 4660",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3210",
+        "PLSCI 4660"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PLSCI 4551 / PLSCI 4720",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4551",
+        "PLSCI 4720"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "other-elective-options",
+   "title": "Other Elective Options",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "FDSC 4000 / FDSC 4010",
+     "rule": [
+      {
+       "codes": [
+        "FDSC 4000",
+        "FDSC 4010"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

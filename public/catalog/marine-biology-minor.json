@@ -1,0 +1,61 @@
+{
+ "id": "marine-biology-minor",
+ "kind": "minor",
+ "name": "Marine Biology",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/marine-biology-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Minor Requirements",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1540",
+        "BIOEE 1560",
+        "BIOSM 1500",
+        "BIOSM 1610",
+        "BIOAP 3300",
+        "BIOEE 4760",
+        "BIOEE 4761",
+        "BIOEE 4790",
+        "BIOMI 3500",
+        "BIOSM 2800",
+        "BIOSM 3210",
+        "BIOSM 3290",
+        "BIOSM 3330",
+        "BIOSM 3450",
+        "BIOSM 3650",
+        "BIOSM 3750",
+        "BIOSM 4650",
+        "EAS 3540",
+        "NTRES 3110",
+        "NTRES 3111"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required. BIOSM 1780 BIOSM 2500",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

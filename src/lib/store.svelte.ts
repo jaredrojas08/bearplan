@@ -4,7 +4,7 @@ import aemPre2025Template from '../templates/aem-cals-pre2025.json'
 import businessMinor from '../templates/business-minor.json'
 import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
-import { ADDITIONAL, type CatalogCourse, type Plan, type PlanCourse, type Template, type Term } from '../types'
+import { ADDITIONAL, type CatalogCourse, type CatalogEntry, type Plan, type PlanCourse, type Template, type Term } from '../types'
 import { buildIndex, type SearchIndexEntry } from './search'
 import { evaluatePlan, findTarget, normalizeCode, placeFailure, placementOf, withConcentrations, withMinors, type CourseFacts } from './requirements'
 import { termRange, upcomingTerm } from './terms'
@@ -22,6 +22,14 @@ export interface PlanDetails {
   gradTerm: Term
   concentrations: string[]
   minors: string[]
+}
+
+/** A checklist the pickers can offer, loaded or not. */
+export interface ChecklistOption {
+  id: string
+  name: string
+  college: string
+  draft: boolean
 }
 
 export interface Moving {
@@ -53,9 +61,16 @@ class AppState {
   saveError = $state<string | null>(null)
   catalog = $state.raw<SearchIndexEntry[] | null>(null)
   catalogError = $state<string | null>(null)
+  /** Drafted checklists that load on demand from public/catalog. */
+  catalogIndex = $state.raw<CatalogEntry[]>([])
+  /** True while a saved plan waits for its checklists to download. */
+  restoring = $state(false)
+  restoreError = $state<string | null>(null)
 
   majors = $derived(this.templates.filter((t) => t.kind !== 'minor'))
   minors = $derived(this.templates.filter((t) => t.kind === 'minor'))
+  majorOptions = $derived(this.options('major'))
+  minorOptions = $derived(this.options('minor'))
 
   /** The plan's template with its chosen concentrations' and minors' sections added. */
   template = $derived.by(() => {
@@ -96,18 +111,18 @@ class AppState {
 
     // No saved plan, or one that no longer validates, sends the user to onboarding.
     const stored = readJson(PLAN_KEY)
-    this.plan = stored && planErrors(stored).length === 0 ? this.adopt(stored as Plan) : null
-    // Copy an unreadable plan aside so starting a new one can't overwrite it.
-    // Blocked storage throws here, and then there is nothing to copy.
-    try {
-      const raw = localStorage.getItem(PLAN_KEY)
-      if (!this.plan && raw) localStorage.setItem(`${PLAN_KEY}:unreadable`, raw)
-    } catch {}
+    const saved = stored && planErrors(stored).length === 0 ? (stored as Plan) : null
+    if (saved && !this.hasTemplates(saved)) void this.restore(saved)
+    else {
+      this.plan = saved ? this.adopt(saved) : null
+      this.backupUnreadable()
+    }
 
     const theme = readJson(THEME_KEY)
     this.dark = theme === null ? window.matchMedia('(prefers-color-scheme: dark)').matches : theme === 'dark'
 
     void this.loadCatalog()
+    void this.loadCatalogIndex()
 
     $effect.root(() => {
       $effect(() => {
@@ -129,6 +144,107 @@ class AppState {
     } catch {
       this.catalogError = 'Course list unavailable. Run npm run fetch-courses, or add a custom course.'
     }
+  }
+
+  async loadCatalogIndex() {
+    try {
+      const res = await fetch(`${import.meta.env.BASE_URL}catalog/index.json`)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const data: unknown = await res.json()
+      if (!Array.isArray(data)) throw new Error('not a list')
+      this.catalogIndex = data.filter(
+        (e): e is CatalogEntry => typeof e?.id === 'string' && typeof e.name === 'string' && (e.kind === 'major' || e.kind === 'minor'),
+      )
+    } catch {
+      // Built-in checklists still work; the pickers just list fewer options.
+    }
+  }
+
+  /**
+   * Downloads drafted checklists that aren't loaded yet. "missing" means a checklist
+   * doesn't exist (a retry can't help); "offline" means a download failed.
+   */
+  async ensureTemplates(ids: string[]): Promise<'ok' | 'missing' | 'offline'> {
+    const wanted = [...new Set(ids)].filter((id) => !this.templates.some((t) => t.id === id))
+    const results = await Promise.all(
+      wanted.map(async (id): Promise<Template | 'missing' | 'offline'> => {
+        // Ids come from saved plans and files, so only plain slugs reach the URL.
+        if (!/^[a-z0-9-]+$/.test(id)) return 'missing'
+        try {
+          const res = await fetch(`${import.meta.env.BASE_URL}catalog/${id}.json`)
+          if (res.status === 404) return 'missing'
+          if (!res.ok) return 'offline'
+          const data: unknown = await res.json()
+          // A file for a different checklist would leave the requested one missing.
+          return templateErrors(data).length === 0 && (data as Template).id === id ? (data as Template) : 'missing'
+        } catch {
+          return 'offline'
+        }
+      }),
+    )
+    const found = results.filter((t): t is Template => typeof t === 'object' && !this.templates.some((x) => x.id === t.id))
+    if (found.length) this.templates = [...this.templates, ...found]
+    if (results.includes('offline')) return 'offline'
+    return ids.every((id) => this.templates.some((t) => t.id === id)) ? 'ok' : 'missing'
+  }
+
+  private hasTemplates(plan: Plan): boolean {
+    return [plan.templateId, ...(plan.minors ?? [])].every((id) => this.templates.some((t) => t.id === id))
+  }
+
+  /** Loads a saved plan's drafted checklists before adopting it, so a failed download never drops courses. */
+  async restore(saved: Plan) {
+    this.restoring = true
+    this.restoreError = null
+    const status = await this.ensureTemplates([saved.templateId, ...(saved.minors ?? [])])
+    this.restoring = false
+    if (status === 'offline') {
+      this.restoreError = 'Your plan\'s checklist could not be downloaded. Check your connection and try again.'
+      return
+    }
+    if (status === 'missing') {
+      this.restoreError = 'A checklist your plan uses is no longer available. Starting a new plan keeps a copy of this one in your browser.'
+      return
+    }
+    this.plan = this.adopt(saved)
+    this.backupUnreadable()
+  }
+
+  /** Leaves a plan that can't be restored: keeps a copy aside, then goes to onboarding. */
+  startOverFromRestore() {
+    if (!this.backupUnreadable()) {
+      this.restoreError = 'This browser blocked saving a copy of your plan, so it was left in place. Export it from another browser first.'
+      return
+    }
+    this.restoreError = null
+    this.resetPlan()
+  }
+
+  retryRestore() {
+    const stored = readJson(PLAN_KEY)
+    if (stored && planErrors(stored).length === 0) void this.restore(stored as Plan)
+  }
+
+  /** Copies an unreadable plan aside so starting a new one can't overwrite it. */
+  private backupUnreadable(): boolean {
+    // Blocked storage throws here, and then there is nothing to copy.
+    try {
+      const raw = localStorage.getItem(PLAN_KEY)
+      if (!this.plan && raw) localStorage.setItem(`${PLAN_KEY}:unreadable`, raw)
+      return true
+    } catch {
+      return false
+    }
+  }
+
+  private options(kind: 'major' | 'minor'): ChecklistOption[] {
+    const loaded = this.templates
+      .filter((t) => (t.kind ?? 'major') === kind)
+      .map((t) => ({ id: t.id, name: t.name, college: t.college, draft: !!t.draft }))
+    const unloaded = this.catalogIndex
+      .filter((e) => e.kind === kind && !loaded.some((t) => t.id === e.id))
+      .map((e) => ({ id: e.id, name: e.name, college: e.college, draft: true }))
+    return [...loaded, ...unloaded].sort((a, b) => Number(a.draft) - Number(b.draft) || a.name.localeCompare(b.name))
   }
 
   createPlan(details: PlanDetails) {
@@ -160,7 +276,7 @@ class AppState {
   }
 
   /** Returns the problems that stopped the import, or an empty list on success. */
-  importPlan(text: string): string[] {
+  async importPlan(text: string): Promise<string[]> {
     let data: unknown
     try {
       data = JSON.parse(text)
@@ -170,8 +286,14 @@ class AppState {
     const errors = planErrors(data)
     if (errors.length) return errors
     const plan = data as Plan
+    // A missing minor would otherwise be dropped and its courses moved to Additional Space.
+    const ids = [plan.templateId, ...(plan.minors ?? [])]
+    if ((await this.ensureTemplates(ids)) !== 'ok') {
+      const missing = ids.filter((id) => !this.templates.some((t) => t.id === id))
+      return [`This plan uses checklists that aren't available: ${missing.join(', ')}. Import those templates first, or check your connection.`]
+    }
     if (!this.majors.some((t) => t.id === plan.templateId)) {
-      return [`This plan uses the "${plan.templateId}" checklist. Import that template first.`]
+      return [`"${plan.templateId}" is a minor, not a major checklist.`]
     }
     this.moving = null
     this.plan = this.adopt(plan)
@@ -189,7 +311,7 @@ class AppState {
     if (errors.length) return { errors }
     const template = data as Template
     // Swapping a major for a minor under the same id would drop the plan or a minor's courses.
-    const existing = this.templates.find((t) => t.id === template.id)
+    const existing = this.templates.find((t) => t.id === template.id) ?? this.catalogIndex.find((e) => e.id === template.id)
     if (existing && (existing.kind ?? 'major') !== (template.kind ?? 'major')) {
       return { errors: [`"${template.id}" is already a ${existing.kind ?? 'major'} checklist. Give this file a different id.`] }
     }

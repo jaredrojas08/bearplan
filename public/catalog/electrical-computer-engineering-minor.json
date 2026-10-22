@@ -1,0 +1,125 @@
+{
+ "id": "electrical-computer-engineering-minor",
+ "kind": "minor",
+ "name": "Electrical and Computer Engineering",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/electrical-computer-engineering-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CS 3410",
+     "rule": [
+      {
+       "codes": [
+        "CS 3410"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ECE 3000+",
+     "rule": [
+      {
+       "minLevel": 3000,
+       "subjects": [
+        "ECE"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ECE 4000+",
+     "rule": [
+      {
+       "minLevel": 4000,
+       "subjects": [
+        "ECE"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ECE 2100 / ECE 2720 / ECE 2300 (1)",
+     "rule": [
+      {
+       "codes": [
+        "ECE 2100",
+        "ECE 2720",
+        "ECE 2300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ECE 2100 / ECE 2720 / ECE 2300 (2)",
+     "rule": [
+      {
+       "codes": [
+        "ECE 2100",
+        "ECE 2720",
+        "ECE 2300"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "Minor Requirements (1)",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3030",
+        "ECE 3100",
+        "ECE 3140",
+        "ECE 3250",
+        "ECE 3150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "Minor Requirements (2)",
+     "rule": [
+      {
+       "codes": [
+        "ECE 3030",
+        "ECE 3100",
+        "ECE 3140",
+        "ECE 3250",
+        "ECE 3150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "One non-project technical ECE 3000-level or above course One non-project ECE 4000-level or above course",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

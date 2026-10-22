@@ -1,0 +1,183 @@
+{
+ "id": "org-human-resource-management-minor",
+ "kind": "minor",
+ "name": "Organizations and Human Resource Management",
+ "college": "School of Industrial and Labor Relations",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/org-human-resource-management-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "foundation-course",
+   "title": "Foundation Course",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ILRHR 2600",
+     "rule": [
+      {
+       "codes": [
+        "ILRHR 2600"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "elective-courses",
+   "title": "Elective Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ILRHR (1)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ILRHR (2)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ILRHR (3)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ILRHR (4)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ILRHR (5)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "ILRHR (6)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "ILRHR (7)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "ILRHR (8)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s9",
+     "label": "ILRHR (9)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s10",
+     "label": "ILRHR (10)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s11",
+     "label": "ILRHR (11)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s12",
+     "label": "ILRHR (12)",
+     "rule": [
+      {
+       "subjects": [
+        "ILRHR"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Select 12 credits of coursework with an ILRHR or ILROB prefix",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

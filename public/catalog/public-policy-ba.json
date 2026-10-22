@@ -1,0 +1,239 @@
+{
+ "id": "public-policy-ba",
+ "name": "Public Policy (BA)",
+ "college": "Brooks School of Public Policy, College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/public-policy-ba/",
+ "totalCredits": 120,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "introduction-to-public-policy",
+   "title": "Introduction to Public Policy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2301",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2301"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-microeconomics",
+   "title": "Introductory Microeconomics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ECON 1110",
+     "rule": [
+      {
+       "codes": [
+        "ECON 1110"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-government",
+   "title": "Introductory Government",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "GOVT 1111 / GOVT 1313 / GOVT 1817",
+     "rule": [
+      {
+       "codes": [
+        "GOVT 1111",
+        "GOVT 1313",
+        "GOVT 1817"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "introductory-sociology",
+   "title": "Introductory Sociology",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2250 / SOC 1101",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2250",
+        "SOC 1101"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "statistics",
+   "title": "Statistics",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Statistics",
+     "rule": [
+      {
+       "codes": [
+        "ECON 3110",
+        "ECON 3130",
+        "PUBPOL 2101",
+        "SOC 3010"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "public-policy-core-courses",
+   "title": "Public Policy Core Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PUBPOL 2000 / ECON 3030",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2000",
+        "ECON 3030"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "PUBPOL 2030",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2030"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "PUBPOL 2040",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2040"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "PUBPOL 2370",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2370"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "PUBPOL 2830",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2830"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PUBPOL 3100",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 3100"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "PUBPOL 2320 / PUBPOL 2857 / PUBPOL 3583 (1)",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2320",
+        "PUBPOL 2857",
+        "PUBPOL 3583"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s8",
+     "label": "PUBPOL 2320 / PUBPOL 2857 / PUBPOL 3583 (2)",
+     "rule": [
+      {
+       "codes": [
+        "PUBPOL 2320",
+        "PUBPOL 2857",
+        "PUBPOL 3583"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

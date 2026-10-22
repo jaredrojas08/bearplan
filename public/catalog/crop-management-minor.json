@@ -1,0 +1,92 @@
+{
+ "id": "crop-management-minor",
+ "kind": "minor",
+ "name": "Crop Management",
+ "college": "College of Agriculture and Life Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/crop-management-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "crop-science",
+   "title": "Crop Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 2110 / PLSCI 4140",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2110",
+        "PLSCI 4140"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "soil-science",
+   "title": "Soil Science",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Soil Science",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2600",
+        "PLSCI 3210",
+        "PLSCI 3650",
+        "PLSCI 4660",
+        "PLSCI 4720"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "plant-protection-and-pest-management",
+   "title": "Plant Protection and Pest Management",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "PLSCI 2440 / PLSCI 3010 / PLSCI 3150",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 2440",
+        "PLSCI 3010",
+        "PLSCI 3150"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

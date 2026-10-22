@@ -1,0 +1,274 @@
+{
+ "id": "civil-engineering-bs",
+ "name": "Civil Engineering (BS)",
+ "college": "Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/civil-engineering-bs/",
+ "totalCredits": 125,
+ "filters": [
+  {
+   "id": "major",
+   "label": "Major",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "required-major-courses",
+   "title": "Required Major Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Required Major Courses",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4780",
+        "MAE 2030",
+        "ENGRD 3200",
+        "CEE 3040",
+        "CEE 3230",
+        "CEE 3310",
+        "CEE 3410",
+        "BEE 2510",
+        "CEE 3610",
+        "CEE 3710"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "note": "The catalog lists these courses without a count here; check how many are required.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "major-approved-electives-2-courses",
+   "title": "Major-Approved Electives (2 courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Major-Approved Electives (2 courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4750",
+        "CEE 4510",
+        "CEE 4520",
+        "CEE 4560",
+        "CEE 4570",
+        "CEE 4620",
+        "CEE 4725",
+        "CEE 4930",
+        "CEE 5200",
+        "CEE 5240",
+        "CEE 5735",
+        "CEE 5950",
+        "CEE 5980",
+        "CEE 6300",
+        "CEE 6530",
+        "CEE 6640",
+        "CEE 6790",
+        "CEE 6930",
+        "EAS 4570",
+        "CEE 5900",
+        "MAE 3270",
+        "MAE 4020",
+        "MAE 4700",
+        "ORIE 4330",
+        "CEE 4330",
+        "CEE 4370",
+        "CEE 4530",
+        "CEE 4780",
+        "CEE 5745"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Major-Approved Electives (2 courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4750",
+        "CEE 4510",
+        "CEE 4520",
+        "CEE 4560",
+        "CEE 4570",
+        "CEE 4620",
+        "CEE 4725",
+        "CEE 4930",
+        "CEE 5200",
+        "CEE 5240",
+        "CEE 5735",
+        "CEE 5950",
+        "CEE 5980",
+        "CEE 6300",
+        "CEE 6530",
+        "CEE 6640",
+        "CEE 6790",
+        "CEE 6930",
+        "EAS 4570",
+        "CEE 5900",
+        "MAE 3270",
+        "MAE 4020",
+        "MAE 4700",
+        "ORIE 4330",
+        "CEE 4330",
+        "CEE 4370",
+        "CEE 4530",
+        "CEE 4780",
+        "CEE 5745"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "CEE 6200",
+     "rule": [
+      {
+       "codes": [
+        "CEE 6200"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CEE 6550",
+     "rule": [
+      {
+       "codes": [
+        "CEE 6550"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "CEE 6570",
+     "rule": [
+      {
+       "codes": [
+        "CEE 6570"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "CEE 6590",
+     "rule": [
+      {
+       "codes": [
+        "CEE 6590"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "ENMGT 5970",
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "capstone-design-elective-1-course",
+   "title": "Capstone Design Elective (1 course)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Capstone Design Elective (1 course)",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4210",
+        "CEE 6210",
+        "CEE 4760",
+        "CEE 4565",
+        "CEE 4740"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "design-electives-2-courses",
+   "title": "Design Electives (2 courses)",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "Design Electives (2 courses) (1)",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4730",
+        "CEE 4640",
+        "CEE 6648",
+        "CEE 4745",
+        "CEE 5746",
+        "CEE 4800",
+        "CEE 5740",
+        "MAE 4021",
+        "CEE 4200",
+        "CEE 4350",
+        "CEE 4665",
+        "CEE 4880",
+        "BEE 4880",
+        "CEE 4795",
+        "CEE 5710"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "Design Electives (2 courses) (2)",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4730",
+        "CEE 4640",
+        "CEE 6648",
+        "CEE 4745",
+        "CEE 5746",
+        "CEE 4800",
+        "CEE 5740",
+        "MAE 4021",
+        "CEE 4200",
+        "CEE 4350",
+        "CEE 4665",
+        "CEE 4880",
+        "BEE 4880",
+        "CEE 4795",
+        "CEE 5710"
+       ],
+       "reason": "Not on this list in the catalog"
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,37 @@
+{
+ "id": "global-asia-studies-minor",
+ "kind": "minor",
+ "name": "Global Asia Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/global-asia-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 18,
+   "rule": [
+    {
+     "subjects": [
+      "ASIAN"
+     ],
+     "reason": "Needs a ASIAN course"
+    }
+   ],
+   "note": "A minor in Global Asia Studies may be achieved by meeting these requirements: Complete five courses. Students are required to take either a 2200-level or above ASIAN course that covers more than one Asian sub-region or at least 2 x 2200-level (or above) courses treating different but related sub-regions. Consultation with the Director of Undergraduate Studies (DUS) is advised. Students normally take courses bearing subject heading ASIAN or courses cross-listed with ASIAN. Courses chosen towards the Global Asia Studies minor may address various sub-regions of Asia, interconnectedness within Asia, or Asia's connections with other areas of the world. Typically, non-language courses are selected at the 2200-level or above. Only one Intro course may count towards the minor (ASIAN 2208 Introduction to Southeast Asia, ASIAN 2211 Introduction to Japan, ASIAN 2218 Introduction to Korea, ASIAN 223",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,52 @@
+{
+ "id": "fgss-minor",
+ "kind": "minor",
+ "name": "Feminist, Gender, & Sexuality Studies",
+ "college": "College of Arts and Sciences",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fgss-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "minor-requirements",
+   "title": "Minor Requirements",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "FGSS 2010",
+     "rule": [
+      {
+       "codes": [
+        "FGSS 2010"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "FGSS 3000",
+     "rule": [
+      {
+       "codes": [
+        "FGSS 3000"
+       ]
+      }
+     ]
+    }
+   ],
+   "note": "Any FGSS course that satisfies at least one of the three categories required for a major as defined above. Any two additional FGSS courses of the student’s choice.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

@@ -1,0 +1,430 @@
+{
+ "id": "climate-change-minor",
+ "kind": "minor",
+ "name": "Climate Change",
+ "college": "College of Agriculture and Life Sciences, College of Arts and Sciences, Duffield College of Engineering",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/climate-change-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "category-1-physical-science-behind-clima",
+   "title": "Category 1: Physical Science Behind Climate Change",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "EAS 4800",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "EAS 2680",
+     "rule": [
+      {
+       "codes": [
+        "EAS 2680"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "EAS 3030",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3030"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "EAS 3050",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3050"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "EAS 4860",
+     "rule": [
+      {
+       "codes": [
+        "EAS 4860"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PLSCI 3650",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 3650"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "water-resources",
+   "title": "Water Resources",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BEE 3710",
+     "rule": [
+      {
+       "codes": [
+        "BEE 3710"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BEE 4730",
+     "rule": [
+      {
+       "codes": [
+        "BEE 4730"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NTRES 3240",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 3240"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "ecosystems-and-agriculture",
+   "title": "Ecosystems and Agriculture",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "BIOEE 1610",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "BIOEE 4780",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 4780"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NTRES 3220",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 3220"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "EAS 3340",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3340"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "EAS 3555",
+     "rule": [
+      {
+       "codes": [
+        "EAS 3555"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "PLSCI 4290",
+     "rule": [
+      {
+       "codes": [
+        "PLSCI 4290"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "economics-and-policy",
+   "title": "Economics and Policy",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AEM 2555",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2555"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "AEM 4090",
+     "rule": [
+      {
+       "codes": [
+        "AEM 4090"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "NTRES 3311",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 3311"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "understanding-the-context",
+   "title": "Understanding the Context",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "AMST 2581",
+     "rule": [
+      {
+       "codes": [
+        "AMST 2581"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "ANTHR 2482",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2482"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "ANTHR 2729",
+     "rule": [
+      {
+       "codes": [
+        "ANTHR 2729"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "CLASS 3750",
+     "rule": [
+      {
+       "codes": [
+        "CLASS 3750"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s5",
+     "label": "ENGL 3795",
+     "rule": [
+      {
+       "codes": [
+        "ENGL 3795"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s6",
+     "label": "HIST 4262",
+     "rule": [
+      {
+       "codes": [
+        "HIST 4262"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s7",
+     "label": "NTRES 3330",
+     "rule": [
+      {
+       "codes": [
+        "NTRES 3330"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "solutions-mitigation-adaptation-and-reme",
+   "title": "Solutions: Mitigation, Adaptation and Remediation",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "ENGRI 1165",
+     "rule": [
+      {
+       "codes": [
+        "ENGRI 1165"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CRP 5545",
+     "rule": [
+      {
+       "codes": [
+        "CRP 5545"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  },
+  {
+   "id": "category-4-additional-climate-change-cou",
+   "title": "Category 4: Additional Climate Change Courses",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "s1",
+     "label": "CEE 4210",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4210"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s2",
+     "label": "CEE 4640",
+     "rule": [
+      {
+       "codes": [
+        "CEE 4640"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s3",
+     "label": "EAS 1101",
+     "rule": [
+      {
+       "codes": [
+        "EAS 1101"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "s4",
+     "label": "ANSC 4880",
+     "rule": [
+      {
+       "codes": [
+        "ANSC 4880"
+       ]
+      }
+     ]
+    }
+   ],
+   "column": "right",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}

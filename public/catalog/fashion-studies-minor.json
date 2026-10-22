@@ -1,0 +1,29 @@
+{
+ "id": "fashion-studies-minor",
+ "kind": "minor",
+ "name": "Fashion Studies",
+ "college": "College of Human Ecology",
+ "matriculatedFrom": "FA22",
+ "draft": true,
+ "source": "https://catalog.cornell.edu/programs/fashion-studies-minor/",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Minor",
+   "icon": "book"
+  }
+ ],
+ "sections": [
+  {
+   "id": "requirements",
+   "title": "Minor Requirements",
+   "type": "creditBucket",
+   "minCredits": 15,
+   "note": "Students must complete the following requirements: Two FSAD course at the 1000 level (6 - 8 credits) Two FSAD courses at the 2000 or 3000 level (6 - 8 credits) One FSAD course at the 4000 or 6000 level (3 - 4credits) Only FSAD courses may be used to fulfill the minor.",
+   "column": "left",
+   "filter": "major",
+   "icon": "book"
+  }
+ ],
+ "checks": []
+}
