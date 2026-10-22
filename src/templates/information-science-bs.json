@@ -1,0 +1,1370 @@
+{
+  "id": "information-science-bs",
+  "name": "Information Science (BS)",
+  "college": "CALS (2025+ distributions)",
+  "source": "https://catalog.cornell.edu/programs/information-science-bs/",
+  "matriculatedFrom": "FA25",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, plus 100 letter-graded and 105 structured credits. Confirm with your advisor.",
+  "footnote": "Major courses need a letter grade of C- or better. A course can count toward only one major requirement. 50 credits minimum in the major.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "code"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "title": "Core",
+      "column": "left",
+      "filter": "major",
+      "icon": "code",
+      "letterGrade": true,
+      "note": "Core courses must be taken at Cornell.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "INFO 1200 / 1260",
+          "rule": [
+            {
+              "codes": [
+                "INFO 1200",
+                "INFO 1260"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "INFO 1300",
+          "rule": [
+            {
+              "codes": [
+                "INFO 1300"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "INFO 2450",
+          "rule": [
+            {
+              "codes": [
+                "INFO 2450"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "INFO 2850",
+          "rule": [
+            {
+              "codes": [
+                "INFO 2850"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5",
+          "label": "INFO 2950 / 2951",
+          "rule": [
+            {
+              "codes": [
+                "INFO 2950",
+                "INFO 2951"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundations",
+      "title": "Programming, Calculus and Statistics",
+      "column": "left",
+      "filter": "major",
+      "icon": "sigma",
+      "letterGrade": true,
+      "leftLabel": "Foundations",
+      "note": "AP CS A (5), IB CS (6-7) or CASE covers programming; AP Calculus (4-5) and similar cover calculus (add them as custom courses). AP doesn't cover statistics.",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "prog",
+          "label": "CS 1110 / 1112",
+          "rule": [
+            {
+              "codes": [
+                "CS 1110",
+                "CS 1112"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "calc",
+          "label": "MATH 1106 / 1110 / 1910",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1106",
+                "MATH 1110",
+                "MATH 1910"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "stats",
+          "label": "ENGRD 2700 / STSCI 2200 / 3110",
+          "rule": [
+            {
+              "codes": [
+                "ENGRD 2700",
+                "STSCI 2200",
+                "STSCI 3110"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "star",
+      "letterGrade": true,
+      "note": "Three courses of 3+ credits: CS 2110, 3110, 3410, INFO 2300 or 2310 (not both), INFO 2770, 2921, MATH 2310, 2940, or INFO 3000+ (not 4910, 4997, 4998). At most one INFO 4900.",
+      "constraints": [
+        {
+          "type": "maxCount",
+          "label": "INFO 4900",
+          "count": 1,
+          "match": {
+            "codes": [
+              "INFO 4900"
+            ]
+          },
+          "reason": "Only one semester of INFO 4900 counts"
+        },
+        {
+          "type": "maxCount",
+          "label": "INFO 2300 / 2310",
+          "count": 1,
+          "match": {
+            "codes": [
+              "INFO 2300",
+              "INFO 2310"
+            ]
+          },
+          "reason": "INFO 2300 and 2310 can't both count"
+        }
+      ],
+      "type": "slots",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "Elective",
+          "rule": [
+            {
+              "subjects": [
+                "INFO"
+              ],
+              "minLevel": 3000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "INFO 4910",
+                "INFO 4997",
+                "INFO 4998"
+              ]
+            },
+            {
+              "codes": [
+                "CS 2110",
+                "CS 3110",
+                "CS 3410",
+                "INFO 2300",
+                "INFO 2310",
+                "INFO 2770",
+                "INFO 2921",
+                "MATH 2310",
+                "MATH 2940"
+              ],
+              "minCredits": 3
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Elective",
+          "rule": [
+            {
+              "subjects": [
+                "INFO"
+              ],
+              "minLevel": 3000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "INFO 4910",
+                "INFO 4997",
+                "INFO 4998"
+              ]
+            },
+            {
+              "codes": [
+                "CS 2110",
+                "CS 3110",
+                "CS 3410",
+                "INFO 2300",
+                "INFO 2310",
+                "INFO 2770",
+                "INFO 2921",
+                "MATH 2310",
+                "MATH 2940"
+              ],
+              "minCredits": 3
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "Elective",
+          "rule": [
+            {
+              "subjects": [
+                "INFO"
+              ],
+              "minLevel": 3000,
+              "minCredits": 3,
+              "excludeCodes": [
+                "INFO 4910",
+                "INFO 4997",
+                "INFO 4998"
+              ]
+            },
+            {
+              "codes": [
+                "CS 2110",
+                "CS 3110",
+                "CS 3410",
+                "INFO 2300",
+                "INFO 2310",
+                "INFO 2770",
+                "INFO 2921",
+                "MATH 2310",
+                "MATH 2940"
+              ],
+              "minCredits": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "maxConcentrations": 2,
+  "concentrations": [
+    {
+      "id": "behavioral-science",
+      "name": "Behavioral Science",
+      "sections": [
+        {
+          "id": "behavioral-science",
+          "title": "Behavioral Science",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Understanding Social Behavior (1)",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3170",
+                    "INFO 4430",
+                    "INFO 4450",
+                    "INFO 4500",
+                    "INFO 4505",
+                    "INFO 4940",
+                    "COMM 4380",
+                    "PSYCH 3800"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "a2",
+              "label": "A. Understanding Social Behavior (2)",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3170",
+                    "INFO 4430",
+                    "INFO 4450",
+                    "INFO 4500",
+                    "INFO 4505",
+                    "INFO 4940",
+                    "COMM 4380",
+                    "PSYCH 3800"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Social Data Analytics",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 3780",
+                    "CS 4740",
+                    "INFO 3300",
+                    "INFO 3720",
+                    "INFO 3950",
+                    "INFO 4100",
+                    "INFO 4300",
+                    "INFO 4350",
+                    "INFO 4940"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Behavior in Context",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3200",
+                    "INFO 4140",
+                    "INFO 4940",
+                    "INFO 4360",
+                    "COMM 4940",
+                    "INFO 3450",
+                    "INFO 4240",
+                    "INFO 4400"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "sections": [
+        {
+          "id": "data-science",
+          "title": "Data Science",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Data Analysis",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3300",
+                    "INFO 3900",
+                    "INFO 3950",
+                    "INFO 4940",
+                    "CS 3780",
+                    "ORIE 3120",
+                    "ORIE 3741",
+                    "ORIE 4740",
+                    "STSCI 3740"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Domain Expertise",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 4740",
+                    "INFO 2770",
+                    "INFO 3130",
+                    "INFO 3350",
+                    "INFO 3370",
+                    "INFO 3720",
+                    "INFO 4100",
+                    "INFO 4120",
+                    "INFO 4300",
+                    "INFO 4350",
+                    "INFO 4940"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Big Data Ethics, Policy and Society",
+              "rule": [
+                {
+                  "codes": [
+                    "COMM 4010",
+                    "INFO 3200",
+                    "INFO 4140",
+                    "INFO 4145",
+                    "INFO 4200",
+                    "INFO 4240",
+                    "INFO 4250",
+                    "INFO 4260",
+                    "INFO 4270",
+                    "INFO 4390",
+                    "INFO 4561",
+                    "INFO 4940",
+                    "ENGL 3778",
+                    "PUBPOL 3460"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "d1",
+              "label": "D. Data Communication",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3312",
+                    "INFO 4310",
+                    "COMM 3150",
+                    "COMM 3189",
+                    "COMM 4860",
+                    "COMM 4940",
+                    "SOC 3580"
+                  ],
+                  "reason": "Not on list D for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital-culture-option-1",
+      "name": "Digital Culture and Production (Option 1)",
+      "sections": [
+        {
+          "id": "dc1",
+          "title": "Digital Culture and Production, Option 1",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Digital Culture and History",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2921",
+                    "INFO 3200",
+                    "INFO 4140",
+                    "INFO 4260",
+                    "INFO 4270",
+                    "INFO 4940",
+                    "STS 4040"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Digital Production",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2310",
+                    "INFO 3152",
+                    "INFO 3300",
+                    "INFO 4320",
+                    "CS 4620",
+                    "CS 4758"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Media, Art, Design (1)",
+              "rule": [
+                {
+                  "codes": [
+                    "ART 3705",
+                    "ARTH 4151",
+                    "INFO 3450",
+                    "INFO 3660",
+                    "INFO 4152",
+                    "INFO 4240",
+                    "INFO 4400",
+                    "INFO 4420",
+                    "INFO 4940"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c2",
+              "label": "C. Media, Art, Design (2)",
+              "rule": [
+                {
+                  "codes": [
+                    "ART 3705",
+                    "ARTH 4151",
+                    "INFO 3450",
+                    "INFO 3660",
+                    "INFO 4152",
+                    "INFO 4240",
+                    "INFO 4400",
+                    "INFO 4420",
+                    "INFO 4940"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital-culture-option-2",
+      "name": "Digital Culture and Production (Option 2)",
+      "sections": [
+        {
+          "id": "dc2",
+          "title": "Digital Culture and Production, Option 2",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Digital Culture and History (1)",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2921",
+                    "INFO 3200",
+                    "INFO 4140",
+                    "INFO 4260",
+                    "INFO 4270",
+                    "INFO 4940",
+                    "STS 4040"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "a2",
+              "label": "A. Digital Culture and History (2)",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2921",
+                    "INFO 3200",
+                    "INFO 4140",
+                    "INFO 4260",
+                    "INFO 4270",
+                    "INFO 4940",
+                    "STS 4040"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "a3",
+              "label": "A. Digital Culture and History (3)",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2921",
+                    "INFO 3200",
+                    "INFO 4140",
+                    "INFO 4260",
+                    "INFO 4270",
+                    "INFO 4940",
+                    "STS 4040"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Digital Production",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2310",
+                    "INFO 3152",
+                    "INFO 3300",
+                    "INFO 4320",
+                    "CS 4620",
+                    "CS 4758"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "information-ethics-law-and-policy",
+      "name": "Information Ethics, Law, and Policy",
+      "sections": [
+        {
+          "id": "information-ethics-law-and-policy",
+          "title": "Information Ethics, Law, and Policy",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Frameworks and Institutions",
+              "rule": [
+                {
+                  "codes": [
+                    "COMM 4010",
+                    "INFO 3210",
+                    "INFO 4113",
+                    "INFO 4140",
+                    "INFO 4200",
+                    "INFO 4250",
+                    "INFO 4270",
+                    "INFO 4301",
+                    "INFO 4940",
+                    "HADM 4890",
+                    "PUBPOL 3460"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Methods and Analysis",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2921",
+                    "INFO 4240",
+                    "INFO 4940",
+                    "PUBPOL 2300",
+                    "PUBPOL 2301"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Cases/Topics",
+              "rule": [
+                {
+                  "codes": [
+                    "COMM 3190",
+                    "COMM 4940",
+                    "ENGRG 3605",
+                    "INFO 3170",
+                    "INFO 3200",
+                    "INFO 4145",
+                    "INFO 4210",
+                    "INFO 4260",
+                    "INFO 4390",
+                    "INFO 4561",
+                    "STS 4040"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "d1",
+              "label": "D. Tools and Technical Domains",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3300",
+                    "INFO 3350",
+                    "INFO 3370",
+                    "INFO 4100",
+                    "INFO 4120",
+                    "INFO 4300",
+                    "INFO 4350"
+                  ],
+                  "reason": "Not on list D for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interactive-technologies",
+      "name": "Interactive Technologies",
+      "sections": [
+        {
+          "id": "interactive-technologies",
+          "title": "Interactive Technologies",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "r1",
+              "label": "R. CS 2110",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 2110",
+                    "ENGRD 2110",
+                    "CS 2112",
+                    "ENGRD 2112"
+                  ],
+                  "reason": "Not on list R for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "a1",
+              "label": "A. Building (with Hardware)",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 4120",
+                    "INFO 4320",
+                    "CS 4758"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Working with Data/Software",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3300",
+                    "INFO 4340",
+                    "INFO 4555",
+                    "CS 4620",
+                    "CS 3780",
+                    "CS 5150",
+                    "ORIE 3120",
+                    "ORIE 3741",
+                    "ORIE 4740",
+                    "STSCI 3740"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Context/Application Domains",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 4152",
+                    "INFO 4310",
+                    "INFO 4410",
+                    "INFO 4430",
+                    "INFO 4505",
+                    "INFO 4940"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "networks-crowds-and-markets",
+      "name": "Networks, Crowds, and Markets",
+      "sections": [
+        {
+          "id": "networks-crowds-and-markets",
+          "title": "Networks, Crowds, and Markets",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Models (1)",
+              "rule": [
+                {
+                  "codes": [
+                    "COMM 3150",
+                    "ECON 3810",
+                    "ECON 4020",
+                    "ECON 4610",
+                    "ECON 4620",
+                    "ECON 4660",
+                    "INFO 4220",
+                    "INFO 4360",
+                    "INFO 4940",
+                    "ORIE 4350"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "a2",
+              "label": "A. Models (2)",
+              "rule": [
+                {
+                  "codes": [
+                    "COMM 3150",
+                    "ECON 3810",
+                    "ECON 4020",
+                    "ECON 4610",
+                    "ECON 4620",
+                    "ECON 4660",
+                    "INFO 4220",
+                    "INFO 4360",
+                    "INFO 4940",
+                    "ORIE 4350"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Data",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3300",
+                    "INFO 3950",
+                    "INFO 4300",
+                    "INFO 4350",
+                    "INFO 4940",
+                    "CS 3780",
+                    "CS 4740",
+                    "ECON 3120",
+                    "ECON 3140"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Policy/Values",
+              "rule": [
+                {
+                  "codes": [
+                    "COMM 4940",
+                    "INFO 4140",
+                    "INFO 4145",
+                    "INFO 4200",
+                    "INFO 4240",
+                    "INFO 4250",
+                    "INFO 4270",
+                    "INFO 4940",
+                    "PUBPOL 3460",
+                    "SOC 3490"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ux",
+      "name": "UX (User Experience)",
+      "sections": [
+        {
+          "id": "ux",
+          "title": "UX (User Experience)",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "note": "Four courses. INFO 4940 special topics count only when your advisor approves the topic. Take the INFO number for INFO 3152 and 4152.",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a1",
+              "label": "A. Core Principles of Design",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3450",
+                    "INFO 4400",
+                    "INFO 4410",
+                    "INFO 4470"
+                  ],
+                  "reason": "Not on list A for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "b1",
+              "label": "B. Design in Context",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 2921",
+                    "INFO 4240",
+                    "INFO 4420",
+                    "INFO 4505",
+                    "INFO 4940"
+                  ],
+                  "reason": "Not on list B for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "c1",
+              "label": "C. Knowing the User",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 4125",
+                    "INFO 4430",
+                    "INFO 4450",
+                    "COMM 4380",
+                    "PSYCH 3420"
+                  ],
+                  "reason": "Not on list C for this concentration"
+                }
+              ]
+            },
+            {
+              "id": "d1",
+              "label": "D. Knowing the Technology",
+              "rule": [
+                {
+                  "codes": [
+                    "INFO 3152",
+                    "INFO 4152",
+                    "INFO 4310",
+                    "INFO 4320",
+                    "INFO 4340",
+                    "CS 5150"
+                  ],
+                  "reason": "Not on list D for this concentration"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "afs",
+      "title": "Agriculture, Food Systems & Nutrition",
+      "match": [
+        {
+          "distributions": [
+            "AFS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one AFS-AG course of 3+ credits."
+    },
+    {
+      "id": "bsc",
+      "title": "Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one BSC-AG course of 3+ credits (BIO-AG and BIO-AS don't count)."
+    },
+    {
+      "id": "psc",
+      "title": "Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one PSC-AG course of 3+ credits."
+    },
+    {
+      "id": "sch",
+      "title": "Sustainability Challenges",
+      "match": [
+        {
+          "distributions": [
+            "SCH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one SCH-AG course of 3+ credits."
+    },
+    {
+      "id": "eth",
+      "title": "Ethics",
+      "match": [
+        {
+          "distributions": [
+            "ETH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one ETH-AG course of 3+ credits (KCM doesn't count)."
+    },
+    {
+      "id": "diversity",
+      "title": "Human Diversity",
+      "match": [
+        {
+          "distributions": [
+            "D",
+            "SCD-AS",
+            "SCD-HA"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one D-AG course of 3+ credits (SCD-AS, SCD-HA and D-HE also count)."
+    },
+    {
+      "id": "dls",
+      "title": "Data Literacy: Statistics",
+      "match": [
+        {
+          "distributions": [
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one DLS-AG course."
+    },
+    {
+      "id": "dl2",
+      "title": "Data Literacy: Second",
+      "match": [
+        {
+          "distributions": [
+            "DLG",
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs a second data literacy course, DLG-AG or DLS-AG."
+    },
+    {
+      "id": "csh",
+      "title": "Cultural, Social & Historical",
+      "match": [
+        {
+          "distributions": [
+            "CA",
+            "FL",
+            "HA",
+            "LA",
+            "SBA",
+            "ALC-AS",
+            "ALC-HA",
+            "ALC-AAP",
+            "GLC-AS",
+            "HST-AS",
+            "HST-HA",
+            "HST-AAP",
+            "SSC-AS",
+            "SSC-AAP"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "count": 2,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs two courses from CA, FL, HA, LA or SBA, each from a different category (the app doesn't check that they differ)."
+    },
+    {
+      "id": "writing",
+      "title": "Written & Oral Expression",
+      "match": [
+        {
+          "distributions": [
+            "WRT",
+            "ORL",
+            "FWS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ]
+        }
+      ],
+      "credits": 9,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs 9 credits of writing (FWS or WRT-AG), at least 6 written; one ORL-AG course may count."
+    },
+    {
+      "id": "e3",
+      "title": "E3 Learning Milestone",
+      "match": [
+        {
+          "distributions": [
+            "EEE"
+          ]
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs an EEE-AG or community-engaged course, or an advisor-approved internship, research or non-course experience."
+    },
+    {
+      "id": "cals-credits",
+      "title": "CALS Credits",
+      "match": [
+        {
+          "subjects": [
+            "AGSCI",
+            "AIIS",
+            "ALS",
+            "ANSC",
+            "BEE",
+            "BIOG",
+            "BIOAP",
+            "BIOCB",
+            "BIOEE",
+            "BIOMG",
+            "BIOMI",
+            "BIOMS",
+            "BIONB",
+            "BIOSM",
+            "COMM",
+            "EAS",
+            "EDUC",
+            "ENTOM",
+            "ENVS",
+            "FDSC",
+            "GDEV",
+            "INFO",
+            "LA",
+            "LEAD",
+            "NS",
+            "NTRES",
+            "PLSCI",
+            "STSCI",
+            "VIEN"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "credits": 75,
+      "metText": "satisfied by {code}",
+      "missText": "needs 75 credits of CALS courses (INFO counts; AEM doesn't for non-AEM majors; up to two FWS also count, which the app doesn't add)."
+    }
+  ]
+}

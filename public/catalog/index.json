@@ -780,18 +780,6 @@
   "college": "College of Agriculture and Life Sciences"
  },
  {
-  "id": "information-science-ba",
-  "kind": "major",
-  "name": "Information Science (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "information-science-bs",
-  "kind": "major",
-  "name": "Information Science (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "information-science-minor",
   "kind": "minor",
   "name": "Information Science",
