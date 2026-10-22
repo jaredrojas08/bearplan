@@ -44,8 +44,14 @@
   let templateMessage = $state('')
   let fileInput: HTMLInputElement
 
+  // A saved one-term plan (entry equals graduation) stays valid, so its own term stays selectable.
   let gradOptions = $derived(
-    entryTerm ? termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)) : [],
+    entryTerm
+      ? termRange(
+          initial?.gradTerm === entryTerm ? entryTerm : nextTerm(entryTerm),
+          later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm),
+        )
+      : [],
   )
   let termCount = $derived(entryTerm && gradTerm ? termIndex(gradTerm) - termIndex(entryTerm) + 1 : 0)
   let selectedTemplate = $derived(app.majors.find((t) => t.id === templateId))
