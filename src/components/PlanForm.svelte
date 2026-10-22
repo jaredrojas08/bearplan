@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte'
   import { readFile } from '../lib/files'
+  import { COLLEGE_ABBREVIATIONS, shortCollege } from '../lib/colleges'
   import { app, type PlanDetails } from '../lib/store.svelte'
   import type { Term } from '../types'
   import { latestFall, nextTerm, shiftTerm, termIndex, termRange, termStatus } from '../lib/terms'
@@ -126,8 +127,8 @@
           {#each app.majorOptions.filter((o) => o.draft === draft) as o (o.id)}
             {@const t = app.majors.find((m) => m.id === o.id)}
             <option value={o.id}>
-              {o.name} · {o.college}{t && !draft
-                ? ` (${t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})`
+              {o.name} · {shortCollege(o.college)}{t && !draft
+                ? ` · ${t.matriculatedBefore ? `entered before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom}+`}`
                 : ''}
             </option>
           {/each}
@@ -145,6 +146,14 @@
     {#if loadMessage}<span class="hint" role="alert">{loadMessage}</span>{/if}
     <input bind:this={fileInput} type="file" accept="application/json,.json" hidden onchange={onTemplateFile} />
   </label>
+  <details class="legend">
+    <summary>What do the college abbreviations mean?</summary>
+    <dl>
+      {#each COLLEGE_ABBREVIATIONS as c (c.short)}
+        <div><dt>{c.short}</dt><dd>{c.full}</dd></div>
+      {/each}
+    </dl>
+  </details>
   {#if offered.length}
     <fieldset class="f">
       <legend>Concentration{maxConcentrations > 1 ? `s (up to ${maxConcentrations})` : ''}</legend>
@@ -183,7 +192,7 @@
           <option value="">Add a minor…</option>
           {#each [false, true] as draft (draft)}
             <optgroup label={draft ? 'Drafts from the catalog' : 'Checked'}>
-              {#each minorOptions.filter((m) => m.draft === draft) as m (m.id)}<option value={m.id}>{m.name} · {m.college}</option>{/each}
+              {#each minorOptions.filter((m) => m.draft === draft) as m (m.id)}<option value={m.id}>{m.name} · {shortCollege(m.college)}</option>{/each}
             </optgroup>
           {/each}
         </select>
@@ -286,6 +295,34 @@
     background: var(--tint);
     border-radius: 999px;
     padding: 4px 12px;
+  }
+  .legend {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: -10px;
+  }
+  .legend summary {
+    cursor: pointer;
+    color: var(--accent-ink);
+    font-weight: 600;
+    width: fit-content;
+  }
+  .legend dl {
+    margin: 8px 0 0;
+    display: grid;
+    gap: 4px;
+  }
+  .legend dl div {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .legend dt {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .legend dd {
+    margin: 0;
   }
   .draft-hint {
     color: var(--warn-ink);
