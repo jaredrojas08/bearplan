@@ -6,6 +6,7 @@
 // Writes public/catalog/<slug>.json plus public/catalog/index.json. Drafts hold the
 // major's own course lists only; college requirements and prose rules need a person.
 
+import { createHash } from 'node:crypto'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -38,8 +39,9 @@ const slugify = (text) => clean(text).toLowerCase().replace(/[^a-z0-9]+/g, '-').
 
 let lastFetch = 0
 async function page(path) {
-  // The full path, not a shortened slug, so two long program URLs never share a cache file.
-  const file = join(CACHE, `${path.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '') || 'index'}.html`)
+  // A hash of the full path keeps distinct URLs apart; the readable part is for browsing the cache.
+  const readable = path.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '') || 'index'
+  const file = join(CACHE, `${readable}-${createHash('sha256').update(path).digest('hex').slice(0, 12)}.html`)
   try {
     return await readFile(file, 'utf8')
   } catch {}
