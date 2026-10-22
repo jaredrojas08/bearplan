@@ -82,7 +82,7 @@
 
   // A new entry term can leave the chosen graduation term out of range; clear it rather than guess one.
   $effect(() => {
-    if (gradTerm && entryTerm && termIndex(gradTerm) <= termIndex(entryTerm)) gradTerm = ''
+    if (gradTerm && !gradOptions.includes(gradTerm)) gradTerm = ''
   })
 
   async function onTemplateFile(event: Event) {

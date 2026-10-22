@@ -14,5 +14,6 @@ describe('shortCollege', () => {
     ['Cornell University', 'Cornell'],
     ['Some New School', 'Some New School'],
     ['Some New School (custom distributions)', 'Some New School (custom distributions)'],
+    ['Some New School (pre-2025 distributions)', 'Some New School (pre-2025 distributions)'],
   ])('%s becomes %s', (full, short) => expect(shortCollege(full)).toBe(short))
 })

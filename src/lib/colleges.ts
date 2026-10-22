@@ -22,6 +22,8 @@ const SHORT_BY_NAME = new Map(COLLEGE_ABBREVIATIONS.flatMap((c) => c.names.map((
 export function shortCollege(college: string): string {
   const [, main = college, extra] = college.match(/^([^(]*?)\s*(\(.*\))?$/) ?? []
   const parts = main.split(/,\s*(?=College|School|Duffield|Bowers|Brooks|SC Johnson|Cornell)/).map((p) => SHORT_BY_NAME.get(p.trim()) ?? p.trim())
-  // Only the checked CALS labels lose "distributions"; other notes stay as written.
-  return [parts.join(', '), extra?.replace(/^\(((?:CALS )?(?:pre-2025|2025\+)) distributions\)$/, '($1)')].filter(Boolean).join(' ')
+  // Only the checked CALS and Dyson labels lose "distributions"; other notes stay as written.
+  const calsLabel = parts.length === 1 && (parts[0] === 'CALS' || parts[0] === 'Dyson')
+  const note = calsLabel ? extra?.replace(/^\(((?:CALS )?(?:pre-2025|2025\+)) distributions\)$/, '($1)') : extra
+  return [parts.join(', '), note].filter(Boolean).join(' ')
 }
