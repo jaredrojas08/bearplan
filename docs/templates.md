@@ -58,7 +58,7 @@ The CS template in [`src/templates/cs-engineering-fa24.json`](../src/templates/c
 }
 ```
 
-- `type: "slots"`: fixed rows, one course each, with a `slots` list. Rows can carry an `option` label ("Option 1", "Option 2") for alternatives: rows without an option are always required, and the section is done when one option's rows are all filled. Progress counts the option closest to done.
+- `type: "slots"`: fixed rows, one course each, with a `slots` list. Rows can carry an `option` label ("Option 1", "Option 2") for alternatives: rows without an option are always required, and the section is done when one option's rows are all filled. Progress counts the option with the most filled rows (then the fewest open).
 - `type: "creditBucket"`: any number of courses until `minCredits` is reached. The `rule` on the section applies to every course in it.
 - `column` is `left` or `right` for the "All" view.
 - `icon` is one of `pen`, `book`, `flask`, `sigma`, `code`, `star`, `run`, `plus`.

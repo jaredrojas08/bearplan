@@ -357,13 +357,16 @@ function bucketStatus(courses: PlanCourse[], minCredits: number, today: Date): S
 
 /**
  * Rows that count toward progress: every row without an option, plus the
- * alternative closest to done (fewest open rows, then the first listed).
+ * alternative the student is furthest into (most filled rows, then fewest
+ * open, then the first listed), so a started option isn't swapped for a shorter one.
  */
 function countedRows(rows: SlotRow[]): SlotRow[] {
   const options = [...new Set(rows.map((r) => r.slot.option).filter((o): o is string => !!o))]
   if (options.length === 0) return rows
-  const open = (option: string) => rows.filter((r) => r.slot.option === option && !r.course).length
-  const best = options.reduce((a, b) => (open(b) < open(a) ? b : a))
+  const count = (option: string, filled: boolean) => rows.filter((r) => r.slot.option === option && !!r.course === filled).length
+  const better = (a: string, b: string) =>
+    count(b, true) > count(a, true) || (count(b, true) === count(a, true) && count(b, false) < count(a, false)) ? b : a
+  const best = options.reduce(better)
   return rows.filter((r) => !r.slot.option || r.slot.option === best)
 }
 
