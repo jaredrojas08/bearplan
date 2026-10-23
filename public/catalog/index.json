@@ -732,12 +732,6 @@
   "college": "College of Agriculture and Life Sciences"
  },
  {
-  "id": "hotel-management-bs",
-  "kind": "major",
-  "name": "Hotel Administration (BS)",
-  "college": "SC Johnson College of Business"
- },
- {
   "id": "human-biology-health-society-bs",
   "kind": "major",
   "name": "Human Biology, Health, and Society (BS)",
