@@ -17,6 +17,8 @@ export interface Match {
   excludeNumberPattern?: string[]
   /** Distribution categories, e.g. "CA" matches "CA-AG"; "SCD-HA" matches only itself. */
   distributions?: string[]
+  /** Courses with any of these categories don't pass, like FWS seminars in a major. */
+  excludeDistributions?: string[]
   /** Replaces the generated message when this match fails. */
   reason?: string
 }

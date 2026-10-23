@@ -8,7 +8,7 @@ const isObject = (v: unknown): v is Record<string, unknown> => typeof v === 'obj
 const isString = (v: unknown): v is string => typeof v === 'string' && v.length > 0
 const isStringArray = (v: unknown): v is string[] => Array.isArray(v) && v.every((x) => typeof x === 'string')
 
-const MATCH_ARRAYS = ['codes', 'subjects', 'excludeSubjects', 'excludeCodes', 'numberPattern', 'excludeNumberPattern', 'distributions']
+const MATCH_ARRAYS = ['codes', 'subjects', 'excludeSubjects', 'excludeCodes', 'numberPattern', 'excludeNumberPattern', 'distributions', 'excludeDistributions']
 const MATCH_NUMBERS = ['minLevel', 'maxLevel', 'minCredits']
 
 function matchErrors(match: unknown, where: string): string[] {
