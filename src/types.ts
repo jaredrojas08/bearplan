@@ -91,6 +91,8 @@ export interface Check {
   group?: string
   /** Set by the app on a minor's checks: only that minor's courses count. */
   minor?: string
+  /** Only courses placed in this section count, for checks that are part of one requirement. */
+  section?: string
   /** "{code}" becomes the courses used. */
   metText: string
   missText: string
