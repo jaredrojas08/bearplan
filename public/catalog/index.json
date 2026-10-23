@@ -762,12 +762,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "industrial-labor-relations-bs",
-  "kind": "major",
-  "name": "Industrial and Labor Relations (BS)",
-  "college": "School of Industrial and Labor Relations"
- },
- {
   "id": "inequality-studies-minor",
   "kind": "minor",
   "name": "Inequality Studies",

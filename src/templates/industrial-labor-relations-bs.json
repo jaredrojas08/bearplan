@@ -1,0 +1,398 @@
+{
+  "id": "industrial-labor-relations-bs",
+  "name": "Industrial and Labor Relations (BS)",
+  "college": "School of Industrial and Labor Relations",
+  "source": "https://catalog.cornell.edu/programs/industrial-labor-relations-bs/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 credits: at least 86 in the requirements above, with the rest (typically about 30) as general electives in Additional Space. PE doesn't count. Confirm with ILR Student Services.",
+  "footnote": "Test credit counts toward the 105 letter-graded credits. Transfer and study-abroad credit counts toward that total only if originally letter-graded. At most 12 AP, IB, or GCE test credits apply to the degree; additional AP work is for placement only. CASE credit is outside that cap. Test and transfer credit cannot both be awarded for an equivalent course. First-year entrants may apply at most 15 non-Cornell credits, including test and outside college credit. After matriculation, all students are limited to 15 extramural credits (summer or winter elsewhere); approved study abroad is exempt from these limitations. Total transfer credit, including test and approved study-abroad credit, cannot exceed 60. These limits require manual review. The saved page states no work-hours or practice requirement. University conduct requirements must be satisfied; pending formal complaints can delay the degree, and outstanding financial obligations can delay the diploma.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "ILR",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "title": "Core Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "40 core credits including the separate 7-credit statistics requirement. Each listed core course is 3 credits. Approved transfer equivalents ECON 1110EC and ECON 1120EC may satisfy the corresponding economics requirements; equivalency approval requires manual review.",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "ILRID 1510",
+          "rule": [
+            {
+              "codes": [
+                "ILRID 1510"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "ILRID 1525",
+          "rule": [
+            {
+              "codes": [
+                "ILRID 1525"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "ILRID 1535",
+          "rule": [
+            {
+              "codes": [
+                "ILRID 1535"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "ILRGL 1100",
+          "rule": [
+            {
+              "codes": [
+                "ILRGL 1100"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c5",
+          "label": "ILRGL 2010",
+          "rule": [
+            {
+              "codes": [
+                "ILRGL 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c6",
+          "label": "ILRGL 2050",
+          "rule": [
+            {
+              "codes": [
+                "ILRGL 2050"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c7",
+          "label": "ILRLE 2400",
+          "rule": [
+            {
+              "codes": [
+                "ILRLE 2400"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8",
+          "label": "ECON 1110",
+          "rule": [
+            {
+              "codes": [
+                "ECON 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9",
+          "label": "ECON 1120",
+          "rule": [
+            {
+              "codes": [
+                "ECON 1120"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dei",
+          "label": "Diversity, Equity, and Inclusion: ILRID 2510 / EDUC 2610",
+          "rule": [
+            {
+              "codes": [
+                "ILRID 2510",
+                "EDUC 2610"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "international",
+          "label": "Introductory International and Comparative Labor: ILRGL 2300 / ILRGL 2350",
+          "rule": [
+            {
+              "codes": [
+                "ILRGL 2300",
+                "ILRGL 2350"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics",
+      "column": "left",
+      "filter": "major",
+      "icon": "sigma",
+      "type": "creditBucket",
+      "minCredits": 7,
+      "rule": [
+        {
+          "distributions": [
+            "STA-IL"
+          ]
+        }
+      ],
+      "note": "7 credits with STA-IL, taken for a letter grade. Approved equivalent test or transfer credit may fulfill this requirement.",
+      "letterGrade": true
+    },
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminar",
+      "column": "left",
+      "filter": "major",
+      "icon": "pen",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "One 3-credit FWS. Writing requirements total 7.5-9 credits: FWS, a 3-credit sophomore writing seminar, and one 1.5-3-credit advanced writing intensive elective. All require letter grades. Transfer credit may fulfill writing requirements; test credit may not. SOW-IL and AWI-IL are checked across the plan so approved overlaps count once toward degree credits. Only roster-approved sections of ILRGL 2010, ILRGL 2050, and ILRLE 2400 fulfill both core and sophomore writing. Non-core ILR sophomore writing may overlap ICE-IL, QP-IL, ICL-IL, or LH-IL. Advanced writing may overlap ICE-IL only when both codes are present; it cannot also fulfill QP-IL, ICL-IL, or LH-IL. The app cannot enforce section approval, grade rules on writing checks, credit origin, or the advanced-writing overlap restriction.",
+      "slots": [
+        {
+          "id": "f1",
+          "label": "First-Year Writing Seminar",
+          "rule": [
+            {
+              "distributions": [
+                "FWS"
+              ],
+              "minCredits": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-college",
+      "title": "In-College ILR Advanced Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "star",
+      "type": "creditBucket",
+      "minCredits": 24,
+      "rule": [
+        {
+          "distributions": [
+            "ICE-IL",
+            "QP-IL",
+            "ICL-IL",
+            "LH-IL"
+          ]
+        }
+      ],
+      "note": "At least 24 credits of the 40 advanced elective credits. All courses here require letter grades. QP-IL, ICL-IL, and LH-IL each require 3 credits, checked across the plan. Non-ILR courses used for those specific requirements count as in-college credit; other non-ILR courses count as out-of-college credit. The app cannot determine which specific requirement a course is being used for. Approved ILR exchange: up to 15 in-college credits for one semester. Approved credit internship: up to 12 in-college credits for a semester. No test credit. Transfer credit cannot count here except approved coursework fulfilling QP-IL, ICL-IL, or LH-IL. Across both advanced elective sections, at most 8 credits of approved independent or directed study may count; honors thesis and credit internships are exempt. Program type, approval, transfer origin, and the research cap require manual review.",
+      "letterGrade": true
+    },
+    {
+      "id": "advanced-balance",
+      "title": "Remaining Advanced ILR Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "star",
+      "type": "creditBucket",
+      "minCredits": 16,
+      "rule": [
+        {
+          "distributions": [
+            "ICE-IL",
+            "QP-IL",
+            "ICL-IL",
+            "LH-IL",
+            "OCE-IL",
+            "OCL-IL"
+          ]
+        }
+      ],
+      "note": "Complete the remaining 16 of 40 advanced elective credits with more in-college credits or up to 16 approved out-of-college credits, including at most 12 OCL-IL language credits. Place at least 24 in-college credits in the section above. All 40 may be ICE-IL. In-college credits here must be letter-graded; the app cannot apply that rule selectively. The app caps out-of-college credits here but cannot combine in-college credit across the two sections. No test credit; approved transfer credit may count toward OCE-IL or OCL-IL. Approved Global Learning Programs may supply up to 9 out-of-college credits for one semester or 15 for a full year. The program and independent-study caps require manual review. Non-ILR QP-IL, ICL-IL, or LH-IL courses count as in-college only when used for those requirements; classify them manually if they also carry out-of-college codes.",
+      "constraints": [
+        {
+          "type": "maxCredits",
+          "label": "Out-of-college credits",
+          "credits": 16,
+          "match": {
+            "distributions": [
+              "OCE-IL",
+              "OCL-IL"
+            ]
+          },
+          "reason": "At most 16 out-of-college ILR elective credits count"
+        },
+        {
+          "type": "maxCredits",
+          "label": "Language credits",
+          "credits": 12,
+          "match": {
+            "distributions": [
+              "OCL-IL"
+            ]
+          },
+          "reason": "At most 12 out-of-college language elective credits count"
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "sow",
+      "title": "Sophomore Writing Seminar",
+      "match": [
+        {
+          "distributions": [
+            "SOW-IL"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs one SOW-IL course of 3+ credits, taken for a letter grade. See writing notes for overlap limits."
+    },
+    {
+      "id": "awi",
+      "title": "Advanced Writing Intensive Elective",
+      "match": [
+        {
+          "distributions": [
+            "AWI-IL"
+          ],
+          "minCredits": 1.5
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs one AWI-IL course of 1.5+ credits, taken for a letter grade. See writing notes for overlap limits."
+    },
+    {
+      "id": "science",
+      "title": "Science and Technology",
+      "match": [
+        {
+          "distributions": [
+            "SCT-IL"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs 3 credits with SCT-IL. Must be letter-graded; approved equivalent test or transfer credit is allowed. Grade and equivalency approval require manual review.",
+      "credits": 3
+    },
+    {
+      "id": "qp",
+      "title": "Quantitative Policy Elective",
+      "match": [
+        {
+          "distributions": [
+            "QP-IL"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs 3 credits with QP-IL. Must be letter-graded and count within the in-college advanced electives. Cannot also fulfill advanced writing.",
+      "credits": 3
+    },
+    {
+      "id": "icl",
+      "title": "International and Comparative Labor Elective",
+      "match": [
+        {
+          "distributions": [
+            "ICL-IL"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs 3 credits with ICL-IL. Must be letter-graded and count within the in-college advanced electives. Cannot also fulfill advanced writing.",
+      "credits": 3
+    },
+    {
+      "id": "lh",
+      "title": "Labor History Elective",
+      "match": [
+        {
+          "distributions": [
+            "LH-IL"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs 3 credits with LH-IL. Must be letter-graded and count within the in-college advanced electives. Cannot also fulfill advanced writing.",
+      "credits": 3
+    }
+  ]
+}
