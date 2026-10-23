@@ -29,7 +29,7 @@
     "U",
     "UX"
   ],
-  "footnote": "Major courses need a letter grade of C or better (no S/U). First-Year Writing Seminars, ENGL 2800 and ENGL 2880 don't count; leave other FWS courses out of the major. A course can meet at most two distribution categories. Outside literary courses and transfer credit need advisor or DUS approval.",
+  "footnote": "Major courses need a letter grade of C or better (no S/U). First-Year Writing Seminars, ENGL 2800 and ENGL 2880 don't count. A course can meet at most two distribution categories. Outside literary courses and transfer credit need advisor or DUS approval.",
   "sections": [
     {
       "id": "major-courses",
@@ -50,6 +50,9 @@
             "ENGL 1270",
             "ENGL 2800",
             "ENGL 2880"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         },
         {
@@ -186,7 +189,10 @@
             "PMA 2560",
             "VISST 2300"
           ],
-          "minCredits": 3
+          "minCredits": 3,
+          "excludeDistributions": [
+            "FWS"
+          ]
         },
         {
           "excludeSubjects": [
@@ -194,7 +200,10 @@
           ],
           "minLevel": 2000,
           "minCredits": 3,
-          "reason": "Needs an advisor-approved literary-study course at 2000+ or a listed cross-list"
+          "reason": "Needs an advisor-approved literary-study course at 2000+ or a listed cross-list",
+          "excludeDistributions": [
+            "FWS"
+          ]
         }
       ],
       "letterGrade": true,

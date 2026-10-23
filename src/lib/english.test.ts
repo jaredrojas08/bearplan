@@ -33,3 +33,9 @@ describe('English', () => {
     expect(matchFailure({ code: 'ENGL 2020', credits: 3 }, { codes: pre.codes })).not.toBeNull()
   })
 })
+
+describe('writing seminars', () => {
+  it('keeps FWS courses out of the major', () => {
+    expect(placeFailure(empty, english, { code: 'ENGL 1105', credits: 3, distributions: ['FWS'] }, 'major-courses')).toBe("FWS courses can't count here")
+  })
+})

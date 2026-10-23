@@ -81,6 +81,7 @@ A `rule` is a list of matches. A course fits if it satisfies **any** match, and 
 | `minCredits` | `3` | The course has at least this many credits. |
 | `numberPattern` | `["4xx1"]` | The number fits a pattern, where `x` is any digit. |
 | `excludeNumberPattern` | `["10xx"]` | The number fits none of the patterns. |
+| `excludeDistributions` | `["FWS"]` | The course has none of these categories, so writing seminars stay out of a major. |
 | `distributions` | `["CA", "SCD-HA"]` | The course has one of these distribution categories. `CA` matches `CA-AG` and `CA-AS`; a category with a dash matches only itself. |
 | `reason` | `"Not a writing seminar"` | Replaces the generated refusal message. |
 

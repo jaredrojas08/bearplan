@@ -64,6 +64,8 @@ export function matchFailure(course: CourseFacts, match: Match, sectionTitle = '
     }
     if (match.excludeSubjects?.includes(subject)) return `No ${subject} courses`
     if (match.excludeCodes?.includes(code)) return `${code} can't count here`
+    const excluded = match.excludeDistributions?.find((c) => hasCategory(course, [c]))
+    if (excluded) return `${excluded} courses can't count here`
     if (match.numberPattern && !match.numberPattern.some((p) => patternMatches(number, p))) {
       return `Needs a ${match.numberPattern.join(' / ')} course`
     }
