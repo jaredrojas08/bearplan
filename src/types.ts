@@ -24,6 +24,8 @@ export interface Match {
 export interface Slot {
   id: string
   label: string
+  /** Alternative this row belongs to, like "Option 1". The section needs any one alternative complete. */
+  option?: string
   /** A course satisfies the slot if it meets ANY match. No rule means anything fits. */
   rule?: Match[]
 }

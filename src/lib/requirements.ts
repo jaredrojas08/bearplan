@@ -360,10 +360,37 @@ function bucketStatus(courses: PlanCourse[], minCredits: number, today: Date): S
   return 'empty'
 }
 
+/**
+ * Rows that count toward progress: every row without an option, plus the
+ * alternative the student is furthest into (most filled rows, then fewest
+ * open, then the first listed), so a started option isn't swapped for a shorter one.
+ */
+function countedRows(rows: SlotRow[]): SlotRow[] {
+  const options = [...new Set(rows.map((r) => r.slot.option).filter((o): o is string => !!o))]
+  if (options.length === 0) return rows
+  const count = (option: string, filled: boolean) => rows.filter((r) => r.slot.option === option && !!r.course === filled).length
+  // A finished option wins outright; otherwise the most filled, then the fewest open.
+  const rank = (o: string) => [count(o, false) === 0 ? 1 : 0, count(o, true), -count(o, false)]
+  const better = (a: string, b: string) => {
+    const [ra, rb] = [rank(a), rank(b)]
+    const i = ra.findIndex((v, k) => v !== rb[k])
+    return i >= 0 && rb[i] > ra[i] ? b : a
+  }
+  const best = options.reduce(better)
+  return rows.filter((r) => !r.slot.option || r.slot.option === best)
+}
+
 function evaluateSection(plan: Plan, section: Section, today: Date): SectionResult {
   const placed = sectionCourses(plan, section)
-  const groupOf = section.groups ? assignGroups(placed, section.groups, section.constraints) : {}
-  const chips = (section.constraints ?? []).map((k) => constraintChip(k, placed, groupOf))
+  const rows = (section.slots ?? []).map((slot) => ({
+    slot,
+    course: placed.find((c) => c.placement === placementOf(section, slot)) ?? null,
+  }))
+  const counted = countedRows(rows)
+  // Constraints judge only the alternative that counts, so two half-done options can't combine.
+  const scored = rows.some((r) => r.slot.option) ? counted.flatMap((r) => (r.course ? [r.course] : [])) : placed
+  const groupOf = section.groups ? assignGroups(scored, section.groups, section.constraints) : {}
+  const chips = (section.constraints ?? []).map((k) => constraintChip(k, scored, groupOf))
   const constraintsOk = chips.every((c) => c.ok)
   const credits = sumCredits(placed)
 
@@ -379,17 +406,13 @@ function evaluateSection(plan: Plan, section: Section, today: Date): SectionResu
     }
   }
 
-  const rows = (section.slots ?? []).map((slot) => ({
-    slot,
-    course: placed.find((c) => c.placement === placementOf(section, slot)) ?? null,
-  }))
-  const filled = rows.filter((r) => r.course).length
+  const filled = counted.filter((r) => r.course).length
   return {
-    section, rows, courses: placed, filled, total: rows.length, credits, creditsToGo: 0,
-    open: rows.length - filled,
-    complete: filled === rows.length && constraintsOk,
+    section, rows, courses: placed, filled, total: counted.length, credits, creditsToGo: 0,
+    open: counted.length - filled,
+    complete: filled === counted.length && constraintsOk,
     chips, groupOf,
-    units: rows.map((r) => (r.course ? termStatus(r.course.term, today) : 'empty')),
+    units: counted.map((r) => (r.course ? termStatus(r.course.term, today) : 'empty')),
   }
 }
 

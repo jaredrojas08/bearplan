@@ -15,26 +15,47 @@
  ],
  "sections": [
   {
-   "id": "options",
-   "title": "Options",
+   "id": "option-2",
+   "title": "Option 2",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "ARAB 1201 / ARAB 1202 / ARAB 1203",
+     "label": "ARAB 1201",
      "rule": [
       {
        "codes": [
-        "ARAB 1201",
-        "ARAB 1202",
-        "ARAB 1203"
-       ],
-       "reason": "Not on this list in the catalog"
+        "ARAB 1201"
+       ]
       }
-     ]
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "s2",
+     "label": "ARAB 1202",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 1202"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "s3",
+     "label": "ARAB 1203",
+     "rule": [
+      {
+       "codes": [
+        "ARAB 1203"
+       ]
+      }
+     ],
+     "option": "Option 2"
     }
    ],
-   "note": "Option 2 is one alternative.",
    "column": "left",
    "filter": "major",
    "icon": "book"

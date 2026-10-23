@@ -234,29 +234,36 @@
    "icon": "book"
   },
   {
-   "id": "options",
-   "title": "Options",
+   "id": "introductory-chemistry-4-8-credits",
+   "title": "Introductory Chemistry (4-8 Credits)",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "CHEM 2070",
      "rule": [
       {
        "codes": [
-        "CHEM 2070",
-        "CHEM 2071",
-        "CHEM 2080",
-        "CHEM 2081",
-        "CHEM 1560",
-        "CHEM 1561"
-       ],
-       "reason": "Not on this list in the catalog"
+        "CHEM 2070"
+       ]
       }
-     ]
+     ],
+     "option": "OPTION A: (two-semester sequence required for pre-health)"
     },
     {
      "id": "s2",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ],
+     "option": "OPTION A: (two-semester sequence required for pre-health)"
+    },
+    {
+     "id": "s3",
      "label": "CHEM 2080",
      "rule": [
       {
@@ -264,10 +271,11 @@
         "CHEM 2080"
        ]
       }
-     ]
+     ],
+     "option": "OPTION A: (two-semester sequence required for pre-health)"
     },
     {
-     "id": "s3",
+     "id": "s4",
      "label": "CHEM 2081",
      "rule": [
       {
@@ -275,10 +283,83 @@
         "CHEM 2081"
        ]
       }
-     ]
+     ],
+     "option": "OPTION A: (two-semester sequence required for pre-health)"
     },
     {
-     "id": "s4",
+     "id": "s5",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ],
+     "option": "OPTION B: (single semester not adequate for pre-health)"
+    },
+    {
+     "id": "s6",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ],
+     "option": "OPTION B: (single semester not adequate for pre-health)"
+    },
+    {
+     "id": "s7",
+     "label": "CHEM 1560",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1560"
+       ]
+      }
+     ],
+     "option": "OPTION C: (not for pre-health)"
+    },
+    {
+     "id": "s8",
+     "label": "CHEM 1561",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1561"
+       ]
+      }
+     ],
+     "option": "OPTION C: (not for pre-health)"
+    },
+    {
+     "id": "s9",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ],
+     "option": "OPTION D: (not for pre-health)"
+    },
+    {
+     "id": "s10",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ],
+     "option": "OPTION D: (not for pre-health)"
+    },
+    {
+     "id": "s11",
      "label": "CHEM 2150",
      "rule": [
       {
@@ -286,10 +367,11 @@
         "CHEM 2150"
        ]
       }
-     ]
+     ],
+     "option": "OPTION E: (not for pre-health)"
     }
    ],
-   "note": "OPTION A: (two-semester sequence required for pre-health) is one alternative. OPTION B: (single semester not adequate for pre-health) is one alternative. OPTION C: (not for pre-health) is one alternative. OPTION D: (not for pre-health) is one alternative. AP Chemistry Score of 5 AND OPTION E: (not for pre-health) is one alternative. AP Chemistry Score of 5 AND",
+   "note": "AP Chemistry Score of 5 AND AP Chemistry Score of 5 AND",
    "column": "right",
    "filter": "major",
    "icon": "book"
@@ -362,30 +444,96 @@
    "icon": "book"
   },
   {
-   "id": "options-2",
-   "title": "Options",
+   "id": "organic-chemistry-lecture-3-credits",
+   "title": "Organic Chemistry Lecture (3+ Credits)",
    "type": "slots",
    "slots": [
     {
      "id": "s1",
-     "label": "One option",
+     "label": "CHEM 1570",
      "rule": [
       {
        "codes": [
-        "CHEM 1570",
-        "CHEM 3530",
-        "CHEM 3570",
-        "CHEM 3580",
-        "CHEM 3590",
-        "CHEM 3600"
-       ],
-       "reason": "Not on this list in the catalog"
+        "CHEM 1570"
+       ]
       }
-     ]
+     ],
+     "option": "OPTION A"
+    },
+    {
+     "id": "s2",
+     "label": "CHEM 3530",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3530"
+       ]
+      }
+     ],
+     "option": "OPTION B"
+    },
+    {
+     "id": "s3",
+     "label": "CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3570"
+       ]
+      }
+     ],
+     "option": "OPTION C"
+    },
+    {
+     "id": "s4",
+     "label": "CHEM 3580",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3580"
+       ]
+      }
+     ],
+     "option": "OPTION C"
+    },
+    {
+     "id": "s5",
+     "label": "CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3570"
+       ]
+      }
+     ],
+     "option": "OPTION D"
+    },
+    {
+     "id": "s6",
+     "label": "CHEM 3590",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3590"
+       ]
+      }
+     ],
+     "option": "OPTION E"
+    },
+    {
+     "id": "s7",
+     "label": "CHEM 3600",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3600"
+       ]
+      }
+     ],
+     "option": "OPTION E"
     }
    ],
-   "note": "OPTION A: is one alternative. OPTION B: is one alternative. OPTION C: is one alternative. OPTION D: is one alternative. OPTION E: is one alternative.",
-   "column": "right",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   },
@@ -440,7 +588,7 @@
      ]
     }
    ],
-   "column": "left",
+   "column": "right",
    "filter": "major",
    "icon": "book"
   },
@@ -527,7 +675,7 @@
      ]
     }
    ],
-   "column": "right",
+   "column": "left",
    "filter": "major",
    "icon": "book"
   },
@@ -549,7 +697,7 @@
      ]
     }
    ],
-   "column": "left",
+   "column": "right",
    "filter": "major",
    "icon": "book"
   }

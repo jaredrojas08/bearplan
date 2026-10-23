@@ -259,3 +259,56 @@ describe('writing seminars', () => {
     expect(placeFailure({ ...plan, courses: [] }, template, course('ANTHR 1400', 3, ['CA-AG']), 'fws/fws1')).toBe('Not a writing seminar')
   })
 })
+
+describe('slot options', () => {
+  const chem: Template = {
+    ...template,
+    sections: [{
+      id: 'chem', title: 'General Chemistry', column: 'left', filter: 'college', type: 'slots',
+      slots: [
+        { id: 'a1', label: 'CHEM 2070', option: 'Option 1', rule: [{ codes: ['CHEM 2070'] }] },
+        { id: 'a2', label: 'CHEM 2080', option: 'Option 1', rule: [{ codes: ['CHEM 2080'] }] },
+        { id: 'b1', label: 'CHEM 2150', option: 'Option 2', rule: [{ codes: ['CHEM 2150'] }] },
+      ],
+    }],
+  }
+  const result = (...courses: Partial<PlanCourse>[]) =>
+    evaluatePlan({ ...plan, courses: withCourses(...courses).courses.slice(plan.courses.length) }, chem, OCTOBER_2026).sections[0]
+
+  it('needs one complete alternative', () => {
+    expect(result()).toMatchObject({ open: 1, total: 1, complete: false })
+    expect(result({ code: 'CHEM 2150', placement: 'chem/b1' })).toMatchObject({ open: 0, complete: true })
+    // A started option keeps counting even though Option 2 has fewer rows.
+    expect(result({ code: 'CHEM 2070', placement: 'chem/a1' })).toMatchObject({ filled: 1, open: 1, total: 2, complete: false })
+    expect(result({ code: 'CHEM 2070', placement: 'chem/a1' }, { code: 'CHEM 2080', placement: 'chem/a2' })).toMatchObject({ open: 0, total: 2, complete: true })
+  })
+})
+
+describe('slot options with several started', () => {
+  const t: Template = {
+    ...template,
+    sections: [{
+      id: 'x', title: 'X', column: 'left', filter: 'college', type: 'slots',
+      constraints: [{ type: 'minCredits', label: 'Credits', credits: 6 }],
+      slots: [
+        { id: 'a1', label: 'A1', option: 'Option 1' }, { id: 'a2', label: 'A2', option: 'Option 1' }, { id: 'a3', label: 'A3', option: 'Option 1' },
+        { id: 'b1', label: 'B1', option: 'Option 2' },
+      ],
+    }],
+  }
+  const result = (...courses: Partial<PlanCourse>[]) =>
+    evaluatePlan({ ...plan, courses: withCourses(...courses).courses.slice(plan.courses.length) }, t, OCTOBER_2026).sections[0]
+
+  it('prefers a finished option over a fuller unfinished one', () => {
+    const s = result({ code: 'X 1', placement: 'x/a1' }, { code: 'X 2', placement: 'x/a2' }, { code: 'X 3', credits: 6, placement: 'x/b1' })
+    expect(s).toMatchObject({ filled: 1, total: 1, complete: true })
+  })
+
+  it('checks constraints against the counted option only', () => {
+    // Option 1 has two 3-credit courses (6 cr) but isn't finished; Option 2 holds a 1-credit course.
+    const s = result({ code: 'X 1', placement: 'x/a1' }, { code: 'X 2', placement: 'x/a2' }, { code: 'X 3', credits: 1, placement: 'x/b1' })
+    expect(s.total).toBe(1)
+    expect(s.chips[0]).toMatchObject({ text: '1 / 6', ok: false })
+    expect(s.complete).toBe(false)
+  })
+})
