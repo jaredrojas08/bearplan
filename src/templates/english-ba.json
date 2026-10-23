@@ -1,0 +1,1094 @@
+{
+  "id": "english-ba",
+  "name": "English (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/english-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Major courses need a letter grade of C or better (no S/U). First-Year Writing Seminars, ENGL 2800 and ENGL 2880 don't count; leave other FWS courses out of the major. A course can meet at most two distribution categories. Outside literary courses and transfer credit need advisor or DUS approval.",
+  "sections": [
+    {
+      "id": "major-courses",
+      "title": "English Major",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 30,
+      "rule": [
+        {
+          "subjects": [
+            "ENGL"
+          ],
+          "minLevel": 1000,
+          "minCredits": 3,
+          "excludeCodes": [
+            "ENGL 1270",
+            "ENGL 2800",
+            "ENGL 2880"
+          ]
+        },
+        {
+          "codes": [
+            "ASRC 3340",
+            "ASRC 3507",
+            "COML 3240",
+            "COML 3342",
+            "COML 4002",
+            "FGSS 4116",
+            "HIST 3008",
+            "HIST 3255",
+            "LING 4220",
+            "MEDVL 2100",
+            "MEDVL 3080",
+            "MEDVL 3110",
+            "MEDVL 3120",
+            "MEDVL 3140",
+            "MEDVL 3190",
+            "MEDVL 3245",
+            "MEDVL 4170",
+            "PMA 2670",
+            "PMA 2681",
+            "PMA 3770",
+            "PMA 4675",
+            "RELST 3281",
+            "SHUM 2080",
+            "VISST 4546",
+            "AAS 2620",
+            "AAS 3674",
+            "AAS 4567",
+            "AIIS 2600",
+            "AMST 2060",
+            "AMST 2105",
+            "AMST 2160",
+            "AMST 2330",
+            "AMST 2401",
+            "AMST 2600",
+            "AMST 2620",
+            "AMST 2635",
+            "AMST 2650",
+            "AMST 2675",
+            "AMST 2690",
+            "AMST 3360",
+            "AMST 3370",
+            "AMST 3442",
+            "AMST 3503",
+            "AMST 3508",
+            "AMST 3525",
+            "AMST 3625",
+            "AMST 3679",
+            "AMST 3764",
+            "AMST 3820",
+            "AMST 4506",
+            "AMST 4519",
+            "AMST 4577",
+            "AMST 4612",
+            "AMST 4619",
+            "AMST 4675",
+            "ASRC 2235",
+            "ASRC 2680",
+            "ASRC 3440",
+            "ASRC 3508",
+            "ASRC 3625",
+            "ASRC 3705",
+            "ASRC 4509",
+            "ASRC 4512",
+            "ASRC 4526",
+            "ASRC 4570",
+            "BSOC 2350",
+            "COML 2235",
+            "COML 2272",
+            "COML 2400",
+            "COML 2580",
+            "COML 3021",
+            "COML 3541",
+            "COML 3542",
+            "COML 3550",
+            "COML 3800",
+            "COML 4225",
+            "COML 4281",
+            "COML 4511",
+            "COML 4571",
+            "COML 4815",
+            "ENVS 4795",
+            "FGSS 2160",
+            "FGSS 2350",
+            "FGSS 2535",
+            "FGSS 3550",
+            "FGSS 4509",
+            "FGSS 4705",
+            "FGSS 4815",
+            "FREN 3921",
+            "GERST 3610",
+            "GERST 3620",
+            "GERST 4225",
+            "GOVT 3606",
+            "GOVT 3636",
+            "GOVT 3781",
+            "JWST 2580",
+            "LATA 3800",
+            "LGBT 2350",
+            "LGBT 2535",
+            "LGBT 3550",
+            "LGBT 4705",
+            "LSP 2400",
+            "LSP 3678",
+            "LSP 4577",
+            "LSP 4612",
+            "MUSIC 2250",
+            "MUSIC 4454",
+            "PMA 2435",
+            "PMA 2650",
+            "PMA 2660",
+            "PMA 3421",
+            "PMA 3757",
+            "PMA 3758",
+            "SHUM 2350",
+            "SHUM 2650",
+            "SHUM 2675",
+            "SHUM 3610",
+            "SHUM 3636",
+            "SHUM 4705",
+            "SPAN 3675",
+            "SPAN 3800",
+            "SPAN 4577",
+            "VISST 2160",
+            "VISST 3706",
+            "VISST 4705",
+            "ASRC 2212",
+            "LSP 2212",
+            "AMST 2735",
+            "AMST 2760",
+            "PMA 2560",
+            "VISST 2300"
+          ],
+          "minCredits": 3
+        },
+        {
+          "excludeSubjects": [
+            "ENGL"
+          ],
+          "minLevel": 2000,
+          "minCredits": 3,
+          "reason": "Needs an advisor-approved literary-study course at 2000+ or a listed cross-list"
+        }
+      ],
+      "letterGrade": true,
+      "note": "Ten full-semester courses, each at least 3 credits. Three must form an advisor-approved concentration by topic, theme, period, genre, or approach, developed during the final year. At least one Americas course must cover American Indian or Indigenous, African American, Asian American, Pacific Islander, or Latina/o literature; the page gives no separate list for this subset. Verify Cornell seminar status manually. ENGL 4930 and ENGL 4940 count toward ten courses only, not other categories. Honors (3.7 English GPA, ENGL 4930-4940 and a 4-credit honors seminar, a thesis of 50+ pages) overlaps these courses; plan it with your advisor.",
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "Ten full-semester courses",
+          "count": 10,
+          "match": {}
+        },
+        {
+          "type": "maxCount",
+          "label": "At most two 1000-level courses",
+          "count": 2,
+          "match": {
+            "minLevel": 1000,
+            "maxLevel": 1999
+          },
+          "reason": "Only two 1000-level courses may count toward the major"
+        },
+        {
+          "type": "maxCount",
+          "label": "At most three approved outside courses",
+          "count": 3,
+          "match": {
+            "excludeSubjects": [
+              "ENGL"
+            ],
+            "excludeCodes": [
+              "ASRC 3340",
+              "ASRC 3507",
+              "COML 3240",
+              "COML 3342",
+              "COML 4002",
+              "FGSS 4116",
+              "HIST 3008",
+              "HIST 3255",
+              "LING 4220",
+              "MEDVL 2100",
+              "MEDVL 3080",
+              "MEDVL 3110",
+              "MEDVL 3120",
+              "MEDVL 3140",
+              "MEDVL 3190",
+              "MEDVL 3245",
+              "MEDVL 4170",
+              "PMA 2670",
+              "PMA 2681",
+              "PMA 3770",
+              "PMA 4675",
+              "RELST 3281",
+              "SHUM 2080",
+              "VISST 4546",
+              "AAS 2620",
+              "AAS 3674",
+              "AAS 4567",
+              "AIIS 2600",
+              "AMST 2060",
+              "AMST 2105",
+              "AMST 2160",
+              "AMST 2330",
+              "AMST 2401",
+              "AMST 2600",
+              "AMST 2620",
+              "AMST 2635",
+              "AMST 2650",
+              "AMST 2675",
+              "AMST 2690",
+              "AMST 3360",
+              "AMST 3370",
+              "AMST 3442",
+              "AMST 3503",
+              "AMST 3508",
+              "AMST 3525",
+              "AMST 3625",
+              "AMST 3679",
+              "AMST 3764",
+              "AMST 3820",
+              "AMST 4506",
+              "AMST 4519",
+              "AMST 4577",
+              "AMST 4612",
+              "AMST 4619",
+              "AMST 4675",
+              "ASRC 2235",
+              "ASRC 2680",
+              "ASRC 3440",
+              "ASRC 3508",
+              "ASRC 3625",
+              "ASRC 3705",
+              "ASRC 4509",
+              "ASRC 4512",
+              "ASRC 4526",
+              "ASRC 4570",
+              "BSOC 2350",
+              "COML 2235",
+              "COML 2272",
+              "COML 2400",
+              "COML 2580",
+              "COML 3021",
+              "COML 3541",
+              "COML 3542",
+              "COML 3550",
+              "COML 3800",
+              "COML 4225",
+              "COML 4281",
+              "COML 4511",
+              "COML 4571",
+              "COML 4815",
+              "ENVS 4795",
+              "FGSS 2160",
+              "FGSS 2350",
+              "FGSS 2535",
+              "FGSS 3550",
+              "FGSS 4509",
+              "FGSS 4705",
+              "FGSS 4815",
+              "FREN 3921",
+              "GERST 3610",
+              "GERST 3620",
+              "GERST 4225",
+              "GOVT 3606",
+              "GOVT 3636",
+              "GOVT 3781",
+              "JWST 2580",
+              "LATA 3800",
+              "LGBT 2350",
+              "LGBT 2535",
+              "LGBT 3550",
+              "LGBT 4705",
+              "LSP 2400",
+              "LSP 3678",
+              "LSP 4577",
+              "LSP 4612",
+              "MUSIC 2250",
+              "MUSIC 4454",
+              "PMA 2435",
+              "PMA 2650",
+              "PMA 2660",
+              "PMA 3421",
+              "PMA 3757",
+              "PMA 3758",
+              "SHUM 2350",
+              "SHUM 2650",
+              "SHUM 2675",
+              "SHUM 3610",
+              "SHUM 3636",
+              "SHUM 4705",
+              "SPAN 3675",
+              "SPAN 3800",
+              "SPAN 4577",
+              "VISST 2160",
+              "VISST 3706",
+              "VISST 4705",
+              "ASRC 2212",
+              "LSP 2212",
+              "AMST 2735",
+              "AMST 2760",
+              "PMA 2560",
+              "VISST 2300"
+            ]
+          },
+          "reason": "Only three non-ENGL literary-study courses may count, excluding cross-lists"
+        },
+        {
+          "type": "minCount",
+          "label": "Two 4000-level Cornell ENGL seminars",
+          "count": 2,
+          "match": {
+            "subjects": [
+              "ENGL"
+            ],
+            "minLevel": 4000,
+            "maxLevel": 4999,
+            "excludeCodes": [
+              "ENGL 4930",
+              "ENGL 4940"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    },
+    {
+      "id": "engl-pre",
+      "title": "English before 1800",
+      "section": "major-courses",
+      "codes": [
+        "ASRC 3340",
+        "ASRC 3507",
+        "COML 3240",
+        "COML 3342",
+        "COML 4002",
+        "ENGL 2010",
+        "ENGL 2080",
+        "ENGL 2100",
+        "ENGL 2240",
+        "ENGL 2270",
+        "ENGL 3080",
+        "ENGL 3110",
+        "ENGL 3120",
+        "ENGL 3165",
+        "ENGL 3190",
+        "ENGL 3230",
+        "ENGL 3240",
+        "ENGL 3245",
+        "ENGL 3255",
+        "ENGL 3270",
+        "ENGL 3280",
+        "ENGL 3340",
+        "ENGL 3507",
+        "ENGL 3901",
+        "ENGL 4002",
+        "ENGL 4116",
+        "ENGL 4133",
+        "ENGL 4140",
+        "ENGL 4170",
+        "ENGL 4210",
+        "FGSS 4116",
+        "HIST 3008",
+        "HIST 3255",
+        "LING 4220",
+        "MEDVL 2100",
+        "MEDVL 3080",
+        "MEDVL 3110",
+        "MEDVL 3120",
+        "MEDVL 3140",
+        "MEDVL 3190",
+        "MEDVL 3245",
+        "MEDVL 4170",
+        "PMA 2670",
+        "PMA 2681",
+        "PMA 3770",
+        "PMA 4675",
+        "RELST 3281",
+        "SHUM 2080",
+        "VISST 4546"
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "Needs 2 course(s) from the catalog category table."
+    },
+    {
+      "id": "engl-pst",
+      "title": "English after 1800",
+      "section": "major-courses",
+      "codes": [
+        "AAS 2620",
+        "AAS 3674",
+        "AAS 4567",
+        "AIIS 2600",
+        "AMST 2060",
+        "AMST 2105",
+        "AMST 2160",
+        "AMST 2330",
+        "AMST 2401",
+        "AMST 2600",
+        "AMST 2620",
+        "AMST 2635",
+        "AMST 2650",
+        "AMST 2675",
+        "AMST 2690",
+        "AMST 3360",
+        "AMST 3370",
+        "AMST 3442",
+        "AMST 3503",
+        "AMST 3508",
+        "AMST 3525",
+        "AMST 3625",
+        "AMST 3679",
+        "AMST 3764",
+        "AMST 3820",
+        "AMST 4506",
+        "AMST 4519",
+        "AMST 4577",
+        "AMST 4612",
+        "AMST 4619",
+        "AMST 4675",
+        "ASRC 2235",
+        "ASRC 2680",
+        "ASRC 3440",
+        "ASRC 3508",
+        "ASRC 3625",
+        "ASRC 3705",
+        "ASRC 4509",
+        "ASRC 4512",
+        "ASRC 4526",
+        "ASRC 4570",
+        "BSOC 2350",
+        "COML 2235",
+        "COML 2272",
+        "COML 2400",
+        "COML 2580",
+        "COML 3021",
+        "COML 3541",
+        "COML 3542",
+        "COML 3550",
+        "COML 3800",
+        "COML 4225",
+        "COML 4281",
+        "COML 4511",
+        "COML 4571",
+        "COML 4815",
+        "ENGL 1100",
+        "ENGL 1102",
+        "ENGL 2020",
+        "ENGL 2150",
+        "ENGL 2160",
+        "ENGL 2200",
+        "ENGL 2272",
+        "ENGL 2350",
+        "ENGL 2400",
+        "ENGL 2435",
+        "ENGL 2535",
+        "ENGL 2580",
+        "ENGL 2600",
+        "ENGL 2604",
+        "ENGL 2620",
+        "ENGL 2635",
+        "ENGL 2650",
+        "ENGL 2675",
+        "ENGL 2690",
+        "ENGL 2710",
+        "ENGL 2715",
+        "ENGL 2765",
+        "ENGL 2783",
+        "ENGL 2785",
+        "ENGL 2935",
+        "ENGL 3021",
+        "ENGL 3360",
+        "ENGL 3370",
+        "ENGL 3390",
+        "ENGL 3440",
+        "ENGL 3460",
+        "ENGL 3470",
+        "ENGL 3490",
+        "ENGL 3505",
+        "ENGL 3508",
+        "ENGL 3525",
+        "ENGL 3550",
+        "ENGL 3563",
+        "ENGL 3571",
+        "ENGL 3610",
+        "ENGL 3625",
+        "ENGL 3674",
+        "ENGL 3678",
+        "ENGL 3706",
+        "ENGL 3747",
+        "ENGL 3753",
+        "ENGL 3762",
+        "ENGL 3781",
+        "ENGL 3795",
+        "ENGL 3910",
+        "ENGL 3916",
+        "ENGL 3920",
+        "ENGL 4225",
+        "ENGL 4505",
+        "ENGL 4509",
+        "ENGL 4511",
+        "ENGL 4526",
+        "ENGL 4567",
+        "ENGL 4570",
+        "ENGL 4577",
+        "ENGL 4612",
+        "ENGL 4619",
+        "ENGL 4675",
+        "ENGL 4700",
+        "ENGL 4705",
+        "ENGL 4706",
+        "ENGL 4765",
+        "ENGL 4795",
+        "ENGL 4815",
+        "ENVS 4795",
+        "FGSS 2160",
+        "FGSS 2350",
+        "FGSS 2535",
+        "FGSS 3550",
+        "FGSS 4509",
+        "FGSS 4705",
+        "FGSS 4815",
+        "FREN 3921",
+        "GERST 3610",
+        "GERST 3620",
+        "GERST 4225",
+        "GOVT 3606",
+        "GOVT 3636",
+        "GOVT 3781",
+        "JWST 2580",
+        "LATA 3800",
+        "LGBT 2350",
+        "LGBT 2535",
+        "LGBT 3550",
+        "LGBT 4705",
+        "LSP 2400",
+        "LSP 3678",
+        "LSP 4577",
+        "LSP 4612",
+        "MUSIC 2250",
+        "MUSIC 4454",
+        "PMA 2435",
+        "PMA 2650",
+        "PMA 2660",
+        "PMA 3421",
+        "PMA 3757",
+        "PMA 3758",
+        "SHUM 2350",
+        "SHUM 2650",
+        "SHUM 2675",
+        "SHUM 3610",
+        "SHUM 3636",
+        "SHUM 4705",
+        "SPAN 3675",
+        "SPAN 3800",
+        "SPAN 4577",
+        "VISST 2160",
+        "VISST 3706",
+        "VISST 4705"
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "Needs 2 course(s) from the catalog category table."
+    },
+    {
+      "id": "engl-gls",
+      "title": "English of the Global South",
+      "section": "major-courses",
+      "codes": [
+        "AAS 3674",
+        "AAS 4567",
+        "AMST 2401",
+        "AMST 3679",
+        "AMST 3820",
+        "AMST 4577",
+        "AMST 4612",
+        "ASRC 2212",
+        "ASRC 2235",
+        "ASRC 3340",
+        "ASRC 3507",
+        "ASRC 4512",
+        "ASRC 4570",
+        "COML 2235",
+        "COML 2400",
+        "COML 3342",
+        "COML 3800",
+        "COML 4511",
+        "COML 4571",
+        "ENGL 2400",
+        "ENGL 2512",
+        "ENGL 2604",
+        "ENGL 2935",
+        "ENGL 3340",
+        "ENGL 3507",
+        "ENGL 3610",
+        "ENGL 3674",
+        "ENGL 3678",
+        "ENGL 3781",
+        "ENGL 3910",
+        "ENGL 4511",
+        "ENGL 4567",
+        "ENGL 4570",
+        "ENGL 4577",
+        "ENGL 4612",
+        "GOVT 3781",
+        "LATA 3800",
+        "LSP 2212",
+        "LSP 2400",
+        "LSP 3678",
+        "LSP 4577",
+        "LSP 4612",
+        "PMA 2435",
+        "SPAN 3675",
+        "SPAN 3800",
+        "SPAN 4577"
+      ],
+      "count": 1,
+      "metText": "satisfied by {code}",
+      "missText": "Needs 1 course(s) from the catalog category table."
+    },
+    {
+      "id": "engl-loa",
+      "title": "English of the Americas",
+      "section": "major-courses",
+      "codes": [
+        "AAS 2620",
+        "AAS 3674",
+        "AAS 4567",
+        "AIIS 2600",
+        "AMST 2060",
+        "AMST 2105",
+        "AMST 2160",
+        "AMST 2401",
+        "AMST 2600",
+        "AMST 2620",
+        "AMST 2635",
+        "AMST 2650",
+        "AMST 2675",
+        "AMST 2690",
+        "AMST 2735",
+        "AMST 2760",
+        "AMST 3360",
+        "AMST 3370",
+        "AMST 3442",
+        "AMST 3503",
+        "AMST 3508",
+        "AMST 3525",
+        "AMST 3625",
+        "AMST 3679",
+        "AMST 3820",
+        "AMST 4506",
+        "AMST 4519",
+        "AMST 4577",
+        "AMST 4612",
+        "AMST 4675",
+        "ASRC 2212",
+        "ASRC 2680",
+        "ASRC 3440",
+        "ASRC 3507",
+        "ASRC 3508",
+        "ASRC 3625",
+        "ASRC 3705",
+        "ASRC 4509",
+        "ASRC 4526",
+        "COML 2400",
+        "COML 3800",
+        "COML 4815",
+        "ENGL 1100",
+        "ENGL 1102",
+        "ENGL 2150",
+        "ENGL 2160",
+        "ENGL 2400",
+        "ENGL 2512",
+        "ENGL 2535",
+        "ENGL 2600",
+        "ENGL 2620",
+        "ENGL 2635",
+        "ENGL 2650",
+        "ENGL 2675",
+        "ENGL 2690",
+        "ENGL 2707",
+        "ENGL 2710",
+        "ENGL 2730",
+        "ENGL 2761",
+        "ENGL 2783",
+        "ENGL 2785",
+        "ENGL 3165",
+        "ENGL 3360",
+        "ENGL 3370",
+        "ENGL 3440",
+        "ENGL 3460",
+        "ENGL 3505",
+        "ENGL 3507",
+        "ENGL 3508",
+        "ENGL 3525",
+        "ENGL 3563",
+        "ENGL 3610",
+        "ENGL 3625",
+        "ENGL 3674",
+        "ENGL 3678",
+        "ENGL 3781",
+        "ENGL 3795",
+        "ENGL 3910",
+        "ENGL 4505",
+        "ENGL 4509",
+        "ENGL 4526",
+        "ENGL 4567",
+        "ENGL 4577",
+        "ENGL 4612",
+        "ENGL 4675",
+        "ENGL 4815",
+        "FGSS 2160",
+        "FGSS 2535",
+        "FGSS 4509",
+        "FGSS 4815",
+        "GOVT 3781",
+        "LATA 3800",
+        "LGBT 2535",
+        "LSP 2212",
+        "LSP 2400",
+        "LSP 3678",
+        "LSP 4577",
+        "LSP 4612",
+        "MUSIC 2250",
+        "PMA 2560",
+        "PMA 2650",
+        "PMA 2660",
+        "PMA 3757",
+        "PMA 3758",
+        "SHUM 2650",
+        "SHUM 2675",
+        "SPAN 3675",
+        "SPAN 3800",
+        "SPAN 4577",
+        "VISST 2160",
+        "VISST 2300"
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "Needs 2 course(s) from the catalog category table."
+    }
+  ]
+}
