@@ -479,7 +479,11 @@ function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
     const used: PlanCourse[] = []
     const usedKeys = new Set<string>()
     const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
-    const pool = check.minor ? plan.courses.filter((c) => findTarget(template, c.placement)?.section?.minor === check.minor) : plan.courses
+    const pool = plan.courses.filter((course) => {
+      const section = findTarget(template, course.placement)?.section
+      if (check.minor && section?.minor !== check.minor) return false
+      return !check.section || section?.id === check.section
+    })
     for (const course of pool) {
       if (enough()) break
       const key = keyOf(course)
@@ -527,6 +531,8 @@ export function withMinors(template: Template, minors: Template[]): Template {
           title: `${m.name}: ${c.title}`,
           minor: m.id,
           ...(c.group ? { group: `${m.id}.${c.group}` } : {}),
+          // Section ids get the minor's prefix when merged, so the scope does too.
+          ...(c.section ? { section: `${m.id}.${c.section}` } : {}),
         })),
       ),
     ],
