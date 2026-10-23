@@ -171,6 +171,7 @@ A template can offer optional concentrations. Each one is a list of extra sectio
 ```
 
 - `maxConcentrations` is how many a plan may pick. It defaults to 1.
+- `requiresConcentration: true` means the major is incomplete without one (tracks, for example), so the form won't save until one is picked.
 - Section ids must be unique across the template and every concentration, since a plan can combine them.
 - Dropping a concentration moves its courses to Additional Space.
 

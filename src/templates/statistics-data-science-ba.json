@@ -1,0 +1,1223 @@
+{
+  "id": "statistics-data-science-ba",
+  "name": "Statistical Science (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/statistics-data-science-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ],
+  "sections": [
+    {
+      "id": "prerequisites",
+      "title": "Admission Prerequisites",
+      "column": "left",
+      "filter": "major",
+      "icon": "sigma",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "calculus-i",
+          "label": "Calculus I",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "calculus-ii",
+          "label": "Calculus II",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1120",
+                "MATH 1910"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "statistics-i",
+          "label": "Statistical Methods I",
+          "rule": [
+            {
+              "codes": [
+                "STSCI 2200",
+                "STSCI 6010",
+                "AEM 2100",
+                "ENGRD 2700",
+                "HADM 2010",
+                "ILRST 2100",
+                "MATH 1710",
+                "PUBPOL 2100",
+                "PUBPOL 2101",
+                "PSYCH 2500",
+                "SOC 3010",
+                "STSCI 2150"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Admission requires a 2.50 cumulative GPA and C or higher in these courses. First-years and sophomores need these three prerequisites; juniors and seniors also need multivariable calculus, linear algebra and Statistical Methods II. Calculus I may be waived by AP Calculus AB 4 or 5, CASE, or qualifying A-level/IB credit; Calculus II by AP Calculus BC 4 or 5, CASE for MATH 1120 or MATH 1910, or qualifying Singapore A-level credit. AP Statistics 4 or 5 may waive Statistical Methods I. Waivers need manual review."
+    },
+    {
+      "id": "core",
+      "title": "Statistical Theory & Computing: Common Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "sigma",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "linear-algebra",
+          "label": "Linear Algebra",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2210",
+                "MATH 2240",
+                "MATH 2310",
+                "MATH 2940"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "methods-ii",
+          "label": "Statistical Methods II",
+          "rule": [
+            {
+              "codes": [
+                "STSCI 3200"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "probability",
+          "label": "Probability",
+          "rule": [
+            {
+              "codes": [
+                "STSCI 3080",
+                "ECON 3130",
+                "MATH 4710",
+                "ORIE 3500"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "linear-models",
+          "label": "Linear Models",
+          "rule": [
+            {
+              "codes": [
+                "STSCI 4030",
+                "ECON 3140"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "theory",
+          "label": "Theory of Statistics",
+          "rule": [
+            {
+              "codes": [
+                "STSCI 4090",
+                "MATH 4720"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "computing",
+          "label": "Statistical Computing",
+          "rule": [
+            {
+              "codes": [
+                "STSCI 4520"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "intro-computing",
+          "label": "Introduction to Computing",
+          "rule": [
+            {
+              "codes": [
+                "CS 1110",
+                "CS 1112"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Choose one path below for the eighth core course and electives. The catalog states a 40-credit core minimum but does not explain how it relates to the eight-course table or admission prerequisites; confirm the total with an advisor. Computing may be waived by CASE for CS 1110, AP Computer Science A 5, or IB Computer Science 6 or 7. Waivers need manual review."
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requiresConcentration": true,
+  "maxConcentrations": 1,
+  "concentrations": [
+    {
+      "id": "standard",
+      "name": "Standard Path",
+      "sections": [
+        {
+          "id": "standard-calculus",
+          "title": "Multivariable Calculus",
+          "column": "left",
+          "filter": "major",
+          "icon": "sigma",
+          "type": "slots",
+          "letterGrade": true,
+          "slots": [
+            {
+              "id": "calculus",
+              "label": "Multivariable Calculus",
+              "rule": [
+                {
+                  "codes": [
+                    "MATH 2220",
+                    "MATH 2230",
+                    "MATH 1920"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "A passing CASE score for MATH 1920 may waive this requirement; review manually."
+        },
+        {
+          "id": "standard-electives",
+          "title": "Elective Courses (5 Courses)",
+          "column": "right",
+          "filter": "major",
+          "icon": "sigma",
+          "type": "slots",
+          "letterGrade": true,
+          "slots": [
+            {
+              "id": "e1",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "e2",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "e3",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "e4",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "single",
+              "label": "Approved elective (3+ credits)",
+              "option": "One regular elective",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "pair1",
+              "label": "Short course 1",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ]
+                }
+              ],
+              "option": "Two short courses count as one elective"
+            },
+            {
+              "id": "pair2",
+              "label": "Short course 2",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ]
+                }
+              ],
+              "option": "Two short courses count as one elective"
+            }
+          ],
+          "note": "Five electives with significant statistical content, at least 15 credits total. Regular electives need 3+ credits each; two courses from the short-course list count as one elective. At least three electives must be STSCI or cross-listed with STSCI. Only cross-listings explicitly marked in the catalog table are recognized here; CS 3220 is an alternative to CS 4220, but its cross-listing status is unclear. Advisor approval is required for unlisted electives. STSCI 4970, 4980 and 4990 cannot count. Confirm how a short-course pair counts toward the three-STSCI minimum with an advisor; the checklist requires three regular STSCI/cross-listed electives.",
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Elective credits",
+              "credits": 15
+            },
+            {
+              "type": "minCount",
+              "label": "Regular STSCI or listed cross-listed electives",
+              "count": 3,
+              "match": {
+                "excludeCodes": [
+                  "BIOCB 4830",
+                  "MATH 4740",
+                  "ECON 4130",
+                  "INFO 4310",
+                  "ORIE 3120",
+                  "ORIE 3300",
+                  "ORIE 3310",
+                  "ORIE 3741",
+                  "ORIE 4580",
+                  "ORIE 4742",
+                  "CS 3220",
+                  "CS 3780",
+                  "CS 4320",
+                  "CS 4787",
+                  "CS 4789",
+                  "STSCI 3600",
+                  "STSCI 4610",
+                  "STSCI 4720",
+                  "STSCI 4725",
+                  "STSCI 4850",
+                  "STSCI 4881"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science Track",
+      "sections": [
+        {
+          "id": "data-science-computing",
+          "title": "Data Science Track: Computing",
+          "column": "left",
+          "filter": "major",
+          "icon": "sigma",
+          "type": "slots",
+          "letterGrade": true,
+          "slots": [
+            {
+              "id": "computing",
+              "label": "CS 2110",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 2110"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "CS 2110 replaces multivariable calculus. CS 4320 must be one of the five electives, counted as non-STSCI."
+        },
+        {
+          "id": "data-science-electives",
+          "title": "Elective Courses (5 Courses)",
+          "column": "right",
+          "filter": "major",
+          "icon": "sigma",
+          "type": "slots",
+          "letterGrade": true,
+          "slots": [
+            {
+              "id": "database",
+              "label": "CS 4320 (non-STSCI elective)",
+              "rule": [
+                {
+                  "codes": [
+                    "CS 4320"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "e1",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "e2",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "e3",
+              "label": "Approved elective (3+ credits)",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "single",
+              "label": "Approved elective (3+ credits)",
+              "option": "One regular elective",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3090",
+                    "STSCI 3100",
+                    "STSCI 3740",
+                    "STSCI 3900",
+                    "BIOCB 4830",
+                    "BIOCB 4840",
+                    "MATH 4260",
+                    "MATH 4740",
+                    "ECON 4130",
+                    "INFO 3300",
+                    "INFO 4310",
+                    "ORIE 3120",
+                    "ORIE 3300",
+                    "ORIE 3310",
+                    "ORIE 3510",
+                    "ORIE 3741",
+                    "ORIE 4580",
+                    "ORIE 4742",
+                    "CS 4220",
+                    "CS 3220",
+                    "CS 3780",
+                    "CS 4320",
+                    "CS 4740",
+                    "CS 4787",
+                    "CS 4789"
+                  ],
+                  "minCredits": 3
+                },
+                {
+                  "subjects": [
+                    "STSCI"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "STSCI 4970",
+                    "STSCI 4980",
+                    "STSCI 4990",
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ],
+                  "minCredits": 3
+                }
+              ]
+            },
+            {
+              "id": "pair1",
+              "label": "Short course 1",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ]
+                }
+              ],
+              "option": "Two short courses count as one elective"
+            },
+            {
+              "id": "pair2",
+              "label": "Short course 2",
+              "rule": [
+                {
+                  "codes": [
+                    "STSCI 3600",
+                    "STSCI 4610",
+                    "STSCI 4720",
+                    "STSCI 4725",
+                    "STSCI 4850",
+                    "STSCI 4881"
+                  ]
+                }
+              ],
+              "option": "Two short courses count as one elective"
+            }
+          ],
+          "note": "Five electives with significant statistical content, at least 15 credits total. Regular electives need 3+ credits each; two courses from the short-course list count as one elective. At least three electives must be STSCI or cross-listed with STSCI. Only cross-listings explicitly marked in the catalog table are recognized here; CS 3220 is an alternative to CS 4220, but its cross-listing status is unclear. Advisor approval is required for unlisted electives. STSCI 4970, 4980 and 4990 cannot count. Confirm how a short-course pair counts toward the three-STSCI minimum with an advisor; the checklist requires three regular STSCI/cross-listed electives.",
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Elective credits",
+              "credits": 15
+            },
+            {
+              "type": "minCount",
+              "label": "Regular STSCI or listed cross-listed electives",
+              "count": 3,
+              "match": {
+                "excludeCodes": [
+                  "BIOCB 4830",
+                  "MATH 4740",
+                  "ECON 4130",
+                  "INFO 4310",
+                  "ORIE 3120",
+                  "ORIE 3300",
+                  "ORIE 3310",
+                  "ORIE 3741",
+                  "ORIE 4580",
+                  "ORIE 4742",
+                  "CS 3220",
+                  "CS 3780",
+                  "CS 4320",
+                  "CS 4787",
+                  "CS 4789",
+                  "STSCI 3600",
+                  "STSCI 4610",
+                  "STSCI 4720",
+                  "STSCI 4725",
+                  "STSCI 4850",
+                  "STSCI 4881"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "Select exactly one path in plan settings: Standard Path or Data Science Track. The app cannot require a path selection. Major courses require letter grades of C- or better and a major GPA of at least 2.30, including advanced electives; GPA is reviewed manually. Coursework is in person in Ithaca unless noted. Transfer, study abroad and other Cornell substitutions require a petition to the Director of Undergraduate Studies and approval by Statistics and Data Science and CALS (the page names CALS despite this being a BA). Optional honors, beginning December 2026: cumulative GPA at least 3.50, STSCI 4990 for at least 3 credits of independent research with a Statistics and Data Science faculty member and A- or better, plus a 4000+ STSCI course of at least 3 credits with A- or better, excluding seminars and 2-credit projects. Honors is reviewed manually. College residency requirements also need manual review."
+}

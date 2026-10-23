@@ -133,6 +133,8 @@ export interface Template {
   concentrations?: Concentration[]
   /** How many concentrations a plan may pick. Defaults to 1. */
   maxConcentrations?: number
+  /** The major is incomplete without one, so the form won't save until one is picked. */
+  requiresConcentration?: boolean
   /** Minors only: credits that must not also count toward the major. */
   minUniqueCredits?: number
   /** Set by the app on a resolved template: the minors added to it. */

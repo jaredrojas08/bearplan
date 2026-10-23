@@ -129,3 +129,11 @@ describe('validation', () => {
     expect(fixed.courses.slice(-3).map((c) => c.placement)).toEqual(['additional', 'additional', 'additional'])
   })
 })
+
+describe('required concentrations', () => {
+  it('need concentrations to pick from', () => {
+    const message = '"requiresConcentration" needs a non-empty "concentrations" list'
+    expect(templateErrors({ ...csTemplate, requiresConcentration: true })).toEqual([message])
+    expect(templateErrors({ ...csTemplate, requiresConcentration: true, concentrations: [] })).toEqual([message])
+  })
+})
