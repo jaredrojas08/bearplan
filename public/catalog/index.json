@@ -1200,12 +1200,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "statistics-data-science-ba",
-  "kind": "major",
-  "name": "Statistical Science (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "sustainable-ag-food-system-minor",
   "kind": "minor",
   "name": "Sustainable Agricultural and Food Systems",
