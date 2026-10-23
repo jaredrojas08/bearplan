@@ -894,12 +894,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "mathematics-ba",
-  "kind": "major",
-  "name": "Mathematics (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "mathematics-minor",
   "kind": "minor",
   "name": "Mathematics",
