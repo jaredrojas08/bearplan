@@ -37,3 +37,13 @@ describe('ILR', () => {
     expect(result.checks.find((c) => c.check.id === 'sow')?.met).toBe(true)
   })
 })
+
+describe('ILR elective distribution checks', () => {
+  it('count only courses placed in the in-college electives', () => {
+    const course = (placement: string) => ({ uid: placement, code: 'ILRLE 4400', title: '', credits: 3, term: 'FA25', placement, distributions: ['QP-IL', 'ICE-IL'] })
+    const check = (placement: string) =>
+      evaluatePlan({ ...empty, courses: [course(placement)] }, ilr, new Date(2026, 9, 1)).checks.find((c) => c.check.id === 'qp')!.met
+    expect(check('in-college')).toBe(true)
+    expect(check('advanced-balance')).toBe(false)
+  })
+})

@@ -364,7 +364,8 @@
       ],
       "metText": "satisfied by {code}",
       "missText": "Needs 3 credits with QP-IL. Must be letter-graded and count within the in-college advanced electives. Cannot also fulfill advanced writing.",
-      "credits": 3
+      "credits": 3,
+      "section": "in-college"
     },
     {
       "id": "icl",
@@ -378,7 +379,8 @@
       ],
       "metText": "satisfied by {code}",
       "missText": "Needs 3 credits with ICL-IL. Must be letter-graded and count within the in-college advanced electives. Cannot also fulfill advanced writing.",
-      "credits": 3
+      "credits": 3,
+      "section": "in-college"
     },
     {
       "id": "lh",
@@ -392,7 +394,8 @@
       ],
       "metText": "satisfied by {code}",
       "missText": "Needs 3 credits with LH-IL. Must be letter-graded and count within the in-college advanced electives. Cannot also fulfill advanced writing.",
-      "credits": 3
+      "credits": 3,
+      "section": "in-college"
     }
   ]
 }

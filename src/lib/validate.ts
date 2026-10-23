@@ -105,6 +105,7 @@ function checkErrors(check: unknown, where: string): string[] {
   if ('count' in check && !(Number.isInteger(check.count) && (check.count as number) >= 1)) errors.push(`${where}.count must be a whole number of at least 1`)
   if ('credits' in check && !(typeof check.credits === 'number' && check.credits > 0)) errors.push(`${where}.credits must be a number above 0`)
   if ('group' in check && !isString(check.group)) errors.push(`${where}.group must be text`)
+  if ('section' in check && !isString(check.section)) errors.push(`${where}.section must be a section id`)
   if (!isString(check.metText) || !isString(check.missText)) errors.push(`${where} needs metText and missText`)
   return errors
 }
