@@ -735,7 +735,33 @@
               "option": "Second models course"
             }
           ],
-          "note": "Across the nine major courses, cover at least three of Groups A-D (not automatically checked). A (Differential equations): MATH 3270, MATH 4200, MATH 4210, MATH 4280. B (Discrete mathematics and combinatorics): MATH 3360, MATH 4370, MATH 4410, MATH 4420, CS 4820, ECON 4020, ORIE 3300, ORIE 4350. C (Numerical and computational methods): MATH 4250, CS 4210, MATH 4260, CS 4220, CS 4620, CS 4670, MAE 4700. D (Probability and statistics): MATH 4710, MATH 4720, MATH 4740, ECON 3130, ECON 4130, ORIE 3500, STSCI 3080, STSCI 3100, STSCI 4030. Other group courses require advisor approval. Other outside-MATH scientific courses with serious mathematical content require advisor approval and are not automatically accepted. No AP credit, PHYS 2207, or unlisted 1000-level physics courses. CS 2110 cannot also fill the admission prerequisite."
+          "note": "Across the nine major courses, cover at least three of Groups A-D (not automatically checked). A (Differential equations): MATH 3270, MATH 4200, MATH 4210, MATH 4280. B (Discrete mathematics and combinatorics): MATH 3360, MATH 4370, MATH 4410, MATH 4420, CS 4820, ECON 4020, ORIE 3300, ORIE 4350. C (Numerical and computational methods): MATH 4250, CS 4210, MATH 4260, CS 4220, CS 4620, CS 4670, MAE 4700. D (Probability and statistics): MATH 4710, MATH 4720, MATH 4740, ECON 3130, ECON 4130, ORIE 3500, STSCI 3080, STSCI 3100, STSCI 4030. Other group courses require advisor approval. Other outside-MATH scientific courses with serious mathematical content require advisor approval and are not automatically accepted. No AP credit, PHYS 2207, or unlisted 1000-level physics courses. CS 2110 cannot also fill the admission prerequisite.",
+          "constraints": [
+            {
+              "type": "maxCount",
+              "label": "ECON 3130 / ECON 6190",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "ECON 3130",
+                  "ECON 6190"
+                ]
+              },
+              "reason": "These courses are alternatives for one elective"
+            },
+            {
+              "type": "maxCount",
+              "label": "ECON 3140 / ECON 6200",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "ECON 3140",
+                  "ECON 6200"
+                ]
+              },
+              "reason": "These courses are alternatives for one elective"
+            }
+          ]
         }
       ]
     },
@@ -1715,6 +1741,18 @@
                 ]
               },
               "reason": "Only one regression course counts"
+            },
+            {
+              "type": "maxCount",
+              "label": "ECON 3140 / ECON 6200",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "ECON 3140",
+                  "ECON 6200"
+                ]
+              },
+              "reason": "These courses are alternatives for one elective"
             }
           ],
           "note": "At most one stochastic processes course (STSCI 3510 / ORIE 3510 or MATH 4740)."

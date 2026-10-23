@@ -54,3 +54,14 @@ describe('Mathematics BA', () => {
     expect(placeFailure(plan, withConcentrations(mathematics, ['statistics']), { code: 'ORIE 4740', credits: 4 }, 'statistics-courses/e2')).toBe('Only one data mining and machine learning course counts')
   })
 })
+
+describe('ECON alternative pairs', () => {
+  it("can't count both courses of a pair in Applied Mathematics", () => {
+    const t = withConcentrations(mathematics, ['applied-mathematics'])
+    const section = t.sections.find((s) => s.id === 'applied-mathematics-courses')!
+    const model = section.slots!.find((s) => s.rule?.[0].codes?.includes('ECON 3130'))!
+    const plan: Plan = { ...empty, concentrations: ['applied-mathematics'], courses: [{ uid: 'a', code: 'ECON 3130', title: '', credits: 4, term: 'FA25', placement: `applied-mathematics-courses/${model.id}` }] }
+    const other = section.slots!.find((s) => s.id !== model.id && s.rule?.[0].codes?.includes('ECON 6190'))!
+    expect(placeFailure(plan, t, { code: 'ECON 6190', credits: 4 }, `applied-mathematics-courses/${other.id}`)).toBe('These courses are alternatives for one elective')
+  })
+})
