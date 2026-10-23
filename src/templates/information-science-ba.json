@@ -320,6 +320,7 @@
       ]
     }
   ],
+  "requiresConcentration": true,
   "maxConcentrations": 1,
   "concentrations": [
     {

@@ -137,3 +137,23 @@ describe('required concentrations', () => {
     expect(templateErrors({ ...csTemplate, requiresConcentration: true, concentrations: [] })).toEqual([message])
   })
 })
+
+describe('majors that need a concentration', () => {
+  it('mark it required', async () => {
+    const ids = [
+      'mathematics-ba',
+      'biological-sciences-ba',
+      'biological-sciences-bs',
+      'biological-sciences-bs-cals-pre2025',
+      'information-science-ba',
+      'information-science-bs',
+      'information-science-bs-cals-pre2025',
+      'statistics-data-science-ba',
+    ]
+    for (const id of ids) {
+      const t = (await import(`../templates/${id}.json`)).default as Template
+      expect(t.requiresConcentration, id).toBe(true)
+      expect(templateErrors(t), id).toEqual([])
+    }
+  })
+})
