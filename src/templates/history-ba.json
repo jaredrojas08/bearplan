@@ -45,7 +45,10 @@
           "subjects": [
             "HIST"
           ],
-          "minCredits": 3
+          "minCredits": 3,
+          "excludeDistributions": [
+            "FWS"
+          ]
         },
         {
           "codes": [
@@ -686,10 +689,13 @@
             "STS 4460",
             "VISST 4460"
           ],
-          "minCredits": 3
+          "minCredits": 3,
+          "excludeDistributions": [
+            "FWS"
+          ]
         }
       ],
-      "note": "At least nine history courses, each for 3 or 4 credits, totaling at least 30 credits. FWS do not count; their exclusion needs manual review because rules cannot exclude a distribution attribute. Courses may satisfy multiple requirements. Four courses must cover four distinct areas out of the five listed. The format cannot enforce the 4-credit per-course ceiling. Seminar checks use HIST numbering; confirm cross-listed seminars manually. Honors (thesis courses, a GPA minimum and deadlines) overlaps these courses; plan it with your advisor.",
+      "note": "At least nine history courses, each for 3 or 4 credits, totaling at least 30 credits. FWS courses don't count. Courses may satisfy multiple requirements. Four courses must cover four distinct areas out of the five listed. The format cannot enforce the 4-credit per-course ceiling. Seminar checks use HIST numbering; confirm cross-listed seminars manually. Honors (thesis courses, a GPA minimum and deadlines) overlaps these courses; plan it with your advisor.",
       "groups": [
         {
           "id": "asia",
@@ -1541,6 +1547,9 @@
               "STS 4116",
               "STS 4685",
               "STS 4911"
+            ],
+            "excludeDistributions": [
+              "FWS"
             ]
           }
         },
@@ -1858,7 +1867,10 @@
             "HIST"
           ],
           "minLevel": 2006,
-          "maxLevel": 2499
+          "maxLevel": 2499,
+          "excludeDistributions": [
+            "FWS"
+          ]
         },
         {
           "subjects": [
@@ -1869,6 +1881,9 @@
           "excludeCodes": [
             "HIST 4001",
             "HIST 4002"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1889,6 +1904,9 @@
           "excludeCodes": [
             "HIST 4001",
             "HIST 4002"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],

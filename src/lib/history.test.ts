@@ -44,3 +44,9 @@ describe('History', () => {
     expect(advancedSeminar('HIST 4000', 'additional')).toBe(false)
   })
 })
+
+describe('writing seminars', () => {
+  it('keeps FWS courses out of the major', () => {
+    expect(placeFailure(empty, history, { code: 'HIST 1200', credits: 3, distributions: ['FWS'] }, 'history')).toBe("FWS courses can't count here")
+  })
+})
