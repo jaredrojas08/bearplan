@@ -113,6 +113,8 @@ function ruleFromText(text, subjects) {
 function choiceOf(title) {
   if (!title) return null
   if (/recommend/i.test(title)) return { kind: 'skip' }
+  // "Option 1: Select two courses" is still an alternative, so the prefix wins over the rest.
+  if (/^option\b/i.test(title)) return { kind: 'option' }
   const credits =
     title.match(/(?:minimum|at least|min\.?)\s*(?:of\s*)?(\d+(?:\.\d+)?)\s*(?:credits?|cr)\b/i) ??
     title.match(/(\d+(?:\.\d+)?)\s*(?:credits?|cr)\s*(?:minimum|min\b|required)/i)
@@ -122,7 +124,6 @@ function choiceOf(title) {
     title.match(/^(one|two|three|four|five|\d+)\s+(?:additional\s+)?(?:courses?|electives?)\b/i) ??
     title.match(/\((one|two|three|four|five|\d+)\s+courses?\)/i)
   if (picked) return { kind: 'pick', count: firstNumber(picked[1]) }
-  if (/^option\b/i.test(title)) return { kind: 'option' }
   if (/\b(list|group|electives?|one of)\b/i.test(title)) return { kind: 'pick', count: 1 }
   return null
 }
@@ -326,7 +327,7 @@ function parseProgram(html, program) {
   const $ = cheerio.load(html)
   const container = $('#curriculumtextcontainer').length ? $('#curriculumtextcontainer') : $('#textcontainer')
   const title = clean($('.page-title').first().text()) || program.text
-  const college = clean($('p.college-text').first().text()).slice(0, 120)
+  const college = clean($('p.college-text').first().text())
   const pageText = clean(container.text())
   const totalCredits = Number(pageText.match(/Minimum Credits for Degree:\s*(\d+)/)?.[1]) || undefined
   const uniqueCredits = Number(pageText.match(/minimum of (\d+) unique credits/i)?.[1]) || undefined

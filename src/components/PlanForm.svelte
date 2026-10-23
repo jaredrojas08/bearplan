@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte'
   import { readFile } from '../lib/files'
+  import { COLLEGE_ABBREVIATIONS, shortCollege } from '../lib/colleges'
   import { app, type PlanDetails } from '../lib/store.svelte'
   import type { Term } from '../types'
   import { latestFall, nextTerm, shiftTerm, termIndex, termRange, termStatus } from '../lib/terms'
@@ -29,12 +30,13 @@
 
   // svelte-ignore state_referenced_locally
   let name = $state(initial?.name ?? '')
+  // A new plan starts with nothing picked, so no major or term is chosen for the student by default.
   // svelte-ignore state_referenced_locally
-  let templateId = $state(initial?.templateId ?? app.majorOptions[0].id)
+  let templateId = $state(initial?.templateId ?? '')
   // svelte-ignore state_referenced_locally
-  let entryTerm = $state(initial?.entryTerm ?? defaultEntry)
+  let entryTerm = $state<Term>(initial?.entryTerm ?? '')
   // svelte-ignore state_referenced_locally
-  let gradTerm = $state(initial?.gradTerm ?? shiftTerm(defaultEntry, 7))
+  let gradTerm = $state<Term>(initial?.gradTerm ?? '')
   // svelte-ignore state_referenced_locally
   let concentrations = $state<string[]>(initial?.concentrations ?? [])
   // svelte-ignore state_referenced_locally
@@ -42,8 +44,16 @@
   let templateMessage = $state('')
   let fileInput: HTMLInputElement
 
-  let gradOptions = $derived(termRange(nextTerm(entryTerm), later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm)))
-  let termCount = $derived(termIndex(gradTerm) - termIndex(entryTerm) + 1)
+  // A saved one-term plan (entry equals graduation) stays valid, so its own term stays selectable.
+  let gradOptions = $derived(
+    entryTerm
+      ? termRange(
+          initial?.gradTerm === entryTerm ? entryTerm : nextTerm(entryTerm),
+          later(shiftTerm(entryTerm, 13), initial?.gradTerm ?? entryTerm),
+        )
+      : [],
+  )
+  let termCount = $derived(entryTerm && gradTerm ? termIndex(gradTerm) - termIndex(entryTerm) + 1 : 0)
   let selectedTemplate = $derived(app.majors.find((t) => t.id === templateId))
   // Minors still downloading; saving waits for them so none is silently left out.
   let pendingMinors = $state<string[]>([])
@@ -55,6 +65,7 @@
   $effect(() => {
     const id = templateId
     loadMessage = ''
+    if (!id) return
     void app.ensureTemplates([id]).then((status) => {
       if (status !== 'ok' && id === templateId) loadMessage = 'This checklist could not be downloaded. Check your connection.'
     })
@@ -75,8 +86,9 @@
   let offered = $derived(selectedTemplate?.concentrations ?? [])
   let maxConcentrations = $derived(selectedTemplate?.maxConcentrations ?? 1)
 
+  // A new entry term can leave the chosen graduation term out of range; clear it rather than guess one.
   $effect(() => {
-    if (termIndex(gradTerm) <= termIndex(entryTerm)) gradTerm = gradOptions[Math.min(6, gradOptions.length - 1)]
+    if (gradTerm && !gradOptions.includes(gradTerm)) gradTerm = ''
   })
 
   async function onTemplateFile(event: Event) {
@@ -106,6 +118,7 @@
   }
 
   let statusHint = $derived.by(() => {
+    if (!termCount) return ''
     const current = termRange(entryTerm, gradTerm).find((t) => termStatus(t, app.today) === 'prog')
     return current
       ? `Past terms count as done, ${current} as in progress, later terms as planned.`
@@ -121,17 +134,16 @@
   <label class="f">
     Requirement checklist
     <select bind:value={templateId}>
-      {#each [false, true] as draft (draft)}
-        <optgroup label={draft ? 'Drafts from the catalog (not yet checked)' : 'Checked checklists'}>
-          {#each app.majorOptions.filter((o) => o.draft === draft) as o (o.id)}
-            {@const t = app.majors.find((m) => m.id === o.id)}
-            <option value={o.id}>
-              {o.name} · {o.college}{t && !draft
-                ? ` (${t.matriculatedBefore ? `entered ${t.matriculatedFrom} to before ${t.matriculatedBefore}` : `entered ${t.matriculatedFrom} or later`})`
-                : ''}
-            </option>
-          {/each}
-        </optgroup>
+      <option value="" disabled>Choose your major…</option>
+      {#each app.majorOptions as o (o.id)}
+        {@const t = app.majors.find((m) => m.id === o.id)}
+        <option value={o.id}>
+          {o.name} · {shortCollege(o.college)}{o.draft
+            ? ' · draft'
+            : t
+              ? ` · ${t.matriculatedBefore ? `entered ${t.matriculatedFrom} to ${shiftTerm(t.matriculatedBefore, -1)}` : `entered ${t.matriculatedFrom}+`}`
+              : ''}
+        </option>
       {/each}
     </select>
     <span class="hint">
@@ -145,6 +157,14 @@
     {#if loadMessage}<span class="hint" role="alert">{loadMessage}</span>{/if}
     <input bind:this={fileInput} type="file" accept="application/json,.json" hidden onchange={onTemplateFile} />
   </label>
+  <details class="legend">
+    <summary>What do the college abbreviations mean?</summary>
+    <dl>
+      {#each COLLEGE_ABBREVIATIONS as c (c.short)}
+        <div><dt>{c.short}</dt><dd>{c.full}</dd></div>
+      {/each}
+    </dl>
+  </details>
   {#if offered.length}
     <fieldset class="f">
       <legend>Concentration{maxConcentrations > 1 ? `s (up to ${maxConcentrations})` : ''}</legend>
@@ -181,11 +201,7 @@
       {#if minorOptions.length}
         <select id="minor-pick" onchange={addMinor}>
           <option value="">Add a minor…</option>
-          {#each [false, true] as draft (draft)}
-            <optgroup label={draft ? 'Drafts from the catalog' : 'Checked'}>
-              {#each minorOptions.filter((m) => m.draft === draft) as m (m.id)}<option value={m.id}>{m.name} · {m.college}</option>{/each}
-            </optgroup>
-          {/each}
+          {#each minorOptions as m (m.id)}<option value={m.id}>{m.name} · {shortCollege(m.college)}{m.draft ? ' · draft' : ''}</option>{/each}
         </select>
       {/if}
       <span class="hint">Optional. A course can count for your major and a minor; each minor's unique-credit rule still applies.</span>
@@ -195,25 +211,27 @@
     <label class="f">
       Entry term
       <select class="mono" bind:value={entryTerm}>
+        <option value="" disabled>Choose…</option>
         {#each entryOptions as t (t)}<option value={t}>{t}</option>{/each}
       </select>
     </label>
     <label class="f">
       Graduation term
       <select class="mono" bind:value={gradTerm}>
+        <option value="" disabled>{entryTerm ? 'Choose…' : 'Pick an entry term first'}</option>
         {#each gradOptions as t (t)}<option value={t}>{t}</option>{/each}
       </select>
     </label>
   </div>
-  {#if selectedTemplate && termIndex(entryTerm) < termIndex(selectedTemplate.matriculatedFrom)}
+  {#if selectedTemplate && entryTerm && termIndex(entryTerm) < termIndex(selectedTemplate.matriculatedFrom)}
     <p class="note warn">This checklist is for students who entered {selectedTemplate.matriculatedFrom} or later.</p>
-  {:else if selectedTemplate?.matriculatedBefore && termIndex(entryTerm) >= termIndex(selectedTemplate.matriculatedBefore)}
+  {:else if selectedTemplate?.matriculatedBefore && entryTerm && termIndex(entryTerm) >= termIndex(selectedTemplate.matriculatedBefore)}
     <p class="note warn">This checklist is for students who entered before {selectedTemplate.matriculatedBefore}.</p>
   {/if}
-  <p class="note">{termCount} terms. {statusHint}</p>
+  {#if termCount}<p class="note">{termCount} terms. {statusHint}</p>{/if}
   <div class="actions">
     {@render secondary?.()}
-    <button type="submit" class="btn primary big" disabled={!selectedTemplate || pendingMinors.length > 0}>{submitLabel}</button>
+    <button type="submit" class="btn primary big" disabled={!selectedTemplate || !entryTerm || !gradTerm || pendingMinors.length > 0}>{submitLabel}</button>
   </div>
 </form>
 
@@ -286,6 +304,34 @@
     background: var(--tint);
     border-radius: 999px;
     padding: 4px 12px;
+  }
+  .legend {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: -10px;
+  }
+  .legend summary {
+    cursor: pointer;
+    color: var(--accent-ink);
+    font-weight: 600;
+    width: fit-content;
+  }
+  .legend dl {
+    margin: 8px 0 0;
+    display: grid;
+    gap: 4px;
+  }
+  .legend dl div {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .legend dt {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .legend dd {
+    margin: 0;
   }
   .draft-hint {
     color: var(--warn-ink);

@@ -272,7 +272,8 @@ class AppState {
     const unloaded = this.catalogIndex
       .filter((e) => e.kind === kind && !loaded.some((t) => t.id === e.id))
       .map((e) => ({ id: e.id, name: e.name, college: e.college, draft: true }))
-    return [...loaded, ...unloaded].sort((a, b) => Number(a.draft) - Number(b.draft) || a.name.localeCompare(b.name))
+    // One A-to-Z list; drafts are tagged in their labels instead of grouped apart.
+    return [...loaded, ...unloaded].sort((a, b) => a.name.localeCompare(b.name) || a.college.localeCompare(b.college))
   }
 
   createPlan(details: PlanDetails) {

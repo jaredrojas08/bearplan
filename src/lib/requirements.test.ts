@@ -298,3 +298,32 @@ describe('group credit totals', () => {
     expect(chip({ code: 'X 1', credits: 4, placement: 'g' }, { code: 'X 2', credits: 3, placement: 'g' })).toMatchObject({ text: '7 / 7 cr', ok: true })
   })
 })
+
+describe('slot options with several started', () => {
+  const t: Template = {
+    ...template,
+    sections: [{
+      id: 'x', title: 'X', column: 'left', filter: 'college', type: 'slots',
+      constraints: [{ type: 'minCredits', label: 'Credits', credits: 6 }],
+      slots: [
+        { id: 'a1', label: 'A1', option: 'Option 1' }, { id: 'a2', label: 'A2', option: 'Option 1' }, { id: 'a3', label: 'A3', option: 'Option 1' },
+        { id: 'b1', label: 'B1', option: 'Option 2' },
+      ],
+    }],
+  }
+  const result = (...courses: Partial<PlanCourse>[]) =>
+    evaluatePlan({ ...plan, courses: withCourses(...courses).courses.slice(plan.courses.length) }, t, OCTOBER_2026).sections[0]
+
+  it('prefers a finished option over a fuller unfinished one', () => {
+    const s = result({ code: 'X 1', placement: 'x/a1' }, { code: 'X 2', placement: 'x/a2' }, { code: 'X 3', credits: 6, placement: 'x/b1' })
+    expect(s).toMatchObject({ filled: 1, total: 1, complete: true })
+  })
+
+  it('checks constraints against the counted option only', () => {
+    // Option 1 has two 3-credit courses (6 cr) but isn't finished; Option 2 holds a 1-credit course.
+    const s = result({ code: 'X 1', placement: 'x/a1' }, { code: 'X 2', placement: 'x/a2' }, { code: 'X 3', credits: 1, placement: 'x/b1' })
+    expect(s.total).toBe(1)
+    expect(s.chips[0]).toMatchObject({ text: '1 / 6', ok: false })
+    expect(s.complete).toBe(false)
+  })
+})
