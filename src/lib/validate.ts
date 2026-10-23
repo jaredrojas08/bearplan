@@ -99,7 +99,7 @@ function sectionErrors(section: unknown, where: string, ids: Set<string>): strin
   return errors
 }
 
-function checkErrors(check: unknown, where: string): string[] {
+function checkErrors(check: unknown, where: string, sectionIds: Set<string>): string[] {
   if (!isObject(check) || !isString(check.id) || !isString(check.title)) return [`${where} needs an id and a title`]
   const errors: string[] = []
   const hasCodes = isStringArray(check.codes) && check.codes.length > 0
@@ -114,6 +114,10 @@ function checkErrors(check: unknown, where: string): string[] {
   if ('count' in check && !(Number.isInteger(check.count) && (check.count as number) >= 1)) errors.push(`${where}.count must be a whole number of at least 1`)
   if ('credits' in check && !(typeof check.credits === 'number' && check.credits > 0)) errors.push(`${where}.credits must be a number above 0`)
   if ('group' in check && !isString(check.group)) errors.push(`${where}.group must be text`)
+  // A mistyped section would leave the check unmet forever, so it must name a real one.
+  if ('section' in check && !(isString(check.section) && sectionIds.has(check.section))) {
+    errors.push(`${where}.section must be the id of a section in this template`)
+  }
   if (!isString(check.metText) || !isString(check.missText)) errors.push(`${where} needs metText and missText`)
   return errors
 }
@@ -163,7 +167,7 @@ export function templateErrors(data: unknown): string[] {
     errors.push('"maxConcentrations" must be a whole number of at least 1')
   }
 
-  ;(Array.isArray(data.checks) ? data.checks : []).forEach((check: unknown, i: number) => errors.push(...checkErrors(check, `checks[${i}]`)))
+  ;(Array.isArray(data.checks) ? data.checks : []).forEach((check: unknown, i: number) => errors.push(...checkErrors(check, `checks[${i}]`, ids)))
   return errors
 }
 
