@@ -401,7 +401,8 @@ function evaluateSection(plan: Plan, section: Section, today: Date): SectionResu
   const scored = rows.some((r) => r.slot.option) ? counted.flatMap((r) => (r.course ? [r.course] : [])) : placed
   const groupOf = section.groups ? assignGroups(scored, section.groups, section.constraints) : {}
   const chips = (section.constraints ?? []).map((k) => constraintChip(k, scored, groupOf))
-  const constraintsOk = chips.every((c) => c.ok)
+  // A section with the swim test (PE) isn't done until the test is checked off.
+  const constraintsOk = chips.every((c) => c.ok) && (!section.swimTest || plan.swimTest)
   const credits = sumCredits(placed)
 
   if (section.type === 'creditBucket') {
