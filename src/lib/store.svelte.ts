@@ -7,6 +7,7 @@ import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import economicsTemplate from '../templates/economics-ba.json'
 import statisticsTemplate from '../templates/statistics-data-science-ba.json'
+import historyTemplate from '../templates/history-ba.json'
 import englishTemplate from '../templates/english-ba.json'
 import mathematicsTemplate from '../templates/mathematics-ba.json'
 import hotelTemplate from '../templates/hotel-management-bs.json'
@@ -64,6 +65,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   csBaTemplate,
   economicsTemplate,
   statisticsTemplate,
+  historyTemplate,
   englishTemplate,
   mathematicsTemplate,
   governmentTemplate,
