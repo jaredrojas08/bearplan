@@ -1,0 +1,722 @@
+{
+  "id": "hotel-management-bs",
+  "name": "Hotel Administration (BS)",
+  "college": "SC Johnson College of Business",
+  "matriculatedFrom": "FA22",
+  "source": "https://catalog.cornell.edu/programs/hotel-management-bs/",
+  "totalCredits": 120,
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "college",
+      "label": "School",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "sections": [
+    {
+      "id": "accounting-finance-real-estate",
+      "title": "Accounting; Finance; Real Estate",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1210",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1210"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "HADM 2210",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2210"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "HADM 2220",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2220"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "label": "HADM 2221",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2221"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "note": "The core totals 58 credits. HADM 1361 is 4 credits; each other listed core course is 3. Completion of two-thirds of the core in the first two years is encouraged."
+    },
+    {
+      "id": "employment-relations-hr-law",
+      "title": "Employment Relations; HR; Law",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1150",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1150"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "HADM 2810",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2810"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "HADM 3870",
+          "rule": [
+            {
+              "codes": [
+                "HADM 3870"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "right",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "food-and-beverage-management",
+      "title": "Food and Beverage Management",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1361",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1361"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "HADM 2351",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2351"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "right",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "information-systems",
+      "title": "Information Systems",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1740",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1740"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "left",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "management-communication",
+      "title": "Management Communication",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1650",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1650"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "HADM 3650",
+          "rule": [
+            {
+              "codes": [
+                "HADM 3650"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "left",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "operations",
+      "title": "Operations",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1350",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1350"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "HADM 2011",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2011"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "HADM 2021",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2021"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "right",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "properties-development-and-management",
+      "title": "Properties Development and Management",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 2560",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2560"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "left",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "services-marketing",
+      "title": "Services Marketing",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 1410",
+          "rule": [
+            {
+              "codes": [
+                "HADM 1410"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "HADM 2430",
+          "rule": [
+            {
+              "codes": [
+                "HADM 2430"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "right",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "strategy",
+      "title": "Strategy",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "HADM 4410",
+          "rule": [
+            {
+              "codes": [
+                "HADM 4410"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "left",
+      "filter": "major",
+      "icon": "book"
+    },
+    {
+      "id": "hadm-electives",
+      "title": "HADM Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 12,
+      "rule": [
+        {
+          "subjects": [
+            "HADM"
+          ],
+          "minLevel": 3000,
+          "excludeCodes": [
+            "HADM 1210",
+            "HADM 2210",
+            "HADM 2220",
+            "HADM 2221",
+            "HADM 1150",
+            "HADM 2810",
+            "HADM 3870",
+            "HADM 1361",
+            "HADM 2351",
+            "HADM 1740",
+            "HADM 1650",
+            "HADM 3650",
+            "HADM 1350",
+            "HADM 2011",
+            "HADM 2021",
+            "HADM 2560",
+            "HADM 1410",
+            "HADM 2430",
+            "HADM 4410"
+          ]
+        }
+      ],
+      "note": "3000-level or higher, letter graded unless offered only SX/UX. The Real Estate Minor may fulfill this requirement, but the page does not list its courses. The elective footnote both allows up to 3 credits from HADM 4910, HADM 4970, HADM 4971, HADM 4980, HADM 4990 and says they count toward free electives only. This template uses the stated 3-credit combined cap; confirm eligibility with Student Services. Special studies require prior approval and a letter grade. Excess credits belong in free electives; the app cannot split a course between sections. Optional 12-credit specializations (Beverage Management, Food & Beverage, Hospitality Analytics, Finance and others) usually fit here; see the catalog page for their lists.",
+      "letterGrade": true,
+      "constraints": [
+        {
+          "type": "maxCredits",
+          "label": "Listed special coursework",
+          "credits": 3,
+          "match": {
+            "codes": [
+              "HADM 4910",
+              "HADM 4970",
+              "HADM 4971",
+              "HADM 4980",
+              "HADM 4990"
+            ]
+          },
+          "reason": "At most 3 credits of the listed special coursework may count as HADM electives."
+        }
+      ]
+    },
+    {
+      "id": "non-jcb",
+      "title": "Non-JCB Distribution Electives",
+      "column": "right",
+      "filter": "college",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 15,
+      "rule": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "HST-AS",
+            "HA-HE",
+            "LAD-HE",
+            "LA-AAP",
+            "HA-AAP",
+            "ALC-AAP",
+            "HA-AG",
+            "LA-AG",
+            "GLC-AS",
+            "SCD-AS",
+            "CA-HE",
+            "CA-AAP",
+            "CA-AG",
+            "D-HE",
+            "D-AG",
+            "SSC-AS",
+            "SBA-HE",
+            "SBA-AAP",
+            "SBA-AG",
+            "SMR-AS",
+            "SDS-AS",
+            "MQR-AAP",
+            "MQR-HE",
+            "DLS-AG",
+            "BIO-AS",
+            "PHS-AS",
+            "PBS-HE",
+            "PBS-AAP",
+            "BIO-AG",
+            "BIOLS-AG",
+            "BIONLS-AG",
+            "BSC-AG",
+            "PSC-AG",
+            "CHPH-AG"
+          ],
+          "excludeSubjects": [
+            "AEM",
+            "HADM",
+            "MGMT",
+            "NACCT",
+            "NBA",
+            "NCC",
+            "REAL"
+          ]
+        }
+      ],
+      "note": "At least 3 credits in each of at least 3 of the 5 categories, outside SC Johnson. A course counts in only one category. The app assigns one group per course and checks 3 groups, but cannot require a 3-credit sum in any 3 groups; verify those sums manually. The excluded subjects are the examples on the page; its \"etc.\" leaves other JCB subjects unspecified. All distribution credits must meet New York State liberal arts and sciences criteria. Letter grades required unless offered only SX/UX.",
+      "letterGrade": true,
+      "groups": [
+        {
+          "id": "arts",
+          "name": "Arts, Literature, & Culture and Historical Analysis",
+          "categories": [
+            "ALC-AS",
+            "HST-AS",
+            "HA-HE",
+            "LAD-HE",
+            "LA-AAP",
+            "HA-AAP",
+            "ALC-AAP",
+            "HA-AG",
+            "LA-AG"
+          ]
+        },
+        {
+          "id": "global",
+          "name": "Global Citizenship and Social Difference",
+          "categories": [
+            "GLC-AS",
+            "SCD-AS",
+            "CA-HE",
+            "CA-AAP",
+            "CA-AG",
+            "D-HE",
+            "D-AG"
+          ]
+        },
+        {
+          "id": "social",
+          "name": "Social Science",
+          "categories": [
+            "SSC-AS",
+            "SBA-HE",
+            "SBA-AAP",
+            "SBA-AG"
+          ]
+        },
+        {
+          "id": "math",
+          "name": "Mathematics and Data Science",
+          "categories": [
+            "SMR-AS",
+            "SDS-AS",
+            "MQR-AAP",
+            "MQR-HE",
+            "DLS-AG"
+          ]
+        },
+        {
+          "id": "science",
+          "name": "Biological and Physical Sciences",
+          "categories": [
+            "BIO-AS",
+            "PHS-AS",
+            "PBS-HE",
+            "PBS-AAP",
+            "BIO-AG",
+            "BIOLS-AG",
+            "BIONLS-AG",
+            "BSC-AG",
+            "PSC-AG",
+            "CHPH-AG"
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minGroups",
+          "label": "Distribution categories",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "additional-distribution",
+      "title": "Additional Distribution Electives",
+      "column": "right",
+      "filter": "college",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 18,
+      "rule": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "HST-AS",
+            "HA-HE",
+            "LAD-HE",
+            "LA-AAP",
+            "HA-AAP",
+            "ALC-AAP",
+            "HA-AG",
+            "LA-AG",
+            "GLC-AS",
+            "SCD-AS",
+            "CA-HE",
+            "CA-AAP",
+            "CA-AG",
+            "D-HE",
+            "D-AG",
+            "SSC-AS",
+            "SBA-HE",
+            "SBA-AAP",
+            "SBA-AG",
+            "SMR-AS",
+            "SDS-AS",
+            "MQR-AAP",
+            "MQR-HE",
+            "DLS-AG",
+            "BIO-AS",
+            "PHS-AS",
+            "PBS-HE",
+            "PBS-AAP",
+            "BIO-AG",
+            "BIOLS-AG",
+            "BIONLS-AG",
+            "BSC-AG",
+            "PSC-AG",
+            "CHPH-AG",
+            "ALC-HA",
+            "ETM-HA",
+            "GLC-HA",
+            "HST-HA",
+            "SCD-HA",
+            "SSC-HA",
+            "SDS-HA",
+            "SMR-HA",
+            "CE-EN",
+            "ETH-AG",
+            "ETM-AS",
+            "FL-AAP",
+            "FL-AG",
+            "FLOPI-AS",
+            "KCM-AAP",
+            "KCM-AG",
+            "KCM-HE",
+            "MQL-AG",
+            "MRQ-HE",
+            "OPHLS-AG",
+            "ORL-AG",
+            "WRT-AG"
+          ]
+        }
+      ],
+      "note": "Any Cornell college or school, including Nolan. Foreign language coursework may also be considered; courses without a listed distribution code require manual confirmation and cannot be recognized automatically. MQL-AG and MRQ-HE are copied exactly from the page. Letter grades required unless offered only SX/UX.",
+      "letterGrade": true
+    },
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminar",
+      "column": "left",
+      "filter": "college",
+      "icon": "pen",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "First-Year Writing Seminar (3 credits)",
+          "rule": [
+            {
+              "distributions": [
+                "FWS"
+              ],
+              "minCredits": 3
+            }
+          ]
+        }
+      ],
+      "note": "Part of the 42 distribution credits. Letter grade required unless offered only SX/UX. First-year students must complete FWS in their first or second semester; timing is not checked."
+    },
+    {
+      "id": "ethics",
+      "title": "Ethics",
+      "column": "left",
+      "filter": "college",
+      "icon": "pen",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "Ethics (3 credits)",
+          "rule": [
+            {
+              "distributions": [
+                "ETM-HA",
+                "ETH-AG"
+              ],
+              "minCredits": 3
+            }
+          ]
+        }
+      ],
+      "note": "Part of the 42 distribution credits. Letter grade required unless offered only SX/UX."
+    },
+    {
+      "id": "diversity",
+      "title": "Diversity & Inclusion",
+      "column": "left",
+      "filter": "college",
+      "icon": "pen",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "Diversity & Inclusion (3 credits)",
+          "rule": [
+            {
+              "distributions": [
+                "D-HA"
+              ],
+              "minCredits": 3
+            }
+          ]
+        }
+      ],
+      "note": "Part of the 42 distribution credits. Letter grade required unless offered only SX/UX. The page specifies D-HA here, although it lists SCD-HA among additional distribution codes; no equivalence is assumed."
+    },
+    {
+      "id": "free-electives",
+      "title": "Free Electives",
+      "column": "right",
+      "filter": "college",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 8,
+      "rule": [
+        {
+          "excludeSubjects": [
+            "PE"
+          ]
+        }
+      ],
+      "note": "Any Cornell college or school; applied or liberal arts and sciences courses, including courses without distribution codes. AFS-AG, DLG-AG, SCH-AG, AWI-IL, ICE-IL, ICL-IL, LH-IL, OCE-IL, OCL-IL, QP-IL, SCT-IL, SOW-IL, STA-IL qualify. ROTC must have academic content and no PE cross-listing; the app cannot check either. At most 6 special studies credits across the degree, including similar research in other colleges; this plan-wide maximum cannot be enforced. HEC allows 3 HADM elective credits and excess free elective credits. Distinction in Research totals 6 credits across HADM 4970 and HADM 4971: 3 HADM elective and 3 free elective credits, in the last two consecutive semesters. Course splitting and timing require manual review."
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [],
+  "totalCreditsNote": "120 academic credits: 58 core, 12 HADM electives, 42 distribution and 8 free elective credits. PE doesn't count. Confirm with Nolan Student Services.",
+  "footnote": "Also required: 800 hours (2 units) of Practice Credit work in at least two different positions, verified by your employers, which the app doesn't track. Distribution courses need a letter grade unless offered only SX/UX."
+}

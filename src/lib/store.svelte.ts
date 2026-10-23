@@ -6,6 +6,7 @@ import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import economicsTemplate from '../templates/economics-ba.json'
+import hotelTemplate from '../templates/hotel-management-bs.json'
 import governmentTemplate from '../templates/government-ba.json'
 import bioBaTemplate from '../templates/biological-sciences-ba.json'
 import bioBsPre2025Template from '../templates/biological-sciences-bs-cals-pre2025.json'
@@ -61,6 +62,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   governmentTemplate,
   psychologyTemplate,
   orieTemplate,
+  hotelTemplate,
   infoSciBaTemplate,
   infoSciBsTemplate,
   infoSciBsPre2025Template,
