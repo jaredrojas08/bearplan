@@ -462,12 +462,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "english-ba",
-  "kind": "major",
-  "name": "English (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "english-minor",
   "kind": "minor",
   "name": "English",

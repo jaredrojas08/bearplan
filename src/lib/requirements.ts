@@ -64,6 +64,8 @@ export function matchFailure(course: CourseFacts, match: Match, sectionTitle = '
     }
     if (match.excludeSubjects?.includes(subject)) return `No ${subject} courses`
     if (match.excludeCodes?.includes(code)) return `${code} can't count here`
+    const excluded = match.excludeDistributions?.find((c) => hasCategory(course, [c]))
+    if (excluded) return `${excluded} courses can't count here`
     if (match.numberPattern && !match.numberPattern.some((p) => patternMatches(number, p))) {
       return `Needs a ${match.numberPattern.join(' / ')} course`
     }
@@ -399,7 +401,8 @@ function evaluateSection(plan: Plan, section: Section, today: Date): SectionResu
   const scored = rows.some((r) => r.slot.option) ? counted.flatMap((r) => (r.course ? [r.course] : [])) : placed
   const groupOf = section.groups ? assignGroups(scored, section.groups, section.constraints) : {}
   const chips = (section.constraints ?? []).map((k) => constraintChip(k, scored, groupOf))
-  const constraintsOk = chips.every((c) => c.ok)
+  // A section with the swim test (PE) isn't done until the test is checked off.
+  const constraintsOk = chips.every((c) => c.ok) && (!section.swimTest || plan.swimTest)
   const credits = sumCredits(placed)
 
   if (section.type === 'creditBucket') {
