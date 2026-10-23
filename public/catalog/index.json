@@ -192,18 +192,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "biological-sciences-ba",
-  "kind": "major",
-  "name": "Biological Sciences (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "biological-sciences-bs",
-  "kind": "major",
-  "name": "Biological Sciences (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "biology-society-ba",
   "kind": "major",
   "name": "Biology & Society (BA, BS)",

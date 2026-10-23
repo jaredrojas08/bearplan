@@ -284,6 +284,21 @@ describe('slot options', () => {
   })
 })
 
+describe('group credit totals', () => {
+  it('sums credits within a group', () => {
+    const groups = [{ id: 'A', name: 'A', codes: ['X 1', 'X 2'] }, { id: 'B', name: 'B', codes: ['Y 1'] }]
+    const section = {
+      id: 'g', title: 'G', column: 'left' as const, filter: 'college', type: 'creditBucket' as const, minCredits: 0, groups,
+      constraints: [{ type: 'groupCredits' as const, label: 'Group A', group: 'A', credits: 7 }],
+    }
+    const t: Template = { ...template, sections: [section] }
+    const chip = (...courses: Partial<PlanCourse>[]) =>
+      evaluatePlan({ ...plan, courses: withCourses(...courses).courses.slice(plan.courses.length) }, t, OCTOBER_2026).sections[0].chips[0]
+    expect(chip({ code: 'X 1', credits: 4, placement: 'g' })).toMatchObject({ text: '4 / 7 cr', ok: false })
+    expect(chip({ code: 'X 1', credits: 4, placement: 'g' }, { code: 'X 2', credits: 3, placement: 'g' })).toMatchObject({ text: '7 / 7 cr', ok: true })
+  })
+})
+
 describe('slot options with several started', () => {
   const t: Template = {
     ...template,

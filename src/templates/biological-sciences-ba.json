@@ -1,0 +1,2848 @@
+{
+ "id": "biological-sciences-ba",
+ "name": "Biological Sciences (BA)",
+ "college": "Arts and Sciences",
+ "source": "https://catalog.cornell.edu/programs/biological-sciences-ba/",
+ "matriculatedFrom": "FA22",
+ "totalCredits": 120,
+ "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+ "footnote": "Biology courses need a letter grade (unless offered S/U only) and a D- or better. Courses shared between the foundation and a concentration stay in the foundation rows.",
+ "filters": [
+  {
+   "id": "major",
+   "label": "Foundation",
+   "icon": "flask"
+  },
+  {
+   "id": "concentration",
+   "label": "Concentration",
+   "icon": "star"
+  },
+  {
+   "id": "university",
+   "label": "University",
+   "icon": "run"
+  }
+ ],
+ "failingGrades": [
+  "F"
+ ],
+ "sections": [
+  {
+   "id": "intro",
+   "title": "Introductory Biology Cluster",
+   "column": "left",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "note": "Two courses from two of the three areas: Cell Biology (BIOMG 1350), Physiology (BIOG 1440 or 1445), Ecology (BIOEE or BIOSM 1610). AP biology doesn't count.",
+   "constraints": [
+    {
+     "type": "minGroups",
+     "label": "Areas",
+     "count": 2
+    }
+   ],
+   "type": "slots",
+   "slots": [
+    {
+     "id": "i1",
+     "label": "Intro biology",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350",
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOEE 1610",
+        "BIOSM 1610"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "i2",
+     "label": "Intro biology",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 1350",
+        "BIOG 1440",
+        "BIOG 1445",
+        "BIOEE 1610",
+        "BIOSM 1610"
+       ]
+      }
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "id": "cell",
+     "name": "Cell Biology",
+     "codes": [
+      "BIOMG 1350"
+     ]
+    },
+    {
+     "id": "phys",
+     "name": "Physiology",
+     "codes": [
+      "BIOG 1440",
+      "BIOG 1445"
+     ]
+    },
+    {
+     "id": "eco",
+     "name": "Ecology",
+     "codes": [
+      "BIOEE 1610",
+      "BIOSM 1610"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lab-evo",
+   "title": "Investigative Lab and Evolution",
+   "column": "left",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "type": "slots",
+   "slots": [
+    {
+     "id": "lab",
+     "label": "BIOG / BIOSM 1500",
+     "rule": [
+      {
+       "codes": [
+        "BIOG 1500",
+        "BIOSM 1500"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "evo",
+     "label": "BIOEE 1780 / 1781",
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 1780",
+        "BIOEE 1781"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "genchem",
+   "title": "General Chemistry",
+   "column": "left",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "note": "CHEM 2150 is for students with a 5 on AP Chemistry or equivalent preparation.",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "g1",
+     "label": "CHEM 2070",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2070"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "g2",
+     "label": "CHEM 2071",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2071"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "g3",
+     "label": "CHEM 2080",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2080"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "g4",
+     "label": "CHEM 2081",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2081"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "g5",
+     "label": "CHEM 2150",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2150"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    }
+   ]
+  },
+  {
+   "id": "math",
+   "title": "Mathematics",
+   "column": "left",
+   "filter": "major",
+   "icon": "sigma",
+   "letterGrade": true,
+   "note": "The second course can be statistics (STSCI 2150 or 2200 preferred), MATH 1120 or 1910, or MATH 1105. AP Calculus 4-5 and AP Statistics 5 count; Cornell's STSCI 2100 doesn't.",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "m1",
+     "label": "MATH 1106 / 1110",
+     "rule": [
+      {
+       "codes": [
+        "MATH 1106",
+        "MATH 1110"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m2",
+     "label": "Statistics, Calculus II or Finite Math",
+     "rule": [
+      {
+       "codes": [
+        "AEM 2100",
+        "ECON 3130",
+        "PSYCH 2500",
+        "SOC 3010",
+        "STSCI 2150",
+        "STSCI 2200",
+        "MATH 1120",
+        "MATH 1910",
+        "MATH 1105"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orgo",
+   "title": "Organic Chemistry",
+   "column": "right",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "note": "CHEM 1570 isn't allowed in the Biochemistry or Molecular and Cell Biology concentrations; Biochemistry also requires CHEM 2510.",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "o1",
+     "label": "CHEM 1570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 1570"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "o2",
+     "label": "CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3570"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "o3",
+     "label": "CHEM 3580",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3580"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "o4",
+     "label": "CHEM 3570",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3570"
+       ]
+      }
+     ],
+     "option": "Option 3"
+    },
+    {
+     "id": "o5",
+     "label": "CHEM 2510",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 2510"
+       ]
+      }
+     ],
+     "option": "Option 3"
+    },
+    {
+     "id": "o6",
+     "label": "CHEM 3590",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3590"
+       ]
+      }
+     ],
+     "option": "Option 4"
+    },
+    {
+     "id": "o7",
+     "label": "CHEM 3600",
+     "rule": [
+      {
+       "codes": [
+        "CHEM 3600"
+       ]
+      }
+     ],
+     "option": "Option 4"
+    }
+   ]
+  },
+  {
+   "id": "physics",
+   "title": "Physics",
+   "column": "right",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "note": "PHYS 2207 and 2208 are preferred.",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "p1",
+     "label": "PHYS 2207",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2207"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "p2",
+     "label": "PHYS 2208",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2208"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "p3",
+     "label": "PHYS 1112",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1112"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "p4",
+     "label": "PHYS 1110",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 1110"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "p5",
+     "label": "PHYS 2213",
+     "rule": [
+      {
+       "codes": [
+        "PHYS 2213"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    }
+   ]
+  },
+  {
+   "id": "genetics",
+   "title": "Genetics and Genomics",
+   "column": "right",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "type": "slots",
+   "slots": [
+    {
+     "id": "ge1",
+     "label": "BIOMG 2800",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2800"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ge2",
+     "label": "BIOMG 2801",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 2801"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "biochem",
+   "title": "Biochemistry and Molecular Biology",
+   "column": "right",
+   "filter": "major",
+   "icon": "flask",
+   "letterGrade": true,
+   "leftLabel": "Biochemistry",
+   "note": "BIOMG 3350 isn't allowed in the Biochemistry or Molecular and Cell Biology concentrations.",
+   "type": "slots",
+   "slots": [
+    {
+     "id": "b1",
+     "label": "BIOMG 3300",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3300"
+       ]
+      }
+     ],
+     "option": "Option 1"
+    },
+    {
+     "id": "b2",
+     "label": "BIOMG 3310",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3310"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "b3",
+     "label": "BIOMG 3320",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3320"
+       ]
+      }
+     ],
+     "option": "Option 2"
+    },
+    {
+     "id": "b4",
+     "label": "BIOMG 3350",
+     "rule": [
+      {
+       "codes": [
+        "BIOMG 3350"
+       ]
+      }
+     ],
+     "option": "Option 3"
+    }
+   ]
+  },
+  {
+   "id": "pe",
+   "title": "Physical Education",
+   "column": "right",
+   "filter": "university",
+   "icon": "run",
+   "leftLabel": "PE",
+   "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+   "type": "slots",
+   "swimTest": true,
+   "excludeFromCredits": true,
+   "slots": [
+    {
+     "id": "pe1",
+     "label": "PE 1",
+     "rule": [
+      {
+       "subjects": [
+        "PE"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "pe2",
+     "label": "PE 2",
+     "rule": [
+      {
+       "subjects": [
+        "PE"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "maxConcentrations": 1,
+ "concentrations": [
+  {
+   "id": "animal-physiology",
+   "name": "Animal Physiology",
+   "sections": [
+    {
+     "id": "ap-req",
+     "title": "Animal Physiology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "type": "slots",
+     "slots": [
+      {
+       "id": "ap1",
+       "label": "BIOAP 3110",
+       "rule": [
+        {
+         "codes": [
+          "BIOAP 3110"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ap2",
+       "label": "BIOAP 3160",
+       "rule": [
+        {
+         "codes": [
+          "BIOAP 3160"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ap-ll",
+     "title": "Animal Physiology: Lecture & Lab",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Lecture & Lab",
+     "note": "7 credits, at least 4 of them a laboratory course.",
+     "constraints": [
+      {
+       "type": "groupCredits",
+       "label": "Laboratory",
+       "group": "lab",
+       "credits": 4
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 7,
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2400",
+        "ANSC 3410",
+        "ANSC 4270",
+        "BIOAP 2140",
+        "BIOAP 4000",
+        "BIOAP 4140",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4390",
+        "BIOMS 4150",
+        "BIONB 3220",
+        "BIONB 3920",
+        "NS 3310",
+        "BIOAP 3200",
+        "BIOAP 4130",
+        "BIOAP 3190",
+        "BIOMG 4400",
+        "BIONB 4300"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ],
+     "groups": [
+      {
+       "id": "lab",
+       "name": "Laboratory",
+       "codes": [
+        "BIOAP 3200",
+        "BIOAP 4130",
+        "BIOAP 3190",
+        "BIOMG 4400",
+        "BIONB 4300"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "biochemistry",
+   "name": "Biochemistry",
+   "sections": [
+    {
+     "id": "bc-req",
+     "title": "Biochemistry",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "note": "Your foundation organic chemistry must be CHEM 3570-3580 or 3590-3600, and biochemistry BIOMG 3310-3320 or 3300 with 3340 (add BIOMG 3340 in Additional Space).",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "bc1",
+       "label": "CHEM 2510",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 2510"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "bc2",
+       "label": "CHEM 3870",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3870"
+         ]
+        }
+       ],
+       "option": "PChem + Cell Biology"
+      },
+      {
+       "id": "bc3",
+       "label": "BIOMG 4320",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4320"
+         ]
+        }
+       ],
+       "option": "PChem + Cell Biology"
+      },
+      {
+       "id": "bc4",
+       "label": "CHEM 3890",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3890"
+         ]
+        }
+       ],
+       "option": "Honors PChem"
+      },
+      {
+       "id": "bc5",
+       "label": "CHEM 3900",
+       "rule": [
+        {
+         "codes": [
+          "CHEM 3900"
+         ]
+        }
+       ],
+       "option": "Honors PChem"
+      }
+     ]
+    },
+    {
+     "id": "bc-more",
+     "title": "Biochemistry: Lab and Additional Course",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "note": "16 credits minimum. BIOG 4990 counts as the additional course only with two semesters of substantially biochemical research and advisor approval.",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "bc6",
+       "label": "BIOMG 4400",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4400"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "bc7",
+       "label": "Additional course",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4380",
+          "BIOMG 6310",
+          "CHEM 3880",
+          "CHEM 4500",
+          "BIOG 4990"
+         ],
+         "reason": "Not on the additional-course list (other biochemical courses need advisor approval)"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "biodiversity",
+   "name": "Biodiversity and Systematics",
+   "sections": [
+    {
+     "id": "bd",
+     "title": "Biodiversity and Systematics",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Biodiversity credits",
+     "note": "13 credits: at least 7 from Group A and 3 from Group B, with at least two lab courses (marked * in the catalog). BIOG 4990 in a relevant field counts with approval.",
+     "constraints": [
+      {
+       "type": "groupCredits",
+       "label": "Group A",
+       "group": "A",
+       "credits": 7
+      },
+      {
+       "type": "groupCredits",
+       "label": "Group B",
+       "group": "B",
+       "credits": 3
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 13,
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOMI 2900",
+        "BIOMI 2911",
+        "PLSCI 2300",
+        "PLSCI 2410",
+        "PLSCI 2470",
+        "PLSCI 2480",
+        "ENTOM 2120",
+        "ENTOM 2150",
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "PLSCI 4300",
+        "PLSCI 3190",
+        "BIOEE 4530",
+        "BIOEE 4790",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS 3010",
+        "ENTOM 4610",
+        "PLSCI 4400",
+        "BIOG 4990"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ],
+     "groups": [
+      {
+       "id": "A",
+       "name": "Group A",
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOMI 2900",
+        "BIOMI 2911",
+        "PLSCI 2300",
+        "PLSCI 2410",
+        "PLSCI 2470",
+        "PLSCI 2480",
+        "ENTOM 2120",
+        "ENTOM 2150",
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "PLSCI 4300",
+        "PLSCI 3190"
+       ]
+      },
+      {
+       "id": "B",
+       "name": "Group B",
+       "codes": [
+        "BIOEE 4530",
+        "BIOEE 4790",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS 3010",
+        "ENTOM 4610",
+        "PLSCI 4400"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "computational-biology",
+   "name": "Computational Biology",
+   "sections": [
+    {
+     "id": "cb",
+     "title": "Computational Biology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "note": "12 credits minimum.",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "cb1",
+       "label": "BIOCB 2010",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 2010"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cb2",
+       "label": "Math or programming (B)",
+       "rule": [
+        {
+         "codes": [
+          "CS 1110",
+          "CS 1112",
+          "CS 2024",
+          "STSCI 3080",
+          "MATH 2210",
+          "MATH 2310",
+          "MATH 2940",
+          "MATH 4200",
+          "MATH 4210",
+          "MATH 4710",
+          "MATH 4740"
+         ],
+         "reason": "Not on list B"
+        }
+       ]
+      },
+      {
+       "id": "cb3",
+       "label": "Core course (C)",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 3620",
+          "BIOCB 4100",
+          "BIOCB 4350",
+          "BIOCB 4381",
+          "BIOCB 4810",
+          "BIOCB 4830",
+          "BIOCB 4840",
+          "BIOCB 4910"
+         ],
+         "reason": "Not on list C"
+        }
+       ]
+      },
+      {
+       "id": "cb4",
+       "label": "Core or bridging (C or D)",
+       "rule": [
+        {
+         "codes": [
+          "BIOCB 3620",
+          "BIOCB 4100",
+          "BIOCB 4350",
+          "BIOCB 4381",
+          "BIOCB 4810",
+          "BIOCB 4830",
+          "BIOCB 4840",
+          "BIOCB 4910",
+          "BIOEE 3550",
+          "BIOMG 4870",
+          "BIONB 3300",
+          "BIONB 4220",
+          "BME 3110",
+          "NTRES 3100",
+          "NTRES 4120",
+          "PLSCI 4000"
+         ],
+         "reason": "Not on list C or D"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ecology-evolution",
+   "name": "Ecology and Evolutionary Biology",
+   "sections": [
+    {
+     "id": "eeb",
+     "title": "Ecology and Evolutionary Biology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "E&EB credits",
+     "note": "13 credits including a core course in Ecology, one in Evolutionary Biology, one in Biodiversity, and a field or lab course. Up to 3 credits of BIOG 4990 with approval (not for field/lab). BIOEE 1610 or BIOSM 1610 must be one of your intro biology courses.",
+     "constraints": [
+      {
+       "type": "minGroups",
+       "label": "Core + field/lab",
+       "count": 4
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 13,
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 3610",
+        "BIOEE 4460",
+        "BIOEE 4550",
+        "BIOEE 4560",
+        "BIOEE 4570",
+        "BIOEE 4660",
+        "BIOEE 4780",
+        "NTRES 3100",
+        "BIOEE 4530",
+        "BIOEE 4800",
+        "BIOMG 4610",
+        "ENTOM 4610",
+        "BIOEE 2740",
+        "BIOEE 3730",
+        "BIOEE 4500",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOEE 4762",
+        "ENTOM 3310",
+        "PLSCI 2480",
+        "PLSCI 4300",
+        "PLSCI 6300",
+        "BIOEE 1150",
+        "BIOEE 1540",
+        "BIOEE 1760",
+        "BIOEE 2233",
+        "BIOEE 2525",
+        "BIOEE 2527",
+        "BIOEE 3250",
+        "BIOEE 3550",
+        "BIOEE 3690",
+        "BIOEE 4000",
+        "BIOEE 4610",
+        "BIOEE 4690",
+        "BIOEE 4790",
+        "BIOEE 6000",
+        "BIOEE 6550",
+        "BIOEE 6900",
+        "BIOEE 7500",
+        "BIOEE 7640",
+        "NTRES 2830",
+        "NTRES 3110",
+        "NTRES 4100",
+        "PLSCI 2300",
+        "PLSCI 2410",
+        "PLSCI 3440",
+        "PLSCI 4400",
+        "PLSCI 4220",
+        "PLSCI 4730",
+        "BIOEE 1560",
+        "BIOEE 2150",
+        "BIOEE 2526",
+        "BIOEE 2740",
+        "BIOEE 3610",
+        "BIOEE 3611",
+        "BIOEE 3233",
+        "BIOEE 3780",
+        "BIOEE 4461",
+        "BIOEE 4571",
+        "BIOEE 4661",
+        "BIOEE 4751",
+        "BIOEE 4761",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "NTRES 3400",
+        "PLSCI 2301",
+        "PLSCI 2410",
+        "PLSCI 3190",
+        "BIOG 4990"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ],
+     "groups": [
+      {
+       "id": "eco",
+       "name": "Ecology core",
+       "codes": [
+        "BIOEE 3610",
+        "BIOEE 4460",
+        "BIOEE 4550",
+        "BIOEE 4560",
+        "BIOEE 4570",
+        "BIOEE 4660",
+        "BIOEE 4780",
+        "NTRES 3100"
+       ]
+      },
+      {
+       "id": "evo",
+       "name": "Evolutionary core",
+       "codes": [
+        "BIOEE 4530",
+        "BIOEE 4800",
+        "BIOMG 4610",
+        "ENTOM 4610"
+       ]
+      },
+      {
+       "id": "bio",
+       "name": "Biodiversity core",
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 3730",
+        "BIOEE 4500",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOEE 4762",
+        "ENTOM 3310",
+        "PLSCI 2480",
+        "PLSCI 4300",
+        "PLSCI 6300"
+       ]
+      },
+      {
+       "id": "field",
+       "name": "Field or lab",
+       "codes": [
+        "BIOEE 1560",
+        "BIOEE 2150",
+        "BIOEE 2526",
+        "BIOEE 2740",
+        "BIOEE 3610",
+        "BIOEE 3611",
+        "BIOEE 3233",
+        "BIOEE 3780",
+        "BIOEE 4461",
+        "BIOEE 4571",
+        "BIOEE 4661",
+        "BIOEE 4751",
+        "BIOEE 4761",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "NTRES 3400",
+        "PLSCI 2301",
+        "PLSCI 2410",
+        "PLSCI 3190"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "general-biology",
+   "name": "General Biology",
+   "sections": [
+    {
+     "id": "gb",
+     "title": "General Biology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "General Biology credits",
+     "note": "13 credits: courses from three different concentrations (only courses listed there), two upper-level courses (3000+, 2+ credits), and a lab or field course (not BIOG 1500, BIOMG 2801, CHEM 2510 or BIOEE 1560). BIOG 4990 2-3 credits with approval.",
+     "constraints": [
+      {
+       "type": "minGroups",
+       "label": "Concentrations",
+       "count": 3
+      },
+      {
+       "type": "minCount",
+       "label": "Upper-level",
+       "count": 2,
+       "match": {
+        "minLevel": 3000,
+        "minCredits": 2
+       }
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 13,
+     "rule": [
+      {
+       "codes": [
+        "ANSC 2400",
+        "ANSC 3410",
+        "ANSC 3700",
+        "ANSC 4270",
+        "BIOAP 2140",
+        "BIOAP 3110",
+        "BIOAP 3160",
+        "BIOAP 3190",
+        "BIOAP 3200",
+        "BIOAP 3300",
+        "BIOAP 4000",
+        "BIOAP 4130",
+        "BIOAP 4140",
+        "BIOCB 2010",
+        "BIOCB 3620",
+        "BIOCB 4100",
+        "BIOCB 4350",
+        "BIOCB 4381",
+        "BIOCB 4810",
+        "BIOCB 4830",
+        "BIOCB 4840",
+        "BIOCB 4910",
+        "BIOEE 1150",
+        "BIOEE 1540",
+        "BIOEE 1560",
+        "BIOEE 1760",
+        "BIOEE 2150",
+        "BIOEE 2233",
+        "BIOEE 2525",
+        "BIOEE 2526",
+        "BIOEE 2527",
+        "BIOEE 2740",
+        "BIOEE 3233",
+        "BIOEE 3250",
+        "BIOEE 3550",
+        "BIOEE 3610",
+        "BIOEE 3611",
+        "BIOEE 3690",
+        "BIOEE 3730",
+        "BIOEE 3780",
+        "BIOEE 4000",
+        "BIOEE 4460",
+        "BIOEE 4461",
+        "BIOEE 4500",
+        "BIOEE 4530",
+        "BIOEE 4550",
+        "BIOEE 4560",
+        "BIOEE 4570",
+        "BIOEE 4571",
+        "BIOEE 4610",
+        "BIOEE 4660",
+        "BIOEE 4661",
+        "BIOEE 4690",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4751",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOEE 4761",
+        "BIOEE 4762",
+        "BIOEE 4780",
+        "BIOEE 4790",
+        "BIOEE 4800",
+        "BIOEE 6000",
+        "BIOEE 6550",
+        "BIOEE 6900",
+        "BIOEE 7500",
+        "BIOEE 7640",
+        "BIOG 4970",
+        "BIOG 4990",
+        "BIOMG 3800",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4310",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4400",
+        "BIOMG 4450",
+        "BIOMG 4610",
+        "BIOMG 4770",
+        "BIOMG 4810",
+        "BIOMG 4870",
+        "BIOMG 4880",
+        "BIOMG 6310",
+        "BIOMG 6330",
+        "BIOMG 6360",
+        "BIOMG 6390",
+        "BIOMI 2600",
+        "BIOMI 2900",
+        "BIOMI 2911",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 3500",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4200",
+        "BIOMI 4300",
+        "BIOMI 4310",
+        "BIOMI 4850",
+        "BIOMI 6200",
+        "BIOMI 6300",
+        "BIOMS 3160",
+        "BIOMS 4040",
+        "BIOMS 4090",
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIOMS 4340",
+        "BIONB 2210",
+        "BIONB 2220",
+        "BIONB 3215",
+        "BIONB 3220",
+        "BIONB 3300",
+        "BIONB 3920",
+        "BIONB 3950",
+        "BIONB 4220",
+        "BIONB 4300",
+        "BIOSM 1500",
+        "BIOSM 1610",
+        "BIOSM 2800",
+        "BIOSM 3210",
+        "BIOSM 3330",
+        "BIOSM 3340",
+        "BIOSM 3450",
+        "BIOSM 3750",
+        "BIOSM 4650",
+        "BME 3110",
+        "CEE 4510",
+        "CHEM 2510",
+        "CHEM 3870",
+        "CHEM 3880",
+        "CHEM 3890",
+        "CHEM 3900",
+        "CHEM 4500",
+        "CS 1110",
+        "CS 1112",
+        "CS 2024",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS 3010",
+        "EAS 3555",
+        "ENTOM 2120",
+        "ENTOM 2150",
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "ENTOM 4610",
+        "FDSC 3940",
+        "FDSC 3950",
+        "FDSC 4260",
+        "MATH 2210",
+        "MATH 2310",
+        "MATH 2940",
+        "MATH 4200",
+        "MATH 4210",
+        "MATH 4710",
+        "MATH 4740",
+        "NS 3060",
+        "NS 3090",
+        "NS 3150",
+        "NS 3310",
+        "NS 3320",
+        "NS 3410",
+        "NS 3420",
+        "NS 3450",
+        "NS 3600",
+        "NS 4140",
+        "NS 4200",
+        "NS 4210",
+        "NS 4300",
+        "NS 4330",
+        "NS 4410",
+        "NS 4430",
+        "NS 5510",
+        "NS 6310",
+        "NS 6320",
+        "NTRES 2830",
+        "NTRES 3100",
+        "NTRES 3110",
+        "NTRES 3111",
+        "NTRES 3400",
+        "NTRES 4100",
+        "NTRES 4120",
+        "PLSCI 2250",
+        "PLSCI 2300",
+        "PLSCI 2301",
+        "PLSCI 2400",
+        "PLSCI 2410",
+        "PLSCI 2430",
+        "PLSCI 2470",
+        "PLSCI 2480",
+        "PLSCI 3190",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431",
+        "PLSCI 3440",
+        "PLSCI 4000",
+        "PLSCI 4030",
+        "PLSCI 4070",
+        "PLSCI 4080",
+        "PLSCI 4220",
+        "PLSCI 4300",
+        "PLSCI 4400",
+        "PLSCI 4620",
+        "PLSCI 4730",
+        "PLSCI 4990",
+        "PLSCI 6300",
+        "PLSCI 6831",
+        "PLSCI 6841",
+        "PSYCH 3020",
+        "PSYCH 4230",
+        "STSCI 3080",
+        "VIEN 4650",
+        "BIOG 4990"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ],
+     "groups": [
+      {
+       "id": "animal-physiology",
+       "name": "Animal Physiology",
+       "codes": [
+        "ANSC 2400",
+        "ANSC 3410",
+        "ANSC 4270",
+        "BIOAP 2140",
+        "BIOAP 3110",
+        "BIOAP 3160",
+        "BIOAP 3190",
+        "BIOAP 3200",
+        "BIOAP 4000",
+        "BIOAP 4130",
+        "BIOAP 4140",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4390",
+        "BIOMG 4400",
+        "BIOMS 4150",
+        "BIONB 3220",
+        "BIONB 3920",
+        "BIONB 4300",
+        "NS 3310"
+       ]
+      },
+      {
+       "id": "biochemistry",
+       "name": "Biochemistry",
+       "codes": [
+        "BIOG 4990",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4400",
+        "BIOMG 6310",
+        "CHEM 2510",
+        "CHEM 3870",
+        "CHEM 3880",
+        "CHEM 3890",
+        "CHEM 3900",
+        "CHEM 4500"
+       ]
+      },
+      {
+       "id": "biodiversity",
+       "name": "Biodiversity and Systematics",
+       "codes": [
+        "BIOEE 2740",
+        "BIOEE 4530",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOEE 4790",
+        "BIOG 4990",
+        "BIOMI 2900",
+        "BIOMI 2911",
+        "EAS 2250",
+        "EAS 2680",
+        "EAS 3010",
+        "ENTOM 2120",
+        "ENTOM 2150",
+        "ENTOM 3150",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "ENTOM 4610",
+        "PLSCI 2300",
+        "PLSCI 2410",
+        "PLSCI 2470",
+        "PLSCI 2480",
+        "PLSCI 3190",
+        "PLSCI 4300",
+        "PLSCI 4400"
+       ]
+      },
+      {
+       "id": "computational-biology",
+       "name": "Computational Biology",
+       "codes": [
+        "BIOCB 2010",
+        "BIOCB 3620",
+        "BIOCB 4100",
+        "BIOCB 4350",
+        "BIOCB 4381",
+        "BIOCB 4810",
+        "BIOCB 4830",
+        "BIOCB 4840",
+        "BIOCB 4910",
+        "BIOEE 3550",
+        "BIOMG 4870",
+        "BIONB 3300",
+        "BIONB 4220",
+        "BME 3110",
+        "CS 1110",
+        "CS 1112",
+        "CS 2024",
+        "MATH 2210",
+        "MATH 2310",
+        "MATH 2940",
+        "MATH 4200",
+        "MATH 4210",
+        "MATH 4710",
+        "MATH 4740",
+        "NTRES 3100",
+        "NTRES 4120",
+        "PLSCI 4000",
+        "STSCI 3080"
+       ]
+      },
+      {
+       "id": "ecology-evolution",
+       "name": "Ecology and Evolutionary Biology",
+       "codes": [
+        "BIOEE 1150",
+        "BIOEE 1540",
+        "BIOEE 1560",
+        "BIOEE 1760",
+        "BIOEE 2150",
+        "BIOEE 2233",
+        "BIOEE 2525",
+        "BIOEE 2526",
+        "BIOEE 2527",
+        "BIOEE 2740",
+        "BIOEE 3233",
+        "BIOEE 3250",
+        "BIOEE 3550",
+        "BIOEE 3610",
+        "BIOEE 3611",
+        "BIOEE 3690",
+        "BIOEE 3730",
+        "BIOEE 3780",
+        "BIOEE 4000",
+        "BIOEE 4460",
+        "BIOEE 4461",
+        "BIOEE 4500",
+        "BIOEE 4530",
+        "BIOEE 4550",
+        "BIOEE 4560",
+        "BIOEE 4570",
+        "BIOEE 4571",
+        "BIOEE 4610",
+        "BIOEE 4660",
+        "BIOEE 4661",
+        "BIOEE 4690",
+        "BIOEE 4700",
+        "BIOEE 4750",
+        "BIOEE 4751",
+        "BIOEE 4752",
+        "BIOEE 4760",
+        "BIOEE 4761",
+        "BIOEE 4762",
+        "BIOEE 4780",
+        "BIOEE 4790",
+        "BIOEE 4800",
+        "BIOEE 6000",
+        "BIOEE 6550",
+        "BIOEE 6900",
+        "BIOEE 7500",
+        "BIOEE 7640",
+        "BIOG 4990",
+        "BIOMG 4610",
+        "ENTOM 3310",
+        "ENTOM 3311",
+        "ENTOM 4610",
+        "NTRES 2830",
+        "NTRES 3100",
+        "NTRES 3110",
+        "NTRES 3400",
+        "NTRES 4100",
+        "PLSCI 2300",
+        "PLSCI 2301",
+        "PLSCI 2410",
+        "PLSCI 2480",
+        "PLSCI 3190",
+        "PLSCI 3440",
+        "PLSCI 4220",
+        "PLSCI 4300",
+        "PLSCI 4400",
+        "PLSCI 4730",
+        "PLSCI 6300"
+       ]
+      },
+      {
+       "id": "genetics-genomics-development",
+       "name": "Genetics, Genomics and Development",
+       "codes": [
+        "BIOCB 4830",
+        "BIOEE 4530",
+        "BIOG 4990",
+        "BIOMG 3800",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4400",
+        "BIOMG 4450",
+        "BIOMG 4610",
+        "BIOMG 4770",
+        "BIOMG 4810",
+        "BIOMG 4870",
+        "BIOMG 4880",
+        "BIOMG 6330",
+        "BIOMG 6390",
+        "BIOMI 4850",
+        "BIONB 3950",
+        "NTRES 3400",
+        "PLSCI 3430",
+        "PLSCI 4220"
+       ]
+      },
+      {
+       "id": "human-nutrition",
+       "name": "Human Nutrition",
+       "codes": [
+        "NS 3060",
+        "NS 3150",
+        "NS 3310",
+        "NS 3320",
+        "NS 3410",
+        "NS 3420",
+        "NS 3450",
+        "NS 4140",
+        "NS 4200",
+        "NS 4210",
+        "NS 4300",
+        "NS 4330",
+        "NS 4410",
+        "NS 4430",
+        "NS 5510",
+        "NS 6310",
+        "NS 6320"
+       ]
+      },
+      {
+       "id": "immunology",
+       "name": "Immunology in Health & Disease",
+       "codes": [
+        "ANSC 3700",
+        "BIOEE 3250",
+        "BIOEE 4000",
+        "BIOG 4990",
+        "BIOMG 4380",
+        "BIOMG 4870",
+        "BIOMG 4880",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 4310",
+        "BIOMS 3160",
+        "BIOMS 4040",
+        "BIOMS 4090",
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIOMS 4340",
+        "FDSC 4260",
+        "NS 3090",
+        "NS 3600",
+        "NS 4200"
+       ]
+      },
+      {
+       "id": "marine-biology",
+       "name": "Marine Biology",
+       "codes": [
+        "BIOAP 3300",
+        "BIOEE 1540",
+        "BIOEE 1560",
+        "BIOEE 3730",
+        "BIOEE 4570",
+        "BIOEE 4571",
+        "BIOMI 3500",
+        "BIOSM 1500",
+        "BIOSM 1610",
+        "BIOSM 2800",
+        "BIOSM 3210",
+        "BIOSM 3330",
+        "BIOSM 3340",
+        "BIOSM 3450",
+        "BIOSM 3750",
+        "BIOSM 4650",
+        "EAS 3555",
+        "NTRES 3110",
+        "NTRES 3111"
+       ]
+      },
+      {
+       "id": "microbiology",
+       "name": "Microbiology",
+       "codes": [
+        "BIOMI 2600",
+        "BIOMI 2900",
+        "BIOMI 2911",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 3500",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4200",
+        "BIOMI 4300",
+        "BIOMI 4310",
+        "BIOMI 4850",
+        "BIOMI 6200",
+        "BIOMI 6300",
+        "BIOMS 4340",
+        "CEE 4510",
+        "FDSC 3940",
+        "FDSC 3950",
+        "FDSC 4260",
+        "NS 4200",
+        "PLSCI 4300",
+        "VIEN 4650"
+       ]
+      },
+      {
+       "id": "molecular-cell-biology",
+       "name": "Molecular and Cell Biology",
+       "codes": [
+        "BIOG 4990",
+        "BIOMG 3800",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4310",
+        "BIOMG 4320",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4400",
+        "BIOMG 4450",
+        "BIOMG 4610",
+        "BIOMG 4770",
+        "BIOMG 4810",
+        "BIOMG 4870",
+        "BIOMG 4880",
+        "BIOMG 6330",
+        "BIOMG 6360",
+        "BIOMG 6390",
+        "BIOMI 4090",
+        "BIOMI 4850",
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIONB 3950",
+        "BIONB 4300",
+        "PLSCI 3420",
+        "PLSCI 3430",
+        "PLSCI 4220",
+        "PLSCI 4620"
+       ]
+      },
+      {
+       "id": "neurobiology-behavior",
+       "name": "Neurobiology and Behavior",
+       "codes": [
+        "BIOG 4970",
+        "BIOG 4990",
+        "BIONB 2210",
+        "BIONB 2220",
+        "BIONB 3215",
+        "PSYCH 3020",
+        "PSYCH 4230"
+       ]
+      },
+      {
+       "id": "plant-biology-evolutionary",
+       "name": "Plant Biology (a): Plant Evolutionary Biology",
+       "codes": [
+        "BIOEE 4460",
+        "BIOEE 4461",
+        "BIOG 4990",
+        "PLSCI 2300",
+        "PLSCI 2400",
+        "PLSCI 2410",
+        "PLSCI 2430",
+        "PLSCI 2470",
+        "PLSCI 2480",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431",
+        "PLSCI 3440",
+        "PLSCI 4220",
+        "PLSCI 4400",
+        "PLSCI 4620",
+        "PLSCI 4990",
+        "PLSCI 6831",
+        "PLSCI 6841"
+       ]
+      },
+      {
+       "id": "plant-biology-biotechnology",
+       "name": "Plant Biology (b): Plant Biotechnology",
+       "codes": [
+        "BIOEE 4460",
+        "BIOEE 4461",
+        "BIOG 4990",
+        "PLSCI 2250",
+        "PLSCI 3420",
+        "PLSCI 3421",
+        "PLSCI 3430",
+        "PLSCI 3431",
+        "PLSCI 4030",
+        "PLSCI 4070",
+        "PLSCI 4080",
+        "PLSCI 4220",
+        "PLSCI 4620",
+        "PLSCI 6841"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "genetics-genomics-development",
+   "name": "Genetics, Genomics and Development",
+   "sections": [
+    {
+     "id": "ggd",
+     "title": "Genetics, Genomics and Development",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "GGD credits",
+     "note": "13 credits from the listed areas. Up to 3 credits of BIOG 4990 (GGD research, with approval) and up to 3 credits of other biology courses by petition.",
+     "type": "creditBucket",
+     "minCredits": 13,
+     "rule": [
+      {
+       "codes": [
+        "BIOCB 4830",
+        "BIOEE 4530",
+        "BIOMG 3800",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4450",
+        "BIOMG 4610",
+        "BIOMG 4770",
+        "BIOMG 4810",
+        "BIOMG 4870",
+        "BIOMG 4880",
+        "BIOMG 6330",
+        "BIOMG 6390",
+        "BIOMI 4850",
+        "BIONB 3950",
+        "NTRES 3400",
+        "PLSCI 3430",
+        "PLSCI 4220",
+        "BIOG 4990",
+        "BIOMG 4400"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "human-nutrition",
+   "name": "Human Nutrition",
+   "sections": [
+    {
+     "id": "hn-req",
+     "title": "Human Nutrition",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "type": "slots",
+     "slots": [
+      {
+       "id": "hn1",
+       "label": "NS 3310",
+       "rule": [
+        {
+         "codes": [
+          "NS 3310"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "hn-more",
+     "title": "Human Nutrition: Biological Aspects",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Nutrition credits",
+     "note": "9 credits from the list; no independent study. CALS students in this concentration can't also major in Nutritional Sciences.",
+     "type": "creditBucket",
+     "minCredits": 9,
+     "rule": [
+      {
+       "codes": [
+        "NS 3060",
+        "NS 3150",
+        "NS 3320",
+        "NS 3410",
+        "NS 3420",
+        "NS 3450",
+        "NS 4140",
+        "NS 4200",
+        "NS 4210",
+        "NS 4300",
+        "NS 4330",
+        "NS 4410",
+        "NS 4430",
+        "NS 5510",
+        "NS 6310",
+        "NS 6320"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "immunology",
+   "name": "Immunology in Health & Disease",
+   "sections": [
+    {
+     "id": "ih-req",
+     "title": "Immunology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "type": "slots",
+     "slots": [
+      {
+       "id": "ih1",
+       "label": "BIOMS 4150",
+       "rule": [
+        {
+         "codes": [
+          "BIOMS 4150"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ih2",
+       "label": "BIOMS 4250",
+       "rule": [
+        {
+         "codes": [
+          "BIOMS 4250"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ih-more",
+     "title": "Immunology: Additional Courses",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Immunology credits",
+     "note": "8 credits: at least 5 from Group A and 3 from Group B. Up to 3 credits of BIOG 4990 with approval.",
+     "constraints": [
+      {
+       "type": "groupCredits",
+       "label": "Group A",
+       "group": "A",
+       "credits": 5
+      },
+      {
+       "type": "groupCredits",
+       "label": "Group B",
+       "group": "B",
+       "credits": 3
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 8,
+     "rule": [
+      {
+       "codes": [
+        "ANSC 3700",
+        "BIOMG 4380",
+        "BIOMG 4880",
+        "BIOMI 3210",
+        "BIOMI 4310",
+        "BIOMS 3160",
+        "BIOMS 4040",
+        "BIOMS 4090",
+        "BIOMS 4340",
+        "FDSC 4260",
+        "NS 4200",
+        "BIOEE 3250",
+        "BIOEE 4000",
+        "BIOG 4990",
+        "BIOMG 4870",
+        "BIOMI 2950",
+        "NS 3090",
+        "NS 3600"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ],
+     "groups": [
+      {
+       "id": "A",
+       "name": "Group A",
+       "codes": [
+        "ANSC 3700",
+        "BIOMG 4380",
+        "BIOMG 4880",
+        "BIOMI 3210",
+        "BIOMI 4310",
+        "BIOMS 3160",
+        "BIOMS 4040",
+        "BIOMS 4090",
+        "BIOMS 4340",
+        "FDSC 4260",
+        "NS 4200"
+       ]
+      },
+      {
+       "id": "B",
+       "name": "Group B",
+       "codes": [
+        "BIOEE 3250",
+        "BIOEE 4000",
+        "BIOG 4990",
+        "BIOMG 4870",
+        "BIOMI 2950",
+        "NS 3090",
+        "NS 3600"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marine-biology",
+   "name": "Marine Biology",
+   "sections": [
+    {
+     "id": "mb-req",
+     "title": "Marine Biology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "type": "slots",
+     "slots": [
+      {
+       "id": "mb1",
+       "label": "Introductory course",
+       "rule": [
+        {
+         "codes": [
+          "BIOEE 1540",
+          "BIOEE 1560",
+          "BIOSM 1500",
+          "BIOSM 1610"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "mb-more",
+     "title": "Marine Biology: Groups A and B",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Marine credits",
+     "note": "12 credits with at least one course from each group, plus a field component (marked * in the catalog). With BIOEE 1540 as the intro, BIOSM or BIOEE 1610 can count in Group A.",
+     "constraints": [
+      {
+       "type": "minGroups",
+       "label": "Both groups",
+       "count": 2
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 12,
+     "rule": [
+      {
+       "codes": [
+        "BIOAP 3300",
+        "BIOEE 3730",
+        "BIOMI 3500",
+        "BIOSM 3210",
+        "BIOSM 3330",
+        "BIOSM 3450",
+        "BIOSM 4650",
+        "EAS 3555",
+        "BIOEE 4570",
+        "BIOEE 4571",
+        "BIOSM 2800",
+        "BIOSM 3340",
+        "BIOSM 3750",
+        "NTRES 3110",
+        "NTRES 3111"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ],
+     "groups": [
+      {
+       "id": "A",
+       "name": "Group A",
+       "codes": [
+        "BIOAP 3300",
+        "BIOEE 3730",
+        "BIOMI 3500",
+        "BIOSM 3210",
+        "BIOSM 3330",
+        "BIOSM 3450",
+        "BIOSM 4650",
+        "EAS 3555"
+       ]
+      },
+      {
+       "id": "B",
+       "name": "Group B",
+       "codes": [
+        "BIOEE 4570",
+        "BIOEE 4571",
+        "BIOSM 2800",
+        "BIOSM 3340",
+        "BIOSM 3750",
+        "NTRES 3110",
+        "NTRES 3111"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "microbiology",
+   "name": "Microbiology",
+   "sections": [
+    {
+     "id": "mi-req",
+     "title": "Microbiology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "note": "Only 3 credits of BIOMI 2900 count, even with the 4-credit option.",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "mi1",
+       "label": "BIOMI 2900",
+       "rule": [
+        {
+         "codes": [
+          "BIOMI 2900"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "mi2",
+       "label": "BIOMI 2911",
+       "rule": [
+        {
+         "codes": [
+          "BIOMI 2911"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "mi-more",
+     "title": "Microbiology: Other Credits",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Microbiology credits",
+     "type": "creditBucket",
+     "minCredits": 7,
+     "rule": [
+      {
+       "codes": [
+        "BIOMI 2600",
+        "BIOMI 2950",
+        "BIOMI 3210",
+        "BIOMI 3500",
+        "BIOMI 4040",
+        "BIOMI 4090",
+        "BIOMI 4200",
+        "BIOMI 4300",
+        "BIOMI 4310",
+        "BIOMI 4850",
+        "BIOMI 6200",
+        "BIOMI 6300",
+        "BIOMS 4340",
+        "CEE 4510",
+        "FDSC 3940",
+        "FDSC 3950",
+        "FDSC 4260",
+        "NS 4200",
+        "PLSCI 4300",
+        "VIEN 4650"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "molecular-cell-biology",
+   "name": "Molecular and Cell Biology",
+   "sections": [
+    {
+     "id": "mc-req",
+     "title": "Molecular and Cell Biology",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "note": "Your foundation organic chemistry must be CHEM 3570-3580 or 3590-3600, and biochemistry BIOMG 3310-3320 or 3300 with 3340.",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "mc1",
+       "label": "BIOMG 4320",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4320"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "mc2",
+       "label": "BIOMG 4400 / BIONB 4300",
+       "rule": [
+        {
+         "codes": [
+          "BIOMG 4400",
+          "BIONB 4300"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "mc-more",
+     "title": "Molecular and Cell Biology: 6 Additional Credits",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "MCB credits",
+     "note": "Include at least two courses of 2+ credits. Any BIOMG 3000+ course that isn't a foundation course counts; BIOG 4990 up to 3 credits with approval.",
+     "constraints": [
+      {
+       "type": "minCount",
+       "label": "2+ credit courses",
+       "count": 2,
+       "match": {
+        "minCredits": 2
+       }
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 6,
+     "rule": [
+      {
+       "codes": [
+        "BIOG 4990",
+        "BIOMG 3800",
+        "BIOMG 3850",
+        "BIOMG 4000",
+        "BIOMG 4310",
+        "BIOMG 4380",
+        "BIOMG 4390",
+        "BIOMG 4450",
+        "BIOMG 4610",
+        "BIOMG 4770",
+        "BIOMG 4810",
+        "BIOMG 4870",
+        "BIOMG 4880",
+        "BIOMG 6330",
+        "BIOMG 6360",
+        "BIOMG 6390",
+        "BIOMS 4150",
+        "BIOMS 4250",
+        "BIOMI 4090",
+        "BIOMI 4850",
+        "BIONB 3950",
+        "PLSCI 3420",
+        "PLSCI 3430",
+        "PLSCI 4220",
+        "PLSCI 4620"
+       ],
+       "reason": "Not on this concentration's list"
+      },
+      {
+       "subjects": [
+        "BIOMG"
+       ],
+       "minLevel": 3000,
+       "excludeCodes": [
+        "BIOMG 3300",
+        "BIOMG 3310",
+        "BIOMG 3320",
+        "BIOMG 3340",
+        "BIOMG 3350",
+        "BIOMG 4980",
+        "BIOMG 4981",
+        "BIOMG 4982"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "neurobiology-behavior",
+   "name": "Neurobiology and Behavior",
+   "sections": [
+    {
+     "id": "nb-req",
+     "title": "Neurobiology and Behavior",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "note": "BIONB 2210 and 2220 each need the 1-credit discussion (4 credits).",
+     "type": "slots",
+     "slots": [
+      {
+       "id": "nb1",
+       "label": "BIONB 2210",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 2210"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "nb2",
+       "label": "BIONB 2220",
+       "rule": [
+        {
+         "codes": [
+          "BIONB 2220"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "nb3",
+       "label": "BIONB 3000-4999",
+       "rule": [
+        {
+         "subjects": [
+          "BIONB"
+         ],
+         "minLevel": 3000,
+         "maxLevel": 4999,
+         "minCredits": 3,
+         "reason": "Needs a BIONB course at 3000-4999 of 3+ credits"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "nb-more",
+     "title": "Neurobiology and Behavior: Additional Courses",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "NBB credits",
+     "type": "creditBucket",
+     "minCredits": 4,
+     "rule": [
+      {
+       "subjects": [
+        "BIONB"
+       ],
+       "minLevel": 3000,
+       "maxLevel": 4999
+      },
+      {
+       "codes": [
+        "BIOG 4990",
+        "BIOG 4970",
+        "BIONB 3215",
+        "PSYCH 3020",
+        "PSYCH 4230"
+       ]
+      }
+     ],
+     "note": "4 more credits of BIONB 3000-4999 (including BIONB 4200 topics), up to 4 credits of BIOG 4990 or 4970 with approval, or BIONB 3215, PSYCH 3020 or 4230."
+    }
+   ]
+  },
+  {
+   "id": "plant-biology-evolutionary",
+   "name": "Plant Biology (a): Plant Evolutionary Biology",
+   "sections": [
+    {
+     "id": "pba-req",
+     "title": "Plant Biology (a)",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "type": "slots",
+     "slots": [
+      {
+       "id": "pa1",
+       "label": "PLSCI 2410",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 2410"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "pa2",
+       "label": "PLSCI 3420",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3420"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "pa3",
+       "label": "PLSCI 3421",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3421"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "pba-more",
+     "title": "Plant Biology (a): Additional Courses",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Plant (a) credits",
+     "note": "At least three courses totaling 6 credits; up to 3 credits of research with approval.",
+     "constraints": [
+      {
+       "type": "minCount",
+       "label": "Courses",
+       "count": 3,
+       "match": {
+        "minCredits": 0
+       }
+      }
+     ],
+     "type": "creditBucket",
+     "minCredits": 6,
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 4460",
+        "BIOEE 4461",
+        "BIOG 4990",
+        "PLSCI 2300",
+        "PLSCI 2400",
+        "PLSCI 2430",
+        "PLSCI 2470",
+        "PLSCI 2480",
+        "PLSCI 3430",
+        "PLSCI 3431",
+        "PLSCI 3440",
+        "PLSCI 4220",
+        "PLSCI 4400",
+        "PLSCI 4620",
+        "PLSCI 4990",
+        "PLSCI 6831",
+        "PLSCI 6841"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plant-biology-biotechnology",
+   "name": "Plant Biology (b): Plant Biotechnology",
+   "sections": [
+    {
+     "id": "pbb-req",
+     "title": "Plant Biology (b)",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "type": "slots",
+     "slots": [
+      {
+       "id": "pb1",
+       "label": "PLSCI 3430",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3430"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "pb2",
+       "label": "PLSCI 3431",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3431"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "pb3",
+       "label": "PLSCI 3420",
+       "rule": [
+        {
+         "codes": [
+          "PLSCI 3420"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "pbb-more",
+     "title": "Plant Biology (b): Additional Courses",
+     "column": "right",
+     "filter": "concentration",
+     "icon": "star",
+     "letterGrade": true,
+     "leftLabel": "Plant (b) credits",
+     "type": "creditBucket",
+     "minCredits": 7,
+     "rule": [
+      {
+       "codes": [
+        "BIOEE 4460",
+        "BIOEE 4461",
+        "BIOG 4990",
+        "PLSCI 2250",
+        "PLSCI 3421",
+        "PLSCI 4030",
+        "PLSCI 4070",
+        "PLSCI 4080",
+        "PLSCI 4220",
+        "PLSCI 4620",
+        "PLSCI 6841"
+       ],
+       "reason": "Not on this concentration's list"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "id": "fws",
+   "title": "First-Year Writing Seminars",
+   "match": [
+    {
+     "distributions": [
+      "FWS"
+     ]
+    }
+   ],
+   "count": 2,
+   "metText": "satisfied by {code}",
+   "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+  },
+  {
+   "id": "language",
+   "title": "Foreign Language",
+   "match": [
+    {
+     "distributions": [
+      "FLOPI"
+     ],
+     "minCredits": 3
+    }
+   ],
+   "metText": "satisfied by {code} (Option 1)",
+   "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+  },
+  {
+   "id": "dist-alc",
+   "title": "Distribution: Arts, Literature, and Culture",
+   "match": [
+    {
+     "distributions": [
+      "ALC-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a ALC-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-bio",
+   "title": "Distribution: Biological Sciences",
+   "match": [
+    {
+     "distributions": [
+      "BIO-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a BIO-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-etm",
+   "title": "Distribution: Ethics and the Mind",
+   "match": [
+    {
+     "distributions": [
+      "ETM-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a ETM-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-glc",
+   "title": "Distribution: Global Citizenship",
+   "match": [
+    {
+     "distributions": [
+      "GLC-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a GLC-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-hst",
+   "title": "Distribution: Historical Analysis",
+   "match": [
+    {
+     "distributions": [
+      "HST-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a HST-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-phs",
+   "title": "Distribution: Physical Sciences",
+   "match": [
+    {
+     "distributions": [
+      "PHS-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a PHS-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-scd",
+   "title": "Distribution: Social Difference",
+   "match": [
+    {
+     "distributions": [
+      "SCD-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a SCD-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-ssc",
+   "title": "Distribution: Social Sciences",
+   "match": [
+    {
+     "distributions": [
+      "SSC-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a SSC-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-sds",
+   "title": "Distribution: Statistics and Data Science",
+   "match": [
+    {
+     "distributions": [
+      "SDS-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a SDS-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-smr",
+   "title": "Distribution: Symbolic and Mathematical Reasoning",
+   "match": [
+    {
+     "distributions": [
+      "SMR-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "metText": "satisfied by {code}",
+   "missText": "needs a SMR-AS course of 3+ credits."
+  },
+  {
+   "id": "dist-courses",
+   "title": "Distribution courses",
+   "match": [
+    {
+     "distributions": [
+      "ALC-AS",
+      "BIO-AS",
+      "ETM-AS",
+      "GLC-AS",
+      "HST-AS",
+      "PHS-AS",
+      "SCD-AS",
+      "SSC-AS",
+      "SDS-AS",
+      "SMR-AS"
+     ],
+     "minCredits": 3,
+     "excludeSubjects": [
+      "PE"
+     ],
+     "excludeNumberPattern": [
+      "10xx"
+     ]
+    }
+   ],
+   "count": 8,
+   "metText": "satisfied by {code}",
+   "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+  }
+ ]
+}

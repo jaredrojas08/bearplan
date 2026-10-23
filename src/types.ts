@@ -44,6 +44,7 @@ export type Constraint =
   | { type: 'maxCredits'; label: string; credits: number; match: Match; reason: string }
   | { type: 'minGroups'; label: string; count: number }
   | { type: 'groupMinCredits'; label: string; group: string; credits: number }
+  | { type: 'groupCredits'; label: string; group: string; credits: number }
   | { type: 'groupMaxCount'; label: string; group: string; count: number }
 
 export type SectionIcon = 'pen' | 'book' | 'flask' | 'sigma' | 'code' | 'star' | 'run' | 'plus'

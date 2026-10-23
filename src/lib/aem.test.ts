@@ -65,3 +65,10 @@ describe('AEM template', () => {
     expect(checkOf(summary, 'pls').text).toMatch(/^4 \/ 18 cr so far \(BIOEE 1610\)/)
   })
 })
+
+describe('pre-2025 CALS credits', () => {
+  it('counts AIIS courses, the roster subject for American Indian and Indigenous Studies', () => {
+    const plan = { ...planWith([course('AIIS 1100', 'additional')]), templateId: aemPre2025.id }
+    expect(evaluatePlan(plan, aemPre2025, OCTOBER_2026).checks.find((c) => c.check.id === 'cals-credits')?.text).toMatch(/^3 \/ 55 cr so far \(AIIS 1100\)/)
+  })
+})

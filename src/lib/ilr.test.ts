@@ -47,3 +47,10 @@ describe('ILR elective distribution checks', () => {
     expect(check('advanced-balance')).toBe(false)
   })
 })
+
+describe('check section ids', () => {
+  it('must name a section in the template', () => {
+    const typo = { ...ilr, checks: ilr.checks.map((c) => (c.id === 'qp' ? { ...c, section: 'in-colege' } : c)) }
+    expect(templateErrors(typo)).toEqual([expect.stringMatching(/section must be the id of a section/)])
+  })
+})
