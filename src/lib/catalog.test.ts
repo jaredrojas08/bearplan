@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { CatalogEntry, Template } from '../types'
+import historyJson from '../templates/history-ba.json'
 import { evaluatePlan, withMinors } from './requirements'
 import { templateErrors } from './validate'
 
@@ -7,7 +8,7 @@ const modules = import.meta.glob<{ default: unknown }>('../../public/catalog/*.j
 const byFile = Object.fromEntries(Object.entries(modules).map(([path, mod]) => [path.split('/').at(-1)!, mod.default]))
 const index = byFile['index.json'] as CatalogEntry[]
 const files = Object.keys(byFile).filter((f) => f !== 'index.json')
-const host = byFile['history-ba.json'] as Template
+const host = historyJson as Template
 
 describe('catalog drafts', () => {
   it('lists every draft in the index, and nothing else', () => {

@@ -690,12 +690,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "history-ba",
-  "kind": "major",
-  "name": "History (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "history-capitalism-interdisciplinary-minor",
   "kind": "minor",
   "name": "History of Capitalism",
