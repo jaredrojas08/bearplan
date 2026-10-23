@@ -85,6 +85,7 @@
   }
   let offered = $derived(selectedTemplate?.concentrations ?? [])
   let maxConcentrations = $derived(selectedTemplate?.maxConcentrations ?? 1)
+  let needsConcentration = $derived(!!selectedTemplate?.requiresConcentration && !concentrations.some((id) => offered.some((c) => c.id === id)))
 
   // A new entry term can leave the chosen graduation term out of range; clear it rather than guess one.
   $effect(() => {
@@ -181,7 +182,7 @@
           </label>
         {/each}
       </div>
-      <span class="hint">Optional. Change it any time in plan details.</span>
+      <span class="hint">{selectedTemplate?.requiresConcentration ? 'Required: pick one to save.' : 'Optional.'} Change it any time in plan details.</span>
     </fieldset>
   {/if}
   {#if app.minorOptions.length}
@@ -231,7 +232,7 @@
   {#if termCount}<p class="note">{termCount} terms. {statusHint}</p>{/if}
   <div class="actions">
     {@render secondary?.()}
-    <button type="submit" class="btn primary big" disabled={!selectedTemplate || !entryTerm || !gradTerm || pendingMinors.length > 0}>{submitLabel}</button>
+    <button type="submit" class="btn primary big" disabled={!selectedTemplate || !entryTerm || !gradTerm || needsConcentration || pendingMinors.length > 0}>{submitLabel}</button>
   </div>
 </form>
 
