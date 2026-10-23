@@ -30,6 +30,7 @@ const VERIFIED = new Set([
   'psychology-ba',
   'government-ba',
   'operations-research-engineering-bs',
+  'hotel-management-bs',
   'information-science-ba',
   'information-science-bs',
 ])
