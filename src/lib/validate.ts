@@ -164,6 +164,10 @@ export function templateErrors(data: unknown): string[] {
     })
   }
   if ('requiresConcentration' in data && typeof data.requiresConcentration !== 'boolean') errors.push('"requiresConcentration" must be true or false')
+  // Requiring a pick with nothing to pick would leave the plan unsaveable.
+  if (data.requiresConcentration === true && !(Array.isArray(data.concentrations) && data.concentrations.length > 0)) {
+    errors.push('"requiresConcentration" needs a non-empty "concentrations" list')
+  }
   if ('maxConcentrations' in data && !(Number.isInteger(data.maxConcentrations) && (data.maxConcentrations as number) >= 1)) {
     errors.push('"maxConcentrations" must be a whole number of at least 1')
   }

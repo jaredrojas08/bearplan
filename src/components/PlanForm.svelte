@@ -113,6 +113,7 @@
 
   function submit(event: SubmitEvent) {
     event.preventDefault()
+    if (needsConcentration) return
     // Picks from a previously selected checklist don't carry over.
     const kept = concentrations.filter((id) => offered.some((c) => c.id === id))
     onSubmit({ name: name.trim(), templateId, entryTerm, gradTerm, concentrations: kept, minors })
