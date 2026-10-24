@@ -145,4 +145,14 @@ describe('A&S distribution matching', () => {
     // D and E cover ALC and ETM alone, so A, B and C can share: six categories.
     expect(forward).toEqual(['dist-alc', 'dist-etm', 'dist-glc', 'dist-hst', 'dist-scd', 'dist-ssc'])
   })
+  it('finds the assignment a greedy pass misses', () => {
+    // ALC takes A first in plan order; only B on ALC leaves room for D to share PHS and SCD.
+    const courses = [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['ALC-AS'], 3),
+      course('C 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3),
+      course('D 3000', 'additional', ['PHS-AS', 'SCD-AS'], 3),
+    ]
+    expect(met(summarize(economics, courses))).toEqual(['dist-alc', 'dist-etm', 'dist-glc', 'dist-hst', 'dist-phs', 'dist-scd'])
+  })
 })
