@@ -954,12 +954,6 @@
   "college": "School of Industrial and Labor Relations"
  },
  {
-  "id": "performing-media-arts-ba",
-  "kind": "major",
-  "name": "Performing and Media Arts (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "performing-media-arts-minor",
   "kind": "minor",
   "name": "Performing and Media Arts",
