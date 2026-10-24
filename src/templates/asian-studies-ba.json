@@ -1158,6 +1158,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1179,6 +1182,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1200,6 +1206,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1221,6 +1230,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1242,6 +1254,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1263,6 +1278,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1284,6 +1302,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1305,6 +1326,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1326,6 +1350,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1347,6 +1374,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
@@ -1377,6 +1407,9 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],

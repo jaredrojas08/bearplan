@@ -600,12 +600,6 @@
   "college": "College of Architecture, Art and Planning"
  },
  {
-  "id": "history-art-ba",
-  "kind": "major",
-  "name": "History of Art (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "history-art-minor",
   "kind": "minor",
   "name": "History of Art",
