@@ -4,6 +4,10 @@
  "college": "CALS (2025+ distributions)",
  "source": "https://catalog.cornell.edu/programs/biological-sciences-bs/",
  "matriculatedFrom": "FA25",
+ "repeatableCodes": [
+  "BIOG 4990",
+  "PLSCI 4990"
+ ],
  "totalCredits": 120,
  "totalCreditsNote": "120 cr per the 2026-27 catalog, plus 100 letter-graded and 105 structured credits. Confirm with your advisor.",
  "footnote": "Biology courses need a letter grade (unless offered S/U only) and a D- or better. Courses shared between the foundation and a concentration stay in the foundation rows.",
