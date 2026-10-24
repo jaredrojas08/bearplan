@@ -59,4 +59,9 @@ describe('Communication (BS)', () => {
     const plan: Plan = { ...empty, courses: [{ uid: 'r1', code: 'COMM 4970', title: '', credits: 3, term: 'FA26', placement: 'upper-electives/e1' }] }
     expect(fits('COMM 4990', 'upper-electives/e2', 1, plan)).toBe('At most 3 combined credits of COMM 4970 and COMM 4990 count as upper-level electives')
   })
+
+  it('lets individual study repeat up to the combined cap', () => {
+    const fall: Plan = { ...empty, courses: [{ uid: 'fall', code: 'COMM 4970', title: '', credits: 1, term: 'FA26', placement: 'upper-electives/e1' }] }
+    expect(fits('COMM 4970', 'upper-electives/e2', 2, fall)).toBeNull()
+  })
 })
