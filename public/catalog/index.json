@@ -36,12 +36,6 @@
   "college": "College of Agriculture and Life Sciences"
  },
  {
-  "id": "american-studies-ba",
-  "kind": "major",
-  "name": "American Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "american-studies-minor",
   "kind": "minor",
   "name": "American Studies",

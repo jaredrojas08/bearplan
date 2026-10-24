@@ -1,0 +1,656 @@
+{
+  "id": "american-studies-ba",
+  "name": "American Studies (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/american-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "major-coursework",
+      "title": "Major Coursework",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Twelve courses of 3 or 4 credits each, totaling at least 42 credits. Identify six of these courses as the advisor-approved concentration, spanning at least two disciplines; record the area and course membership in course notes. The catalog describes approval both in the penultimate semester and during senior year. At most six courses may come from any one discipline; AMST subject codes do not identify disciplines, so verify this with the advisor. Three courses must substantially focus on pre-1900 material and two must address American diversity (social justice or inequality emphasizing race, class, gender and/or sexuality). These requirements and the concentration may overlap each other and the seminar. The page supplies no qualifying course lists, so verify content and that the 4000-level course is a seminar manually. AMST 4998 cannot fill the seminar row. Non-AMST rows require confirmation of an American Studies cross-listing or DUS approval; up to two relevant courses without an AMST cross-listing may count with DUS approval. Cross-listed courses entered under another subject may need their AMST code to avoid the two-course exception limit. The app checks the 3-credit minimum but cannot enforce the 4-credit maximum per course.",
+      "slots": [
+        {
+          "id": "seminar",
+          "label": "4000-level American Studies seminar",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999,
+              "minCredits": 3,
+              "excludeCodes": [
+                "AMST 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m1",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m2",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m3",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m4",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m5",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m6",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m7",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m8",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m9",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m10",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m11",
+          "label": "American Studies roster course or approved exception",
+          "rule": [
+            {
+              "subjects": [
+                "AMST"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "AMST",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Major credits",
+          "credits": 42
+        },
+        {
+          "type": "maxCount",
+          "label": "Non-AMST exceptions",
+          "count": 2,
+          "match": {
+            "excludeSubjects": [
+              "AMST"
+            ]
+          },
+          "reason": "At most two courses without an American Studies cross-listing count with DUS approval; use the AMST code for cross-listed courses"
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ],
+  "footnote": "Major courses require a letter grade of C or better. Submit the American Studies Major Application to declare; meeting the DUS or undergraduate coordinator about an affiliated advisor is recommended. With DUS approval, study abroad may contribute up to two courses for one semester or three for a full year; verify these limits manually. Concentration examples are visual studies, cultural studies, race and ethnicity, legal and Constitutional studies, American institutions, class and social structure, the American environment, American capitalism, and community-engaged learning and research; these are examples, not fixed tracks. Optional honors requires a B+ average in courses pertinent to the major and a prior research-paper course, a topic and faculty supervisor with application by May 1 of junior year, AMST 4993 then AMST 4994 with satisfactory progress review, a first reader, a roughly 50-60 page thesis by mid-April and an oral exam before finals. Honors is awarded by the advisor and affiliated reader; beginning with 2026-27 graduates, Latin Honors is awarded by the college."
+}
