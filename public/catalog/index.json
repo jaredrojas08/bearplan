@@ -1038,12 +1038,6 @@
   "college": "College of Agriculture and Life Sciences, College of Arts and Sciences"
  },
  {
-  "id": "science-technology-studies-ba",
-  "kind": "major",
-  "name": "Science, Technology and Society (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "science-technology-studies-minor",
   "kind": "minor",
   "name": "Science & Technology Studies",

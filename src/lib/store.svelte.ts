@@ -13,6 +13,7 @@ import csTemplate from '../templates/cs-engineering-fa24.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
 import asianStudiesTemplate from '../templates/asian-studies-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
+import stsTemplate from '../templates/science-technology-studies-ba.json'
 import religiousStudiesTemplate from '../templates/religious-studies-ba.json'
 import capsTemplate from '../templates/china-asia-pacific-studies-ba.json'
 import spanishTemplate from '../templates/spanish-ba.json'
@@ -87,6 +88,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   aemPre2025Template,
   csBaTemplate,
   economicsTemplate,
+  stsTemplate,
   religiousStudiesTemplate,
   capsTemplate,
   spanishTemplate,

@@ -1,0 +1,1116 @@
+{
+  "id": "science-technology-studies-ba",
+  "name": "Science, Technology and Society (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/science-technology-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Twelve distinct courses totaling at least 36 credits: nine STS courses and three science courses. Every major course must be at least 3 credits, letter graded C- or higher. Independent study credits do not count toward the major, including STS 3991. Admission requires successful completion of one non-FWS STS course and an application normally submitted in sophomore year; juniors are considered case by case. The application includes a one-page statement of intellectual interests and a tentative course plan. Complete BIO-AS, PHS-AS, SDS-AS and SMR-AS distributions early to prepare for further science courses. Optional honors requires a 3.00 overall Cornell GPA, a 3.30 major GPA, a research topic, a supervisor and a second faculty advisor (at least one in STS), with entry considered at the end of junior spring; honors adds no checklist rows.",
+  "sections": [
+    {
+      "id": "core",
+      "title": "Core Course",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Required introduction to the social studies of science and technology.",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "STS 2011",
+          "rule": [
+            {
+              "codes": [
+                "STS 2011"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "Advisor-designed Theme",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Eight additional STS courses contributing to a theme designed with a faculty advisor, including at least one at the 4000 level or above. Examples: Data and Society; Health and Society; Gender, Sexuality and Science; Race, Science, and Medicine; Environment and Society; Mind, Brain, and Artificial Intelligence; Engineering, Design, and Society. Record the agreed theme in the plan name or course notes. STS 2643 is listed without a title; confirm its availability. Crosslisted equivalents are not identified on the page.",
+      "slots": [
+        {
+          "id": "t1",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t2",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t3",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t4",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t5",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t6",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t7",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "t8",
+          "label": "STS theme course",
+          "rule": [
+            {
+              "codes": [
+                "STS 1105",
+                "STS 1101",
+                "STS 1180",
+                "STS 1201",
+                "STS 1451",
+                "STS 2023",
+                "STS 2031",
+                "STS 2051",
+                "STS 2061",
+                "STS 2071",
+                "STS 2131",
+                "STS 2207",
+                "STS 2381",
+                "STS 2451",
+                "STS 2468",
+                "STS 2561",
+                "STS 2641",
+                "STS 2643",
+                "STS 2810",
+                "STS 2812",
+                "STS 2813",
+                "STS 2831",
+                "STS 2851",
+                "STS 2921",
+                "STS 3020",
+                "STS 3042",
+                "STS 3111",
+                "STS 3181",
+                "STS 3241",
+                "STS 3311",
+                "STS 3460",
+                "STS 3474",
+                "STS 3561",
+                "STS 3601",
+                "STS 3605",
+                "STS 3650",
+                "STS 3651",
+                "STS 3911",
+                "STS 4020",
+                "STS 4040",
+                "STS 4041",
+                "STS 4101",
+                "STS 4127",
+                "STS 4131",
+                "STS 4168",
+                "STS 4200",
+                "STS 4231",
+                "STS 4240",
+                "STS 4260",
+                "STS 4292",
+                "STS 4351",
+                "STS 4412",
+                "STS 4413",
+                "STS 4416",
+                "STS 4426",
+                "STS 4440",
+                "STS 4442",
+                "STS 4451",
+                "STS 4460",
+                "STS 4476",
+                "STS 4511",
+                "STS 4561",
+                "STS 4634",
+                "STS 4661",
+                "STS 4670",
+                "STS 4691",
+                "STS 4721",
+                "STS 4902",
+                "STS 4911"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "4000-level or above",
+          "count": 1,
+          "match": {
+            "minLevel": 4000
+          }
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "title": "Science Requirement",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Three additional courses in natural science or engineering, including computer science, beyond the college science requirement. Choose courses with the major advisor. Complete any required mathematics prerequisite before its science course. The page gives no course list; these rows check credits and FWS status only. Advisor review must confirm subject eligibility, exclusion of independent study, and that these courses are additional to the college science requirement.",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "Advisor-approved natural science or engineering",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "excludeCodes": [
+                "STS 3991"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "Advisor-approved natural science or engineering",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "excludeCodes": [
+                "STS 3991"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "Advisor-approved natural science or engineering",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "excludeCodes": [
+                "STS 3991"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}
