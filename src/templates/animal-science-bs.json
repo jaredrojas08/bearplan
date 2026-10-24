@@ -1679,7 +1679,7 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "Needs 36 Animal Science credits, including BIOAP 1100 and ANSC cross-listings. Verify Cornell origin and unlisted cross-listings with your advisor."
+      "missText": "Needs 36 Animal Science credits, including BIOAP 1100 and ANSC cross-listings. Enter a cross-listed course under its ANSC code (for example ANSC 3300, not BIOAP 3300) so it counts, and verify Cornell origin with your advisor."
     },
     {
       "id": "animal-non-special",
