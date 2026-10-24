@@ -1109,6 +1109,12 @@
       ]
     }
   ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
   "checks": [
     {
       "id": "fws",
@@ -1156,7 +1162,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a ALC-AS course of 3+ credits."
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-bio",
@@ -1176,7 +1183,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a BIO-AS course of 3+ credits."
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-etm",
@@ -1196,7 +1204,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a ETM-AS course of 3+ credits."
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-glc",
@@ -1216,7 +1225,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a GLC-AS course of 3+ credits."
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-hst",
@@ -1236,7 +1246,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a HST-AS course of 3+ credits."
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-phs",
@@ -1256,7 +1267,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a PHS-AS course of 3+ credits."
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-scd",
@@ -1276,7 +1288,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SCD-AS course of 3+ credits."
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-ssc",
@@ -1296,7 +1309,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SSC-AS course of 3+ credits."
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-sds",
@@ -1316,7 +1330,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SDS-AS course of 3+ credits."
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-smr",
@@ -1336,7 +1351,8 @@
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SMR-AS course of 3+ credits."
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-courses",
@@ -1366,7 +1382,7 @@
       ],
       "count": 8,
       "metText": "satisfied by {code}",
-      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
     }
   ]
 }
