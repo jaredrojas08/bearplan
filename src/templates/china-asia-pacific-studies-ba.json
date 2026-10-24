@@ -1,0 +1,486 @@
+{
+  "id": "china-asia-pacific-studies-ba",
+  "name": "China and Asia-Pacific Studies (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/china-asia-pacific-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "repeatableCodes": [
+    "CAPS 4999"
+  ],
+  "footnote": "No prerequisites to the major. The eight CAPS courses total 30-36 credits and require a grade average of C or better; the app does not check the average. Complete three years of college-level Chinese (CHIN 1000-level through 3000-level) and attain high-intermediate proficiency or higher. Language sequencing and proficiency are reviewed outside the checklist. Native speakers with regular high school diplomas from mainland China or Taiwan (not international schools), or students exempted through placement testing, may receive a language exemption at Chinese language faculty discretion with CAPS administrator approval. Take a placement test before Beijing and expect to be at least at the 3000 level then. One semester of CAPS study abroad in Beijing is required, normally in junior or senior year. The Washington, D.C. semester is optional; consult the Director of Undergraduate Studies. Optional honors requires CAPS 4010 and CAPS 4020 while writing a thesis; together they may fulfill one CAPS elective, not two. The app cannot enforce that paired substitution. ENGL 2860 or ENGL 2880 used for FWS cannot also count toward the major.",
+  "sections": [
+    {
+      "id": "caps",
+      "title": "CAPS Major Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "note": "One gateway (normally in the first two years in Ithaca), five core courses, and two electives. CAPS 4002 is taught in Beijing. Put CAPS 4999 in the first additional-core row if used as core: it must be exactly 3 credits and approved by the Director of Undergraduate Studies; the app checks only the minimum credits. It may fill at most one core row. Independent study requires a research proposal and faculty sponsor for independent superior work on topics not covered by regular courses. Electives may be any two CAPS courses; consult the CAPS website for usual offerings. Chinese language and the required Beijing semester are separate requirements described below.",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "CAPS credits",
+          "credits": 30
+        }
+      ],
+      "slots": [
+        {
+          "id": "gateway",
+          "label": "Gateway course",
+          "rule": [
+            {
+              "codes": [
+                "CAPS 2132",
+                "CAPS 2232",
+                "CAPS 2435",
+                "CAPS 3967"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "transition",
+          "label": "CAPS 4001 / 4003",
+          "rule": [
+            {
+              "codes": [
+                "CAPS 4001",
+                "CAPS 4003"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "beijing",
+          "label": "CAPS 4002",
+          "rule": [
+            {
+              "codes": [
+                "CAPS 4002"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "capstone",
+          "label": "CAPS 4030",
+          "rule": [
+            {
+              "codes": [
+                "CAPS 4030"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "core-choice1",
+          "label": "Additional core course 1",
+          "rule": [
+            {
+              "codes": [
+                "CAPS 4049",
+                "CAPS 4127",
+                "CAPS 4827",
+                "CAPS 4931",
+                "CAPS 4963",
+                "CAPS 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "codes": [
+                "CAPS 4999"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "core-choice2",
+          "label": "Additional core course 2",
+          "rule": [
+            {
+              "codes": [
+                "CAPS 4049",
+                "CAPS 4127",
+                "CAPS 4827",
+                "CAPS 4931",
+                "CAPS 4963",
+                "CAPS 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "elective1",
+          "label": "CAPS elective",
+          "rule": [
+            {
+              "subjects": [
+                "CAPS"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "elective2",
+          "label": "CAPS elective",
+          "rule": [
+            {
+              "subjects": [
+                "CAPS"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}
