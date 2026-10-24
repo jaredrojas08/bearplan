@@ -84,12 +84,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "archaeology-ba",
-  "kind": "major",
-  "name": "Archaeology (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "archaeology-minor",
   "kind": "minor",
   "name": "Archaeology",
