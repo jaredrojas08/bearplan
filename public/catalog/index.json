@@ -132,12 +132,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "astronomy-ba",
-  "kind": "major",
-  "name": "Astronomy (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "astronomy-minor",
   "kind": "minor",
   "name": "Astronomy",

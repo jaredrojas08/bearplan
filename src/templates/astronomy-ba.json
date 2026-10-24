@@ -1,0 +1,898 @@
+{
+  "id": "astronomy-ba",
+  "name": "Astronomy (BA)",
+  "college": "Arts and Sciences",
+  "matriculatedFrom": "FA22",
+  "source": "https://catalog.cornell.edu/programs/astronomy-ba/",
+  "totalCredits": 120,
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "sections": [
+    {
+      "id": "physics",
+      "title": "Three Semesters of Physics",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "p1",
+          "label": "PHYS 1112 / PHYS 1116",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1112",
+                "PHYS 1116"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "label": "PHYS 2213 / PHYS 2217",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2213",
+                "PHYS 2217"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "label": "PHYS 2214",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2214"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ],
+          "option": "PHYS 2214"
+        },
+        {
+          "id": "p4",
+          "label": "PHYS 2218",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2218"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ],
+          "option": "PHYS 2218 + PHYS 2210"
+        },
+        {
+          "id": "p5",
+          "label": "PHYS 2210",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2210"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ],
+          "option": "PHYS 2218 + PHYS 2210"
+        }
+      ],
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "11 Physics credits",
+          "credits": 11
+        }
+      ],
+      "letterGrade": true
+    },
+    {
+      "id": "math",
+      "title": "Three Semesters of Mathematics",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "s1",
+          "label": "MATH 1910",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1910"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "MATH 1920 / MATH 2220 / MATH 2240",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1920",
+                "MATH 2220",
+                "MATH 2240"
+              ],
+              "reason": "Not on this list in the catalog",
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "MATH 2930 / MATH 4710 / ASTRO 3340",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2930",
+                "MATH 4710",
+                "ASTRO 3340"
+              ],
+              "reason": "Not on this list in the catalog",
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "12 Math core credits",
+          "credits": 12
+        }
+      ],
+      "letterGrade": true
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "concentrations": [
+    {
+      "id": "astrophysics-concentration",
+      "name": "Astrophysics Concentration",
+      "sections": [
+        {
+          "id": "data-1",
+          "title": "Experimental or Data Analysis Astronomy",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "letterGrade": true,
+          "slots": [
+            {
+              "id": "data",
+              "label": "ASTRO 4410",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 4410"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "At least 3 Astronomy core credits",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "astrophysics",
+          "title": "Astrophysics Concentration",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "a0-s1",
+              "label": "Astronomy Courses (1)",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 4431",
+                    "ASTRO 4432",
+                    "ASTRO 4433",
+                    "ASTRO 4434"
+                  ],
+                  "reason": "Not on this list in the catalog",
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a0-s2",
+              "label": "Astronomy Courses (2)",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 4431",
+                    "ASTRO 4432",
+                    "ASTRO 4433",
+                    "ASTRO 4434"
+                  ],
+                  "reason": "Not on this list in the catalog",
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1-s1",
+              "label": "PHYS 3316",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 3316"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1-s2",
+              "label": "PHYS 3318",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 3318"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1-s3",
+              "label": "PHYS 3327",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 3327"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1-s4",
+              "label": "PHYS 4230 / AEP 4230",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 4230",
+                    "AEP 4230"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a1-s5",
+              "label": "PHYS 4443",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 4443"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a2-s1",
+              "label": "MATH 2940 / MATH 2210 / MATH 2230",
+              "rule": [
+                {
+                  "codes": [
+                    "MATH 2940",
+                    "MATH 2210",
+                    "MATH 2230"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a2-s2",
+              "label": "AEP 3200",
+              "rule": [
+                {
+                  "codes": [
+                    "AEP 3200"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "a2-s3",
+              "label": "AEP 4200",
+              "rule": [
+                {
+                  "codes": [
+                    "AEP 4200"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "38 additional credits",
+              "credits": 38
+            }
+          ],
+          "note": "10 additional courses, 38-39 credits. Additional Math substitutions need DUS approval. A core GPA of 3.2 or higher is recommended. Research is strongly encouraged through semester research, summer programs, or ASTRO 4940.",
+          "letterGrade": true
+        }
+      ]
+    },
+    {
+      "id": "general-astronomy-concentration",
+      "name": "General Astronomy Concentration",
+      "sections": [
+        {
+          "id": "data-3",
+          "title": "Experimental or Data Analysis Astronomy",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "letterGrade": true,
+          "slots": [
+            {
+              "id": "data",
+              "label": "ASTRO 3310 / ASTRO 3334 / ASTRO 4410",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 3310",
+                    "ASTRO 3334",
+                    "ASTRO 4410"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "At least 3 Astronomy core credits",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "general-astronomy-co-astronomy",
+          "title": "Astronomy",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "s1",
+              "label": "ASTRO 2211",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 2211"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "s2",
+              "label": "ASTRO 2212",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 2212"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "s3",
+              "label": "ASTRO 3301 / ASTRO 3302 / ASTRO 3303 (1)",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 3301",
+                    "ASTRO 3302",
+                    "ASTRO 3303"
+                  ],
+                  "reason": "Not on this list in the catalog",
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "s4",
+              "label": "ASTRO 3301 / ASTRO 3302 / ASTRO 3303 (2)",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 3301",
+                    "ASTRO 3302",
+                    "ASTRO 3303"
+                  ],
+                  "reason": "Not on this list in the catalog",
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "s5",
+              "label": "Astronomy",
+              "rule": [
+                {
+                  "codes": [
+                    "ASTRO 2290",
+                    "ASTRO 2299",
+                    "ASTRO 4445",
+                    "ASTRO 4523"
+                  ],
+                  "reason": "Not on this list in the catalog",
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "column": "right",
+          "filter": "major",
+          "icon": "book",
+          "note": "The final choice course permits substitutions with DUS approval. The concentration totals 9-10 additional courses and 30-31 credits, including the complementary area; the app does not check the combined credit total across these two sections.",
+          "letterGrade": true
+        },
+        {
+          "id": "external",
+          "title": "External Complementary Area",
+          "type": "creditBucket",
+          "note": "Design this related-field area with a faculty advisor (examples: Biology, Earth Sciences, Education, Policy). Advisor approval and field coherence are checked manually. These credits may overlap another major if permitted.",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "minCredits": 15,
+          "rule": [
+            {
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCount",
+              "label": "At least 4 related-field courses",
+              "count": 4,
+              "match": {}
+            },
+            {
+              "type": "maxCount",
+              "label": "At most 5 related-field courses",
+              "count": 5,
+              "match": {},
+              "reason": "The complementary area calls for 4-5 courses"
+            }
+          ],
+          "letterGrade": true
+        }
+      ]
+    }
+  ],
+  "maxConcentrations": 1,
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    },
+    {
+      "id": "external-upper",
+      "title": "Complementary area: upper-level credits",
+      "section": "external",
+      "match": [
+        {
+          "minLevel": 3000,
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "credits": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs at least 8 credits at 3000-level or higher in the complementary area."
+    }
+  ],
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "requiresConcentration": true,
+  "footnote": "All major courses require letter grades of C- or better. The core totals 26-27 credits: 11 Physics, 12 Math, and 3-4 Astronomy. To declare, complete at least two Physics and two Math core courses with a minimum 2.7 GPA, meet the DUS in the fourth semester, and declare a concentration. Astrophysics students may not double major in Physics. Optional honors requires a 3.5+ ASTRO GPA over the last four semesters and A- or higher in key advanced courses: ASTRO 4410 and ASTRO 4431, 4432, 4433, 4434 for Astrophysics; ASTRO 4410 and ASTRO 3301, 3302, 3303 for General Astronomy. Honors and declaration GPA rules require manual review. The catalog attaches footnote 1 to AEP 4200 even though that footnote discusses ASTRO 4410; confirm its intent with the DUS."
+}
