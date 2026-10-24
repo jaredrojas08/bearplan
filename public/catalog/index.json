@@ -252,12 +252,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "classics-ba",
-  "kind": "major",
-  "name": "Classics (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "climate-change-minor",
   "kind": "minor",
   "name": "Climate Change",

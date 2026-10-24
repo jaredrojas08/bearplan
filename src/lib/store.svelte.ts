@@ -11,6 +11,7 @@ import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
+import classicsTemplate from '../templates/classics-ba.json'
 import anthropologyTemplate from '../templates/anthropology-ba.json'
 import linguisticsTemplate from '../templates/linguistics-ba.json'
 import sociologyTemplate from '../templates/sociology-ba.json'
@@ -77,6 +78,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   aemPre2025Template,
   csBaTemplate,
   economicsTemplate,
+  classicsTemplate,
   anthropologyTemplate,
   linguisticsTemplate,
   sociologyTemplate,
