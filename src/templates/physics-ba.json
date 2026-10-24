@@ -524,35 +524,12 @@
                 "PE"
               ],
               "excludeCodes": [
-                "PHYS 1116",
-                "PHYS 1112",
-                "PHYS 2207",
-                "PHYS 2216",
-                "PHYS 2213",
-                "PHYS 2217",
-                "PHYS 2214",
-                "PHYS 2218",
                 "PHYS 1110",
                 "PHYS 2210",
-                "MATH 1120",
-                "MATH 1910",
-                "MATH 1920",
-                "MATH 2220",
-                "MATH 2240",
-                "MATH 2930",
-                "MATH 3270",
-                "MATH 2210",
-                "MATH 2230",
-                "MATH 2310",
-                "MATH 2940",
                 "PHYS 3316",
                 "PHYS 3317",
                 "PHYS 3318",
-                "PHYS 3327",
-                "PHYS 3310",
-                "PHYS 3360",
-                "PHYS 4410",
-                "ASTRO 4410"
+                "PHYS 3327"
               ]
             }
           ],
