@@ -762,12 +762,6 @@
   "college": "Cornell University"
  },
  {
-  "id": "italian-ba",
-  "kind": "major",
-  "name": "Italian (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "italian-minor",
   "kind": "minor",
   "name": "Italian",
