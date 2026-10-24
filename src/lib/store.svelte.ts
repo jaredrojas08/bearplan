@@ -1,3 +1,5 @@
+import globalDevelopmentTemplate from '../templates/global-development-bs.json'
+import globalDevelopmentPre2025Template from '../templates/global-development-bs-cals-pre2025.json'
 import communicationTemplate from '../templates/communication-bs.json'
 import communicationPre2025Template from '../templates/communication-bs-cals-pre2025.json'
 import examplePlan from '../seed/example-plan.json'
@@ -10,6 +12,7 @@ import csTemplate from '../templates/cs-engineering-fa24.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
 import linguisticsTemplate from '../templates/linguistics-ba.json'
+import sociologyTemplate from '../templates/sociology-ba.json'
 import philosophyTemplate from '../templates/philosophy-ba.json'
 import statisticsTemplate from '../templates/statistics-data-science-ba.json'
 import historyTemplate from '../templates/history-ba.json'
@@ -64,6 +67,8 @@ const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
 export const BUILT_IN_TEMPLATES: Template[] = [
+  globalDevelopmentTemplate,
+  globalDevelopmentPre2025Template,
   communicationTemplate,
   communicationPre2025Template,
   csTemplate,
@@ -72,6 +77,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   csBaTemplate,
   economicsTemplate,
   linguisticsTemplate,
+  sociologyTemplate,
   philosophyTemplate,
   chemistryTemplate,
   statisticsTemplate,
