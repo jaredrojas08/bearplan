@@ -51,6 +51,7 @@ describe('French (BA)', () => {
   it('counts at most two courses from outside French', () => {
     expect(fits('HIST 3640', 'major/e1')).toBeNull()
     expect(fits('HIST 3640', 'major/intro')).not.toBeNull()
+    expect(fits('HIST 1530', 'major/e1')).not.toBeNull()
     const two: Plan = {
       ...empty,
       courses: [
