@@ -624,12 +624,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "global-development-bs",
-  "kind": "major",
-  "name": "Global Development (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "global-development-minor",
   "kind": "minor",
   "name": "Global Development",
