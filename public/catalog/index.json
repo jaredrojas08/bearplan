@@ -708,12 +708,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "jewish-studies-ba",
-  "kind": "major",
-  "name": "Jewish Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "jewish-studies-minor",
   "kind": "minor",
   "name": "Jewish Studies",

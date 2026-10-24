@@ -14,6 +14,7 @@ import cognitiveScienceTemplate from '../templates/cognitive-science-ba.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
 import asianStudiesTemplate from '../templates/asian-studies-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
+import jewishStudiesTemplate from '../templates/jewish-studies-ba.json'
 import germanStudiesTemplate from '../templates/german-studies-ba.json'
 import musicTemplate from '../templates/music-ba.json'
 import stsTemplate from '../templates/science-technology-studies-ba.json'
@@ -91,6 +92,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   aemPre2025Template,
   csBaTemplate,
   economicsTemplate,
+  jewishStudiesTemplate,
   germanStudiesTemplate,
   musicTemplate,
   cognitiveScienceTemplate,
