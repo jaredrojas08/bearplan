@@ -25,6 +25,7 @@ describe('American Studies (BA)', () => {
   })
 
   it('applies the major course and seminar rules', () => {
+    expect(fits('AMST 4000', 'major-coursework/seminar')).toBeNull()
     expect(fits('AMST 4998', 'major-coursework/seminar')).not.toBeNull()
     expect(fits('AMST 4998', 'major-coursework/m1')).toBeNull()
     expect(fits('AMST 4993', 'major-coursework/m1', 2)).toBe('Needs 3+ credits')
