@@ -1080,12 +1080,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "spanish-ba",
-  "kind": "major",
-  "name": "Spanish (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "spanish-minor",
   "kind": "minor",
   "name": "Spanish",

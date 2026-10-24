@@ -131,6 +131,11 @@ export interface Template {
   failingGrades?: string[]
   sections: Section[]
   concentrations?: Concentration[]
+  /**
+   * Limits for check groups that may share courses. Without an entry, checks in a
+   * group can't share a course at all.
+   */
+  checkGroups?: Record<string, { maxUsesPerCourse: number; maxSharedCourses: number }>
   /** How many concentrations a plan may pick. Defaults to 1. */
   maxConcentrations?: number
   /** The major is incomplete without one, so the form won't save until one is picked. */

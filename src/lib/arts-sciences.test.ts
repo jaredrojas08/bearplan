@@ -90,3 +90,82 @@ describe('Psychology research cap', () => {
     expect(sx['PSYCH 4700@psych']).toEqual(['S/U in letter-grade row'])
   })
 })
+
+describe('A&S distribution overlap', () => {
+  const dist = (summary: ReturnType<typeof summarize>) =>
+    Object.fromEntries(summary.checks.filter((c) => c.check.id.startsWith('dist-')).map((c) => [c.check.id, c.met]))
+
+  it('lets one course meet two categories', () => {
+    const s = summarize(economics, [course('ANTHR 1400', 'additional', ['SCD-AS', 'GLC-AS'], 3)])
+    expect(dist(s)['dist-scd']).toBe(true)
+    expect(dist(s)['dist-glc']).toBe(true)
+  })
+
+  it('stops a course at two categories', () => {
+    const s = summarize(economics, [course('X 3000', 'additional', ['ALC-AS', 'HST-AS', 'SCD-AS'], 3)])
+    expect(['dist-alc', 'dist-hst', 'dist-scd'].filter((id) => dist(s)[id])).toHaveLength(2)
+  })
+
+  it('allows only two courses to double up', () => {
+    const s = summarize(economics, [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3),
+      course('C 3000', 'additional', ['SCD-AS', 'SSC-AS'], 3),
+    ])
+    const met = Object.values(dist(s)).filter(Boolean).length
+    // Two courses cover two categories each; the third covers only one.
+    expect(met).toBe(5)
+  })
+
+  it('spends a fresh course before sharing one', () => {
+    const s = summarize(economics, [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['HST-AS'], 3),
+    ])
+    expect(dist(s)['dist-alc'] && dist(s)['dist-hst']).toBe(true)
+    expect(s.checks.find((c) => c.check.id === 'dist-hst')?.text).toBe('satisfied by B 3000')
+  })
+})
+
+describe('A&S distribution matching', () => {
+  const met = (s: ReturnType<typeof summarize>) => s.checks.filter((c) => c.check.id.startsWith('dist-') && c.check.id !== 'dist-courses' && c.met).map((c) => c.check.id).sort()
+
+  it("doesn't depend on the order courses were added", () => {
+    // The two-category course comes first; a greedy pass would spend a shared use it doesn't need.
+    const courses = [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3),
+      course('C 3000', 'additional', ['SCD-AS', 'SSC-AS'], 3),
+      course('D 3000', 'additional', ['ALC-AS'], 3),
+      course('E 3000', 'additional', ['ETM-AS'], 3),
+    ]
+    const forward = met(summarize(economics, courses))
+    const backward = met(summarize(economics, [...courses].reverse()))
+    expect(forward).toEqual(backward)
+    // D and E cover ALC and ETM alone, so A, B and C can share: six categories.
+    expect(forward).toEqual(['dist-alc', 'dist-etm', 'dist-glc', 'dist-hst', 'dist-scd', 'dist-ssc'])
+  })
+  it('finds the assignment a greedy pass misses', () => {
+    // ALC takes A first in plan order; only B on ALC leaves room for D to share PHS and SCD.
+    const courses = [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['ALC-AS'], 3),
+      course('C 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3),
+      course('D 3000', 'additional', ['PHS-AS', 'SCD-AS'], 3),
+    ]
+    expect(met(summarize(economics, courses))).toEqual(['dist-alc', 'dist-etm', 'dist-glc', 'dist-hst', 'dist-phs', 'dist-scd'])
+  })
+  it('still finds the sharing on a plan with many two-category courses', () => {
+    // 26 BIO/SDS courses come first; the ETM/GLC and PHS/SCD courses must be the two shared ones.
+    const fillers = Array.from({ length: 26 }, (_, i) => course(`F ${3000 + i}`, 'additional', ['BIO-AS', 'SDS-AS'], 3))
+    const courses = [...fillers, course('X 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3), course('Y 3000', 'additional', ['PHS-AS', 'SCD-AS'], 3)]
+    expect(met(summarize(economics, courses))).toEqual(expect.arrayContaining(['dist-bio', 'dist-etm', 'dist-glc', 'dist-phs', 'dist-scd', 'dist-sds']))
+  })
+  it('stops at the first full match even with a large sharing limit', () => {
+    // An eager search would build every subset of the 26 two-category courses first.
+    const wide = { ...economics, checkGroups: { 'as-dist': { maxUsesPerCourse: 2, maxSharedCourses: 30 } } } as Template
+    const singles = ['ALC-AS', 'BIO-AS', 'ETM-AS', 'GLC-AS', 'HST-AS', 'PHS-AS', 'SCD-AS', 'SSC-AS', 'SDS-AS', 'SMR-AS'].map((d, i) => course(`S ${3000 + i}`, 'additional', [d], 3))
+    const fillers = Array.from({ length: 26 }, (_, i) => course(`F ${3000 + i}`, 'additional', ['BIO-AS', 'SDS-AS'], 3))
+    expect(met(summarize(wide, [...fillers, ...singles]))).toHaveLength(10)
+  })
+})

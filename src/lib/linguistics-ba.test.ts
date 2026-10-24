@@ -14,8 +14,7 @@ describe('Linguistics BA', () => {
   it('validates and copies the Arts and Sciences requirements', () => {
     expect(templateErrors(linguistics)).toEqual([])
     expect(linguistics.checks).toEqual(economics.checks)
-    expect(linguistics).not.toHaveProperty('checkGroups')
-    expect(economics).not.toHaveProperty('checkGroups')
+    expect(Reflect.get(linguistics, 'checkGroups')).toEqual(Reflect.get(economics, 'checkGroups'))
     expect(linguistics.sections.find(s => s.id === 'pe')).toEqual(economics.sections.find(s => s.id === 'pe'))
     expect(linguistics.totalCredits).toBe(economics.totalCredits)
     expect(linguistics.totalCreditsNote).toBe(economics.totalCreditsNote)
