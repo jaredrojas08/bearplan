@@ -458,10 +458,19 @@ function courseWarnings(plan: Plan, template: Template): Record<string, string[]
     if (failure) add(course.uid, failure)
     const suAllowed = target.section.suAllowedCodes?.includes(code) && /^S$/i.test(course.grade ?? '')
     if (target.section.letterGrade && isFailingGrade(template, course.grade) && !suAllowed) {
-      add(course.uid, /^[SU]/i.test(course.grade!) ? 'S/U in letter-grade row' : 'Needs C- or better')
+      add(course.uid, /^[SU]/i.test(course.grade!) ? 'S/U in letter-grade row' : `Needs ${minimumGrade(template)} or better`)
     }
   }
   return warnings
+}
+
+const LETTER_GRADES = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F']
+
+/** The lowest passing letter grade: the one just above the highest grade the template fails. */
+function minimumGrade(template: Template): string {
+  const failing = new Set(template.failingGrades?.map((g) => g.toUpperCase()))
+  const highest = LETTER_GRADES.findIndex((g) => failing.has(g))
+  return highest > 0 ? LETTER_GRADES[highest - 1] : 'D-'
 }
 
 function checkFits(check: Check, course: PlanCourse): boolean {
