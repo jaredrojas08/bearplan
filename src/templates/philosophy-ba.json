@@ -1,0 +1,553 @@
+{
+  "id": "philosophy-ba",
+  "name": "Philosophy (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/philosophy-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "All ten courses (at least 30 credits total) require letter grades of C or better. Admission normally requires two philosophy courses of at least 3 credits each with B or better, subject to the Director of Undergraduate Studies. PHIL 2310 is recommended, not required. Honors and the senior thesis are optional: honors normally requires a 3.5 major GPA, 2.7 Cornell GPA, ten philosophy courses of at least 3 credits, two at the 4000/6000 level and four at 3000 or above, plus faculty assessment of substantial writing, class participation and departmental citizenship. Honors excludes PHIL x9xx except PHIL 4900 and PHIL 4901; neither thesis course counts toward the eight core courses. Honors requires advocacy by at least two faculty members; meeting numerical criteria does not guarantee an award. Thesis enrollment requires a faculty advisor; PHIL 4900 and PHIL 4901 are typically taken in consecutive senior terms. Only one level of honors is awarded beginning in 2026-27.",
+  "sections": [
+    {
+      "id": "core",
+      "title": "Eight Core Philosophy Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Eight courses and at least 24 credits. Six must be 2000+, including at least three at 3000+. PHIL 2200 may be replaced by ancient philosophy with a large Plato or Aristotle component; PHIL 2220 by history of modern philosophy before 1900. The catalog names no substitute codes; confirm substitutions with the major advisor and adjust the checklist manually. No PHIL x9xx courses or FWS count. Students who entered in fall 2024 or earlier may count one PHIL FWS with advisor guidance; this exception requires manual review. At most four core courses may come from other institutions; the app cannot check course origin.",
+      "slots": [
+        {
+          "id": "ancient",
+          "label": "PHIL 2200 or ancient philosophy equivalent",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "codes": [
+                "PHIL 2200"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "modern",
+          "label": "PHIL 2220 or modern philosophy equivalent",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "codes": [
+                "PHIL 2220"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "upper1",
+          "label": "Philosophy 2000+",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "upper2",
+          "label": "Philosophy 2000+",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "upper3",
+          "label": "Philosophy 2000+",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "upper4",
+          "label": "Philosophy 2000+",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "any1",
+          "label": "Philosophy at any level",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "any2",
+          "label": "Philosophy at any level",
+          "rule": [
+            {
+              "subjects": [
+                "PHIL"
+              ],
+              "excludeNumberPattern": [
+                "x9xx"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Core credits",
+          "credits": 24
+        },
+        {
+          "type": "minCount",
+          "label": "2000+ courses",
+          "count": 6,
+          "match": {
+            "minLevel": 2000
+          }
+        },
+        {
+          "type": "minCount",
+          "label": "3000+ courses",
+          "count": 3,
+          "match": {
+            "minLevel": 3000
+          }
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Philosophy Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Two courses totaling at least 6 credits in philosophy or related subjects. Courses outside PHIL require major-advisor approval, which the app cannot verify. The catalog states the x9xx exclusion for the eight core courses only. FWS are excluded under the college rule.",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "Philosophy or advisor-approved related course",
+          "rule": [
+            {
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Philosophy or advisor-approved related course",
+          "rule": [
+            {
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Elective credits",
+          "credits": 6
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}
