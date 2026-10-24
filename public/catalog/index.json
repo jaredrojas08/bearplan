@@ -288,12 +288,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "communication-bs",
-  "kind": "major",
-  "name": "Communication (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "communications-minor",
   "kind": "minor",
   "name": "Communication",
