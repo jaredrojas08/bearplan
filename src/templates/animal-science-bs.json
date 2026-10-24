@@ -1,0 +1,2023 @@
+{
+  "id": "animal-science-bs",
+  "name": "Animal Science (BS)",
+  "college": "CALS (2025+ distributions)",
+  "source": "https://catalog.cornell.edu/programs/animal-science-bs/",
+  "matriculatedFrom": "FA25",
+  "repeatableCodes": [
+    "ANSC 4970",
+    "ANSC 4990"
+  ],
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, plus 100 letter-graded and 105 structured credits. Confirm with your advisor.",
+  "footnote": "Major courses require D- or better; at most 6 S/U or non-graded credits count. Pre-Veterinary Medicine instead requires C- or better in all major coursework and a cumulative GPA of 2.8. Grade thresholds and the S/U cap need advisor review. No course may fill two major requirements, except ANSC 2500 for core Animal Management and the Dairy prerequisite. ANSC cross-listed courses count toward the 36-credit minimum; use the ANSC code when available. Cornell credit origin is not tracked. At most 6 of the 36 ANSC credits may overlap another major and 3 may overlap a minor. AP, IB and dual-enrollment credits cannot satisfy core coursework; advisor-approved credits may satisfy concentrations. Transfer substitutions require CALS acceptance, a degree-audit entry and advisor/department approval; ANSC/BIOAP substitutions require petition review. Sophomore transfers need 36 Cornell Animal Science credits and may petition to replace one core science and Animal Management course. Junior transfers need 26 Cornell ANSC credits, waive ANSC 1101, ANSC 1105 and Ethics, complete three of the four core sciences, and arrange concentration waivers with their advisor. Both may substitute approved transferred statistics and sustainability courses. Transfer ANSC credits do not count toward Cornell ANSC minimums. Declare one concentration with faculty advisor approval at the end of the second year. Internal transfers must first earn C or better in BIOAP 1100, ANSC 2120, ANSC 2210 or ANSC 2400. Optional BS/DVM pathway: complete university, college and core requirements, including BIOAP 1100 for transfers; 108 academic credits before senior year; 33 Animal Science credits with at most 3 Special Studies credits; CVM acceptance; advisor-planned concentration; at most 12 first-semester professional credits toward 120 (within the 60-transfer-credit limit). Consult CALS and faculty advisors early in sophomore year and apply in junior year. Transfer and accelerated-pathway exceptions are notes, not automatic checklist adjustments.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "flask"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "F"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "title": "Core Coursework",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "foundation1",
+          "label": "ANSC 1101",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 1101"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "foundation2",
+          "label": "ANSC 1105",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 1105"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "foundation3",
+          "label": "BIOAP 1100",
+          "rule": [
+            {
+              "codes": [
+                "BIOAP 1100"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "foundation4",
+          "label": "ANSC 2120",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2120"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "foundation5",
+          "label": "ANSC 2210",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2210"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "foundation6",
+          "label": "ANSC 2400",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2400"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "management",
+          "label": "Fundamentals of Animal Management",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2500",
+                "ANSC 2650",
+                "ANSC 3000",
+                "ANSC 3450",
+                "ANSC 3600",
+                "ANSC 3800"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ethics",
+          "label": "Ethics and Animal Welfare",
+          "rule": [
+            {
+              "codes": [
+                "ANSC 3100",
+                "ANSC 4140"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "statistics",
+          "label": "Statistics",
+          "rule": [
+            {
+              "codes": [
+                "AEM 2100",
+                "STSCI 2100",
+                "STSCI 2150",
+                "STSCI 2200"
+              ]
+            },
+            {
+              "distributions": [
+                "DLS-AG"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sustainability",
+          "label": "Sustainability Challenges",
+          "rule": [
+            {
+              "codes": [
+                "AEM 1500",
+                "ANSC 1120",
+                "ANSC 2000",
+                "ANSC 4120",
+                "ANSC 4880",
+                "BIOEE 4690",
+                "EAS 1108",
+                "ENTOM 3440",
+                "FDSC 1200",
+                "GDEV 2300",
+                "NS 4450",
+                "NTRES 1101",
+                "NTRES 2010",
+                "NTRES 3240",
+                "NTRES 3250",
+                "NTRES 4600",
+                "PLSCI 1900",
+                "PLSCI 2400",
+                "PLSCI 4730"
+              ]
+            },
+            {
+              "distributions": [
+                "SCH-AG"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "30 core credits. DLS-AG statistics courses and SCH-AG courses also qualify for the corresponding rows. ANSC 1101 and ANSC 1105 are waived for transfers; other transfer waivers require advisor review.",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "30 credits minimum",
+          "credits": 30
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requiresConcentration": true,
+  "concentrations": [
+    {
+      "id": "pre-veterinary-medicine",
+      "name": "Pre-Veterinary Medicine",
+      "sections": [
+        {
+          "id": "vet-biology",
+          "title": "Biology Requisites",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "BIOMG-1350",
+              "label": "BIOMG 1350",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOMG 1350"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "BIOG-1500",
+              "label": "BIOG 1500",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOG 1500"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Maintain a cumulative GPA of at least 2.8 and C- or better in all major coursework. An approved transferred general biology course with lab (at least 4 credits, one semester or two quarters) may substitute."
+        },
+        {
+          "id": "vet-advanced",
+          "title": "Advanced Courses in Animal Science",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 11,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 3000",
+                "ANSC 3300",
+                "ANSC 3400",
+                "ANSC 3410",
+                "ANSC 3450",
+                "ANSC 3540",
+                "ANSC 3700",
+                "ANSC 3920",
+                "ANSC 4310",
+                "ANSC 4270",
+                "ANSC 4410",
+                "ANSC 4500",
+                "ANSC 3550",
+                "ANSC 4110",
+                "ANSC 4200",
+                "ANSC 4280"
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "codes": [
+                "ANSC 3000",
+                "ANSC 3300",
+                "ANSC 3400",
+                "ANSC 3410",
+                "ANSC 3450",
+                "ANSC 3540",
+                "ANSC 3700",
+                "ANSC 3920",
+                "ANSC 4310",
+                "ANSC 4270",
+                "ANSC 4410",
+                "ANSC 4500"
+              ]
+            },
+            {
+              "id": "nutrition",
+              "name": "Nutrition",
+              "codes": [
+                "ANSC 3550",
+                "ANSC 4110",
+                "ANSC 4200",
+                "ANSC 4280"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "groupCredits",
+              "label": "6 physiology credits",
+              "group": "physiology",
+              "credits": 6
+            },
+            {
+              "type": "groupCredits",
+              "label": "3 nutrition credits",
+              "group": "nutrition",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "vet-chemistry",
+          "title": "General and Organic Chemistry",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "CHEM-2070",
+              "label": "CHEM 2070",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2070"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CHEM-2071",
+              "label": "CHEM 2071",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2071"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CHEM-2080",
+              "label": "CHEM 2080",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2080"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CHEM-2081",
+              "label": "CHEM 2081",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2081"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CHEM-3570",
+              "label": "CHEM 3570",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 3570"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "groupCredits",
+              "label": "8 general chemistry and lab credits",
+              "group": "general",
+              "credits": 8
+            },
+            {
+              "type": "groupCredits",
+              "label": "3 organic chemistry credits",
+              "group": "organic",
+              "credits": 3
+            }
+          ],
+          "note": "Two general chemistry courses with labs (8 credits) and at least 3 organic chemistry credits. CHEM 3580 and CHEM 2510 are recommended for veterinary-school prerequisites.",
+          "groups": [
+            {
+              "id": "general",
+              "name": "General Chemistry and Lab",
+              "codes": [
+                "CHEM 2070",
+                "CHEM 2071",
+                "CHEM 2080",
+                "CHEM 2081"
+              ]
+            },
+            {
+              "id": "organic",
+              "name": "Organic Chemistry",
+              "codes": [
+                "CHEM 3570"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vet-biochemistry",
+          "title": "Biochemistry",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "BIOMG-3310",
+              "label": "BIOMG 3310",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOMG 3310"
+                  ]
+                }
+              ],
+              "option": "Option 1"
+            },
+            {
+              "id": "BIOMG-3320",
+              "label": "BIOMG 3320",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOMG 3320"
+                  ]
+                }
+              ],
+              "option": "Option 1"
+            },
+            {
+              "id": "BIOMG-3300",
+              "label": "BIOMG 3300",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOMG 3300"
+                  ]
+                }
+              ],
+              "option": "Option 2"
+            },
+            {
+              "id": "NS-3200",
+              "label": "NS 3200",
+              "rule": [
+                {
+                  "codes": [
+                    "NS 3200"
+                  ]
+                }
+              ],
+              "option": "Option 3"
+            },
+            {
+              "id": "BIOMG-3350",
+              "label": "BIOMG 3350",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOMG 3350"
+                  ]
+                }
+              ],
+              "option": "Option 4"
+            }
+          ],
+          "note": "At least 4 credits. The two-semester BIOMG 3310 and BIOMG 3320 sequence is recommended; veterinary-school prerequisites vary.",
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "4 credits minimum",
+              "credits": 4
+            }
+          ]
+        },
+        {
+          "id": "vet-life-sciences",
+          "title": "Advanced Life Sciences",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOAP 3110",
+                    "BIOAP 3190",
+                    "BIOAP 4130",
+                    "BIOEE 4700",
+                    "BIOMG 3850",
+                    "BIOMI 2900",
+                    "BIOMI 2911",
+                    "BIOMS 3160",
+                    "NS 3410"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vet-physics",
+          "title": "Physics I and II with Lab",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "PHYS-2207",
+              "label": "PHYS 2207",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 2207"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "PHYS-2208",
+              "label": "PHYS 2208",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 2208"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dairy-management",
+      "name": "Dairy Management",
+      "sections": [
+        {
+          "id": "dairy-core",
+          "title": "Dairy Management Requisites",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "prerequisite",
+              "label": "ANSC 2500 prerequisite",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 2500"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "reproduction-data",
+              "label": "ANSC 3450 / ANSC 4040",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 3450",
+                    "ANSC 4040"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ANSC-3510",
+              "label": "ANSC 3510",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 3510"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ANSC-3540",
+              "label": "ANSC 3540",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 3540"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ANSC-3550",
+              "label": "ANSC 3550",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 3550"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ANSC-4510",
+              "label": "ANSC 4510",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 4510"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ANSC-4560",
+              "label": "ANSC 4560",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 4560"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ALS-3020",
+              "label": "ALS 3020",
+              "rule": [
+                {
+                  "codes": [
+                    "ALS 3020"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CHEM-1560",
+              "label": "CHEM 1560",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1560"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "CHEM-1561",
+              "label": "CHEM 1561",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1561"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "ANSC 2500 is a required prerequisite and may also meet core Animal Management. The app cannot share one course between two major rows; confirm the shared core row manually with your advisor. The Dairy Fellows Program provides engaged and applied dairy-industry experiences."
+        },
+        {
+          "id": "dairy-economics",
+          "title": "Economics/Finance",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course1",
+              "label": "Select course 1",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 1200",
+                    "AEM 1500",
+                    "AEM 2210",
+                    "AEM 2220",
+                    "AEM 2241",
+                    "ALS 2050",
+                    "ECON 1110",
+                    "ECON 1120",
+                    "HADM 2230",
+                    "HADM 2250"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "course2",
+              "label": "Select course 2",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 1200",
+                    "AEM 1500",
+                    "AEM 2210",
+                    "AEM 2220",
+                    "AEM 2241",
+                    "ALS 2050",
+                    "ECON 1110",
+                    "ECON 1120",
+                    "HADM 2230",
+                    "HADM 2250"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dairy-elective",
+          "title": "Additional Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 2011",
+                    "AEM 2310",
+                    "AEM 2400",
+                    "AEM 2480",
+                    "AEM 2820",
+                    "AEM 2830",
+                    "AEM 2850",
+                    "AEM 3040",
+                    "ALS 1110",
+                    "ANSC 4110",
+                    "ANSC 4120",
+                    "ANSC 4880",
+                    "HADM 4150",
+                    "ILRHR 2600",
+                    "NBA 3000",
+                    "PLSCI 2110",
+                    "PLSCI 2200",
+                    "PLSCI 2600",
+                    "PLSCI 3030",
+                    "PLSCI 3150",
+                    "PLSCI 3210"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "PLSCI 3210 requires PLSCI 1900 or PLSCI 2600. HADM 4150 has no title in the catalog table."
+        }
+      ]
+    },
+    {
+      "id": "animal-ecology-conservation",
+      "name": "Animal Ecology and Conservation",
+      "sections": [
+        {
+          "id": "ecology-foundations",
+          "title": "Foundational Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOEE 1610",
+                    "BIOEE 1780",
+                    "BIOSM 1610",
+                    "BIOSM 1780"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "BIOSM 1780 has no title in the catalog table."
+        },
+        {
+          "id": "ecology-physiology",
+          "title": "Core Physiological Principles",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 12,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2300",
+                "ANSC 3000",
+                "ANSC 3300",
+                "ANSC 3400",
+                "ANSC 3410",
+                "ANSC 3700",
+                "ANSC 3920",
+                "ANSC 4200",
+                "ANSC 4270",
+                "ANSC 4280",
+                "ANSC 4310",
+                "ANSC 4410",
+                "ANSC 4500"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ecology-diversity",
+          "title": "Species Diversity and Evolution",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 5,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 1130",
+                "BIOEE 1780",
+                "BIOEE 2740",
+                "BIOEE 3730",
+                "BIOEE 4530",
+                "BIOEE 4700",
+                "BIOEE 4750",
+                "BIOEE 4751",
+                "BIOSM 1640",
+                "BIOSM 1650",
+                "BIOSM 2780",
+                "BIOSM 3210",
+                "BIOSM 3450",
+                "BIOSM 3740",
+                "BIOSM 4650",
+                "ENTOM 2030",
+                "ENTOM 2120",
+                "ENTOM 3310",
+                "ENTOM 3311"
+              ]
+            }
+          ],
+          "note": "ENTOM 3310 and ENTOM 3311 must be taken together when used here; the app does not enforce this pair."
+        },
+        {
+          "id": "ecology-ecosystem",
+          "title": "Ecosystem and Conservation",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 3,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 4880",
+                "BIOEE 3610",
+                "BIOEE 4660",
+                "BIOEE 4780",
+                "BIOMI 3500",
+                "BIOSM 2800",
+                "BIOSM 3750",
+                "EAS 2680",
+                "NTRES 2010",
+                "NTRES 3220",
+                "NTRES 4600"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ecology-chemistry",
+          "title": "General Chemistry and Lab",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "CHEM-1560",
+              "label": "CHEM 1560",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1560"
+                  ]
+                }
+              ],
+              "option": "CHEM 1560 + CHEM 1561"
+            },
+            {
+              "id": "CHEM-1561",
+              "label": "CHEM 1561",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1561"
+                  ]
+                }
+              ],
+              "option": "CHEM 1560 + CHEM 1561"
+            },
+            {
+              "id": "CHEM-2070",
+              "label": "CHEM 2070",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2070"
+                  ]
+                }
+              ],
+              "option": "CHEM 2070 + CHEM 2071"
+            },
+            {
+              "id": "CHEM-2071",
+              "label": "CHEM 2071",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2071"
+                  ]
+                }
+              ],
+              "option": "CHEM 2070 + CHEM 2071"
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "4 credits minimum",
+              "credits": 4
+            }
+          ]
+        },
+        {
+          "id": "ecology-physical",
+          "title": "Organic Chemistry or Physics",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1570",
+                    "CHEM 3570",
+                    "EAS 1600",
+                    "PHYS 1203"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "3 credits minimum",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "ecology-economics",
+          "title": "Economics/Finance",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 1200",
+                    "AEM 1500",
+                    "AEM 2210",
+                    "AEM 2220",
+                    "ALS 2050",
+                    "ECON 1110",
+                    "ECON 1120",
+                    "HADM 2230"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ecology-laboratory",
+          "title": "Applied Laboratory and Research Techniques",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "constraints": [
+            {
+              "type": "maxCredits",
+              "label": "At most 3 research credits",
+              "credits": 3,
+              "match": {
+                "numberPattern": [
+                  "4990"
+                ]
+              },
+              "reason": "No more than 3 research credits count in this category"
+            }
+          ],
+          "note": "4990 research in any department counts, with faculty advisor approval. At most 3 research credits may count.",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 2410",
+                    "ANSC 4020",
+                    "ANSC 4310",
+                    "ANSC 4990",
+                    "BIOG 1500",
+                    "BIOEE 3611",
+                    "BIOMI 2911",
+                    "BIOMG 4810",
+                    "BIOSM 1500",
+                    "BIOSM 2350",
+                    "BIOSM 2450",
+                    "BIOSM 3750",
+                    "ENTOM 3030",
+                    "NTRES 2100",
+                    "NTRES 2400",
+                    "NTRES 3100",
+                    "NTRES 3150",
+                    "NTRES 3400",
+                    "NTRES 4100",
+                    "NTRES 4120"
+                  ]
+                },
+                {
+                  "numberPattern": [
+                    "4990"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applied-animal-biology-management",
+      "name": "Applied Animal Biology and Management",
+      "sections": [
+        {
+          "id": "applied-nutrition",
+          "title": "Nutrition",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "ANSC 3550",
+                    "ANSC 4110",
+                    "ANSC 4200",
+                    "ANSC 4280"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "applied-physiology",
+          "title": "Physiology",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 5,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 3000",
+                "ANSC 3300",
+                "ANSC 3400",
+                "ANSC 3410",
+                "ANSC 3700",
+                "ANSC 3920",
+                "ANSC 4270",
+                "ANSC 4310",
+                "ANSC 4410",
+                "ANSC 4500"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "applied-management",
+          "title": "Animal Management",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 9,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 1130",
+                "ANSC 2100",
+                "ANSC 2300",
+                "ANSC 2500",
+                "ANSC 2650",
+                "ANSC 3000",
+                "ANSC 3100",
+                "ANSC 3310",
+                "ANSC 3450",
+                "ANSC 3500",
+                "ANSC 3510",
+                "ANSC 3540",
+                "ANSC 3600",
+                "ANSC 3800",
+                "ANSC 4120"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "applied-chemistry",
+          "title": "General Chemistry and Lab",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "CHEM-1560",
+              "label": "CHEM 1560",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1560"
+                  ]
+                }
+              ],
+              "option": "CHEM 1560 + CHEM 1561"
+            },
+            {
+              "id": "CHEM-1561",
+              "label": "CHEM 1561",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1561"
+                  ]
+                }
+              ],
+              "option": "CHEM 1560 + CHEM 1561"
+            },
+            {
+              "id": "CHEM-2070",
+              "label": "CHEM 2070",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2070"
+                  ]
+                }
+              ],
+              "option": "CHEM 2070 + CHEM 2071"
+            },
+            {
+              "id": "CHEM-2071",
+              "label": "CHEM 2071",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2071"
+                  ]
+                }
+              ],
+              "option": "CHEM 2070 + CHEM 2071"
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "4 credits minimum",
+              "credits": 4
+            }
+          ]
+        },
+        {
+          "id": "applied-physical",
+          "title": "Organic Chemistry or Physics",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1570",
+                    "CHEM 3570",
+                    "EAS 1600",
+                    "PHYS 1203"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "3 credits minimum",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "applied-economics",
+          "title": "Economics/Finance",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 1200",
+                    "AEM 1500",
+                    "AEM 2210",
+                    "AEM 2220",
+                    "ALS 2050",
+                    "ALS 3020",
+                    "ECON 1110",
+                    "ECON 1120",
+                    "HADM 2230"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "applied-elective",
+          "title": "Additional Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOEE 1610",
+                    "BIOEE 1780",
+                    "BIOEE 2740",
+                    "BIOEE 4700",
+                    "BIOEE 4750",
+                    "BIOMI 2900",
+                    "BIOSM 1500",
+                    "BIOSM 1610",
+                    "BIOSM 1780",
+                    "EAS 1600",
+                    "ENTOM 2030",
+                    "ENTOM 2120",
+                    "FDSC 2000",
+                    "NS 1150",
+                    "NS 2750",
+                    "NS 3410",
+                    "NTRES 1101",
+                    "NTRES 2010",
+                    "NTRES 2100",
+                    "NTRES 2201",
+                    "PLSCI 1101",
+                    "PLSCI 1115",
+                    "PLSCI 2410",
+                    "PLSCI 2600",
+                    "PLSCI 3440"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "BIOSM 1780 and NS 2750 have no titles in the catalog table."
+        }
+      ]
+    },
+    {
+      "id": "integrative-physiology-nutrition",
+      "name": "Integrative Physiology and Nutrition",
+      "sections": [
+        {
+          "id": "integrative-advanced",
+          "title": "Animal Physiology and Nutrition",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 12,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 3000",
+                "ANSC 3300",
+                "ANSC 3400",
+                "ANSC 3410",
+                "ANSC 3450",
+                "ANSC 3700",
+                "ANSC 3920",
+                "ANSC 4270",
+                "ANSC 4310",
+                "ANSC 4410",
+                "ANSC 4500",
+                "ANSC 3550",
+                "ANSC 4110",
+                "ANSC 4200",
+                "ANSC 4280"
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "codes": [
+                "ANSC 3000",
+                "ANSC 3300",
+                "ANSC 3400",
+                "ANSC 3410",
+                "ANSC 3450",
+                "ANSC 3700",
+                "ANSC 3920",
+                "ANSC 4270",
+                "ANSC 4310",
+                "ANSC 4410",
+                "ANSC 4500"
+              ]
+            },
+            {
+              "id": "nutrition",
+              "name": "Nutrition",
+              "codes": [
+                "ANSC 3550",
+                "ANSC 4110",
+                "ANSC 4200",
+                "ANSC 4280"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "groupCredits",
+              "label": "3 physiology credits",
+              "group": "physiology",
+              "credits": 3
+            },
+            {
+              "type": "groupCredits",
+              "label": "3 nutrition credits",
+              "group": "nutrition",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "integrative-chemistry",
+          "title": "General Chemistry and Lab",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "CHEM-1560",
+              "label": "CHEM 1560",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1560"
+                  ]
+                }
+              ],
+              "option": "CHEM 1560 + CHEM 1561"
+            },
+            {
+              "id": "CHEM-1561",
+              "label": "CHEM 1561",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1561"
+                  ]
+                }
+              ],
+              "option": "CHEM 1560 + CHEM 1561"
+            },
+            {
+              "id": "CHEM-2070",
+              "label": "CHEM 2070",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2070"
+                  ]
+                }
+              ],
+              "option": "CHEM 2070 + CHEM 2071"
+            },
+            {
+              "id": "CHEM-2071",
+              "label": "CHEM 2071",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 2071"
+                  ]
+                }
+              ],
+              "option": "CHEM 2070 + CHEM 2071"
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "4 credits minimum",
+              "credits": 4
+            }
+          ]
+        },
+        {
+          "id": "integrative-physical",
+          "title": "Organic Chemistry or Physics",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "CHEM 1570",
+                    "CHEM 3570",
+                    "EAS 1600",
+                    "PHYS 1203"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "3 credits minimum",
+              "credits": 3
+            }
+          ]
+        },
+        {
+          "id": "integrative-economics",
+          "title": "Economics/Finance",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "AEM 1200",
+                    "AEM 1500",
+                    "AEM 2210",
+                    "AEM 2220",
+                    "ALS 2050",
+                    "ECON 1110",
+                    "ECON 1120",
+                    "HADM 2230",
+                    "ANSC 2410",
+                    "ANSC 3310",
+                    "ANSC 4020",
+                    "ANSC 4310",
+                    "ANSC 4990",
+                    "BIOG 1500",
+                    "BIOAP 3190",
+                    "BIOMI 2911",
+                    "BIOEE 3611",
+                    "BIOMG 4810",
+                    "ENTOM 3030",
+                    "NTRES 2100",
+                    "NTRES 3100",
+                    "NTRES 3150",
+                    "NTRES 3400"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "integrative-laboratory",
+          "title": "Applied Laboratory and Research Techniques",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 5,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2410",
+                "ANSC 3310",
+                "ANSC 4020",
+                "ANSC 4310",
+                "ANSC 4990",
+                "BIOG 1500",
+                "BIOAP 3190",
+                "BIOMI 2911",
+                "BIOEE 3611",
+                "BIOMG 4810",
+                "ENTOM 3030",
+                "NTRES 2100",
+                "NTRES 3100",
+                "NTRES 3150",
+                "NTRES 3400"
+              ]
+            },
+            {
+              "numberPattern": [
+                "4990"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "maxCredits",
+              "label": "At most 3 research credits",
+              "credits": 3,
+              "match": {
+                "numberPattern": [
+                  "4990"
+                ]
+              },
+              "reason": "No more than 3 research credits count in this category"
+            }
+          ],
+          "note": "4990 research in any department counts, with faculty advisor approval. At most 3 research credits may count."
+        },
+        {
+          "id": "integrative-elective",
+          "title": "Additional Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "flask",
+          "type": "slots",
+          "slots": [
+            {
+              "id": "course",
+              "label": "Select one course",
+              "rule": [
+                {
+                  "codes": [
+                    "BIOEE 1610",
+                    "BIOEE 1780",
+                    "BIOEE 2740",
+                    "BIOEE 4700",
+                    "BIOEE 4750",
+                    "BIOMI 2900",
+                    "BIOSM 1500",
+                    "BIOSM 1610",
+                    "BIOSM 1780",
+                    "EAS 1600",
+                    "ENTOM 2030",
+                    "ENTOM 2120",
+                    "FDSC 2000",
+                    "NS 1150",
+                    "NS 2750",
+                    "NS 3410",
+                    "NTRES 1101",
+                    "NTRES 2010",
+                    "NTRES 2100",
+                    "NTRES 2201",
+                    "PLSCI 1101",
+                    "PLSCI 1115",
+                    "PLSCI 2410",
+                    "PLSCI 3440",
+                    "PLSCI 2600"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "BIOSM 1780 and NS 2750 have no titles in the catalog table."
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "animal-credits",
+      "title": "Animal Science Credits",
+      "credits": 36,
+      "match": [
+        {
+          "subjects": [
+            "ANSC"
+          ]
+        },
+        {
+          "codes": [
+            "BIOAP 1100"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs 36 Animal Science credits, including BIOAP 1100 and ANSC cross-listings. Verify Cornell origin and unlisted cross-listings with your advisor."
+    },
+    {
+      "id": "animal-non-special",
+      "title": "Animal Science Credits Outside Special Studies",
+      "credits": 33,
+      "match": [
+        {
+          "subjects": [
+            "ANSC"
+          ],
+          "excludeCodes": [
+            "ANSC 4960",
+            "ANSC 4970",
+            "ANSC 4980",
+            "ANSC 4990"
+          ]
+        },
+        {
+          "codes": [
+            "BIOAP 1100"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "Needs 33 credits outside ANSC 4960, 4970, 4980 and 4990 so at most 3 Special Studies credits contribute to the 36-credit minimum."
+    },
+    {
+      "id": "afs",
+      "title": "Agriculture, Food Systems & Nutrition",
+      "match": [
+        {
+          "distributions": [
+            "AFS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one AFS-AG course of 3+ credits."
+    },
+    {
+      "id": "bsc",
+      "title": "Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one BSC-AG course of 3+ credits (BIO-AG and BIO-AS don't count)."
+    },
+    {
+      "id": "psc",
+      "title": "Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one PSC-AG course of 3+ credits."
+    },
+    {
+      "id": "sch",
+      "title": "Sustainability Challenges",
+      "match": [
+        {
+          "distributions": [
+            "SCH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one SCH-AG course of 3+ credits."
+    },
+    {
+      "id": "eth",
+      "title": "Ethics",
+      "match": [
+        {
+          "distributions": [
+            "ETH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one ETH-AG course of 3+ credits (KCM doesn't count)."
+    },
+    {
+      "id": "diversity",
+      "title": "Human Diversity",
+      "match": [
+        {
+          "distributions": [
+            "D",
+            "SCD-AS",
+            "SCD-HA"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one D-AG course of 3+ credits (SCD-AS, SCD-HA and D-HE also count)."
+    },
+    {
+      "id": "dls",
+      "title": "Data Literacy: Statistics",
+      "match": [
+        {
+          "distributions": [
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one DLS-AG course."
+    },
+    {
+      "id": "dl2",
+      "title": "Data Literacy: Second",
+      "match": [
+        {
+          "distributions": [
+            "DLG",
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs a second data literacy course, DLG-AG or DLS-AG."
+    },
+    {
+      "id": "csh",
+      "title": "Cultural, Social & Historical",
+      "match": [
+        {
+          "distributions": [
+            "CA",
+            "FL",
+            "HA",
+            "LA",
+            "SBA",
+            "ALC-AS",
+            "ALC-HA",
+            "ALC-AAP",
+            "GLC-AS",
+            "HST-AS",
+            "HST-HA",
+            "HST-AAP",
+            "SSC-AS",
+            "SSC-AAP"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "count": 2,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs two courses from CA, FL, HA, LA or SBA, each from a different category (the app doesn't check that they differ)."
+    },
+    {
+      "id": "writing",
+      "title": "Written & Oral Expression",
+      "match": [
+        {
+          "distributions": [
+            "WRT",
+            "ORL",
+            "FWS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ]
+        }
+      ],
+      "credits": 9,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs 9 credits of writing (FWS or WRT-AG), at least 6 written; one ORL-AG course may count."
+    },
+    {
+      "id": "e3",
+      "title": "E3 Learning Milestone",
+      "match": [
+        {
+          "distributions": [
+            "EEE"
+          ]
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs an EEE-AG or community-engaged course, or an advisor-approved internship, research or non-course experience."
+    },
+    {
+      "id": "cals-credits",
+      "title": "CALS Credits",
+      "match": [
+        {
+          "subjects": [
+            "AGSCI",
+            "AIIS",
+            "ALS",
+            "ANSC",
+            "BEE",
+            "BIOG",
+            "BIOAP",
+            "BIOCB",
+            "BIOEE",
+            "BIOMG",
+            "BIOMI",
+            "BIOMS",
+            "BIONB",
+            "BIOSM",
+            "COMM",
+            "EAS",
+            "EDUC",
+            "ENTOM",
+            "ENVS",
+            "FDSC",
+            "GDEV",
+            "INFO",
+            "LA",
+            "LEAD",
+            "NS",
+            "NTRES",
+            "PLSCI",
+            "STSCI",
+            "VIEN"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "credits": 75,
+      "metText": "satisfied by {code}",
+      "missText": "needs 75 credits of CALS courses (INFO counts; AEM doesn't for non-AEM majors; up to two FWS also count, which the app doesn't add)."
+    }
+  ]
+}

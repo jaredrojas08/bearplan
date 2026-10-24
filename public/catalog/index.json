@@ -48,12 +48,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "animal-science-bs",
-  "kind": "major",
-  "name": "Animal Science (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "animal-science-minor",
   "kind": "minor",
   "name": "Animal Science",
