@@ -572,6 +572,12 @@ export function withConcentrations(template: Template, chosen: string[] = []): T
   return extra.length ? { ...template, sections: [...template.sections, ...extra] } : template
 }
 
+// A check scoped to a section from an unchosen concentration can never be met, so it doesn't apply.
+function applicableChecks(template: Template): Template {
+  const ids = new Set(template.sections.map((s) => s.id))
+  return { ...template, checks: template.checks.filter((c) => !c.section || ids.has(c.section)) }
+}
+
 export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanSummary {
   const sections = template.sections.map((s) => evaluateSection(plan, s, today))
 
@@ -619,7 +625,7 @@ export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanS
     totalUnits: counts.done + counts.prog + counts.plan + counts.empty,
     credits: { ...credits, total: credits.done + credits.prog + credits.plan, required: template.totalCredits ?? null },
     whatsLeft,
-    checks: [...evaluateChecks(plan, template), ...minorUniqueChecks(plan, template)],
+    checks: [...evaluateChecks(plan, applicableChecks(template)), ...minorUniqueChecks(plan, template)],
     warnings: courseWarnings(plan, template),
     terms,
     openByFilter,

@@ -55,4 +55,11 @@ describe('Astronomy (BA)', () => {
     expect(check(plan)?.met).toBe(false)
     expect(check({ ...plan, courses: [{ ...plan.courses[0], placement: 'external' }] })?.met).toBe(true)
   })
+
+  it('only applies the complementary-area check to General Astronomy', () => {
+    const plan: Plan = { ...empty, concentrations: ['astrophysics-concentration'] }
+    const ids = evaluatePlan(plan, astrophysics, new Date(2026, 9, 1)).checks.map((c) => c.check.id)
+    expect(ids).not.toContain('external-upper')
+    expect(evaluatePlan(plan, general, new Date(2026, 9, 1)).checks.map((c) => c.check.id)).toContain('external-upper')
+  })
 })
