@@ -216,12 +216,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "china-asia-pacific-studies-ba",
-  "kind": "major",
-  "name": "China and Asia-Pacific Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "china-asia-pacific-studies-minor",
   "kind": "minor",
   "name": "China and Asia-Pacific Studies",
@@ -268,12 +262,6 @@
   "kind": "minor",
   "name": "Community Food Systems",
   "college": "College of Agriculture and Life Sciences"
- },
- {
-  "id": "comparative-literature-ba",
-  "kind": "major",
-  "name": "Comparative Literature (BA)",
-  "college": "College of Arts and Sciences"
  },
  {
   "id": "comparative-literature-minor",
@@ -726,12 +714,6 @@
   "college": "Cornell University"
  },
  {
-  "id": "italian-ba",
-  "kind": "major",
-  "name": "Italian (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "italian-minor",
   "kind": "minor",
   "name": "Italian",
@@ -1089,12 +1071,6 @@
   "id": "southeast-asian-studies-minor",
   "kind": "minor",
   "name": "Southeast Asian Studies",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "spanish-ba",
-  "kind": "major",
-  "name": "Spanish (BA)",
   "college": "College of Arts and Sciences"
  },
  {
