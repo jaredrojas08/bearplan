@@ -1,3 +1,4 @@
+import archaeologyTemplate from '../templates/archaeology-ba.json'
 import globalDevelopmentTemplate from '../templates/global-development-bs.json'
 import globalDevelopmentPre2025Template from '../templates/global-development-bs-cals-pre2025.json'
 import communicationTemplate from '../templates/communication-bs.json'
@@ -9,9 +10,26 @@ import businessMinor from '../templates/business-minor.json'
 import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
+import cognitiveScienceTemplate from '../templates/cognitive-science-ba.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
+import astronomyTemplate from '../templates/astronomy-ba.json'
+import asianStudiesTemplate from '../templates/asian-studies-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
 import nearEasternStudiesTemplate from '../templates/near-eastern-studies-ba.json'
+import latinaOStudiesTemplate from '../templates/latina-o-studies-ba.json'
+import historyArtTemplate from '../templates/history-art-ba.json'
+import physicsTemplate from '../templates/physics-ba.json'
+import jewishStudiesTemplate from '../templates/jewish-studies-ba.json'
+import germanStudiesTemplate from '../templates/german-studies-ba.json'
+import musicTemplate from '../templates/music-ba.json'
+import stsTemplate from '../templates/science-technology-studies-ba.json'
+import religiousStudiesTemplate from '../templates/religious-studies-ba.json'
+import capsTemplate from '../templates/china-asia-pacific-studies-ba.json'
+import spanishTemplate from '../templates/spanish-ba.json'
+import italianTemplate from '../templates/italian-ba.json'
+import comparativeLiteratureTemplate from '../templates/comparative-literature-ba.json'
+import africanaTemplate from '../templates/africana-studies-ba.json'
+import classicsTemplate from '../templates/classics-ba.json'
 import anthropologyTemplate from '../templates/anthropology-ba.json'
 import linguisticsTemplate from '../templates/linguistics-ba.json'
 import sociologyTemplate from '../templates/sociology-ba.json'
@@ -69,6 +87,7 @@ const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
 export const BUILT_IN_TEMPLATES: Template[] = [
+  archaeologyTemplate,
   globalDevelopmentTemplate,
   globalDevelopmentPre2025Template,
   communicationTemplate,
@@ -79,6 +98,23 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   csBaTemplate,
   economicsTemplate,
   nearEasternStudiesTemplate,
+  latinaOStudiesTemplate,
+  historyArtTemplate,
+  astronomyTemplate,
+  physicsTemplate,
+  jewishStudiesTemplate,
+  germanStudiesTemplate,
+  musicTemplate,
+  cognitiveScienceTemplate,
+  stsTemplate,
+  religiousStudiesTemplate,
+  capsTemplate,
+  spanishTemplate,
+  italianTemplate,
+  comparativeLiteratureTemplate,
+  asianStudiesTemplate,
+  africanaTemplate,
+  classicsTemplate,
   anthropologyTemplate,
   linguisticsTemplate,
   sociologyTemplate,

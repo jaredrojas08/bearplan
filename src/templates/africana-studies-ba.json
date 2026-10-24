@@ -1,0 +1,448 @@
+{
+  "id": "africana-studies-ba",
+  "name": "Africana Studies (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/africana-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Major courses require a grade of C or better. Declaration requires a statement of interest, tentative area of study (African, African American, Caribbean or African Diaspora), transcript and proposed Africana faculty advisor, reviewed by the director of undergraduate studies. Double majors must fulfill both majors in full. African language study is recommended, not required; jumpstart Swahili does not fulfill the language requirement. Optional honors requires a library research thesis, 3.5 Africana Studies GPA and 3.0 overall GPA, a thesis chair and minor member, a written request to the director by April of junior year, and Honors Committee evaluation and approval. These honors criteria apply starting with 2026-27 graduates.",
+  "sections": [
+    {
+      "id": "major",
+      "title": "Africana Studies Major",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 36,
+      "letterGrade": true,
+      "rule": [
+        {
+          "subjects": [
+            "ASRC"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "ASRC courses",
+          "count": 10,
+          "match": {
+            "subjects": [
+              "ASRC"
+            ]
+          }
+        },
+        {
+          "type": "minCount",
+          "label": "Core: ASRC 1500",
+          "count": 1,
+          "match": {
+            "codes": [
+              "ASRC 1500"
+            ]
+          }
+        },
+        {
+          "type": "minCount",
+          "label": "Breadth, focus and seminars: 2000+",
+          "count": 9,
+          "match": {
+            "minLevel": 2000
+          }
+        },
+        {
+          "type": "minCount",
+          "label": "3000-level focus courses",
+          "count": 4,
+          "match": {
+            "minLevel": 3000,
+            "maxLevel": 3999
+          }
+        },
+        {
+          "type": "minCount",
+          "label": "4000+ seminar courses",
+          "count": 2,
+          "match": {
+            "minLevel": 4000
+          }
+        }
+      ],
+      "note": "Allocate distinct courses to ASRC 1500, three 2000+ breadth courses, four 3000-level focus courses and two 4000+ seminars. Each breadth course must fall under African, African-American, Caribbean or other diaspora studies; the page does not specify distinct categories. For focus, choose two African Diaspora topics from History, Literature, Politics, Popular Culture, Race and Inequality, or Gender and Sexuality, with two courses per chosen topic. Topic assignments and seminar status need advisor confirmation: the page supplies no qualifying course lists, and the app checks only course levels. The page says 3000-level for focus, not 3000+. Extra ASRC courses may be needed to reach 36 credits. FWS courses do not count; ENGL 2860 or ENGL 2880 used for FWS cannot fulfill another requirement."
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}

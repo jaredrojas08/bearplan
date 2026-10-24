@@ -1,0 +1,514 @@
+{
+  "id": "italian-ba",
+  "name": "Italian (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/italian-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C+",
+    "C",
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Eight courses are required, each with a letter grade of B- or better; S/U courses do not count. No more than three of the eight may be taken abroad or at an institution other than Cornell; verify this limit with your advisor. Honors is optional and adds thesis research and coursework beyond the major; eligibility requires a major GPA of at least 3.5 and evidence of independent research. Study abroad is encouraged, especially the Bologna Consortial Studies Program.",
+  "sections": [
+    {
+      "id": "core",
+      "title": "Required Coursework",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Approved equivalent courses may replace each required course; the catalog does not list equivalents. ITAL 2203 is offered in Italian in fall; ITAL 2900 is offered in English in spring and has no prerequisites. Preparation: ITAL 1201, ITAL 1202, then ITAL 2201. After ITAL 2201, take eligible 2000-level courses taught in Italian; courses above ITAL 2201 need not be taken in numerical order.",
+      "slots": [
+        {
+          "id": "c1",
+          "label": "ITAL 2202",
+          "rule": [
+            {
+              "codes": [
+                "ITAL 2202"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "ITAL 2203",
+          "rule": [
+            {
+              "codes": [
+                "ITAL 2203"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "ITAL 2900 / ITAL 2204",
+          "rule": [
+            {
+              "codes": [
+                "ITAL 2900",
+                "ITAL 2204"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Italian Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Five electives at the 2000 level or above, normally at least 3 credits each, focused on Italian literature or culture. Courses may be offered in Romance Studies or other departments, including History, Architecture, History of Art, Government, and Sociology; the catalog gives no definitive course list, so confirm eligibility with your advisor. At least one elective must focus on a period before 1800; no more than three electives may be taught in English. Taking as many as possible in Italian is strongly encouraged. If both ITAL 2900 and ITAL 2204 are taken, the second counts here. An ITAL course of 1.5 or 2 credits counts as half a course and must be paired with another 1.5- or 2-credit course; the rows cannot represent those pairs. Verify pairs, historical focus, and teaching language manually.",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "Italian elective",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Italian elective",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "Italian elective",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "label": "Italian elective",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5",
+          "label": "Italian elective",
+          "rule": [
+            {
+              "minLevel": 2000,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}

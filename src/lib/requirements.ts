@@ -469,6 +469,69 @@ function checkFits(check: Check, course: PlanCourse): boolean {
   return !!check.match?.length && ruleFailure(course, check.match) === null
 }
 
+/**
+ * Picks one course per check for a shared group whose checks each need one course.
+ * Tries every allowed set of shared courses and keeps the largest matching, so the
+ * result doesn't depend on the order courses were added.
+ */
+function assignShared(
+  options: PlanCourse[][],
+  keyOf: (course: PlanCourse) => string,
+  limits: { maxUsesPerCourse: number; maxSharedCourses: number },
+): (PlanCourse | null)[] {
+  const fitsCount = new Map<string, number>()
+  for (const list of options) for (const key of new Set(list.map(keyOf))) fitsCount.set(key, (fitsCount.get(key) ?? 0) + 1)
+  const sharable = [...fitsCount].filter(([, n]) => n > 1).map(([key]) => key)
+  // Generated lazily, smallest first, so the search stops at the first set that meets every check.
+  function* combinations(size: number, start = 0, current: string[] = []): Generator<string[]> {
+    if (current.length === size) {
+      yield current
+      return
+    }
+    for (let i = start; i < sharable.length; i++) yield* combinations(size, i + 1, [...current, sharable[i]])
+  }
+  function* sharedSets(): Generator<string[]> {
+    yield []
+    if (limits.maxUsesPerCourse < 2) return
+    for (let size = 1; size <= Math.min(limits.maxSharedCourses, sharable.length); size++) yield* combinations(size)
+  }
+
+  let best: (PlanCourse | null)[] = options.map(() => null)
+  let bestCount = -1
+  for (const shared of sharedSets()) {
+    // Each course offers as many seats as it may be used; checks claim seats by augmenting paths.
+    const seats = (key: string) => (shared.includes(key) ? limits.maxUsesPerCourse : 1)
+    const holder = new Map<string, number>()
+    const pick: (PlanCourse | null)[] = options.map(() => null)
+    const augment = (i: number, seen: Set<string>): boolean => {
+      for (const course of options[i]) {
+        const key = keyOf(course)
+        for (let n = 0; n < seats(key); n++) {
+          const seat = `${key}#${n}`
+          if (seen.has(seat)) continue
+          seen.add(seat)
+          const j = holder.get(seat)
+          if (j === undefined || augment(j, seen)) {
+            holder.set(seat, i)
+            pick[i] = course
+            return true
+          }
+        }
+      }
+      return false
+    }
+    options.forEach((_, i) => augment(i, new Set()))
+    const count = pick.filter(Boolean).length
+    if (count > bestCount) {
+      best = pick
+      bestCount = count
+    }
+    // Sets start with no sharing, so a plan that needs none stops after one pass.
+    if (bestCount === options.length) break
+  }
+  return best
+}
+
 /** Checks read the whole plan, so a course can meet one wherever it sits. */
 function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
   // Copies of a non-repeatable course share one key, so they count once, matching the degree credit total.
@@ -476,31 +539,64 @@ function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
     const code = normalizeCode(course.code)
     return isRepeatable(plan, template, code) ? `uid:${course.uid}` : code
   }
-  const claimed = new Map<string, Set<string>>()
-  return template.checks.map((check) => {
-    const taken = (check.group && claimed.get(check.group)) || new Set<string>()
-    const used: PlanCourse[] = []
-    const usedKeys = new Set<string>()
-    const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
-    const pool = plan.courses.filter((course) => {
+  const poolFor = (check: Check) =>
+    plan.courses.filter((course) => {
       const section = findTarget(template, course.placement)?.section
       if (check.minor && section?.minor !== check.minor) return false
       return !check.section || section?.id === check.section
     })
-    for (const course of pool) {
-      if (enough()) break
-      const key = keyOf(course)
-      if (taken.has(key) || usedKeys.has(key) || !checkFits(check, course)) continue
-      used.push(course)
-      usedKeys.add(key)
-    }
-    if (check.group) claimed.set(check.group, new Set([...taken, ...usedKeys]))
-
-    const met = enough()
+  const describe = (check: Check, used: PlanCourse[]): CheckResult => {
+    const met = check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1)
     const codes = used.map((c) => c.code).join(', ')
     const progress = check.credits !== undefined ? `${sumCredits(used)} / ${check.credits} cr` : `${used.length} / ${check.count ?? 1}`
     const text = met ? check.metText.replace('{code}', codes) : used.length ? `${progress} so far (${codes}), ${check.missText}` : check.missText
     return { check, met, text }
+  }
+
+  // Shared groups of one-course checks are solved exactly; other checks fill in order below.
+  const exact = new Map<string, PlanCourse | null>()
+  for (const [group, limits] of Object.entries(template.checkGroups ?? {})) {
+    const members = template.checks.filter((c) => c.group === group)
+    if (members.length === 0 || members.some((c) => c.credits !== undefined || (c.count ?? 1) !== 1)) continue
+    const options = members.map((c) => {
+      const seen = new Set<string>()
+      return poolFor(c).filter((course) => checkFits(c, course) && !seen.has(keyOf(course)) && !!seen.add(keyOf(course)))
+    })
+    assignShared(options, keyOf, limits).forEach((course, i) => exact.set(members[i].id, course))
+  }
+
+  // How many checks in each group have used each course key.
+  const uses = new Map<string, Map<string, number>>()
+  return template.checks.map((check) => {
+    if (exact.has(check.id)) {
+      const course = exact.get(check.id)
+      return describe(check, course ? [course] : [])
+    }
+    const groupUses = check.group ? (uses.get(check.group) ?? new Map<string, number>()) : new Map<string, number>()
+    const limits = (check.group && template.checkGroups?.[check.group]) || { maxUsesPerCourse: 1, maxSharedCourses: 0 }
+    const shared = () => [...groupUses.values()].filter((n) => n > 1).length
+    const usable = (key: string) => {
+      const n = groupUses.get(key) ?? 0
+      if (!check.group || n === 0) return true
+      // A second use is a shared course, which the group may cap.
+      return n < limits.maxUsesPerCourse && (n > 1 || shared() < limits.maxSharedCourses)
+    }
+    const used: PlanCourse[] = []
+    const usedKeys = new Set<string>()
+    const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
+    const pool = poolFor(check)
+    // Courses not yet used in the group go first, so shared uses are spent only when needed.
+    const ordered = [...pool].sort((a, b) => (groupUses.get(keyOf(a)) ?? 0) - (groupUses.get(keyOf(b)) ?? 0))
+    for (const course of ordered) {
+      if (enough()) break
+      const key = keyOf(course)
+      if (usedKeys.has(key) || !usable(key) || !checkFits(check, course)) continue
+      used.push(course)
+      usedKeys.add(key)
+      groupUses.set(key, (groupUses.get(key) ?? 0) + 1)
+    }
+    if (check.group) uses.set(check.group, groupUses)
+    return describe(check, used)
   })
 }
 
@@ -539,6 +635,10 @@ export function withMinors(template: Template, minors: Template[]): Template {
         })),
       ),
     ],
+    checkGroups: {
+      ...template.checkGroups,
+      ...Object.fromEntries(minors.flatMap((m) => Object.entries(m.checkGroups ?? {}).map(([g, v]) => [`${m.id}.${g}`, v]))),
+    },
     addedMinors: minors.map(({ id, name, minUniqueCredits, draft, source }) => ({ id, name, minUniqueCredits, draft, source })),
   }
 }
@@ -570,6 +670,12 @@ function minorUniqueChecks(plan: Plan, template: Template): CheckResult[] {
 export function withConcentrations(template: Template, chosen: string[] = []): Template {
   const extra = (template.concentrations ?? []).filter((c) => chosen.includes(c.id)).flatMap((c) => c.sections)
   return extra.length ? { ...template, sections: [...template.sections, ...extra] } : template
+}
+
+// A check scoped to a section from an unchosen concentration can never be met, so it doesn't apply.
+function applicableChecks(template: Template): Template {
+  const ids = new Set(template.sections.map((s) => s.id))
+  return { ...template, checks: template.checks.filter((c) => !c.section || ids.has(c.section)) }
 }
 
 export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanSummary {
@@ -619,7 +725,7 @@ export function evaluatePlan(plan: Plan, template: Template, today: Date): PlanS
     totalUnits: counts.done + counts.prog + counts.plan + counts.empty,
     credits: { ...credits, total: credits.done + credits.prog + credits.plan, required: template.totalCredits ?? null },
     whatsLeft,
-    checks: [...evaluateChecks(plan, template), ...minorUniqueChecks(plan, template)],
+    checks: [...evaluateChecks(plan, applicableChecks(template)), ...minorUniqueChecks(plan, template)],
     warnings: courseWarnings(plan, template),
     terms,
     openByFilter,
