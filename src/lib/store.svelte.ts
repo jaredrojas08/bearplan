@@ -10,6 +10,7 @@ import businessMinor from '../templates/business-minor.json'
 import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
+import cognitiveScienceTemplate from '../templates/cognitive-science-ba.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
 import asianStudiesTemplate from '../templates/asian-studies-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
@@ -88,6 +89,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   aemPre2025Template,
   csBaTemplate,
   economicsTemplate,
+  cognitiveScienceTemplate,
   stsTemplate,
   religiousStudiesTemplate,
   capsTemplate,

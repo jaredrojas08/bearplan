@@ -234,12 +234,6 @@
   "college": "College of Agriculture and Life Sciences, College of Arts and Sciences, Duffield College of Engineering"
  },
  {
-  "id": "cognitive-science-ba",
-  "kind": "major",
-  "name": "Cognitive Science (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "cognitive-science-minor",
   "kind": "minor",
   "name": "Cognitive Science",
