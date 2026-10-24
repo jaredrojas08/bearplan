@@ -15,6 +15,7 @@ import chemistryTemplate from '../templates/chemistry-ba.json'
 import astronomyTemplate from '../templates/astronomy-ba.json'
 import asianStudiesTemplate from '../templates/asian-studies-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
+import latinaOStudiesTemplate from '../templates/latina-o-studies-ba.json'
 import historyArtTemplate from '../templates/history-art-ba.json'
 import physicsTemplate from '../templates/physics-ba.json'
 import jewishStudiesTemplate from '../templates/jewish-studies-ba.json'
@@ -95,6 +96,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   aemPre2025Template,
   csBaTemplate,
   economicsTemplate,
+  latinaOStudiesTemplate,
   historyArtTemplate,
   astronomyTemplate,
   physicsTemplate,
