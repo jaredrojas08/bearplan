@@ -303,6 +303,12 @@
       ]
     }
   ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
   "checks": [
     {
       "id": "fws",
@@ -346,11 +352,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a ALC-AS course of 3+ credits."
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-bio",
@@ -366,11 +376,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a BIO-AS course of 3+ credits."
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-etm",
@@ -386,11 +400,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a ETM-AS course of 3+ credits."
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-glc",
@@ -406,11 +424,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a GLC-AS course of 3+ credits."
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-hst",
@@ -426,11 +448,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a HST-AS course of 3+ credits."
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-phs",
@@ -446,11 +472,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a PHS-AS course of 3+ credits."
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-scd",
@@ -466,11 +496,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SCD-AS course of 3+ credits."
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-ssc",
@@ -486,11 +520,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SSC-AS course of 3+ credits."
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-sds",
@@ -506,11 +544,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SDS-AS course of 3+ credits."
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-smr",
@@ -526,11 +568,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "metText": "satisfied by {code}",
-      "missText": "needs a SMR-AS course of 3+ credits."
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
     },
     {
       "id": "dist-courses",
@@ -555,12 +601,15 @@
           ],
           "excludeNumberPattern": [
             "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
           ]
         }
       ],
       "count": 8,
       "metText": "satisfied by {code}",
-      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
     }
   ]
 }
