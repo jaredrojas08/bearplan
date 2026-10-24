@@ -858,12 +858,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "music-ba",
-  "kind": "major",
-  "name": "Music (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "music-minor",
   "kind": "minor",
   "name": "Music",
