@@ -1,3 +1,5 @@
+import animalScienceTemplate from '../templates/animal-science-bs.json'
+import animalSciencePre2025Template from '../templates/animal-science-bs-cals-pre2025.json'
 import globalDevelopmentTemplate from '../templates/global-development-bs.json'
 import globalDevelopmentPre2025Template from '../templates/global-development-bs-cals-pre2025.json'
 import communicationTemplate from '../templates/communication-bs.json'
@@ -68,6 +70,8 @@ const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
 export const BUILT_IN_TEMPLATES: Template[] = [
+  animalScienceTemplate,
+  animalSciencePre2025Template,
   globalDevelopmentTemplate,
   globalDevelopmentPre2025Template,
   communicationTemplate,
