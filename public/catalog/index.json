@@ -60,12 +60,6 @@
   "college": "College of Agriculture and Life Sciences"
  },
  {
-  "id": "anthropology-ba",
-  "kind": "major",
-  "name": "Anthropology (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "anthropology-minor",
   "kind": "minor",
   "name": "Anthropology",
