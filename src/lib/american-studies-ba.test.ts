@@ -40,4 +40,12 @@ describe('American Studies (BA)', () => {
     const summary = evaluatePlan(empty, resolved, new Date(2026, 9, 1))
     expect(summary.sections.find((s) => s.section.id === coursework.id)?.complete).toBe(false)
   })
+
+  it('counts at most two courses outside AMST', () => {
+    const outside = (uid: string, code: string, slot: string) => ({ uid, code, title: '', credits: 3, term: 'FA26', placement: `major-coursework/${slot}` })
+    const two: Plan = { ...empty, courses: [outside('a', 'HIST 2500', 'm1'), outside('b', 'GOVT 2500', 'm2')] }
+    expect(placeFailure(empty, americanStudies, { code: 'HIST 2500', credits: 3 }, 'major-coursework/m1')).toBeNull()
+    expect(placeFailure(two, americanStudies, { code: 'ENGL 2500', credits: 3 }, 'major-coursework/m3')).not.toBeNull()
+    expect(placeFailure(two, americanStudies, { code: 'AMST 2500', credits: 3 }, 'major-coursework/m3')).toBeNull()
+  })
 })
