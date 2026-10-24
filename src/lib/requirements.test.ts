@@ -163,6 +163,12 @@ describe('warnings for imported plans', () => {
     expect(warnings).toEqual({ 'seed-17': ['S/U in letter-grade row'], 'seed-18': ['Needs C- or better'] })
   })
 
+  it('names the template minimum in the low-grade warning', () => {
+    const graded: Plan = { ...plan, courses: plan.courses.map((c) => (c.code === 'CS 3110' ? { ...c, grade: 'C+' } : c)) }
+    const stricter: Template = { ...template, failingGrades: ['C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'] }
+    expect(evaluatePlan(graded, stricter, OCTOBER_2026).warnings['seed-18']).toEqual(['Needs B- or better'])
+  })
+
   it('flags a course used twice and a rule broken outside the app', () => {
     const broken = withCourses({ code: 'CS 3152', placement: 'cs-project/pr1' }, { code: 'CS 3420', placement: 'cs-electives/ce1' })
     const { warnings } = evaluatePlan(broken, template, OCTOBER_2026)
