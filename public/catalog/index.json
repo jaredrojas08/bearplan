@@ -1140,12 +1140,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "sociology-ba",
-  "kind": "major",
-  "name": "Sociology (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "soil-science-minor",
   "kind": "minor",
   "name": "Soil Science",
