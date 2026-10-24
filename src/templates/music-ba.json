@@ -4,6 +4,34 @@
   "college": "Arts and Sciences",
   "source": "https://catalog.cornell.edu/programs/music-ba/",
   "matriculatedFrom": "FA22",
+  "repeatableCodes": [
+    "AMST 3617",
+    "LATA 3613",
+    "MUSIC 3511",
+    "MUSIC 3513",
+    "MUSIC 3514",
+    "MUSIC 3602",
+    "MUSIC 3603",
+    "MUSIC 3604",
+    "MUSIC 3610",
+    "MUSIC 3613",
+    "MUSIC 3615",
+    "MUSIC 3616",
+    "MUSIC 3621",
+    "MUSIC 3631",
+    "MUSIC 3634",
+    "MUSIC 3660",
+    "MUSIC 3701",
+    "MUSIC 3902",
+    "MUSIC 4501",
+    "MUSIC 4615",
+    "MUSIC 4616",
+    "MUSIC 4621",
+    "MUSIC 4631",
+    "MUSIC 4633",
+    "MUSIC 4641",
+    "MUSIC 4651"
+  ],
   "totalCredits": 120,
   "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
   "filters": [
@@ -202,7 +230,7 @@
         "MUSIC 4641",
         "MUSIC 4651"
       ],
-      "note": "Two core courses, two semesters of performance, and seven electives; at least 32 major credits. Performance must span two semesters with at least one collaborative experience. The collaborative row lists ensembles identified in the overview; other collaborative MUSIC-PL courses need advisor confirmation. Other performance experiences (including dance, DJing, or a student ensemble) require the major advisor and performance faculty approval and must be tracked manually. With faculty advisor permission, at most two electives may be letter-graded MUSIC-PL courses, one collaborative and one individual; the app cannot verify these approvals, the one-of-each limit, or S/U availability. The two 3000+ rows follow the explicit HC/MT table requirements; the footnote saying no MUSIC-PL course may satisfy \"two 3000-level or higher electives\" is unclear, so confirm any proposed substitution. Repeated performance courses can be marked repeatable in the plan.",
+      "note": "Two core courses, two semesters of performance, and seven electives; at least 32 major credits. Performance must span two semesters with at least one collaborative experience. The collaborative row lists ensembles identified in the overview; other collaborative MUSIC-PL courses need advisor confirmation. Other performance experiences (including dance, DJing, or a student ensemble) require the major advisor and performance faculty approval and must be tracked manually. With faculty advisor permission, at most two electives may be letter-graded MUSIC-PL courses, one collaborative and one individual; the app cannot verify these approvals, the one-of-each limit, or S/U availability. The two 3000+ rows follow the explicit HC/MT table requirements; the footnote saying no MUSIC-PL course may satisfy \"two 3000-level or higher electives\" is unclear, so confirm any proposed substitution.",
       "constraints": [
         {
           "type": "minCredits",

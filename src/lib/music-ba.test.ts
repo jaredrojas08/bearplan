@@ -47,6 +47,8 @@ describe('Music (BA)', () => {
     expect(fits('MUSIC 3602', 'performance1')).toBeNull()
     expect(fits('MUSIC 3514', 'performance1')).not.toBeNull()
     expect(fits('MUSIC 3514', 'performance2')).toBeNull()
+    const chorus: Plan = { ...empty, courses: [{ uid: 'fall', code: 'MUSIC 3602', title: '', credits: 1, term: 'FA26', placement: 'music-major/performance1' }] }
+    expect(placeFailure(chorus, music, { code: 'MUSIC 3602', credits: 1 }, 'music-major/performance2')).toBeNull()
     const result = evaluatePlan(empty, music, new Date(2026, 9, 1))
     expect(result.whatsLeft.some(item => JSON.stringify(item).includes('32'))).toBe(true)
   })
