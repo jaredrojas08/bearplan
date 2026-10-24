@@ -34,7 +34,10 @@ describe('Physics (BA)', () => {
     expect(fits('PHYS 4410', 'outside-lab/lab', 'outside')).toBeNull()
   })
 
-  it('refuses core courses as additional inside physics electives', () => {
+  it('refuses core courses as electives beyond the core', () => {
     expect(fits('PHYS 3316', 'inside-electives')).not.toBeNull()
+    expect(fits('PHYS 3316', 'outside-electives', 'outside')).not.toBeNull()
+    expect(fits('MATH 2940', 'outside-electives', 'outside')).not.toBeNull()
+    expect(fits('BME 4390', 'outside-electives', 'outside')).toBeNull()
   })
 })
