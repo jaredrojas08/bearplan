@@ -67,4 +67,9 @@ describe('Animal Science (BS)', () => {
     const plan: Plan = { ...empty, courses: [course('a', 'ANSC 3000', 34), course('b', 'ANSC 4990', 1), course('c', 'ANSC 4990', 1)] }
     expect(evaluatePlan(plan, bs, new Date(2026, 9, 1)).checks.find((c) => c.check.id === 'animal-credits')?.met).toBe(true)
   })
+
+  it('keeps lab courses out of the Integrative economics row', () => {
+    expect(fits('ECON 1110', 'integrative-economics/course', 'integrative-physiology-nutrition')).toBeNull()
+    expect(fits('ANSC 2410', 'integrative-economics/course', 'integrative-physiology-nutrition')).not.toBeNull()
+  })
 })
