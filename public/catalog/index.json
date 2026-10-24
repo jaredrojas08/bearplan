@@ -978,12 +978,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "philosophy-ba",
-  "kind": "major",
-  "name": "Philosophy (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "philosophy-minor",
   "kind": "minor",
   "name": "Philosophy",
@@ -1120,12 +1114,6 @@
   "kind": "minor",
   "name": "Smart Cities",
   "college": "Duffield College of Engineering"
- },
- {
-  "id": "sociology-ba",
-  "kind": "major",
-  "name": "Sociology (BA)",
-  "college": "College of Arts and Sciences"
  },
  {
   "id": "soil-science-minor",
