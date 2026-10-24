@@ -126,3 +126,23 @@ describe('A&S distribution overlap', () => {
     expect(s.checks.find((c) => c.check.id === 'dist-hst')?.text).toBe('satisfied by B 3000')
   })
 })
+
+describe('A&S distribution matching', () => {
+  const met = (s: ReturnType<typeof summarize>) => s.checks.filter((c) => c.check.id.startsWith('dist-') && c.check.id !== 'dist-courses' && c.met).map((c) => c.check.id).sort()
+
+  it("doesn't depend on the order courses were added", () => {
+    // The two-category course comes first; a greedy pass would spend a shared use it doesn't need.
+    const courses = [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3),
+      course('C 3000', 'additional', ['SCD-AS', 'SSC-AS'], 3),
+      course('D 3000', 'additional', ['ALC-AS'], 3),
+      course('E 3000', 'additional', ['ETM-AS'], 3),
+    ]
+    const forward = met(summarize(economics, courses))
+    const backward = met(summarize(economics, [...courses].reverse()))
+    expect(forward).toEqual(backward)
+    // D and E cover ALC and ETM alone, so A, B and C can share: six categories.
+    expect(forward).toEqual(['dist-alc', 'dist-etm', 'dist-glc', 'dist-hst', 'dist-scd', 'dist-ssc'])
+  })
+})
