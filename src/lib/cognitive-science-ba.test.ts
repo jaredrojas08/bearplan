@@ -49,11 +49,13 @@ describe('Cognitive Science BA', () => {
     expect(fits('CS 4820', 'depth')).not.toBeNull()
   })
 
-  it('requires depth credits at the stated levels and caps independent study', () => {
+  it('requires depth credits at the stated levels and caps repeatable independent study', () => {
     const plan: Plan = { ...empty, courses: [{ uid: 'one', code: 'COGST 2350', title: '', credits: 9, term: 'FA26', placement: 'depth' }] }
     const result = evaluatePlan(plan, template, new Date(2026, 9, 1))
     expect(result.checks.find((c) => c.check.id === 'depth-credits')?.met).toBe(false)
     const research: Plan = { ...empty, courses: [{ uid: 'research', code: 'COGST 4700', title: '', credits: 12, term: 'FA26', placement: 'depth' }] }
     expect(placeFailure(research, template, { code: 'COGST 4710', credits: 1 }, 'depth')).toBe('At most 12 independent study credits count toward the major')
+    const oneSemester: Plan = { ...empty, courses: [{ uid: 'fall', code: 'COGST 4700', title: '', credits: 3, term: 'FA26', placement: 'depth' }] }
+    expect(placeFailure(oneSemester, template, { code: 'COGST 4700', credits: 3 }, 'depth')).toBeNull()
   })
 })

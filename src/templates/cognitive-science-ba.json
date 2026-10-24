@@ -4,6 +4,10 @@
   "college": "Arts and Sciences",
   "source": "https://catalog.cornell.edu/programs/cognitive-science-ba/",
   "matriculatedFrom": "FA22",
+  "repeatableCodes": [
+    "COGST 4700",
+    "COGST 4710"
+  ],
   "totalCredits": 120,
   "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
   "filters": [
