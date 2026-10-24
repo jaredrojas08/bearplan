@@ -4,6 +4,10 @@
  "college": "CALS (pre-2025 distributions)",
  "source": "https://catalog.cornell.edu/programs/biological-sciences-bs/",
  "matriculatedFrom": "FA22",
+ "repeatableCodes": [
+  "BIOG 4990",
+  "PLSCI 4990"
+ ],
  "matriculatedBefore": "FA25",
  "totalCredits": 120,
  "totalCreditsNote": "120 cr per the 2026-27 catalog, plus 100 letter-graded and 105 structured credits. Confirm with your advisor.",

@@ -144,6 +144,8 @@ Checks are requirements that are not rows. They read every course in the plan, w
 | `credits` | Credits needed instead of a course count. |
 | `section` | Only courses placed in this section count, for a check that is part of one requirement (ILR's QP, ICL and LH inside the in-college electives). A check whose section belongs to an unchosen concentration is skipped. |
 | `group` | Checks with the same group can't use the same course, for rules like "a course may fulfill only one distribution". Checks claim courses in file order, so list the narrow ones first. |
+| `section` | Only courses placed in this section count, for a check that is part of one requirement (ILR's QP, ICL and LH inside the in-college electives). |
+| `group` | Checks with the same group can't use the same course, for rules like "a course may fulfill only one distribution". The template's `checkGroups` can loosen that (see below). Checks claim courses in file order, so list the narrow ones first. |
 | `metText` / `missText` | `{code}` in `metText` becomes the courses used. When a counted check is partly met, the app shows progress like "3 / 9 cr so far (WRIT 1370)," before `missText`. |
 
 A CALS distribution as a check:
@@ -158,6 +160,16 @@ A CALS distribution as a check:
   "missText": "needs one PSC-AG course of 3+ credits."
 }
 ```
+
+### Groups that may share courses
+
+Some colleges let a course count toward more than one category, within limits. Arts & Sciences lets a course meet at most two distribution categories, and only two courses may do that. Set the limits per group on the template:
+
+```json
+"checkGroups": { "as-dist": { "maxUsesPerCourse": 2, "maxSharedCourses": 2 } }
+```
+
+Checks in that group can then reuse a course up to `maxUsesPerCourse` times, with at most `maxSharedCourses` courses used more than once. Courses not yet used go first, so shared uses are spent only when no fresh course fits.
 
 ## Concentrations
 
