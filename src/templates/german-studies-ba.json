@@ -1,0 +1,521 @@
+{
+  "college": "Arts and Sciences",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ],
+  "id": "german-studies-ba",
+  "name": "German Studies (BA)",
+  "source": "https://catalog.cornell.edu/programs/german-studies-ba/",
+  "repeatableCodes": [
+    "GERST 4510",
+    "GERST 4520",
+    "GERST 4530",
+    "GERST 4540",
+    "GERST 7530",
+    "GERST 7540"
+  ],
+  "sections": [
+    {
+      "id": "admission",
+      "title": "Admission to the Major",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "a1",
+          "label": "GERST 2020 / 2040 / 2060 or equivalent",
+          "rule": [
+            {
+              "codes": [
+                "GERST 2020",
+                "GERST 2040",
+                "GERST 2060"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Complete one course at the 2010-2499 level by the end of sophomore year. Listed options are GERST 2020, 2040, 2060 or equivalent; equivalencies need department review. The preparatory sequence is GERST 1210, GERST 1220, GERST 1230, GERST 2000-2009, then GERST 2010-2499. These are preparation, not additional major coursework rows. Placement after GERST 1220 determines GERST 1230 or GERST 2000; advanced standing may require the CASE exam."
+    },
+    {
+      "id": "major-courses",
+      "title": "Major Coursework",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "l1",
+          "label": "German language 3000-3209",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3209,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l2",
+          "label": "German language 3000-3209",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3209,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g1",
+          "label": "GERST 3210+",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3210,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g2",
+          "label": "GERST 3210+",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3210,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g3",
+          "label": "GERST 3210+",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3210,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4",
+          "label": "GERST 3210+",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3210,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g5",
+          "label": "GERST 3210+",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3210,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6",
+          "label": "GERST 3210+",
+          "rule": [
+            {
+              "subjects": [
+                "GERST"
+              ],
+              "minLevel": 3210,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Eight courses, minimum 25 credits. The two 3000-3209 courses must be taught in German with intensive language work; confirm this with the department. Courses with substantial German content from other departments need DUS approval and manual substitution. Only one study-abroad course per semester may count; the app cannot enforce that limit. A 1-credit research project (an 8-10 page paper in German) goes with a GERST 3210+ course in junior or senior year; the catalog gives no course code, so track it with the department.",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Major coursework credits",
+          "credits": 25
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "The 25 credits are counted across the eight courses; the table's 25-33 hours also include the 1-credit project. No major letter-grade threshold is stated. FWS courses cannot count toward the major; ENGL 2860 or 2880 used as FWS also cannot count. Optional honors requires a 3.0 cumulative GPA, 3.5 major GPA, GERST 4530 and GERST 4540, a thesis and oral defense; consult the DUS about eligibility and deadlines. The optional language certificate, internships and study abroad are not required parts of the major."
+}
