@@ -1,0 +1,563 @@
+{
+  "id": "jewish-studies-ba",
+  "name": "Jewish Studies (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/jewish-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "repeatableCodes": [
+    "JWST 4769",
+    "JWST 4998",
+    "JWST 4999"
+  ],
+  "footnote": "Complete ten courses, all for letter grades of C or better. No prerequisites. At most two courses may overlap a second major. Study abroad credit needs advance consultation and approval upon return; carry at least 15 credits per semester abroad. Honors is optional with a major GPA of at least 3.5: JWST 4769 or JWST 4998 and JWST 4999; the table lists the sequence as a core alternative, but its effect on the ten-course total is unclear. Arrange honors and any designated 4000-level or independent-study senior-project substitute with the department. Sample pathways are suggestions, not concentrations.",
+  "sections": [
+    {
+      "id": "core",
+      "title": "Required Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "JWST 2644, and JWST 4769 or the two-semester honors research sequence JWST 4998 and 4999.",
+      "slots": [
+        {
+          "id": "intro",
+          "label": "JWST 2644",
+          "rule": [
+            {
+              "codes": [
+                "JWST 2644"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "label": "JWST 4769",
+          "option": "JWST 4769",
+          "rule": [
+            {
+              "codes": [
+                "JWST 4769"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "honors1",
+          "label": "JWST 4998",
+          "option": "Honors: JWST 4998 + 4999",
+          "rule": [
+            {
+              "codes": [
+                "JWST 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "honors2",
+          "label": "JWST 4999",
+          "option": "Honors: JWST 4998 + 4999",
+          "rule": [
+            {
+              "codes": [
+                "JWST 4999"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Major Electives (7 Courses)",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Include one course from antiquity to 1492 and a different course from 1492 to the present. A course spanning 1492 may count in either category; confirm breadth with the advisor because the page gives no period lists. Up to two Jewish language courses at any level may count only if not used for the college language requirement; Hebrew content courses such as HEBRW 3104 are unlimited. The page reverses the college language option labels. Rules accept JWST and HEBRW; arrange other Jewish languages, crosslistings and approved courses with the advisor. Language versus content and overlap require manual review; mark other repeatable independent study courses in the plan.",
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "3000-level or above",
+          "count": 4,
+          "match": {
+            "minLevel": 3000
+          }
+        }
+      ],
+      "slots": [
+        {
+          "id": "e1",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7",
+          "label": "Jewish Studies elective",
+          "rule": [
+            {
+              "subjects": [
+                "JWST",
+                "HEBRW"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "related",
+      "title": "Related Course",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "One advisor- or Director-approved course in Cultural Studies, Ethnic Studies or Religious Studies, not crosslisted with Jewish Studies. The catalog's examples include ANTHR 2400, HIST 2251, ANTHR 3703, ANTHR 3420 and ASIAN 2250; any approved course fits this row. Crosslisting cannot be checked automatically. The sample pathway lists JWST 4540 here, contradicting the explicit no-JWST-crosslisting rule; confirm with the Director.",
+      "slots": [
+        {
+          "id": "r1",
+          "label": "Approved related course",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "JWST",
+                "HEBRW",
+                "PE"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "The related course needs advisor or Director approval and can't be crosslisted with Jewish Studies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}
