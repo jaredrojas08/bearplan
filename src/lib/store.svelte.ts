@@ -1,3 +1,4 @@
+import archaeologyTemplate from '../templates/archaeology-ba.json'
 import globalDevelopmentTemplate from '../templates/global-development-bs.json'
 import globalDevelopmentPre2025Template from '../templates/global-development-bs-cals-pre2025.json'
 import communicationTemplate from '../templates/communication-bs.json'
@@ -10,8 +11,13 @@ import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
+import asianStudiesTemplate from '../templates/asian-studies-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
 import capsTemplate from '../templates/china-asia-pacific-studies-ba.json'
+import italianTemplate from '../templates/italian-ba.json'
+import comparativeLiteratureTemplate from '../templates/comparative-literature-ba.json'
+import africanaTemplate from '../templates/africana-studies-ba.json'
+import classicsTemplate from '../templates/classics-ba.json'
 import anthropologyTemplate from '../templates/anthropology-ba.json'
 import linguisticsTemplate from '../templates/linguistics-ba.json'
 import sociologyTemplate from '../templates/sociology-ba.json'
@@ -69,6 +75,7 @@ const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
 export const BUILT_IN_TEMPLATES: Template[] = [
+  archaeologyTemplate,
   globalDevelopmentTemplate,
   globalDevelopmentPre2025Template,
   communicationTemplate,
@@ -79,6 +86,11 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   csBaTemplate,
   economicsTemplate,
   capsTemplate,
+  italianTemplate,
+  comparativeLiteratureTemplate,
+  asianStudiesTemplate,
+  africanaTemplate,
+  classicsTemplate,
   anthropologyTemplate,
   linguisticsTemplate,
   sociologyTemplate,
