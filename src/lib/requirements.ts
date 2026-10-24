@@ -482,22 +482,23 @@ function assignShared(
   const fitsCount = new Map<string, number>()
   for (const list of options) for (const key of new Set(list.map(keyOf))) fitsCount.set(key, (fitsCount.get(key) ?? 0) + 1)
   const sharable = [...fitsCount].filter(([, n]) => n > 1).map(([key]) => key)
-  const sets: string[][] = [[]]
-  if (limits.maxUsesPerCourse > 1) {
-    const grow = (start: number, current: string[]) => {
-      if (current.length === limits.maxSharedCourses) return
-      for (let i = start; i < sharable.length; i++) {
-        const next = [...current, sharable[i]]
-        sets.push(next)
-        grow(i + 1, next)
-      }
+  // Generated lazily, smallest first, so the search stops at the first set that meets every check.
+  function* combinations(size: number, start = 0, current: string[] = []): Generator<string[]> {
+    if (current.length === size) {
+      yield current
+      return
     }
-    grow(0, [])
+    for (let i = start; i < sharable.length; i++) yield* combinations(size, i + 1, [...current, sharable[i]])
+  }
+  function* sharedSets(): Generator<string[]> {
+    yield []
+    if (limits.maxUsesPerCourse < 2) return
+    for (let size = 1; size <= Math.min(limits.maxSharedCourses, sharable.length); size++) yield* combinations(size)
   }
 
   let best: (PlanCourse | null)[] = options.map(() => null)
   let bestCount = -1
-  for (const shared of sets) {
+  for (const shared of sharedSets()) {
     // Each course offers as many seats as it may be used; checks claim seats by augmenting paths.
     const seats = (key: string) => (shared.includes(key) ? limits.maxUsesPerCourse : 1)
     const holder = new Map<string, number>()

@@ -161,4 +161,11 @@ describe('A&S distribution matching', () => {
     const courses = [...fillers, course('X 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3), course('Y 3000', 'additional', ['PHS-AS', 'SCD-AS'], 3)]
     expect(met(summarize(economics, courses))).toEqual(expect.arrayContaining(['dist-bio', 'dist-etm', 'dist-glc', 'dist-phs', 'dist-scd', 'dist-sds']))
   })
+  it('stops at the first full match even with a large sharing limit', () => {
+    // An eager search would build every subset of the 26 two-category courses first.
+    const wide = { ...economics, checkGroups: { 'as-dist': { maxUsesPerCourse: 2, maxSharedCourses: 30 } } } as Template
+    const singles = ['ALC-AS', 'BIO-AS', 'ETM-AS', 'GLC-AS', 'HST-AS', 'PHS-AS', 'SCD-AS', 'SSC-AS', 'SDS-AS', 'SMR-AS'].map((d, i) => course(`S ${3000 + i}`, 'additional', [d], 3))
+    const fillers = Array.from({ length: 26 }, (_, i) => course(`F ${3000 + i}`, 'additional', ['BIO-AS', 'SDS-AS'], 3))
+    expect(met(summarize(wide, [...fillers, ...singles]))).toHaveLength(10)
+  })
 })
