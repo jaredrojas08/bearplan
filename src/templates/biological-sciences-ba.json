@@ -4,6 +4,10 @@
  "college": "Arts and Sciences",
  "source": "https://catalog.cornell.edu/programs/biological-sciences-ba/",
  "matriculatedFrom": "FA22",
+ "repeatableCodes": [
+  "BIOG 4990",
+  "PLSCI 4990"
+ ],
  "totalCredits": 120,
  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
  "footnote": "Biology courses need a letter grade (unless offered S/U only) and a D- or better. Courses shared between the foundation and a concentration stay in the foundation rows.",
