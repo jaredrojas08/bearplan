@@ -282,12 +282,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "communication-bs",
-  "kind": "major",
-  "name": "Communication (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "communications-minor",
   "kind": "minor",
   "name": "Communication",
@@ -981,12 +975,6 @@
   "id": "performing-media-arts-minor",
   "kind": "minor",
   "name": "Performing and Media Arts",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "philosophy-ba",
-  "kind": "major",
-  "name": "Philosophy (BA)",
   "college": "College of Arts and Sciences"
  },
  {

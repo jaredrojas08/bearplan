@@ -21,12 +21,14 @@ const HEADERS = { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
 const DEGREES = /^(BA|BS|BA, BS|BFA|BAR|[A-Z]+-BS|Minor)$/
 // Hand-checked templates in src/templates replace these catalog pages.
 const VERIFIED = new Set([
+  'communication-bs',
   'computer-science-bs',
   'applied-economics-management-bs',
   'business-minor',
   'dyson-business-minor-engineers',
   'economics-ba',
   'anthropology-ba',
+  'philosophy-ba',
   'chemistry-ba',
   'statistics-data-science-ba',
   'history-ba',
