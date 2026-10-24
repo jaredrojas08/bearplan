@@ -18,12 +18,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "africana-studies-ba",
-  "kind": "major",
-  "name": "Africana Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "agricultural-sciences-bs",
   "kind": "major",
   "name": "Agricultural Sciences (BS)",
@@ -90,12 +84,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "archaeology-ba",
-  "kind": "major",
-  "name": "Archaeology (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "archaeology-minor",
   "kind": "minor",
   "name": "Archaeology",
@@ -129,12 +117,6 @@
   "id": "asian-american-studies-minor",
   "kind": "minor",
   "name": "Asian American Studies",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "asian-studies-ba",
-  "kind": "major",
-  "name": "Asian Studies (BA)",
   "college": "College of Arts and Sciences"
  },
  {
@@ -252,12 +234,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "classics-ba",
-  "kind": "major",
-  "name": "Classics (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "climate-change-minor",
   "kind": "minor",
   "name": "Climate Change",
@@ -292,12 +268,6 @@
   "kind": "minor",
   "name": "Community Food Systems",
   "college": "College of Agriculture and Life Sciences"
- },
- {
-  "id": "comparative-literature-ba",
-  "kind": "major",
-  "name": "Comparative Literature (BA)",
-  "college": "College of Arts and Sciences"
  },
  {
   "id": "comparative-literature-minor",
