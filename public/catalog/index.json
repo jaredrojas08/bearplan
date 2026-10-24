@@ -240,12 +240,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "chemistry-ba",
-  "kind": "major",
-  "name": "Chemistry (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "china-asia-pacific-studies-ba",
   "kind": "major",
   "name": "China and Asia-Pacific Studies (BA)",
@@ -292,12 +286,6 @@
   "kind": "major",
   "name": "College Scholar (BA)",
   "college": "College of Arts and Sciences"
- },
- {
-  "id": "communication-bs",
-  "kind": "major",
-  "name": "Communication (BS)",
-  "college": "College of Agriculture and Life Sciences"
  },
  {
   "id": "communications-minor",
@@ -993,12 +981,6 @@
   "id": "performing-media-arts-minor",
   "kind": "minor",
   "name": "Performing and Media Arts",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "philosophy-ba",
-  "kind": "major",
-  "name": "Philosophy (BA)",
   "college": "College of Arts and Sciences"
  },
  {
