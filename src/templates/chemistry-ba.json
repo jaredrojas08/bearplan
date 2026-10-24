@@ -1,0 +1,773 @@
+{
+  "id": "chemistry-ba",
+  "name": "Chemistry (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/chemistry-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Complete 60 approved credits in chemistry and related subjects (57 for the class of 2027), including core courses and 8 laboratory credits beyond general chemistry. Place electives in Additional Space: CHEM courses at 4000 or above qualify; other-department electives require the department list, absent from this saved page. The credit check recognizes listed core/laboratory courses and CHEM 4000+; approved external electives and AP substitutions require manual verification. At most 4 credits of independent research (CHEM 4210, CHEM 4330, CHEM 4430, CHEM 4610, CHEM 4770) may count; the plan-wide check cannot cap research credits. A passing grade is required for major credit; admission normally expects C or better in introductory chemistry, CHEM 3570 or CHEM 3590, MATH 1110, and PHYS 2207 or PHYS 1112, with departmental exceptions. Standard and accelerated pathways are suggested schedules, not required concentrations. Optional Honors in Chemistry requires the honors curriculum, CHEM 3570 and CHEM 3580 or CHEM 3590 and CHEM 3600, CHEM 3890 and CHEM 3900, CHEM 3010, CHEM 3020, CHEM 3030, CHEM 4980, and a chemistry GPA of at least 3.3 at conferral. Honors seminar admission requires departmental approval; the chemistry GPA uses Cornell letter-graded CHEM courses at 2000 or above. AP chemistry credit may replace appropriate core courses. FWS courses cannot count toward the major; ENGL 2860 or ENGL 2880 used for FWS also cannot count. College residency and language exceptions require manual verification.",
+  "sections": [
+    {
+      "id": "general",
+      "title": "General Chemistry",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "o1-1",
+          "label": "CHEM 2070",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 2070"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-2",
+          "label": "CHEM 2071",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 2071"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-3",
+          "label": "CHEM 2080",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 2080"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-4",
+          "label": "CHEM 2081",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 2081"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-1",
+          "label": "CHEM 2150",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 2150"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "organic",
+      "title": "Organic Chemistry",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "o1-1",
+          "label": "CHEM 3570",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3570"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-2",
+          "label": "CHEM 3580",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3580"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-1",
+          "label": "CHEM 3590",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3590"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-2",
+          "label": "CHEM 3600",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3600"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical",
+      "title": "Physical Chemistry",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "o1-1",
+          "label": "CHEM 3870",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3870"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-2",
+          "label": "CHEM 3880",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3880"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-1",
+          "label": "CHEM 3890",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3890"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-2",
+          "label": "CHEM 3900",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 3900"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Class of 2027 may use CHEM 3870 alone; the checklist shows the current two-course sequences. CHEM 3890 requires a prior semester of multivariable calculus."
+    },
+    {
+      "id": "inorganic",
+      "title": "Inorganic Chemistry",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "chem4100",
+          "label": "CHEM 4100",
+          "rule": [
+            {
+              "codes": [
+                "CHEM 4100"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathematics",
+      "title": "Mathematics",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "o1-1",
+          "label": "MATH 1110",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-2",
+          "label": "MATH 1120",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1120"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-1",
+          "label": "MATH 1910",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1910"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "The MATH 1910 alternative also requires 4 AP credits, verified manually. AP credit may substitute for calculus courses."
+    },
+    {
+      "id": "physics",
+      "title": "Physics",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "type": "slots",
+      "slots": [
+        {
+          "id": "o1-1",
+          "label": "PHYS 2207",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2207"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o1-2",
+          "label": "PHYS 2208",
+          "option": "Sequence 1",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2208"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-1",
+          "label": "PHYS 1112",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1112"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-2",
+          "label": "PHYS 1110",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o2-3",
+          "label": "PHYS 2213",
+          "option": "Sequence 2",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2213"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o3-1",
+          "label": "PHYS 1116",
+          "option": "Sequence 3",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1116"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "o3-2",
+          "label": "PHYS 2217",
+          "option": "Sequence 3",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2217"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "PHYS 1101 and PHYS 1102 do not count. AP credit may substitute for one or both required physics courses."
+    },
+    {
+      "id": "laboratories",
+      "title": "Core and Advanced Laboratories",
+      "column": "right",
+      "filter": "major",
+      "icon": "flask",
+      "type": "creditBucket",
+      "minCredits": 8,
+      "rule": [
+        {
+          "codes": [
+            "CHEM 2510",
+            "CHEM 2900",
+            "CHEM 3010",
+            "CHEM 3020",
+            "CHEM 3030"
+          ]
+        }
+      ],
+      "note": "8 laboratory credits beyond general chemistry, including CHEM 2510 and CHEM 2900 or CHEM 3030. CHEM 3010 and/or CHEM 3020 may complete the total. Approved laboratory electives outside chemistry may also count, but the saved page does not list them; verify and track those substitutions manually. Independent research does not count."
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    },
+    {
+      "id": "chemistry-credits",
+      "title": "Chemistry and related subjects: 60 credits",
+      "match": [
+        {
+          "codes": [
+            "CHEM 2070",
+            "CHEM 2071",
+            "CHEM 2080",
+            "CHEM 2081",
+            "CHEM 2150",
+            "CHEM 3570",
+            "CHEM 3580",
+            "CHEM 3590",
+            "CHEM 3600",
+            "CHEM 3870",
+            "CHEM 3880",
+            "CHEM 3890",
+            "CHEM 3900",
+            "CHEM 4100",
+            "MATH 1110",
+            "MATH 1120",
+            "MATH 1910",
+            "PHYS 2207",
+            "PHYS 2208",
+            "PHYS 1112",
+            "PHYS 1110",
+            "PHYS 2213",
+            "PHYS 1116",
+            "PHYS 2217",
+            "CHEM 2510",
+            "CHEM 2900",
+            "CHEM 3010",
+            "CHEM 3020",
+            "CHEM 3030"
+          ]
+        },
+        {
+          "subjects": [
+            "CHEM"
+          ],
+          "minLevel": 4000,
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "credits": 60,
+      "metText": "recognized credits satisfied by {code}; verify research cap and approvals",
+      "missText": "needs 60 approved credits (57 for class of 2027); see notes for AP, external electives, and the 4-credit research cap."
+    },
+    {
+      "id": "lab-organic",
+      "title": "Core organic laboratory",
+      "section": "laboratories",
+      "codes": [
+        "CHEM 2510"
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs CHEM 2510 within laboratory credits."
+    },
+    {
+      "id": "lab-physical",
+      "title": "Core physical laboratory",
+      "section": "laboratories",
+      "codes": [
+        "CHEM 2900",
+        "CHEM 3030"
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs CHEM 2900 or CHEM 3030 within laboratory credits."
+    }
+  ]
+}
