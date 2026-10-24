@@ -1008,12 +1008,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "physics-ba",
-  "kind": "major",
-  "name": "Physics (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "physics-minor",
   "kind": "minor",
   "name": "Physics",

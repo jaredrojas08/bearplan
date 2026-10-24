@@ -1,0 +1,793 @@
+{
+  "id": "physics-ba",
+  "name": "Physics (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/physics-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Major courses require C- or better, or S for S/U-only courses. Core courses require letter grades except PHYS 2216. At most 4 credits of S/U courses and 4 credits of Independent Study/Senior Thesis may count toward either concentration; these caps and S/U-only eligibility need manual review. Declaration requires two full semesters of Cornell physics with the appropriate math prerequisites, a B- average in Cornell physics and math, and no physics or math grade below C-. Discuss any physics grade below B- with the director of undergraduate studies. Advisor approval is required for the concentration and substitutions. Optional honors requires a cumulative GPA of 3.7 and either a senior thesis with A- or better in thesis courses or nomination by a research faculty member. Honors adds no separate major rows.",
+  "sections": [
+    {
+      "id": "intro",
+      "title": "Introductory Physics",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "advanced",
+          "label": "PHYS 1116",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1116"
+              ]
+            }
+          ],
+          "option": "PHYS 1116"
+        },
+        {
+          "id": "mechanics",
+          "label": "PHYS 1112 / PHYS 2207",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1112",
+                "PHYS 2207"
+              ]
+            }
+          ],
+          "option": "Other mechanics plus relativity"
+        },
+        {
+          "id": "relativity",
+          "label": "PHYS 2216",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2216"
+              ]
+            }
+          ],
+          "option": "Other mechanics plus relativity"
+        },
+        {
+          "id": "electricity",
+          "label": "PHYS 2213 / PHYS 2217",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2213",
+                "PHYS 2217"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "waves",
+          "label": "PHYS 2214 / PHYS 2218",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2214",
+                "PHYS 2218"
+              ]
+            }
+          ]
+        }
+      ],
+      "suAllowedCodes": [
+        "PHYS 2216"
+      ],
+      "note": "Crossovers between the standard and advanced sequences are allowed. PHYS 2207 is an introductory mechanics alternative for students switching from life, chemical or health sciences. PHYS 2216 is required unless PHYS 1116 is taken."
+    },
+    {
+      "id": "intro-labs",
+      "title": "Introductory Laboratories",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "l1",
+          "label": "PHYS 1110",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 1110"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l2",
+          "label": "PHYS 2210",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 2210"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "PHYS 1110 is a co-requisite with PHYS 1112 or PHYS 1116; PHYS 2210 is a co-requisite with PHYS 2218. Scheduling is not checked."
+    },
+    {
+      "id": "math",
+      "title": "Core Mathematics",
+      "column": "left",
+      "filter": "major",
+      "icon": "sigma",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "calculus",
+          "label": "MATH 1120 / MATH 1910",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1120",
+                "MATH 1910"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "multivariable",
+          "label": "MATH 1920 / MATH 2220 / MATH 2240",
+          "rule": [
+            {
+              "codes": [
+                "MATH 1920",
+                "MATH 2220",
+                "MATH 2240"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "differential",
+          "label": "MATH 2930 / MATH 3270",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2930",
+                "MATH 3270"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "linear",
+          "label": "MATH 2210 / MATH 2230 / MATH 2310 / MATH 2940",
+          "rule": [
+            {
+              "codes": [
+                "MATH 2210",
+                "MATH 2230",
+                "MATH 2310",
+                "MATH 2940"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Core mathematics",
+          "credits": 15
+        }
+      ],
+      "note": "Covers single and multivariable calculus, linear algebra, series representations and complex analysis. MATH 1920 and MATH 2930 are recommended."
+    },
+    {
+      "id": "upper-core",
+      "title": "Upper-Level Physics Core",
+      "column": "left",
+      "filter": "major",
+      "icon": "flask",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "p1",
+          "label": "PHYS 3316",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 3316"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "label": "PHYS 3317",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 3317"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p3",
+          "label": "PHYS 3318",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 3318"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p4",
+          "label": "PHYS 3327",
+          "rule": [
+            {
+              "codes": [
+                "PHYS 3327"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "The fifth upper-level core course is at least 3 credits of approved laboratory work, listed under the chosen concentration. The physics core requires at least 32 credits across introductory physics, introductory labs, these courses and that laboratory. This cross-section total needs manual review."
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requiresConcentration": true,
+  "concentrations": [
+    {
+      "id": "inside",
+      "name": "\"Inside\" Physics",
+      "sections": [
+        {
+          "id": "inside-required",
+          "title": "Inside: Mathematics and PHYS 4230",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "letterGrade": true,
+          "type": "slots",
+          "slots": [
+            {
+              "id": "m1",
+              "label": "3000+ mathematics",
+              "rule": [
+                {
+                  "subjects": [
+                    "MATH"
+                  ],
+                  "minLevel": 3000
+                },
+                {
+                  "codes": [
+                    "AEP 3200",
+                    "AEP 4200"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "m2",
+              "label": "3000+ mathematics",
+              "rule": [
+                {
+                  "subjects": [
+                    "MATH"
+                  ],
+                  "minLevel": 3000
+                },
+                {
+                  "codes": [
+                    "AEP 3200",
+                    "AEP 4200"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p1",
+              "label": "PHYS 4230",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 4230"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "Two additional 3000+ math classes, typically AEP 3200 and AEP 4200; other relevant classes require advisor review. At least 21 credits beyond the core and 68 major credits total are required across the inside sections and core. These cross-section totals need manual review."
+        },
+        {
+          "id": "inside-labs",
+          "title": "Inside: Laboratories",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "letterGrade": true,
+          "type": "slots",
+          "slots": [
+            {
+              "id": "advanced",
+              "label": "PHYS 4410",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 4410"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "choice",
+              "label": "PHYS 3310 / PHYS 3360 / AEP 3640 / ASTRO 4410 / BEE 4500 / BME 3030 / BME 4390 / CHEM 3020 / EAS 4370 / MAE 3260 / MAE 3783 / MAE 4150 / MAE 4272 / MAE 4480 / MSE 5410",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 3310",
+                    "PHYS 3360",
+                    "AEP 3640",
+                    "ASTRO 4410",
+                    "BEE 4500",
+                    "BME 3030",
+                    "BME 4390",
+                    "CHEM 3020",
+                    "EAS 4370",
+                    "MAE 3260",
+                    "MAE 3783",
+                    "MAE 4150",
+                    "MAE 4272",
+                    "MAE 4480",
+                    "MSE 5410"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Laboratory work",
+              "credits": 7
+            }
+          ],
+          "note": "PHYS 4410 plus one listed laboratory. One approved laboratory supplies the core laboratory requirement; do not count its credits again toward the 21 beyond the core."
+        },
+        {
+          "id": "inside-electives",
+          "title": "Inside: Additional Physics",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "type": "creditBucket",
+          "minCredits": 7,
+          "letterGrade": true,
+          "rule": [
+            {
+              "subjects": [
+                "PHYS"
+              ],
+              "minLevel": 3001,
+              "excludeCodes": [
+                "PHYS 3316",
+                "PHYS 3317",
+                "PHYS 3318",
+                "PHYS 3327",
+                "PHYS 4230",
+                "PHYS 4410"
+              ]
+            },
+            {
+              "codes": [
+                "ASTRO 4431",
+                "ASTRO 4432",
+                "AEP 4340"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "maxCredits",
+              "label": "PHYS 4490",
+              "credits": 4,
+              "match": {
+                "codes": [
+                  "PHYS 4490"
+                ]
+              },
+              "reason": "At most 4 credits of PHYS 4490 count toward the concentration"
+            }
+          ],
+          "note": "7 additional credits in PHYS courses numbered above 3000 or courses approved by the director of undergraduate studies. ASTRO 4431, ASTRO 4432 and AEP 4340 are catalog examples requiring approval; other approved substitutions need manual review. PHYS 4443 and participation in research are recommended. The combined Independent Study/Senior Thesis cap also needs manual review."
+        }
+      ]
+    },
+    {
+      "id": "outside",
+      "name": "\"Outside\" Physics",
+      "sections": [
+        {
+          "id": "outside-lab",
+          "title": "Outside: Core Laboratory",
+          "column": "right",
+          "filter": "major",
+          "icon": "flask",
+          "letterGrade": true,
+          "type": "slots",
+          "slots": [
+            {
+              "id": "lab",
+              "label": "PHYS 3310 / PHYS 3360 / PHYS 4410 / ASTRO 4410",
+              "rule": [
+                {
+                  "codes": [
+                    "PHYS 3310",
+                    "PHYS 3360",
+                    "PHYS 4410",
+                    "ASTRO 4410"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Core laboratory",
+              "credits": 3
+            }
+          ],
+          "note": "One listed intermediate laboratory supplies the core laboratory requirement, separate from the 15 credits beyond the core."
+        },
+        {
+          "id": "outside-electives",
+          "title": "Outside: Coherent Concentration",
+          "column": "right",
+          "filter": "major",
+          "icon": "book",
+          "type": "creditBucket",
+          "minCredits": 15,
+          "letterGrade": true,
+          "rule": [
+            {
+              "excludeSubjects": [
+                "PE"
+              ]
+            }
+          ],
+          "note": "At least 15 credits beyond the core, including 8 credits in courses numbered above 3000, in a coherent advisor-approved area. The major requires at least 62 credits total; review this cross-section total manually. The area cannot be the subject of a second major, and no course used for another major may count here. Subject coherence, approval, second-major overlap and S/U-only eligibility need manual review. Astronomy students considering graduate study are encouraged to include ASTRO 4410, ASTRO 4431 and ASTRO 4432. The 8-credit advanced minimum needs manual review because checks cannot be enabled for just one concentration."
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}
