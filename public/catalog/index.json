@@ -138,12 +138,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "asian-studies-ba",
-  "kind": "major",
-  "name": "Asian Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "asl-deaf-studies-minor",
   "kind": "minor",
   "name": "American Sign Language (ASL)/Deaf Studies",
