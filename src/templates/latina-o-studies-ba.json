@@ -1,0 +1,561 @@
+{
+  "id": "latina-o-studies-ba",
+  "name": "Latina/o Studies (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/latina-o-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ],
+  "footnote": "Minimum 12 major courses, each with C- or better. Cross-listed registration counts: use the corresponding LSP code in this checklist because the page lists no equivalent codes; otherwise a cross-listing may be refused or counted toward the outside-elective limit. The page provides no independent-study or thesis course codes; mark approved repeated courses repeatable in the plan. To declare, submit the major application; the Director of Undergraduate Studies assigns a faculty advisor in consultation with the student. Optional honors requires a 3.5 major GPA and 3.0 overall GPA: request admission by May 1 of junior year with a topic and willing LSP faculty advisor, begin summer research if approved, and enroll in thesis hours both senior semesters. The advisor and a second reader evaluate the thesis.",
+  "sections": [
+    {
+      "id": "core",
+      "title": "Core Course",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "LSP 2100 (1)",
+          "rule": [
+            {
+              "codes": [
+                "LSP 2100"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intro",
+      "title": "Disciplinary Introductory Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "Listed introductory course (1)",
+          "rule": [
+            {
+              "codes": [
+                "LSP 1802",
+                "LSP 2031",
+                "LSP 2400",
+                "LSP 2720"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "Listed introductory course (2)",
+          "rule": [
+            {
+              "codes": [
+                "LSP 1802",
+                "LSP 2031",
+                "LSP 2400",
+                "LSP 2720"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Choose two from LSP 1802, 2031, 2400, and 2720. The catalog lists LSP 2720 without a title."
+    },
+    {
+      "id": "courses-3000",
+      "title": "3000-Level Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "LSP 3000-level course (1)",
+          "rule": [
+            {
+              "subjects": [
+                "LSP"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3999
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "LSP 3000-level course (2)",
+          "rule": [
+            {
+              "subjects": [
+                "LSP"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3999
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "LSP 3000-level course (3)",
+          "rule": [
+            {
+              "subjects": [
+                "LSP"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3999
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seminars",
+      "title": "4000-Level Seminars",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "LSP 4000-level seminar (1)",
+          "rule": [
+            {
+              "subjects": [
+                "LSP"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "LSP 4000-level seminar (2)",
+          "rule": [
+            {
+              "subjects": [
+                "LSP"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999
+            }
+          ]
+        }
+      ],
+      "note": "Confirm seminar status with the Director of Undergraduate Studies; course numbers alone cannot identify seminars. The senior capstone project is optional, and the catalog does not specify its course code or how it counts."
+    },
+    {
+      "id": "electives",
+      "title": "Area of Interest Electives",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "slots": [
+        {
+          "id": "s1",
+          "label": "Area of interest elective (1)",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "PE"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "label": "Area of interest elective (2)",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "PE"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "label": "Area of interest elective (3)",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "PE"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "s4",
+          "label": "Area of interest elective (4)",
+          "rule": [
+            {
+              "excludeSubjects": [
+                "PE"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "maxCount",
+          "label": "At most two non-LSP electives",
+          "count": 2,
+          "match": {
+            "excludeSubjects": [
+              "LSP"
+            ]
+          },
+          "reason": "At most two electives not cross-listed with LSP, in consultation with the Director of Undergraduate Studies."
+        }
+      ],
+      "note": "Four courses to round out your area of interest. Up to two may be courses not cross-listed with LSP, related to that interest and selected in consultation with the Director of Undergraduate Studies. Possible interests include Literary and Performance Arts, Caribbean Studies, Migration and Transnational Studies, and Labor, Law, and Policy; these are not required concentrations. Approval and relevance need manual review."
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

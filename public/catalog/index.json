@@ -798,12 +798,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "latina-o-studies-ba",
-  "kind": "major",
-  "name": "Latina/o Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "latina-o-studies-minor",
   "kind": "minor",
   "name": "Latina/o Studies",
