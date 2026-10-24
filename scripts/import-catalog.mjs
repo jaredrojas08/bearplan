@@ -22,11 +22,18 @@ const DEGREES = /^(BA|BS|BA, BS|BFA|BAR|[A-Z]+-BS|Minor)$/
 // Hand-checked templates in src/templates replace these catalog pages.
 const VERIFIED = new Set([
   'animal-science-bs',
+  'global-development-bs',
+  'communication-bs',
   'computer-science-bs',
   'applied-economics-management-bs',
   'business-minor',
   'dyson-business-minor-engineers',
   'economics-ba',
+  'anthropology-ba',
+  'linguistics-ba',
+  'sociology-ba',
+  'philosophy-ba',
+  'chemistry-ba',
   'statistics-data-science-ba',
   'history-ba',
   'english-ba',
