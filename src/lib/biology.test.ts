@@ -48,4 +48,10 @@ describe('Biological Sciences', () => {
     expect(placeFailure(planOf([], ['molecular-cell-biology']), t, { code: 'BIOMG 4870', credits: 3 }, 'mc-more')).toBeNull()
     expect(placeFailure(planOf([], ['molecular-cell-biology']), t, { code: 'BIOMG 3350', credits: 4 }, 'mc-more')).not.toBeNull()
   })
+
+  it('lets research run over several semesters', () => {
+    const t = withConcentrations(T, ['general-biology'])
+    const fall = planOf([course('BIOG 4990', 'gb', 2)], ['general-biology'])
+    expect(placeFailure(fall, t, { code: 'BIOG 4990', credits: 2 }, 'gb')).toBeNull()
+  })
 })
