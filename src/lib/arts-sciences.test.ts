@@ -155,4 +155,10 @@ describe('A&S distribution matching', () => {
     ]
     expect(met(summarize(economics, courses))).toEqual(['dist-alc', 'dist-etm', 'dist-glc', 'dist-hst', 'dist-phs', 'dist-scd'])
   })
+  it('still finds the sharing on a plan with many two-category courses', () => {
+    // 26 BIO/SDS courses come first; the ETM/GLC and PHS/SCD courses must be the two shared ones.
+    const fillers = Array.from({ length: 26 }, (_, i) => course(`F ${3000 + i}`, 'additional', ['BIO-AS', 'SDS-AS'], 3))
+    const courses = [...fillers, course('X 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3), course('Y 3000', 'additional', ['PHS-AS', 'SCD-AS'], 3)]
+    expect(met(summarize(economics, courses))).toEqual(expect.arrayContaining(['dist-bio', 'dist-etm', 'dist-glc', 'dist-phs', 'dist-scd', 'dist-sds']))
+  })
 })

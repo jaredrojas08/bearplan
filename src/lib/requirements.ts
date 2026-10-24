@@ -481,8 +481,7 @@ function assignShared(
 ): (PlanCourse | null)[] {
   const fitsCount = new Map<string, number>()
   for (const list of options) for (const key of new Set(list.map(keyOf))) fitsCount.set(key, (fitsCount.get(key) ?? 0) + 1)
-  // Bounded so a very large plan can't make the search slow.
-  const sharable = [...fitsCount].filter(([, n]) => n > 1).map(([key]) => key).slice(0, 25)
+  const sharable = [...fitsCount].filter(([, n]) => n > 1).map(([key]) => key)
   const sets: string[][] = [[]]
   if (limits.maxUsesPerCourse > 1) {
     const grow = (start: number, current: string[]) => {
@@ -526,6 +525,8 @@ function assignShared(
       best = pick
       bestCount = count
     }
+    // Sets start with no sharing, so a plan that needs none stops after one pass.
+    if (bestCount === options.length) break
   }
   return best
 }
