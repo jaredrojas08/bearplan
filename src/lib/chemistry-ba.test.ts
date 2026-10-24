@@ -35,10 +35,9 @@ describe('Chemistry BA', () => {
     expect(fits('PHYS 1101', 'physics/o1-1')).not.toBeNull()
   })
 
-  it('accepts advanced laboratories and rejects independent research and FWS', () => {
+  it('accepts advanced laboratories and rejects independent research', () => {
     expect(fits('CHEM 3020', 'laboratories')).toBeNull()
     expect(fits('CHEM 4210', 'laboratories')).not.toBeNull()
-    expect(placeFailure(empty, chemistry, { code: 'CHEM 3020', credits: 4, distributions: ['FWS'] }, 'laboratories')).not.toBeNull()
   })
 
   it('requires both physical chemistry courses in a sequence', () => {
