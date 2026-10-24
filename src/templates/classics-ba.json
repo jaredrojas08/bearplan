@@ -1,0 +1,1115 @@
+{
+  "id": "classics-ba",
+  "name": "Classics (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/classics-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "footnote": "Choose one track; at least 27 major credits and grades of C- or better are required. No prerequisites to enter the major. FWS courses cannot count toward the major. One major course must yield a DUS-approved research seminar paper of at least 3000 words by the end of the first semester of senior year, presenting an original sustained, evidence-based argument that synthesizes and evaluates secondary scholarship; confirm completion manually. Optional honors: CLASS 4721 and CLASS 4722 may count toward the major; requires a 3.0 cumulative GPA and 3.5 major GPA. Choose an honors advisor by the end of semester six and submit a research outline to the advisor and honors committee by the second week of semester seven. Write the thesis in the second course semester; the honors committee determines honors in consultation with advisors.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requiresConcentration": true,
+  "concentrations": [
+    {
+      "id": "classics",
+      "name": "Classics",
+      "sections": [
+        {
+          "id": "classics-track",
+          "title": "Classics Track",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "type": "slots",
+          "letterGrade": true,
+          "note": "Six GREEK/LATIN courses numbered 2101 or above, including two 3000-level courses in one language and one in the other (each 3+ credits), plus three CLASS 2000+ courses. Recommended for graduate study in classics.",
+          "slots": [
+            {
+              "id": "greek1",
+              "label": "GREEK 3000-level, 3+ credits",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 3000,
+                  "maxLevel": 3999,
+                  "minCredits": 3,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ],
+              "option": "Two advanced GREEK courses"
+            },
+            {
+              "id": "greek2",
+              "label": "GREEK 3000-level, 3+ credits",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 3000,
+                  "maxLevel": 3999,
+                  "minCredits": 3,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ],
+              "option": "Two advanced GREEK courses"
+            },
+            {
+              "id": "greek3",
+              "label": "LATIN 3000-level, 3+ credits",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 3000,
+                  "maxLevel": 3999,
+                  "minCredits": 3,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ],
+              "option": "Two advanced GREEK courses"
+            },
+            {
+              "id": "latin1",
+              "label": "LATIN 3000-level, 3+ credits",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 3000,
+                  "maxLevel": 3999,
+                  "minCredits": 3,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ],
+              "option": "Two advanced LATIN courses"
+            },
+            {
+              "id": "latin2",
+              "label": "LATIN 3000-level, 3+ credits",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 3000,
+                  "maxLevel": 3999,
+                  "minCredits": 3,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ],
+              "option": "Two advanced LATIN courses"
+            },
+            {
+              "id": "latin3",
+              "label": "GREEK 3000-level, 3+ credits",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 3000,
+                  "maxLevel": 3999,
+                  "minCredits": 3,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ],
+              "option": "Two advanced LATIN courses"
+            },
+            {
+              "id": "language1",
+              "label": "GREEK / LATIN 2101+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK",
+                    "LATIN"
+                  ],
+                  "minLevel": 2101,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language2",
+              "label": "GREEK / LATIN 2101+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK",
+                    "LATIN"
+                  ],
+                  "minLevel": 2101,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language3",
+              "label": "GREEK / LATIN 2101+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK",
+                    "LATIN"
+                  ],
+                  "minLevel": 2101,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class1",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class2",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class3",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Major credits",
+              "credits": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greek",
+      "name": "Greek",
+      "sections": [
+        {
+          "id": "greek-track",
+          "title": "Greek Track",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "type": "slots",
+          "letterGrade": true,
+          "note": "Six GREEK courses including the entry course, plus three CLASS 2000+ courses. At least three language courses must be at the 3000-level and carry 3+ credits each. Students taking GREEK 1104 and GREEK 1105 must consult the DUS about the sequence and possible alternatives to GREEK 2101; the overall course count stays the same. Advisor-approved substitutions are not automated.",
+          "slots": [
+            {
+              "id": "entry",
+              "label": "GREEK 2101",
+              "rule": [
+                {
+                  "codes": [
+                    "GREEK 2101"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language1",
+              "label": "GREEK 2102+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 2102,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language2",
+              "label": "GREEK 2102+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 2102,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language3",
+              "label": "GREEK 2102+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 2102,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language4",
+              "label": "GREEK 2102+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 2102,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language5",
+              "label": "GREEK 2102+",
+              "rule": [
+                {
+                  "subjects": [
+                    "GREEK"
+                  ],
+                  "minLevel": 2102,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class1",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class2",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class3",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Major credits",
+              "credits": 27
+            },
+            {
+              "type": "minCount",
+              "label": "3000-level language courses (3+ credits)",
+              "count": 3,
+              "match": {
+                "subjects": [
+                  "GREEK"
+                ],
+                "minLevel": 3000,
+                "maxLevel": 3999,
+                "minCredits": 3,
+                "excludeDistributions": [
+                  "FWS"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "latin",
+      "name": "Latin",
+      "sections": [
+        {
+          "id": "latin-track",
+          "title": "Latin Track",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "type": "slots",
+          "letterGrade": true,
+          "note": "Six LATIN courses including the entry course, plus three CLASS 2000+ courses. At least three language courses must be at the 3000-level and carry 3+ credits each.",
+          "slots": [
+            {
+              "id": "entry",
+              "label": "LATIN 1205 / LATIN 2201",
+              "rule": [
+                {
+                  "codes": [
+                    "LATIN 1205",
+                    "LATIN 2201"
+                  ],
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language1",
+              "label": "LATIN 2202+",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 2202,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language2",
+              "label": "LATIN 2202+",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 2202,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language3",
+              "label": "LATIN 2202+",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 2202,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language4",
+              "label": "LATIN 2202+",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 2202,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "language5",
+              "label": "LATIN 2202+",
+              "rule": [
+                {
+                  "subjects": [
+                    "LATIN"
+                  ],
+                  "minLevel": 2202,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class1",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class2",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "class3",
+              "label": "CLASS 2000+",
+              "rule": [
+                {
+                  "subjects": [
+                    "CLASS"
+                  ],
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Major credits",
+              "credits": 27
+            },
+            {
+              "type": "minCount",
+              "label": "3000-level language courses (3+ credits)",
+              "count": 3,
+              "match": {
+                "subjects": [
+                  "LATIN"
+                ],
+                "minLevel": 3000,
+                "maxLevel": 3999,
+                "minCredits": 3,
+                "excludeDistributions": [
+                  "FWS"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classical-civilization",
+      "name": "Classical Civilization",
+      "sections": [
+        {
+          "id": "civilization-track",
+          "title": "Classical Civilization Track",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "type": "slots",
+          "letterGrade": true,
+          "note": "Two ancient history, two ancient Greek and Roman material culture, and two ancient literature in English translation courses, plus four courses in classical civilization, classical archaeology, ancient history, ancient philosophy, ancient Greek or Latin, or related subjects approved by the major advisor. All courses must be 2000+. At least one must cover before 323 BCE and one after 323 BCE. The catalog lists no course codes for these topics; topic eligibility and period coverage require advisor confirmation and are not checked by the app. Greek/Latin study is encouraged but not required.",
+          "slots": [
+            {
+              "id": "history1",
+              "label": "Ancient history 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "history2",
+              "label": "Ancient history 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "material1",
+              "label": "Ancient Greek and Roman material culture 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "material2",
+              "label": "Ancient Greek and Roman material culture 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "literature1",
+              "label": "Ancient literature in English translation 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "literature2",
+              "label": "Ancient literature in English translation 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "elective1",
+              "label": "Advisor-approved related elective 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "elective2",
+              "label": "Advisor-approved related elective 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "elective3",
+              "label": "Advisor-approved related elective 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "elective4",
+              "label": "Advisor-approved related elective 2000+",
+              "rule": [
+                {
+                  "minLevel": 2000,
+                  "excludeDistributions": [
+                    "FWS"
+                  ]
+                }
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Major credits",
+              "credits": 27
+            },
+            {
+              "type": "minCount",
+              "label": "3000+ courses",
+              "count": 3,
+              "match": {
+                "minLevel": 3000,
+                "excludeDistributions": [
+                  "FWS"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}

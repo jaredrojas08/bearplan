@@ -1,0 +1,615 @@
+{
+  "id": "history-art-ba",
+  "name": "History of Art (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/history-art-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Students who matriculated before Fall 2025 must consult their History of Art advisor about major requirement options. The checklist follows the current catalog: 10 courses, at least 6 at the 3000-level or above. FWS courses do not count. Optional honors requires ARTH 4998 and ARTH 4999; only ARTH 4999 counts as a major elective, so honors requires at least 11 courses. Honors also requires satisfactory major progress, the Knight Institute Honors Writing Workshop, a symposium presentation and a thesis defense; discuss plans and a thesis advisor in spring of junior year. A prior formal research paper and junior-year ARTH 4101 are recommended.",
+  "sections": [
+    {
+      "id": "entry",
+      "title": "Major Entry",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "ARTH 1100 is offered every fall and requires at least B for admission. Students without ARTH 1100 by spring of sophomore year must complete a 4000-level tutorial with B or higher for late declaration. Confirm tutorial eligibility with the advisor; course numbers alone cannot identify tutorials, and the app cannot enforce the B threshold. The entry course counts toward the 10 courses. Email the department coordinator with intent to declare and qualifying courses.",
+      "slots": [
+        {
+          "id": "gateway",
+          "label": "ARTH 1100",
+          "rule": [
+            {
+              "codes": [
+                "ARTH 1100"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ],
+          "option": "Gateway"
+        },
+        {
+          "id": "tutorial",
+          "label": "4000-level tutorial (advisor confirmation)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ],
+          "option": "Late declaration tutorial"
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Required Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "note": "Both courses count toward the 10-course major.",
+      "slots": [
+        {
+          "id": "visual",
+          "label": "VISST 2000",
+          "rule": [
+            {
+              "codes": [
+                "VISST 2000"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "methods",
+          "label": "ARTH 4101",
+          "rule": [
+            {
+              "codes": [
+                "ARTH 4101"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Seven Additional Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "note": "At least 4 of the 7 electives must cover distinct categories: Comparative/Global (Theory/Method/Transregional), Museographic (Curatorial/Collections-Collecting/Display), Africa and African Diaspora, Asia, Europe and North America, Indigenous Americas, Latin America/Caribbean, and SWANA (Southwest Asia and North Africa). Verify categories manually with the department; the catalog page supplies no course-to-category lists. ARTH 4998 does not count; ARTH 4999 may count. The table specifies 2000-, 3000- and 4000-level electives; no credit minimum is stated.",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "ARTH 2xxx (1)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 2000,
+              "maxLevel": 2999,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "ARTH 2xxx (2)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 2000,
+              "maxLevel": 2999,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "ARTH 3xxx",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3999,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "label": "ARTH 4xxx (1)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5",
+          "label": "ARTH 4xxx (2)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6",
+          "label": "ARTH 3000+ (1)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 3000,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7",
+          "label": "ARTH 3000+ (2)",
+          "rule": [
+            {
+              "subjects": [
+                "ARTH"
+              ],
+              "minLevel": 3000,
+              "excludeCodes": [
+                "ARTH 4101",
+                "ARTH 4998"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}
