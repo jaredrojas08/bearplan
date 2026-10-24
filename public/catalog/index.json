@@ -240,12 +240,6 @@
   "college": "Duffield College of Engineering"
  },
  {
-  "id": "chemistry-ba",
-  "kind": "major",
-  "name": "Chemistry (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "china-asia-pacific-studies-ba",
   "kind": "major",
   "name": "China and Asia-Pacific Studies (BA)",
