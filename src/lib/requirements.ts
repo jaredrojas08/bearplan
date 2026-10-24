@@ -476,9 +476,18 @@ function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
     const code = normalizeCode(course.code)
     return isRepeatable(plan, template, code) ? `uid:${course.uid}` : code
   }
-  const claimed = new Map<string, Set<string>>()
+  // How many checks in each group have used each course key.
+  const uses = new Map<string, Map<string, number>>()
   return template.checks.map((check) => {
-    const taken = (check.group && claimed.get(check.group)) || new Set<string>()
+    const groupUses = check.group ? (uses.get(check.group) ?? new Map<string, number>()) : new Map<string, number>()
+    const limits = (check.group && template.checkGroups?.[check.group]) || { maxUsesPerCourse: 1, maxSharedCourses: 0 }
+    const shared = () => [...groupUses.values()].filter((n) => n > 1).length
+    const usable = (key: string) => {
+      const n = groupUses.get(key) ?? 0
+      if (!check.group || n === 0) return true
+      // A second use is a shared course, which the group may cap.
+      return n < limits.maxUsesPerCourse && (n > 1 || shared() < limits.maxSharedCourses)
+    }
     const used: PlanCourse[] = []
     const usedKeys = new Set<string>()
     const enough = () => (check.credits !== undefined ? sumCredits(used) >= check.credits : used.length >= (check.count ?? 1))
@@ -487,14 +496,17 @@ function evaluateChecks(plan: Plan, template: Template): CheckResult[] {
       if (check.minor && section?.minor !== check.minor) return false
       return !check.section || section?.id === check.section
     })
-    for (const course of pool) {
+    // Courses not yet used in the group go first, so shared uses are spent only when needed.
+    const ordered = [...pool].sort((a, b) => (groupUses.get(keyOf(a)) ?? 0) - (groupUses.get(keyOf(b)) ?? 0))
+    for (const course of ordered) {
       if (enough()) break
       const key = keyOf(course)
-      if (taken.has(key) || usedKeys.has(key) || !checkFits(check, course)) continue
+      if (usedKeys.has(key) || !usable(key) || !checkFits(check, course)) continue
       used.push(course)
       usedKeys.add(key)
+      groupUses.set(key, (groupUses.get(key) ?? 0) + 1)
     }
-    if (check.group) claimed.set(check.group, new Set([...taken, ...usedKeys]))
+    if (check.group) uses.set(check.group, groupUses)
 
     const met = enough()
     const codes = used.map((c) => c.code).join(', ')
@@ -539,6 +551,10 @@ export function withMinors(template: Template, minors: Template[]): Template {
         })),
       ),
     ],
+    checkGroups: {
+      ...template.checkGroups,
+      ...Object.fromEntries(minors.flatMap((m) => Object.entries(m.checkGroups ?? {}).map(([g, v]) => [`${m.id}.${g}`, v]))),
+    },
     addedMinors: minors.map(({ id, name, minUniqueCredits, draft, source }) => ({ id, name, minUniqueCredits, draft, source })),
   }
 }

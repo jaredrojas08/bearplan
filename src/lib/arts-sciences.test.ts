@@ -90,3 +90,39 @@ describe('Psychology research cap', () => {
     expect(sx['PSYCH 4700@psych']).toEqual(['S/U in letter-grade row'])
   })
 })
+
+describe('A&S distribution overlap', () => {
+  const dist = (summary: ReturnType<typeof summarize>) =>
+    Object.fromEntries(summary.checks.filter((c) => c.check.id.startsWith('dist-')).map((c) => [c.check.id, c.met]))
+
+  it('lets one course meet two categories', () => {
+    const s = summarize(economics, [course('ANTHR 1400', 'additional', ['SCD-AS', 'GLC-AS'], 3)])
+    expect(dist(s)['dist-scd']).toBe(true)
+    expect(dist(s)['dist-glc']).toBe(true)
+  })
+
+  it('stops a course at two categories', () => {
+    const s = summarize(economics, [course('X 3000', 'additional', ['ALC-AS', 'HST-AS', 'SCD-AS'], 3)])
+    expect(['dist-alc', 'dist-hst', 'dist-scd'].filter((id) => dist(s)[id])).toHaveLength(2)
+  })
+
+  it('allows only two courses to double up', () => {
+    const s = summarize(economics, [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['ETM-AS', 'GLC-AS'], 3),
+      course('C 3000', 'additional', ['SCD-AS', 'SSC-AS'], 3),
+    ])
+    const met = Object.values(dist(s)).filter(Boolean).length
+    // Two courses cover two categories each; the third covers only one.
+    expect(met).toBe(5)
+  })
+
+  it('spends a fresh course before sharing one', () => {
+    const s = summarize(economics, [
+      course('A 3000', 'additional', ['ALC-AS', 'HST-AS'], 3),
+      course('B 3000', 'additional', ['HST-AS'], 3),
+    ])
+    expect(dist(s)['dist-alc'] && dist(s)['dist-hst']).toBe(true)
+    expect(s.checks.find((c) => c.check.id === 'dist-hst')?.text).toBe('satisfied by B 3000')
+  })
+})
