@@ -54,12 +54,6 @@
   "college": "College of Agriculture and Life Sciences"
  },
  {
-  "id": "anthropology-ba",
-  "kind": "major",
-  "name": "Anthropology (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "anthropology-minor",
   "kind": "minor",
   "name": "Anthropology",
@@ -250,12 +244,6 @@
   "kind": "major",
   "name": "Civil Engineering (BS)",
   "college": "Duffield College of Engineering"
- },
- {
-  "id": "classics-ba",
-  "kind": "major",
-  "name": "Classics (BA)",
-  "college": "College of Arts and Sciences"
  },
  {
   "id": "climate-change-minor",
@@ -606,12 +594,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "global-development-bs",
-  "kind": "major",
-  "name": "Global Development (BS)",
-  "college": "College of Agriculture and Life Sciences"
- },
- {
   "id": "global-development-minor",
   "kind": "minor",
   "name": "Global Development",
@@ -831,12 +813,6 @@
   "id": "lgbt-minor",
   "kind": "minor",
   "name": "Lesbian, Gay, Bisexual, & Transgender",
-  "college": "College of Arts and Sciences"
- },
- {
-  "id": "linguistics-ba",
-  "kind": "major",
-  "name": "Linguistics (BA)",
   "college": "College of Arts and Sciences"
  },
  {
@@ -1114,12 +1090,6 @@
   "kind": "minor",
   "name": "Smart Cities",
   "college": "Duffield College of Engineering"
- },
- {
-  "id": "sociology-ba",
-  "kind": "major",
-  "name": "Sociology (BA)",
-  "college": "College of Arts and Sciences"
  },
  {
   "id": "soil-science-minor",
