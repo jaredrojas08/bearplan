@@ -846,12 +846,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "linguistics-ba",
-  "kind": "major",
-  "name": "Linguistics (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "linguistics-minor",
   "kind": "minor",
   "name": "Linguistics",
