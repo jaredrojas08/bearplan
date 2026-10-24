@@ -1,0 +1,681 @@
+{
+  "id": "comparative-literature-ba",
+  "name": "Comparative Literature (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/comparative-literature-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "No prerequisites for entry. Major courses require a minimum grade of C. At most three courses from another literature major may also count toward this major; the app cannot check overlap. Study-abroad course counts require faculty-advisor consultation and Director of Undergraduate Studies approval. FWS courses cannot count toward the major; ENGL 2860 or ENGL 2880 used to satisfy FWS also cannot count. Optional honors requires 36 credits and a roughly 50-page senior essay (COML 4930 and COML 4940), supervised by a faculty member, preferably in the department. COML 4930 or COML 4940 may count as one required COML course. Honors eligibility requires at least B+ on the senior essay, in major coursework, and overall at Cornell, starting with 2026-27 graduates. The page does not resolve how the general half-in-original-language rule is measured for the media track; confirm with the advisor.",
+  "sections": [
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requiresConcentration": true,
+  "concentrations": [
+    {
+      "id": "comparative-literary-studies",
+      "name": "Comparative Literary Studies",
+      "sections": [
+        {
+          "id": "literary-studies",
+          "title": "Comparative Literary Studies Track",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "type": "slots",
+          "letterGrade": true,
+          "note": "Ten courses of 3-4 credits each, totaling at least 30 credits. At least five must be taken in Comparative Literature. Half the major must study works in languages other than English, read in the original language; verify with the advisor. The app cannot check the 4-credit course maximum, departmental offering, reading language, or subject matter. The theory course must be department-designated for the year; the saved page does not list eligible courses. COML 3001 is offered in fall, usually taken junior or senior year. The five foreign-literature rows require literature or other humanities courses in one or more foreign literature departments, with texts read in the original language. One may instead be an advanced foreign language course (conversation, composition, etc.); verify eligibility with the advisor.",
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Major credits",
+              "credits": 30
+            },
+            {
+              "type": "minCount",
+              "label": "Courses in Comparative Literature",
+              "count": 5,
+              "match": {
+                "subjects": [
+                  "COML"
+                ]
+              }
+            }
+          ],
+          "slots": [
+            {
+              "id": "methods",
+              "label": "COML 3001",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "codes": [
+                    "COML 3001"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "theory",
+              "label": "Department-designated theory course",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "subjects": [
+                    "COML"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "coml1",
+              "label": "COML 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "subjects": [
+                    "COML"
+                  ],
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "coml2",
+              "label": "COML 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "subjects": [
+                    "COML"
+                  ],
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "coml3",
+              "label": "COML 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "subjects": [
+                    "COML"
+                  ],
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "foreign1",
+              "label": "Foreign literature / humanities 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "foreign2",
+              "label": "Foreign literature / humanities 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "foreign3",
+              "label": "Foreign literature / humanities 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "foreign4",
+              "label": "Foreign literature / humanities 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "foreign5",
+              "label": "Foreign literature / humanities 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "literary-visual-media-studies",
+      "name": "Literary, Visual, and Media Studies",
+      "sections": [
+        {
+          "id": "media-studies",
+          "title": "Literary, Visual, and Media Studies Track",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "type": "slots",
+          "letterGrade": true,
+          "note": "Ten courses of 3-4 credits each, totaling at least 30 credits. At least five must be taken in Comparative Literature. Half the major must study works in languages other than English, read in the original language; verify with the advisor. The app cannot check the 4-credit course maximum, departmental offering, reading language, or subject matter. The theory course must be department-designated for the year; the saved page does not list eligible courses. COML 3001 is offered in fall, usually taken junior or senior year. The two literary-study and six visual-arts/media courses must be offered by Comparative Literature or other humanities departments or programs. Plan a coherent program with the faculty advisor; language eligibility needs Director of Undergraduate Studies approval. Speech or writing in film, video, or hypertext must be studied in the original foreign language. For visual material from non-English cultures with peripheral foreign text or speech, use foreign-language primary and secondary sources for reports and papers.",
+          "constraints": [
+            {
+              "type": "minCredits",
+              "label": "Major credits",
+              "credits": 30
+            },
+            {
+              "type": "minCount",
+              "label": "Courses in Comparative Literature",
+              "count": 5,
+              "match": {
+                "subjects": [
+                  "COML"
+                ]
+              }
+            }
+          ],
+          "slots": [
+            {
+              "id": "methods",
+              "label": "COML 3001",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "codes": [
+                    "COML 3001"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "theory",
+              "label": "Department-designated theory course",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "subjects": [
+                    "COML"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "literature1",
+              "label": "Literary study 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "literature2",
+              "label": "Literary study 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "media1",
+              "label": "Visual arts / media studies 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "media2",
+              "label": "Visual arts / media studies 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "media3",
+              "label": "Visual arts / media studies 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "media4",
+              "label": "Visual arts / media studies 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "media5",
+              "label": "Visual arts / media studies 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            },
+            {
+              "id": "media6",
+              "label": "Visual arts / media studies 2000+",
+              "rule": [
+                {
+                  "excludeDistributions": [
+                    "FWS"
+                  ],
+                  "minCredits": 3,
+                  "minLevel": 2000
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}

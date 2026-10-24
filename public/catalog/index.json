@@ -300,12 +300,6 @@
   "college": "College of Agriculture and Life Sciences"
  },
  {
-  "id": "comparative-literature-ba",
-  "kind": "major",
-  "name": "Comparative Literature (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "comparative-literature-minor",
   "kind": "minor",
   "name": "Comparative Literature",
