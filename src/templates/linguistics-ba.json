@@ -1,0 +1,732 @@
+{
+  "id": "linguistics-ba",
+  "name": "Linguistics (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/linguistics-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "All major courses require a letter grade of C- or better; transferred Linguistics credits require B- or better. Declaration requires LING 1101 and at least one other Foundation Course with B- or higher (the page does not clearly say whether this threshold applies to both). Substitutions require an advisor petition and director of undergraduate studies approval. Optional honors requires overall GPA 3.3 and major GPA 3.5, with provisional admission possible; apply by the start of senior fall. Honors adds a thesis, typically eight credits over two semesters: LING 4493 and LING 4491, then required LING 4494 and LING 4492, an oral defense, a deposited thesis, and an expected year-end presentation. Honors is reviewed by a departmental committee.",
+  "sections": [
+    {
+      "id": "linguistics",
+      "title": "Linguistics Courses",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Four foundation courses and six additional courses, totaling at least 37 credits. Choose additional courses with an advisor; at least three of the six must be regularly scheduled linguistics courses taken at Cornell. Language courses and FWS do not count. Cross-listed courses count under any prefix; one other-department course with at least 50% linguistic content may count by petition. Non-LING cross-listings and petitions need manual approval or a template adjustment; language content and Cornell attendance are not checked. At most one additional course may be satisfied by four credits of CU-UGR coursework; the app checks that designation only when supplied in course categories and cannot combine several research courses into one row.",
+      "slots": [
+        {
+          "id": "f1",
+          "label": "LING 1101",
+          "rule": [
+            {
+              "codes": [
+                "LING 1101"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f2",
+          "label": "LING 3302",
+          "rule": [
+            {
+              "codes": [
+                "LING 3302"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f3",
+          "label": "LING 3303",
+          "rule": [
+            {
+              "codes": [
+                "LING 3303"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f4",
+          "label": "LING 3314",
+          "rule": [
+            {
+              "codes": [
+                "LING 3314"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "label": "Additional Linguistics course (3+ cr)",
+          "rule": [
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 3,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS",
+                "CU-UGR"
+              ]
+            },
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 4,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "distributions": [
+                "CU-UGR"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Additional Linguistics course (3+ cr)",
+          "rule": [
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 3,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS",
+                "CU-UGR"
+              ]
+            },
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 4,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "distributions": [
+                "CU-UGR"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "Additional Linguistics course (3+ cr)",
+          "rule": [
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 3,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS",
+                "CU-UGR"
+              ]
+            },
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 4,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "distributions": [
+                "CU-UGR"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4",
+          "label": "Additional Linguistics course (3+ cr)",
+          "rule": [
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 3,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS",
+                "CU-UGR"
+              ]
+            },
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 4,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "distributions": [
+                "CU-UGR"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e5",
+          "label": "Additional Linguistics course (3+ cr)",
+          "rule": [
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 3,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS",
+                "CU-UGR"
+              ]
+            },
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 4,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "distributions": [
+                "CU-UGR"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6",
+          "label": "Additional Linguistics course (3+ cr)",
+          "rule": [
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 3,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS",
+                "CU-UGR"
+              ]
+            },
+            {
+              "subjects": [
+                "LING"
+              ],
+              "minCredits": 4,
+              "excludeCodes": [
+                "LING 1101",
+                "LING 3302",
+                "LING 3303",
+                "LING 3314"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "distributions": [
+                "CU-UGR"
+              ]
+            }
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Linguistics credits",
+          "credits": 37
+        },
+        {
+          "type": "minCount",
+          "label": "Additional courses at 3000+",
+          "count": 2,
+          "match": {
+            "minLevel": 3000,
+            "excludeCodes": [
+              "LING 1101",
+              "LING 3302",
+              "LING 3303",
+              "LING 3314"
+            ]
+          }
+        },
+        {
+          "type": "maxCount",
+          "label": "Additional 1000-level courses",
+          "count": 1,
+          "match": {
+            "minLevel": 1000,
+            "maxLevel": 1999,
+            "excludeCodes": [
+              "LING 1101",
+              "LING 3302",
+              "LING 3303",
+              "LING 3314"
+            ]
+          },
+          "reason": "Only one additional 1000-level course counts"
+        },
+        {
+          "type": "maxCount",
+          "label": "CU-UGR course",
+          "count": 1,
+          "match": {
+            "distributions": [
+              "CU-UGR"
+            ],
+            "excludeCodes": [
+              "LING 1101",
+              "LING 3302",
+              "LING 3303",
+              "LING 3314"
+            ]
+          },
+          "reason": "Only one additional course may be satisfied by CU-UGR coursework"
+        }
+      ]
+    },
+    {
+      "id": "ancillary",
+      "title": "Ancillary Skills Courses",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Two courses of at least 3 credits, chosen with an advisor in one or more areas: statistics, logic, computer programming, language teaching methodology, two semesters of a non-European or non-Indo-European language, or two semesters beyond the Arts College language requirement in a language relevant to the student's interests. The page lists no course codes; subject suitability and language sequences require advisor review. This requirement may be waived for students majoring in more than one field; the app does not apply that waiver.",
+      "slots": [
+        {
+          "id": "a1",
+          "label": "Advisor-approved ancillary skills course (3+ cr)",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "Advisor-approved ancillary skills course (3+ cr)",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}
