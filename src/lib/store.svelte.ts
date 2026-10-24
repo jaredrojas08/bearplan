@@ -8,6 +8,7 @@ import businessMinorEngineers from '../templates/business-minor-engineers.json'
 import csBaTemplate from '../templates/computer-science-ba.json'
 import csTemplate from '../templates/cs-engineering-fa24.json'
 import chemistryTemplate from '../templates/chemistry-ba.json'
+import astronomyTemplate from '../templates/astronomy-ba.json'
 import economicsTemplate from '../templates/economics-ba.json'
 import philosophyTemplate from '../templates/philosophy-ba.json'
 import statisticsTemplate from '../templates/statistics-data-science-ba.json'
@@ -70,6 +71,7 @@ export const BUILT_IN_TEMPLATES: Template[] = [
   aemPre2025Template,
   csBaTemplate,
   economicsTemplate,
+  astronomyTemplate,
   philosophyTemplate,
   chemistryTemplate,
   statisticsTemplate,
