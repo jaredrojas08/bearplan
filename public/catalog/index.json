@@ -984,12 +984,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "philosophy-ba",
-  "kind": "major",
-  "name": "Philosophy (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "philosophy-minor",
   "kind": "minor",
   "name": "Philosophy",
