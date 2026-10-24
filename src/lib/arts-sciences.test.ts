@@ -168,4 +168,9 @@ describe('A&S distribution matching', () => {
     const fillers = Array.from({ length: 26 }, (_, i) => course(`F ${3000 + i}`, 'additional', ['BIO-AS', 'SDS-AS'], 3))
     expect(met(summarize(wide, [...fillers, ...singles]))).toHaveLength(10)
   })
+  it('keeps a writing seminar out of the distribution checks', () => {
+    const met = (courses: PlanCourse[]) => summarize(economics, courses).checks.filter((c) => c.met).map((c) => c.check.id)
+    expect(met([course('ENGL 1105', 'additional', ['ALC-AS', 'FWS'], 3)])).not.toContain('dist-alc')
+    expect(met([course('ENGL 2010', 'additional', ['ALC-AS'], 3)])).toContain('dist-alc')
+  })
 })
