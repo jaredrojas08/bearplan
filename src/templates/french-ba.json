@@ -1,0 +1,606 @@
+{
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ],
+  "id": "french-ba",
+  "name": "French (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/french-ba/",
+  "matriculatedFrom": "FA22",
+  "failingGrades": [
+    "C+",
+    "C",
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "major",
+      "title": "French Major",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Eight courses of at least 3 credits each at the FREN 2095 level or higher. FREN 2310 is required unless an equivalent was already taken; equivalents need advisor review and are not automatically recognized. Confirm that the Francophone row covers the world beyond France; course content is not checked. The catalog lists FREN 2310, a 4000-level course, a Francophone course and three electives (six courses), but requires eight overall; the remaining rows preserve that total. A 4000-level course can occupy any eligible row.",
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "4000-level course",
+          "count": 1,
+          "match": {
+            "minLevel": 4000,
+            "maxLevel": 4999
+          }
+        },
+        {
+          "type": "maxCount",
+          "label": "Courses outside French",
+          "count": 2,
+          "match": {
+            "excludeSubjects": [
+              "FREN"
+            ]
+          },
+          "reason": "At most two Cornell courses from outside Romance Studies count"
+        }
+      ],
+      "slots": [
+        {
+          "id": "intro",
+          "label": "FREN 2310 (or approved equivalent)",
+          "rule": [
+            {
+              "codes": [
+                "FREN 2310"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "francophone",
+          "label": "Francophone world beyond France",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "label": "Eligible elective 1",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Eligible elective 2",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "e3",
+          "label": "Eligible elective 3",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "r1",
+          "label": "Remaining major course 1",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "label": "Remaining major course 2",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        },
+        {
+          "id": "r3",
+          "label": "Remaining major course 3",
+          "rule": [
+            {
+              "subjects": [
+                "FREN"
+              ],
+              "minLevel": 2095,
+              "minCredits": 3,
+              "excludeCodes": [
+                "FREN 4290",
+                "FREN 4300"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            },
+            {
+              "excludeSubjects": [
+                "FREN",
+                "PE"
+              ],
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ],
+              "reason": "Outside courses need at least 50% France or Francophone content",
+              "minLevel": 2000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "Major courses require B- or better and cannot be S/U. Up to two FREN courses taught in English and up to two Cornell courses outside Romance Studies may count if at least 50% of their content deals directly with France or the Francophone world. Up to three non-Cornell courses, including study abroad, may count under the same 50% content rule; instruction in French alone is insufficient. These language, content and origin limits require advisor review; outside-subject and transfer substitutions are not automatically recognized. Study abroad expects FREN 2095 before departure; a 3000-level Romance Studies course is recommended. Optional honors requires a 3.00 overall GPA, 3.5 major GPA, independent research ability, an essay available by April 15 and an oral examination. FREN 4290 and FREN 4300 honors credit is additional to the eight major courses."
+}

@@ -28,6 +28,7 @@ const VERIFIED = new Set([
   'business-minor',
   'dyson-business-minor-engineers',
   'economics-ba',
+  'french-ba',
   'anthropology-ba',
   'linguistics-ba',
   'sociology-ba',
