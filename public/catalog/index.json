@@ -834,12 +834,6 @@
   "college": "College of Arts and Sciences"
  },
  {
-  "id": "near-eastern-studies-ba",
-  "kind": "major",
-  "name": "Near Eastern Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "near-eastern-studies-minor",
   "kind": "minor",
   "name": "Near Eastern Studies",

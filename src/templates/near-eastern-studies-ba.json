@@ -1,0 +1,452 @@
+{
+  "id": "near-eastern-studies-ba",
+  "name": "Near Eastern Studies (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/near-eastern-studies-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "C-",
+    "C",
+    "C+",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "All major courses require a letter grade of B- or better. Choose courses with your advisor. No course may satisfy two major requirements; language courses used for the language requirement do not count toward the 30 major credits. Optional honors requires superior work, an honors thesis, NES 4998 in fall and NES 4999 in spring, in addition to the regular major requirements; admission and thesis completion do not guarantee honors.",
+  "sections": [
+    {
+      "id": "major",
+      "title": "NES Major Coursework",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "type": "creditBucket",
+      "minCredits": 30,
+      "letterGrade": true,
+      "rule": [
+        {
+          "subjects": [
+            "NES",
+            "ARAB",
+            "HEBRW",
+            "PERSN",
+            "TURK"
+          ],
+          "excludeCodes": [
+            "NES 4998",
+            "NES 4999"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "type": "minCount",
+          "label": "NES 4560: Theory and Method",
+          "count": 1,
+          "match": {
+            "codes": [
+              "NES 4560"
+            ]
+          }
+        }
+      ],
+      "note": "Complete at least one distinct course for each period: before 600 CE, 600 CE to 1800 CE, and 1800 CE to the present. NES 4560 cannot fulfill temporal breadth; it is offered every spring and should be taken early. The page gives no period-specific course lists, so breadth needs advisor review. Additional Near Eastern language courses may count only after fulfilling the language requirement. Up to two Middle East-related Cornell courses not cross-listed with NES may count by petition. Up to 12 credits of relevant, departmentally approved study abroad or transfer coursework may count. Petitions, transfer approval and origin, chronological periods, and language-course eligibility cannot be checked automatically; the rules accept NES and the listed modern-language subjects, so petitioned non-cross-listed courses and ancient-language courses aren't accepted here. At most two independent studies count; the page gives no course codes for them, so track this with your advisor."
+    },
+    {
+      "id": "language-major",
+      "title": "Middle Eastern Language",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "type": "slots",
+      "letterGrade": true,
+      "note": "Functional knowledge equivalent to two years in one Middle Eastern language is required. For modern-language students beginning at Cornell or placing into beginning or intermediate study, complete the fourth semester shown below. Earlier language courses belong outside the 30-credit major bucket. Ancient languages (such as Akkadian, Ancient Egyptian, or Biblical Hebrew) also qualify; exceptionally, one year each of two ancient or modern languages may qualify. The page provides no ancient-language course codes or exceptional sequence lists. Those alternatives and placement/proficiency need advisor confirmation and a template adjustment; this row checks only the listed modern-language endpoints.",
+      "slots": [
+        {
+          "id": "l1",
+          "label": "Fourth-semester modern language",
+          "rule": [
+            {
+              "codes": [
+                "ARAB 2202",
+                "HEBRW 2100",
+                "PERSN 2322",
+                "TURK 2332"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checkGroups": {
+    "as-dist": {
+      "maxUsesPerCourse": 2,
+      "maxSharedCourses": 2
+    }
+  },
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits.",
+      "group": "as-dist"
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ],
+          "excludeDistributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may do that."
+    }
+  ]
+}
