@@ -28,7 +28,8 @@ describe('German Studies BA', () => {
 
   it('requires 25 credits even when all eight course rows are filled', () => {
     const section = german.sections.find((s) => s.id === 'major-courses')!
-    const plan: Plan = { ...empty, courses: section.slots!.map((slot, i) => ({ uid: String(i), code: `GERST ${3000 + i}`, title: 'T', credits: 3, term: 'FA26', placement: `${section.id}/${slot.id}` })) }
+    const plan: Plan = { ...empty, courses: section.slots!.map((slot, i) => ({ uid: String(i), code: `GERST ${i < 2 ? 3000 + i : 3210 + i - 2}`, title: 'T', credits: 3, term: 'FA26', placement: `${section.id}/${slot.id}` })) }
+    for (const course of plan.courses) expect(placeFailure({ ...empty }, german, course, course.placement)).toBeNull()
     const result = evaluatePlan(plan, german, new Date(2026, 9, 1)).sections.find((s) => s.section.id === section.id)!
     expect(result.complete).toBe(false)
     expect(result.chips.find((c) => c.label === 'Major coursework credits')?.ok).toBe(false)
