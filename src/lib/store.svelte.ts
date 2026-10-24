@@ -1,3 +1,5 @@
+import globalDevelopmentTemplate from '../templates/global-development-bs.json'
+import globalDevelopmentPre2025Template from '../templates/global-development-bs-cals-pre2025.json'
 import communicationTemplate from '../templates/communication-bs.json'
 import communicationPre2025Template from '../templates/communication-bs-cals-pre2025.json'
 import examplePlan from '../seed/example-plan.json'
@@ -64,6 +66,8 @@ const THEME_KEY = 'bearplan:theme'
 const TEMPLATES_KEY = 'bearplan:templates'
 
 export const BUILT_IN_TEMPLATES: Template[] = [
+  globalDevelopmentTemplate,
+  globalDevelopmentPre2025Template,
   communicationTemplate,
   communicationPre2025Template,
   csTemplate,
