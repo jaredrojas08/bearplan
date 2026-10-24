@@ -1,0 +1,1137 @@
+{
+  "id": "global-development-bs",
+  "name": "Global Development (BS)",
+  "college": "CALS (2025+ distributions)",
+  "source": "https://catalog.cornell.edu/programs/global-development-bs/",
+  "matriculatedFrom": "FA25",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, plus 100 letter-graded and 105 structured credits. Confirm with your advisor.",
+  "failingGrades": [
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "footnote": "Core and focused electives require a letter grade of C or higher unless offered only S/U. Confirm S/U-only exceptions with an advisor. A course may fulfill only one major requirement. Double majors require GDEV review; Environment & Development cannot double major with ENVS, and Agriculture & Food Systems cannot double major with Ag Science. Transfer into the major requires a Cornell GPA of 3.0, completion of GDEV 1102, 1300 and 1105 before transfer, a B+ average in 1102 and 1300, and S in 1105; these courses are fall-only.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "title": "Core Requirements",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "c1102",
+          "label": "GDEV 1102",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 1102"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1105",
+          "label": "GDEV 1105",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 1105"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1300",
+          "label": "GDEV 1300",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 1300"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2065",
+          "label": "GDEV 2065",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 2065"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c2130",
+          "label": "GDEV 2130",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 2130"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ethics-economics",
+          "label": "GDEV 2202 / GDEV 2450",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 2202",
+                "GDEV 2450"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "perspectives",
+          "label": "GDEV 4961",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 4961"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "methods",
+          "label": "Additional Methods Course",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 3140",
+                "GDEV 3300",
+                "GDEV 3680",
+                "GDEV 3740",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295"
+              ]
+            },
+            {
+              "subjects": [
+                "GDEV"
+              ],
+              "numberPattern": [
+                "x55x"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Eight courses, 21 credits. Courses offered only S/U may use that grading basis; confirm with the advisor.",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Core credits",
+          "credits": 21
+        }
+      ],
+      "suAllowedCodes": [
+        "GDEV 1105"
+      ]
+    },
+    {
+      "id": "engaged",
+      "title": "Engaged Learning",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": false,
+      "type": "slots",
+      "slots": [
+        {
+          "id": "pre",
+          "label": "GDEV 2105",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 2105"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "post",
+          "label": "GDEV 3105",
+          "rule": [
+            {
+              "codes": [
+                "GDEV 3105"
+              ]
+            }
+          ]
+        }
+      ],
+      "note": "Complete a Pre-Departure Portfolio in the semester before a minimum eight-week domestic or international field-based internship. Take GDEV 2105 in spring of the second or third year (7wk2) and GDEV 3105 in the fall after the internship (7wk1). Two courses, 2 credits; verify the portfolio and field experience with the advisor.",
+      "constraints": [
+        {
+          "type": "minCredits",
+          "label": "Engaged learning credits",
+          "credits": 2
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "requiresConcentration": true,
+  "concentrations": [
+    {
+      "id": "social-economic-development",
+      "name": "Social & Economic Development",
+      "sections": [
+        {
+          "id": "social-required",
+          "title": "Social & Economic Development Required Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "letterGrade": true,
+          "type": "slots",
+          "slots": [
+            {
+              "id": "r1",
+              "label": "GDEV 2450",
+              "rule": [
+                {
+                  "codes": [
+                    "GDEV 2450"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "r2",
+              "label": "GDEV 3010",
+              "rule": [
+                {
+                  "codes": [
+                    "GDEV 3010"
+                  ]
+                }
+              ]
+            }
+          ],
+          "note": "GDEV 2450 cannot also fill the core choice; use GDEV 2202 there."
+        },
+        {
+          "id": "social-electives",
+          "title": "Social & Economic Development Electives",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "type": "creditBucket",
+          "minCredits": 15,
+          "rule": [
+            {
+              "codes": [
+                "AEM 2000",
+                "AEM 2350",
+                "AEM 2500",
+                "GDEV 2010",
+                "GDEV 2202",
+                "GDEV 3150",
+                "GDEV 3240",
+                "GDEV 3400",
+                "GDEV 3700",
+                "AEM 2300",
+                "AEM 4300",
+                "AEM 4350",
+                "AEM 4420",
+                "GDEV 2300",
+                "GDEV 2710",
+                "EDUC 2710",
+                "GDEV 3020",
+                "GDEV 3030",
+                "GDEV 3260",
+                "GDEV 3280",
+                "PUBPOL 3280",
+                "GDEV 4050",
+                "GDEV 4340",
+                "GDEV 4450",
+                "GDEV 4770",
+                "CRP 4770",
+                "EDUC 2155",
+                "GDEV 2155",
+                "EDUC 2200",
+                "GDEV 2100",
+                "EDUC 2210",
+                "GDEV 2210",
+                "EDUC 2410",
+                "GDEV 2410",
+                "EDUC 3142",
+                "GDEV 3142",
+                "EDUC 4010",
+                "GDEV 4011",
+                "EDUC 4200",
+                "GDEV 4200",
+                "EDUC 4223",
+                "GDEV 4223",
+                "GDEV 2295",
+                "GDEV 3140",
+                "GDEV 3300",
+                "GDEV 3390",
+                "GDEV 3500",
+                "GDEV 3501",
+                "GDEV 3502",
+                "GDEV 3680",
+                "GDEV 3740",
+                "GDEV 3900",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295"
+              ]
+            }
+          ],
+          "note": "Five electives, at least 15 credits, at least 3 GDEV courses (9 credits), and at least three courses at the 3000 level or higher. GDEV 3500 and GDEV 3501 are listed together as one elective sequence; complete both and have the advisor verify the five-elective count. Up to two approved study-abroad courses may substitute. GDEV 4080 lists PUBPOL 2030 as a prerequisite. Cross-listed table entries accept either listed prefix.",
+          "groups": [
+            {
+              "id": "gdev",
+              "name": "GDEV",
+              "codes": [
+                "GDEV 2010",
+                "GDEV 2202",
+                "GDEV 3150",
+                "GDEV 3240",
+                "GDEV 3400",
+                "GDEV 3700",
+                "GDEV 2300",
+                "GDEV 2710",
+                "GDEV 3020",
+                "GDEV 3030",
+                "GDEV 3260",
+                "GDEV 3280",
+                "GDEV 4050",
+                "GDEV 4340",
+                "GDEV 4450",
+                "GDEV 4770",
+                "GDEV 2155",
+                "GDEV 2100",
+                "GDEV 2210",
+                "GDEV 2410",
+                "GDEV 3142",
+                "GDEV 4011",
+                "GDEV 4200",
+                "GDEV 4223",
+                "GDEV 2295",
+                "GDEV 3030",
+                "GDEV 3140",
+                "GDEV 3300",
+                "GDEV 3390",
+                "GDEV 3500",
+                "GDEV 3501",
+                "GDEV 3502",
+                "GDEV 3680",
+                "GDEV 3740",
+                "GDEV 3900",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCount",
+              "label": "Five electives",
+              "count": 5,
+              "match": {}
+            },
+            {
+              "type": "minCount",
+              "label": "GDEV electives",
+              "count": 3,
+              "match": {
+                "subjects": [
+                  "GDEV"
+                ]
+              }
+            },
+            {
+              "type": "groupCredits",
+              "label": "GDEV credits",
+              "group": "gdev",
+              "credits": 9
+            },
+            {
+              "type": "minCount",
+              "label": "3000-level or higher",
+              "count": 3,
+              "match": {
+                "minLevel": 3000
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agriculture-food-systems",
+      "name": "Agriculture & Food Systems",
+      "sections": [
+        {
+          "id": "ag-required",
+          "title": "Agriculture & Food Systems Required Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "letterGrade": true,
+          "type": "slots",
+          "slots": [
+            {
+              "id": "food",
+              "label": "GDEV 2300 / GDEV 3400",
+              "rule": [
+                {
+                  "codes": [
+                    "GDEV 2300",
+                    "GDEV 3400"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "agroecology",
+              "label": "PLSCI 4730",
+              "rule": [
+                {
+                  "codes": [
+                    "PLSCI 4730"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ag-electives",
+          "title": "Agriculture & Food Systems Electives",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "type": "creditBucket",
+          "minCredits": 15,
+          "rule": [
+            {
+              "codes": [
+                "ANSC 2000",
+                "BIOEE 4690",
+                "PLSCI 2110",
+                "PLSCI 2440",
+                "PLSCI 3210",
+                "PLSCI 4140",
+                "GDEV 4140",
+                "ANSC 2120",
+                "BIOEE 4780",
+                "ENTOM 2030",
+                "ENTOM 2031",
+                "PLSCI 2600",
+                "PLSCI 3010",
+                "PLSCI 3025",
+                "PLSCI 3150",
+                "PLSCI 3350",
+                "PLSCI 3550",
+                "PLSCI 3800",
+                "PLSCI 4020",
+                "PLSCI 4175",
+                "PLSCI 4230",
+                "VIEN 3610",
+                "AEM 4485",
+                "GDEV 2202",
+                "GDEV 2295",
+                "GDEV 2300",
+                "GDEV 2450",
+                "GDEV 3020",
+                "GDEV 3030",
+                "GDEV 3140",
+                "GDEV 3170",
+                "GDEV 3260",
+                "GDEV 3300",
+                "GDEV 3400",
+                "GDEV 3500",
+                "GDEV 3501",
+                "GDEV 3502",
+                "GDEV 3680",
+                "GDEV 3740",
+                "GDEV 3900",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295",
+                "GDEV 4450",
+                "GDEV 4880",
+                "NS 3060",
+                "NTRES 3330"
+              ]
+            }
+          ],
+          "note": "Five electives, at least 15 credits, at least 2 GDEV courses (6 credits), and at least three courses at the 3000 level or higher. GDEV 3500 and GDEV 3501 are listed together as one elective sequence; complete both and have the advisor verify the five-elective count. Up to two approved study-abroad courses may substitute. GDEV 4080 lists PUBPOL 2030 as a prerequisite. Cross-listed table entries accept either listed prefix. Two electives must be foundational plant/agricultural science and two social/economic/health; the fifth may come from any of the three lists.",
+          "groups": [
+            {
+              "id": "gdev",
+              "name": "GDEV",
+              "codes": [
+                "GDEV 4140",
+                "GDEV 2202",
+                "GDEV 2295",
+                "GDEV 2300",
+                "GDEV 2450",
+                "GDEV 3020",
+                "GDEV 3030",
+                "GDEV 3140",
+                "GDEV 3170",
+                "GDEV 3260",
+                "GDEV 3300",
+                "GDEV 3400",
+                "GDEV 3500",
+                "GDEV 3501",
+                "GDEV 3502",
+                "GDEV 3680",
+                "GDEV 3740",
+                "GDEV 3900",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295",
+                "GDEV 4450",
+                "GDEV 4880"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCount",
+              "label": "Five electives",
+              "count": 5,
+              "match": {}
+            },
+            {
+              "type": "minCount",
+              "label": "GDEV electives",
+              "count": 2,
+              "match": {
+                "subjects": [
+                  "GDEV"
+                ]
+              }
+            },
+            {
+              "type": "groupCredits",
+              "label": "GDEV credits",
+              "group": "gdev",
+              "credits": 6
+            },
+            {
+              "type": "minCount",
+              "label": "3000-level or higher",
+              "count": 3,
+              "match": {
+                "minLevel": 3000
+              }
+            },
+            {
+              "type": "minCount",
+              "label": "Foundational Plant and Agricultural Sciences",
+              "count": 2,
+              "match": {
+                "codes": [
+                  "ANSC 2000",
+                  "BIOEE 4690",
+                  "PLSCI 2110",
+                  "PLSCI 2440",
+                  "PLSCI 3210",
+                  "PLSCI 4140",
+                  "GDEV 4140"
+                ]
+              }
+            },
+            {
+              "type": "minCount",
+              "label": "Social, Economic and Health",
+              "count": 2,
+              "match": {
+                "codes": [
+                  "AEM 4485",
+                  "GDEV 2202",
+                  "GDEV 2295",
+                  "GDEV 2300",
+                  "GDEV 2450",
+                  "GDEV 3020",
+                  "GDEV 3030",
+                  "GDEV 3140",
+                  "GDEV 3170",
+                  "GDEV 3260",
+                  "GDEV 3300",
+                  "GDEV 3400",
+                  "GDEV 3500",
+                  "GDEV 3501",
+                  "GDEV 3502",
+                  "GDEV 3680",
+                  "GDEV 3740",
+                  "GDEV 3900",
+                  "GDEV 4045",
+                  "GDEV 4080",
+                  "GDEV 4190",
+                  "GDEV 4295",
+                  "GDEV 4450",
+                  "GDEV 4880",
+                  "NS 3060",
+                  "NTRES 3330"
+                ]
+              }
+            },
+            {
+              "type": "maxCount",
+              "label": "ENTOM 2030 / 2031",
+              "count": 1,
+              "match": {
+                "codes": [
+                  "ENTOM 2030",
+                  "ENTOM 2031"
+                ]
+              },
+              "reason": "ENTOM 2030 and 2031 are alternatives for one elective"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environment-development",
+      "name": "Environment & Development",
+      "sections": [
+        {
+          "id": "environment-required",
+          "title": "Environment & Development Required Courses",
+          "column": "left",
+          "filter": "major",
+          "icon": "book",
+          "letterGrade": true,
+          "type": "slots",
+          "slots": [
+            {
+              "id": "social",
+              "label": "Social Science",
+              "rule": [
+                {
+                  "codes": [
+                    "GDEV 3150",
+                    "GDEV 3170",
+                    "GDEV 3240",
+                    "GDEV 3390",
+                    "GDEV 3680"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "biophysical",
+              "label": "Biophysical Science",
+              "rule": [
+                {
+                  "codes": [
+                    "EAS 1101",
+                    "ENVS 1201",
+                    "EAS 2680",
+                    "NTRES 3220",
+                    "NTRES 3240",
+                    "GDEV 3260"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "environment-electives",
+          "title": "Environment & Development Electives",
+          "column": "right",
+          "filter": "major",
+          "icon": "star",
+          "letterGrade": true,
+          "type": "creditBucket",
+          "minCredits": 15,
+          "rule": [
+            {
+              "codes": [
+                "GDEV 3150",
+                "GDEV 3170",
+                "GDEV 3240",
+                "GDEV 3390",
+                "GDEV 3680",
+                "EAS 1101",
+                "ENVS 1201",
+                "EAS 2680",
+                "NTRES 3220",
+                "NTRES 3240",
+                "GDEV 3260",
+                "BEE 2000",
+                "GDEV 2010",
+                "GDEV 2202",
+                "GDEV 2295",
+                "GDEV 2300",
+                "GDEV 2450",
+                "GDEV 3020",
+                "GDEV 3030",
+                "GDEV 3140",
+                "GDEV 3300",
+                "GDEV 3400",
+                "GDEV 3500",
+                "GDEV 3501",
+                "GDEV 3502",
+                "GDEV 3740",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295",
+                "GDEV 4340",
+                "GDEV 4850",
+                "NTRES 3330",
+                "PUBPOL 3670",
+                "SOC 3650"
+              ]
+            }
+          ],
+          "note": "Five electives, at least 15 credits, at least 2 GDEV courses (6 credits), and at least three courses at the 3000 level or higher. GDEV 3500 and GDEV 3501 are listed together as one elective sequence; complete both and have the advisor verify the five-elective count. Up to two approved study-abroad courses may substitute. GDEV 4080 lists PUBPOL 2030 as a prerequisite. Cross-listed table entries accept either listed prefix.",
+          "groups": [
+            {
+              "id": "gdev",
+              "name": "GDEV",
+              "codes": [
+                "GDEV 3150",
+                "GDEV 3170",
+                "GDEV 3240",
+                "GDEV 3390",
+                "GDEV 3680",
+                "GDEV 3260",
+                "GDEV 2010",
+                "GDEV 2202",
+                "GDEV 2295",
+                "GDEV 2300",
+                "GDEV 2450",
+                "GDEV 3020",
+                "GDEV 3030",
+                "GDEV 3140",
+                "GDEV 3150",
+                "GDEV 3170",
+                "GDEV 3240",
+                "GDEV 3260",
+                "GDEV 3300",
+                "GDEV 3390",
+                "GDEV 3400",
+                "GDEV 3500",
+                "GDEV 3501",
+                "GDEV 3502",
+                "GDEV 3680",
+                "GDEV 3740",
+                "GDEV 4045",
+                "GDEV 4080",
+                "GDEV 4190",
+                "GDEV 4295",
+                "GDEV 4340",
+                "GDEV 4850"
+              ]
+            }
+          ],
+          "constraints": [
+            {
+              "type": "minCount",
+              "label": "Five electives",
+              "count": 5,
+              "match": {}
+            },
+            {
+              "type": "minCount",
+              "label": "GDEV electives",
+              "count": 2,
+              "match": {
+                "subjects": [
+                  "GDEV"
+                ]
+              }
+            },
+            {
+              "type": "groupCredits",
+              "label": "GDEV credits",
+              "group": "gdev",
+              "credits": 6
+            },
+            {
+              "type": "minCount",
+              "label": "3000-level or higher",
+              "count": 3,
+              "match": {
+                "minLevel": 3000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "afs",
+      "title": "Agriculture, Food Systems & Nutrition",
+      "match": [
+        {
+          "distributions": [
+            "AFS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one AFS-AG course of 3+ credits."
+    },
+    {
+      "id": "bsc",
+      "title": "Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one BSC-AG course of 3+ credits (BIO-AG and BIO-AS don't count)."
+    },
+    {
+      "id": "psc",
+      "title": "Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PSC"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one PSC-AG course of 3+ credits."
+    },
+    {
+      "id": "sch",
+      "title": "Sustainability Challenges",
+      "match": [
+        {
+          "distributions": [
+            "SCH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one SCH-AG course of 3+ credits."
+    },
+    {
+      "id": "eth",
+      "title": "Ethics",
+      "match": [
+        {
+          "distributions": [
+            "ETH"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one ETH-AG course of 3+ credits (KCM doesn't count)."
+    },
+    {
+      "id": "diversity",
+      "title": "Human Diversity",
+      "match": [
+        {
+          "distributions": [
+            "D",
+            "SCD-AS",
+            "SCD-HA"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one D-AG course of 3+ credits (SCD-AS, SCD-HA and D-HE also count)."
+    },
+    {
+      "id": "dls",
+      "title": "Data Literacy: Statistics",
+      "match": [
+        {
+          "distributions": [
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs one DLS-AG course."
+    },
+    {
+      "id": "dl2",
+      "title": "Data Literacy: Second",
+      "match": [
+        {
+          "distributions": [
+            "DLG",
+            "DLS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs a second data literacy course, DLG-AG or DLS-AG."
+    },
+    {
+      "id": "csh",
+      "title": "Cultural, Social & Historical",
+      "match": [
+        {
+          "distributions": [
+            "CA",
+            "FL",
+            "HA",
+            "LA",
+            "SBA",
+            "ALC-AS",
+            "ALC-HA",
+            "ALC-AAP",
+            "GLC-AS",
+            "HST-AS",
+            "HST-HA",
+            "HST-AAP",
+            "SSC-AS",
+            "SSC-AAP"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "count": 2,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs two courses from CA, FL, HA, LA or SBA, each from a different category (the app doesn't check that they differ)."
+    },
+    {
+      "id": "writing",
+      "title": "Written & Oral Expression",
+      "match": [
+        {
+          "distributions": [
+            "WRT",
+            "ORL",
+            "FWS"
+          ],
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx",
+            "4940"
+          ]
+        }
+      ],
+      "credits": 9,
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs 9 credits of writing (FWS or WRT-AG), at least 6 written; one ORL-AG course may count."
+    },
+    {
+      "id": "e3",
+      "title": "E3 Learning Milestone",
+      "match": [
+        {
+          "distributions": [
+            "EEE"
+          ]
+        }
+      ],
+      "group": "cals",
+      "metText": "satisfied by {code}",
+      "missText": "needs an EEE-AG or community-engaged course, or an advisor-approved internship, research or non-course experience."
+    },
+    {
+      "id": "cals-credits",
+      "title": "CALS Credits",
+      "match": [
+        {
+          "subjects": [
+            "AGSCI",
+            "AIIS",
+            "ALS",
+            "ANSC",
+            "BEE",
+            "BIOG",
+            "BIOAP",
+            "BIOCB",
+            "BIOEE",
+            "BIOMG",
+            "BIOMI",
+            "BIOMS",
+            "BIONB",
+            "BIOSM",
+            "COMM",
+            "EAS",
+            "EDUC",
+            "ENTOM",
+            "ENVS",
+            "FDSC",
+            "GDEV",
+            "INFO",
+            "LA",
+            "LEAD",
+            "NS",
+            "NTRES",
+            "PLSCI",
+            "STSCI",
+            "VIEN"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "credits": 75,
+      "metText": "satisfied by {code}",
+      "missText": "needs 75 credits of CALS courses (INFO counts; AEM doesn't for non-AEM majors; up to two FWS also count, which the app doesn't add)."
+    }
+  ]
+}

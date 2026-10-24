@@ -1,0 +1,527 @@
+{
+  "id": "anthropology-ba",
+  "name": "Anthropology (BA)",
+  "college": "Arts and Sciences",
+  "source": "https://catalog.cornell.edu/programs/anthropology-ba/",
+  "matriculatedFrom": "FA22",
+  "totalCredits": 120,
+  "totalCreditsNote": "120 cr per the 2026-27 catalog, at least 100 of them in Arts & Sciences and 80 letter-graded (the app doesn't check those two). Confirm with your advisor.",
+  "footnote": "Ten courses minimum. Major courses require a letter grade of C- or better; S/U courses and First-Year Writing Seminars do not count. Transfer credit requires application to the Director of Undergraduate Studies; exceptions require an approved written petition. No prerequisites to declare: meet the Director of Undergraduate Studies, prepare a short statement of interests and goals, and build a program with your advisor. Optional honors requires an honors thesis, normally 8 credits across ANTHR 4983, ANTHR 4991, ANTHR 4984 and ANTHR 4992. Apply in junior spring with a topic and faculty sponsor; normally a 3.3 overall GPA and 3.5 major GPA are required (3.0 overall by petition), with no outstanding major incompletes. Human-subjects research usually needs clearance. ANTHR 4910 independent study requires faculty permission and supervision; graduate courses require instructor permission. Confirm their use toward specific major requirements with your advisor.",
+  "filters": [
+    {
+      "id": "major",
+      "label": "Major",
+      "icon": "book"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "icon": "run"
+    }
+  ],
+  "failingGrades": [
+    "D+",
+    "D",
+    "D-",
+    "F",
+    "S",
+    "SX",
+    "U",
+    "UX"
+  ],
+  "sections": [
+    {
+      "id": "subfields",
+      "title": "Subfield Foundations",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "type": "slots",
+      "note": "One listed course of at least 3 credits in each subfield. The subfields are breadth requirements, not concentrations.",
+      "slots": [
+        {
+          "id": "sociocultural",
+          "label": "Sociocultural anthropology",
+          "rule": [
+            {
+              "codes": [
+                "ANTHR 1400",
+                "ANTHR 2400",
+                "ANTHR 2468"
+              ],
+              "minCredits": 3
+            }
+          ]
+        },
+        {
+          "id": "archaeological",
+          "label": "Anthropological archaeology",
+          "rule": [
+            {
+              "codes": [
+                "ANTHR 1200",
+                "ANTHR 2245",
+                "ANTHR 2430",
+                "ANTHR 2729"
+              ],
+              "minCredits": 3
+            }
+          ]
+        },
+        {
+          "id": "biological",
+          "label": "Biological anthropology",
+          "rule": [
+            {
+              "codes": [
+                "ANTHR 1300",
+                "ANTHR 2310",
+                "ANTHR 3235"
+              ],
+              "minCredits": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theory",
+      "title": "Anthropological Theory",
+      "column": "left",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "type": "slots",
+      "note": "ANTHR 3000: Introduction to Anthropological Theory.",
+      "slots": [
+        {
+          "id": "theory",
+          "label": "ANTHR 3000",
+          "rule": [
+            {
+              "codes": [
+                "ANTHR 3000"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced Anthropology",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "type": "slots",
+      "note": "Two other 3000-level courses and two 4000-level courses, each at least 3 credits. One 4000-level course must be a seminar taken in senior year with a research paper or project. Verify seminar status, timing and research component with your advisor; the app cannot check them. ANTHR 4263 is not a seminar. The catalog does not say whether higher levels may substitute for the stated levels.",
+      "slots": [
+        {
+          "id": "a1",
+          "label": "3000-level course 1",
+          "rule": [
+            {
+              "subjects": [
+                "ANTHR"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3999,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2",
+          "label": "3000-level course 2",
+          "rule": [
+            {
+              "subjects": [
+                "ANTHR"
+              ],
+              "minLevel": 3000,
+              "maxLevel": 3999,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3",
+          "label": "4000-level course",
+          "rule": [
+            {
+              "subjects": [
+                "ANTHR"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999,
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seminar",
+          "label": "Senior research seminar",
+          "rule": [
+            {
+              "subjects": [
+                "ANTHR"
+              ],
+              "minLevel": 4000,
+              "maxLevel": 4999,
+              "minCredits": 3,
+              "excludeCodes": [
+                "ANTHR 4263"
+              ],
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electives",
+      "title": "Major Electives",
+      "column": "right",
+      "filter": "major",
+      "icon": "book",
+      "letterGrade": true,
+      "type": "slots",
+      "note": "Two additional electives of at least 3 credits each. Cognate disciplines require advisor approval; the app cannot verify approval or whether a course is a cognate.",
+      "slots": [
+        {
+          "id": "e1",
+          "label": "Elective 1 (cognate needs approval)",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "label": "Elective 2 (cognate needs approval)",
+          "rule": [
+            {
+              "minCredits": 3,
+              "excludeDistributions": [
+                "FWS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pe",
+      "title": "Physical Education",
+      "column": "right",
+      "filter": "university",
+      "icon": "run",
+      "leftLabel": "PE",
+      "note": "Two PE classes plus the swim test, a university requirement. PE credits do not count toward the 120.",
+      "type": "slots",
+      "swimTest": true,
+      "excludeFromCredits": true,
+      "slots": [
+        {
+          "id": "pe1",
+          "label": "PE 1",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pe2",
+          "label": "PE 2",
+          "rule": [
+            {
+              "subjects": [
+                "PE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "fws",
+      "title": "First-Year Writing Seminars",
+      "match": [
+        {
+          "distributions": [
+            "FWS"
+          ]
+        }
+      ],
+      "count": 2,
+      "metText": "satisfied by {code}",
+      "missText": "needs two FWS courses by the end of sophomore year. A 5 on AP English or a 7 on IB HL English covers one. FWS courses can't count toward anything else."
+    },
+    {
+      "id": "language",
+      "title": "Foreign Language",
+      "match": [
+        {
+          "distributions": [
+            "FLOPI"
+          ],
+          "minCredits": 3
+        }
+      ],
+      "metText": "satisfied by {code} (Option 1)",
+      "missText": "needs a FLOPI-AS course (a 2000+ course in or about a language), or 11 credits in one language at Cornell (Option 2). Native speakers may be exempt."
+    },
+    {
+      "id": "dist-alc",
+      "title": "Distribution: Arts, Literature, and Culture",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ALC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-bio",
+      "title": "Distribution: Biological Sciences",
+      "match": [
+        {
+          "distributions": [
+            "BIO-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a BIO-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-etm",
+      "title": "Distribution: Ethics and the Mind",
+      "match": [
+        {
+          "distributions": [
+            "ETM-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a ETM-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-glc",
+      "title": "Distribution: Global Citizenship",
+      "match": [
+        {
+          "distributions": [
+            "GLC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a GLC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-hst",
+      "title": "Distribution: Historical Analysis",
+      "match": [
+        {
+          "distributions": [
+            "HST-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a HST-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-phs",
+      "title": "Distribution: Physical Sciences",
+      "match": [
+        {
+          "distributions": [
+            "PHS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a PHS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-scd",
+      "title": "Distribution: Social Difference",
+      "match": [
+        {
+          "distributions": [
+            "SCD-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SCD-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-ssc",
+      "title": "Distribution: Social Sciences",
+      "match": [
+        {
+          "distributions": [
+            "SSC-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SSC-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-sds",
+      "title": "Distribution: Statistics and Data Science",
+      "match": [
+        {
+          "distributions": [
+            "SDS-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SDS-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-smr",
+      "title": "Distribution: Symbolic and Mathematical Reasoning",
+      "match": [
+        {
+          "distributions": [
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "metText": "satisfied by {code}",
+      "missText": "needs a SMR-AS course of 3+ credits."
+    },
+    {
+      "id": "dist-courses",
+      "title": "Distribution courses",
+      "match": [
+        {
+          "distributions": [
+            "ALC-AS",
+            "BIO-AS",
+            "ETM-AS",
+            "GLC-AS",
+            "HST-AS",
+            "PHS-AS",
+            "SCD-AS",
+            "SSC-AS",
+            "SDS-AS",
+            "SMR-AS"
+          ],
+          "minCredits": 3,
+          "excludeSubjects": [
+            "PE"
+          ],
+          "excludeNumberPattern": [
+            "10xx"
+          ]
+        }
+      ],
+      "count": 8,
+      "metText": "satisfied by {code}",
+      "missText": "needs 8 courses of 3+ credits across the 10 categories. A course counts for at most 2 categories, and at most 2 courses may double up (the app doesn't check those limits)."
+    }
+  ]
+}
