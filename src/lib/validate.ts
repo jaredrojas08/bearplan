@@ -163,6 +163,16 @@ export function templateErrors(data: unknown): string[] {
       c.sections.forEach((section: unknown, j: number) => errors.push(...sectionErrors(section, `${where}.sections[${j}]`, ids)))
     })
   }
+  if ('checkGroups' in data) {
+    const groups = data.checkGroups
+    const whole = (v: unknown, min: number) => Number.isInteger(v) && (v as number) >= min
+    if (!isObject(groups)) errors.push('"checkGroups" must be an object')
+    else for (const [g, v] of Object.entries(groups)) {
+      if (!isObject(v) || !whole(v.maxUsesPerCourse, 1) || !whole(v.maxSharedCourses, 0)) {
+        errors.push(`checkGroups.${g} needs whole numbers maxUsesPerCourse (1+) and maxSharedCourses (0+)`)
+      }
+    }
+  }
   if ('requiresConcentration' in data && typeof data.requiresConcentration !== 'boolean') errors.push('"requiresConcentration" must be true or false')
   // Requiring a pick with nothing to pick would leave the plan unsaveable.
   if (data.requiresConcentration === true && !(Array.isArray(data.concentrations) && data.concentrations.length > 0)) {
