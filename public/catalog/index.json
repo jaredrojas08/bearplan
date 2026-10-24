@@ -588,12 +588,6 @@
   "college": "Bowers College of Computing and Information Science, Duffield College of Engineering"
  },
  {
-  "id": "german-studies-ba",
-  "kind": "major",
-  "name": "German Studies (BA)",
-  "college": "College of Arts and Sciences"
- },
- {
   "id": "german-studies-minor",
   "kind": "minor",
   "name": "German Studies",
