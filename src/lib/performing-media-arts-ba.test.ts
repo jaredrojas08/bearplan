@@ -52,4 +52,15 @@ describe('Performing and Media Arts BA', () => {
     expect(fits('PMA 2100', 'core/intro', 3, ['FWS'])).not.toBeNull()
     expect(fits('PMA 1168', 'elective/e1', 3, ['FWS'])).not.toBeNull()
   })
+
+  it.each([
+    ['htc', 'PMA 4866'],
+    ['au', 'PMA 4401'],
+    ['de', 'PMA 4610'],
+    ['ep', 'PMA 4800'],
+  ])('lets the %s sequence fill its 4000-level row', (concentration, code) => {
+    const template = withConcentrations(pma, [concentration])
+    const row = `${concentration}-rubrics/sequence-4000`
+    expect(placeFailure(empty, template, { code, credits: 4 }, row)).toBeNull()
+  })
 })

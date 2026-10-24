@@ -1266,27 +1266,18 @@
               "label": "Sequence: 4000-level progression",
               "rule": [
                 {
-                  "codes": [
-                    "MUSIC 3431",
-                    "PMA 2640",
-                    "PMA 3241",
-                    "PMA 3614",
-                    "PMA 3615",
-                    "PMA 3616",
-                    "PMA 3630",
-                    "PMA 3632",
-                    "PMA 3640",
-                    "PMA 3660",
-                    "PMA 3661",
-                    "PMA 3680",
-                    "PMA 3691",
-                    "PMA 3692"
+                  "subjects": [
+                    "PMA"
+                  ],
+                  "minLevel": 4000,
+                  "maxLevel": 4999,
+                  "excludeCodes": [
+                    "PMA 4000"
                   ],
                   "excludeDistributions": [
                     "FWS"
                   ],
-                  "minLevel": 4000,
-                  "maxLevel": 4999
+                  "reason": "Needs a 4000-level PMA Design course"
                 }
               ]
             },
@@ -1537,7 +1528,7 @@
               ]
             }
           ],
-          "note": "Three courses in Design, focused on costume, lighting, scenery, or sound, plus one course in each other rubric. The 3000-to-4000 pair must form a progression; the third adds depth and breadth. Confirm coherence and PMA faculty instruction with the advisor. Production labs do not count. The catalog does not explicitly say whether the global course may also satisfy a rubric; this checklist uses separate courses."
+          "note": "Three courses in Design, focused on costume, lighting, scenery, or sound, plus one course in each other rubric. The 3000-to-4000 pair must form a progression; the third adds depth and breadth. Confirm coherence and PMA faculty instruction with the advisor. Production labs do not count. The catalog does not explicitly say whether the global course may also satisfy a rubric; this checklist uses separate courses. The catalog's Design list has no 4000-level course, so this row takes any 4000-level PMA course other than PMA 4000; confirm it's a Design course with your advisor."
         }
       ]
     },
